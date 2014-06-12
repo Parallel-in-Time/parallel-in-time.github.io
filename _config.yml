@@ -1,0 +1,45 @@
+# Site settings
+title: Parallel-in-Time
+email: daniel.ruprecht@usi.ch
+author: "Parallel-in-Time Enthusiasts"
+description: ""
+baseurl: ""
+url: "http://parallel-in-time.github.io"
+
+root: /
+permalink: /news/:year/:month/:day/:title/
+code_dir: downloads/code
+category_dir: news/categories
+markdown: kramdown
+permalink: date
+
+timezone: UTC
+encoding: utf-8
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+excerpt_separator: '<!--more-->'
+
+sass:
+  sass_dir: _sass
+  style: :nested
+
+citation:
+  citation_style: _plugins/ieee-with-url.csl
+  citation_locale: en
+
+category_title_prefix: ""
+
+collections:
+  events_upcomming:
+    output: true
+  events_past:
+    output: true
+  groups:
+    output: true
+  projects:
+    output: true
+  codes:
+    output: true

@@ -1,0 +1,69 @@
+<header>
+  <nav>
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ root_url }}/">{{ site.title }}</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li {% if page.navbar == 'Events' %}class="active"{% endif %}><a href="{{ root_url }}/events">Events</a></li>
+            <li {% if page.navbar == 'Groups' %}class="active"{% endif %}><a href="{{ root_url }}/groups">Groups</a></li>
+            <li {% if page.navbar == 'Projects' %}class="active"{% endif %}><a href="{{ root_url }}/projects">Projects</a></li>
+            <li {% if page.navbar == 'Codes' %}class="active"{% endif %}><a href="{{ root_url }}/codes">Codes</a></li>
+            <li {% if page.navbar == 'Blog' or page.navbar == 'Blog Archives' %}class="dropdown active"{% endif %}>
+              {% if page.navbar == 'Blog' or page.navbar == 'Blog Archives' %}
+                <a href="{{ root_url }}/news" class="dropdown-toggle" data-toggle="dropdown">News <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  {% if page.navbar == 'Blog Archives' %}
+                    <li>
+                      <a href="{{ root_url }}/news">News</a>
+                    </li>
+                  {% endif %}
+                  <li {% if page.navbar == 'Blog Archives' %}class="active"{% endif %}>
+                    <a href="{{ root_url }}/news/archives">Archives</a>
+                  </li>
+                </ul>
+              {% else %}
+                <a href="{{ root_url }}/news">News</a>
+              {% endif %}
+            </li>
+            <li {% if page.navbar == 'About' %}class="active"{% endif %}>
+              <a href="{{ root_url }}/about">About</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="subscribe-rss" href="{{ site.subscribe_rss }}" title="subscribe via RSS">
+                <span class="visible-xs">RSS</span>
+                <i class="hidden-xs fa fa-rss"></i>
+              </a>
+            </li>
+            {% if site.subscribe_email %}
+            <li>
+              <a class="subscribe-email" href="{{ site.subscribe_email }}" title="subscribe via email">
+                <span class="visible-xs">Email</span>
+                <i class="hidden-xs fa fa-envelope"></i>
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+          {% if site.simple_search %}
+            <form class="search navbar-form navbar-right" action="{{ site.simple_search }}" method="GET">
+              <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}">
+              <div class="form-group">
+                <input class="form-control" type="text" name="q" placeholder="Search">
+              </div>
+            </form>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

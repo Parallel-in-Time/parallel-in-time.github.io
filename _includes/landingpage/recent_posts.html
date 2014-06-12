@@ -1,0 +1,12 @@
+<section>
+  <h3>Recent News</h3>
+  {{ site.post }}
+  <ul class="list-group">
+    {% for post in site.posts limit: site.recent_posts %}
+      <li class="list-group-item">
+        <span class="label label-default">{{ post.date | date_to_string }}</span>
+        <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

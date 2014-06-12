@@ -1,0 +1,44 @@
+---
+---
+
+@import "variables";
+@import "bootstrap_overrides";
+@import "highlight";
+
+@import "asides/github";
+
+html {
+  min-height: 100%;
+
+  body {
+    margin-bottom: $footer-height;
+
+    .blog-index {
+      article {
+        margin-bottom: 3em;
+      }
+    }
+    
+    img.groups-logo {
+      width: 33%;
+      margin-right: 1em;
+    }
+
+    > footer {
+      width: 100%;
+      height: $footer-height;
+      background-color: $footer-bg;
+      margin-top: $footer-height;
+
+      > .container {
+        height: 100%;
+        text-align: center;
+
+        span {
+          height: 100%;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
