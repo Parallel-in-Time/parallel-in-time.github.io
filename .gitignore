@@ -4,6 +4,10 @@
 _site/
 
 
+### Octopress ###
+.deploy/
+
+
 ### Ruby ###
 *.gem
 *.rbc
