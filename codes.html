@@ -1,9 +1,29 @@
 ---
 layout: page
 title: Codes
-date: 2014-06-11 14:37
+date: 2014-06-15 16:45
 navbar: Codes
-comments: false
-sharing: false
 footer: true
 ---
+
+<div class="row">
+{% for code in site.codes | order: 'title' %}
+  {% cycle '', '', '', '</div><div class="row">' %}
+  {% capture page %}{{ code }}{% endcapture %}
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <a href="{{ code.url }}">
+            {{ code.title }}
+          </a>
+        </h2>
+      </div>
+      <div class="panel-body">
+        {% if code.logo %}<img src="{{ root_url }}/images/{{ code.logo }}" class="codes-logo img-responsive pull-left" alt="{{ code.title }} Logo">{% endif %}
+        {% if code.short_desc %}{{ code.short_desc }}{% endif %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>

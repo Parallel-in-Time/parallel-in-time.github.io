@@ -19,11 +19,26 @@ html {
       }
     }
     
-    img.groups-logo {
+    img.groups-logo, img.projects-logo {
       width: 33%;
       margin-right: 1em;
     }
-
+    
+    .post {
+      article {
+        p {
+          text-align: justify;
+        }
+      }
+    }
+    .post.post-code, .post.post-group {
+      .github-widget {
+        width: 45% !important;
+        float: right !important;
+        margin-left: 1em !important;
+      }
+    }
+    
     > footer {
       width: 100%;
       height: $footer-height;
