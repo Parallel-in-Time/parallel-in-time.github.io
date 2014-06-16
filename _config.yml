@@ -4,7 +4,7 @@ email: daniel.ruprecht@usi.ch
 author: "Parallel-in-Time Enthusiasts"
 description: ""
 baseurl: ""
-url: "http://parallel-in-time.github.io"
+url: "http://parallelintime.org"
 
 root: /
 permalink: /news/:year/:month/:day/:title/
