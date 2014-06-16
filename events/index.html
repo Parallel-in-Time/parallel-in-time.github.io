@@ -6,10 +6,8 @@
   <title>Events</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallel-in-time.github.io/events/">
+  <link rel="canonical" href="http://parallelintime.org/events/">
 
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
   <!-- Custom CSS -->
@@ -29,7 +27,7 @@
   <body>
     <header>
   <nav>
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -42,17 +40,49 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/events">Events</a></li>
-            <li ><a href="/groups">Groups</a></li>
-            <li ><a href="/projects">Projects</a></li>
-            <li ><a href="/codes">Codes</a></li>
+            
+  <li class="dropdown active">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li class="active">
+        <a href="/events/index.html">Overview</a>
+      </li>
+      <li >
+        <a href="/events/upcomming/index.html">Upcomming</a>
+      </li>
+      <li >
+        <a href="/events/past/index.html">Past</a>
+      </li>
+    </ul>
+  </li>
+
+
+            
+  <li>
+    <a href="/groups/index.html">Groups</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/projects/index.html">Projects</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/codes/index.html">Codes</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/news/index.html">News</a>
+  </li>
+
+
             <li >
-              
-                <a href="/news">News</a>
-              
-            </li>
-            <li >
-              <a href="/about">About</a>
+              <a href="/about/index.html">About</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -85,7 +115,7 @@
       
         <li class="list-group-item">
   <h4 class="list-group-item-heading">
-    <a href="/events_upcomming/2014-06-12-4h-pint-workshop.html">
+    <a href="/events/upcomming/2015/4th-workshop-on-parallel-in-time-integration.html">
       4rd Workshop on Parallel-in-Time Integration
     </a>
   </h4>
@@ -105,7 +135,7 @@
       
         <li class="list-group-item">
   <h4 class="list-group-item-heading">
-    <a href="/events_upcomming/2016-05-01-5h-pint-workshop.html">
+    <a href="/events/upcomming/2016/5th-workshop-on-parallel-in-time-integration.html">
       5th Workshop on Parallel-in-Time Integration
     </a>
   </h4>
@@ -131,7 +161,7 @@
       
         <li class="list-group-item">
   <h4 class="list-group-item-heading">
-    <a href="/events_past/2014-05-20-3rd-pint-workshop.html">
+    <a href="/events/past/2014/05/26/3rd-workshop-on-parallel-in-time-integration.html">
       3rd Workshop on Parallel-in-Time Integration
     </a>
   </h4>
@@ -151,16 +181,16 @@
       
         <li class="list-group-item">
   <h4 class="list-group-item-heading">
-    <a href="/events_past/2013-05-01-2nd-pint-workshop.html">
+    <a href="/events/past/2013/06/17/2nd-workshop-on-parallel-in-time-integration.html">
       2nd Workshop on Parallel-in-Time Integration
     </a>
   </h4>
   <p class="list-group-item-text">
     <a href="#" role="button" class="btn btn-default btn-xs disabled">
       <i class="fa fa-clock-o fa-fw"></i>
-      01 May 2013
+      17 Jun 2013
       &mdash;
-      03 May 2013
+      19 Jun 2013
     </a>
     <a href="#" role="button" class="btn btn-default btn-xs disabled">
       <i class="fa fa-map-marker fa-fw"></i>
@@ -178,13 +208,19 @@
       </div>
     </main>
     <footer>
-  <div class="container">
-    <span class="text-muted credits">
-      Copyright &copy; 2014 - Parallel-in-Time Enthusiasts<br>
-      <small>
-        <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-      </small>
-    </span>
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text">
+        <span class="hidden-xs">Copyright </span>&copy; 2014 - Parallel-in-Time Enthusiasts
+        <small class="hidden-xs hidden-sm">
+          <span class="credit">&mdash; Powered by <a href="http://octopress.org">Octopress</a></span>
+        </small>
+      </p>
+      <p class="navbar-text navbar-right hidden-xs">
+        <i class="fa fa-github"></i>
+        <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">Sources on GitHub</a>
+      </p>
+    </div>
   </div>
 </footer>
 

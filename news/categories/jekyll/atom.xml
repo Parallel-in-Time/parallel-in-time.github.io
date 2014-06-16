@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Jekyll | Parallel-in-Time]]></title>
-  <link href="http://parallel-in-time.github.io/news/categories/jekyll/atom.xml" rel="self"/>
-  <link href="http://parallel-in-time.github.io/"/>
-  <updated>2014-06-15T14:56:34+00:00</updated>
-  <id>http://parallel-in-time.github.io/</id>
+  <link href="http://parallelintime.org/news/categories/jekyll/atom.xml" rel="self"/>
+  <link href="http://parallelintime.org/"/>
+  <updated>2014-06-16T18:32:05+00:00</updated>
+  <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
     <email><![CDATA[daniel.ruprecht@usi.ch]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Welcome to Jekyll!]]></title>
-    <link href="http://parallel-in-time.github.io/jekyll/2014/01/01/welcome-to-jekyll/"/>
+    <link href="http://parallelintime.org/news/2014/01/01/welcome-to-jekyll.html"/>
     <updated>2014-01-01T09:56:34+00:00</updated>
-    <id>http://parallel-in-time.github.io/jekyll/2014/01/01/welcome-to-jekyll</id>
+    <id>http://parallelintime.org/news/2014/01/01/welcome-to-jekyll</id>
     <content type="html"><![CDATA[<p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
 To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
 

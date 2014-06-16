@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Codes | Parallel-in-Time]]></title>
-  <link href="http://parallel-in-time.github.io/news/categories/codes/atom.xml" rel="self"/>
-  <link href="http://parallel-in-time.github.io/"/>
-  <updated>2014-06-15T14:56:34+00:00</updated>
-  <id>http://parallel-in-time.github.io/</id>
+  <link href="http://parallelintime.org/news/categories/codes/atom.xml" rel="self"/>
+  <link href="http://parallelintime.org/"/>
+  <updated>2014-06-16T18:32:05+00:00</updated>
+  <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
     <email><![CDATA[daniel.ruprecht@usi.ch]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Example News Entry]]></title>
-    <link href="http://parallel-in-time.github.io/events/research%20groups/projects/codes/miscellaneous/2014/06/11/example-news-entry/"/>
+    <link href="http://parallelintime.org/news/2014/06/11/example-news-entry.html"/>
     <updated>2014-06-11T09:21:44+00:00</updated>
-    <id>http://parallel-in-time.github.io/events/research%20groups/projects/codes/miscellaneous/2014/06/11/example-news-entry</id>
+    <id>http://parallelintime.org/news/2014/06/11/example-news-entry</id>
     <content type="html"><![CDATA[<p>This is just an example of a news entry matching various categories.
 This first paragraph is just the teaser.</p>
 

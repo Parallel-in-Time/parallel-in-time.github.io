@@ -3,8 +3,8 @@
   <channel>
     <title>Parallel-in-Time</title>
     <description></description>
-    <link>http://parallel-in-time.github.io/</link>
-    <atom:link href="http://parallel-in-time.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://parallelintime.org/</link>
+    <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Example News Entry</title>
@@ -29,8 +29,8 @@ enabled.&lt;/p&gt;
 &lt;div class=&quot;github-widget&quot; data-repo=&quot;Parallel-in-Time/parallel-in-time.github.io&quot;&gt;&lt;/div&gt;
 </description>
         <pubDate>Wed, 11 Jun 2014 09:21:44 +0000</pubDate>
-        <link>http://parallel-in-time.github.io/events/research%20groups/projects/codes/miscellaneous/2014/06/11/example-news-entry/</link>
-        <guid isPermaLink="true">http://parallel-in-time.github.io/events/research%20groups/projects/codes/miscellaneous/2014/06/11/example-news-entry/</guid>
+        <link>http://parallelintime.org/news/2014/06/11/example-news-entry.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/news/2014/06/11/example-news-entry.html</guid>
       </item>
     
       <item>
@@ -50,8 +50,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 
 </description>
         <pubDate>Wed, 01 Jan 2014 09:56:34 +0000</pubDate>
-        <link>http://parallel-in-time.github.io/jekyll/2014/01/01/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://parallel-in-time.github.io/jekyll/2014/01/01/welcome-to-jekyll/</guid>
+        <link>http://parallelintime.org/news/2014/01/01/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/news/2014/01/01/welcome-to-jekyll.html</guid>
       </item>
     
   </channel>
