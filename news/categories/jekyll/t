@@ -3,10 +3,10 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>About</title>
+  <title>Jekyll</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallel-in-time.github.io/about.html">
+  <link rel="canonical" href="http://parallel-in-time.github.io/news/categories/jekyll/t">
 
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
@@ -27,7 +27,7 @@
   <body>
     <header>
   <nav>
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,17 +40,38 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li ><a href="/events.html">Events</a></li>
-            <li ><a href="/groups.html">Groups</a></li>
-            <li ><a href="/projects.html">Projects</a></li>
-            <li ><a href="/codes.html">Codes</a></li>
+            
+  <li>
+    <a href="/events/index.html">Events</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/groups/index.html">Groups</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/projects/index.html">Projects</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/codes/index.html">Codes</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/news/index.html">News</a>
+  </li>
+
+
             <li >
-              
-                <a href="/news/index.html">News</a>
-              
-            </li>
-            <li >
-              <a href="/about.html">About</a>
+              <a href="/about/index.html">About</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -73,39 +94,67 @@
       <div class="container">
         <div class="post">
   <header class="post-header">
-    <h1>About</h1>
+    <h1>Jekyll</h1>
   </header>
   <article class="post-content">
-  A text about Parallel-in-Time Methods.
+  <div id="blog-archives" class="category">
+  
+    
+    
+      
+      <h2>2014</h2>
+    
+    <article class="page-header">
+      
+<h1><a href="/news/2014/01/01/welcome-to-jekyll.html">Welcome to Jekyll!</a></h1>
+<p class="meta text-muted">
+  
+
+
+
+
+
+
+
+
+
+
+<i class="fa fa-calendar"></i> Created on <time datetime="2014-01-01T09:56:34+00:00" pubdate data-updated="true">01 Jan 2014</time>
+  
+
+<i class="fa fa-tags"></i>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/news/categories/jekyll/'>Jekyll</a>
+  
+</span>
+
+
+</p>
+
+    </article>
+  
+</div>
 
   </article>
-  
-    <footer>
-      
-
-
-
-
-
-
-
-
-
-
-<i class="fa fa-calendar"></i> Created on <time datetime="2014-06-11T10:54:00+00:00" pubdate data-updated="true">Wed, 11 Jun 2014 10:54:00 +0000</time>
-    </footer>
   
 </div>
       </div>
     </main>
     <footer>
-  <div class="container">
-    <span class="text-muted credits">
-      Copyright &copy; 2014 - Parallel-in-Time Enthusiasts<br>
-      <small>
-        <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-      </small>
-    </span>
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text">
+        <span class="hidden-xs">Copyright </span>&copy; 2014 - Parallel-in-Time Enthusiasts
+        <small class="hidden-xs hidden-sm">
+          <span class="credit">&mdash; Powered by <a href="http://octopress.org">Octopress</a></span>
+        </small>
+      </p>
+      <p class="navbar-text navbar-right hidden-xs">
+        <i class="fa fa-github"></i>
+        <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">Sources on GitHub</a>
+      </p>
+    </div>
   </div>
 </footer>
 
