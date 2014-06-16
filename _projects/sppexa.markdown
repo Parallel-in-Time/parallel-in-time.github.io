@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_project
 title: "SPPEXA"
 date: 2014-06-15 16:24 +0200
 navbar: Projects

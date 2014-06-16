@@ -1,10 +1,16 @@
 <footer>
-  <div class="container">
-    <span class="text-muted credits">
-      Copyright &copy; {{ site.time | date: "%Y" }} - {{ site.author }}<br>
-      <small>
-        <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-      </small>
-    </span>
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text">
+        <span class="hidden-xs">Copyright </span>&copy; {{ site.time | date: "%Y" }} - {{ site.author }}
+        <small class="hidden-xs hidden-sm">
+          <span class="credit">&mdash; Powered by <a href="http://octopress.org">Octopress</a></span>
+        </small>
+      </p>
+      <p class="navbar-text navbar-right hidden-xs">
+        <i class="fa fa-github"></i>
+        <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">Sources on GitHub</a>
+      </p>
+    </div>
   </div>
 </footer>

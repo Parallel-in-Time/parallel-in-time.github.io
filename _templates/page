@@ -1,4 +1,7 @@
 ---
 layout: {{ layout }}
 title: {{ title }}
+date: 
+navbar:
+subnavbar:
 ---

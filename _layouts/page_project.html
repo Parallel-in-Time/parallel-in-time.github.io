@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="post post-project">
+  <header class="post-header">
+    <h1>
+      {{ page.title }}
+      {% if page.logo %}<img src="{{ root_url }}/images/{{ page.logo }}" class="groups-logo" alt="{{ page.title }} Logo">{% endif %}
+    </h1>
+  </header>
+  <article class="post-content">
+    {{ content }}
+  </article>
+  {% if page.footer %}
+    <footer>
+      {% include post/date.html %}{{ time }}
+    </footer>
+  {% endif %}
+</div>
