@@ -9,6 +9,8 @@ layout: default
   {{ content }}
   </article>
   {% if page.footer %}
-    {% include post/date.html %}{{ time }}
+    <footer>
+      {% include post/date.html %}{{ time }}
+    </footer>
   {% endif %}
 </div>

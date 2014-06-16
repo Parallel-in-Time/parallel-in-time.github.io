@@ -20,7 +20,7 @@ excerpt_separator: '<!--more-->'
 
 sass:
   sass_dir: _sass
-  style: :nested
+  style: :compressed
 
 citation:
   citation_style: _plugins/ieee-with-url.csl

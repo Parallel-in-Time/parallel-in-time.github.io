@@ -8,7 +8,7 @@ logo: logo_jsc.png
 short_desc: A very short description of this group.
 ---
 
-{% githubrepo Parallel-in-Time/PyPinT %}
+{% include asides/github.html username="Parallel-in-Time" %}
 
 The research group at the _Jülich Supercomputing Centre_ is lead by Dr. Robert Speck mentoring
 his two PhD students Dieter Moser and Torbjörn Klatt as well as currently two

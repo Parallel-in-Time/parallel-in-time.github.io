@@ -1,7 +1,13 @@
-main > .jumbotron {
-  margin-top: -20px !important;
-}
+@import "bootstrap";
 
 .page-header {
   margin-top: 0 !important;
+}
+
+@mixin pull-right {
+  float: right !important;
+}
+
+@mixin pull-left {
+  float: left !important;
 }

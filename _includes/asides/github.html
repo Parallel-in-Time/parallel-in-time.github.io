@@ -1,5 +1,4 @@
-{% if site.data.github.username %}
-<section class="panel panel-default clearfix">
+<section class="gh-repos panel panel-default">
   <div class="panel-heading">
       <h3 class="panel-title">GitHub Repos</h3>
   </div>
@@ -8,7 +7,7 @@
   </div>
   {% if site.data.github.show_profile_link %}
     <div class="gh-profile-link pull-right text-muted">
-      <a href="https://github.com/{{site.data.github.username}}">@{{site.data.github.username}}</a> on GitHub
+      <a href="https://github.com/{{site.data.github.username}}">@{{include.username}}</a> on GitHub
     </div>
   {% endif %}
   <script type="text/javascript">
@@ -22,7 +21,7 @@
         }
 
         github.showRepos({
-            user: '{{site.data.github.username}}',
+            user: '{{include.username}}',
             count: {{site.data.github.repo_count}},
             skip_forks: {{site.data.github.skip_forks}},
             target: '#gh_repos'
@@ -31,4 +30,3 @@
   </script>
   <script src="{{ root_url }}/js/github.js" type="text/javascript"> </script>
 </section>
-{% endif %}

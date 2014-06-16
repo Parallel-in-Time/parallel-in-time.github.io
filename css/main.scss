@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "variables";
 @import "bootstrap_overrides";
+@import "variables";
 @import "highlight";
 
 @import "asides/github";
@@ -11,7 +11,23 @@ html {
   min-height: 100%;
 
   body {
-    margin-bottom: $footer-height;
+//    margin-bottom: $footer-height;
+    
+    .jumbotron {
+      margin-top: -20px !important;
+      padding-top: 0;
+      padding-bottom: 0;
+      .container {
+        @media (min-width: $screen-sm-max) {
+          background-image: url('/images/logo_pint.png');
+          background-position: right center;
+          background-repeat: no-repeat;
+          background-origin: padding-box;
+          padding-top: 3em !important;
+          padding-bottom: 5em !important;
+        }
+      }
+    }
 
     .blog-index {
       article {
@@ -19,19 +35,47 @@ html {
       }
     }
     
-    img.groups-logo, img.projects-logo {
-      width: 33%;
-      margin-right: 1em;
-    }
-    
     .post {
       article {
+        @include clearfix;
+        
         p {
           text-align: justify;
         }
+
+        img.groups-logo, img.projects-logo {
+          width: 33%;
+          margin-right: 1em;
+        }
+      }
+      footer {
+        @include clearfix;
+        margin-top: 1em;
+        padding: 1em;
+        background-color: $footer-bg;
       }
     }
-    .post.post-code, .post.post-group {
+    .post.post-code, .post.post-group, .post.post-project {
+      .post-header {
+        @media (max-width: $screen-sm-max) {
+          h1 {
+            @include clearfix;
+            img.groups-logo, img.projects-logo {
+              @include img-responsive;
+            }
+          }
+        }
+        @media (min-width: $screen-md-min) {
+          h1 {
+            @include clearfix;
+            img.groups-logo, img.projects-logo {
+              @include img-responsive;
+              @include pull-right;
+              width: $page-logo-width;
+            }
+          }
+        }
+      }
       .github-widget {
         width: 45% !important;
         float: right !important;
@@ -41,12 +85,13 @@ html {
     
     > footer {
       width: 100%;
-      height: $footer-height;
+//      min-height: $footer-height;
       background-color: $footer-bg;
-      margin-top: $footer-height;
+      margin-top: 2em;
 
       > .container {
         height: 100%;
+        padding-bottom: 0.5em;
         text-align: center;
 
         span {
