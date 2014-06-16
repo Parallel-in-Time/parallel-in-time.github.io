@@ -1,0 +1,19 @@
+{% if page.navbar == 'Projects' %}
+  <li class="dropdown active">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li {% if page.subnavbar == 'Overview' %}class="active"{% endif %}>
+        <a href="{{ root_url }}/projects/index.html">Overview</a>
+      </li>
+      {% for project in site.projects | order: 'title' %}
+        <li {% if page.subnavbar == project.subnavbar %}class="active"{% endif %}>
+          <a href="{{ project.url }}">{{ project.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </li>
+{% else %}
+  <li>
+    <a href="{{ root_url }}/projects/index.html">Projects</a>
+  </li>
+{% endif %}

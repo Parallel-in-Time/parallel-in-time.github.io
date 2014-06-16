@@ -13,29 +13,13 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li {% if page.navbar == 'Events' %}class="active"{% endif %}><a href="{{ root_url }}/events.html">Events</a></li>
-            <li {% if page.navbar == 'Groups' %}class="active"{% endif %}><a href="{{ root_url }}/groups.html">Groups</a></li>
-            <li {% if page.navbar == 'Projects' %}class="active"{% endif %}><a href="{{ root_url }}/projects.html">Projects</a></li>
-            <li {% if page.navbar == 'Codes' %}class="active"{% endif %}><a href="{{ root_url }}/codes.html">Codes</a></li>
-            <li {% if page.navbar == 'Blog' or page.navbar == 'Blog Archives' %}class="dropdown active"{% endif %}>
-              {% if page.navbar == 'Blog' or page.navbar == 'Blog Archives' %}
-                <a href="{{ root_url }}/news" class="dropdown-toggle" data-toggle="dropdown">News <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  {% if page.navbar == 'Blog Archives' %}
-                    <li>
-                      <a href="{{ root_url }}/news/index.html">News</a>
-                    </li>
-                  {% endif %}
-                  <li {% if page.navbar == 'Blog Archives' %}class="active"{% endif %}>
-                    <a href="{{ root_url }}/news/archives/index.html">Archives</a>
-                  </li>
-                </ul>
-              {% else %}
-                <a href="{{ root_url }}/news/index.html">News</a>
-              {% endif %}
-            </li>
+            {% include navs/events.html %}
+            {% include navs/groups.html %}
+            {% include navs/projects.html %}
+            {% include navs/codes.html %}
+            {% include navs/news.html %}
             <li {% if page.navbar == 'About' %}class="active"{% endif %}>
-              <a href="{{ root_url }}/about.html">About</a>
+              <a href="{{ root_url }}/about/index.html">About</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">

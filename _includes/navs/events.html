@@ -1,0 +1,20 @@
+{% if page.navbar == 'Events' %}
+  <li class="dropdown active">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li {% if page.subnavbar == 'Overview' %}class="active"{% endif %}>
+        <a href="{{ root_url }}/events/index.html">Overview</a>
+      </li>
+      <li {% if page.subnavbar == 'Upcomming' %}class="active"{% endif %}>
+        <a href="{{ root_url }}/events/upcomming/index.html">Upcomming</a>
+      </li>
+      <li {% if page.subnavbar == 'Past' %}class="active"{% endif %}>
+        <a href="{{ root_url }}/events/past/index.html">Past</a>
+      </li>
+    </ul>
+  </li>
+{% else %}
+  <li>
+    <a href="{{ root_url }}/events/index.html">Events</a>
+  </li>
+{% endif %}

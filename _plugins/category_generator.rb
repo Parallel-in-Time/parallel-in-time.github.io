@@ -35,7 +35,7 @@ module Jekyll
       @site = site
       @base = base
       @dir  = category_dir
-      @name = 'index.html'
+      @name = 't'
       self.process(@name)
       # Read the YAML data from the layout page.
       self.read_yaml(File.join(base, '_layouts'), 'category_index.html')

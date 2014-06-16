@@ -1,14 +1,12 @@
 ---
 layout: event
 title: "5th Workshop on Parallel-in-Time Integration"
-date: 2016-05-01 00:00:00 +0000
+date: 2014-06-16 00:00:00 +0000
 event_location: Berkeley, USA
 event_start:
 event_end:
 comments: false
-categories:
-  - Events
-  - Upcomming Event
+permalink: /events/upcomming/2016/5th-workshop-on-parallel-in-time-integration.html
 ---
 
 Details about a future workshop on parallel-in-time integration.

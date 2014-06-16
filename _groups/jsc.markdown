@@ -3,6 +3,7 @@ layout: page_group
 title: "Jülich Supercomputing Centre"
 date: 2014-06-12 16:00
 navbar: Groups
+subnavbar: jsc
 footer: true
 logo: logo_jsc.png
 short_desc: A very short description of this group.

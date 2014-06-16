@@ -1,0 +1,16 @@
+---
+layout: page
+title: Past Events
+date: 2014-06-16 13:10
+navbar: Events
+subnavbar: Past
+comments: false
+sharing: false
+footer: false
+---
+
+<ul class="list-group">
+  {% for event in site.events_past %}
+    {% include event/overview_item.html %}
+  {% endfor %}
+</ul>

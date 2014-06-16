@@ -5,9 +5,9 @@
 {% capture was_updated %}{{ updated | size }}{% endcapture %}
 
 {% if has_date != '0' %}
-{% capture time %}<i class="fa fa-calendar"></i> Created on <time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate{% if updated %} data-updated="true"{% endif %}>{{ date | date_to_rfc822 }}</time>{% endcapture %}
+{% capture time %}<i class="fa fa-calendar"></i> Created on <time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate{% if updated %} data-updated="true"{% endif %}>{{ date | date_to_string }}</time>{% endcapture %}
 {% endif %}
 
 {% if was_updated != '0' %}
-  {% capture updated %}<i class="fa fa-calendar"></i> Updated on <time datetime="{{ updated | datetime | date_to_xmlschema }}" class="updated">{{ updated | date_to_rfc822 }}</time>{% endcapture %}
+  {% capture updated %}<i class="fa fa-calendar"></i> Updated on <time datetime="{{ updated | datetime | date_to_xmlschema }}" class="updated">{{ updated | date_to_string }}</time>{% endcapture %}
 {% else %}{% assign updated = false %}{% endif %}
