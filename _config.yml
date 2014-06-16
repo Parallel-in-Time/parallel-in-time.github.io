@@ -11,14 +11,10 @@ permalink: /news/:year/:month/:day/:title/
 code_dir: downloads/code
 category_dir: news/categories
 markdown: kramdown
-permalink: date
+permalink: news/:year/:month/:day/:title.html
 
 timezone: UTC
 encoding: utf-8
-
-# Build settings
-markdown: kramdown
-permalink: pretty
 
 excerpt_separator: '<!--more-->'
 
