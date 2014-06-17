@@ -11,3 +11,10 @@
 @mixin pull-left {
   float: left !important;
 }
+
+@media (max-width: $screen-xs-max) {
+  .jumbotron {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
