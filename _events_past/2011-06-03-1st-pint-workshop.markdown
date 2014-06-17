@@ -1,5 +1,5 @@
 ---
-layout: event
+layout: page_event
 title: "1st Workshop on Parallel-in-Time Integration"
 date: 2014-06-16 00:00:00 +0000
 event_location: Lugano, Switzerland

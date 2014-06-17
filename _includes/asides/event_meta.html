@@ -1,0 +1,93 @@
+<section class="group-meta panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Event Profile</h3>
+  </div>
+  <div class="panel-body">
+    {% if page.logo %}
+      <div class="row">
+        <div class="col-md-12 logo">
+          <img src="{{ root_url }}/images/{{ page.logo }}" alt="{{ page.title }} Logo" />
+        </div>
+      </div>
+    {% endif %}
+    {% if page.event_url %}
+      <div class="row">
+        <label class="col-md-4 control-label">Homepage</label>
+        <div class="col-md-8">
+          <a href="{{ page.event_url }}">{{ page.event_url | trim_url }}</a>
+        </div>
+      </div>
+    {% endif %}
+    {% if page.event_start and page.event_start == page.event_end %}
+      <div class="row">
+        <label class="col-md-4 control-label">Date</label>
+        <div class="col-md-8">
+          {{ page.event_start | date_to_string }}
+        </div>
+      </div>
+    {% else %}
+      <div class="row">
+        <label class="col-md-4 control-label">Start Date</label>
+        <div class="col-md-8">
+          {% if page.event_start %}{{ page.event_start | date_to_string }}{% else %}tba{% endif %}
+        </div>
+      </div>
+      <div class="row">
+        <label class="col-md-4 control-label">End Date</label>
+        <div class="col-md-8">
+          {% if page.event_end %}{{ page.event_end | date_to_string }}{% else %}tba{% endif %}
+        </div>
+      </div>
+    {% endif %}
+    <div class="row">
+      <label class="col-md-4 control-label">Location</label>
+      <div class="col-md-8">
+        {% if page.event_location %}{{ page.event_location }}{% else %}tba{% endif %}
+      </div>
+    </div>
+    {% if page.organizers %}
+      <div class="row">
+        <label class="col-md-4 control-label">Organizers</label>
+        <div class="col-md-8">
+          {% for organizer in page.organizers %}
+            <span class="clearfix">
+              {{ organizer.name }}
+              {% if organizer.email or organizer.homepage %}
+                <span class="pull-right">
+                  {% if organizer.email %}
+                    <a href="mailto:{{ organizer.email }}" title="email: {{ organizer.email }}"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  {% endif %}
+                  {% if organizer.homepage %}
+                    <a href="{{ organizer.homepage }}"><i class="fa fa-home fa-fw"></i></a>
+                  {% endif %}
+                </span>
+              {% endif %}
+            </span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+    {% if page.invited %}
+    <div class="row">
+      <label class="col-md-4 control-label">Invited</label>
+      <div class="col-md-8">
+        {% for invited in page.invited %}
+            <span class="clearfix">
+              {{ invited.name }}
+              {% if invited.email or invited.homepage %}
+                <span class="pull-right">
+                  {% if invited.email %}
+                    <a href="mailto:{{ invited.email }}" title="email: {{ invited.email }}"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  {% endif %}
+                  {% if invited.homepage %}
+                    <a href="{{ invited.homepage }}"><i class="fa fa-home fa-fw"></i></a>
+                  {% endif %}
+                </span>
+              {% endif %}
+            </span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
