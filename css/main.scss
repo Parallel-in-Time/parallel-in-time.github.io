@@ -107,5 +107,12 @@ html {
         margin-left: 1em !important;
       }
     }
+    
+    footer#site-footer {
+      .seperator {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+    }
   }
 }
