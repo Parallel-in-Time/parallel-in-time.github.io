@@ -12,12 +12,13 @@ html {
 
   body {
     margin-top: $navbar-height;
-    margin-bottom: $navbar-height;
+    margin-bottom: ($navbar-height + ($navbar-height / 3));
     
     .jumbotron {
       margin-top: -20px !important;
       padding-top: 0;
       padding-bottom: 0;
+      
       .container {
         @media (min-width: $screen-sm-max) {
           background-image: url('/images/logo_pint.png');
@@ -81,24 +82,16 @@ html {
       }
     }
     .post.post-code, .post.post-group, .post.post-project {
-      .post-header {
-        @media (max-width: $screen-sm-max) {
-          h1 {
-            @include clearfix;
-            img.groups-logo, img.projects-logo {
-              @include img-responsive;
-            }
+      section.group-meta {
+        .logo {
+          img {
+            @include img-responsive;
+            width: 100%;
           }
         }
-        @media (min-width: $screen-md-min) {
-          h1 {
-            @include clearfix;
-            img.groups-logo, img.projects-logo {
-              @include img-responsive;
-              @include pull-right;
-              width: $page-logo-width;
-            }
-          }
+        address {
+          font-size: $font-size-small;
+          margin-bottom: 0;
         }
       }
       .github-widget {

@@ -1,13 +1,15 @@
 <section class="gh-repos panel panel-default">
   <div class="panel-heading">
-      <h3 class="panel-title">GitHub Repos</h3>
+    <h3 class="panel-title"><i class="fa fa-github fa-fw"></i>GitHub Repos</h3>
   </div>
   <div class="list-group" id="gh_repos">
     <p class="loading">Status updating...</p>
   </div>
   {% if site.data.github.show_profile_link %}
-    <div class="gh-profile-link pull-right text-muted">
-      <a href="https://github.com/{{site.data.github.username}}">@{{include.username}}</a> on GitHub
+    <div class="panel-body gh-profile-link text-muted">
+      <div class="pull-right">
+        <a href="https://github.com/{{site.data.github.username}}">@{{include.username}}</a> on <i class="fa fa-github fa-fw"></i>GitHub
+      </div>
     </div>
   {% endif %}
   <script type="text/javascript">
@@ -28,5 +30,5 @@
         });
     });
   </script>
-  <script src="{{ root_url }}/js/github.js" type="text/javascript"> </script>
+  <script src="{{ root_url }}/js/github.js" type="text/javascript"></script>
 </section>

@@ -5,6 +5,7 @@ date: 2014-06-15 16:24 +0200
 navbar: Projects
 footer: true
 logo: logo_sppexa.png
+project_url: http://www.sppexa.de
 short_desc: German Priority Programme 1648 Software for Exascale Computing
 ---
 
@@ -50,5 +51,3 @@ Against this background, SPPEXA provides an ideal framework for bundling
 research activities nation-wide and enabling the participating groups to 
 significantly advance the state of the art in HPC software technology at an 
 international scale.
-
-Homepage: [www.sppexa.de](http://www.sppexa.de/)
