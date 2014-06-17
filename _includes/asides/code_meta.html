@@ -1,0 +1,64 @@
+<section class="group-meta panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Code Profile</h3>
+  </div>
+  <div class="panel-body">
+    {% if page.logo %}
+      <div class="row">
+        <div class="col-md-12 logo">
+          <img src="{{ root_url }}/images/{{ page.logo }}" alt="{{ page.title }} Logo" />
+        </div>
+      </div>
+    {% endif %}
+    {% if page.code_url %}
+      <div class="row">
+        <label class="col-md-4 control-label">Homepage</label>
+        <div class="col-md-8">
+          <a href="{{ page.code_url }}">{{ page.code_url | trim_url }}</a>
+        </div>
+      </div>
+    {% endif %}
+    {% if page.language %}
+      <div class="row">
+        <label class="col-md-4 control-label">Language</label>
+        <div class="col-md-8">
+          {{ page.language }}
+        </div>
+      </div>
+    {% endif %}
+    {% if page.license %}
+      <div class="row">
+        <label class="col-md-4 control-label">License</label>
+        <div class="col-md-8">
+          {{ page.license }}
+        </div>
+      </div>
+    {% endif %}
+    {% if page.developers %}
+      <div class="row">
+        <label class="col-md-4 control-label">Developers</label>
+        <div class="col-md-8">
+          {% for developer in page.developers %}
+            <span class="clearfix">
+              {{ developer.name }}
+              {% if developer.email or developer.lead_developer %}
+                <span class="pull-right">
+                  {% if developer.lead_developer %}
+                    <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
+                  {% endif %}
+                  {% if developer.email %}
+                    <a href="mailto:{{ developer.email }}" title="email: {{ developer.email }}"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  {% endif %}
+                </span>
+              {% endif %}
+            </span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% if page.github_repo %}
+<section class="github-widget" data-repo="{{ page.github_repo }}"></section>
+{% endif %}

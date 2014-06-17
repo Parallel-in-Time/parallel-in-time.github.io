@@ -94,10 +94,10 @@ html {
           margin-bottom: 0;
         }
       }
-      .github-widget {
-        width: 45% !important;
-        float: right !important;
-        margin-left: 1em !important;
+      section.github-widget {
+        > .gothub-box-download {
+          min-height: none !important;
+        }
       }
     }
     
