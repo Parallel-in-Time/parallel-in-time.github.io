@@ -60,6 +60,12 @@
 
             
   <li>
+    <a href="/methods/index.html">Methods</a>
+  </li>
+
+
+            
+  <li>
     <a href="/codes/index.html">Codes</a>
   </li>
 
@@ -73,15 +79,6 @@
             <li >
               <a href="/about/index.html">About</a>
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a class="subscribe-rss" href="" title="subscribe via RSS">
-                <span class="visible-xs">RSS</span>
-                <i class="hidden-xs fa fa-rss"></i>
-              </a>
-            </li>
-            
           </ul>
           
         </div>
@@ -137,19 +134,32 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 </div>
       </div>
     </main>
-    <footer>
+    <footer id="site-footer">
   <div class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
-      <p class="navbar-text">
-        <span class="hidden-xs">Copyright </span>&copy; 2014 - Parallel-in-Time Enthusiasts
-        <small class="hidden-xs hidden-sm">
-          <span class="credit">&mdash; Powered by <a href="http://octopress.org">Octopress</a></span>
-        </small>
-      </p>
-      <p class="navbar-text navbar-right hidden-xs">
-        <i class="fa fa-github"></i>
-        <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">Sources on GitHub</a>
-      </p>
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+          <p class="navbar-text">
+            <a class="navbar-link" href="/about/imprint.html">
+              <span class="glyphicon glyphicon-copyright-mark fa-fw"></span><span class="hidden-xs">Imprint</span></a>
+            <!--<span class="seperator hidden-xs"></span>-->
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+          <p class="navbar-text small">
+            <span class="credit"><a class="navbar-link" href="http://octopress.org">Powered by Octopress</a></span>
+          </p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+          <p class="navbar-text pull-right">
+            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">
+              <i class="fa fa-github fa-fw"></i><span class="hidden-xs">Sources</span></a>
+            <span class="seperator"></span>
+            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues">
+              <i class="fa fa-bug fa-fw"></i><span class="hidden-xs">Found a typo?</span></a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </footer>

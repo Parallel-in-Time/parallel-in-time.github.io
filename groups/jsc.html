@@ -86,6 +86,12 @@
 
             
   <li>
+    <a href="/methods/index.html">Methods</a>
+  </li>
+
+
+            
+  <li>
     <a href="/codes/index.html">Codes</a>
   </li>
 
@@ -100,15 +106,6 @@
               <a href="/about/index.html">About</a>
             </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a class="subscribe-rss" href="" title="subscribe via RSS">
-                <span class="visible-xs">RSS</span>
-                <i class="hidden-xs fa fa-rss"></i>
-              </a>
-            </li>
-            
-          </ul>
           
         </div>
       </div>
@@ -122,20 +119,111 @@
   <header class="post-header">
     <h1>
       Jülich Supercomputing Centre
-      <img src="/images/logo_jsc.png" class="groups-logo" alt="Jülich Supercomputing Centre Logo">
     </h1>
+    
   </header>
   <article class="post-content">
-    <section class="gh-repos panel panel-default">
+    <div class="row">
+      <div class="col-md-8">
+        <p>The research group at the <em>Jülich Supercomputing Centre</em> is lead by Dr. Robert Speck mentoring
+his two PhD students Dieter Moser and Torbjörn Klatt as well as currently two
+master students.</p>
+
+<p>They concentrate on multi-level methods such as MLSDC, PFASST and Multigrid.</p>
+
+<p>Their flagship is <a href="/codes/pypint.html">PyPinT</a>.</p>
+
+      </div>
+      <aside class="col-md-4">
+        <section class="group-meta panel panel-default">
   <div class="panel-heading">
-      <h3 class="panel-title">GitHub Repos</h3>
+    <h3 class="panel-title">Group Profile</h3>
+  </div>
+  <div class="panel-body">
+    
+      <div class="row">
+        <div class="col-md-12 logo">
+          <img src="/images/logo_jsc.png" alt="Jülich Supercomputing Centre Logo" />
+        </div>
+      </div>
+    
+    
+      <div class="row">
+        <label class="col-md-4 control-label">Homepage</label>
+        <div class="col-md-8">
+          <a href="http://www.fz-juelich.de/ias/jsc/pint">www.fz-juelich.de/ias/jsc/pint</a>
+        </div>
+      </div>
+    
+    
+      <div class="row">
+        <label class="col-md-4 control-label">Address</label>
+        <div class="col-md-8">
+          <address>Juelich Supercomputing Centre<br />Institute for Advanced Simulation<br />Forschungszentrum Juelich GmbH<br />52425 Juelich, Germany</address>
+        </div>
+      </div>
+    
+    
+      <div class="row">
+        <label class="col-md-4 control-label">Members</label>
+        <div class="col-md-8">
+          
+            <span class="clearfix">
+              Dr. Robert Speck
+              
+                <span class="pull-right">
+                  
+                    <a href="#" title="Group Head"><i class="fa fa-graduation-cap fa-fw"></i></a>
+                  
+                  
+                    <a href="mailto:r.speck@fz-juelich.de" title="email: r.speck@fz-juelich.de"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  
+                </span>
+              
+            </span>
+          
+            <span class="clearfix">
+              Dieter Moser
+              
+                <span class="pull-right">
+                  
+                  
+                    <a href="mailto:d.moser@fz-juelich.de" title="email: d.moser@fz-juelich.de"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  
+                </span>
+              
+            </span>
+          
+            <span class="clearfix">
+              Torbjörn Klatt
+              
+                <span class="pull-right">
+                  
+                  
+                    <a href="mailto:t.klatt@fz-juelich.de" title="email: t.klatt@fz-juelich.de"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  
+                </span>
+              
+            </span>
+          
+        </div>
+      </div>
+    
+  </div>
+</section>
+        
+          <section class="gh-repos panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="fa fa-github fa-fw"></i>GitHub Repos</h3>
   </div>
   <div class="list-group" id="gh_repos">
     <p class="loading">Status updating...</p>
   </div>
   
-    <div class="gh-profile-link pull-right text-muted">
-      <a href="https://github.com/">@Parallel-in-Time</a> on GitHub
+    <div class="panel-body gh-profile-link text-muted">
+      <div class="pull-right">
+        <a href="https://github.com/">@Parallel-in-Time</a> on <i class="fa fa-github fa-fw"></i>GitHub
+      </div>
     </div>
   
   <script type="text/javascript">
@@ -156,17 +244,12 @@
         });
     });
   </script>
-  <script src="/js/github.js" type="text/javascript"> </script>
+  <script src="/js/github.js" type="text/javascript"></script>
 </section>
 
-<p>The research group at the <em>Jülich Supercomputing Centre</em> is lead by Dr. Robert Speck mentoring
-his two PhD students Dieter Moser and Torbjörn Klatt as well as currently two
-master students.</p>
-
-<p>They concentrate on multi-level methods such as MLSDC, PFASST and Multigrid.</p>
-
-<p>Their flagship is <a href="/codes/pypint.html">PyPinT</a>.</p>
-
+        
+      </aside>
+    </div>
   </article>
   
     <footer>
@@ -187,19 +270,32 @@ master students.</p>
 </div>
       </div>
     </main>
-    <footer>
+    <footer id="site-footer">
   <div class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
-      <p class="navbar-text">
-        <span class="hidden-xs">Copyright </span>&copy; 2014 - Parallel-in-Time Enthusiasts
-        <small class="hidden-xs hidden-sm">
-          <span class="credit">&mdash; Powered by <a href="http://octopress.org">Octopress</a></span>
-        </small>
-      </p>
-      <p class="navbar-text navbar-right hidden-xs">
-        <i class="fa fa-github"></i>
-        <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">Sources on GitHub</a>
-      </p>
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+          <p class="navbar-text">
+            <a class="navbar-link" href="/about/imprint.html">
+              <span class="glyphicon glyphicon-copyright-mark fa-fw"></span><span class="hidden-xs">Imprint</span></a>
+            <!--<span class="seperator hidden-xs"></span>-->
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+          <p class="navbar-text small">
+            <span class="credit"><a class="navbar-link" href="http://octopress.org">Powered by Octopress</a></span>
+          </p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+          <p class="navbar-text pull-right">
+            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">
+              <i class="fa fa-github fa-fw"></i><span class="hidden-xs">Sources</span></a>
+            <span class="seperator"></span>
+            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues">
+              <i class="fa fa-bug fa-fw"></i><span class="hidden-xs">Found a typo?</span></a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
