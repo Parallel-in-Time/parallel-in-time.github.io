@@ -4,7 +4,7 @@
   <title><![CDATA[Research Groups | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/research-groups/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2014-06-17T11:56:17+00:00</updated>
+  <updated>2014-06-17T11:57:12+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -31,12 +31,12 @@ enabled.</p>
 
 <p>In addition you can embed any <a href="">GitHub</a> repository via</p>
 
-<pre><code>{% raw %}{% githubrepo username/reponame %}{% endraw %}
+<pre><code>{% githubrepo username/reponame %}
 </code></pre>
 
 <p>Example:</p>
 
-<p>{% githubrepo Parallel-in-Time/parallel-in-time.github.io %}</p>
+<p><div class="github-widget" data-repo="Parallel-in-Time/parallel-in-time.github.io"></div></p>
 ]]></content>
   </entry>
   
