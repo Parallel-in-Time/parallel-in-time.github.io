@@ -1,0 +1,31 @@
+---
+layout: page
+title: Methods
+date: 2014-06-16 00:00:00 +0000
+navbar: Methods
+subnavbar: Overview
+footer: false
+---
+
+<div class="row">
+{% for method in site.methods | order: 'title' %}
+  {% cycle '', '', '', '</div><div class="row">' %}
+  {% capture page %}{{ method }}{% endcapture %}
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <a href="{{ method.url }}">
+            {{ method.title }}
+          </a>
+        </h2>
+      </div>
+      <div class="panel-body">
+        {% if method.short_desc %}{{ method.short_desc }}{% endif %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+{% include contribute_footer.html content='method' %}

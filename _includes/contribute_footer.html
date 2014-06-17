@@ -1,0 +1,11 @@
+{% if include.content %}
+  {% assign content = include.content %}
+{% else %}
+  {% assign content = 'content' %}
+{% endif %}
+
+<footer id="contribute-footer">
+  <p>
+    Want your {{ content }} to show up here? <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/wiki">You can do it yourself</a>!
+  </p>
+</footer>

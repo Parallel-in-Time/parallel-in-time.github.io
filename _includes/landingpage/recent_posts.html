@@ -1,5 +1,11 @@
 <section>
-  <h3>Recent News</h3>
+  <a type="button" class="btn btn-default btn-sm pull-right" href="{{ site.subscribe_rss }}" role="button" title="subscribe via RSS">
+    <i class="fa fa-rss"></i>
+    <span class="hidden-xs">RSS</span>
+  </a>
+  <h3>
+    Recent News
+  </h3>
   {{ site.post }}
   <ul class="list-group">
     {% for post in site.posts limit: site.recent_posts %}

@@ -15,9 +15,9 @@
     <h1 class="entry-title">
         {% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
         {% if page.subtitle %}
-            <small>
-                {% if site.titlecase %}{{ page.subtitle | titlecase }}{% else %}{{ page.subtitle }}{% endif %}
-            </small>
+          <small>
+            {% if site.titlecase %}{{ page.subtitle | titlecase }}{% else %}{{ page.subtitle }}{% endif %}
+          </small>
         {% endif %}
     </h1>
     {% endif %}

@@ -7,6 +7,9 @@ layout: default
       {{ page.title }}
       {% if page.logo %}<img src="{{ root_url }}/images/{{ page.logo }}" class="groups-logo" alt="{{ page.title }} Logo">{% endif %}
     </h1>
+    {% if page.subtitle %}
+    <h2>{{ page.subtitle }}</h2>
+    {% endif %}
   </header>
   <article class="post-content">
     {{ content }}

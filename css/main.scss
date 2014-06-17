@@ -35,6 +35,12 @@ html {
         margin-bottom: 3em;
       }
     }
+
+    .event-meta {
+      .label {
+        margin: 0.25em;
+      }
+    }
     
     .post {
       article {
@@ -49,12 +55,29 @@ html {
           margin-right: 1em;
         }
       }
-      footer {
+      article.on-index {
+        padding-bottom: 1em;
+        border-bottom: 1px solid $page-header-border-color;
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+        
+        header {
+          border-bottom: none !important;  // overriding bootstrap
+          padding-bottom: 0 !important;  // overriding bootstrap
+          margin: 0 !important;  // overriding bootstrap
+
+          h1.entry-title {
+            margin-top: 0;
+          }
+        }
+      }
+      footer#contribute-footer {
         @include clearfix;
         margin-top: 1em;
         padding: 1em;
-        background-color: $footer-bg;
-        font-size: $font-size-small;
+        p {
+          font-size: $font-size-small;
+        }
       }
     }
     .post.post-code, .post.post-group, .post.post-project {
@@ -84,6 +107,5 @@ html {
         margin-left: 1em !important;
       }
     }
-
   }
 }

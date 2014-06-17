@@ -5,7 +5,8 @@ date: 2014-06-16 00:00:00 +0000
 event_location: Berkeley, USA
 event_start:
 event_end:
-comments: false
+navbar: Events
+subnavbar: Upcomming
 permalink: /events/upcomming/2016/5th-workshop-on-parallel-in-time-integration.html
 ---
 

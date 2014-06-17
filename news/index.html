@@ -8,7 +8,7 @@ footer: false
 <div class="blog-index">
   {% assign index = true %}
   {% for post in site.posts %}
-    <article class="post">
+    <article class="post on-index {% if forloop.last %}last{% endif %}">
       {% include article.html %}
     </article>
   {% endfor %}

@@ -16,27 +16,12 @@
             {% include navs/events.html %}
             {% include navs/groups.html %}
             {% include navs/projects.html %}
+            {% include navs/methods.html %}
             {% include navs/codes.html %}
             {% include navs/news.html %}
             <li {% if page.navbar == 'About' %}class="active"{% endif %}>
               <a href="{{ root_url }}/about/index.html">About</a>
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a class="subscribe-rss" href="{{ site.subscribe_rss }}" title="subscribe via RSS">
-                <span class="visible-xs">RSS</span>
-                <i class="hidden-xs fa fa-rss"></i>
-              </a>
-            </li>
-            {% if site.subscribe_email %}
-            <li>
-              <a class="subscribe-email" href="{{ site.subscribe_email }}" title="subscribe via email">
-                <span class="visible-xs">Email</span>
-                <i class="hidden-xs fa fa-envelope"></i>
-              </a>
-            </li>
-            {% endif %}
           </ul>
           {% if site.simple_search %}
             <form class="search navbar-form navbar-right" action="{{ site.simple_search }}" method="GET">

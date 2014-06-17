@@ -5,6 +5,7 @@ author: "Parallel-in-Time Enthusiasts"
 description: ""
 baseurl: ""
 url: "http://parallelintime.org"
+subscribe_rss: 'feed.xml'
 
 root: /
 permalink: /news/:year/:month/:day/:title/
@@ -22,10 +23,6 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-citation:
-  citation_style: _plugins/ieee-with-url.csl
-  citation_locale: en
-
 category_title_prefix: ""
 
 collections:
@@ -36,6 +33,8 @@ collections:
   groups:
     output: true
   projects:
+    output: true
+  methods:
     output: true
   codes:
     output: true
