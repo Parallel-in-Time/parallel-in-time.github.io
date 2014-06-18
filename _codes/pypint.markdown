@@ -77,3 +77,8 @@ implementations in other programming languages.
 [PFASST]: /methods/pfasst.html
 [numPy]: http://www.numpy.org/
 [sciPy]: http://scipy.org/scipylib/index.html
+
+{% include references/begin.html %}
+{% include references/emmett2012_pfasst.html %}
+{% include references/speck2013_mlsdc.html %}
+{% include references/end.html %}

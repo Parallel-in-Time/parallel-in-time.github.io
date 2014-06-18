@@ -1,0 +1,75 @@
+@mixin after-dot {
+  &:not(:last-child) {
+    &:after {
+      font-style: normal;
+      font-weight: normal;
+      content: '.';
+      padding-right: 0.25em;
+    }
+  }
+}
+
+aside.references {
+  margin-top: 1em;
+  
+  div.reference {
+    @extend .list-group-item;
+    font-size: $font-size-small;
+    
+    > .authors {
+      > .author {
+        &:not(:last-child) {
+          &:after {
+            content: ', ';
+          }
+        }
+        &:last-child {
+          &:before {
+            content: ' and ';
+          }
+        }
+      }
+      @include after-dot;
+    }
+    > .title {
+      font-weight: bold;
+      @include after-dot;
+    }
+    > .journal {
+      font-style: italic;
+      @include after-dot;
+    }
+    > .volume {
+      &:before {
+        content: 'vol. ';
+      }
+      @include after-dot;
+    }
+    > .pages {
+      &:before {
+        content: 'pp. ';
+      }
+      @include after-dot;
+    }
+    > .year {
+      @include after-dot;
+    }
+    > .doi {
+      &:before {
+        content: 'DOI: ';
+      }
+      @include after-dot;
+    }
+    > .arxivid {
+      &:before {
+        content: 'ArxivId: ';
+      }
+      @include after-dot;
+    }
+    > a.mendeley {
+      @extend .btn;
+      @extend .btn-default;
+      @extend .btn-xs;
+    }
+  }
+}
