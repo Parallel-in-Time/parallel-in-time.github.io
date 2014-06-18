@@ -1,0 +1,12 @@
+---
+layout: page_event
+title: 
+date: 
+update:
+event_location: 
+event_start:
+event_end:
+navbar: Events
+subnavbar: Upcomming
+permalink: /events/upcomming/
+---

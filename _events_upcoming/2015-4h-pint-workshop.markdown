@@ -6,8 +6,8 @@ event_location: Dresden, Germany
 event_start:
 event_end:
 navbar: Events
-subnavbar: Upcomming
-permalink: /events/upcomming/2015/4th-workshop-on-parallel-in-time-integration.html
+subnavbar: Upcoming
+permalink: /events/upcoming/2015/4th-workshop-on-parallel-in-time-integration.html
 ---
 
 Details about the next workshop on parallel-in-time integration.

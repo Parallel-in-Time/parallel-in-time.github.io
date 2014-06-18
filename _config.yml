@@ -26,7 +26,7 @@ sass:
 category_title_prefix: ""
 
 collections:
-  events_upcomming:
+  events_upcoming:
     output: true
   events_past:
     output: true

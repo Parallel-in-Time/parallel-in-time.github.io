@@ -6,8 +6,8 @@ event_location: Berkeley, USA
 event_start:
 event_end:
 navbar: Events
-subnavbar: Upcomming
-permalink: /events/upcomming/2016/5th-workshop-on-parallel-in-time-integration.html
+subnavbar: Upcoming
+permalink: /events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html
 ---
 
 Details about a future workshop on parallel-in-time integration.
