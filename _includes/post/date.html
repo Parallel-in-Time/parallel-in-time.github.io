@@ -1,13 +1,33 @@
-{% capture date %}{{ page.date }}{{ post.date }}{% endcapture %}
-{% capture has_date %}{{ date | size }}{% endcapture %}
-
-{% capture updated %}{{ page.updated }}{{ post.updated }}{% endcapture %}
-{% capture was_updated %}{{ updated | size }}{% endcapture %}
-
-{% if has_date != '0' %}
-{% capture time %}<i class="fa fa-calendar"></i> Created on <time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate{% if updated %} data-updated="true"{% endif %}>{{ date | date_to_string }}</time>{% endcapture %}
+{% if page.date %}
+  {% assign date = page.date | datetime %}
+  {% assign has_date = true %}
+{% else %}
+  {% if post.date %}
+    {% assign date = post.date | datetime %}
+    {% assign has_date = true %}
+  {% else %}
+    {% assign has_date = false %}
+  {% endif %}
 {% endif %}
 
-{% if was_updated != '0' %}
-  {% capture updated %}<i class="fa fa-calendar"></i> Updated on <time datetime="{{ updated | datetime | date_to_xmlschema }}" class="updated">{{ updated | date_to_string }}</time>{% endcapture %}
-{% else %}{% assign updated = false %}{% endif %}
+{% if page.updated %}
+  {% assign updated = page.updated | datetime %}
+  {% assign was_updated = true %}
+{% else %}
+  {% if post.updated %}
+    {% assign updated = post.updated | datetime %}
+    {% assign was_updated = true %}
+  {% else %}
+    {% assign was_updated = false %}
+  {% endif %}
+{% endif %}
+
+{% if has_date and was_updated == false %}
+  <i class="fa fa-calendar"></i> Created on <time datetime="{{ date | datetime | date_to_xmlschema }}">{{ date | datetime | date_to_string }}</time>
+{% endif %}
+
+{% if was_updated %}
+  <i class="fa fa-calendar"></i> Updated on <time datetime="{{ updated | datetime | date_to_xmlschema }}" data-updated="true">{{ updated | datetime | date_to_string }}</time>
+{% else %}
+  {% assign updated = false %}
+{% endif %}
