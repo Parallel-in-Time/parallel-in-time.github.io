@@ -72,7 +72,7 @@ html {
           }
         }
       }
-      footer#contribute-footer {
+      footer, footer#contribute-footer {
         @include clearfix;
         margin-top: 1em;
         padding: 1em;
