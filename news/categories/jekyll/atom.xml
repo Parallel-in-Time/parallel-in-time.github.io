@@ -4,7 +4,7 @@
   <title><![CDATA[Jekyll | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2014-06-18T13:39:41+00:00</updated>
+  <updated>2014-07-25T20:07:11+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -23,7 +23,7 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 
 <p>Jekyll also offers powerful support for code snippets:</p>
 
-<p><div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+<p><div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="err">“</span><span class="no">Hi</span><span class="p">,</span> <span class="c1">#{name}”</span>
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="err">‘</span><span class="no">Tom</span><span class="err">’</span><span class="p">)</span>
