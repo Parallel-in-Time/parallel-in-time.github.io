@@ -15,6 +15,7 @@ organizers:
     homepage: http://icsweb.inf.unisi.ch/cms/index.php/people/23-rolf-krause.html
   - name: Daniel Ruprecht
     homepage: http://icsweb.inf.unisi.ch/cms/index.php/people/29-daniel-ruprecht.html
+    email: daniel.ruprecht@usi.ch
   - name: Robert Speck
     homepage: http://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/speck_r.html
     email: r.speckt@fz-juelich.de
