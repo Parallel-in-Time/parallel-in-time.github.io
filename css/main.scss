@@ -82,8 +82,8 @@ html {
         }
       }
     }
-    .post.post-code, .post.post-group, .post.post-project {
-      section.group-meta {
+    .post.post-code, .post.post-group, .post.post-project, .post.post-event {
+      section.group-meta, section.event-meta {
         .logo {
           img {
             @include img-responsive;
