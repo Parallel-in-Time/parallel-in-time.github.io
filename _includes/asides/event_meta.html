@@ -14,7 +14,7 @@
       <div class="row">
         <label class="col-md-4 control-label">Homepage</label>
         <div class="col-md-8">
-          <a href="{{ page.event_url }}">{{ page.event_url | trim_url }}</a>
+          <a href="{{ page.event_url }}">{% if page.event_short_url %}{{ page.event_short_url }}{% else %}{{ page.event_url | trim_url }}{% endif %}</a>
         </div>
       </div>
     {% endif %}
