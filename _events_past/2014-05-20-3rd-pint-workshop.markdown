@@ -29,6 +29,7 @@ invited:
   - name: Cornelius Oosterlee
     homepage: http://ta.twi.tudelft.nl/mf/users/oosterle/
 permalink: /events/past/2014/3rd-workshop-on-parallel-in-time-integration.html
+logo: logo_jsc.png
 ---
 
 Details about the past workshop on parallel-in-time integration.
