@@ -1,6 +1,6 @@
 ---
 layout: page_event
-title: "4rd Workshop on Parallel-in-Time Integration"
+title: "4th Workshop on Parallel-in-Time Integration"
 date: 2014-06-16 00:00:00 +0000
 event_location: Dresden, Germany
 event_url: http://www.math.tu-dresden.de/~naumann/pint2015/
@@ -23,8 +23,13 @@ organizers:
       email: daniel.ruprecht@usi.ch
 invited:
     - name: Martin Gander
-    - name: Hillary Weller
-    - name: tba
+      homepage: http://www.unige.ch/~gander/
+    - name: Hilary Weller
+      homepage: http://www.met.reading.ac.uk/~sws02hs/
+    - name: Michael Minion
+      homepage: https://profiles.stanford.edu/michael-minion
+    - name: Martin Arnold
+      homepage: http://sim.mathematik.uni-halle.de/~arnold/
     - name: tba
 ---
 
