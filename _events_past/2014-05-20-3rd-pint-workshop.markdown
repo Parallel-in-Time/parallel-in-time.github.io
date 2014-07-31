@@ -5,6 +5,7 @@ date: 2014-06-16 00:00:00 +0000
 navbar: Events
 subnavbar: Past
 event_url: http://www.fz-juelich.de/ias/jsc/pintws2014
+event_short_url: fz-juelich.de
 event_location: Jülich, Germany
 event_start: 2014-05-26 00:00
 event_end: 2014-05-28 00:00
