@@ -53,7 +53,8 @@ html {
         }
 
         img.groups-logo, img.projects-logo {
-          width: 33%;
+          max-width: 75%;
+          max-height: 4em;
           margin-right: 1em;
         }
       }
