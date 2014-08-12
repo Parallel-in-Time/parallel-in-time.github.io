@@ -30,7 +30,10 @@ invited:
       homepage: https://profiles.stanford.edu/michael-minion
     - name: Martin Arnold
       homepage: http://sim.mathematik.uni-halle.de/~arnold/
-    - name: tba
+    - name: Beth Wingate
+      homepage: http://emps.exeter.ac.uk/mathematics/staff/bw290
 ---
 
-Details about the next workshop on parallel-in-time integration.
+The next workshop on parallel-in-time integration, taking place in 2015 at TU Dresden.
+
+Please consult the [workshop homepage](http://www.math.tu-dresden.de/~naumann/pint2015/index.php?page=programme) for further information.

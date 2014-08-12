@@ -16,6 +16,14 @@ developers:
     lead_developer: true
   - name: Torbjörn Klatt
     email: t.klatt@fz-juelich.de
-short_desc:
+  - name: Robert Speck
+    email: r.speck@fz-juelich.de
+  - name: Daniel Ruprecht
+    email: daniel.ruprecht@usi.ch
+
+short_desc: A C++ library for SDC, MLSDC and PFASST.
 ---
 
+A modern C++ library for the PFASST algorithm. 
+
+The PFASST project is a C++ implementation of the parallel full approximation scheme in space and time (PFASST) algorithm, which in turn is a time-parallel algorithm for solving ODEs and PDEs. It also contains basic implementations of the spectral deferred correction (SDC) and multi-level spectral deferred correction (MLSDC) algorithms.

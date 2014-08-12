@@ -7,4 +7,6 @@ sharing: false
 footer: true
 ---
 
-A text about Parallel-in-Time Methods.
+The new and exciting website about parallel-in-time methods. Learn everything there is about methods and codes and who is working on what.
+
+Also stay informed about the [''Parallel-in-time Integration Methods'' workshop series.](../events/index.html)
