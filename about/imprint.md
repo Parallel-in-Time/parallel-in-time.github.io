@@ -7,4 +7,5 @@ sharing: false
 footer: true
 ---
 
-The imprint.
+Hosted by Daniel Ruprecht.
+Design and implementation by Torbjörn Klatt.
