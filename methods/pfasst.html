@@ -67,6 +67,10 @@
         <a href="/methods/index.html">Overview</a>
       </li>
       
+        <li >
+          <a href="/methods/parareal.html">Parareal</a>
+        </li>
+      
         <li class="active">
           <a href="/methods/pfasst.html">PFASST</a>
         </li>
@@ -108,7 +112,10 @@
     
   </header>
   <article class="post-content">
-  
+  <p>PFASST has been proposed by <a href="http://dx.doi.org/10.2140/camcos.2012.7.105">Matt Emmett and Michael Minion in 2012.</a>
+It is based on spectral deferred corrections <a href="http://dx.doi.org/10.1023/A:1022338906936">(SDC)</a> and contains multi-level spectral deferred corrections <a href="http://arxiv.org/abs/1307.1312">(MLSDC)</a> as special case when running on a single processor in time. PFASST’s performance has been studied in massively parallel simulation using tens and hundreds of thousands of cores <a href="http://conferences.computer.org/sc/2012/papers/1000a083.pdf">[1]</a>, <a href="http://sc13.supercomputing.org/sites/default/files/PostersArchive/tech_posters/post148s2-file3.pdf">[2]</a>.</p>
+
+<p>A C++ library implementing SDC, MLSDC and PFASST is <a href="https://github.com/Parallel-in-Time">available</a> under a BSD license.</p>
 
   </article>
   
