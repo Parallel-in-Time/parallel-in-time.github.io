@@ -14,7 +14,19 @@
       <div class="row">
         <label class="col-md-4 control-label">Homepage</label>
         <div class="col-md-8">
-          <a href="{{ page.code_url }}">{{ page.code_url | trim_url }}</a>
+          {% assign print_url = page.code_url %}
+          {% assign on_github = false %}
+          {% if page.code_url contains 'github' %}
+            {% capture print_url %}{{ page.code_url | remove: 'github.com' }}{% endcapture %}
+            {% assign on_github = true %}
+          {% endif %}
+          <a href="{{ page.code_url }}">
+            {% if on_github %}
+              <i class="fa fa-github fa-fw"></i>{{ print_url | trim_url }}
+            {% else %}
+              {{ print_url | trim_url }}
+            {% endif %}
+          </a>
         </div>
       </div>
     {% endif %}
@@ -31,6 +43,29 @@
         <label class="col-md-4 control-label">License</label>
         <div class="col-md-8">
           {{ page.license }}
+        </div>
+      </div>
+    {% endif %}
+    {% if page.releases %}
+      <div class="row">
+        <label class="col-md-4 control-label">Releases</label>
+        <div class="col-md-8">
+          {% for release in page.releases %}
+            <span class="clearfix">
+              {{ release.version }}
+              {% if release.date %}
+                <small>&ensp;(<time datetime="{{ release.date }}">{{ release.date }}</time>)</small>
+              {% endif %}
+              <span class="pull-right">
+                {% if release.link %}
+                  <a href="{{ release.link }}" title="Release Page"><i class="fa fa-link fa-fw"></i></a>
+                {% endif %}
+                {% if release.download %}
+                  <a href="{{ release.download }}" title="Download Sources as zip"><i class="fa fa-download fa-fw"></i></a>
+                {% endif %}
+              </span>
+            </span>
+          {% endfor %}
         </div>
       </div>
     {% endif %}
