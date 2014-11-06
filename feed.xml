@@ -7,6 +7,24 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Release of XBraid library for MGRIT</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;/methods/mgrit.html&quot;&gt;multigrid reduction in time&lt;/a&gt; method MGRIT has been released as a software library called &lt;a href=&quot;/codes/xbraid.html&quot;&gt;XBraid&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Nov 2014 09:21:44 +0000</pubDate>
+        <link>http://parallelintime.org/news/2014/11/06/xbraid-release.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/news/2014/11/06/xbraid-release.html</guid>
+      </item>
+    
+      <item>
+        <title>New release of PFASST++</title>
+        <description>&lt;p&gt;Version 0.2.0 of the PFASST++ library has been released. Check out &lt;a href=&quot;https://github.com/Parallel-in-Time/PFASST/releases/tag/v0.2.0&quot;&gt;PFASST++&lt;/a&gt; for more info.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 Aug 2014 09:21:44 +0000</pubDate>
+        <link>http://parallelintime.org/news/2014/08/30/new-pfasst-release.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/news/2014/08/30/new-pfasst-release.html</guid>
+      </item>
+    
+      <item>
         <title>Workshop in Dresden in 2015</title>
         <description>&lt;p&gt;The 4th Workshop on Parallel-in-Time Integration will take place in May 2015 in Dresden, Germany.&lt;/p&gt;
 
