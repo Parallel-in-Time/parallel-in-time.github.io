@@ -18,7 +18,7 @@ releases:
     download: https://computation.llnl.gov/project/parallel-time-integration/software.php
 developers: 
   - link:
-      name: team page
+      name: See XBraid team page
       url: https://computation.llnl.gov/project/parallel-time-integration/team.php
 short_desc: A C library for the multigrid reduction in time (MGRIT) approach.
 ---

@@ -6,6 +6,7 @@ date: 2014-06-16 00:00:00 +0000
 navbar: Methods
 subnavbar: pfasst
 footer: true
+short_desc: PFASST
 ---
 
 PFASST has been proposed by [Matt Emmett and Michael Minion in 2012.](http://dx.doi.org/10.2140/camcos.2012.7.105)
