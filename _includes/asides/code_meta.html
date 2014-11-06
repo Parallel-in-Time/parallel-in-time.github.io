@@ -75,14 +75,21 @@
         <div class="col-md-8">
           {% for developer in page.developers %}
             <span class="clearfix">
-              {{ developer.name }}
-              {% if developer.email or developer.lead_developer %}
+              {% if developer.link %}
+                {{ developer.link.name }}
+              {% else %}
+                {{ developer.name }}
+              {% endif %}
+              {% if developer.email or developer.lead_developer or developer.link.url %}
                 <span class="pull-right">
                   {% if developer.lead_developer %}
                     <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
                   {% endif %}
                   {% if developer.email %}
                     <a href="mailto:{{ developer.email }}" title="email: {{ developer.email }}"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  {% endif %}
+                  {% if developer.link.url %}
+                    <a href="{{ developer.link.url }}" title="{{ developer.link.name }}"><i class="fa fa-link fa-fw"></i></a>
                   {% endif %}
                 </span>
               {% endif %}
