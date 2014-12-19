@@ -11,6 +11,8 @@ permalink: /events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.ht
 organizers:
   - name: Matt Emmett
     homepage: https://ccse.lbl.gov/people/emmett/
+  - name: Martin Gander
+    homepage: http://www.unige.ch/~gander/
   - name: Ron Haynes
     homepage: http://www.mun.ca/math/people/ppl-faculty/rhaynes.php
   - name: Rolf Krause
