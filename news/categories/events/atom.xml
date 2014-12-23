@@ -4,7 +4,7 @@
   <title><![CDATA[Events | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/events/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2014-11-06T11:59:21+00:00</updated>
+  <updated>2014-12-23T13:11:49+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Workshop in Banff in 2016]]></title>
+    <link href="http://parallelintime.org/news/2014/12/19/workshop-in-2016-announcement.html"/>
+    <updated>2014-12-19T07:26:44+00:00</updated>
+    <id>http://parallelintime.org/news/2014/12/19/workshop-in-2016-announcement</id>
+    <content type="html"><![CDATA[<p>The 5th Workshop on Parallel-in-Time Integration will take place in November 2016 in Banff, Canada.</p>
+
+<!--more-->
+
+<p>The workshop series on parallel-in-time integration will continue in 2016 and take place on the North American continent for the first time.
+In November 2016, the workshop will be hosted by the <a href="http://www.birs.ca/">Banff International Research Station</a> in Canada.
+Please check out the entry at <a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">parallelintime.org</a> for more information.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Workshop in Dresden in 2015]]></title>

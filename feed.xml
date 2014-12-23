@@ -7,6 +7,21 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Workshop in Banff in 2016</title>
+        <description>&lt;p&gt;The 5th Workshop on Parallel-in-Time Integration will take place in November 2016 in Banff, Canada.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The workshop series on parallel-in-time integration will continue in 2016 and take place on the North American continent for the first time.
+In November 2016, the workshop will be hosted by the &lt;a href=&quot;http://www.birs.ca/&quot;&gt;Banff International Research Station&lt;/a&gt; in Canada.
+Please check out the entry at &lt;a href=&quot;/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html&quot;&gt;parallelintime.org&lt;/a&gt; for more information.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 Dec 2014 07:26:44 +0000</pubDate>
+        <link>http://parallelintime.org/news/2014/12/19/workshop-in-2016-announcement.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/news/2014/12/19/workshop-in-2016-announcement.html</guid>
+      </item>
+    
+      <item>
         <title>Release of XBraid library for MGRIT</title>
         <description>&lt;p&gt;The &lt;a href=&quot;/methods/mgrit.html&quot;&gt;multigrid reduction in time&lt;/a&gt; method MGRIT has been released as a software library called &lt;a href=&quot;/codes/xbraid.html&quot;&gt;XBraid&lt;/a&gt;.&lt;/p&gt;
 </description>
