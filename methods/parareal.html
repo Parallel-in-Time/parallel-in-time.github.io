@@ -3,10 +3,10 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Codes</title>
+  <title>Parareal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallelintime.org/codes/">
+  <link rel="canonical" href="http://parallelintime.org/methods/parareal.html">
 
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/octicons/octicons.css">
@@ -60,32 +60,32 @@
 
 
             
-  <li>
-    <a href="/methods/index.html">Methods</a>
+  <li class="dropdown active">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Methods <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li >
+        <a href="/methods/index.html">Overview</a>
+      </li>
+      
+        <li >
+          <a href="/methods/mgrit.html">Multigrid Reduction in Time (MGRIT)</a>
+        </li>
+      
+        <li class="active">
+          <a href="/methods/parareal.html">Parareal</a>
+        </li>
+      
+        <li >
+          <a href="/methods/pfasst.html">PFASST</a>
+        </li>
+      
+    </ul>
   </li>
 
 
             
-  <li class="dropdown active">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Codes <b class="caret"></b></a>
-    <ul class="dropdown-menu">
-      <li class="active">
-        <a href="/codes/index.html">Overview</a>
-      </li>
-      
-        <li >
-          <a href="/codes/pfasst.html">PFASST++</a>
-        </li>
-      
-        <li >
-          <a href="/codes/pypint.html">PyPinT</a>
-        </li>
-      
-        <li >
-          <a href="/codes/xbraid.html">XBraid</a>
-        </li>
-      
-    </ul>
+  <li>
+    <a href="/codes/index.html">Codes</a>
   </li>
 
 
@@ -108,82 +108,39 @@
 
     <main>
       <div class="container">
-        <div class="post">
+        <div class="post post-code">
   <header class="post-header">
-    <h1>Codes</h1>
+    <h1>Parareal</h1>
+    
+    <h2>Parareal</h2>
     
   </header>
   <article class="post-content">
-  <div class="row">
-
-  
-  
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">
-          <a href="/codes/pfasst.html">
-            PFASST++
-          </a>
-        </h2>
-      </div>
-      <div class="panel-body">
-        
-        A C++ library for SDC, MLSDC and PFASST.
-      </div>
-    </div>
-  </div>
-
-  
-  
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">
-          <a href="/codes/pypint.html">
-            PyPinT
-          </a>
-        </h2>
-      </div>
-      <div class="panel-body">
-        
-        A Python3 framework for Parallel-in-Time integration routines.
-      </div>
-    </div>
-  </div>
-
-  
-  
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">
-          <a href="/codes/xbraid.html">
-            XBraid
-          </a>
-        </h2>
-      </div>
-      <div class="panel-body">
-        
-        A C library for the multigrid reduction in time (MGRIT) approach.
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-  
-
-
-<footer id="contribute-footer">
-  <p>
-    Want your code to show up here? <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/wiki">You can do it yourself</a>!
-  </p>
-</footer>
-
+  <p>Introduced in 2001 by <a href="http://dx.doi.org/10.1016/S0764-4442(00)01793-6">Lions, Maday and Turinici.</a> and one of the most widely studied time-parallel methods.</p>
 
   </article>
+  
+    <footer>
+      
+  
+  
+
+
+
+  
+    
+  
+
+
+
+  <i class="fa fa-calendar"></i> Created on <time datetime="2014-08-12T00:00:00+00:00">12 Aug 2014</time>
+
+
+
+  
+
+
+    </footer>
   
 </div>
       </div>

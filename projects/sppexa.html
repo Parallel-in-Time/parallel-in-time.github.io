@@ -3,14 +3,13 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SPPEXA</title>
+  <title>ExaSolvers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallel-in-time.github.io/projects/sppexa.html">
+  <link rel="canonical" href="http://parallelintime.org/projects/sppexa.html">
 
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/octicons/octicons.css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/main.css">
@@ -29,7 +28,7 @@
   <body>
     <header>
   <nav>
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -42,27 +41,55 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li ><a href="/events">Events</a></li>
-            <li ><a href="/groups">Groups</a></li>
-            <li class="active"><a href="/projects">Projects</a></li>
-            <li ><a href="/codes">Codes</a></li>
-            <li >
-              
-                <a href="/news">News</a>
-              
-            </li>
-            <li >
-              <a href="/about">About</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a class="subscribe-rss" href="" title="subscribe via RSS">
-                <span class="visible-xs">RSS</span>
-                <i class="hidden-xs fa fa-rss"></i>
-              </a>
-            </li>
             
+  <li>
+    <a href="/events/index.html">Workshops</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/groups/index.html">Groups</a>
+  </li>
+
+
+            
+  <li class="dropdown active">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li >
+        <a href="/projects/index.html">Overview</a>
+      </li>
+      
+        <li class="active">
+          <a href="/projects/sppexa.html">ExaSolvers</a>
+        </li>
+      
+    </ul>
+  </li>
+
+
+            
+  <li>
+    <a href="/methods/index.html">Methods</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/codes/index.html">Codes</a>
+  </li>
+
+
+            
+  <li>
+    <a href="/news/index.html">News</a>
+  </li>
+
+
+            <li >
+              <a href="/about/index.html">About</a>
+            </li>
           </ul>
           
         </div>
@@ -73,84 +100,147 @@
 
     <main>
       <div class="container">
-        <div class="post">
+        <div class="post post-project">
   <header class="post-header">
-    <h1>SPPEXA</h1>
+    <h1>
+      ExaSolvers
+    </h1>
+    
   </header>
-  <article class="post-content">
-  <p>The Priority Programme “Software for Exascale Computing” (SPPEXA) addresses 
+  <article class="post-content content">
+    <div class="row">
+      <div class="col-md-8">
+        <p>The Priority Programme “Software for Exascale Computing” (SPPEXA) of the Deutsche Forschungsgemeinschaft (DFG) addresses 
 fundamental research on the various aspects of HPC software, which is 
 particularly urgent against the background that we are currently entering the 
 era of ubiquitous massive parallelism.</p>
 
-<p>This massive parallelism only, subsumed to the notion of many-core processors 
-and their assembly to systems beyond 107 processing units, will smooth the way 
-for extreme computing up to exascale, i.e. computations with 1018 floating point 
-operations per second and beyond, and the insight resulting from those 
-simulations.
-Mastering the various challenges related to this paradigm shift from sequential 
-or just moderately parallel to massively parallel processing will be the key to 
-any future capability computing application at exascale, but it will also be 
-crucial for learning how to effectively and efficiently deal with commodity 
-systems of the day after tomorrow for smaller-scale or capacity computing 
-tasks - and it is the overall scientific objective of SPPEXA.
-To this end, SPPEXA re-connects several relevant sub-fields of computer science 
-with the needs of Computational Science and Engineering (CSE) and 
-High-Performance Computing (HPC).
-SPPEXA provides the framework for a much closer cooperation and a much more 
-co-design-driven approach - instead of a merely service-driven collaboration of 
-groups focusing on fundamental HPC methodology (computer science or mathematics)
-on the one hand with those working on science applications and providing the 
-large codes (science and engineering) on the other hand.
-Topically, SPPEXA will drive research towards extreme-scale computing in six 
-areas or research directions:</p>
+<p><a href="http://www.sppexa.de/general-information/projects.html#EXASOLVERS">“ExaSolvers”</a> is a project within SPPEXA, concerned with the development of solvers for coupled problems that can be used efficiently in extreme-scale simulations.
+The benchmark problem of the project is the numerical simulation of permeation of human skin, an application that is of great interest for example for the development of pharmaceuticals.
+Through the lead agency agreement between, SNSF is funding a subproject within ExaSolvers at ICS Lugano <a href="http://p3.snf.ch/project-145271">SNSF-145271</a>, which, in the framework of the project, addresses the development of efficient time-parallel solvers and their application to heterogeneous diffusion problems on complex domains.</p>
 
-<ul>
-  <li>computational algorithms,</li>
-  <li>system software,</li>
-  <li>application software,</li>
-  <li>data management and exploration,</li>
-  <li>programming,</li>
-  <li>software tools.</li>
-</ul>
+<p>At ICS, Andreas Kreienbuehl and Daniel Ruprecht are working on the project as members of the scientific staff.</p>
 
-<p>Hardware peak performance is ever increasing, exascale systems are currently 
-predicted for around 2018, and insight is growing world-wide that a “racks 
-without brains” strategy will not allow the science communities to exploit the 
-huge potential of the computational approach in a massively parallel world.
-Against this background, SPPEXA provides an ideal framework for bundling 
-research activities nation-wide and enabling the participating groups to 
-significantly advance the state of the art in HPC software technology at an 
-international scale.</p>
-
-<p>Homepage: <a href="http://www.sppexa.de/">www.sppexa.de</a></p>
-
+      </div>
+      <aside class="col-md-4">
+        <section class="group-meta panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Project Profile</h3>
+  </div>
+  <div class="panel-body">
+    
+      <div class="row">
+        <div class="col-md-12 logo">
+          <img src="/images/logo_sppexa.png" alt="ExaSolvers Logo" />
+        </div>
+      </div>
+    
+    
+      <div class="row">
+        <label class="col-md-4 control-label">Homepage</label>
+        <div class="col-md-8">
+          <a href="http://www.sppexa.de/general-information/projects.html#EXASOLVERS">www.sppexa.de/general-information/projects.html#EXASOLVERS</a>
+        </div>
+      </div>
+    
+    
+    
+      <div class="row">
+        <label class="col-md-4 control-label">Members</label>
+        <div class="col-md-8">
+          
+            <span class="clearfix">
+              Prof. Grasedyck (RWTH Aachen)
+              
+            </span>
+          
+            <span class="clearfix">
+              Prof. Hackbusch (MPI Leipzig)
+              
+            </span>
+          
+            <span class="clearfix">
+              Prof. Krause (ICS Lugano)
+              
+            </span>
+          
+            <span class="clearfix">
+              Prof. Resch (HLRS Stuttgart)
+              
+            </span>
+          
+            <span class="clearfix">
+              Prof. Schulz (Uni Trier)
+              
+            </span>
+          
+            <span class="clearfix">
+              Prof. Wittum (Uni Frankfurt)
+              
+            </span>
+          
+        </div>
+      </div>
+    
+  </div>
+</section>
+        
+      </aside>
+    </div>
   </article>
   
+    <footer>
+      
+  
+  
+
+
+
+  
     
+  
 
 
 
+  <i class="fa fa-calendar"></i> Created on <time datetime="2014-06-15T14:24:00+00:00">15 Jun 2014</time>
 
 
 
+  
 
 
-
-
-<i class="fa fa-calendar"></i> Created on <time datetime="2014-06-15T14:24:00+00:00" pubdate data-updated="true">Sun, 15 Jun 2014 14:24:00 +0000</time>
+    </footer>
   
 </div>
       </div>
     </main>
-    <footer>
-  <div class="container">
-    <span class="text-muted credits">
-      Copyright &copy; 2014 - Parallel-in-Time Enthusiasts<br>
-      <small>
-        <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-      </small>
-    </span>
+    <footer id="site-footer">
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+          <p class="navbar-text">
+            <a class="navbar-link" href="/about/imprint.html">
+              &copy;<span class="hidden-xs"> Imprint</span></a>
+            <!--<span class="seperator hidden-xs"></span>-->
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+          <p class="navbar-text small">
+            <span class="credit"><a class="navbar-link" href="http://octopress.org">Powered by Octopress</a></span>
+          </p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+          <p class="navbar-text pull-right">
+            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">
+              <i class="fa fa-github fa-fw"></i><span class="hidden-xs">Sources</span></a>
+            <span class="seperator"></span>
+            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues">
+              <i class="fa fa-bug fa-fw"></i><span class="hidden-xs">Found a typo?</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 

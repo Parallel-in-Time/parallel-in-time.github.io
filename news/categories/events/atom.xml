@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Events | Parallel-in-Time]]></title>
-  <link href="http://parallel-in-time.github.io/news/categories/events/atom.xml" rel="self"/>
-  <link href="http://parallel-in-time.github.io/"/>
-  <updated>2014-06-15T14:56:34+00:00</updated>
-  <id>http://parallel-in-time.github.io/</id>
+  <link href="http://parallelintime.org/news/categories/events/atom.xml" rel="self"/>
+  <link href="http://parallelintime.org/"/>
+  <updated>2014-11-06T07:01:08+00:00</updated>
+  <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
     <email><![CDATA[daniel.ruprecht@usi.ch]]></email>
@@ -14,29 +14,15 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Example News Entry]]></title>
-    <link href="http://parallel-in-time.github.io/events/research%20groups/projects/codes/miscellaneous/2014/06/11/example-news-entry/"/>
-    <updated>2014-06-11T09:21:44+00:00</updated>
-    <id>http://parallel-in-time.github.io/events/research%20groups/projects/codes/miscellaneous/2014/06/11/example-news-entry</id>
-    <content type="html"><![CDATA[<p>This is just an example of a news entry matching various categories.
-This first paragraph is just the teaser.</p>
+    <title type="html"><![CDATA[Workshop in Dresden in 2015]]></title>
+    <link href="http://parallelintime.org/news/2014/08/04/new-workshop-announcement.html"/>
+    <updated>2014-08-04T09:21:44+00:00</updated>
+    <id>http://parallelintime.org/news/2014/08/04/new-workshop-announcement</id>
+    <content type="html"><![CDATA[<p>The 4th Workshop on Parallel-in-Time Integration will take place in May 2015 in Dresden, Germany.</p>
 
 <!--more-->
 
-<p>This second paragraph is the more detailed content.</p>
-
-<p>You just write simple <a href="http://daringfireball.net/projects/markdown/">Markdown</a> 
-with all the fancy <a href="http://octopress.org/docs/blogging/plugins/">Octopress Plugins</a> 
-enabled.</p>
-
-<p>In addition you can embed any <a href="">GitHub</a> repository via</p>
-
-<pre><code>{% githubrepo username/reponame %}
-</code></pre>
-
-<p>Example:</p>
-
-<p><div class="github-widget" data-repo="Parallel-in-Time/parallel-in-time.github.io"></div></p>
+<p>After three workshops in Lugano (2011), Manchester (2013) and Juelich (2014), the workshop series on parallel-in-time integration continues in 2015 with a workshop at TU Dresden from May 27 to May 29. For more information, check out the homepage at <a href="http://www.math.tu-dresden.de/~naumann/pint2015">TU Dresden</a> and the entry at <a href="/events/upcoming/2015/4th-workshop-on-parallel-in-time-integration.html">parallelintime.org</a>.</p>
 ]]></content>
   </entry>
   

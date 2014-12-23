@@ -3,10 +3,10 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>PyPinT</title>
+  <title>PFASST++</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallelintime.org/codes/pypint.html">
+  <link rel="canonical" href="http://parallelintime.org/codes/pfasst.html">
 
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/octicons/octicons.css">
@@ -73,11 +73,11 @@
         <a href="/codes/index.html">Overview</a>
       </li>
       
-        <li >
+        <li class="active">
           <a href="/codes/pfasst.html">PFASST++</a>
         </li>
       
-        <li class="active">
+        <li >
           <a href="/codes/pypint.html">PyPinT</a>
         </li>
       
@@ -110,105 +110,19 @@
       <div class="container">
         <div class="post post-code">
   <header class="post-header">
-    <h1>PyPinT</h1>
+    <h1>PFASST++</h1>
     
   </header>
   <article class="post-content">
     <div class="row">
       <div class="col-md-8 content">
-        <p>With growing interest in parallel-in-time methods many different and new solvers for ordinary 
-differential equations have gained the attention of researchers from various fields.
-In order to clearly estimate the potential and limitations of these mostly iterative solvers, a 
-modular prototyping framework not only helps to understand their properties and various facets but 
-also allows to easily implement and test new ideas.</p>
+        <p>A modern C++ library for the PFASST algorithm. </p>
 
-<p>As an example, the <a href="/methods/pfasst.html"><em>parallel full approximation scheme in space and time</em> (<em>PFASST</em>)</a> 
-and its serial counterpart, multi-level spectral deferred corrections (<em>MLSDC</em>) are composed of 
-multiple levels and even types of spectral deferred correction sweeps which are coupled by 
-space-time restriction and interpolation operators.
-These modular and interchangeable combinations of different techniques already generate a vast 
-amount of variations with different effects on solvability and efficiency towards a diverse set of 
-problems.</p>
-
-<p>For a thorough and systematic analysis of methods like <em>PFASST</em> or <em>Parareal</em> we take the path of 
-a well-planned and fully modular implementation of these algorithms.
-By following the object-oriented programming paradigm we create an abstract decomposition of the 
-methods’ functional components combined in a framework for parallel-in-time algorithms.
-Different methods implemented in a single framework using a unified base functionality enables 
-detailed qualitative and quantitative analysis without paying too much attention to underlying 
-implementation details.</p>
-
-<p>Due to its flexibility, extensibility and rather comfortable learning curve Python has an ever 
-growing world-wide community within science, academia and industry.
-For <em>PyPinT</em>, it provides the building block for a flexible and unified framework, allowing fast 
-prototyping of iterative parallel-in-time algorithms.
-Well-maintained and open-source third party modules such as <a href="http://www.numpy.org/"><em>NumPy</em></a> and <a href="http://scipy.org/scipylib/index.html"><em>SciPy</em></a> 
-offer high-level interfaces to performant low-level functionalities for matrix and vector 
-arithmetics, common mathematical methods and plotting capabilities.
-In addition, current efforts leave the door open for enabling <em>PyPinT</em> to be applied on HPC clusters.</p>
-
-<h2 id="goals">Goals</h2>
-
-<p>Accompanying the development of parallel-in-time algorithms, new ideas can be implemented in 
-<em>PyPinT</em> immediately.
-Utilizing the framework’s analysis tools such as calculation and plotting of stability regions, 
-runtime and characteristic values (e.g. residuals), new algorithms can easily be studied in detail.
-Clearly defined interfaces, a strictly modular concept and different levels of abstraction enable 
-the user to exchange certain parts of the algorithms and add his or her own methods to enrich the 
-whole framework. </p>
-
-<p>Students, undergraduate and graduate, with a basic knowledge of iterative solvers and some 
-programming skills will be able to use and extend <em>PyPinT</em> and discover, learn and understand the 
-mechanics of parallel-in-time methods.
-<em>PyPinT</em> is open-source licensed and available on GitHub, thus fostering collaboration and ease 
-contribution of amplifications by interested people.<br />
-Ultimately, <em>PyPinT</em> should not only represent a package for applying and studying parallel-in-time 
-methods but also provide a development environment for enhancing existing and inventing new methods.
-Finally, <em>PyPinT</em> can also provide valuable insight and guidance for future, performance-oriented 
-implementations in other programming languages.</p>
-
-<aside class="references">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">References</h4>
-    </div>
-    <div class="list-group">
-
-<div class="reference">
-  <span class="authors">
-    <span class="author">Matthew Emmett</span>
-    <span class="author">Michael L Minion</span>
-  </span>
-  <span class="title">Toward an efficient parallel in time method for partial differential equations</span>
-  <span class="journal">Commun. Appl. Math. Comput. Sci.</span>
-  <span class="volume">7</span>
-  <span class="pages">105–132</span>
-  <span class="year">2012</span>
-  <span class="doi">10.2140/camcos.2012.7.105</span>
-  <span class="mendeley">http://www.mendeley.com/catalog/toward-efficient-parallel-time-method-partial-differential-equations/</span>
-</div>
-
-<div class="reference">
-  <span class="authors">
-    <span class="author">Robert Speck</span>
-    <span class="author">Daniel Ruprecht</span>
-    <span class="author">Matthew Emmett</span>
-    <span class="author">Michael L Minion</span>
-    <span class="author">Matthias Bolten</span>
-    <span class="author">Rolf Krause</span>
-  </span>
-  <span class="title">A multi-level spectral deferred correction method</span>
-  <span class="journal">arXiv Mathematics Numerical Analysis</span>
-  <span class="month">July</span>
-  <span class="year">2013</span>
-  <span class="arxivid">1307.1312</span>
-  <span class="mendeley">http://www.mendeley.com/research/multilevel-spectral-deferred-correction-method/</span>
-</div>
-
-    </div>
-  </div>
-</aside>
-
+<p>The PFASST project is a C++ implementation of the parallel full approximation 
+scheme in space and time (PFASST) algorithm, which in turn is a time-parallel 
+algorithm for solving ODEs and PDEs.
+It also contains basic implementations of the spectral deferred correction (SDC) 
+and multi-level spectral deferred correction (MLSDC) algorithms.</p>
 
       </div>
       <aside class="col-md-4">
@@ -228,9 +142,9 @@ implementations in other programming languages.</p>
             
             
           
-          <a href="http://parallel-in-time.github.io/PyPinT">
+          <a href="https://github.com/Parallel-in-Time/PFASST">
             
-              <i class="fa fa-github fa-fw"></i>parallel-in-time.github.io/PyPinT
+              <i class="fa fa-github fa-fw"></i>/Parallel-in-Time/PFASST
             
           </a>
         </div>
@@ -240,7 +154,7 @@ implementations in other programming languages.</p>
       <div class="row">
         <label class="col-md-4 control-label">Language</label>
         <div class="col-md-8">
-          Python
+          C++
         </div>
       </div>
     
@@ -248,15 +162,69 @@ implementations in other programming languages.</p>
       <div class="row">
         <label class="col-md-4 control-label">License</label>
         <div class="col-md-8">
-          MIT
+          BSD 2-clause
         </div>
       </div>
     
+    
+      <div class="row">
+        <label class="col-md-4 control-label">Releases</label>
+        <div class="col-md-8">
+          
+            <span class="clearfix">
+              0.2.0
+              
+                <small>&ensp;(<time datetime="2014-08-30">2014-08-30</time>)</small>
+              
+              <span class="pull-right">
+                
+                  <a href="https://github.com/Parallel-in-Time/PFASST/releases/tag/v0.2.0" title="Release Page"><i class="fa fa-link fa-fw"></i></a>
+                
+                
+                  <a href="https://github.com/Parallel-in-Time/PFASST/archive/v0.2.0.zip" title="Download Sources as zip"><i class="fa fa-download fa-fw"></i></a>
+                
+              </span>
+            </span>
+          
+            <span class="clearfix">
+              0.1.0
+              
+                <small>&ensp;(<time datetime="2014-07-26">2014-07-26</time>)</small>
+              
+              <span class="pull-right">
+                
+                  <a href="https://github.com/Parallel-in-Time/PFASST/releases/tag/v0.1.0" title="Release Page"><i class="fa fa-link fa-fw"></i></a>
+                
+                
+                  <a href="https://github.com/Parallel-in-Time/PFASST/archive/v0.1.0.zip" title="Download Sources as zip"><i class="fa fa-download fa-fw"></i></a>
+                
+              </span>
+            </span>
+          
+        </div>
+      </div>
     
     
       <div class="row">
         <label class="col-md-4 control-label">Developers</label>
         <div class="col-md-8">
+          
+            <span class="clearfix">
+              
+                Matthew Emmett
+              
+              
+                <span class="pull-right">
+                  
+                    <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
+                  
+                  
+                    <a href="mailto:matthew@emmett.ca" title="email: matthew@emmett.ca"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  
+                  
+                </span>
+              
+            </span>
           
             <span class="clearfix">
               
@@ -277,15 +245,13 @@ implementations in other programming languages.</p>
           
             <span class="clearfix">
               
-                Dieter Moser
+                Robert Speck
               
               
                 <span class="pull-right">
                   
-                    <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
                   
-                  
-                    <a href="mailto:d.moser@fz-juelich.de" title="email: d.moser@fz-juelich.de"><i class="fa fa-envelope-o fa-fw"></i></a>
+                    <a href="mailto:r.speck@fz-juelich.de" title="email: r.speck@fz-juelich.de"><i class="fa fa-envelope-o fa-fw"></i></a>
                   
                   
                 </span>
@@ -294,13 +260,13 @@ implementations in other programming languages.</p>
           
             <span class="clearfix">
               
-                Dr. Robert Speck
+                Daniel Ruprecht
               
               
                 <span class="pull-right">
                   
                   
-                    <a href="mailto:r.speck@fz-juelich.de" title="email: r.speck@fz-juelich.de"><i class="fa fa-envelope-o fa-fw"></i></a>
+                    <a href="mailto:daniel.ruprecht@usi.ch" title="email: daniel.ruprecht@usi.ch"><i class="fa fa-envelope-o fa-fw"></i></a>
                   
                   
                 </span>
@@ -314,7 +280,7 @@ implementations in other programming languages.</p>
 </section>
 
 
-<section class="github-widget" data-repo="Parallel-in-Time/PyPinT"></section>
+<section class="github-widget" data-repo="Parallel-in-Time/PFASST"></section>
 
 
       </aside>
@@ -335,7 +301,7 @@ implementations in other programming languages.</p>
 
 
 
-  <i class="fa fa-calendar"></i> Updated on <time datetime="2014-06-18T07:50:00+00:00" data-updated="true">18 Jun 2014</time>
+  <i class="fa fa-calendar"></i> Updated on <time datetime="2014-10-27T10:45:00+00:00" data-updated="true">27 Oct 2014</time>
 
 
     </footer>
