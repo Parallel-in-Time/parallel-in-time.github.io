@@ -4,7 +4,7 @@
   <title><![CDATA[Events | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/events/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2015-03-28T09:07:04+00:00</updated>
+  <updated>2015-04-20T16:24:37+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Workshop in Toulouse in January 2016]]></title>
+    <link href="http://parallelintime.org/news/2015/04/20/toulouse-workshop-announcement.html"/>
+    <updated>2015-04-20T07:26:44+00:00</updated>
+    <id>http://parallelintime.org/news/2015/04/20/toulouse-workshop-announcement</id>
+    <content type="html"><![CDATA[<p>In addition to the <a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">5th Workshop on Parallel-in-Time Integration</a> in Banff, Canada in November 2016, another workshop also dedicated to the topic will take place in Toulouse in France from 11th-12th January 2016.
+You can find more information here on <a href="/events/upcoming/2016/cimi_semester.html">parallelintime.org</a> and on the <a href="http://inpact.inp-toulouse.fr/CIMI_Semester/wksp_parallel.html">official website</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Workshop in Banff in 2016]]></title>
