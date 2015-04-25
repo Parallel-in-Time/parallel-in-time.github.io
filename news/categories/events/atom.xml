@@ -4,7 +4,7 @@
   <title><![CDATA[Events | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/events/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2015-04-24T09:52:33+00:00</updated>
+  <updated>2015-04-25T09:24:27+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New parallelintime email list]]></title>
+    <link href="http://parallelintime.org/news/2015/04/24/email-list-announcement.html"/>
+    <updated>2015-04-24T07:26:44+00:00</updated>
+    <id>http://parallelintime.org/news/2015/04/24/email-list-announcement</id>
+    <content type="html"><![CDATA[<p>There exists now an email list to help you send and receive information and announcements all around parallel-in-time integration. To join, simply send an email to <em>parallelintime-subscribe[AT]googlegroups.com</em> and wait for one of the moderators to approve your request.</p>
+
+<p><strong>Note:</strong> You do <em>not</em> need a Google account in order to join this list, just send the subscribe email from the email address you want to subscribe.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Workshop in Toulouse in January 2016]]></title>
