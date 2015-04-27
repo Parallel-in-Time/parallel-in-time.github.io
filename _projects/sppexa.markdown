@@ -27,3 +27,8 @@ The benchmark problem of the project is the numerical simulation of permeation o
 Through the lead agency agreement between, SNSF is funding a subproject within ExaSolvers at ICS Lugano [SNSF-145271](http://p3.snf.ch/project-145271), which, in the framework of the project, addresses the development of efficient time-parallel solvers and their application to heterogeneous diffusion problems on complex domains.
 
 At ICS, Andreas Kreienbuehl and Daniel Ruprecht are working on the project as members of the scientific staff.
+
+{% include references/begin.html %}
+{% include references/kreienbuehl2015.html %}
+{% include references/ruprecht2015.html %}
+{% include references/end.html %}
