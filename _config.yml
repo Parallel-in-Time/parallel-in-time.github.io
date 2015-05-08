@@ -38,3 +38,5 @@ collections:
     output: true
   codes:
     output: true
+
+google_analytics_tracking_id: UA-62723342-1
