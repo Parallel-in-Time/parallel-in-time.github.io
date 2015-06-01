@@ -39,4 +39,28 @@ collections:
   codes:
     output: true
 
+scholar:
+  bibtex_filters:
+    - latex
+    - markdown
+
+  style: ieee-with-url
+  locale: en
+
+  sort_by: year, authors
+  order: ascending
+
+  source: ./_bibliography
+  bibliography: pint.bib
+  bibliography_template: reference
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
 google_analytics_tracking_id: UA-62723342-1

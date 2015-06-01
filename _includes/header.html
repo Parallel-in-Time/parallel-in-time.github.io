@@ -19,6 +19,9 @@
             {% include navs/methods.html %}
             {% include navs/codes.html %}
             {% include navs/news.html %}
+            <li {% if page.navbar == 'References' %}class="active"{% endif %}>
+              <a href="{{ root_url }}/references/index.html">References</a>
+            </li>
             <li {% if page.navbar == 'About' %}class="active"{% endif %}>
               <a href="{{ root_url }}/about/index.html">About</a>
             </li>
