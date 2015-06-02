@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  //
+  // Gather Publications-by-Year Statistics
+  //
   var yc_prelim = {};
   $('#total-num-pubs').text("Total number of publications: " + $('li pre.abstract').length);
   $('#total-num-pubs').addClass('alert alert-info');
@@ -22,6 +25,18 @@ $(document).ready(function() {
     years_counts[v] = yc_prelim[v];
   });
 
+  //
+  // Gather statistics per section
+  //
+  $('ol').each(function() {
+    var count = $(this).children('li').length;
+    $(this).prev('h2').children('.count-stat').addClass('badge').text(count);
+  });
+
+  //
+  // Render the Chart
+  //
+  Chart.defaults.global.responsive = true;
   var ctx = $("#pint-pubs-chart").get(0).getContext("2d");
   // This will get the first returned node in the jQuery collection.
   var data = {
