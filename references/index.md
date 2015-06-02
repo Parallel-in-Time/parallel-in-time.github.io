@@ -7,12 +7,22 @@ sharing: false
 footer: true
 ---
 
+This list of publications closely related to parallel-in-time integration is probably not complete.
+Please feel free to add any missing publications through a [pull request on GitHub](https://github.com/Parallel-in-Time/parallel-in-time.github.io/wiki).
+
 ## Statistics
 
 {% raw %}
 <div class="row" id="statistics">
   <div class="col-md-4">
     <div id="total-num-pubs"></div>
+    <div id="stats-buttons" class="btn-group btn-group-xs btn-group-justified" role="group">
+      <a class="btn btn-xs btn-default" role="button" target="_blank" title="download BibTeX file"
+         href="https://raw.githubusercontent.com/Parallel-in-Time/parallel-in-time.github.io/source/_bibliography/pint.bib">
+         <i class="fa fa-fw fa-download"></i> BibTeX
+      </a>
+    </div>
+    <p id="image-download-docu" class="text-muted"></p>
     <div id="chart-raw-data" class="collapse"></div>
   </div>
   <div class="col-md-8">
@@ -90,5 +100,5 @@ footer: true
 
 {% raw %}
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js" type="text/javascript"></script>
-<script src="/js/bib_stats.min.js" type="text/javascript"></script>
+<script src="/js/bib_stats.js" type="text/javascript"></script>
 {% endraw %}
