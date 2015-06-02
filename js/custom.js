@@ -18,4 +18,10 @@ $(document).ready(function() {
         $(this).parent().prepend($(this).clone());
         $(this).remove();
     });
+    $('ol.bibliography').each(function() {
+        $(this).addClass('list-group');
+        $(this).find('li').each(function() {
+            $(this).addClass('list-group-item');
+        });
+    });
 });
