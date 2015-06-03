@@ -28,7 +28,7 @@
     {% endif %}
     {% if page.members %}
       <div class="row">
-        <label class="col-md-4 control-label">Members</label>
+        <label class="col-md-4 control-label">Current Members</label>
         <div class="col-md-8">
           {% for member in page.members %}
             <span class="clearfix">
@@ -47,6 +47,28 @@
           {% endfor %}
         </div>
       </div>
+    {% endif %}
+    {% if page.members_retired %}
+    <div class="row">
+      <label class="col-md-4 control-label">Past Members</label>
+      <div class="col-md-8">
+        {% for member in page.members_retired %}
+            <span class="clearfix">
+              {{ member.name }}
+              {% if member.email or member.corresponding %}
+                <span class="pull-right">
+                  {% if member.corresponding %}
+                    <a href="#" title="Group Head"><i class="fa fa-graduation-cap fa-fw"></i></a>
+                  {% endif %}
+                  {% if member.email %}
+                    <a href="mailto:{{ member.email }}" title="email: {{ member.email }}"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  {% endif %}
+                </span>
+              {% endif %}
+            </span>
+        {% endfor %}
+      </div>
+    </div>
     {% endif %}
   </div>
 </section>

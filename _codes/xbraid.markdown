@@ -2,7 +2,7 @@
 layout: page_code
 title: "XBraid"
 date: 2014-11-05 17:00:00 +0000
-updated: 2014-11-06 07:30:00 +0100
+updated: 2015-06-03 19:40:00 +0200
 navbar: Codes
 subnavbar: XBraid
 footer: true
@@ -24,6 +24,8 @@ short_desc: A C library for the multigrid reduction in time (MGRIT) approach.
 ---
 
 A modern C library for the parallel-in-time method, multigrid reduction in time 
-(MGRIT).
+([MGRIT](/methods/mgrit.html)) {% cite FriedhoffEtAl2013 %}.
 See [http://www.llnl.gov/casc/xbraid](http://www.llnl.gov/casc/xbraid) for more 
 information and a place to download the XBraid software.
+
+{% bibliography --cited %}
