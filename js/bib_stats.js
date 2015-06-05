@@ -1,5 +1,22 @@
 $(document).ready(function() {
   //
+  // Generate Links to Years
+  //
+  var toc_html = '';
+  $('h2').each(function() {
+    if ($(this).attr('id') && $(this).attr('id').match(/year/g)) {
+      toc_html += '<li><a href="#'+$(this).attr('id')+'">'+$(this).clone().children().remove().end().text()+'</a></li>';
+    }
+  });
+  $('.dropdown-menu.years').html(toc_html);
+
+  //
+  // Beautify Ref Lists
+  //
+  $('ol').addClass('list-group');
+  $('ol.bibliography li').addClass('list-group-item');
+
+  //
   // Gather Publications-by-Year Statistics
   //
   var yc_prelim = {};
