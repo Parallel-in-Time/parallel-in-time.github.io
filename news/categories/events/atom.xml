@@ -4,7 +4,7 @@
   <title><![CDATA[Events | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/events/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2015-06-03T12:13:34+00:00</updated>
+  <updated>2015-06-05T05:39:55+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bylaws for the PinT workshop series]]></title>
+    <link href="http://parallelintime.org/news/2015/06/04/bylaws.html"/>
+    <updated>2015-06-04T10:21:44+00:00</updated>
+    <id>http://parallelintime.org/news/2015/06/04/bylaws</id>
+    <content type="html"><![CDATA[<p>Bylaws for the parallel-in-time workshop series.</p>
+
+<!--more-->
+<p>With the aim to successfully continue the PinT workshop series even beyond the
+<a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">5th workshop</a> in Banff,
+Canada, a set of <a href="/events/bylaws.html">bylaws</a> for the election of a scientific committee has been
+put in place during the workshop in <a href="/events/past/2015/4th-workshop-on-parallel-in-time-integration.html">Dresden</a>.
+The bylaws define a set of rules for the election of a scientific committee.
+The committee is responsible for the coordination and promotion of the workshop series.
+We are looking forward to many more interesting PinT workshops!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Successful workshop in Dresden]]></title>
+    <link href="http://parallelintime.org/news/2015/06/04/dresden-postnews.html"/>
+    <updated>2015-06-04T09:21:44+00:00</updated>
+    <id>http://parallelintime.org/news/2015/06/04/dresden-postnews</id>
+    <content type="html"><![CDATA[<p>Successful 4th Workshop on Parallel-in-Time Integration in Dresden, Germany.</p>
+
+<!--more-->
+<p>The <a href="/events/past/2015/4th-workshop-on-parallel-in-time-integration.html">4th PinT workshop</a> in
+Dresden turned out to be another great event in the <em>Parallel-in-time integration</em> workshop series:
+With 40 participants from 9 different countries, this workshop again provided a lively forum for
+many interesting discussions around a great many different aspects of PinT.
+With several well-known researchers from the climate and atmospheric science community present,
+fascinating discussions emerged about the feasibility of using parallel-in-time integration methods
+in climate simulations and numerical weather prediction.</p>
+
+<p>Moreover, in order to support the continuation of the workshop series,
+<a href="/events/bylaws.html">a set of bylaws</a> has been put in place and the first election of a scientific
+committee will take place within four weeks after the workshop.</p>
+
+<p>Certainly, everybody is now looking forward to the
+<a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">5th workshop</a> in the
+series in November 2016 in Canada.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New parallelintime email list]]></title>
@@ -46,19 +90,6 @@ You can find more information here on <a href="/events/upcoming/2016/cimi_semest
 <p>The workshop series on parallel-in-time integration will continue in 2016 and take place on the North American continent for the first time.
 In November 2016, the workshop will be hosted by the <a href="http://www.birs.ca/">Banff International Research Station</a> in Canada.
 Please check out the entry at <a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">parallelintime.org</a> for more information.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Workshop in Dresden in 2015]]></title>
-    <link href="http://parallelintime.org/news/2014/08/04/new-workshop-announcement.html"/>
-    <updated>2014-08-04T09:21:44+00:00</updated>
-    <id>http://parallelintime.org/news/2014/08/04/new-workshop-announcement</id>
-    <content type="html"><![CDATA[<p>The 4th Workshop on Parallel-in-Time Integration will take place in May 2015 in Dresden, Germany.</p>
-
-<!--more-->
-
-<p>After three workshops in Lugano (2011), Manchester (2013) and Juelich (2014), the workshop series on parallel-in-time integration continues in 2015 with a workshop at TU Dresden from May 27 to May 29. For more information, check out the homepage at <a href="http://www.math.tu-dresden.de/~naumann/pint2015">TU Dresden</a> and the entry at <a href="/events/upcoming/2015/4th-workshop-on-parallel-in-time-integration.html">parallelintime.org</a>.</p>
 ]]></content>
   </entry>
   
