@@ -1,8 +1,26 @@
 $(document).ready(function() {
   //
+  // Generate Links to Years
+  //
+  var toc_html = '';
+  $('h2').each(function() {
+    if ($(this).attr('id') && $(this).attr('id').match(/year/g)) {
+      toc_html += '<li><a href="#'+$(this).attr('id')+'">'+$(this).clone().children().remove().end().text()+'</a></li>';
+    }
+  });
+  $('.dropdown-menu.years').html(toc_html);
+
+  //
+  // Beautify Ref Lists
+  //
+  $('ol').addClass('list-group');
+  $('ol.bibliography li').addClass('list-group-item');
+
+  //
   // Gather Publications-by-Year Statistics
   //
   var yc_prelim = {};
+  var min_year = 9999, max_year = 0;
   $('#total-num-pubs').text("Total number of publications: " + $('li pre.abstract').length);
   $('#total-num-pubs').addClass('alert alert-info');
 
@@ -10,20 +28,27 @@ $(document).ready(function() {
     var abstract_text = $(this).text().toString();
     var matched = abstract_text.match(/year = .*/g).join('');
     var year = parseInt(matched.match(/[0-9]+/g).join(''));
+    if (year < min_year) { min_year = year; }
+    if (year > max_year) { max_year = year; }
     if (year in yc_prelim) {
       yc_prelim[year] = yc_prelim[year] + 1;
     } else {
       yc_prelim[year] = 1;
     }
   });
-  var years = $.map(yc_prelim, function(v, k) { return k; });
-  years.sort();
+  var years = [];
   var counts = [];
   var years_counts = {};
-  years.forEach(function(v) {
-    counts.push(yc_prelim[v]);
-    years_counts[v] = yc_prelim[v];
-  });
+  for (var y = min_year; y <= max_year; ++y) {
+    years.push(y);
+    if (y in yc_prelim) {
+      counts.push(yc_prelim[y]);
+      years_counts[y] = yc_prelim[y];
+    } else {
+      counts.push(0);
+      years_counts[y] = 0;
+    }
+  }
 
   //
   // Gather statistics per section
@@ -49,38 +74,34 @@ $(document).ready(function() {
     ]
   };
   var options = {
-    ///Boolean - Whether grid lines are shown across the chart
-    scaleShowGridLines : true,
+    //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+    scaleBeginAtZero: true,
+    //Boolean - Whether grid lines are shown across the chart
+    scaleShowGridLines: true,
     //String - Colour of the grid lines
-    scaleGridLineColor : "rgba(0,0,0,.05)",
+    scaleGridLineColor: "rgba(0,0,0,.05)",
     //Number - Width of the grid lines
-    scaleGridLineWidth : 1,
+    scaleGridLineWidth: 1,
     //Boolean - Whether to show horizontal lines (except X axis)
     scaleShowHorizontalLines: true,
     //Boolean - Whether to show vertical lines (except Y axis)
-    scaleShowVerticalLines: true,
-    //Boolean - Whether the line is curved between points
-    bezierCurve : true,
-    //Number - Tension of the bezier curve between points
-    bezierCurveTension : 0.4,
-    //Boolean - Whether to show a dot for each point
-    pointDot : true,
-    //Number - Radius of each point dot in pixels
-    pointDotRadius : 4,
-    //Number - Pixel width of point dot stroke
-    pointDotStrokeWidth : 1,
-    //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
-    pointHitDetectionRadius : 10,
-    //Boolean - Whether to show a stroke for datasets
-    datasetStroke : true,
-    //Number - Pixel width of dataset stroke
-    datasetStrokeWidth : 2,
-    //Boolean - Whether to fill the dataset with a colour
-    datasetFill : true,
+    scaleShowVerticalLines: false,
+    //Boolean - If there is a stroke on each bar
+    barShowStroke: false,
+    //Number - Pixel width of the bar stroke
+    barStrokeWidth: 0,
+    //Number - Spacing between each of the X value sets
+    barValueSpacing: 1,
+    //Number - Spacing between data sets within X values
+    barDatasetSpacing: 0,
     //String - A legend template
-    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
   };
-  var pint_pub_chart = new Chart(ctx).Line(data, options);
+  Chart.defaults.global.responsive = false;
+  Chart.defaults.global.maintainAspectRatio = false;
+  Chart.defaults.global.tooltipXOffset = 0;
+  Chart.defaults.global.tooltipYOffset = 0;
+  var pint_pub_chart = new Chart(ctx).Bar(data, options);
   $("#stats-buttons").append('<div class="btn-group btn-group-xs" role="group"><button class="btn btn-xs btn-default" data-toggle="collapse" data-target="#chart-raw-data" aria-expanded="false" aria-controls="#chart-raw-data">JSON data of plot</button></div>');
   $("#chart-raw-data").html('<pre>'+JSON.stringify(years_counts, null, 2)+'</pre>');
   $("#image-download-docu").text('To download the plot and use it in your publications, right-click it. It is licensed under a Creative Commons Attribution 3.0 license.');

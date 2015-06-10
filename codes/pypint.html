@@ -75,6 +75,10 @@
         </li>
       
         <li >
+          <a href="/codes/pysdc.html">pySDC</a>
+        </li>
+      
+        <li >
           <a href="/codes/xbraid.html">XBraid</a>
         </li>
       
@@ -118,8 +122,8 @@ In order to clearly estimate the potential and limitations of these mostly itera
 modular prototyping framework not only helps to understand their properties and various facets but 
 also allows to easily implement and test new ideas.</p>
 
-<p>As an example, the <a href="/methods/pfasst.html"><em>parallel full approximation scheme in space and time</em> (<em>PFASST</em>)</a> 
-and its serial counterpart, multi-level spectral deferred corrections (<em>MLSDC</em>) are composed of 
+<p>As an example, the <em>Parallel Full Approximation Scheme in Space and Time</em> (<em>PFASST</em> <a href="#EmmettMinion2012">[1]</a>)
+and its serial counterpart, multi-level spectral deferred corrections (<em>MLSDC</em> <a href="#SpeckEtAl2014_BIT">[2]</a>) are composed of 
 multiple levels and even types of spectral deferred correction sweeps which are coupled by 
 space-time restriction and interpolation operators.
 These modular and interchangeable combinations of different techniques already generate a vast 
@@ -163,47 +167,100 @@ methods but also provide a development environment for enhancing existing and in
 Finally, <em>PyPinT</em> can also provide valuable insight and guidance for future, performance-oriented 
 implementations in other programming languages.</p>
 
-<aside class="references">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">References</h4>
+<ol class="bibliography"><li><div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-sm-12">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          EmmettMinion2012
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseEmmettMinion2012Bibtex" aria-expanded="false" aria-controls="collapseEmmettMinion2012Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalEmmettMinion2012Abstract" aria-expanded="false" aria-controls="modalEmmettMinion2012Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="list-group">
 
-<div class="reference">
-  <span class="authors">
-    <span class="author">Matthew Emmett</span>
-    <span class="author">Michael L Minion</span>
-  </span>
-  <span class="title">Toward an efficient parallel in time method for partial differential equations</span>
-  <span class="journal">Commun. Appl. Math. Comput. Sci.</span>
-  <span class="volume">7</span>
-  <span class="pages">105–132</span>
-  <span class="year">2012</span>
-  <span class="doi">10.2140/camcos.2012.7.105</span>
-  <span class="mendeley">http://www.mendeley.com/catalog/toward-efficient-parallel-time-method-partial-differential-equations/</span>
-</div>
-
-<div class="reference">
-  <span class="authors">
-    <span class="author">Robert Speck</span>
-    <span class="author">Daniel Ruprecht</span>
-    <span class="author">Matthew Emmett</span>
-    <span class="author">Michael L Minion</span>
-    <span class="author">Matthias Bolten</span>
-    <span class="author">Rolf Krause</span>
-  </span>
-  <span class="title">A multi-level spectral deferred correction method</span>
-  <span class="journal">BIT Numerical Mathematics</span>
-  <span class="year">2014</span>
-  <span class="doi">10.1007/s10543-014-0517-x</span>
-  <span class="mendeley">http://www.mendeley.com/research/multilevel-spectral-deferred-correction-method/</span>  
-</div>
-
+    <div class="col-md-9 col-sm-12">
+      <span id="EmmettMinion2012">M. Emmett and M. L. Minion, “Toward an Efficient Parallel in Time Method for Partial Differential Equations,” <i>Communications in Applied Mathematics and Computational Science</i>, vol. 7, pp. 105–132, 2012 [Online]. Available at: <a href="http://dx.doi.org/10.2140/camcos.2012.7.105">http://dx.doi.org/10.2140/camcos.2012.7.105</a></span>
     </div>
   </div>
-</aside>
+  <div class="collapse" id="collapseEmmettMinion2012Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{EmmettMinion2012,
+  author = {Emmett, Matthew and Minion, Michael L.},
+  journal = {Communications in Applied Mathematics and Computational Science},
+  pages = {105–132},
+  title = {{Toward an Efficient Parallel in Time Method for Partial Differential Equations}},
+  url = {http://dx.doi.org/10.2140/camcos.2012.7.105},
+  volume = {7},
+  year = {2012}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div></li>
+<li><div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-sm-12">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          SpeckEtAl2014_BIT
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSpeckEtAl2014_BITBibtex" aria-expanded="false" aria-controls="collapseSpeckEtAl2014_BITBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSpeckEtAl2014_BITAbstract" aria-expanded="false" aria-controls="modalSpeckEtAl2014_BITAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="col-md-9 col-sm-12">
+      <span id="SpeckEtAl2014_BIT">R. Speck, D. Ruprecht, M. Emmett, M. L. Minion, M. Bolten, and R. Krause, “A multi-level spectral deferred correction method,” <i>BIT Numerical Mathematics</i>, 2014 [Online]. Available at: <a href="http://dx.doi.org/10.1007/s10543-014-0517-x">http://dx.doi.org/10.1007/s10543-014-0517-x</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseSpeckEtAl2014_BITBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{SpeckEtAl2014_BIT,
+  author = {Speck, Robert and Ruprecht, Daniel and Emmett, Matthew and Minion, Michael L. and Bolten, Matthias and Krause, Rolf},
+  journal = {{BIT} Numerical Mathematics},
+  title = {{A multi-level spectral deferred correction method}},
+  url = {http://dx.doi.org/10.1007/s10543-014-0517-x},
+  year = {2014}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div></li></ol>
 
       </div>
       <aside class="col-md-4">
