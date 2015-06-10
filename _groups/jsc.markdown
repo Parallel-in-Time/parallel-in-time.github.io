@@ -2,6 +2,7 @@
 layout: page_group
 title: "Jülich Supercomputing Centre"
 date: 2014-06-12 16:00
+updated: 2015-06-03 10:40:00 +0200
 navbar: Groups
 subnavbar: jsc
 footer: true
@@ -17,13 +18,17 @@ members:
     email: d.moser@fz-juelich.de
   - name: Torbjörn Klatt
     email: t.klatt@fz-juelich.de
-short_desc: A very short description of this group.
+members_retired:
+  - name: Dr. Mathias Winkel
+  - name: M.Sc. Marina Weingartz
+short_desc: A small and young group concentrating on the PFASST algorithm.
 ---
 
 The research group at the _Jülich Supercomputing Centre_ is lead by Dr. Robert Speck mentoring
-his two PhD students Dieter Moser and Torbjörn Klatt as well as currently two
-master students.
+his two PhD students Dieter Moser and Torbjörn Klatt as well as a varying number of master and guest
+students.
 
-They concentrate on multi-level methods such as MLSDC, PFASST and Multigrid.
+They concentrate on multi-level methods such as MLSDC, [PFASST](/methods/pfasst.html) and Multigrid.
 
-Their flagship is [PyPinT](/codes/pypint.html).
+Currently, they develop and maintain two implementations of these algortihms.
+One is [PFASST++](/codes/pfasst.html) and the other [pySDC](/codes/pySDC.html).

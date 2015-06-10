@@ -17,7 +17,9 @@ members:
 short_desc: 
 ---
 
-Group ''High Performance Methods for Numerical Simulation in Science, Medicine and Engineering''.
+Group _High Performance Methods for Numerical Simulation in Science, Medicine and Engineering_.
 
-Members of the group at ICS started working on parallel-in-time methods in the course of the Swiss ''High Performance and High Productivity Computing'' initiative [HP2C](http://www.hp2c.ch).
-Research on time-parallel methods is now also part of the [''ExaSolvers''](/projects/sppexa.html) projects.
+Members of the group at ICS started working on parallel-in-time methods in the course of the Swiss
+_High Performance and High Productivity Computing_ initiative [HP2C](http://www.hp2c.ch).
+Research on time-parallel methods is now also part of the [_ExaSolvers_](/projects/sppexa.html)
+projects.

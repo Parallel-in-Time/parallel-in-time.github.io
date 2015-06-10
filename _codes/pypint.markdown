@@ -20,7 +20,7 @@ developers:
     lead_developer: true
   - name: Dr. Robert Speck
     email: r.speck@fz-juelich.de
-short_desc: A Python3 framework for Parallel-in-Time integration routines.
+short_desc: <em>DEPRECATED</em> A Python3 framework for Parallel-in-Time integration routines.
 ---
 
 With growing interest in parallel-in-time methods many different and new solvers for ordinary 
@@ -29,8 +29,8 @@ In order to clearly estimate the potential and limitations of these mostly itera
 modular prototyping framework not only helps to understand their properties and various facets but 
 also allows to easily implement and test new ideas.
 
-As an example, the [_parallel full approximation scheme in space and time_ (_PFASST_)][PFASST] 
-and its serial counterpart, multi-level spectral deferred corrections (_MLSDC_) are composed of 
+As an example, the _Parallel Full Approximation Scheme in Space and Time_ (_PFASST_ {% cite EmmettMinion2012 %})
+and its serial counterpart, multi-level spectral deferred corrections (_MLSDC_ {% cite SpeckEtAl2014_BIT %}) are composed of 
 multiple levels and even types of spectral deferred correction sweeps which are coupled by 
 space-time restriction and interpolation operators.
 These modular and interchangeable combinations of different techniques already generate a vast 
@@ -74,11 +74,7 @@ methods but also provide a development environment for enhancing existing and in
 Finally, _PyPinT_ can also provide valuable insight and guidance for future, performance-oriented 
 implementations in other programming languages.
 
-[PFASST]: /methods/pfasst.html
 [numPy]: http://www.numpy.org/
 [sciPy]: http://scipy.org/scipylib/index.html
 
-{% include references/begin.html %}
-{% include references/emmett2012_pfasst.html %}
-{% include references/speck2013_mlsdc.html %}
-{% include references/end.html %}
+{% bibliography --cited %}
