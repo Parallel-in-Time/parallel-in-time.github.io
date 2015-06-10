@@ -6,7 +6,6 @@
 @import "highlight";
 
 @import "asides/github";
-@import "references";
 
 html {
   min-height: 100%;
@@ -41,6 +40,17 @@ html {
     .event-meta {
       .label {
         margin: 0.25em;
+      }
+    }
+
+    @media(min-width: $screen-sm-min) {
+      #pint-pubs-chart {
+        width: 100%;
+      }
+    }
+    @media(min-width: $screen-md-min) {
+      #pint-pubs-chart {
+        width: 700px;
       }
     }
 
