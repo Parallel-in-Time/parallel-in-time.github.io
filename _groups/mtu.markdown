@@ -15,7 +15,10 @@ members:
 short_desc: 
 ---
 
-The group is actively working on application of RIDC to practical problems, as well as development of Schwarz Waveform Relaxation methods.  Other members affiliated with RIDC methods include:
+The group is actively working on application of [RIDC](/methods/ridc.html) to practical problems,
+as well as development of Schwarz Waveform Relaxation methods.
+
+Other members affiliated with RIDC methods include:
 
 +  Dr. Andrew Christlieb (Michigan State University)
 +  Dr. Ronald Haynes (Memorial University of Newfoundland)

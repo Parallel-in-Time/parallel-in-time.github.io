@@ -26,4 +26,5 @@ short_desc: A C++ library for RIDC.
 
 A modern C++ library for the RIDC algorithm. 
 
-The libridc is a C++ library which implements the parallel-in-time RIDC methods for solving systems of ODEs.
+The libridc is a C++ library which implements the parallel-in-time [RIDC](/methods/ridc.html)
+methods for solving systems of ODEs.
