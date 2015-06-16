@@ -1,0 +1,13 @@
+{% if page.navbar == 'Methods' or page.navbar == 'Codes' or page.navbar == 'Groups' or page.navbar == 'Projects' %}
+  <li class="dropdown active">
+{% else %}
+  <li class="dropdown">
+{% endif %}
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    {% include navs/methods.html %}
+    {% include navs/codes.html %}
+    {% include navs/groups.html %}
+    {% include navs/projects.html %}
+  </ul>
+</li>

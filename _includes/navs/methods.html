@@ -1,17 +1,14 @@
 {% if page.navbar == 'Methods' %}
-  <li class="dropdown active">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Methods <b class="caret"></b></a>
-    <ul class="dropdown-menu">
-      <li {% if page.subnavbar == 'Overview' %}class="active"{% endif %}>
-        <a href="{{ root_url }}/methods/index.html">Overview</a>
-      </li>
-      {% for method in site.methods | order: 'title' %}
-        <li {% if page.subnavbar == method.subnavbar %}class="active"{% endif %}>
-          <a href="{{ method.url }}">{{ method.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+  <li role="presentation" class="dropdown-header">Methods</li>
+  <li {% if page.navbar == 'Methods' and page.subnavbar == 'Overview' %}class="active"{% endif %}>
+    <a href="{{ root_url }}/methods/index.html">Overview</a>
   </li>
+  {% for method in site.methods | order: 'title' %}
+    <li {% if page.subnavbar == method.subnavbar %}class="active"{% endif %}>
+      <a href="{{ method.url }}">{{ method.title }}</a>
+    </li>
+  {% endfor %}
+  <li role="presentation" class="divider"></li>
 {% else %}
   <li>
     <a href="{{ root_url }}/methods/index.html">Methods</a>

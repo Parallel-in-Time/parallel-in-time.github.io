@@ -1,17 +1,15 @@
 {% if page.navbar == 'Groups' %}
-  <li class="dropdown active">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Groups <b class="caret"></b></a>
-    <ul class="dropdown-menu">
-      <li {% if page.subnavbar == 'Overview' %}class="active"{% endif %}>
-        <a href="{{ root_url }}/groups/index.html">Overview</a>
-      </li>
-      {% for group in site.groups | order: 'title' %}
-        <li {% if page.subnavbar == group.subnavbar %}class="active"{% endif %}>
-          <a href="{{ group.url }}">{{ group.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+  <li role="presentation" class="divider"></li>
+  <li role="presentation" class="dropdown-header">Groups</li>
+  <li {% if page.navbar == 'Groups' and page.subnavbar == 'Overview' %}class="active"{% endif %}>
+    <a href="{{ root_url }}/groups/index.html">Overview</a>
   </li>
+  {% for group in site.groups | order: 'title' %}
+    <li {% if page.subnavbar == group.subnavbar %}class="active"{% endif %}>
+      <a href="{{ group.url }}">{{ group.title }}</a>
+    </li>
+  {% endfor %}
+  <li role="presentation" class="divider"></li>
 {% else %}
   <li>
     <a href="{{ root_url }}/groups/index.html">Groups</a>
