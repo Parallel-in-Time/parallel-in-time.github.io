@@ -13,12 +13,9 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            {% include navs/events.html %}
-            {% include navs/groups.html %}
-            {% include navs/projects.html %}
-            {% include navs/methods.html %}
-            {% include navs/codes.html %}
             {% include navs/news.html %}
+            {% include navs/events.html %}
+            {% include navs/research.html %}
             <li {% if page.navbar == 'References' %}class="active"{% endif %}>
               <a href="{{ root_url }}/references/index.html">References</a>
             </li>
