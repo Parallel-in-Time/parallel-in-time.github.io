@@ -99,4 +99,6 @@ $(document).ready(function() {
   $("#stats-buttons").append('<div class="btn-group btn-group-xs" role="group"><button class="btn btn-xs btn-default" data-toggle="collapse" data-target="#chart-raw-data" aria-expanded="false" aria-controls="#chart-raw-data">JSON data of plot</button></div>');
   $("#chart-raw-data").html('<pre>'+JSON.stringify(years_counts, null, 2)+'</pre>');
   $("#image-download-docu").text('To download the plot and use it in your publications, right-click it. It is licensed under a Creative Commons Attribution 3.0 license.');
+
+  $('.year-btn-group').removeClass('hidden');
 });
