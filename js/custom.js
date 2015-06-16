@@ -30,16 +30,14 @@ $(document).ready(function() {
     //
     // Beautify Ref Lists
     //
-    $('ol.bibliography').replaceTag('<dl>', true);
-    $('dl.bibliography').each(function() {
-        $(this).addClass('dl-horizontal');
+    $('ol.bibliography').each(function() {
+        $(this).addClass('list-group');
         $(this).find('li').each(function() {
-            $(this).find('.bibtex-ref-id').removeClass('hidden').replaceTag('<dt>', true);
-            $(this).find('.bibtex-ref-entry').replaceTag('<dd>', true);
-            $(this).find('.bibtex-ref-entry span').addClass('col-xs-12 col-md-9 col-lg-10').replaceTag('<div>', true);
-            $(this).find('.bibtex-ref-entry div.buttons').removeClass('hidden');
-            $(this).find('.bibtex-ref-entry').wrapInner('<div class="row"></div>');
-            $(this).replaceTag('<div>', true);
+            $(this).addClass('list-group-item');
+            $(this).find('.bibtex-entry-container').addClass('container-fluid')
+                .find('>div').addClass('row')
+                .find('.bibtex-ref-meta').removeClass('hidden');
+            $(this).find('.bibtex-ref-entry').addClass('col-md-9 col-sm-12');
         });
     });
 });

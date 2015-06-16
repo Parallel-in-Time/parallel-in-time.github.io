@@ -1,31 +1,42 @@
 ---
 ---
-<div class="bibtex-ref-id hidden">
-  {{ key }}
-</div>
-<div class="bibtex-ref-entry">
-  {{ reference | trim_ieee_citation }}
+<div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          {{ key }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapse{{ key }}Bibtex"
+                    aria-expanded="false" aria-controls="collapse{{ key }}Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            {% if entry.abstract %}
+            <button class="btn btn-default" data-toggle="modal" data-target="#modal{{ key }}Abstract"
+                    aria-expanded="false" aria-controls="modal{{ key }}Abstract">
+              Abstract
+            </button>
+            {% else %}
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modal{{ key }}Abstract"
+                    aria-expanded="false" aria-controls="modal{{ key }}Abstract">
+              Abstract
+            </button>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div class="col-xs-12 col-md-3 col-lg-2 hidden buttons">
-    <div class="btn-group btn-group-xs" role="group">
-      <button class="btn btn-default" data-toggle="collapse" data-target="#collapse{{ key }}Bibtex"
-              aria-expanded="false" aria-controls="collapse{{ key }}Bibtex">
-        BibTeX
-      </button>
-      {% if entry.abstract %}
-        <button class="btn btn-default" data-toggle="modal" data-target="#modal{{ key }}Abstract"
-                aria-expanded="false" aria-controls="modal{{ key }}Abstract">
-          Abstract
-        </button>
-      {% else %}
-        <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modal{{ key }}Abstract"
-                aria-expanded="false" aria-controls="modal{{ key }}Abstract">
-          Abstract
-        </button>
-      {% endif %}
+    <div class="bibtex-ref-entry">
+      {{ reference | trim_ieee_citation }}
     </div>
   </div>
-
   <div class="collapse" id="collapse{{ key }}Bibtex">
     <div class="row">
       <div class="col-md-12">
@@ -34,20 +45,20 @@
     </div>
   </div>
   {% if entry.abstract %}
-    <div class="modal fade" id="modal{{ key }}Abstract" tabindex="-1" role="dialog" aria-labelledby="modal{{ key }}AbstractTitle" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="modal{{ key }}AbstractTitle">
-              Abstract for BibTeX entry <code>{{ key }}</code>
-            </h4>
-          </div>
-          <div class="modal-body">
-            {{ entry.abstract }}
-          </div>
+  <div class="modal fade" id="modal{{ key }}Abstract" tabindex="-1" role="dialog" aria-labelledby="modal{{ key }}AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modal{{ key }}AbstractTitle">
+            Abstract for BibTeX entry <code>{{ key }}</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          {{ entry.abstract }}
         </div>
       </div>
     </div>
+  </div>
   {% endif %}
 </div>
