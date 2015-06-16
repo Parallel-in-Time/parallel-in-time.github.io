@@ -54,6 +54,22 @@ html {
       }
     }
 
+    @media (min-width: $grid-float-breakpoint) {
+      .dl-horizontal.bibliography {
+        dt {
+          float: left;
+          width: 200px;
+          clear: left;
+          text-align: right;
+          @include text-overflow();
+        }
+        dd {
+          margin-left: 220px;
+          @include clearfix(); // Clear the floated `dt` if an empty `dd` is present
+        }
+      }
+    }
+
     .ref-label {
       width: 100%;
       display: block !important;

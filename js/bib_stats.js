@@ -11,12 +11,6 @@ $(document).ready(function() {
   $('.dropdown-menu.years').html(toc_html);
 
   //
-  // Beautify Ref Lists
-  //
-  $('ol').addClass('list-group');
-  $('ol.bibliography li').addClass('list-group-item');
-
-  //
   // Gather Publications-by-Year Statistics
   //
   var yc_prelim = {};
