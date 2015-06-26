@@ -4,7 +4,7 @@
   <title><![CDATA[Events | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/events/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2015-06-16T09:57:18+00:00</updated>
+  <updated>2015-06-26T07:12:17+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Election of Scientific Committee]]></title>
+    <link href="http://parallelintime.org/news/2015/06/26/sc-election.html"/>
+    <updated>2015-06-26T09:21:44+00:00</updated>
+    <id>http://parallelintime.org/news/2015/06/26/sc-election</id>
+    <content type="html"><![CDATA[<p>The election for the scientific committee is open until July 3rd 2015, 4pm GMT.</p>
+
+<!--more-->
+<p>Following the <a href="/events/bylaws.html">bylaws</a> put in place during the workshop in Dresden in May 2015, the election of a scientific committee for the PINT workshop series is now underway. Everyone who was officially registered for one of the last three workshops (Manchester, Jülich or Dresden) is eligible to cast a vote and should have received a corresponding email from the helios online voting system.</p>
+
+<p>In case you were registered for one of those workshops but <em>did not receive an email</em>, please contact Martin Klöppel from the voting committee at michael[DOT]kloeppel[AT]tu-dresden[DOT]de before July 2nd.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bylaws for the PinT workshop series]]></title>
@@ -75,21 +89,6 @@ series in November 2016 in Canada.</p>
     <id>http://parallelintime.org/news/2015/04/20/toulouse-workshop-announcement</id>
     <content type="html"><![CDATA[<p>In addition to the <a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">5th Workshop on Parallel-in-Time Integration</a> in Banff, Canada in November 2016, another workshop also dedicated to the topic will take place in Toulouse in France from 11th-12th January 2016.
 You can find more information here on <a href="/events/upcoming/2016/cimi_semester.html">parallelintime.org</a> and on the <a href="http://inpact.inp-toulouse.fr/CIMI_Semester/wksp_parallel.html">official website</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Workshop in Banff in 2016]]></title>
-    <link href="http://parallelintime.org/news/2014/12/19/workshop-in-2016-announcement.html"/>
-    <updated>2014-12-19T07:26:44+00:00</updated>
-    <id>http://parallelintime.org/news/2014/12/19/workshop-in-2016-announcement</id>
-    <content type="html"><![CDATA[<p>The 5th Workshop on Parallel-in-Time Integration will take place in November 2016 in Banff, Canada.</p>
-
-<!--more-->
-
-<p>The workshop series on parallel-in-time integration will continue in 2016 and take place on the North American continent for the first time.
-In November 2016, the workshop will be hosted by the <a href="http://www.birs.ca/">Banff International Research Station</a> in Canada.
-Please check out the entry at <a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">parallelintime.org</a> for more information.</p>
 ]]></content>
   </entry>
   
