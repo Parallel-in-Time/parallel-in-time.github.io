@@ -3,10 +3,10 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Multigrid Reduction in Time (MGRIT)</title>
+  <title>Space-time Multigrid (STMG)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallelintime.org/methods/mgrit.html">
+  <link rel="canonical" href="http://parallelintime.org/methods/stmg.html">
 
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/octicons/octicons.min.css">
@@ -57,7 +57,7 @@
     <a href="/methods/index.html">Overview</a>
   </li>
   
-    <li class="active">
+    <li >
       <a href="/methods/mgrit.html">Multigrid Reduction in Time (MGRIT)</a>
     </li>
   
@@ -73,7 +73,7 @@
       <a href="/methods/ridc.html">Revisionsit Integral Deferred Correction (RIDC)</a>
     </li>
   
-    <li >
+    <li class="active">
       <a href="/methods/stmg.html">Space-time Multigrid (STMG)</a>
     </li>
   
@@ -123,34 +123,32 @@
       <div class="container">
         <div class="post post-code">
   <header class="post-header">
-    <h1>Multigrid Reduction in Time (MGRIT)</h1>
+    <h1>Space-time Multigrid (STMG)</h1>
     
-    <h2>MGRIT</h2>
+    <h2>STMG</h2>
     
   </header>
   <article class="post-content">
-  <p>The <em>MGRIT</em> algorithm <a href="#FriedhoffEtAl2013">[1]</a> enables a scalable and non-intrusive
-parallel-in-time approach by applying multigrid reduction to the time dimension.
-See <a href="/codes/xbraid.html">XBraid</a> for more information and a place to download the XBraid software.</p>
+  <p>The <em>space-time multigrid</em> method <a href="#HortonVandewalle1995">[1]</a> treats the whole of the space-time problem simultaneously. The multigrid approach uses point smoothers and employs a parameter-dependent coarsening strategy that chooses either semicoarsening in space or in time on each level of the multigrid hierarchy.</p>
 
 <ol class="bibliography"><li><div class="bibtex-entry-container">
   <div>
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          FriedhoffEtAl2013
+          HortonVandewalle1995
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseFriedhoffEtAl2013Bibtex" aria-expanded="false" aria-controls="collapseFriedhoffEtAl2013Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseHortonVandewalle1995Bibtex" aria-expanded="false" aria-controls="collapseHortonVandewalle1995Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalFriedhoffEtAl2013Abstract" aria-expanded="false" aria-controls="modalFriedhoffEtAl2013Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalHortonVandewalle1995Abstract" aria-expanded="false" aria-controls="modalHortonVandewalle1995Abstract">
               Abstract
             </button>
             
@@ -160,18 +158,21 @@ See <a href="/codes/xbraid.html">XBraid</a> for more information and a place to 
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="FriedhoffEtAl2013">S. Friedhoff, R. D. Falgout, T. V. Kolev, S. P. MacLachlan, and J. B. Schroder, “A Multigrid-in-Time Algorithm for Solving Evolution Equations in Parallel,” in <i>Presented at: Sixteenth Copper Mountain Conference on Multigrid Methods, Copper Mountain, CO, United States, Mar 17 - Mar 22, 2013</i>, 2013 [Online]. Available at: [http://www.osti.gov/scitech/servlets/purl/1073108](http://www.osti.gov/scitech/servlets/purl/1073108)</span>
+      <span id="HortonVandewalle1995">G. Horton and S. Vandewalle, “A Space-Time Multigrid Method for Parabolic Partial Differential Equations,” <i>SIAM Journal on Scientific Computing</i>, vol. 16, no. 4, pp. 848–864, 1995 [Online]. Available at: [http://dx.doi.org/10.1137/0916050](http://dx.doi.org/10.1137/0916050)</span>
     </div>
   </div>
-  <div class="collapse" id="collapseFriedhoffEtAl2013Bibtex">
+  <div class="collapse" id="collapseHortonVandewalle1995Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@inproceedings{FriedhoffEtAl2013,
-  author = {Friedhoff, S. and Falgout, R. D. and Kolev, T. V. and MacLachlan, Scott P. and Schroder, Jacob B.},
-  booktitle = {{Presented at: Sixteenth Copper Mountain Conference on Multigrid Methods, Copper Mountain, CO, United States, Mar 17 - Mar 22, 2013}},
-  title = {{A Multigrid-in-Time Algorithm for Solving Evolution Equations in Parallel}},
-  url = {http://www.osti.gov/scitech/servlets/purl/1073108},
-  year = {2013}
+        <pre class="abstract">@article{HortonVandewalle1995,
+  author = {Horton, Graham and Vandewalle, Stefan},
+  journal = {SIAM Journal on Scientific Computing},
+  number = {4},
+  pages = {848–864},
+  title = {{A Space-Time Multigrid Method for Parabolic Partial Differential Equations}},
+  url = {http://dx.doi.org/10.1137/0916050},
+  volume = {16},
+  year = {1995}
 }
 </pre>
       </div>
@@ -197,7 +198,7 @@ See <a href="/codes/xbraid.html">XBraid</a> for more information and a place to 
 
 
 
-  <i class="fa fa-calendar"></i> Updated on <time datetime="2014-11-05T17:00:00+00:00" data-updated="true">05 Nov 2014</time>
+  <i class="fa fa-calendar"></i> Updated on <time datetime="2015-07-01T17:00:00+00:00" data-updated="true">01 Jul 2015</time>
 
 
     </footer>
