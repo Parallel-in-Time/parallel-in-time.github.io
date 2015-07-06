@@ -4,7 +4,7 @@
   <title><![CDATA[Events | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/events/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2015-07-02T08:22:10+00:00</updated>
+  <updated>2015-07-06T10:07:23+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First scientific committee elected]]></title>
+    <link href="http://parallelintime.org/news/2015/06/26/sc-election-result.html"/>
+    <updated>2015-06-26T09:21:44+00:00</updated>
+    <id>http://parallelintime.org/news/2015/06/26/sc-election-result</id>
+    <content type="html"><![CDATA[<p>The election for the scientific committee is now closed and the results available. As we had 7 candidates for 7 open positions, the outcome is not a big surprise. Nevertheless, the first election of a scientific committee will hopefully be an important milestone and help to successfully continue the PINT workshop series for many years to come.</p>
+
+<!--more-->
+<p>The following colleagues have been elected as members of the first scientific committee:</p>
+
+<ul>
+  <li>Martin J. Gander, University of Geneva, Switzerland</li>
+  <li>Stefan Güttel, University of Manchester, UK</li>
+  <li>Ron Haynes, Memorial University of Newfoundland, Canada</li>
+  <li>Rolf Krause, University of Lugano, Switzerland,</li>
+  <li>Daniel Ruprecht, University of Lugano, Switzerland (soon: University of Leeds, UK)</li>
+  <li>Jacob Schroder, Lawrence Livermore National Laboratory, USA</li>
+  <li>Robert Speck, Jülich Supercomputing Centre, Germany</li>
+</ul>
+
+<p><strong>Support from Michael Klöppel at TU Dresden is thankfully acknowledged</strong>: he served as the voting committee and set up and administrated the election through the <a href="https://vote.heliosvoting.org/">helios</a> online voting system.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Election of Scientific Committee]]></title>
@@ -79,16 +103,6 @@ series in November 2016 in Canada.</p>
     <content type="html"><![CDATA[<p>There exists now an email list to help you send and receive information and announcements all around parallel-in-time integration. To join, simply send an email to <em>parallelintime+subscribe[AT]googlegroups.com</em> and wait for one of the moderators to approve your request.</p>
 
 <p><strong>Note:</strong> You do <em>not</em> need a Google account in order to join this list, just send the subscribe email from the email address you want to subscribe.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Workshop in Toulouse in January 2016]]></title>
-    <link href="http://parallelintime.org/news/2015/04/20/toulouse-workshop-announcement.html"/>
-    <updated>2015-04-20T07:26:44+00:00</updated>
-    <id>http://parallelintime.org/news/2015/04/20/toulouse-workshop-announcement</id>
-    <content type="html"><![CDATA[<p>In addition to the <a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">5th Workshop on Parallel-in-Time Integration</a> in Banff, Canada in November 2016, another workshop also dedicated to the topic will take place in Toulouse in France from 11th-12th January 2016.
-You can find more information here on <a href="/events/upcoming/2016/cimi_semester.html">parallelintime.org</a> and on the <a href="http://inpact.inp-toulouse.fr/CIMI_Semester/wksp_parallel.html">official website</a>.</p>
 ]]></content>
   </entry>
   
