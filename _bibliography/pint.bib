@@ -1900,6 +1900,29 @@ coefficient. },
 }
 
 @article{MinionEtAl2015,
+	abstract = {   The parallel full approximation scheme in space and time (PFASST)
+  introduced by Emmett and Minion in 2012 is an iterative strategy for
+  the temporal parallelization of ODEs and discretized PDEs. As the
+  name suggests, PFASST is similar in spirit to a space-time FAS
+  multigrid method performed over multiple time-steps in parallel. 
+  However, since the original focus of
+  PFASST has been on the performance of the method in terms of time
+  parallelism, the solution of any spatial system arising from the use
+  of implicit or semi-implicit temporal methods within PFASST have
+  simply been assumed to be solved to some desired accuracy completely
+  at each sub-step and each iteration by some unspecified procedure.
+  It hence is natural to investigate how iterative solvers in the
+  spatial dimensions can be interwoven with the PFASST iterations and
+  whether this strategy leads to a more efficient overall approach.
+  This paper presents an initial investigation on the relative
+  performance of different strategies for coupling PFASST iterations
+  with multigrid methods for the implicit treatment of diffusion terms
+  in PDEs. In particular, we compare full accuracy multigrid solves at
+  each sub-step with a small fixed number of multigrid V-cycles. This
+  reduces the cost of each PFASST iteration at the possible expense of a
+  corresponding increase in the number of PFASST iterations needed for
+  convergence. Parallel efficiency of the resulting methods is
+  explored through numerical examples. },
 	author = {Minion, Michael L. and Speck, Robert and Bolten, Matthias and Emmett, Matthew and Ruprecht, Daniel},
 	journal = {{SIAM} Journal on Scientific Computing},
 	title = {{Interweaving {PFASST} and parallel multigrid}},
@@ -1978,16 +2001,6 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
 	title = {{Parareal Algorithms Implemented with {IMEX} Runge-Kutta Methods}},
 	url = {http://dx.doi.org/10.1155/2015/395340},
 	volume = {2015},
-	year = {2015}
-}
-
-@article{WinkelEtAl2015,
-	author = {Winkel, Mathias and Speck, Robert and Ruprecht, Daniel},
-	journal = {Journal of Computational Physics},
-	pages = {456–474},
-	title = {{A high-order {B}oris integrator}},
-	url = {http://dx.doi.org/10.1016/j.jcp.2015.04.022},
-	volume = {295},
 	year = {2015}
 }
 
