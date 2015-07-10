@@ -1296,6 +1296,20 @@ paper adapts this modified Parareal and employs it for the solution of a hyperbo
 }
 
 @inproceedings{SpeckEtAl2012,
+	abstract = {We present a novel space-time parallel version of the Barnes-Hut tree code
+PEPC using PFASST, the Parallel Full Approximation
+Scheme in Space and Time. The naive use of increasingly more processors for a
+fixed-size N-body problem is prone to saturate as soon as the number of unknowns
+per core becomes too small. To overcome this intrinsic strong-scaling limit, we
+introduce temporal parallelism on top of pepc's existing hybrid
+MPI/PThreads spatial decomposition. Here, we use PFASST which is based
+on a combination of the iterations of the parallel-in-time algorithm parareal
+with the sweeps of spectral deferred correction (SDC) schemes. By combining
+these sweeps with multiple space-time discretization levels, PFASST
+relaxes the theoretical bound on parallel efficiency in parareal. We present
+results from runs on up to 262,144 cores on the IBM Blue Gene/P installation
+JUGENE, demonstrating that the space-time parallel code provides speedup beyond
+the saturation of the purely space-parallel approach.},
 	address = {Los Alamitos, CA, USA},
 	articleno = {92},
 	author = {Speck, Robert and Ruprecht, Daniel and Krause, Rolf and Emmett, Matthew and Minion, Michael L. and Winkel, Mathias and Gibbon, Paul},
