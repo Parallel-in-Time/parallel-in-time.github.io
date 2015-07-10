@@ -1281,6 +1281,10 @@
 }
 
 @article{RuprechtKrause2012,
+	abstract = {The applicability of the Parareal parallel-in-time integration scheme for the solution of a linear, two-dimensional hyperbolic acoustic-advection system, which is often used as a
+test case for integration schemes for numerical weather prediction (NWP), is addressed. Parallel-in-time schemes are a possible way to increase, on the algorithmic level, the amount of parallelism, a requirement arising from the rapidly growing number of CPUs in high performance computer systems. A recently introduced modification of the "parallel
+implicit time-integration algorithm" could successfully solve hyperbolic problems arising in structural dynamics. It has later been cast into the framework of Parareal. The present
+paper adapts this modified Parareal and employs it for the solution of a hyperbolic flow problem, where the initial value problem solved in parallel arises from the spatial discretization of a partial differential equation by a finite difference method. It is demonstrated that the modified Parareal is stable and can produce reasonably accurate solutions while allowing for a noticeable reduction of the time-to-solution. The implementation relies on integration schemes  already widely used in NWP (RK-3, partially split forward Euler, forward-backward). It is demonstrated that using an explicit partially split scheme for the coarse integrator allows to avoid the use of an implicit scheme while still achieving speedup.},
 	author = {Ruprecht, Daniel and Krause, Rolf},
 	journal = {Computers \& Fluids},
 	number = {0},
