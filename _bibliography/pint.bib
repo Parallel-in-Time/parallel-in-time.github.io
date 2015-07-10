@@ -1281,6 +1281,10 @@
 }
 
 @article{RuprechtKrause2012,
+	abstract = {The applicability of the Parareal parallel-in-time integration scheme for the solution of a linear, two-dimensional hyperbolic acoustic-advection system, which is often used as a
+test case for integration schemes for numerical weather prediction (NWP), is addressed. Parallel-in-time schemes are a possible way to increase, on the algorithmic level, the amount of parallelism, a requirement arising from the rapidly growing number of CPUs in high performance computer systems. A recently introduced modification of the "parallel
+implicit time-integration algorithm" could successfully solve hyperbolic problems arising in structural dynamics. It has later been cast into the framework of Parareal. The present
+paper adapts this modified Parareal and employs it for the solution of a hyperbolic flow problem, where the initial value problem solved in parallel arises from the spatial discretization of a partial differential equation by a finite difference method. It is demonstrated that the modified Parareal is stable and can produce reasonably accurate solutions while allowing for a noticeable reduction of the time-to-solution. The implementation relies on integration schemes  already widely used in NWP (RK-3, partially split forward Euler, forward-backward). It is demonstrated that using an explicit partially split scheme for the coarse integrator allows to avoid the use of an implicit scheme while still achieving speedup.},
 	author = {Ruprecht, Daniel and Krause, Rolf},
 	journal = {Computers \& Fluids},
 	number = {0},
@@ -1292,6 +1296,20 @@
 }
 
 @inproceedings{SpeckEtAl2012,
+	abstract = {We present a novel space-time parallel version of the Barnes-Hut tree code
+PEPC using PFASST, the Parallel Full Approximation
+Scheme in Space and Time. The naive use of increasingly more processors for a
+fixed-size N-body problem is prone to saturate as soon as the number of unknowns
+per core becomes too small. To overcome this intrinsic strong-scaling limit, we
+introduce temporal parallelism on top of pepc's existing hybrid
+MPI/PThreads spatial decomposition. Here, we use PFASST which is based
+on a combination of the iterations of the parallel-in-time algorithm parareal
+with the sweeps of spectral deferred correction (SDC) schemes. By combining
+these sweeps with multiple space-time discretization levels, PFASST
+relaxes the theoretical bound on parallel efficiency in parareal. We present
+results from runs on up to 262,144 cores on the IBM Blue Gene/P installation
+JUGENE, demonstrating that the space-time parallel code provides speedup beyond
+the saturation of the purely space-parallel approach.},
 	address = {Los Alamitos, CA, USA},
 	articleno = {92},
 	author = {Speck, Robert and Ruprecht, Daniel and Krause, Rolf and Emmett, Matthew and Minion, Michael L. and Winkel, Mathias and Gibbon, Paul},
@@ -1632,13 +1650,6 @@
 	year = {2014}
 }
 
-@unpublished{Gander2014_Review,
-	author = {Gander, Martin J.},
-	title = {{50 years of Time Parallel Time Integration}},
-	url = {http://www.unige.ch/~gander/Preprints/50YearsTimeParallel.pdf},
-	year = {2014}
-}
-
 @article{HautWingate2014,
 	author = {Haut, T. and Wingate, B.},
 	journal = {SIAM Journal on Scientific Computing},
@@ -1740,15 +1751,6 @@
 	year = {2014}
 }
 
-@inproceedings{RuprechtEtAl2014_DDM,
-	author = {Ruprecht, Daniel and Speck, Robert and Krause, Rolf},
-	booktitle = {{Domain Decomposition Methods in Science and Engineering {XXII}}},
-	series = {{Lecture Notes in Computational Science and Engineering}},
-	title = {{Parareal for diffusion problems with space- and time-dependent coefficients}},
-	url = {http://arxiv.org/abs/1401.7829},
-	year = {2014}
-}
-
 @inproceedings{RuprechtKrause2014_DDM,
 	author = {Krause, Rolf and Ruprecht, Daniel},
 	booktitle = {{Domain Decomposition Methods in Science and Engineering {XXI}}},
@@ -1781,15 +1783,6 @@
 	title = {{Analysis of a new parareal algorithm based on waveform relaxation method for time-periodic problems}},
 	url = {http://dx.doi.org/10.1007/s11075-013-9810-z},
 	volume = {67},
-	year = {2014}
-}
-
-@inproceedings{SpeckEtAl2014_DDM2013,
-	author = {Speck, Robert and Ruprecht, Daniel and Minion, Michael L. and Emmett, Matthew and Krause, Rolf},
-	booktitle = {{Domain Decomposition Methods in Science and Engineering {XXII}}},
-	series = {{Lecture Notes in Computational Science and Engineering}},
-	title = {{Inexact spectral deferred corrections}},
-	url = {http://arxiv.org/abs/1401.7824},
 	year = {2014}
 }
 
@@ -1881,11 +1874,39 @@
 }
 
 @article{ArteagaEtAl2015,
+	abstract = {{ In view of the rapid rise of the number of cores in modern
+supercomputers, time-parallel methods that introduce concurrency along
+the temporal axis are becoming increasingly popular.  For the solution
+of time-dependent partial differential equations, these methods can
+add another direction for concurrency on top of spatial
+parallelization.  The paper presents an implementation of the
+time-parallel Parareal method in a C++ domain specific language for
+stencil computations (STELLA).  STELLA provides both an OpenMP and a
+CUDA backend for a shared memory parallelization, using the CPU or GPU
+inside a node for the spatial stencils. Here, we intertwine this
+node-wise spatial parallelism with the time-parallel
+Parareal. This is done by adding an MPI-based implementation of
+Parareal, which allows us to parallelize in time across nodes.  The
+performance of Parareal with both backends is analyzed in terms of
+speedup, parallel efficiency and energy-to-solution for an
+advection-diffusion problem with a time-dependent diffusion
+coefficient. }},
 	author = {Arteaga, A. and Ruprecht, Daniel and Krause, Rolf},
 	journal = {Applied Mathematics and Computation},
 	title = {{A stencil-based implementation of Parareal in the {C++} domain specific embedded language {STELLA}}},
 	url = {http://dx.doi.org/10.1016/j.amc.2014.12.055},
 	year = {2015}
+}
+
+@incollection{Gander2015_Review,
+	author = {Gander, Martin J.},
+	title = {{50 years of Time Parallel Time Integration}},
+	booktitle = {Multiple Shooting and Time Domain Decomposition},
+	editors={Carraro, T. and Geiger, M. and K\"orkel, S. and Rannacher, R.},
+	url = {http://www.unige.ch/~gander/Preprints/50YearsTimeParallel.pdf},
+	year = {2015},
+	publisher = {Springer},
+	note = {In press}
 }
 
 @article{KreienbuehlEtAl2015,
@@ -1897,11 +1918,47 @@
 }
 
 @article{MinionEtAl2015,
+	abstract = {{   The parallel full approximation scheme in space and time (PFASST)
+  introduced by Emmett and Minion in 2012 is an iterative strategy for
+  the temporal parallelization of ODEs and discretized PDEs. As the
+  name suggests, PFASST is similar in spirit to a space-time FAS
+  multigrid method performed over multiple time-steps in parallel. 
+  However, since the original focus of
+  PFASST has been on the performance of the method in terms of time
+  parallelism, the solution of any spatial system arising from the use
+  of implicit or semi-implicit temporal methods within PFASST have
+  simply been assumed to be solved to some desired accuracy completely
+  at each sub-step and each iteration by some unspecified procedure.
+  It hence is natural to investigate how iterative solvers in the
+  spatial dimensions can be interwoven with the PFASST iterations and
+  whether this strategy leads to a more efficient overall approach.
+  This paper presents an initial investigation on the relative
+  performance of different strategies for coupling PFASST iterations
+  with multigrid methods for the implicit treatment of diffusion terms
+  in PDEs. In particular, we compare full accuracy multigrid solves at
+  each sub-step with a small fixed number of multigrid V-cycles. This
+  reduces the cost of each PFASST iteration at the possible expense of a
+  corresponding increase in the number of PFASST iterations needed for
+  convergence. Parallel efficiency of the resulting methods is
+  explored through numerical examples. }},
 	author = {Minion, Michael L. and Speck, Robert and Bolten, Matthias and Emmett, Matthew and Ruprecht, Daniel},
 	journal = {{SIAM} Journal on Scientific Computing},
 	title = {{Interweaving {PFASST} and parallel multigrid}},
 	url = {http://arxiv.org/abs/1407.6486},
 	year = {2015}
+}
+
+@inproceedings{RuprechtEtAl2015_DDM,
+	author={Ruprecht, Daniel and Speck, Robert and Krause, Rolf},
+	title={Parareal for diffusion problems with space- and time-dependent coefficients},
+       	booktitle={Domain Decomposition Methods in Science and Engineering {XXII}},
+	series="Lecture Notes in Computational Science and Engineering",
+	volume={104},
+	pages={3--10},
+	year={2015},
+	publisher={Springer International Publishing Switzerland},
+	editors={Dickopf, Th. and Gander, M. J. and Halpern, L. and Krause, R. and Pavarino, L. F.}, 
+	url={http://dx.doi.org/10.1007/978-3-319-18827-0_1}
 }
 
 @article{Scheibe2015,
@@ -1926,7 +1983,24 @@
 	year = {2015}
 }
 
+@inproceedings{SpeckEtAl2015_DDM,
+	author={Speck, Robert and Ruprecht, Daniel and Minion, Michael and Emmett, Matthew and Krause, Rolf},
+	title={Inexact spectral deferred corrections},
+       	booktitle={Domain Decomposition Methods in Science and Engineering {XXII}},
+	series={Lecture Notes in Computational Science and Engineering},
+	volume={104},
+	year={2015},
+	pages={127--133},
+	url={http://dx.doi.org/10.1007/978-3-319-18827-0_66},
+	publisher={Springer International Publishing Switzerland},
+	editors={Dickopf, Th. and Gander, M. J. and Halpern, L. and Krause, R. and Pavarino, L. F.} 
+}
+
 @incollection{SteinerEtAl2015,
+	abstract = { The paper presents first a linear stability analysis for the time-parallel Parareal method, using an IMEX Euler as coarse and a Runge-Kutta-3 method as fine propagator,
+confirming that dominant imaginary eigenvalues negatively affect Parareal's convergence.
+This suggests that when Parareal is applied to the nonlinear Navier-Stokes equations, problems for small viscosities could arise.
+Numerical results for a driven cavity benchmark are presented, confirming that Parareal's convergence can indeed deteriorate as viscosity decreases and the flow becomes increasingly dominated by convection. The effect is found to strongly depend on the spatial resolution.},
 	author = {Steiner, J. and Ruprecht, Daniel and Speck, Robert and Krause, Rolf},
 	booktitle = {{Numerical Mathematics and Advanced Applications - ENUMATH 2013}},
 	editor = {Abdulle, Assyr and Deparis, Simone and Kressner, Daniel and Nobile, Fabio and Picasso, Marco},
@@ -1945,16 +2019,6 @@
 	title = {{Parareal Algorithms Implemented with {IMEX} Runge-Kutta Methods}},
 	url = {http://dx.doi.org/10.1155/2015/395340},
 	volume = {2015},
-	year = {2015}
-}
-
-@article{WinkelEtAl2015,
-	author = {Winkel, Mathias and Speck, Robert and Ruprecht, Daniel},
-	journal = {Journal of Computational Physics},
-	pages = {456–474},
-	title = {{A high-order {B}oris integrator}},
-	url = {http://dx.doi.org/10.1016/j.jcp.2015.04.022},
-	volume = {295},
 	year = {2015}
 }
 
