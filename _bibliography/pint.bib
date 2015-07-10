@@ -1874,6 +1874,23 @@
 }
 
 @article{ArteagaEtAl2015,
+	abstract = { In view of the rapid rise of the number of cores in modern
+supercomputers, time-parallel methods that introduce concurrency along
+the temporal axis are becoming increasingly popular.  For the solution
+of time-dependent partial differential equations, these methods can
+add another direction for concurrency on top of spatial
+parallelization.  The paper presents an implementation of the
+time-parallel Parareal method in a C++ domain specific language for
+stencil computations (STELLA).  STELLA provides both an OpenMP and a
+CUDA backend for a shared memory parallelization, using the CPU or GPU
+inside a node for the spatial stencils. Here, we intertwine this
+node-wise spatial parallelism with the time-parallel
+Parareal. This is done by adding an MPI-based implementation of
+Parareal, which allows us to parallelize in time across nodes.  The
+performance of Parareal with both backends is analyzed in terms of
+speedup, parallel efficiency and energy-to-solution for an
+advection-diffusion problem with a time-dependent diffusion
+coefficient. },
 	author = {Arteaga, A. and Ruprecht, Daniel and Krause, Rolf},
 	journal = {Applied Mathematics and Computation},
 	title = {{A stencil-based implementation of Parareal in the {C++} domain specific embedded language {STELLA}}},
