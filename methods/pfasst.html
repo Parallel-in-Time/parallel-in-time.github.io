@@ -205,7 +205,7 @@ under a BSD license.</p>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSpeckEtAl2012Abstract" aria-expanded="false" aria-controls="modalSpeckEtAl2012Abstract">
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSpeckEtAl2012Abstract" aria-expanded="false" aria-controls="modalSpeckEtAl2012Abstract">
               Abstract
             </button>
             
@@ -236,6 +236,35 @@ under a BSD license.</p>
   year = {2012}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalSpeckEtAl2012Abstract" tabindex="-1" role="dialog" aria-labelledby="modalSpeckEtAl2012AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSpeckEtAl2012AbstractTitle">
+            Abstract for BibTeX entry <code>SpeckEtAl2012</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          We present a novel space-time parallel version of the Barnes-Hut tree code
+PEPC using PFASST, the Parallel Full Approximation
+Scheme in Space and Time. The naive use of increasingly more processors for a
+fixed-size N-body problem is prone to saturate as soon as the number of unknowns
+per core becomes too small. To overcome this intrinsic strong-scaling limit, we
+introduce temporal parallelism on top of pepc’s existing hybrid
+MPI/PThreads spatial decomposition. Here, we use PFASST which is based
+on a combination of the iterations of the parallel-in-time algorithm parareal
+with the sweeps of spectral deferred correction (SDC) schemes. By combining
+these sweeps with multiple space-time discretization levels, PFASST
+relaxes the theoretical bound on parallel efficiency in parareal. We present
+results from runs on up to 262,144 cores on the IBM Blue Gene/P installation
+JUGENE, demonstrating that the space-time parallel code provides speedup beyond
+the saturation of the purely space-parallel approach.
+        </div>
       </div>
     </div>
   </div>
