@@ -28,7 +28,7 @@ within SPPEXA, concerned with the development of solvers for coupled problems th
 efficiently in extreme-scale simulations.
 The benchmark problem of the project is the numerical simulation of permeation of human skin, an
 application that is of great interest for example for the development of pharmaceuticals (cf.
-{% cite KreienbuehlEtAl2015 RuprechtEtAl2014_DDM %}.
+{% cite KreienbuehlEtAl2015 RuprechtEtAl2015_DDM %}.
 Through the lead agency agreement between, SNSF is funding a subproject within ExaSolvers at ICS
 Lugano [SNSF-145271](http://p3.snf.ch/project-145271), which, in the framework of the project,
 addresses the development of efficient time-parallel solvers and their application to heterogeneous
