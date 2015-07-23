@@ -13,7 +13,7 @@ With mini symposia related to parallel-in-time integration at [SIAM CSE 2013](ht
 
 To continue these efforts, a proposal for a mini symposium on *parallel-in-time integration methods* for the upcoming [SIAM PP 2016](http://www.siam.org/meetings/pp16/) (April 12-15, 2016) in Paris is in the planning stage. If you would like to contribute to the mini symposium with a presentation, please contact one of the organisers:
 
-- Martin Schreiber, University of Exeter
+- Martin Schreiber, [University of Exeter](http://www.parallelintime.org/groups/uoe.html)
 - Tobias Neckel, TU Munich
 - Daniel Ruprecht, [USI Lugano](/groups/usi.html)
 
