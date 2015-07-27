@@ -4,7 +4,7 @@
   <title><![CDATA[Events | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/events/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2015-07-23T10:15:29+00:00</updated>
+  <updated>2015-07-27T05:35:36+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Minisymposium at SIAM PP 2016]]></title>
+    <link href="http://parallelintime.org/news/2015/07/23/siampp-minisymposium.html"/>
+    <updated>2015-07-23T07:26:44+00:00</updated>
+    <id>http://parallelintime.org/news/2015/07/23/siampp-minisymposium</id>
+    <content type="html"><![CDATA[<p>Plans for a proposal for a PINT mini symposium at SIAM PP 2016 in Paris.</p>
+
+<!--more-->
+<p>With mini symposia related to parallel-in-time integration at <a href="http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=15471">SIAM CSE 2013</a> in Boston, <a href="http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=17906">SIAM PP 2014</a> in Savannah, <a href="http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=19996">SIAM CSE 2015</a> in Salt Lake City and an invited talk by Rob Falgout also at <a href="https://www.pathlms.com/siam/courses/1043/sections/1256">SIAM CSE 2015</a>, the topic has been well represented at SIAM conferences in the last years.</p>
+
+<p>To continue these efforts, a proposal for a mini symposium on <em>parallel-in-time integration methods</em> for the upcoming <a href="http://www.siam.org/meetings/pp16/">SIAM PP 2016</a> (April 12-15, 2016) in Paris is in the planning stage. If you would like to contribute to the mini symposium with a presentation, please contact one of the organisers:</p>
+
+<ul>
+  <li>Martin Schreiber, <a href="http://www.parallelintime.org/groups/uoe.html">University of Exeter</a></li>
+  <li>Tobias Neckel, TU Munich</li>
+  <li>Daniel Ruprecht, <a href="/groups/usi.html">USI Lugano</a></li>
+</ul>
+
+<p>The deadline for proposals is in September, so the list of speakers will have to be finalised towards the end of August.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First scientific committee elected]]></title>
@@ -92,17 +114,6 @@ committee will take place within four weeks after the workshop.</p>
 <p>Certainly, everybody is now looking forward to the
 <a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">5th workshop</a> in the
 series in November 2016 in Canada.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New parallelintime email list]]></title>
-    <link href="http://parallelintime.org/news/2015/04/24/email-list-announcement.html"/>
-    <updated>2015-04-24T07:26:44+00:00</updated>
-    <id>http://parallelintime.org/news/2015/04/24/email-list-announcement</id>
-    <content type="html"><![CDATA[<p>There exists now an email list to help you send and receive information and announcements all around parallel-in-time integration. To join, simply send an email to <em>parallelintime+subscribe[AT]googlegroups.com</em> and wait for one of the moderators to approve your request.</p>
-
-<p><strong>Note:</strong> You do <em>not</em> need a Google account in order to join this list, just send the subscribe email from the email address you want to subscribe.</p>
 ]]></content>
   </entry>
   

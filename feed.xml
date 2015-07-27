@@ -7,6 +7,28 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Minisymposium at SIAM PP 2016</title>
+        <description>&lt;p&gt;Plans for a proposal for a PINT mini symposium at SIAM PP 2016 in Paris.&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;With mini symposia related to parallel-in-time integration at &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=15471&quot;&gt;SIAM CSE 2013&lt;/a&gt; in Boston, &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=17906&quot;&gt;SIAM PP 2014&lt;/a&gt; in Savannah, &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=19996&quot;&gt;SIAM CSE 2015&lt;/a&gt; in Salt Lake City and an invited talk by Rob Falgout also at &lt;a href=&quot;https://www.pathlms.com/siam/courses/1043/sections/1256&quot;&gt;SIAM CSE 2015&lt;/a&gt;, the topic has been well represented at SIAM conferences in the last years.&lt;/p&gt;
+
+&lt;p&gt;To continue these efforts, a proposal for a mini symposium on &lt;em&gt;parallel-in-time integration methods&lt;/em&gt; for the upcoming &lt;a href=&quot;http://www.siam.org/meetings/pp16/&quot;&gt;SIAM PP 2016&lt;/a&gt; (April 12-15, 2016) in Paris is in the planning stage. If you would like to contribute to the mini symposium with a presentation, please contact one of the organisers:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Martin Schreiber, &lt;a href=&quot;http://www.parallelintime.org/groups/uoe.html&quot;&gt;University of Exeter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Tobias Neckel, TU Munich&lt;/li&gt;
+  &lt;li&gt;Daniel Ruprecht, &lt;a href=&quot;/groups/usi.html&quot;&gt;USI Lugano&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The deadline for proposals is in September, so the list of speakers will have to be finalised towards the end of August.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Jul 2015 07:26:44 +0000</pubDate>
+        <link>http://parallelintime.org/news/2015/07/23/siampp-minisymposium.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/news/2015/07/23/siampp-minisymposium.html</guid>
+      </item>
+    
+      <item>
         <title>First scientific committee elected</title>
         <description>&lt;p&gt;The election for the scientific committee is now closed and the results available. As we had 7 candidates for 7 open positions, the outcome is not a big surprise. Nevertheless, the first election of a scientific committee will hopefully be an important milestone and help to successfully continue the PINT workshop series for many years to come.&lt;/p&gt;
 
@@ -140,19 +162,6 @@ Please check out the entry at &lt;a href=&quot;/events/upcoming/2016/5th-worksho
         <pubDate>Sat, 30 Aug 2014 09:21:44 +0000</pubDate>
         <link>http://parallelintime.org/news/2014/08/30/new-pfasst-release.html</link>
         <guid isPermaLink="true">http://parallelintime.org/news/2014/08/30/new-pfasst-release.html</guid>
-      </item>
-    
-      <item>
-        <title>Workshop in Dresden in 2015</title>
-        <description>&lt;p&gt;The 4th Workshop on Parallel-in-Time Integration will take place in May 2015 in Dresden, Germany.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;After three workshops in Lugano (2011), Manchester (2013) and Juelich (2014), the workshop series on parallel-in-time integration continues in 2015 with a workshop at TU Dresden from May 27 to May 29. For more information, check out the homepage at &lt;a href=&quot;http://www.math.tu-dresden.de/~naumann/pint2015&quot;&gt;TU Dresden&lt;/a&gt; and the entry at &lt;a href=&quot;/events/past/2015/4th-workshop-on-parallel-in-time-integration.html&quot;&gt;parallelintime.org&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 04 Aug 2014 09:21:44 +0000</pubDate>
-        <link>http://parallelintime.org/news/2014/08/04/new-workshop-announcement.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/news/2014/08/04/new-workshop-announcement.html</guid>
       </item>
     
   </channel>
