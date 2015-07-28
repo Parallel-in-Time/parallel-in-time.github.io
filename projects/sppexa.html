@@ -146,7 +146,7 @@ diffusion problems on complex domains.</p>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalKreienbuehlEtAl2015Abstract" aria-expanded="false" aria-controls="modalKreienbuehlEtAl2015Abstract">
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalKreienbuehlEtAl2015Abstract" aria-expanded="false" aria-controls="modalKreienbuehlEtAl2015Abstract">
               Abstract
             </button>
             
@@ -170,6 +170,33 @@ diffusion problems on complex domains.</p>
   year = {2015}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalKreienbuehlEtAl2015Abstract" tabindex="-1" role="dialog" aria-labelledby="modalKreienbuehlEtAl2015AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalKreienbuehlEtAl2015AbstractTitle">
+            Abstract for BibTeX entry <code>KreienbuehlEtAl2015</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          In-silico investigation of skin permeation is an important but also computationally demanding problem.
+		To resolve all scales involved in full detail will not only require exascale computing capacities but also
+		suitable parallel algorithms.
+		This article investigates the applicability of the time-parallel Parareal algorithm to a brick and mortar setup,
+		a precursory problem to skin permeation.
+		The C++ library Lib4PrM implementing Parareal is combined with the UG4 simulation framework, which provides the
+		spatial discretization and parallelization.
+		The combination’s performance is studied with respect to convergence and speedup.
+		It is confirmed that anisotropies in the domain and jumps in diffusion coefficients only have a minor impact on
+		Parareal’s convergence.
+		The influence of load imbalances in time due to differences in number of iterations required by the spatial
+		solver as well as spatio-temporal weak scaling is discussed.
+        </div>
       </div>
     </div>
   </div>
@@ -211,15 +238,15 @@ diffusion problems on complex domains.</p>
       <div class="col-md-12">
         <pre class="abstract">@inproceedings{RuprechtEtAl2015_DDM,
   author = {Ruprecht, Daniel and Speck, Robert and Krause, Rolf},
-  title = {Parareal for diffusion problems with space- and time-dependent coefficients},
   booktitle = {Domain Decomposition Methods in Science and Engineering {XXII}},
-  series = {Lecture Notes in Computational Science and Engineering},
-  volume = {104},
-  pages = {3--10},
-  year = {2015},
-  publisher = {Springer International Publishing Switzerland},
   editors = {Dickopf, Th. and Gander, M. J. and Halpern, L. and Krause, R. and Pavarino, L. F.},
-  url = {http://dx.doi.org/10.1007/978-3-319-18827-0_1}
+  pages = {3--10},
+  publisher = {{Springer International Publishing Switzerland}},
+  series = {{Lecture Notes in Computational Science and Engineering}},
+  title = {Parareal for diffusion problems with space- and time-dependent coefficients},
+  url = {http://dx.doi.org/10.1007/978-3-319-18827-0_1},
+  volume = {104},
+  year = {2015}
 }
 </pre>
       </div>

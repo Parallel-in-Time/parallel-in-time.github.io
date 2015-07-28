@@ -220,7 +220,16 @@
           </h4>
         </div>
         <div class="modal-body">
-          We introduce a new parallel in time (parareal) algorithm which couples multiscale integrators with fully resolved fine scale integration and computes highly oscillatory solutions for a class of ordinary differential equations in parallel. The algorithm computes a low-cost approximation of all slow variables in the system. Then, fast phase-like variables are obtained using the parareal iterative methodology and an alignment algorithm. The method may be used either to enhance the accuracy and range of applicability of the multiscale method in approximating only the slow variables, or to resolve all the state variables. The numerical scheme does not require that the system is split into slow and fast coordinates. Moreover, the dynamics may involve hidden slow variables, for example, due to resonances. Convergence of the parareal iterations is proved and demonstrated in numerical examples.
+          We introduce a new parallel in time (parareal) algorithm which couples multiscale integrators with
+		fully resolved fine scale integration and computes highly oscillatory solutions for a class of ordinary
+		differential equations in parallel.
+		The algorithm computes a low-cost approximation of all slow variables in the system.
+		Then, fast phase-like variables are obtained using the parareal iterative methodology and an alignment algorithm.
+		The method may be used either to enhance the accuracy and range of applicability of the multiscale method in
+		approximating only the slow variables, or to resolve all the state variables.
+		The numerical scheme does not require that the system is split into slow and fast coordinates.
+		Moreover, the dynamics may involve hidden slow variables, for example, due to resonances.
+		Convergence of the parareal iterations is proved and demonstrated in numerical examples.
         </div>
       </div>
     </div>
@@ -285,23 +294,19 @@
           </h4>
         </div>
         <div class="modal-body">
-           In view of the rapid rise of the number of cores in modern
-supercomputers, time-parallel methods that introduce concurrency along
-the temporal axis are becoming increasingly popular.  For the solution
-of time-dependent partial differential equations, these methods can
-add another direction for concurrency on top of spatial
-parallelization.  The paper presents an implementation of the
-time-parallel Parareal method in a C++ domain specific language for
-stencil computations (STELLA).  STELLA provides both an OpenMP and a
-CUDA backend for a shared memory parallelization, using the CPU or GPU
-inside a node for the spatial stencils. Here, we intertwine this
-node-wise spatial parallelism with the time-parallel
-Parareal. This is done by adding an MPI-based implementation of
-Parareal, which allows us to parallelize in time across nodes.  The
-performance of Parareal with both backends is analyzed in terms of
-speedup, parallel efficiency and energy-to-solution for an
-advection-diffusion problem with a time-dependent diffusion
-coefficient. 
+          In view of the rapid rise of the number of cores in modern supercomputers, time-parallel methods that
+		introduce concurrency along the temporal axis are becoming increasingly popular.
+		For the solution of time-dependent partial differential equations, these methods can add another direction for
+		concurrency on top of spatial parallelization.
+		The paper presents an implementation of the time-parallel Parareal method in a C++ domain specific language for
+		stencil computations (STELLA).
+		STELLA provides both an OpenMP and a CUDA backend for a shared memory parallelization, using the CPU or GPU
+		inside a node for the spatial stencils.
+		Here, we intertwine this node-wise spatial parallelism with the time-parallel Parareal.
+		This is done by adding an MPI-based implementation of Parareal, which allows us to parallelize in time across
+		nodes.
+		The performance of Parareal with both backends is analyzed in terms of speedup, parallel efficiency and
+		energy-to-solution for an advection-diffusion problem with a time-dependent diffusion coefficient.
         </div>
       </div>
     </div>
@@ -366,6 +371,85 @@ coefficient.
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          GurralaEtAl2015
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseGurralaEtAl2015Bibtex"
+                    aria-expanded="false" aria-controls="collapseGurralaEtAl2015Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalGurralaEtAl2015Abstract"
+                    aria-expanded="false" aria-controls="modalGurralaEtAl2015Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="GurralaEtAl2015">G. Gurrala, A. Dimitrovski, P. Sreekanth, S. Simunovic, and M. Starke, “Parareal in Time for Dynamic Simulations of Power Systems,” in <i>Proceedings of the International Conference on Power Systems Transients (IPST2015) in Cavtat, Croatia June 15-18, 2015</i>, 2015 [Online]. Available at: [http://www.ipstconf.org/papers/Proc_IPST2015/15IPST073.pdf](http://www.ipstconf.org/papers/Proc_IPST2015/15IPST073.pdf)</span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseGurralaEtAl2015Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@inproceedings{GurralaEtAl2015,
+  author = {Gurrala, Gurunath and Dimitrovski, Aleksandar and Sreekanth, Pannala and Simunovic, Srdjan and Starke, Michael},
+  booktitle = {{Proceedings of the International Conference on Power Systems Transients (IPST2015) in Cavtat, Croatia June 15-18, 2015}},
+  title = {{Parareal in Time for Dynamic Simulations of Power Systems}},
+  url = {http://www.ipstconf.org/papers/Proc_IPST2015/15IPST073.pdf},
+  year = {2015}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalGurralaEtAl2015Abstract" tabindex="-1" role="dialog" aria-labelledby="modalGurralaEtAl2015AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalGurralaEtAl2015AbstractTitle">
+            Abstract for BibTeX entry <code>GurralaEtAl2015</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          In recent years, there have been significant developments in parallel algorithms and high performance
+		parallelm computing platforms.
+		Parareal in time algorithm has become popular for long transient simulations (e.g., molecular dynamics, fusion,
+		reacting flows).
+		Parareal is a  arallel algorithm which divides the time interval into sub-intervals and solves them concurrently.
+		This paper investigates the applicability of the parareal algorithm to power system dynamic simulations.
+		Preliminary results on the application of parareal for multi-machine power systems are reported in this paper.
+		Two widely used test systems, WECC 3-generator 9-bus system, New England 10-generator 39-bus  system, is used to
+		explore the effectiveness of the parareal.
+		Severe 3 phase bus faults are simulated using both the classical and detailed models of multi-machine power
+		systems.
+		Actual Speedup of 5-7 times is observed assuming ideal parallelization.
+		It has been observed that the speedup factors of the order of 20 can be achieved by using fast coarse
+		approximations of power system models.
+		Dependency of parareal convergence on fault duration and location has been observed.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           KreienbuehlEtAl2015
         </div>
       </div>
@@ -379,7 +463,7 @@ coefficient.
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalKreienbuehlEtAl2015Abstract"
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalKreienbuehlEtAl2015Abstract"
                     aria-expanded="false" aria-controls="modalKreienbuehlEtAl2015Abstract">
               Abstract
             </button>
@@ -404,6 +488,33 @@ coefficient.
   year = {2015}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalKreienbuehlEtAl2015Abstract" tabindex="-1" role="dialog" aria-labelledby="modalKreienbuehlEtAl2015AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalKreienbuehlEtAl2015AbstractTitle">
+            Abstract for BibTeX entry <code>KreienbuehlEtAl2015</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          In-silico investigation of skin permeation is an important but also computationally demanding problem.
+		To resolve all scales involved in full detail will not only require exascale computing capacities but also
+		suitable parallel algorithms.
+		This article investigates the applicability of the time-parallel Parareal algorithm to a brick and mortar setup,
+		a precursory problem to skin permeation.
+		The C++ library Lib4PrM implementing Parareal is combined with the UG4 simulation framework, which provides the
+		spatial discretization and parallelization.
+		The combination’s performance is studied with respect to convergence and speedup.
+		It is confirmed that anisotropies in the domain and jumps in diffusion coefficients only have a minor impact on
+		Parareal’s convergence.
+		The influence of load imbalances in time due to differences in number of iterations required by the spatial
+		solver as well as spatio-temporal weak scaling is discussed.
+        </div>
       </div>
     </div>
   </div>
@@ -467,29 +578,23 @@ coefficient.
           </h4>
         </div>
         <div class="modal-body">
-             The parallel full approximation scheme in space and time (PFASST)
-  introduced by Emmett and Minion in 2012 is an iterative strategy for
-  the temporal parallelization of ODEs and discretized PDEs. As the
-  name suggests, PFASST is similar in spirit to a space-time FAS
-  multigrid method performed over multiple time-steps in parallel. 
-  However, since the original focus of
-  PFASST has been on the performance of the method in terms of time
-  parallelism, the solution of any spatial system arising from the use
-  of implicit or semi-implicit temporal methods within PFASST have
-  simply been assumed to be solved to some desired accuracy completely
-  at each sub-step and each iteration by some unspecified procedure.
-  It hence is natural to investigate how iterative solvers in the
-  spatial dimensions can be interwoven with the PFASST iterations and
-  whether this strategy leads to a more efficient overall approach.
-  This paper presents an initial investigation on the relative
-  performance of different strategies for coupling PFASST iterations
-  with multigrid methods for the implicit treatment of diffusion terms
-  in PDEs. In particular, we compare full accuracy multigrid solves at
-  each sub-step with a small fixed number of multigrid V-cycles. This
-  reduces the cost of each PFASST iteration at the possible expense of a
-  corresponding increase in the number of PFASST iterations needed for
-  convergence. Parallel efficiency of the resulting methods is
-  explored through numerical examples. 
+          The parallel full approximation scheme in space and time (PFASST) introduced by Emmett and Minion in
+		2012 is an iterative strategy for the temporal parallelization of ODEs and discretized PDEs.
+		As the name suggests, PFASST is similar in spirit to a space-time FAS multigrid method performed over multiple
+		time-steps in parallel.
+		However, since the original focus of PFASST has been on the performance of the method in terms of time
+		parallelism, the solution of any spatial system arising from the use of implicit or semi-implicit temporal
+		methods within PFASST have simply been assumed to be solved to some desired accuracy completely at each sub-step
+		and each iteration by some unspecified procedure.
+		It hence is natural to investigate how iterative solvers in the spatial dimensions can be interwoven with the
+		PFASST iterations and whether this strategy leads to a more efficient overall approach.
+		This paper presents an initial investigation on the relative performance of different strategies for coupling
+		PFASST iterations with multigrid methods for the implicit treatment of diffusion terms in PDEs.
+		In particular, we compare full accuracy multigrid solves at each sub-step with a small fixed number of multigrid
+		V-cycles.
+		This reduces the cost of each PFASST iteration at the possible expense of a corresponding increase in the number
+		of PFASST iterations needed for convergence.
+		Parallel efficiency of the resulting methods is explored through numerical examples.
         </div>
       </div>
     </div>
@@ -534,15 +639,15 @@ coefficient.
       <div class="col-md-12">
         <pre class="abstract">@inproceedings{RuprechtEtAl2015_DDM,
   author = {Ruprecht, Daniel and Speck, Robert and Krause, Rolf},
-  title = {Parareal for diffusion problems with space- and time-dependent coefficients},
   booktitle = {Domain Decomposition Methods in Science and Engineering {XXII}},
-  series = {Lecture Notes in Computational Science and Engineering},
-  volume = {104},
-  pages = {3--10},
-  year = {2015},
-  publisher = {Springer International Publishing Switzerland},
   editors = {Dickopf, Th. and Gander, M. J. and Halpern, L. and Krause, R. and Pavarino, L. F.},
-  url = {http://dx.doi.org/10.1007/978-3-319-18827-0_1}
+  pages = {3--10},
+  publisher = {{Springer International Publishing Switzerland}},
+  series = {{Lecture Notes in Computational Science and Engineering}},
+  title = {Parareal for diffusion problems with space- and time-dependent coefficients},
+  url = {http://dx.doi.org/10.1007/978-3-319-18827-0_1},
+  volume = {104},
+  year = {2015}
 }
 </pre>
       </div>
@@ -692,15 +797,15 @@ coefficient.
       <div class="col-md-12">
         <pre class="abstract">@inproceedings{SpeckEtAl2015_DDM,
   author = {Speck, Robert and Ruprecht, Daniel and Minion, Michael and Emmett, Matthew and Krause, Rolf},
-  title = {Inexact spectral deferred corrections},
-  booktitle = {Domain Decomposition Methods in Science and Engineering {XXII}},
-  series = {Lecture Notes in Computational Science and Engineering},
-  volume = {104},
-  year = {2015},
+  booktitle = {{Domain Decomposition Methods in Science and Engineering {XXII}}},
+  editors = {Dickopf, Th. and Gander, M. J. and Halpern, L. and Krause, R. and Pavarino, L. F.},
   pages = {127--133},
+  publisher = {{Springer International Publishing Switzerland}},
+  series = {{Lecture Notes in Computational Science and Engineering}},
+  title = {{Inexact spectral deferred corrections}},
   url = {http://dx.doi.org/10.1007/978-3-319-18827-0_66},
-  publisher = {Springer International Publishing Switzerland},
-  editors = {Dickopf, Th. and Gander, M. J. and Halpern, L. and Krause, R. and Pavarino, L. F.}
+  volume = {104},
+  year = {2015}
 }
 </pre>
       </div>
@@ -771,10 +876,14 @@ coefficient.
           </h4>
         </div>
         <div class="modal-body">
-           The paper presents first a linear stability analysis for the time-parallel Parareal method, using an IMEX Euler as coarse and a Runge-Kutta-3 method as fine propagator,
-confirming that dominant imaginary eigenvalues negatively affect Parareal’s convergence.
-This suggests that when Parareal is applied to the nonlinear Navier-Stokes equations, problems for small viscosities could arise.
-Numerical results for a driven cavity benchmark are presented, confirming that Parareal’s convergence can indeed deteriorate as viscosity decreases and the flow becomes increasingly dominated by convection. The effect is found to strongly depend on the spatial resolution.
+          The paper presents first a linear stability analysis for the time-parallel Parareal method, using an
+		IMEX Euler as coarse and a Runge-Kutta-3 method as fine propagator, confirming that dominant imaginary
+		eigenvalues negatively affect Parareal’s convergence.
+		This suggests that when Parareal is applied to the nonlinear Navier-Stokes equations, problems for small
+		viscosities could arise.
+		Numerical results for a driven cavity benchmark are presented, confirming that Parareal’s convergence can indeed
+		deteriorate as viscosity decreases and the flow becomes increasingly dominated by convection.
+		The effect is found to strongly depend on the spatial resolution.
         </div>
       </div>
     </div>
@@ -1344,7 +1453,7 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalCroceEtAl2014Abstract"
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalCroceEtAl2014Abstract"
                     aria-expanded="false" aria-controls="modalCroceEtAl2014Abstract">
               Abstract
             </button>
@@ -1372,6 +1481,31 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
   year = {2014}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalCroceEtAl2014Abstract" tabindex="-1" role="dialog" aria-labelledby="modalCroceEtAl2014AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalCroceEtAl2014AbstractTitle">
+            Abstract for BibTeX entry <code>CroceEtAl2014</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          In this paper we combine the Parareal parallel-in-time method together with spatial parallelization and
+ 		investigate this space-time parallel scheme by means of solving the three-dimensional incompressible
+ 		Navier-Stokes equations.
+ 		Parallelization of time stepping provides a new direction of parallelization and allows to employ additional
+ 		cores to further speed up simulations after spatial parallelization has saturated.
+ 		We report on numerical experiments performed on a Cray XE6, simulating a driven cavity flow with and without
+ 		obstacles.
+ 		Distributed memory parallelization is used in both space and time, featuring up to 2,048 cores in total.
+ 		It is confirmed that the space-time-parallel method can provide speedup beyond the saturation of the spatial
+ 		parallelization.
+        </div>
       </div>
     </div>
   </div>
@@ -2118,7 +2252,7 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalRuprecht2014_GAMMAbstract"
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalRuprecht2014_GAMMAbstract"
                     aria-expanded="false" aria-controls="modalRuprecht2014_GAMMAbstract">
               Abstract
             </button>
@@ -2152,6 +2286,26 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
     </div>
   </div>
   
+  <div class="modal fade" id="modalRuprecht2014_GAMMAbstract" tabindex="-1" role="dialog" aria-labelledby="modalRuprecht2014_GAMMAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalRuprecht2014_GAMMAbstractTitle">
+            Abstract for BibTeX entry <code>Ruprecht2014_GAMM</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          The effect is investigated of using a reduced spatial resolution in the coarse propagator of the
+		time-parallel Parareal method for a finite difference discretization of the linear advection-diffusion equation.
+		It is found that convergence can critically depend on the order of the interpolation used to transfer the coarse
+		propagator solution to the fine mesh in the correction step.
+		The effect also strongly depends on the employed spatial and temporal resolution.
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </div>
 </li>
 <li><div class="bibtex-entry-container">
@@ -2172,7 +2326,7 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalRuprechtKrause2014_DDMAbstract"
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalRuprechtKrause2014_DDMAbstract"
                     aria-expanded="false" aria-controls="modalRuprechtKrause2014_DDMAbstract">
               Abstract
             </button>
@@ -2202,6 +2356,26 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
   year = {2014}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalRuprechtKrause2014_DDMAbstract" tabindex="-1" role="dialog" aria-labelledby="modalRuprechtKrause2014_DDMAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalRuprechtKrause2014_DDMAbstractTitle">
+            Abstract for BibTeX entry <code>RuprechtKrause2014_DDM</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          An OpenMP-based shared memory implementation of the Parareal parallel-in-time integration scheme using
+		explicit integrators is combined with a standard MPI-based spatial parallelization of a finite difference method
+		into a hybrid space-time parallel scheme.
+		The capability of this approach to achieve speedups beyond the saturation of the pure space-parallel scheme is
+		demonstrated for the two-dimensional Burgers equation.
+        </div>
       </div>
     </div>
   </div>
@@ -2330,7 +2504,7 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSpeckEtAl2014_ParcoAbstract"
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSpeckEtAl2014_ParcoAbstract"
                     aria-expanded="false" aria-controls="modalSpeckEtAl2014_ParcoAbstract">
               Abstract
             </button>
@@ -2364,6 +2538,30 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
     </div>
   </div>
   
+  <div class="modal fade" id="modalSpeckEtAl2014_ParcoAbstract" tabindex="-1" role="dialog" aria-labelledby="modalSpeckEtAl2014_ParcoAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSpeckEtAl2014_ParcoAbstractTitle">
+            Abstract for BibTeX entry <code>SpeckEtAl2014_Parco</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          The paper presents a combination of the time-parallel “parallel full approximation scheme in space and
+		time” (PFASST) with a parallel multigrid method (PMG) in space, resulting in a mesh-based solver for the
+		three-dimensional heat equation with a uniquely high degree of efficient concurrency.
+		Parallel scaling tests are reported on the Cray XE6 machine “Monte Rosa” on up to 16,384 cores and on the
+		IBM Blue Gene/Q system “JUQUEEN” on up to 65,536 cores.
+		The efficacy of the combined spatial- and temporal parallelization is shown by demonstrating that using PFASST
+		in addition to PMG significantly extends the strong-scaling limit.
+		Implications of using spatial coarsening strategies in PFASST’s multi-level hierarchy in large-scale parallel
+		simulations are discussed.
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </div>
 </li>
 <li><div class="bibtex-entry-container">
@@ -2384,7 +2582,7 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSpeckEtAl2014_DDM2012Abstract"
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSpeckEtAl2014_DDM2012Abstract"
                     aria-expanded="false" aria-controls="modalSpeckEtAl2014_DDM2012Abstract">
               Abstract
             </button>
@@ -2418,6 +2616,31 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
     </div>
   </div>
   
+  <div class="modal fade" id="modalSpeckEtAl2014_DDM2012Abstract" tabindex="-1" role="dialog" aria-labelledby="modalSpeckEtAl2014_DDM2012AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSpeckEtAl2014_DDM2012AbstractTitle">
+            Abstract for BibTeX entry <code>SpeckEtAl2014_DDM2012</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          Vortex methods for the Navier-Stokes equations are based on a Lagrangian particle discretization, which
+		reduces the governing equations to a first-order initial value system of ordinary differential equations for the
+		position and vorticity of N particles.
+		In this paper, the accuracy of solving this system by time-serial spectral deferred corrections (SDC) as well as
+		by the time-parallel Parallel Full Approximation Scheme in Space And Time (PFASST) is investigated.
+		PFASST is based on intertwining SDC iterations with differing resolution in a manner similar to the Parareal
+		algorithm and uses a Full Approximation Scheme (FAS) correction to improve the accuracy of coarser SDC
+		iterations.
+		It is demonstrated that SDC and PFASST can generate highly accurate solutions, and the performance in terms of
+		function evaluations required for a certain accuracy is analyzed and compared to a standard Runge-Kutta method.
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </div>
 </li>
 <li><div class="bibtex-entry-container">
@@ -2438,7 +2661,7 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSpeckEtAl2014_BITAbstract"
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSpeckEtAl2014_BITAbstract"
                     aria-expanded="false" aria-controls="modalSpeckEtAl2014_BITAbstract">
               Abstract
             </button>
@@ -2463,6 +2686,33 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
   year = {2014}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalSpeckEtAl2014_BITAbstract" tabindex="-1" role="dialog" aria-labelledby="modalSpeckEtAl2014_BITAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSpeckEtAl2014_BITAbstractTitle">
+            Abstract for BibTeX entry <code>SpeckEtAl2014_BIT</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          The spectral deferred correction (SDC) method is an iterative scheme for computing a higher-order
+		collocation solution to an ODE by performing a series of correction sweeps using a low-order timestepping method.
+		This paper examines a variation of SDC for the temporal integration of PDEs called multi-level spectral deferred
+		corrections (MLSDC), where sweeps are performed on a hierarchy of levels and an FAS correction term, as in
+		nonlinear multigrid methods, couples solutions on different levels.
+		Three different strategies to reduce the computational cost of correction sweeps on the coarser levels are
+		examined: reducing the degrees of freedom, reducing the order of the spatial discretization, and reducing the
+		accuracy when solving linear systems arising in implicit temporal integration.
+		Several numerical examples demonstrate the effect of multi-level coarsening on the convergence and cost of SDC
+		integration.
+		In particular, MLSDC can provide significant savings in compute time compared to SDC for a three-dimensional
+		problem.
+        </div>
       </div>
     </div>
   </div>
@@ -4023,10 +4273,23 @@ Numerical results for a driven cavity benchmark are presented, confirming that P
           </h4>
         </div>
         <div class="modal-body">
-          The applicability of the Parareal parallel-in-time integration scheme for the solution of a linear, two-dimensional hyperbolic acoustic-advection system, which is often used as a
-test case for integration schemes for numerical weather prediction (NWP), is addressed. Parallel-in-time schemes are a possible way to increase, on the algorithmic level, the amount of parallelism, a requirement arising from the rapidly growing number of CPUs in high performance computer systems. A recently introduced modification of the "parallel
-implicit time-integration algorithm" could successfully solve hyperbolic problems arising in structural dynamics. It has later been cast into the framework of Parareal. The present
-paper adapts this modified Parareal and employs it for the solution of a hyperbolic flow problem, where the initial value problem solved in parallel arises from the spatial discretization of a partial differential equation by a finite difference method. It is demonstrated that the modified Parareal is stable and can produce reasonably accurate solutions while allowing for a noticeable reduction of the time-to-solution. The implementation relies on integration schemes  already widely used in NWP (RK-3, partially split forward Euler, forward-backward). It is demonstrated that using an explicit partially split scheme for the coarse integrator allows to avoid the use of an implicit scheme while still achieving speedup.
+          The applicability of the Parareal parallel-in-time integration scheme for the solution of a linear,
+		two-dimensional hyperbolic acoustic-advection system, which is often used as a test case for integration schemes
+		for numerical weather prediction (NWP), is addressed.
+		Parallel-in-time schemes are a possible way to increase, on the algorithmic level, the amount of parallelism, a
+		requirement arising from the rapidly growing number of CPUs in high performance computer systems.
+		A recently introduced modification of the "parallel implicit time-integration algorithm" could successfully
+		solve hyperbolic problems arising in structural dynamics.
+		It has later been cast into the framework of Parareal.
+		The present paper adapts this modified Parareal and employs it for the solution of a hyperbolic flow problem,
+		where the initial value problem solved in parallel arises from the spatial discretization of a partial
+		differential equation by a finite difference method.
+		It is demonstrated that the modified Parareal is stable and can produce reasonably accurate solutions while
+		allowing for a noticeable reduction of the time-to-solution.
+		The implementation relies on integration schemes already widely used in NWP (RK-3, partially split forward
+		Euler, forward-backward).
+		It is demonstrated that using an explicit partially split scheme for the coarse integrator allows to avoid the
+		use of an implicit scheme while still achieving speedup.
         </div>
       </div>
     </div>
@@ -4098,20 +4361,18 @@ paper adapts this modified Parareal and employs it for the solution of a hyperbo
           </h4>
         </div>
         <div class="modal-body">
-          We present a novel space-time parallel version of the Barnes-Hut tree code
-PEPC using PFASST, the Parallel Full Approximation
-Scheme in Space and Time. The naive use of increasingly more processors for a
-fixed-size N-body problem is prone to saturate as soon as the number of unknowns
-per core becomes too small. To overcome this intrinsic strong-scaling limit, we
-introduce temporal parallelism on top of pepc’s existing hybrid
-MPI/PThreads spatial decomposition. Here, we use PFASST which is based
-on a combination of the iterations of the parallel-in-time algorithm parareal
-with the sweeps of spectral deferred correction (SDC) schemes. By combining
-these sweeps with multiple space-time discretization levels, PFASST
-relaxes the theoretical bound on parallel efficiency in parareal. We present
-results from runs on up to 262,144 cores on the IBM Blue Gene/P installation
-JUGENE, demonstrating that the space-time parallel code provides speedup beyond
-the saturation of the purely space-parallel approach.
+          We present a novel space-time parallel version of the Barnes-Hut tree code PEPC using PFASST, the
+		Parallel Full Approximation Scheme in Space and Time.
+		The naive use of increasingly more processors for a fixed-size N-body problem is prone to saturate as soon as
+		the number of unknowns per core becomes too small.
+		To overcome this intrinsic strong-scaling limit, we introduce temporal parallelism on top of pepc’s existing
+		hybrid MPI/PThreads spatial decomposition.
+		Here, we use PFASST which is based on a combination of the iterations of the parallel-in-time algorithm parareal
+		with the sweeps of spectral deferred correction (SDC) schemes.
+		By combining these sweeps with multiple space-time discretization levels, PFASST relaxes the theoretical bound
+		on parallel efficiency in parareal.
+		We present results from runs on up to 262,144 cores on the IBM Blue Gene/P installation JUGENE, demonstrating
+		that the space-time parallel code provides speedup beyond the saturation of the purely space-parallel approach.
         </div>
       </div>
     </div>

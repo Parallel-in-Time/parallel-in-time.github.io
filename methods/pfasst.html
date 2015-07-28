@@ -250,20 +250,18 @@ under a BSD license.</p>
           </h4>
         </div>
         <div class="modal-body">
-          We present a novel space-time parallel version of the Barnes-Hut tree code
-PEPC using PFASST, the Parallel Full Approximation
-Scheme in Space and Time. The naive use of increasingly more processors for a
-fixed-size N-body problem is prone to saturate as soon as the number of unknowns
-per core becomes too small. To overcome this intrinsic strong-scaling limit, we
-introduce temporal parallelism on top of pepc’s existing hybrid
-MPI/PThreads spatial decomposition. Here, we use PFASST which is based
-on a combination of the iterations of the parallel-in-time algorithm parareal
-with the sweeps of spectral deferred correction (SDC) schemes. By combining
-these sweeps with multiple space-time discretization levels, PFASST
-relaxes the theoretical bound on parallel efficiency in parareal. We present
-results from runs on up to 262,144 cores on the IBM Blue Gene/P installation
-JUGENE, demonstrating that the space-time parallel code provides speedup beyond
-the saturation of the purely space-parallel approach.
+          We present a novel space-time parallel version of the Barnes-Hut tree code PEPC using PFASST, the
+		Parallel Full Approximation Scheme in Space and Time.
+		The naive use of increasingly more processors for a fixed-size N-body problem is prone to saturate as soon as
+		the number of unknowns per core becomes too small.
+		To overcome this intrinsic strong-scaling limit, we introduce temporal parallelism on top of pepc’s existing
+		hybrid MPI/PThreads spatial decomposition.
+		Here, we use PFASST which is based on a combination of the iterations of the parallel-in-time algorithm parareal
+		with the sweeps of spectral deferred correction (SDC) schemes.
+		By combining these sweeps with multiple space-time discretization levels, PFASST relaxes the theoretical bound
+		on parallel efficiency in parareal.
+		We present results from runs on up to 262,144 cores on the IBM Blue Gene/P installation JUGENE, demonstrating
+		that the space-time parallel code provides speedup beyond the saturation of the purely space-parallel approach.
         </div>
       </div>
     </div>
@@ -337,7 +335,7 @@ the saturation of the purely space-parallel approach.
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSpeckEtAl2014_BITAbstract" aria-expanded="false" aria-controls="modalSpeckEtAl2014_BITAbstract">
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSpeckEtAl2014_BITAbstract" aria-expanded="false" aria-controls="modalSpeckEtAl2014_BITAbstract">
               Abstract
             </button>
             
@@ -361,6 +359,33 @@ the saturation of the purely space-parallel approach.
   year = {2014}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalSpeckEtAl2014_BITAbstract" tabindex="-1" role="dialog" aria-labelledby="modalSpeckEtAl2014_BITAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSpeckEtAl2014_BITAbstractTitle">
+            Abstract for BibTeX entry <code>SpeckEtAl2014_BIT</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          The spectral deferred correction (SDC) method is an iterative scheme for computing a higher-order
+		collocation solution to an ODE by performing a series of correction sweeps using a low-order timestepping method.
+		This paper examines a variation of SDC for the temporal integration of PDEs called multi-level spectral deferred
+		corrections (MLSDC), where sweeps are performed on a hierarchy of levels and an FAS correction term, as in
+		nonlinear multigrid methods, couples solutions on different levels.
+		Three different strategies to reduce the computational cost of correction sweeps on the coarser levels are
+		examined: reducing the degrees of freedom, reducing the order of the spatial discretization, and reducing the
+		accuracy when solving linear systems arising in implicit temporal integration.
+		Several numerical examples demonstrate the effect of multi-level coarsening on the convergence and cost of SDC
+		integration.
+		In particular, MLSDC can provide significant savings in compute time compared to SDC for a three-dimensional
+		problem.
+        </div>
       </div>
     </div>
   </div>
