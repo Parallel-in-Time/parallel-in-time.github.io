@@ -1589,6 +1589,14 @@ the saturation of the purely space-parallel approach.},
 }
 
 @incollection{CroceEtAl2014,
+ 	abstract={{In this paper we combine the Parareal parallel-in-time method together with spatial parallelization
+and investigate this space-time parallel scheme by means of solving the three-dimensional incompressible
+Navier-Stokes equations. Parallelization of time stepping provides a new direction of parallelization
+and allows to employ additional cores to further speed up simulations after spatial parallelization
+has saturated. We report on numerical experiments performed on a Cray XE6, simulating a driven
+cavity flow with and without obstacles. Distributed memory parallelization is used in both space and time,
+featuring up to 2,048 cores in total. It is confirmed that the space-time-parallel method can provide speedup 
+beyond the saturation of the spatial parallelization.}},
 	author = {Croce, Roberto and Ruprecht, Daniel and Krause, Rolf},
 	booktitle = {{Modeling, Simulation and Optimization of Complex Processes -- {HPSC} 2012}},
 	editor = {Bock, Hans Georg and Hoang, Xuan Phu and Rannacher, Rolf and Schlöder, Johannes P.},
@@ -1748,6 +1756,9 @@ the saturation of the purely space-parallel approach.},
 }
 
 @article{Ruprecht2014_GAMM,
+	abstract={{The effect is investigated of using a reduced spatial resolution in the coarse propagator of the time-parallel Parareal method for a finite difference discretization of the linear advection-diffusion equation.
+It is found that convergence can critically depend on the order of the interpolation used to transfer the coarse propagator solution to the fine mesh in the correction step.
+The effect also strongly depends on the employed spatial and temporal resolution.}},
 	author = {Ruprecht, Daniel},
 	issn = {1617-7061},
 	journal = {PAMM},
@@ -1761,6 +1772,7 @@ the saturation of the purely space-parallel approach.},
 }
 
 @inproceedings{RuprechtKrause2014_DDM,
+	abstract={{An OpenMP-based shared memory implementation of the Parareal parallel-in-time integration scheme using explicit integrators is combined with a standard MPI-based spatial parallelization of a finite difference method into a hybrid space-time parallel scheme. The capability of this approach to achieve speedups beyond the saturation of the pure space-parallel scheme is demonstrated for the two-dimensional Burgers equation.}},
 	author = {Krause, Rolf and Ruprecht, Daniel},
 	booktitle = {{Domain Decomposition Methods in Science and Engineering {XXI}}},
 	editors = {Erhel, J. and Gander, M. J. and Halpern, L. and Pichot, G. and Sassi, T. and Widlund, O.},
@@ -1796,6 +1808,11 @@ the saturation of the purely space-parallel approach.},
 }
 
 @inproceedings{SpeckEtAl2014_Parco,
+	abstract={{The paper presents a combination of the time-parallel``parallel full approximation scheme in space and time'' (PFASST) with a parallel multigrid method (PMG) in space, resulting in a mesh-based
+solver for the three-dimensional heat equation with a uniquely high degree of efficient concurrency. 
+Parallel scaling tests are reported on the Cray XE6 machine ``Monte Rosa'' on up to $16,384$ cores and on the IBM Blue Gene/Q system ``JUQUEEN'' on up to $65,536$ cores.
+The efficacy of the combined spatial- and temporal parallelization is shown by demonstrating that using PFASST in addition to PMG significantly extends the strong-scaling limit.
+Implications of using spatial coarsening strategies in PFASST's multi-level hierarchy in large-scale parallel simulations are discussed.}},
 	author = {Speck, Robert and Ruprecht, Daniel and Emmett, Matthew and Bolten, Matthias and Krause, Rolf},
 	booktitle = {{Parallel Computing: Accelerating Computational Science and Engineering (CSE)}},
 	editors = {Bader, M. and Bode, A. and Bungartz, H.-J. and Gerndt, M. and Joubert, G.R. and Peters, F.},
@@ -1809,6 +1826,10 @@ the saturation of the purely space-parallel approach.},
 }
 
 @inproceedings{SpeckEtAl2014_DDM2012,
+	abstract={{Vortex methods for the Navier-Stokes equations are based on a Lagrangian particle discretization, which reduces the governing equations to a first-order initial value system of ordinary differential equations for the position and vorticity of $N$ particles.
+In this paper, the accuracy of solving this system by time-serial spectral deferred corrections (SDC) as well as by the time-parallel Parallel Full Approximation Scheme in Space And Time (PFASST) is investigated. 
+PFASST is based on intertwining SDC iterations with differing resolution in a manner similar to the Parareal algorithm and uses a Full Approximation Scheme (FAS) correction to improve the accuracy of coarser SDC iterations. 
+It is demonstrated that SDC and PFASST can generate highly accurate solutions, and the performance in terms of function evaluations required for a certain accuracy is analyzed and compared to a standard Runge-Kutta method.}},
 	author = {Speck, Robert and Ruprecht, Daniel and Krause, Rolf and Emmett, Matthew and Minion, Michael L. and Winkel, Mathias and Gibbon, Paul},
 	booktitle = {{Domain Decomposition Methods in Science and Engineering {XXI}}},
 	editors = {Erhel, J. and Gander, M. J. and Halpern, L. and Pichot, G. and Sassi, T. and Widlund, O.},
@@ -1822,6 +1843,19 @@ the saturation of the purely space-parallel approach.},
 }
 
 @article{SpeckEtAl2014_BIT,
+	abstract={{The spectral deferred correction (SDC) method is an iterative scheme for computing a
+higher-order collocation solution to an ODE by performing a series
+of correction sweeps using a low-order timestepping method.
+This paper examines a variation of SDC for the temporal integration of PDEs called
+multi-level spectral deferred corrections (MLSDC), where sweeps are performed on a hierarchy of levels
+and an FAS correction term, as in nonlinear multigrid methods, couples solutions on different levels.
+Three different strategies to reduce the computational cost of correction
+sweeps on the coarser levels are examined:
+reducing the degrees of freedom, reducing the order of the spatial discretization,
+and reducing the accuracy when solving linear systems arising in implicit temporal integration.
+Several numerical examples demonstrate the effect of multi-level coarsening
+on the convergence and cost of SDC integration.
+In particular, MLSDC can provide significant savings in compute time compared to SDC for a three-dimensional problem.}},
 	author = {Speck, Robert and Ruprecht, Daniel and Emmett, Matthew and Minion, Michael L. and Bolten, Matthias and Krause, Rolf},
 	journal = {{BIT} Numerical Mathematics},
 	title = {{A multi-level spectral deferred correction method}},
@@ -1918,7 +1952,40 @@ coefficient. }},
 	note = {In press}
 }
 
+@inproceedings{GurralaEtAl2015,
+	abstract={{In  recent  years,  there  have  been  significant  developments  in  parallel  algorithms  and  high  performance  parallel
+computing  platforms.  Parareal  in  time  algorithm  has  become
+popular for long transient simulations (e.g., molecular dynamics,
+fusion,  reacting  flows).  Parareal  is  a  parallel  algorithm  which
+divides the time interval into sub-intervals and solves them con-
+currently. This paper investigates the applicability of the parareal
+algorithm  to  power  system  dynamic  simulations.  Preliminary
+results  on  the  application  of  parareal  for  multi-machine  power
+systems are reported in this paper. Two widely used test systems,
+WECC 3-generator 9-bus system, New England 10-generator 39-
+bus  system,  is  used  to  explore  the  effectiveness  of  the  parareal.
+Severe  3  phase  bus  faults  are  simulated  using  both  the  classical
+and  detailed  models  of  multi-machine  power  systems.  Actual
+Speedup of 5-7 times is observed assuming ideal parallelization. It
+has been observed that the speedup factors of the order of 20 can
+be achieved by using fast coarse approximations of power system
+models.  Dependency  of  parareal  convergence  on  fault  duration
+and location has been observed.}},
+	author={Gurunath Gurrala and Aleksandar Dimitrovski and Pannala Sreekanth and Srdjan Simunovic and Michael Starke},
+	title={Parareal in Time for Dynamic Simulations of Power Systems},
+	booktitle={Proceedings of the International  Conference  on  Power  Systems  Transients (IPST2015) in Cavtat, Croatia June 15-18, 2015},
+	year={2015},
+	url={http://www.ipstconf.org/papers/Proc_IPST2015/15IPST073.pdf}
+}	
+
 @article{KreienbuehlEtAl2015,
+	abstract={{In-silico investigation of skin permeation is an important but also computationally demanding problem.
+To resolve all scales involved in full detail will not only require exascale computing capacities but also suitable parallel algorithms.
+This article investigates the applicability of the time-parallel Parareal algorithm to a brick and mortar setup, a precursory problem to skin permeation.
+The C++ library Lib4PrM implementing Parareal is combined with the UG4 simulation framework, which provides the spatial discretization and parallelization. 
+The combination's performance is studied with respect to convergence and speedup.
+It is confirmed that anisotropies in the domain and jumps in diffusion coefficients only have a minor impact on Parareal's convergence.
+The influence of load imbalances in time due to differences in number of iterations required by the spatial solver as well as spatio-temporal weak scaling is discussed.}},
 	author = {Kreienbuehl, Andreas and Naegel, Arne and Ruprecht, Daniel and Speck, Robert and Wittum, Gabriel and Krause, Rolf},
 	journal = {Computing and Visualization in Science},
 	title = {{Numerical simulation of skin transport using Parareal}},
