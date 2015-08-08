@@ -1975,11 +1975,30 @@
 }
 
 @incollection{Gander2015_Review,
+	abstract={{Time parallel time integration methods have received renewed interest
+over the last decade because of the advent of massively parallel computers, which
+is mainly due to the clock speed limit reached on today's processors. When solving
+time dependent partial differential equations, the time direction is usually not used
+for parallelization. But when parallelization in space saturates, the time direction
+offers itself as a further direction for parallelization. The time direction is however
+special, and for evolution problems there is a causality principle: the solution later
+in time is affected (it is even determined) by the solution earlier in time, but not the
+other way round. Algorithms trying to use the time direction for parallelization must
+therefore be special, and take this very different property of the time dimension into
+account.
+We show in this chapter how time domain decomposition methods were invented,
+and give an overview of the existing techniques. Time parallel methods can be classified
+into four different groups: methods based on multiple shooting, methods based
+on domain decomposition and waveform relaxation, space-time multigrid methods
+and direct time parallel methods. We show for each of these techniques the main
+inventions over time by choosing specific publications and explaining the core ideas
+of the authors. This chapter is for people who want to quickly gain an overview of
+the exciting and rapidly developing area of research of time parallel methods.}},
 	author = {Gander, Martin J.},
 	title = {{50 years of Time Parallel Time Integration}},
 	booktitle = {Multiple Shooting and Time Domain Decomposition},
 	editors={Carraro, T. and Geiger, M. and K\"orkel, S. and Rannacher, R.},
-	url = {http://www.unige.ch/~gander/Preprints/50YearsTimeParallel.pdf},
+	url = {{http://www.unige.ch/%7Egander/Preprints/50YearsTimeParallel.pdf}},
 	year = {2015},
 	publisher = {Springer},
 	note = {In press}
@@ -2010,22 +2029,18 @@
 
 @article{KreienbuehlEtAl2015,
 	abstract = {{In-silico investigation of skin permeation is an important but also computationally demanding problem.
-		To resolve all scales involved in full detail will not only require exascale computing capacities but also
-		suitable parallel algorithms.
-		This article investigates the applicability of the time-parallel Parareal algorithm to a brick and mortar setup,
-		a precursory problem to skin permeation.
-		The C++ library Lib4PrM implementing Parareal is combined with the UG4 simulation framework, which provides the
-		spatial discretization and parallelization.
-		The combination's performance is studied with respect to convergence and speedup.
-		It is confirmed that anisotropies in the domain and jumps in diffusion coefficients only have a minor impact on
-		Parareal's convergence.
-		The influence of load imbalances in time due to differences in number of iterations required by the spatial
-		solver as well as spatio-temporal weak scaling is discussed.}},
+To resolve all scales involved in full detail will not only require exascale computing capacities but also suitable parallel algorithms.
+This article investigates the applicability of the time-parallel Parareal algorithm to a brick and mortar setup, a precursory problem to skin permeation.
+The C++ library Lib4PrM implementing Parareal is combined with the UG4 simulation framework, which provides the spatial discretization and parallelization. 
+The combination's performance is studied with respect to convergence and speedup.
+It is confirmed that anisotropies in the domain and jumps in diffusion coefficients only have a minor impact on Parareal's convergence.
+The influence of load imbalances in time due to differences in number of iterations required by the spatial solver as well as spatio-temporal weak scaling is discussed.}},
 	author = {Kreienbuehl, Andreas and Naegel, Arne and Ruprecht, Daniel and Speck, Robert and Wittum, Gabriel and Krause, Rolf},
 	journal = {Computing and Visualization in Science},
 	title = {{Numerical simulation of skin transport using Parareal}},
-	url = {http://arxiv.org/abs/1502.03645},
-	year = {2015}
+	url = {http://dx.doi.org/10.1007/s00791-015-0246-y},
+	year = {2015},
+	note={In press}
 }
 
 @article{MinionEtAl2015,
