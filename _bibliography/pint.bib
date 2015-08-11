@@ -1744,10 +1744,19 @@
 }
 
 @unpublished{Neumueller2014,
-	author = {Gander, Martin J. and Neumüller, M.},
+	abstract={{We present and analyze for a scalar linear evolution model problem a time multigrid algorithm for DG-discretizations in time. We derive asymptotically optimized parameters for the smoother, and also an asymptotically sharp convergence estimate for the two grid cycle. Our results hold for any A-stable time stepping scheme and represent the core component for space-time multigrid methods for parabolic partial differential equations. Our time multigrid method has excellent strong and weak scaling properties for parallelization in time, which we show with numerical experiments.}},
+	author = {Gander, Martin J. and Neumueller, M.},
 	title = {{Analysis of a Time Multigrid Algorithm for {DG}-Discretizations in Time}},
 	url = {http://arxiv.org/abs/1409.5254},
 	year = {2014}
+}
+
+@unpublished{Neumueller2014_STMG,
+	abstract={{We present and analyze a new space-time parallel multigrid method for parabolic equations. The method is based on arbitrarily high order discontinuous Galerkin discretizations in time, and a finite element discretization in space. The key ingredient of the new algorithm is a block Jacobi smoother. We present a detailed convergence analysis when the algorithm is applied to the heat equation, and determine asymptotically optimal smoothing parameters, a precise criterion for semi-coarsening in time or full coarsening, and give an asymptotic two grid contraction factor estimate. We then explain how to implement the new multigrid algorithm in parallel, and show with numerical experiments its excellent strong and weak scalability properties.}},
+	author={Gander, Martin J. and Neumueller, Martin},
+	title={Analysis Of A New Space-Time Parallel Multigrid Algorithm For Parabolic Problems},
+	url={http://arxiv.org/abs/1411.0519},
+	year={2014}
 }
 
 @article{Randles2014,
