@@ -617,6 +617,29 @@
 	year = {2005}
 }
 
+@article{SchmittEtAl2005,
+	abstract = {{Peer two-step W-methods are designed for integration of stiff initial value problems with parallelism
+		across the method.
+		The essential feature is that in each time step $s$ 'peer' approximations are employed having similar properties.
+		In fact, no primary solution variable is distinguished.
+		Parallel implementation of these stages is easy since information from one previous time step is used only and
+		the different linear systems may be solved simultaneously.
+		This paper introduces a subclass having order $s-1$ where optimal damping for stiff problems is obtained by using
+		different system parameters in different stages.
+		Favourable properties of this subclass are uniform stability for realistic stepsize sequences and a
+		superconvergence property which is proved using a polynomial collocation formulation.
+		Numerical tests on a shared memory computer of a matrix-free implementation with Krylov methods are included.}},
+	author = {Schmitt, BernhardA. and Weiner, Ruediger and Podhaisky, Helmut},
+	doi = {10.1007/s10543-005-2635-y},
+	journal = {BIT Numerical Mathematics},
+	number = {1},
+	pages = {197--217},
+	title = {Multi-Implicit Peer Two-Step W-Methods for Parallel Time Integration},
+	url = {http://dx.doi.org/10.1007/s10543-005-2635-y},
+	volume = {45},
+	year = {2005},
+}
+
 @article{Srinivasan2005,
 	author = {Srinivasan, Ashok and Chandra, Namas},
 	journal = {Parallel Computing},
@@ -896,7 +919,7 @@
 	booktitle = {{AIP Conference Proceedings}},
 	pages = {388},
 	title = {{Parareal and spectral deferred corrections}},
-	url = {http://link.aip.org/link/doi/10.1063/1.2990941},
+	url = {http://dx.doi.org/10.1063/1.2990941},
 	volume = {1048},
 	year = {2008}
 }
@@ -1731,10 +1754,27 @@
 }
 
 @unpublished{Neumueller2014,
-	author = {Gander, Martin J. and Neumüller, M.},
+	abstract={{We present and analyze for a scalar linear evolution model problem a time multigrid algorithm for DG-discretizations in time. We derive asymptotically optimized parameters for the smoother, and also an asymptotically sharp convergence estimate for the two grid cycle. Our results hold for any A-stable time stepping scheme and represent the core component for space-time multigrid methods for parabolic partial differential equations. Our time multigrid method has excellent strong and weak scaling properties for parallelization in time, which we show with numerical experiments.}},
+	author = {Gander, Martin J. and Neumueller, M.},
 	title = {{Analysis of a Time Multigrid Algorithm for {DG}-Discretizations in Time}},
 	url = {http://arxiv.org/abs/1409.5254},
 	year = {2014}
+}
+
+@unpublished{Neumueller2014_STMG,
+	abstract = {{We present and analyze a new space-time parallel multigrid method for parabolic equations.
+		The method is based on arbitrarily high order discontinuous Galerkin discretizations in time, and a finite
+		element discretization in space.
+		The key ingredient of the new algorithm is a block Jacobi smoother.
+		We present a detailed convergence analysis when the algorithm is applied to the heat equation, and determine
+		asymptotically optimal smoothing parameters, a precise criterion for semi-coarsening in time or full coarsening,
+		and give an asymptotic two grid contraction factor estimate.
+		We then explain how to implement the new multigrid algorithm in parallel, and show with numerical experiments
+		its excellent strong and weak scalability properties.}},
+	author = {Gander, Martin J. and Neumueller, Martin},
+	title = {Analysis Of A New Space-Time Parallel Multigrid Algorithm For Parabolic Problems},
+	url = {http://arxiv.org/abs/1411.0519},
+	year = {2014},
 }
 
 @article{Randles2014,
@@ -1975,14 +2015,32 @@
 }
 
 @incollection{Gander2015_Review,
+	abstract={{Time parallel time integration methods have received renewed interest
+over the last decade because of the advent of massively parallel computers, which
+is mainly due to the clock speed limit reached on today's processors. When solving
+time dependent partial differential equations, the time direction is usually not used
+for parallelization. But when parallelization in space saturates, the time direction
+offers itself as a further direction for parallelization. The time direction is however
+special, and for evolution problems there is a causality principle: the solution later
+in time is affected (it is even determined) by the solution earlier in time, but not the
+other way round. Algorithms trying to use the time direction for parallelization must
+therefore be special, and take this very different property of the time dimension into
+account.
+We show in this chapter how time domain decomposition methods were invented,
+and give an overview of the existing techniques. Time parallel methods can be classified
+into four different groups: methods based on multiple shooting, methods based
+on domain decomposition and waveform relaxation, space-time multigrid methods
+and direct time parallel methods. We show for each of these techniques the main
+inventions over time by choosing specific publications and explaining the core ideas
+of the authors. This chapter is for people who want to quickly gain an overview of
+the exciting and rapidly developing area of research of time parallel methods.}},
 	author = {Gander, Martin J.},
 	title = {{50 years of Time Parallel Time Integration}},
 	booktitle = {Multiple Shooting and Time Domain Decomposition},
 	editors={Carraro, T. and Geiger, M. and K\"orkel, S. and Rannacher, R.},
-	url = {http://www.unige.ch/~gander/Preprints/50YearsTimeParallel.pdf},
+	url = {{http://www.unige.ch/%7Egander/Preprints/50YearsTimeParallel.pdf}},
 	year = {2015},
-	publisher = {Springer},
-	note = {In press}
+	publisher = {Springer}
 }
 
 @inproceedings{GurralaEtAl2015,
@@ -2024,8 +2082,8 @@
 	author = {Kreienbuehl, Andreas and Naegel, Arne and Ruprecht, Daniel and Speck, Robert and Wittum, Gabriel and Krause, Rolf},
 	journal = {Computing and Visualization in Science},
 	title = {{Numerical simulation of skin transport using Parareal}},
-	url = {http://arxiv.org/abs/1502.03645},
-	year = {2015}
+	url = {http://dx.doi.org/10.1007/s00791-015-0246-y},
+	year = {2015},
 }
 
 @article{MinionEtAl2015,
