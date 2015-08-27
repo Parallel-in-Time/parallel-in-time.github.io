@@ -1062,6 +1062,9 @@
 }
 
 @inproceedings{LepsaSandu2010,
+	abstract={{'Parareal' attempts to speed up the solution of ordinary differential equations (ODEs) by parallelizing the time dimension. Different solutions are obtained in parallel on different subintervals. An iterative procedure is employed to match the solution values at the end of each subinterval with those at the beginning of the next one. It has been shown that insufficient 'parareal' iterations lead to an inaccurate solution, while too many iterations waste CPU cycles without bringing any improvement to the solution.
+In this paper we discuss an error control mechanism for both the classical 'parareal' time discretization method and its adaptive variant. This mechanism can be effectively used as a mean of controlling the number of 'parareal' iterations. We show that bounding the difference between the solution of the fine integrator and the 'parareal' solution by the local truncation error of the fine grid leads to a sufficient convergence criterion that guaranties a solution that is accurate enough in a minimum number of iterations.
+Tests on a nonlinear problem illustrate the effectiveness of the proposed error control mechanism on the classical automatic adaptive time stepping formulation of an embedded method on the two-level 'parareal' algorithm.}},
 	acmid = {1878628},
 	address = {San Diego, CA, USA},
 	articleno = {87},
@@ -1072,18 +1075,21 @@
 	pages = {87:1--87:7},
 	publisher = {Society for Computer Simulation International},
 	series = {{SpringSim '10}},
+	url={http://dx.doi.org/10.1145/1878537.1878628},
 	title = {{An efficient error control mechanism for the adaptive 'parareal' time discretization algorithm}},
 	year = {2010}
 }
 
 @article{MathewEtAl2010,
+	abstract={{In this paper, we describe block matrix algorithms for the iterative solution of a large-scale linear-quadratic optimal control problem involving a parabolic partial differential equation over a finite control horizon. We consider an ?all at once? discretization of the problem and formulate three iterative algorithms. The first algorithm is based on preconditioning a symmetric positive definite reduced linear system involving only the unknown control variables; however inner-outer iterations are required. The second algorithm modifies the first algorithm to avoid inner-outer iterations by introducing an auxiliary variable. It yields a symmetric indefinite system with a positive definite block preconditioner. The third algorithm is the central focus of this paper. It modifies the preconditioner in the second algorithm by a parallel-in-time preconditioner based on the parareal algorithm. Theoretical results show that the preconditioned algorithms have optimal convergence properties and parallel scalability. Numerical experiments confirm the theoretical results.}},
 	author = {Mathew, Tarek and Sarkis, Marcus and Schaerer, Christian E.},
 	journal = {SIAM Journal on Scientific Computing},
 	number = {3},
 	pages = {1180--1200},
 	title = {{Analysis of Block Parareal Preconditioners for Parabolic Optimal Control Problems}},
 	volume = {32},
-	year = {2010}
+	year = {2010},
+	url={http://dx.doi.org/10.1137/080717481}
 }
 
 @article{Minion2010,
@@ -1380,11 +1386,13 @@
 }
 
 @inproceedings{XiaoAubanel2012,
+	abstract={{Parallelization of time-dependent partial differential equations (PDEs) can be accomplished by time decomposition using the parareal algorithm. While the parareal algorithm was designed to enable real-time simulations, it holds particular promise for long time simulations on computational grids and clouds, due its low communication overhead and potential for adaptation to heterogeneous processors. This contribution extends previous work on the scheduling of tasks of the parareal algorithm to resources with heterogeneous CPU performance. Experiments on Amazon's EC2 show the suitability of this algorithm for execution on a heterogeneous cloud platform and its insensitivity to network latency.}},
 	author = {Xiao, Hongtao and Aubanel, E.},
 	booktitle = {{Parallel and Distributed Processing Symposium Workshops PhD Forum (IPDPSW), 2012 IEEE 26th International}},
 	pages = {1440--1448},
 	title = {{Scheduling of Tasks in the Parareal Algorithm for Heterogeneous Cloud Platforms}},
-	year = {2012}
+	year = {2012},
+	url={http://dx.doi.org/10.1109/IPDPSW.2012.181}
 }
 
 %
