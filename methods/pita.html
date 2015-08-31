@@ -3,10 +3,10 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Space-time concurrent multigrid waveform relaxation (WRMG)</title>
+  <title>PITA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallelintime.org/methods/wrmg.html">
+  <link rel="canonical" href="http://parallelintime.org/methods/pita.html">
 
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/octicons/octicons.min.css">
@@ -69,7 +69,7 @@
       <a href="/methods/pfasst.html">PFASST</a>
     </li>
   
-    <li >
+    <li class="active">
       <a href="/methods/pita.html">PITA</a>
     </li>
   
@@ -81,7 +81,7 @@
       <a href="/methods/stmg.html">Space-time Multigrid (STMG)</a>
     </li>
   
-    <li class="active">
+    <li >
       <a href="/methods/wrmg.html">Space-time concurrent multigrid waveform relaxation (WRMG)</a>
     </li>
   
@@ -127,32 +127,32 @@
       <div class="container">
         <div class="post post-code">
   <header class="post-header">
-    <h1>Space-time concurrent multigrid waveform relaxation (WRMG)</h1>
+    <h1>PITA</h1>
     
-    <h2>WRMG</h2>
+    <h2>Parallel implicit time-integrator</h2>
     
   </header>
   <article class="post-content">
-  <p>Multigrid waveform relaxation <a href="#LubichOstermann1987">[1]</a> is an algorithm for solving parabolic partial differential equations on multicomputers. The method is based on applying standard iterative methods to systems of ordinary differential equations and using multigrid techniques for accelerating this process. Some time parallelism was introduced in the method described in <a href="#VandewalleVandeVelde1994">[2]</a> by using pipelining or the partition method. However, a small sequential component remained. In <a href="#HortonEtAl1995">[3]</a>, it was shown that when using cyclic reduction instead of the partition method major classes of parabolic problems can be solved in polylog parallel time without giving up linear serial complexity. In <a href="#VandewalleHorton1995">[4]</a>, the method was analyzed bz means of local Fourier analysis and compared to similar results for a time-parallel multigrid method.</p>
+  <p>Introduced in 2003 by Farhat and Chandesris <a href="#FarhatEtAl2003">[1]</a>. Augmented with a convergence accelerator later <a href="#FarhatCortial2006">[2]</a> <a href="#CortialFarhat2009">[3]</a>. PITA is closely related to <a href="/methods/parareal.html">Parareal</a> but uses a slightly different correction.</p>
 
 <ol class="bibliography"><li><div class="bibtex-entry-container">
   <div>
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          LubichOstermann1987
+          FarhatEtAl2003
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseLubichOstermann1987Bibtex" aria-expanded="false" aria-controls="collapseLubichOstermann1987Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseFarhatEtAl2003Bibtex" aria-expanded="false" aria-controls="collapseFarhatEtAl2003Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalLubichOstermann1987Abstract" aria-expanded="false" aria-controls="modalLubichOstermann1987Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalFarhatEtAl2003Abstract" aria-expanded="false" aria-controls="modalFarhatEtAl2003Abstract">
               Abstract
             </button>
             
@@ -162,22 +162,21 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="LubichOstermann1987">C. Lubich and A. Ostermann, “Multi-grid dynamic iteration for parabolic equations,” <i>BIT Numerical Mathematics</i>, vol. 27, no. 2, pp. 216–234, 1987 [Online]. Available at: [http://dx.doi.org/10.1007/BF01934186](http://dx.doi.org/10.1007/BF01934186)</span>
+      <span id="FarhatEtAl2003">C. Farhat and M. Chandesris, “Time-decomposed parallel time-integrators: theory and feasibility studies for fluid, structure, and fluid-structure applications,” <i>International Journal for Numerical Methods in Engineering</i>, vol. 58, no. 9, pp. 1397–1434, 2003 [Online]. Available at: [http://dx.doi.org/10.1002/nme.860](http://dx.doi.org/10.1002/nme.860)</span>
     </div>
   </div>
-  <div class="collapse" id="collapseLubichOstermann1987Bibtex">
+  <div class="collapse" id="collapseFarhatEtAl2003Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@article{LubichOstermann1987,
-  author = {Lubich, Ch. and Ostermann, A.},
-  issn = {0006-3835},
-  journal = {BIT Numerical Mathematics},
-  number = {2},
-  pages = {216--234},
-  title = {{Multi-grid dynamic iteration for parabolic equations}},
-  url = {http://dx.doi.org/10.1007/BF01934186},
-  volume = {27},
-  year = {1987}
+        <pre class="abstract">@article{FarhatEtAl2003,
+  author = {Farhat, Charbel and Chandesris, M.},
+  journal = {International Journal for Numerical Methods in Engineering},
+  number = {9},
+  pages = {1397--1434},
+  title = {{Time-decomposed parallel time-integrators: theory and feasibility studies for fluid, structure, and fluid-structure applications}},
+  url = {http://dx.doi.org/10.1002/nme.860},
+  volume = {58},
+  year = {2003}
 }
 </pre>
       </div>
@@ -191,19 +190,19 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          VandewalleVandeVelde1994
+          FarhatCortial2006
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseVandewalleVandeVelde1994Bibtex" aria-expanded="false" aria-controls="collapseVandewalleVandeVelde1994Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseFarhatCortial2006Bibtex" aria-expanded="false" aria-controls="collapseFarhatCortial2006Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalVandewalleVandeVelde1994Abstract" aria-expanded="false" aria-controls="modalVandewalleVandeVelde1994Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalFarhatCortial2006Abstract" aria-expanded="false" aria-controls="modalFarhatCortial2006Abstract">
               Abstract
             </button>
             
@@ -213,21 +212,21 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="VandewalleVandeVelde1994">S. G. Vandewalle and E. F. Van de Velde, “Space-time concurrent multigrid waveform relaxation,” <i>Annals of Numerical Mathematics</i>, vol. 1, no. 1-4, pp. 347–360, 1994 [Online]. Available at: [http://dx.doi.org/10.13140/2.1.1146.1761](http://dx.doi.org/10.13140/2.1.1146.1761)</span>
+      <span id="FarhatCortial2006">C. Farhat, J. Cortial, C. Dastillung, and H. Bavestrello, “Time-parallel implicit integrators for the near-real-time prediction of linear structural dynamic responses,” <i>International Journal for Numerical Methods in Engineering</i>, vol. 67, no. 5, pp. 697–724, 2006 [Online]. Available at: [http://dx.doi.org/10.1002/nme.1653](http://dx.doi.org/10.1002/nme.1653)</span>
     </div>
   </div>
-  <div class="collapse" id="collapseVandewalleVandeVelde1994Bibtex">
+  <div class="collapse" id="collapseFarhatCortial2006Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@article{VandewalleVandeVelde1994,
-  author = {Vandewalle, {Stefan G.} and {Van de Velde}, {Eric F.}},
-  journal = {Annals of Numerical Mathematics},
-  number = {1-4},
-  pages = {347-360},
-  title = {{Space-time concurrent multigrid waveform relaxation}},
-  url = {http://dx.doi.org/10.13140/2.1.1146.1761},
-  volume = {1},
-  year = {1994}
+        <pre class="abstract">@article{FarhatCortial2006,
+  author = {Farhat, Charbel and Cortial, Julien and Dastillung, C. and Bavestrello, H.},
+  issue = {5},
+  journal = {International Journal for Numerical Methods in Engineering},
+  pages = {697--724},
+  title = {{Time-parallel implicit integrators for the near-real-time prediction of linear structural dynamic responses}},
+  url = {http://dx.doi.org/10.1002/nme.1653},
+  volume = {67},
+  year = {2006}
 }
 </pre>
       </div>
@@ -241,19 +240,19 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          HortonEtAl1995
+          CortialFarhat2009
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseHortonEtAl1995Bibtex" aria-expanded="false" aria-controls="collapseHortonEtAl1995Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseCortialFarhat2009Bibtex" aria-expanded="false" aria-controls="collapseCortialFarhat2009Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalHortonEtAl1995Abstract" aria-expanded="false" aria-controls="modalHortonEtAl1995Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalCortialFarhat2009Abstract" aria-expanded="false" aria-controls="modalCortialFarhat2009Abstract">
               Abstract
             </button>
             
@@ -263,71 +262,21 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="HortonEtAl1995">G. Horton, S. Vandewalle, and P. Worley, “An Algorithm with Polylog Parallel Complexity for Solving Parabolic Partial Differential Equations,” <i>SIAM Journal on Scientific Computing</i>, vol. 16, no. 3, pp. 531–541, 1995 [Online]. Available at: [http://dx.doi.org/10.1137/0916034](http://dx.doi.org/10.1137/0916034)</span>
+      <span id="CortialFarhat2009">J. Cortial and C. Farhat, “A time-parallel implicit method for accelerating the solution of non-linear structural dynamics problems,” <i>International Journal for Numerical Methods in Engineering</i>, vol. 77, no. 4, pp. 451–470, 2009 [Online]. Available at: [http://dx.doi.org/10.1002/nme.2418](http://dx.doi.org/10.1002/nme.2418)</span>
     </div>
   </div>
-  <div class="collapse" id="collapseHortonEtAl1995Bibtex">
+  <div class="collapse" id="collapseCortialFarhat2009Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@article{HortonEtAl1995,
-  author = {Horton, Graham and Vandewalle, Stefan and Worley, P.},
-  journal = {SIAM Journal on Scientific Computing},
-  number = {3},
-  pages = {531--541},
-  title = {{An Algorithm with Polylog Parallel Complexity for Solving Parabolic Partial Differential Equations}},
-  url = {http://dx.doi.org/10.1137/0916034},
-  volume = {16},
-  year = {1995}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          VandewalleHorton1995
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseVandewalleHorton1995Bibtex" aria-expanded="false" aria-controls="collapseVandewalleHorton1995Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalVandewalleHorton1995Abstract" aria-expanded="false" aria-controls="modalVandewalleHorton1995Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="VandewalleHorton1995">S. Vandewalle and G. Horton, “Fourier mode analysis of the multigrid waveform relaxation and time-parallel multigrid methods,” <i>Computing</i>, vol. 54, no. 4, pp. 317–330, 1995 [Online]. Available at: [http://dx.doi.org/10.1007/BF02238230](http://dx.doi.org/10.1007/BF02238230)</span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseVandewalleHorton1995Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@article{VandewalleHorton1995,
-  author = {Vandewalle, Stefan and Horton, Graham},
-  journal = {Computing},
+        <pre class="abstract">@article{CortialFarhat2009,
+  author = {Cortial, Julien and Farhat, Charbel},
+  journal = {International Journal for Numerical Methods in Engineering},
   number = {4},
-  pages = {317--330},
-  title = {{Fourier mode analysis of the multigrid waveform relaxation and time-parallel multigrid methods}},
-  url = {http://dx.doi.org/10.1007/BF02238230},
-  volume = {54},
-  year = {1995}
+  pages = {451--470},
+  title = {{A time-parallel implicit method for accelerating the solution of non-linear structural dynamics problems}},
+  url = {http://dx.doi.org/10.1002/nme.2418},
+  volume = {77},
+  year = {2009}
 }
 </pre>
       </div>
@@ -347,13 +296,16 @@
 
 
   
+    
   
 
 
 
+  <i class="fa fa-calendar"></i> Created on <time datetime="2015-08-31T00:00:00+00:00">31 Aug 2015</time>
 
 
-  <i class="fa fa-calendar"></i> Updated on <time datetime="2015-07-01T17:00:00+00:00" data-updated="true">01 Jul 2015</time>
+
+  
 
 
     </footer>
