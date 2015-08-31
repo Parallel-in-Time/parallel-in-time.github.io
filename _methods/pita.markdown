@@ -2,7 +2,7 @@
 layout: page_method
 title: PITA
 subtitle: Parallel implicit time-integrator
-date: 2014-08-12 00:00:00 +0000
+date: 2015-08-31 00:00:00 +0000
 navbar: Methods
 subnavbar: PITA
 footer: true
