@@ -9,11 +9,12 @@ logo: icslogo.png
 group_url: http://icsweb.inf.unisi.ch/cms/index.php/groups/3-group-krause.html
 group_address: "Institute of Computational Science<br />Universit&agrave; della Svizzera italiana<br />CH-6900 Lugano, Switzerland"
 members:
-  - name: Dr. Daniel Ruprecht
-    email: daniel.ruprecht@usi.ch
   - name: Dr. Andreas Kreienbuehl
     email: andreas.kreienbuehl@usi.ch
   - name: Prof. Rolf Krause
+members_retired:
+  - name: Dr. Daniel Ruprecht
+    email: d.ruprecht@leeds.ac.uk
 short_desc: 
 ---
 
