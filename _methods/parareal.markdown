@@ -9,6 +9,6 @@ footer: true
 short_desc: Parareal is one of the most widely studied time-parallel methods.
 ---
 
-Introduced in 2001 by Lions, Maday and Turinici and one of the most widely studied time-parallel methods {% cite LionsEtAl2001 %}.
+Introduced in 2001 by Lions, Maday and Turinici and one of the most widely studied time-parallel methods {% cite LionsEtAl2001 %}. See also the corresponding entry on [Wikipedia](https://en.wikipedia.org/wiki/Parareal).
 
 {% bibliography --cited %}
