@@ -7,6 +7,7 @@ subnavbar: leeds
 footer: true
 logo: uni_leeds.png
 group_url: https://www.engineering.leeds.ac.uk/people/mechanical/staff/d.ruprecht
+github_username: "Parallel-in-time"
 group_address: "School of Mechanical Engineering<br />University of Leeds<br />Leeds LS2 9JT, UK"
 members:
   - name: Dr. Daniel Ruprecht
