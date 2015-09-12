@@ -5,6 +5,7 @@ date: 2014-06-16 00:00:00 +0000
 event_location: Banff, Canada
 event_start: 2016-11-27 00:00
 event_end: 2016-12-02 00:00
+event_url: http://www.birs.ca/events/2016/5-day-workshops/16w5030
 navbar: Events
 subnavbar: Upcoming
 permalink: /events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html
