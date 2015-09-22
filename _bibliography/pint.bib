@@ -2061,18 +2061,27 @@
 }
 
 @article{Bedez2015,
-title = {A fully parallel in time and space algorithm for simulating the electrical activity of a neural tissue},
-journal = {{Journal of Neuroscience Methods}},
-volume = {},
-number = {},
-pages = {},
-year = {2015},
-note = {in press},
-url = {http://dx.doi.org/10.1016/j.jneumeth.2015.09.017},
-author = {Mathieu Bedez and Zakaria Belhachmi and Olivier Haeberl\'e and Renaud Greget and Saliha Moussaoui and Jean-Marie Bouteiller and Serge Bischoff},
-abstract ={{The resolution of a model describing the electrical activity of neural tissue and its propagation within this tissue is highly consuming in term of computing time and requires strong computing power to achieve good results. New method In this study, we present a method to solve a model describing the electrical propagation in neuronal tissue, using parareal algorithm, coupling with parallelization space using CUDA in graphical processing unit (GPU). Results We applied the method of resolution to different dimensions of the geometry of our model (1-D, 2-D and 3-D). The GPU results are compared with simulations from a multi-core processor cluster, using message-passing interface (MPI), where the spatial scale was parallelized in order to reach a comparable calculation time than that of the presented method using GPU. A gain of a factor 100 in term of computational time between sequential results and those obtained using the GPU has been obtained, in the case of 3-D geometry. Given the structure of the GPU, this factor increases according to the fineness of the geometry used in the computation. Comparison with existing method(s) To the best of our knowledge, it is the first time such a method is used, even in the case of neuroscience. Conclusion Parallelization time coupled with GPU parallelization space allows for drastically reducing computational time with a fine resolution of the model describing the propagation of the electrical signal in a neuronal tissue.}}
+        title = {A fully parallel in time and space algorithm for simulating the electrical activity of a neural tissue},
+        journal = {{Journal of Neuroscience Methods}},
+        volume = {},
+        number = {},
+        pages = {},
+        year = {2015},
+        note = {in press},
+        url = {http://dx.doi.org/10.1016/j.jneumeth.2015.09.017},
+        author = {Mathieu Bedez and Zakaria Belhachmi and Olivier Haeberl\'e and Renaud Greget and Saliha Moussaoui and Jean-Marie Bouteiller and Serge Bischoff},
+        abstract ={{The resolution of a model describing the electrical activity of neural tissue and its propagation within this tissue is highly consuming in term of computing time and requires strong computing power to achieve good results. New method In this study, we present a method to solve a model describing the electrical propagation in neuronal tissue, using parareal algorithm, coupling with parallelization space using CUDA in graphical processing unit (GPU). Results We applied the method of resolution to different dimensions of the geometry of our model (1-D, 2-D and 3-D). The GPU results are compared with simulations from a multi-core processor cluster, using message-passing interface (MPI), where the spatial scale was parallelized in order to reach a comparable calculation time than that of the presented method using GPU. A gain of a factor 100 in term of computational time between sequential results and those obtained using the GPU has been obtained, in the case of 3-D geometry. Given the structure of the GPU, this factor increases according to the fineness of the geometry used in the computation. Comparison with existing method(s) To the best of our knowledge, it is the first time such a method is used, even in the case of neuroscience. Conclusion Parallelization time coupled with GPU parallelization space allows for drastically reducing computational time with a fine resolution of the model describing the propagation of the electrical signal in a neuronal tissue.}}
 }
 
+
+@unpublished{FengEtAl2015,
+	abstract={{The parareal algorithm seeks to extract parallelism in the time-integration direction of time-dependent differential equations. While it has been applied with success to a wide range of problems, it suffers from some stability issues when applied to non-dissipative problems. We express the method through an iteration matrix and show that the problematic behavior is related to the non-normal structure of the iteration matrix. To enforce monotone convergence we propose an adjoint parareal algorithm, accelerated by the Conjugate Gradient Method. Numerical experiments confirm the stability and suggest directions for further improving the performance.}},
+	author={Chen, Feng and Hesthaven, Jan S. and Maday, Yvon and Nielsen, Allan S.},
+	title={An Adjoint Approach for Stabilizing the Parareal Method},
+	howpublished={EPFL-ARTICLE-211097},
+	url={http://infoscience.epfl.ch/record/211097},
+	year={2015}
+}
 
 @incollection{Gander2015_Review,
 	abstract = {{Time parallel time integration methods have received renewed interest over the last decade because of
