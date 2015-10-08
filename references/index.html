@@ -352,15 +352,15 @@
     <div class="row">
       <div class="col-md-12">
         <pre class="abstract">@article{Bedez2015,
-  title = {A fully parallel in time and space algorithm for simulating the electrical activity of a neural tissue},
+  author = {Bedez, Mathieu and Belhachmi, Zakaria and Haeberl\'e, Olivier and Greget, Renaud and Moussaoui, Saliha and Bouteiller, Jean-Marie and Bischoff, Serge},
   journal = {{Journal of Neuroscience Methods}},
-  volume = {},
   number = {},
-  pages = {},
-  year = {2015},
   note = {in press},
+  pages = {},
+  title = {A fully parallel in time and space algorithm for simulating the electrical activity of a neural tissue},
   url = {http://dx.doi.org/10.1016/j.jneumeth.2015.09.017},
-  author = {Bedez, Mathieu and Belhachmi, Zakaria and Haeberl\'e, Olivier and Greget, Renaud and Moussaoui, Saliha and Bouteiller, Jean-Marie and Bischoff, Serge}
+  volume = {},
+  year = {2015}
 }
 </pre>
       </div>
@@ -377,7 +377,100 @@
           </h4>
         </div>
         <div class="modal-body">
-          The resolution of a model describing the electrical activity of neural tissue and its propagation within this tissue is highly consuming in term of computing time and requires strong computing power to achieve good results. New method In this study, we present a method to solve a model describing the electrical propagation in neuronal tissue, using parareal algorithm, coupling with parallelization space using CUDA in graphical processing unit (GPU). Results We applied the method of resolution to different dimensions of the geometry of our model (1-D, 2-D and 3-D). The GPU results are compared with simulations from a multi-core processor cluster, using message-passing interface (MPI), where the spatial scale was parallelized in order to reach a comparable calculation time than that of the presented method using GPU. A gain of a factor 100 in term of computational time between sequential results and those obtained using the GPU has been obtained, in the case of 3-D geometry. Given the structure of the GPU, this factor increases according to the fineness of the geometry used in the computation. Comparison with existing method(s) To the best of our knowledge, it is the first time such a method is used, even in the case of neuroscience. Conclusion Parallelization time coupled with GPU parallelization space allows for drastically reducing computational time with a fine resolution of the model describing the propagation of the electrical signal in a neuronal tissue.
+          The resolution of a model describing the electrical activity of neural tissue and its
+		propagation within this tissue is highly consuming in term of computing time and requires strong
+		computing power to achieve good results.
+		New method in this study, we present a method to solve a model describing the electrical
+		propagation in neuronal tissue, using parareal algorithm, coupling with parallelization space using
+		CUDA in graphical processing unit (GPU).
+		Results we applied the method of resolution to different dimensions of the geometry of our model
+		(1-D, 2-D and 3-D).
+		The GPU results are compared with simulations from a multi-core processor cluster, using
+		message-passing interface (MPI), where the spatial scale was parallelized in order to reach a
+		comparable calculation time than that of the presented method using GPU.
+		A gain of a factor 100 in term of computational time between sequential results and those obtained
+		using the GPU has been obtained, in the case of 3-D geometry.
+		Given the structure of the GPU, this factor increases according to the fineness of the geometry used
+		in the computation.
+		Comparison with existing method(s) To the best of our knowledge, it is the first time such a method
+		is used, even in the case of neuroscience.
+		Conclusion Parallelization time coupled with GPU parallelization space allows for drastically
+		reducing computational time with a fine resolution of the model describing the propagation of the
+		electrical signal in a neuronal tissue.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          FengEtAl2015
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseFengEtAl2015Bibtex"
+                    aria-expanded="false" aria-controls="collapseFengEtAl2015Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalFengEtAl2015Abstract"
+                    aria-expanded="false" aria-controls="modalFengEtAl2015Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="FengEtAl2015">F. Chen, J. S. Hesthaven, Y. Maday, and A. S. Nielsen, “An Adjoint Approach for Stabilizing the Parareal Method,” EPFL-ARTICLE-211097, 2015 [Online]. Available at: <a href="http://infoscience.epfl.ch/record/211097">http://infoscience.epfl.ch/record/211097</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseFengEtAl2015Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{FengEtAl2015,
+  author = {Chen, Feng and Hesthaven, Jan S. and Maday, Yvon and Nielsen, Allan S.},
+  howpublished = {EPFL-ARTICLE-211097},
+  title = {An Adjoint Approach for Stabilizing the Parareal Method},
+  url = {http://infoscience.epfl.ch/record/211097},
+  year = {2015}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalFengEtAl2015Abstract" tabindex="-1" role="dialog" aria-labelledby="modalFengEtAl2015AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalFengEtAl2015AbstractTitle">
+            Abstract for BibTeX entry <code>FengEtAl2015</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          The parareal algorithm seeks to extract parallelism in the time-integration direction of
+		time-dependent differential equations.
+		While it has been applied with success to a wide range of problems, it suffers from some stability
+		issues when applied to non-dissipative problems.
+		We express the method through an iteration matrix and show that the problematic behavior is related
+		to the non-normal structure of the iteration matrix.
+		To enforce monotone convergence we propose an adjoint parareal algorithm, accelerated by the
+		Conjugate Gradient Method.
+		Numerical experiments confirm the stability and suggest directions for further improving the
+		performance.
         </div>
       </div>
     </div>
@@ -579,7 +672,7 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="KooijEtAl2015">G. L. Kooij, M. A. Botchev, and B. J. Geurts, “A Block Krylov Subspace Implementation of the Time-Parallel Paraexp Method and its Extension for Nonlinear Partial Differential Equations,” 2015 [Online]. Available at: <a href="http://arxiv.org/abs/1509.04567">http://arxiv.org/abs/1509.04567</a></span>
+      <span id="KooijEtAl2015">G. L. Kooij, M. A. Botchev, and B. J. Geurts, “A Block Krylov Subspace Implementation of the Time-Parallel Paraexp Method and its Extension for Nonlinear Partial Differential Equations,” arXiv:1509.04567 [math.NA], 2015 [Online]. Available at: <a href="http://arxiv.org/abs/1509.04567">http://arxiv.org/abs/1509.04567</a></span>
     </div>
   </div>
   <div class="collapse" id="collapseKooijEtAl2015Bibtex">
@@ -587,6 +680,7 @@
       <div class="col-md-12">
         <pre class="abstract">@unpublished{KooijEtAl2015,
   author = {{Kooij}, G.~L. and {Botchev}, M.~A. and {Geurts}, B.~J.},
+  howpublished = {arXiv:1509.04567 [math.NA]},
   title = {{A Block {K}rylov Subspace Implementation of the Time-Parallel {P}araexp Method and its Extension for Nonlinear Partial Differential Equations}},
   url = {http://arxiv.org/abs/1509.04567},
   year = {2015}
@@ -966,6 +1060,86 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          SchreiberEtAl2015
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSchreiberEtAl2015Bibtex"
+                    aria-expanded="false" aria-controls="collapseSchreiberEtAl2015Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSchreiberEtAl2015Abstract"
+                    aria-expanded="false" aria-controls="modalSchreiberEtAl2015Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="SchreiberEtAl2015">M. Schreiber, A. Peddle, T. Haut, and B. Wingate, “A Decentralized Parallelization-in-Time Approach with Parareal,” arXiv:1506.05157 [cs.DC], 2015 [Online]. Available at: <a href="http://arxiv.org/abs/1506.05157">http://arxiv.org/abs/1506.05157</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseSchreiberEtAl2015Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{SchreiberEtAl2015,
+  author = {Schreiber, Martin and Peddle, Adam and Haut, Terry and Wingate, Beth},
+  howpublished = {arXiv:1506.05157 [cs.DC]},
+  title = {A Decentralized Parallelization-in-Time Approach with Parareal},
+  year = {2015},
+  url = {http://arxiv.org/abs/1506.05157}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalSchreiberEtAl2015Abstract" tabindex="-1" role="dialog" aria-labelledby="modalSchreiberEtAl2015AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSchreiberEtAl2015AbstractTitle">
+            Abstract for BibTeX entry <code>SchreiberEtAl2015</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          With steadily increasing parallelism for high-performance architectures, simulations
+		requiring a good strong scalability are prone to be limited in scalability with standard
+		spatial-decomposition strategies at a certain amount of parallel processors.
+		This can be a show-stopper if the simulation results have to be computed with wallclock time
+		restrictions or as fast as possible.
+		Here, the time-dimension is the only one left for parallelisation and we focus on Parareal as one
+		particular parallelisationin-time method.
+		We present a software approach for making Parareal parallelisation transparent for application
+		developers, hence allowing fast prototyping for Parareal.
+		Further, we introduce a decentralized Parareal which results in autonomous simulation instances
+		which only require communicating with the previous and next simulation instances.
+		This concept is evaluated by solving the rotational shallow water equations parallel-in-time:
+		We provide speedup benchmarks and an in-depth analysis of our results based on state-plots and a
+		performance model.
+		This allows us to show the applicability of the Parareal approach with the rotational shallow water
+		equations and also to evaluate the limitations of Parareal.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           Song2015
         </div>
       </div>
@@ -1241,7 +1415,7 @@
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalWang2015Abstract"
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalWang2015Abstract"
                     aria-expanded="false" aria-controls="modalWang2015Abstract">
               Abstract
             </button>
@@ -1267,6 +1441,30 @@
   year = {2015}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalWang2015Abstract" tabindex="-1" role="dialog" aria-labelledby="modalWang2015AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalWang2015AbstractTitle">
+            Abstract for BibTeX entry <code>Wang2015</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          Parareal algorithm is a very powerful parallel computation method and has received much
+		interest from many researchers over the past few years.
+		The aim of this paper is to investigate the performance of parareal algorithm implemented with
+		IMEX Runge-Kutta (RK) methods.
+		A stability criterion of the parareal algorithm coupled with IMEX RK methods is established and the
+		advantage (in the sense of stability) of implementing with this kind of RK methods is numerically
+		investigated.
+		Finally, numerical examples are given to illustrate the efficiency and performance of different
+		parareal methods.
+        </div>
       </div>
     </div>
   </div>
@@ -1316,6 +1514,57 @@
   title = {{Convergence Analysis for Three Parareal Solvers}},
   url = {http://dx.doi.org/10.1137/140970756},
   volume = {37},
+  year = {2015}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          Wu2015b
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseWu2015bBibtex"
+                    aria-expanded="false" aria-controls="collapseWu2015bBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalWu2015bAbstract"
+                    aria-expanded="false" aria-controls="modalWu2015bAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="Wu2015b">S.-L. Wu, “Convergence Analysis of the Parareal-Euler Algorithm for Systems of ODEs with Complex Eigenvalues,” <i>Journal of Scientific Computing</i>, pp. 1–25, 2015 [Online]. Available at: <a href="http://dx.doi.org/10.1007/s10915-015-0100-x">http://dx.doi.org/10.1007/s10915-015-0100-x</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseWu2015bBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{Wu2015b,
+  author = {Wu, Shu-Lin},
+  doi = {10.1007/s10915-015-0100-x},
+  journal = {Journal of Scientific Computing},
+  pages = {1--25},
+  title = {Convergence Analysis of the Parareal-Euler Algorithm for Systems of ODEs with Complex Eigenvalues},
+  url = {http://dx.doi.org/10.1007/s10915-015-0100-x},
   year = {2015}
 }
 </pre>
@@ -5397,22 +5646,22 @@
           </h4>
         </div>
         <div class="modal-body">
-          ’Parareal’ attempts to speed up the solution of ordinary differential equations (ODEs) by parallelizing
-		the time dimension.
+          ’Parareal’ attempts to speed up the solution of ordinary differential equations (ODEs) by
+		parallelizing the time dimension.
 		Different solutions are obtained in parallel on different subintervals.
-		An iterative procedure is employed to match the solution values at the end of each subinterval with those at the
-		beginning of the next one.
-		It has been shown that insufficient ’parareal’ iterations lead to an inaccurate solution, while too many
-		iterations waste CPU cycles without bringing any improvement to the solution.
-		In this paper we discuss an error control mechanism for both the classical ’parareal’ time discretization method
-		and its adaptive variant.
+		An iterative procedure is employed to match the solution values at the end of each subinterval with
+		those at the beginning of the next one.
+		It has been shown that insufficient ’parareal’ iterations lead to an inaccurate solution, while too
+		many iterations waste CPU cycles without bringing any improvement to the solution.
+		In this paper we discuss an error control mechanism for both the classical ’parareal’ time
+		discretization method and its adaptive variant.
 		This mechanism can be effectively used as a mean of controlling the number of ’parareal’ iterations.
-		We show that bounding the difference between the solution of the fine integrator and the ’parareal’ solution by
-		the local truncation error of the fine grid leads to a sufficient convergence criterion that guaranties a
-		solution that is accurate enough in a minimum number of iterations.
-		Tests on a nonlinear problem illustrate the effectiveness of the proposed error control mechanism on the
-		classical automatic adaptive time stepping formulation of an embedded method on the two-level ’parareal’
-		algorithm.
+		We show that bounding the difference between the solution of the fine integrator and the ’parareal’
+		solution by the local truncation error of the fine grid leads to a sufficient convergence criterion that
+		guaranties a solution that is accurate enough in a minimum number of iterations.
+		Tests on a nonlinear problem illustrate the effectiveness of the proposed error control mechanism on
+		the classical automatic adaptive time stepping formulation of an embedded method on the two-level
+		’parareal’ algorithm.
         </div>
       </div>
     </div>
@@ -5480,7 +5729,21 @@
           </h4>
         </div>
         <div class="modal-body">
-          In this paper, we describe block matrix algorithms for the iterative solution of a large-scale linear-quadratic optimal control problem involving a parabolic partial differential equation over a finite control horizon. We consider an ?all at once? discretization of the problem and formulate three iterative algorithms. The first algorithm is based on preconditioning a symmetric positive definite reduced linear system involving only the unknown control variables; however inner-outer iterations are required. The second algorithm modifies the first algorithm to avoid inner-outer iterations by introducing an auxiliary variable. It yields a symmetric indefinite system with a positive definite block preconditioner. The third algorithm is the central focus of this paper. It modifies the preconditioner in the second algorithm by a parallel-in-time preconditioner based on the parareal algorithm. Theoretical results show that the preconditioned algorithms have optimal convergence properties and parallel scalability. Numerical experiments confirm the theoretical results.
+          In this paper, we describe block matrix algorithms for the iterative solution of a
+		large-scale linear-quadratic optimal control problem involving a parabolic partial differential
+		equation over a finite control horizon.
+		We consider an "all at once" discretization of the problem and formulate three iterative algorithms.
+		The first algorithm is based on preconditioning a symmetric positive definite reduced linear system
+		involving only the unknown control variables; however inner-outer iterations are required.
+		The second algorithm modifies the first algorithm to avoid inner-outer iterations by introducing an
+		auxiliary variable.
+		It yields a symmetric indefinite system with a positive definite block preconditioner.
+		The third algorithm is the central focus of this paper.
+		It modifies the preconditioner in the second algorithm by a parallel-in-time preconditioner based on
+		the parareal algorithm.
+		Theoretical results show that the preconditioned algorithms have optimal convergence properties and
+		parallel scalability.
+		Numerical experiments confirm the theoretical results.
         </div>
       </div>
     </div>
@@ -6181,6 +6444,82 @@
   year = {2009}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          Wu2009
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseWu2009Bibtex"
+                    aria-expanded="false" aria-controls="collapseWu2009Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalWu2009Abstract"
+                    aria-expanded="false" aria-controls="modalWu2009Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="Wu2009">S. Wu, B. Shi, and C. Huang, “Parareal-Richardson Algorithm for Solving Nonlinear ODEs and PDEs,” <i>Communications in Computational Physics</i>, vol. 6, no. 4, pp. 883–902, 2009 [Online]. Available at: <a href="http://dx.doi.org/10.4208/cicp.2009.v6.p883">http://dx.doi.org/10.4208/cicp.2009.v6.p883</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseWu2009Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{Wu2009,
+  author = {Wu, Shulin and Shi, Baochang and Huang, Chengming},
+  issue = {4},
+  journal = {Communications in Computational Physics},
+  pages = {883--902},
+  title = {Parareal-Richardson Algorithm for Solving Nonlinear ODEs and PDEs},
+  url = {http://dx.doi.org/10.4208/cicp.2009.v6.p883},
+  volume = {6},
+  year = {2009}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalWu2009Abstract" tabindex="-1" role="dialog" aria-labelledby="modalWu2009AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalWu2009AbstractTitle">
+            Abstract for BibTeX entry <code>Wu2009</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          The parareal algorithm, proposed firstly by Lions et al., is an effective algorithm to
+		solve the time-dependent problems parallel in time.
+		This algorithm has received much interest from many researchers in the past years.
+		We present in this paper a new variant of the parareal algorithm, which is derived by combining the
+		original parareal algorithm and the Richardson extrapolation, for the numerical solution of the
+		nonlinear ODEs and PDEs.
+		Several nonlinear problems are tested to show the advantage of the new algorithm.
+		The accuracy of the obtained numerical solution is compared with that of its original version (i.e.,
+		the parareal algorithm based on the same numerical method).
+        </div>
       </div>
     </div>
   </div>
