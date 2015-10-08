@@ -1060,6 +1060,25 @@
 	year = {2009}
 }
 
+@article{Wu2009,
+	abstract = {{The parareal algorithm, proposed firstly by Lions et al., is an effective algorithm to
+		solve the time-dependent problems parallel in time.
+		This algorithm has received much interest from many researchers in the past years.
+		We present in this paper a new variant of the parareal algorithm, which is derived by combining the
+		original parareal algorithm and the Richardson extrapolation, for the numerical solution of the
+		nonlinear ODEs and PDEs.
+		Several nonlinear problems are tested to show the advantage of the new algorithm.
+		The accuracy of the obtained numerical solution is compared with that of its original version (i.e.,
+		the parareal algorithm based on the same numerical method).}},
+	author = {Wu, Shulin and Shi, Baochang and Huang, Chengming},
+	issue = {4},
+	journal = {Communications in Computational Physics},
+	pages = {883--902},
+	title = {Parareal-Richardson Algorithm for Solving Nonlinear ODEs and PDEs},
+	url = {http://dx.doi.org/10.4208/cicp.2009.v6.p883},
+	volume = {6},
+	year = {2009},
+}
 %
 % 2010
 %
@@ -1076,22 +1095,22 @@
 }
 
 @inproceedings{LepsaSandu2010,
-	abstract={{'Parareal' attempts to speed up the solution of ordinary differential equations (ODEs) by parallelizing
-		the time dimension.
+	abstract = {{'Parareal' attempts to speed up the solution of ordinary differential equations (ODEs) by
+		parallelizing the time dimension.
 		Different solutions are obtained in parallel on different subintervals.
-		An iterative procedure is employed to match the solution values at the end of each subinterval with those at the
-		beginning of the next one.
-		It has been shown that insufficient 'parareal' iterations lead to an inaccurate solution, while too many
-		iterations waste CPU cycles without bringing any improvement to the solution.
-		In this paper we discuss an error control mechanism for both the classical 'parareal' time discretization method
-		and its adaptive variant.
+		An iterative procedure is employed to match the solution values at the end of each subinterval with
+		those at the beginning of the next one.
+		It has been shown that insufficient 'parareal' iterations lead to an inaccurate solution, while too
+		many iterations waste CPU cycles without bringing any improvement to the solution.
+		In this paper we discuss an error control mechanism for both the classical 'parareal' time
+		discretization method and its adaptive variant.
 		This mechanism can be effectively used as a mean of controlling the number of 'parareal' iterations.
-		We show that bounding the difference between the solution of the fine integrator and the 'parareal' solution by
-		the local truncation error of the fine grid leads to a sufficient convergence criterion that guaranties a
-		solution that is accurate enough in a minimum number of iterations.
-		Tests on a nonlinear problem illustrate the effectiveness of the proposed error control mechanism on the
-		classical automatic adaptive time stepping formulation of an embedded method on the two-level 'parareal'
-		algorithm.}},
+		We show that bounding the difference between the solution of the fine integrator and the 'parareal'
+		solution by the local truncation error of the fine grid leads to a sufficient convergence criterion that
+		guaranties a solution that is accurate enough in a minimum number of iterations.
+		Tests on a nonlinear problem illustrate the effectiveness of the proposed error control mechanism on
+		the classical automatic adaptive time stepping formulation of an embedded method on the two-level
+		'parareal' algorithm.}},
 	acmid = {1878628},
 	address = {San Diego, CA, USA},
 	articleno = {87},
@@ -1108,7 +1127,21 @@
 }
 
 @article{MathewEtAl2010,
-	abstract={{In this paper, we describe block matrix algorithms for the iterative solution of a large-scale linear-quadratic optimal control problem involving a parabolic partial differential equation over a finite control horizon. We consider an ?all at once? discretization of the problem and formulate three iterative algorithms. The first algorithm is based on preconditioning a symmetric positive definite reduced linear system involving only the unknown control variables; however inner-outer iterations are required. The second algorithm modifies the first algorithm to avoid inner-outer iterations by introducing an auxiliary variable. It yields a symmetric indefinite system with a positive definite block preconditioner. The third algorithm is the central focus of this paper. It modifies the preconditioner in the second algorithm by a parallel-in-time preconditioner based on the parareal algorithm. Theoretical results show that the preconditioned algorithms have optimal convergence properties and parallel scalability. Numerical experiments confirm the theoretical results.}},
+	abstract = {{In this paper, we describe block matrix algorithms for the iterative solution of a
+		large-scale linear-quadratic optimal control problem involving a parabolic partial differential
+		equation over a finite control horizon.
+		We consider an "all at once" discretization of the problem and formulate three iterative algorithms.
+		The first algorithm is based on preconditioning a symmetric positive definite reduced linear system
+		involving only the unknown control variables; however inner-outer iterations are required.
+		The second algorithm modifies the first algorithm to avoid inner-outer iterations by introducing an
+		auxiliary variable.
+		It yields a symmetric indefinite system with a positive definite block preconditioner.
+		The third algorithm is the central focus of this paper.
+		It modifies the preconditioner in the second algorithm by a parallel-in-time preconditioner based on
+		the parareal algorithm.
+		Theoretical results show that the preconditioned algorithms have optimal convergence properties and
+		parallel scalability.
+		Numerical experiments confirm the theoretical results.}},
 	author = {Mathew, Tarek and Sarkis, Marcus and Schaerer, Christian E.},
 	journal = {SIAM Journal on Scientific Computing},
 	number = {3},
@@ -1116,7 +1149,7 @@
 	title = {{Analysis of Block Parareal Preconditioners for Parabolic Optimal Control Problems}},
 	volume = {32},
 	year = {2010},
-	url={http://dx.doi.org/10.1137/080717481}
+	url = {http://dx.doi.org/10.1137/080717481},
 }
 
 @article{Minion2010,
@@ -2061,18 +2094,55 @@
 }
 
 @article{Bedez2015,
-title = {A fully parallel in time and space algorithm for simulating the electrical activity of a neural tissue},
-journal = {{Journal of Neuroscience Methods}},
-volume = {},
-number = {},
-pages = {},
-year = {2015},
-note = {in press},
-url = {http://dx.doi.org/10.1016/j.jneumeth.2015.09.017},
-author = {Mathieu Bedez and Zakaria Belhachmi and Olivier Haeberl\'e and Renaud Greget and Saliha Moussaoui and Jean-Marie Bouteiller and Serge Bischoff},
-abstract ={{The resolution of a model describing the electrical activity of neural tissue and its propagation within this tissue is highly consuming in term of computing time and requires strong computing power to achieve good results. New method In this study, we present a method to solve a model describing the electrical propagation in neuronal tissue, using parareal algorithm, coupling with parallelization space using CUDA in graphical processing unit (GPU). Results We applied the method of resolution to different dimensions of the geometry of our model (1-D, 2-D and 3-D). The GPU results are compared with simulations from a multi-core processor cluster, using message-passing interface (MPI), where the spatial scale was parallelized in order to reach a comparable calculation time than that of the presented method using GPU. A gain of a factor 100 in term of computational time between sequential results and those obtained using the GPU has been obtained, in the case of 3-D geometry. Given the structure of the GPU, this factor increases according to the fineness of the geometry used in the computation. Comparison with existing method(s) To the best of our knowledge, it is the first time such a method is used, even in the case of neuroscience. Conclusion Parallelization time coupled with GPU parallelization space allows for drastically reducing computational time with a fine resolution of the model describing the propagation of the electrical signal in a neuronal tissue.}}
+	abstract = {{The resolution of a model describing the electrical activity of neural tissue and its
+		propagation within this tissue is highly consuming in term of computing time and requires strong
+		computing power to achieve good results.
+		New method in this study, we present a method to solve a model describing the electrical
+		propagation in neuronal tissue, using parareal algorithm, coupling with parallelization space using
+		CUDA in graphical processing unit (GPU).
+		Results we applied the method of resolution to different dimensions of the geometry of our model
+		(1-D, 2-D and 3-D).
+		The GPU results are compared with simulations from a multi-core processor cluster, using
+		message-passing interface (MPI), where the spatial scale was parallelized in order to reach a
+		comparable calculation time than that of the presented method using GPU.
+		A gain of a factor 100 in term of computational time between sequential results and those obtained
+		using the GPU has been obtained, in the case of 3-D geometry.
+		Given the structure of the GPU, this factor increases according to the fineness of the geometry used
+		in the computation.
+		Comparison with existing method(s) To the best of our knowledge, it is the first time such a method
+		is used, even in the case of neuroscience.
+		Conclusion Parallelization time coupled with GPU parallelization space allows for drastically
+		reducing computational time with a fine resolution of the model describing the propagation of the
+		electrical signal in a neuronal tissue.}},
+	author = {Mathieu Bedez and Zakaria Belhachmi and Olivier Haeberl\'e and Renaud Greget and Saliha Moussaoui and Jean-Marie Bouteiller and Serge Bischoff},
+	journal = {{Journal of Neuroscience Methods}},
+	number = {},
+	note = {in press},
+	pages = {},
+	title = {A fully parallel in time and space algorithm for simulating the electrical activity of a neural tissue},
+	url = {http://dx.doi.org/10.1016/j.jneumeth.2015.09.017},
+	volume = {},
+	year = {2015},
 }
 
+
+@unpublished{FengEtAl2015,
+	abstract = {{The parareal algorithm seeks to extract parallelism in the time-integration direction of
+		time-dependent differential equations.
+		While it has been applied with success to a wide range of problems, it suffers from some stability
+		issues when applied to non-dissipative problems.
+		We express the method through an iteration matrix and show that the problematic behavior is related
+		to the non-normal structure of the iteration matrix.
+		To enforce monotone convergence we propose an adjoint parareal algorithm, accelerated by the
+		Conjugate Gradient Method.
+		Numerical experiments confirm the stability and suggest directions for further improving the
+		performance.}},
+	author = {Chen, Feng and Hesthaven, Jan S. and Maday, Yvon and Nielsen, Allan S.},
+	howpublished = {EPFL-ARTICLE-211097},
+	title = {An Adjoint Approach for Stabilizing the Parareal Method},
+	url = {http://infoscience.epfl.ch/record/211097},
+	year = {2015},
+}
 
 @incollection{Gander2015_Review,
 	abstract = {{Time parallel time integration methods have received renewed interest over the last decade because of
@@ -2141,6 +2211,7 @@ abstract ={{The resolution of a model describing the electrical activity of neur
 		Numerical experiments confirm excellent parallel scaling for the linear advection-diffusion problem, and good
 		scaling in case the nonlinear Burgers equation is simulated.}},
 	author = {{Kooij}, G.~L. and {Botchev}, M.~A. and {Geurts}, B.~J.},
+	howpublished = {arXiv:1509.04567 [math.NA]},
 	title = {{A Block {K}rylov Subspace Implementation of the Time-Parallel {P}araexp Method and its Extension for Nonlinear Partial Differential Equations}},
 	url = {http://arxiv.org/abs/1509.04567},
 	year = {2015},
@@ -2232,6 +2303,30 @@ abstract ={{The resolution of a model describing the electrical activity of neur
 	year = {2015}
 }
 
+@unpublished{SchreiberEtAl2015,
+	abstract = {{With steadily increasing parallelism for high-performance architectures, simulations
+		requiring a good strong scalability are prone to be limited in scalability with standard
+		spatial-decomposition strategies at a certain amount of parallel processors.
+		This can be a show-stopper if the simulation results have to be computed with wallclock time
+		restrictions or as fast as possible.
+		Here, the time-dimension is the only one left for parallelisation and we focus on Parareal as one
+		particular parallelisationin-time method.
+		We present a software approach for making Parareal parallelisation transparent for application
+		developers, hence allowing fast prototyping for Parareal.
+		Further, we introduce a decentralized Parareal which results in autonomous simulation instances
+		which only require communicating with the previous and next simulation instances.
+		This concept is evaluated by solving the rotational shallow water equations parallel-in-time:
+		We provide speedup benchmarks and an in-depth analysis of our results based on state-plots and a
+		performance model.
+		This allows us to show the applicability of the Parareal approach with the rotational shallow water
+		equations and also to evaluate the limitations of Parareal.}},
+	author = {Schreiber, Martin and Peddle, Adam and Haut, Terry and Wingate, Beth},
+	howpublished = {arXiv:1506.05157 [cs.DC]},
+	title = {A Decentralized Parallelization-in-Time Approach with Parareal},
+	year = {2015},
+	url = {http://arxiv.org/abs/1506.05157},
+}
+
 @article{Song2015,
 	author = {Song, Bo and Jiang, Yao-Lin},
 	journal = {International Journal of Computer Mathematics},
@@ -2301,12 +2396,21 @@ abstract ={{The resolution of a model describing the electrical activity of neur
 }
 
 @article{Wang2015,
+	abstract = {{Parareal algorithm is a very powerful parallel computation method and has received much
+		interest from many researchers over the past few years.
+		The aim of this paper is to investigate the performance of parareal algorithm implemented with
+		IMEX Runge-Kutta (RK) methods.
+		A stability criterion of the parareal algorithm coupled with IMEX RK methods is established and the
+		advantage (in the sense of stability) of implementing with this kind of RK methods is numerically
+		investigated.
+		Finally, numerical examples are given to illustrate the efficiency and performance of different
+		parareal methods.}},
 	author = {Wang, Zhiyong and Wu, Shu-Lin},
 	journal = {Mathematical Problems in Engineering},
 	title = {{Parareal Algorithms Implemented with {IMEX} Runge-Kutta Methods}},
 	url = {http://dx.doi.org/10.1155/2015/395340},
 	volume = {2015},
-	year = {2015}
+	year = {2015},
 }
 
 @article{Wu2015,
@@ -2318,5 +2422,15 @@ abstract ={{The resolution of a model describing the electrical activity of neur
 	url = {http://dx.doi.org/10.1137/140970756},
 	volume = {37},
 	year = {2015}
+}
+
+@article{Wu2015b,
+	author = {Wu, Shu-Lin},
+	doi = {10.1007/s10915-015-0100-x},
+	journal = {Journal of Scientific Computing},
+	pages = {1--25},
+	title = {Convergence Analysis of the Parareal-Euler Algorithm for Systems of ODEs with Complex Eigenvalues},
+	url = {http://dx.doi.org/10.1007/s10915-015-0100-x},
+	year = {2015},
 }
 
