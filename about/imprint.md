@@ -10,7 +10,7 @@ footer: true
 
 Hosted by [Daniel Ruprecht](https://github.com/danielru).
 Design and implementation by [Torbjörn Klatt](https://github.com/torbjoernk).
-Contributions by [various](https://github.com/Parallel-in-Time/parallel-in-time.github.io/graphs/contributors).
+Contributions by [various](https://github.com/Parallel-in-Time/parallel-in-time.github.io/blob/source/CONTRIBUTORS).
 
 Based on the following tools and libraries:
 
