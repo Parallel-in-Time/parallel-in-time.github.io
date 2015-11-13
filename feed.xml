@@ -7,6 +7,17 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>WS in Toulouse: Submission open</title>
+        <description>&lt;p&gt;Submission is now open for the workshop on parallel-in-time integration in Toulouse in Franc, taking place on 11th-12th January 2016.
+Deadline for submissions is &lt;strong&gt;December 10th 2015&lt;/strong&gt;.
+You can find more information here on &lt;a href=&quot;/events/upcoming/2016/cimi_semester.html&quot;&gt;parallelintime.org&lt;/a&gt; and on the &lt;a href=&quot;http://inpact.inp-toulouse.fr/CIMI_Semester/wksp_parallel.html&quot;&gt;official website&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Nov 2015 07:26:44 +0000</pubDate>
+        <link>http://parallelintime.org/news/2015/11/13/toulouse-registration.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/news/2015/11/13/toulouse-registration.html</guid>
+      </item>
+    
+      <item>
         <title>Minisymposium at SIAM PP 2016</title>
         <description>&lt;p&gt;Plans for a proposal for a PINT mini symposium at SIAM PP 2016 in Paris.&lt;/p&gt;
 
@@ -161,15 +172,6 @@ Please check out the entry at &lt;a href=&quot;/events/upcoming/2016/5th-worksho
         <pubDate>Thu, 06 Nov 2014 09:21:44 +0000</pubDate>
         <link>http://parallelintime.org/news/2014/11/06/xbraid-release.html</link>
         <guid isPermaLink="true">http://parallelintime.org/news/2014/11/06/xbraid-release.html</guid>
-      </item>
-    
-      <item>
-        <title>New release of PFASST++</title>
-        <description>&lt;p&gt;Version 0.2.0 of the PFASST++ library has been released. Check out &lt;a href=&quot;https://github.com/Parallel-in-Time/PFASST/releases/tag/v0.2.0&quot;&gt;PFASST++&lt;/a&gt; for more info.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 30 Aug 2014 09:21:44 +0000</pubDate>
-        <link>http://parallelintime.org/news/2014/08/30/new-pfasst-release.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/news/2014/08/30/new-pfasst-release.html</guid>
       </item>
     
   </channel>
