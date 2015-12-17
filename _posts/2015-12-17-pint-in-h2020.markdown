@@ -1,0 +1,16 @@
+---
+layout: post
+title: PINT in H2020 Call
+date: 2015-12-17 11:26:44 +0200
+author: Daniel Ruprecht
+categories:
+---
+Parallel-in-time integration is mentioned in the FETHPC Call *Transition to Exascale Computing* in Horizon 2020.
+
+<!--more-->
+
+The Horizon 2020 call [FETHPC-02-2017](http://ec.europa.eu/research/participants/portal/desktop/en/opportunities/h2020/topics/2220-fethpc-02-2017.html) *Transition to Exascale Computing* has been published on 14 October 2015.
+It includes five subtopics, one of them being *Mathematics and algorithms for extreme scale HPC systems and applications working with extreme data*.
+As part of this subtopic, the call acknowledges that *Parallel-in-time methods may be investigated to boost parallelism of simulation codes across a wide range of application domains*.
+
+Deadline for submission of proposals is 26 September 2017.
