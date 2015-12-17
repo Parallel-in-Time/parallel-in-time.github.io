@@ -1,0 +1,19 @@
+---
+layout: post
+title: Minisymposium at SIAM PP 2016
+date: 2015-12-17 10:26:44 +0200
+author: Daniel Ruprecht
+categories:
+  - Events
+---
+The [proposal](/news/2015/07/23/siampp-minisymposium.html) for a mini symposium on parallel-in-time integration at the [SIAM Conference on Parallel Processing for Scientific Computing](http://www.siam.org/meetings/pp16/index.php) in 2016 in Paris was successful.
+
+<!--more-->
+
+We are excited to announce that we will have a mini symposium on *parallel-in-time integration methods* at SIAM PP 2016 with a total of 12 speakers!
+
+ - [Part I](http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=22127) takes place on Tuesday 12 April 2016 from 1:10 PM to 2:50 PM.
+ - [Part II](http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=22128) takes place on Tuesday 12 April 2016 from 3:20 PM to 5:00 PM.
+ - [Part III](http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=22129) takes place Wednesday 13 April 2016 from 10:35 AM to 12:15 AM.
+
+See you all in Paris in 2016!
