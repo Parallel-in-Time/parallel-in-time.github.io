@@ -4,7 +4,7 @@
   <title><![CDATA[Events | Parallel-in-Time]]></title>
   <link href="http://parallelintime.org/news/categories/events/atom.xml" rel="self"/>
   <link href="http://parallelintime.org/"/>
-  <updated>2015-12-03T06:39:01+00:00</updated>
+  <updated>2015-12-17T12:14:46+00:00</updated>
   <id>http://parallelintime.org/</id>
   <author>
     <name><![CDATA[Parallel-in-Time Enthusiasts]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Minisymposium at SIAM PP 2016]]></title>
+    <link href="http://parallelintime.org/news/2015/12/17/siampp-ms.html"/>
+    <updated>2015-12-17T08:26:44+00:00</updated>
+    <id>http://parallelintime.org/news/2015/12/17/siampp-ms</id>
+    <content type="html"><![CDATA[<p>The <a href="/news/2015/07/23/siampp-minisymposium.html">proposal</a> for a mini symposium on parallel-in-time integration at the
+<a href="http://www.siam.org/meetings/pp16/index.php">SIAM Conference on Parallel Processing for Scientific Computing</a> in 2016
+in Paris was successful.</p>
+
+<!--more-->
+
+<p>We are excited to announce that we will have a mini symposium on <em>parallel-in-time integration methods</em> at SIAM PP 2016
+with a total of 12 speakers!</p>
+
+<ul>
+  <li><a href="http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=22127">Part I</a> takes place on Tuesday 12 April 2016 from 1:10 PM to 2:50 PM.</li>
+  <li><a href="http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=22128">Part II</a> takes place on Tuesday 12 April 2016 from 3:20 PM to 5:00 PM.</li>
+  <li><a href="http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=22129">Part III</a> takes place Wednesday 13 April 2016 from 10:35 AM to 12:15 AM.</li>
+</ul>
+
+<p>See you all in Paris in 2016!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[WS in Toulouse: Submission open]]></title>
@@ -89,24 +113,6 @@ You can find more information here on <a href="/events/upcoming/2016/cimi_semest
 <p>Following the <a href="/events/bylaws.html">bylaws</a> put in place during the workshop in Dresden in May 2015, the election of a scientific committee for the PINT workshop series is now underway. Everyone who was officially registered for one of the last three workshops (Manchester, Jülich or Dresden) is eligible to cast a vote and should have received a corresponding email from the helios online voting system.</p>
 
 <p>In case you were registered for one of those workshops but <em>did not receive an email</em>, please contact Michael Klöppel from the voting committee at michael[DOT]kloeppel[AT]tu-dresden[DOT]de before July 2nd.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Bylaws for the PinT workshop series]]></title>
-    <link href="http://parallelintime.org/news/2015/06/04/bylaws.html"/>
-    <updated>2015-06-04T10:21:44+00:00</updated>
-    <id>http://parallelintime.org/news/2015/06/04/bylaws</id>
-    <content type="html"><![CDATA[<p>Bylaws for the parallel-in-time workshop series.</p>
-
-<!--more-->
-<p>With the aim to successfully continue the PinT workshop series even beyond the
-<a href="/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html">5th workshop</a> in Banff,
-Canada, a set of <a href="/events/bylaws.html">bylaws</a> for the election of a scientific committee has been
-put in place during the workshop in <a href="/events/past/2015/4th-workshop-on-parallel-in-time-integration.html">Dresden</a>.
-The bylaws define a set of rules for the election of a scientific committee.
-The committee is responsible for the coordination and promotion of the workshop series.
-We are looking forward to many more interesting PinT workshops!</p>
 ]]></content>
   </entry>
   
