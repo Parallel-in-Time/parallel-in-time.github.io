@@ -5,7 +5,6 @@ date: 2014-06-15 16:45 +0200
 updated: 2015-06-03 10:30:00 +0200
 navbar: Codes
 subnavbar: pfasst
-footer: true
 logo: 
 code_url: https://github.com/Parallel-in-Time/PFASST
 language: C++

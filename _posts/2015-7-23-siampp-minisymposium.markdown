@@ -15,9 +15,12 @@ With mini symposia related to parallel-in-time integration at
 - [SIAM PP 2014](http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=17906) in Savannah, 
 - [SIAM CS&E 2015](http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=19996) in Salt Lake City 
 
-and an [invited talk](https://www.pathlms.com/siam/courses/1043/sections/1256) by Rob Falgout also at SIAM CS&E 2015, the topic has been well represented at SIAM conferences in the last years.
+and an [invited talk](https://www.pathlms.com/siam/courses/1043/sections/1256) by Rob Falgout also at SIAM CS&E 2015,
+the topic has been well represented at SIAM conferences in the last years.
 
-To continue these efforts, a proposal for a mini symposium on *parallel-in-time integration methods* for the upcoming [SIAM PP 2016](http://www.siam.org/meetings/pp16/) (April 12-15, 2016) in Paris is in the planning stage. If you would like to contribute to the mini symposium with a presentation, please contact one of the organisers:
+To continue these efforts, a proposal for a mini symposium on *parallel-in-time integration methods* for the upcoming
+[SIAM PP 2016](http://www.siam.org/meetings/pp16/) (April 12-15, 2016) in Paris is in the planning stage.
+If you would like to contribute to the mini symposium with a presentation, please contact one of the organisers:
 
 - Tobias Neckel, TU Munich
 - Daniel Ruprecht, [USI Lugano](/groups/usi.html)

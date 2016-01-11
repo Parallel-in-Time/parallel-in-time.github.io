@@ -4,7 +4,6 @@ title: "pySDC"
 date: 2015-06-03 10:45:00 +0200
 navbar: Codes
 subnavbar: pysdc
-footer: true
 logo: 
 code_url: http://parallel-in-time.github.io/pySDC
 language: Python

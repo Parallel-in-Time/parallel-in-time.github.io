@@ -5,7 +5,6 @@ date: 2014-06-15 16:45 +0200
 updated: 2014-06-18 09:50 +0200
 navbar: Codes
 subnavbar: pypint
-footer: true
 logo: 
 code_url: http://parallel-in-time.github.io/PyPinT
 language: Python

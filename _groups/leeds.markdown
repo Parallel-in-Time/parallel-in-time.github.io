@@ -4,7 +4,6 @@ title: "University of Leeds"
 date: 2015-09-01 16:00:00 +0100
 navbar: Groups
 subnavbar: leeds
-footer: true
 logo: uni_leeds.png
 group_url: https://www.engineering.leeds.ac.uk/people/mechanical/staff/d.ruprecht
 github_username: "Parallel-in-time"

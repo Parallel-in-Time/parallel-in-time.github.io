@@ -4,7 +4,6 @@ title: "PararealF90"
 date: 2015-09-24 16:45 +0200
 navbar: Codes
 subnavbar: pararealf90
-footer: true
 logo: 
 code_url: https://github.com/Parallel-in-Time/PararealF90
 language: F90

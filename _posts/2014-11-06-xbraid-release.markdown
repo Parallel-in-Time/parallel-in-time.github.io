@@ -7,4 +7,5 @@ categories:
 - 
 ---
 
-The [multigrid reduction in time](/methods/mgrit.html) method MGRIT has been released as a software library called [XBraid](/codes/xbraid.html).
+The [multigrid reduction in time](/methods/mgrit.html) method MGRIT has been released as a software library called
+[XBraid](/codes/xbraid.html).
