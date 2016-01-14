@@ -40,16 +40,13 @@ assets:
   cache: .asset-cache
   prefix: '/assets'
   assets:
-    - 'main.scss'
-    - 'custom.js'
-    - 'bib_stats.js'
-    - 'github.js'
-    - 'jquery.githubRepoWidget.js'
-    - 'jXHR.js'
     - '*.png'
     - '*.jpg'
     - '*.jpeg'
     - '*.svg'
+    - '*.woff'
+    - '*.eof'
+    - '*.ttf'
   digest: true
   features:
     liquid: false

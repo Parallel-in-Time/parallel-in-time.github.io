@@ -19,6 +19,6 @@ gem 'jekyll-feed'
 gem 'jekyll-assets'
 gem 'jekyll-sitemap'
 gem 'jekyll-scholar'
-gem 'jekyll-archives'
+# gem 'jekyll-archives'
 
 gem 'jgd'

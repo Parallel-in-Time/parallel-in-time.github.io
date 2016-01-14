@@ -1,6 +1,5 @@
----
----
-
+@import "fontawesome";
+@import "vendor/octicons/octicons";
 @import "bootstrap_overrides";
 @import "variables";
 @import "highlight";
@@ -21,7 +20,7 @@ html {
 
       .container {
         @media (min-width: $screen-sm-max) {
-          background-image: url('/images/logo_pint.png');
+          background-image: url(image_path('logo_pint.png'));
           background-position: right center;
           background-repeat: no-repeat;
           background-origin: padding-box;

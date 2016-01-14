@@ -89,7 +89,7 @@ $(document).ready(function() {
     //Number - Spacing between data sets within X values
     barDatasetSpacing: 0,
     //String - A legend template
-    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+    legendTemplate : "{% raw %}<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>{% endraw %}"
   };
   Chart.defaults.global.responsive = false;
   Chart.defaults.global.maintainAspectRatio = false;

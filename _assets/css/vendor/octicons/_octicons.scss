@@ -1,19 +1,15 @@
 @font-face {
   font-family: 'octicons';
-  src: url('octicons.eot?#iefix') format('embedded-opentype'),
-       url('octicons.woff') format('woff'),
-       url('octicons.ttf') format('truetype'),
-       url('octicons.svg#octicons') format('svg');
+  src: url(font_path('octicons/octicons.eot')) format('embedded-opentype'),
+       url(font_path('octicons/octicons.woff')) format('woff'),
+       url(font_path('octicons/octicons.ttf')) format('truetype'),
+       url(font_path('octicons/octicons.svg')) format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-/*
-
-.octicon is optimized for 16px.
-.mega-octicon is optimized for 32px but can be used larger.
-
-*/
+// .octicon is optimized for 16px.
+// .mega-octicon is optimized for 32px but can be used larger.
 .octicon {
   font: normal normal 16px octicons;
   line-height: 1;

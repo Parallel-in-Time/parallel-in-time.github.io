@@ -6,7 +6,7 @@
     {% if page.logo %}
       <div class="row">
         <div class="col-md-12 logo">
-          <img src="{{ root_url }}/images/{{ page.logo }}" alt="{{ page.title }} Logo" />
+          {% img '{{ page.logo }}' alt:"{{ page.title }} Logo" %}
         </div>
       </div>
     {% endif %}
