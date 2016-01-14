@@ -5,7 +5,6 @@ date: 2015-06-10 16:45 +0200
 updated: 2016-06-10 11:45:00 +0100
 navbar: Codes
 subnavbar: libridc
-footer: true
 logo: 
 code_url: http://mathgeek.us/software.html
 language: C++

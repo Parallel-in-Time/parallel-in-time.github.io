@@ -5,9 +5,8 @@ subtitle: MGRIT
 date: 2014-11-05 17:00:00 +0000
 updated: 2014-11-05 17:00:00 +0000
 navbar: Methods
-subnavbar: MGRIT
+subnavbar: mgrit
 short_desc: Multigrid Reduction in Time algorithm developed at the LLNL
-footer: true
 ---
 
 The _MGRIT_ algorithm {% cite FriedhoffEtAl2013 %} enables a scalable and non-intrusive

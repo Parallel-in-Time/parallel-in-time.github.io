@@ -4,7 +4,6 @@ title: "Michigan Technological University"
 date: 2015-06-10 16:00:00 +0100
 navbar: Groups
 subnavbar: mtu
-footer: true
 logo: mtu_logo.png
 group_address: "Michigan Technological University<br/>Department of Mathematical Sciences<br/>Houghton, MI, 49931"
 members:

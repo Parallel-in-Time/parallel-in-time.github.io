@@ -5,7 +5,6 @@ date: 2014-06-15 16:24 +0200
 updated: 2015-06-03 19:30:00 +0200
 navbar: Projects
 subnavbar: ExaSolvers
-footer: true
 logo: logo_sppexa.png
 project_url: http://www.sppexa.de/general-information/projects.html#EXASOLVERS
 short_desc: German Priority Programme 1648 Software for Exascale Computing

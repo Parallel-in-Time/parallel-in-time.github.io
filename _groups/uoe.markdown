@@ -3,8 +3,7 @@ layout: page_group
 title: "University of Exeter"
 date: 2015-06-10 16:00:00 +0100
 navbar: Groups
-subnavbar: mtu
-footer: true
+subnavbar: uoe
 logo: university_of_exeter.png
 group_address: "University of Exeter"
 members:

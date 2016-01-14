@@ -4,8 +4,7 @@ title: "XBraid"
 date: 2014-11-05 17:00:00 +0000
 updated: 2015-06-03 19:40:00 +0200
 navbar: Codes
-subnavbar: XBraid
-footer: true
+subnavbar: xbraid
 logo: 
 code_url: http://www.llnl.gov/casc/xbraid
 language: C
