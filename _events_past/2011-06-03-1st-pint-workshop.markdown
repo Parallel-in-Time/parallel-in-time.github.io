@@ -2,7 +2,7 @@
 layout: page_event
 title: "1st Workshop on Parallel-in-Time Integration"
 date: 2014-06-16 00:00:00 +0000
-event_url: http://icsweb.inf.unisi.ch/cms/index.php/events/details/19-parallel-in-time-integration-schemes.html
+event_url: https://www.ics.usi.ch/index.php/about/event/details/19-parallel-in-time-integration-schemes
 event_short_url: icsweb.inf.unisi.ch
 event_location: Lugano, Switzerland
 event_start: 2011-06-03 00:00
@@ -12,7 +12,6 @@ subnavbar: Past
 permalink: /events/past/2011/1st-workshop-on-parallel-in-time-integration.html
 organizers:
     - name: Daniel Ruprecht
-      homepage: http://icsweb.inf.unisi.ch/cms/index.php/people/29-daniel-ruprecht.html
       email: daniel.ruprecht@usi.ch
     - name: Rolf Krause
 invited:
@@ -22,4 +21,11 @@ invited:
     - name: Stefan Güttel
 ---
 
-Details about the past workshop on parallel-in-time integration.
+Supported by the Swiss platform for *High Performance and High Productivity Computing* [HP2C](http://www.hp2c.ch/index.php?id=topicforums&tx_communities_pi1[eventid]=9&no_cache=1).
+
+Programme:
+
+ - Martin J. Gander, University of Geneva: *Space-time Parallel Methods: From Waveform Relaxation tothe Parareal Algorithm*
+ - Julien Cortial, Stanford University: *Time-Parallel Methods for Accelerating the Solution of Structural Dynamics Problems*
+ - Michael L. Minion, University of North Carolina: *Efficient Parallel in Time Methods for Partial Differential Equations*
+ - Stefan Guettel, University of Geneva: *Time-Parallel Integration of Linear Initial Value Problems*
