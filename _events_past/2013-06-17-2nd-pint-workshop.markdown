@@ -20,4 +20,28 @@ invited:
     - name: Benjamin Ong
 ---
 
-Details about the past workshop on parallel-in-time integration.
+A book of abstracts can be found [here](http://www.cl.eps.manchester.ac.uk/medialand/maths/archived-events/workshops/www.mims.manchester.ac.uk/events/workshops/spacetime/abstracts/booklet.pdf).
+
+Programme Tuesday June 18, 2013:
+
+ - Martin J. Gander, University of Geneva: *Multiple Shooting, Parareal, Krylov Parareal, ParaExp and Space-Time Multigrid:
+an Overview on Time Domain Decomposition Methods*
+ - Felix Kwok, University of Geneva: *Coarse Grid Correction for the Neumann-Neumann Waveform Relaxation Method*
+ - Roman Andreev, University of Maryland: *Sparse space-time Petrov-Galerkin discretizations for parabolic evolution equations*
+ - Robert Speck, Juelich Supercomputing Centre: *From Spectral Deferred Corrections to the Parallel Full Approximation Scheme in Space and Time*
+ - Michael Minion, Stanford University: *Time Parallelization for Second-Order Equations*
+ - Tobias Weinzierl, Technische Universitaet Muenchen: *Parallel Space-time Spacetrees for Simple Parabolic Benchmarks*
+ - Uwe Koecher, Helmut Schmidt University Hamburg: *Parallel variational space–time methods for the wave equation*
+ - Yvon Maday, Universite Pierre et Marie Curie: *Conservations with parareal in time algorithm*
+ - Olga Mula, Universite Pierre et Marie Curie: *MINARET: Towards a time-dependent neutron transport parallel solver*
+
+Programme Wednesday June 19, 2013:
+
+ - Benjamin Ong, Michigan State University: *RIDC-DD: A parallel space-time algorithm*
+ - Georges Klein, University of Oxford: *Deferred correction from equispaced data based on efficient high-order rational integration*
+ - Christian Wieners, Karlsruhe Institute of Technology: *Space-Time Methods for Wave Equations*
+ - Stefan Findeisen, Karlsruhe Institute of Technology: *First step towards Parallel and Adaptive Computation of Maxwell's Equations*
+ - Julien Salomon, Universite Paris-Dauphine: *An intermediate state method for the time-parallelized solving of optimal control problems*
+ - Joerg Wensch, TU Dresden: *Multirate time integration of the Euler equations*
+ - Qiqi Wang, Massachusetts Institute of Technology: *Towards Scalable Parallel Long Time Integration of Chaotic Dynamical Systems*
+ - Debasmita Samaddar, Culham Science Centre: *Temporal parallelization of advanced operation scenario simulations of fusion plasma*

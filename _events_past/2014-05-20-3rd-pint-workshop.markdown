@@ -33,4 +33,4 @@ permalink: /events/past/2014/3rd-workshop-on-parallel-in-time-integration.html
 logo: logo_jsc.png
 ---
 
-Details about the past workshop on parallel-in-time integration.
+Partially supported by the DFG Priority Programme 1648 *Software for Exascale Computing* [SPPEXA](http://www.sppexa.de/sppexa-activities/eventsworkshops.html).
