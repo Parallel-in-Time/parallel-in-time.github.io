@@ -1,0 +1,129 @@
+@import "vendor/font-awesome/font-awesome.scss";
+@import "vendor/octicons/octicons";
+@import "bootstrap_overrides";
+@import "variables";
+@import "highlight";
+
+@import "asides/github";
+
+html {
+  min-height: 100%;
+
+  body {
+    margin-top: $navbar-height;
+    margin-bottom: ($navbar-height + ($navbar-height / 3));
+
+    .jumbotron {
+      margin-top: -20px !important;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .container {
+        @media (min-width: $screen-sm-max) {
+          background-image: url(image_path('logo_pint.png'));
+          background-position: right center;
+          background-repeat: no-repeat;
+          background-origin: padding-box;
+          padding-top: 3em !important;
+          padding-bottom: 5em !important;
+        }
+      }
+    }
+
+    .blog-index {
+      article {
+        margin-bottom: 3em;
+      }
+    }
+
+    .event-meta {
+      .label {
+        margin: 0.25em;
+      }
+    }
+
+    @media(min-width: $screen-sm-min) {
+      #pint-pubs-chart {
+        width: 100%;
+      }
+    }
+    @media(min-width: $screen-md-min) {
+      #pint-pubs-chart {
+        width: 700px;
+      }
+    }
+
+    .ref-label {
+      width: 100%;
+      display: block !important;
+      font-size: 85% !important;
+    }
+
+    .post {
+      article {
+        @include clearfix;
+        
+        p {
+          text-align: justify;
+        }
+
+        img.groups-logo, img.projects-logo {
+          max-width: 75%;
+          max-height: 4em;
+          margin-right: 1em;
+        }
+      }
+      article.on-index {
+        padding-bottom: 1em;
+        border-bottom: 1px solid $page-header-border-color;
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+        
+        header {
+          border-bottom: none !important;  // overriding bootstrap
+          padding-bottom: 0 !important;  // overriding bootstrap
+          margin: 0 !important;  // overriding bootstrap
+
+          h1.entry-title {
+            margin-top: 0;
+          }
+        }
+      }
+      footer, footer#contribute-footer {
+        @include clearfix;
+        margin-top: 1em;
+        padding: 1em;
+        p {
+          font-size: $font-size-small;
+        }
+      }
+    }
+
+    .post.post-code, .post.post-group, .post.post-project, .post.post-event {
+      section.group-meta, section.event-meta {
+        .logo {
+          img {
+            @include img-responsive;
+            width: 100%;
+          }
+        }
+        address {
+          font-size: $font-size-small;
+          margin-bottom: 0;
+        }
+      }
+      section.github-widget {
+        > .gothub-box-download {
+          min-height: none !important;
+        }
+      }
+    }
+    
+    footer#site-footer {
+      .seperator {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+    }
+  }
+}

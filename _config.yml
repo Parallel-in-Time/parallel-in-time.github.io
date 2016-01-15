@@ -1,29 +1,58 @@
 # Site settings
 title: Parallel-in-Time
-email: daniel.ruprecht@usi.ch
+email: daniel.ruprecht@leeds.ac.uk
 author: "Parallel-in-Time Enthusiasts"
 description: ""
 baseurl: ""
 url: "http://parallelintime.org"
-subscribe_rss: 'feed.xml'
 
-root: /
-permalink: /news/:year/:month/:day/:title/
-code_dir: downloads/code
-category_dir: news/categories
 markdown: kramdown
-permalink: news/:year/:month/:day/:title.html
+
+exclude:
+  - vendor/
+  - travis_deploy_rsa.enc
+  - travis_deploy_rsa.pub
+  - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - CONTRIBUTORS
+  - CONTRIBUTING.md
+
+gems:
+  - jekyll-assets
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll/scholar
+  - jekyll-sitemap
+
+paginate: 5
+paginate_path: "/news/page:num/"
 
 timezone: UTC
 encoding: utf-8
 
 excerpt_separator: '<!--more-->'
 
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-category_title_prefix: ""
+assets:
+  compress:
+    css: true
+    js: true
+  cache: .asset-cache
+  prefix: '/assets'
+  assets:
+    - '*.png'
+    - '*.jpg'
+    - '*.jpeg'
+    - '*.svg'
+    - '*.woff'
+    - '*.woff2'
+    - '*.eof'
+    - '*.ttf'
+  digest: true
+  features:
+    liquid: false
+    automatic_img_size: false
+    automatic_img_alt: false
 
 collections:
   events_upcoming:

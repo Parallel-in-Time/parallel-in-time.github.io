@@ -1,11 +1,22 @@
 source 'https://rubygems.org/'
+ruby '2.2.1'
 
-gem 'octopress'
-gem 'stringex'
-gem 'jekyll-scholar', '<=4.3.5'
+# other dependencies
+gem 'sass'
+gem 'uglifier'
+gem 'coffee-script'
+gem 'autoprefixer-rails'
+gem 'mini_magick'
 
+gem 'jekyll', '>=3.0'
 
-group :deployment do
-  gem 'octopress-deploy'
-end
+# Jekyll Plugins
+gem 'jekyll-watch'
+gem 'jekyll-paginate'
+gem 'jekyll-feed'
+gem 'jekyll-assets'
+gem 'jekyll-sitemap'
+gem 'jekyll-scholar'
+# gem 'jekyll-archives'
 
+gem 'jgd'
