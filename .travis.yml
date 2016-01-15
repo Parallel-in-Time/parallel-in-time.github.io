@@ -1,22 +1,27 @@
 language: ruby
 
-rvm: 1.9.3
+sudo: false
 
-cache: bundler
+# this is taken from .ruby-version from the repo
+# rvm:
+#   - 2.2.1
 
-env:
-  - BUNDLE_PATH=$GEM_HOME
+cache:
+  - bundler
 
 branches:
   except:
     - master
 
-before_script:
-  - printenv | sort
-  - ls -la $GEM_HOME/*
-  - ls -lar ${BUNDLE_PATH:-vendor/bundle}/*
-
 script:
-  - gem list
-  - octopress deploy
-
+  - bundle exec jekyll build --trace
+  # preparing the deployment SSH key and running the deployment script
+  - if [[ "${TRAVIS_BRANCH}" == "source" && "${TRAVIS_PULL_REQUEST}" == "false" ]]; then
+      openssl aes-256-cbc -K $encrypted_e3b7eaa5d6e3_key -iv $encrypted_e3b7eaa5d6e3_iv -in travis_deploy_rsa.enc -out travis_deploy_rsa -d;
+      chmod 0600 travis_deploy_rsa;
+      eval "$(ssh-agent -s)";
+      ssh-add travis_deploy_rsa;
+      git config --global user.email "travis@parallel-in-time.github.io";
+      git config --global user.name "Travis CI Deployment";
+      bundle exec jgd --branch=master --url=git@github.com:Parallel-in-Time/parallel-in-time.github.io;
+    fi
