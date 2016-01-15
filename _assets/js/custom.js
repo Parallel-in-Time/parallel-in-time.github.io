@@ -1,4 +1,5 @@
-//= require bootstrap-sprockets
+//= require ./vendor/bootstrap-sprockets
+//= require ./vendor/jquery.githubRepoWidget
 
 $(document).ready(function() {
     // from http://stackoverflow.com/a/20469901/588243
