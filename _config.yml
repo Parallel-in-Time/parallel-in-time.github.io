@@ -45,6 +45,7 @@ assets:
     - '*.jpeg'
     - '*.svg'
     - '*.woff'
+    - '*.woff2'
     - '*.eof'
     - '*.ttf'
   digest: true
