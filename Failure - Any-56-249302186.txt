@@ -1,3 +1,0 @@
-Parallel-in-Time Website (deploy) - Build # 56 - Failure:
-
-Check console output at https://pint.fz-juelich.de/ci/job/PARALLEL_IN_TIME_WEBSITE/56/ to view the results.
