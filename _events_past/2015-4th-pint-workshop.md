@@ -6,11 +6,12 @@ updated: 2015-06-05 05:30:00 +0200
 event_location: Dresden, Germany
 event_url: http://www.math.tu-dresden.de/~naumann/pint2015/
 event_short_url: math.tu-dresden.de
+wayback_url: https://web.archive.org/web/20150110103402/http://www.math.tu-dresden.de/~naumann/pint2015/
 event_start: 2015-05-27 00:00
 event_end: 2015-05-29 00:00
 navbar: Events
 subnavbar: Past
-permalink: /events/past/2015/4th-workshop-on-parallel-in-time-integration.html
+permalink: /events/2015/4th-workshop-on-parallel-in-time-integration.html
 organizers:
     - name: Jörg Wensch
       homepage: http://tu-dresden.de/die_tu_dresden/fakultaeten/fakultaet_mathematik_und_naturwissenschaften/fachrichtung_mathematik/institute/wir/staff/Professoren/wensch_html
