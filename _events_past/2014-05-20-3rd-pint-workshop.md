@@ -6,6 +6,7 @@ navbar: Events
 subnavbar: Past
 event_url: http://www.fz-juelich.de/ias/jsc/pintws2014
 event_short_url: fz-juelich.de
+wayback_url: https://web.archive.org/web/20160121070300/http://www.fz-juelich.de/ias/jsc/EN/Expertise/Workshops/Conferences/PinTWorkshop-2014/_node.html
 event_location: Jülich, Germany
 event_start: 2014-05-26 00:00
 event_end: 2014-05-28 00:00
@@ -29,7 +30,7 @@ invited:
     homepage: http://neumann.math.tufts.edu/
   - name: Cornelius Oosterlee
     homepage: http://ta.twi.tudelft.nl/mf/users/oosterle/
-permalink: /events/past/2014/3rd-workshop-on-parallel-in-time-integration.html
+permalink: /events/2014/3rd-workshop-on-parallel-in-time-integration.html
 logo: logo_jsc.png
 ---
 

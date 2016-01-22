@@ -5,11 +5,12 @@ date: 2015-03-28 10:00:00 +0000
 event_location: University Paul Sabatier, Toulouse, France
 event_url: http://inpact.inp-toulouse.fr/CIMI_Semester/wksp_parallel.html
 event_short_url: inpact.inp-toulouse.fr
+wayback_url: https://web.archive.org/web/20160119063349/http://inpact.inp-toulouse.fr/CIMI_Semester/wksp_parallel.html
 event_start: 2016-01-11 00:00
 event_end: 2016-01-12 00:00
 navbar: Events
-subnavbar: Upcoming
-permalink: /events/upcoming/2016/cimi_semester.html
+subnavbar: Past
+permalink: /events/2016/cimi_semester.html
 organizers:
     - name: Xavier Vasseur
       email: vasseur@cerfacs.fr

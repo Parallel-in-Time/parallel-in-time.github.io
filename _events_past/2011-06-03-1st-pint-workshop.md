@@ -4,12 +4,13 @@ title: "1st Workshop on Parallel-in-Time Integration"
 date: 2014-06-16 00:00:00 +0000
 event_url: https://www.ics.usi.ch/index.php/about/event/details/19-parallel-in-time-integration-schemes
 event_short_url: icsweb.inf.unisi.ch
+wayback_url: https://web.archive.org/web/20150919013709/http://icsweb.inf.unisi.ch/cms/index.php/events/details/19-parallel-in-time-integration-schemes.html
 event_location: Lugano, Switzerland
 event_start: 2011-06-03 00:00
 event_end: 2011-06-03 00:00
 navbar: Events
 subnavbar: Past
-permalink: /events/past/2011/1st-workshop-on-parallel-in-time-integration.html
+permalink: /events/2011/1st-workshop-on-parallel-in-time-integration.html
 organizers:
     - name: Daniel Ruprecht
       email: daniel.ruprecht@usi.ch

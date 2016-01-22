@@ -8,7 +8,7 @@ event_end: 2016-12-02 00:00
 event_url: http://www.birs.ca/events/2016/5-day-workshops/16w5030
 navbar: Events
 subnavbar: Upcoming
-permalink: /events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html
+permalink: /events/2016/5th-workshop-on-parallel-in-time-integration.html
 organizers:
   - name: Matt Emmett
     homepage: https://ccse.lbl.gov/people/emmett/
