@@ -10,10 +10,14 @@ end
 
 require 'uri'
 
-module MarkdownFilter
-  class Markdown < BibTeX::Filter
-    def apply(value)
-      value.to_s.gsub(URI.regexp(['http','https','ftp'])) { |c| "<a href=\"#{$&}\">#{$&}</a>" }
+module Jekyll
+  class Scholar
+    class Markdown < BibTeX::Filter
+      def apply(value)
+        value.to_s.gsub(URI.regexp(['http','https','ftp'])) do |c|
+          "<a href=\"#{$&}\" target=\"_blank\">#{$&}</a>"
+        end
+      end
     end
   end
 end
