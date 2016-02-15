@@ -51,70 +51,15 @@ footer: true
 <hr />
 {% include references_year_nav.html %}
 
-<h2 id="year2015" class="year">2015 <span class="count-stat"></span></h2>
+{% capture todays_year %}
+  {% current_year %}
+{% endcapture %}
+{% for year in (2005..todays_year) reversed %}
+  <h2 id="year{{ year }}" class="year">{{ year }} <span class="count-stat"></span></h2>
 
-{% bibliography --file pint -q @*[year=2015] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2014" class="year">2014 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2014] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2013" class="year">2013 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2013] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2012" class="year">2012 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2012] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2011" class="year">2011 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2011] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2010" class="year">2010 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2010] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2009" class="year">2009 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2009] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2008" class="year">2008 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2008] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2007" class="year">2007 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2007] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2006" class="year">2006 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2006] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year2005" class="year">2005 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year=2005] %}
-{% include references_year_nav.html %}
+  {% bibliography --file pint -q @*[year={{ year }}] %}
+  {% include references_year_nav.html %}
+{% endfor %}
 
 
 <h2 id="year0004" class="year">2000 - 2004 <span class="count-stat"></span></h2>
