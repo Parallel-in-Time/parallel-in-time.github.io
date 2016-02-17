@@ -34,10 +34,10 @@ collaboration.
 This workshop is the fifth *Parallel-in-time Integration* workshop,
 and will build upon the success of the preceding four workshops:
 
-1. Università della Svizzera italiana; Lugano, Switzerland; 2011;
-2. Manchester University; Manchester, UK; 2013;
-3. Forschungszentrum Jülich; Jülich, Germany; 2014.
-4. Technische Universität Dresden; Dresden, Germany; 2015;
+1. Università della Svizzera italiana (Lugano, Switzerland) in 2011
+2. Manchester University (Manchester, UK) in 2013
+3. Forschungszentrum Jülich (Jülich, Germany) in 2014
+4. Technische Universität Dresden (Dresden, Germany) 2015
 
 The central goal of this event is to encourage participants to join
 their expertise for their mutual benefit.  Participants in the
