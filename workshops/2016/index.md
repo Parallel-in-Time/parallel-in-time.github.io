@@ -51,7 +51,7 @@ by the scientific by the [Parallel-in-Time Scientific
 Committee][PINTSC]. Unfortunately, due to scheduling constraints, it
 may not be possible for all participants to give a talk.
 
-**The first round of abstracts are due by March 19 2016.** Abstracts
+**The first round of abstracts are due by March 26 2016.** Abstracts
 can be submitted online through [the abstract submission
 form][ABSTRACTS] or by emailing them to [Matthew
 Emmett](mailto:memmett@gmail.com).
