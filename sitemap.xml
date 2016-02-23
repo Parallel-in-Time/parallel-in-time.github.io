@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://parallelintime.org/events/grants/2016/02/23/jsc-travel-grants.html</loc>
+<lastmod>2016-02-23T00:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>http://parallelintime.org/2015/12/17/pint-in-h2020.html</loc>
 <lastmod>2015-12-17T09:26:44+00:00</lastmod>
 </url>
@@ -112,22 +116,28 @@
 <loc>http://parallelintime.org/news/page3/</loc>
 </url>
 <url>
-<loc>http://parallelintime.org/events/2016/5th-workshop-on-parallel-in-time-integration.html</loc>
+<loc>http://parallelintime.org/news/page4/</loc>
 </url>
 <url>
-<loc>http://parallelintime.org/events/2011/1st-workshop-on-parallel-in-time-integration.html</loc>
+<loc>http://parallelintime.org/events/5th-pint-workshop/</loc>
 </url>
 <url>
-<loc>http://parallelintime.org/events/2013/2nd-workshop-on-parallel-in-time-integration.html</loc>
+<loc>http://parallelintime.org/events/5th-pint-workshop/details/</loc>
 </url>
 <url>
-<loc>http://parallelintime.org/events/2014/3rd-workshop-on-parallel-in-time-integration.html</loc>
+<loc>http://parallelintime.org/events/1st-pint-workshop/</loc>
 </url>
 <url>
-<loc>http://parallelintime.org/events/2015/4th-workshop-on-parallel-in-time-integration.html</loc>
+<loc>http://parallelintime.org/events/2nd-pint-workshop/</loc>
 </url>
 <url>
-<loc>http://parallelintime.org/events/2016/cimi_semester.html</loc>
+<loc>http://parallelintime.org/events/3rd-pint-workshop/</loc>
+</url>
+<url>
+<loc>http://parallelintime.org/events/4th-pint-workshop/</loc>
+</url>
+<url>
+<loc>http://parallelintime.org/events/cimi_semester/</loc>
 </url>
 <url>
 <loc>http://parallelintime.org/groups/lbnl.html</loc>
@@ -194,8 +204,5 @@
 </url>
 <url>
 <loc>http://parallelintime.org/codes/pararealf90.html</loc>
-</url>
-<url>
-<loc>http://parallelintime.org/pint2016/</loc>
 </url>
 </urlset>

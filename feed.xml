@@ -7,6 +7,36 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>JSC awards travel grants for PhD students</title>
+        <description>&lt;p&gt;For the next three workshops, &lt;a href=&quot;http://www.fz-juelich.de/ias/jsc&quot;&gt;Jülich Supercomputing Centre&lt;/a&gt;
+is providing travel support for PhD students working in the field of parallel-in-time integration methods.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;With this commitment, JSC is emphasizing the importance of regular community meetings, in particular for
+young scientists working on their PhD thesis. Up to three students per workshop will receive up to EUR 1.500 each
+for covering parts of their travel expenses.&lt;/p&gt;
+
+&lt;p&gt;The Scientific Committee of the PinT Workshop Series will select the students based on applications.
+These should include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a description of their thesis topic (“This is what I’m working on”)&lt;/li&gt;
+  &lt;li&gt;a letter of motivation (“This is why I should receive the grant”)&lt;/li&gt;
+  &lt;li&gt;a short description of the group/institute they are affiliated to (“This is where I work”)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, students traveling to one of the meetings via this grant are expected to present their work either
+on a poster or during a talk.&lt;/p&gt;
+
+&lt;p&gt;This offer is starting now. Students who would like to apply should write to r.speck@fz-juelich.de.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+        <link>http://parallelintime.org/events/grants/2016/02/23/jsc-travel-grants.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/grants/2016/02/23/jsc-travel-grants.html</guid>
+      </item>
+    
+      <item>
         <title>PINT in H2020 Call</title>
         <description>&lt;p&gt;Parallel-in-time integration is mentioned in the FETHPC Call &lt;em&gt;Transition to Exascale Computing&lt;/em&gt; in Horizon 2020.&lt;/p&gt;
 
@@ -249,21 +279,6 @@ series in November 2016 in Canada.&lt;/p&gt;
         <pubDate>Thu, 04 Jun 2015 09:21:44 +0000</pubDate>
         <link>http://parallelintime.org/events/2015/06/04/dresden-postnews.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2015/06/04/dresden-postnews.html</guid>
-      </item>
-    
-      <item>
-        <title>New parallelintime email list</title>
-        <description>&lt;p&gt;There exists now an email list to help you send and receive information and announcements all around parallel-in-time
-integration.
-To join, simply send an email to &lt;em&gt;parallelintime+subscribe[AT]googlegroups.com&lt;/em&gt; and wait for one of the moderators to
-approve your request.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You do &lt;em&gt;not&lt;/em&gt; need a Google account in order to join this list, just send the subscribe email from the email
-address you want to subscribe.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 24 Apr 2015 07:26:44 +0000</pubDate>
-        <link>http://parallelintime.org/events/2015/04/24/email-list-announcement.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2015/04/24/email-list-announcement.html</guid>
       </item>
     
   </channel>
