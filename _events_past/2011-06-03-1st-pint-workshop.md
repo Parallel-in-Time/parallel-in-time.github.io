@@ -10,7 +10,7 @@ event_start: 2011-06-03 00:00
 event_end: 2011-06-03 00:00
 navbar: Events
 subnavbar: Past
-permalink: /events/2011/1st-workshop-on-parallel-in-time-integration.html
+permalink:
 organizers:
     - name: Daniel Ruprecht
       email: daniel.ruprecht@usi.ch

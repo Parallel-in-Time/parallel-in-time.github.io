@@ -8,7 +8,6 @@ event_end: 2016-12-02 00:00
 event_url: http://www.birs.ca/events/2016/5-day-workshops/16w5030
 navbar: Events
 subnavbar: Upcoming
-permalink: /events/2016/5th-workshop-on-parallel-in-time-integration.html
 organizers:
   - name: Matt Emmett
     homepage: http://ccse.lbl.gov/people/emmett/
@@ -20,6 +19,7 @@ organizers:
     homepage: http://icsweb.inf.unisi.ch/cms/index.php/people/23-rolf-krause.html
   - name: Michael Minion
     homepage: https://ccse.lbl.gov/people/minion/
+permalink:
 ---
 
 The Fifth Workshop on Parallel-in-time Integration Workshop will be

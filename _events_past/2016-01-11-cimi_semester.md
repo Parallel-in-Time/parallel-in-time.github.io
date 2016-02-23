@@ -10,7 +10,7 @@ event_start: 2016-01-11 00:00
 event_end: 2016-01-12 00:00
 navbar: Events
 subnavbar: Past
-permalink: /events/2016/cimi_semester.html
+permalink:
 organizers:
     - name: Xavier Vasseur
       email: vasseur@cerfacs.fr

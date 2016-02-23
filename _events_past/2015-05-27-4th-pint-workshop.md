@@ -11,7 +11,7 @@ event_start: 2015-05-27 00:00
 event_end: 2015-05-29 00:00
 navbar: Events
 subnavbar: Past
-permalink: /events/2015/4th-workshop-on-parallel-in-time-integration.html
+permalink:
 organizers:
     - name: Jörg Wensch
       homepage: http://tu-dresden.de/die_tu_dresden/fakultaeten/fakultaet_mathematik_und_naturwissenschaften/fachrichtung_mathematik/institute/wir/staff/Professoren/wensch_html

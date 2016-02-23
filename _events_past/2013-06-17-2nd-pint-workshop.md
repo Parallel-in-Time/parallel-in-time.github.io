@@ -10,7 +10,7 @@ event_short_url: cl.eps.manchester.ac.uk
 wayback_url: https://web.archive.org/web/20160121070129/http://www.cl.eps.manchester.ac.uk/medialand/maths/archived-events/workshops/www.mims.manchester.ac.uk/events/workshops/spacetime/
 navbar: Events
 subnavbar: Past
-permalink: /events/2013/2nd-workshop-on-parallel-in-time-integration.html
+permalink:
 organizers:
     - name: Stefan Güttel
       homepage: http://www.maths.manchester.ac.uk/~stefan/

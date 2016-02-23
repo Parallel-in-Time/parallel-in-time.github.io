@@ -30,7 +30,7 @@ invited:
     homepage: http://neumann.math.tufts.edu/
   - name: Cornelius Oosterlee
     homepage: http://ta.twi.tudelft.nl/mf/users/oosterle/
-permalink: /events/2014/3rd-workshop-on-parallel-in-time-integration.html
+permalink:
 logo: logo_jsc.png
 ---
 
