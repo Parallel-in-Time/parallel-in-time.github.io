@@ -57,8 +57,10 @@ assets:
 collections:
   events_upcoming:
     output: true
+    permalink: /events/:title/
   events_past:
     output: true
+    permalink: /events/:title/
   groups:
     output: true
   projects:
