@@ -10,19 +10,20 @@ event_start: 2016-01-11 00:00
 event_end: 2016-01-12 00:00
 navbar: Events
 subnavbar: Past
-permalink:
 organizers:
-    - name: Xavier Vasseur
-      email: vasseur@cerfacs.fr
-    - name: Serge Gratton
-      email: serge.gratton@enseeiht.fr
+  - name: Xavier Vasseur
+    email: vasseur@cerfacs.fr
+  - name: Serge Gratton
+    email: serge.gratton@enseeiht.fr
 invited:
-    - name: Matthew Emmett
-      homepage:
-    - name: Martin Gander
-      homepage: http://www.unige.ch/~gander/
-    - name: Robert Speck
-      homepage: http://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/speck_r.html
+  - name: Matthew Emmett
+    homepage:
+  - name: Martin Gander
+    homepage: http://www.unige.ch/~gander/
+  - name: Robert Speck
+    homepage: http://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/speck_r.html
+permalink:
+page_type: event_page
 ---
 
 In this workshop, we want to address the challenge of time-dependent

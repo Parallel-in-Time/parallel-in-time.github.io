@@ -10,15 +10,16 @@ event_short_url: cl.eps.manchester.ac.uk
 wayback_url: https://web.archive.org/web/20160121070129/http://www.cl.eps.manchester.ac.uk/medialand/maths/archived-events/workshops/www.mims.manchester.ac.uk/events/workshops/spacetime/
 navbar: Events
 subnavbar: Past
-permalink:
 organizers:
-    - name: Stefan Güttel
-      homepage: http://www.maths.manchester.ac.uk/~stefan/
+  - name: Stefan Güttel
+    homepage: http://www.maths.manchester.ac.uk/~stefan/
 invited:
-    - name: Martin Gander
-    - name: Yvon Maday
-    - name: Michael Minion
-    - name: Benjamin Ong
+  - name: Martin Gander
+  - name: Yvon Maday
+  - name: Michael Minion
+  - name: Benjamin Ong
+permalink:
+page_type: event_page
 ---
 
 A book of abstracts can be found [here](http://www.cl.eps.manchester.ac.uk/medialand/maths/archived-events/workshops/www.mims.manchester.ac.uk/events/workshops/spacetime/abstracts/booklet.pdf).

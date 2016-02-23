@@ -30,8 +30,9 @@ invited:
     homepage: http://neumann.math.tufts.edu/
   - name: Cornelius Oosterlee
     homepage: http://ta.twi.tudelft.nl/mf/users/oosterle/
-permalink:
 logo: logo_jsc.png
+permalink:
+page_type: event_page
 ---
 
 Partially supported by the DFG Priority Programme 1648 *Software for Exascale Computing* [SPPEXA](http://www.sppexa.de/sppexa-activities/eventsworkshops.html).
