@@ -1,10 +1,29 @@
 ---
-layout: default
-title: Fifth Workshop on Parallel-in-Time Integration
+layout: page_event
+title: 5th Workshop on Parallel-in-Time Integration
+subtitle: Details
+date: 2014-06-16 00:00:00 +0000
+updated: 2016-02-23
+event_location: Banff, Canada
+event_start: 2016-11-27 00:00
+event_end: 2016-12-02 00:00
+event_url: http://www.birs.ca/events/2016/5-day-workshops/16w5030
+navbar: Events
+subnavbar: Upcoming
+organizers:
+  - name: Matt Emmett
+    homepage: http://ccse.lbl.gov/people/emmett/
+  - name: Martin Gander
+    homepage: http://www.unige.ch/~gander/
+  - name: Ron Haynes
+    homepage: http://www.mun.ca/math/people/ppl-faculty/rhaynes.php
+  - name: Rolf Krause
+    homepage: http://icsweb.inf.unisi.ch/cms/index.php/people/23-rolf-krause.html
+  - name: Michael Minion
+    homepage: https://ccse.lbl.gov/people/minion/
+permalink: /events/5th-pint-workshop/details/
+page_type: event_subpage
 ---
-
-# Fifth Parallel-in-Time Integration Workshop
-
 The Fifth Workshop on Parallel-in-time Integration Workshop will be
 held at the [Banff International Research Station (BIRS)][BIRS] from
 November 27 to December 2, 2016.  BIRS is located on the campus of the
@@ -35,7 +54,7 @@ The workshop is organised by
 
 in conjunction with the [Parallel-in-Time Scientific Committee][PINTSC].
 
-## Participation
+### Participation
 
 BIRS workshops are by invitation only.  If you would like to attend
 the workshop, please contact [Matthew
@@ -51,19 +70,19 @@ by the scientific by the [Parallel-in-Time Scientific
 Committee][PINTSC]. Unfortunately, due to scheduling constraints, it
 may not be possible for all participants to give a talk.
 
-**The first round of abstracts are due by March 26 2016.** Abstracts
+**The first round of abstracts are due by March 19 2016.** Abstracts
 can be submitted online through [the abstract submission
 form][ABSTRACTS] or by emailing them to [Matthew
 Emmett](mailto:memmett@gmail.com).
 
-## Proceedings
+### Proceedings
 
 Participants with accepted abstracts will be invited to publish their
 contributions, in the format of a short paper (maximum of 20 pages) in
 the proceedings of the workshop, which will be published as a special
 issue of **Computing and Visualization in Science** (Springer).
 
-## Scientific Overview
+### Scientific Overview
 
 The efficient use of modern high performance computing (HPC) systems
 has become one of the key challenges in computational science.  Top
@@ -84,15 +103,15 @@ transfer operators in space and time, and how other features of
 time-parallel methods can be exploited to further enhance their
 applicability to complex systems.
 
-## Objectives
+### Objectives
 
-### Showcase
+#### Showcase
 
 Recent advances in parallel-in-time integration, in terms of both
 theoretical aspects and practical advances, will be showcased by
 participants through a series of contributed talks.
 
-### Educate
+#### Educate
 
 Our intended participants include young researchers as well as domain
 experts in time-parallel, multigrid, and domain decomposition methods.
@@ -101,7 +120,7 @@ theoretical understanding of the techniques and approaches involved in
 these fields and give participants a chance to further explore
 opportunities for collaboration.
 
-### Progress
+#### Progress
 
 Parallel-in-time integration methods have recently moved from
 proof-of-concept to production applications through the development of
@@ -113,7 +132,7 @@ also have an opportunity to exchange best-practises, design
 principles, pitfalls etc.
 
 
-## Programme
+### Programme
 
 
 This 5-day workshop will consist of numerous talks, open discussion
@@ -123,7 +142,7 @@ A detailed schedule will eventually be posted on our [PinT@BIRS
 2016][PINT16BIRS] website.
 
 
-## Funding
+### Funding
 
 
 The organisers and scientific committee would like to thank

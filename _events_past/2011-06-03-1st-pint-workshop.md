@@ -10,16 +10,17 @@ event_start: 2011-06-03 00:00
 event_end: 2011-06-03 00:00
 navbar: Events
 subnavbar: Past
-permalink: /events/2011/1st-workshop-on-parallel-in-time-integration.html
 organizers:
-    - name: Daniel Ruprecht
-      email: daniel.ruprecht@usi.ch
-    - name: Rolf Krause
+  - name: Daniel Ruprecht
+    email: daniel.ruprecht@usi.ch
+  - name: Rolf Krause
 invited:
-    - name: Martin Gander
-    - name: Julien Cortial
-    - name: Michael Minion
-    - name: Stefan Güttel
+  - name: Martin Gander
+  - name: Julien Cortial
+  - name: Michael Minion
+  - name: Stefan Güttel
+permalink:
+page_type: event_page
 ---
 
 Supported by the Swiss platform for *High Performance and High Productivity Computing* [HP2C](http://www.hp2c.ch/index.php?id=topicforums&tx_communities_pi1[eventid]=9&no_cache=1).
