@@ -26,7 +26,8 @@ page_type: event_subpage
 no_lead: true
 ---
 
-This 5-day workshop will consist of numerous talks, open discussion periods, and a few software workshops.
+This 5-day workshop will consist of numerous talks, open discussion
+periods, and a few software workshops.
 
 A detailed schedule will eventually be posted on our [PinT@BIRS 2016][PINT16BIRS] website.
 
