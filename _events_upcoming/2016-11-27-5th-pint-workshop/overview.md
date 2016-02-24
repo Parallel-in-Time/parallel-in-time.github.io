@@ -22,6 +22,7 @@ organizers:
 subtitle: Overview
 permalink: /events/5th-pint-workshop/overview/
 page_type: event_subpage
+no_lead: true
 ---
 
 The efficient use of modern high performance computing (HPC) systems

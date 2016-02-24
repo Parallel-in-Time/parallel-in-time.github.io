@@ -7,20 +7,18 @@ layout: default
       <h1>{{ page.title }}</h1>
     </header>
   </div>
-  <article class="post-content">
+  <article class="post-content" data-with-lead="{% if page.no_lead %}false{% else %}true{% endif %}">
     <div class="row">
-      <div class="{% if page.page_type == 'event_page' %}col-lg-7 col-sm-12{% endif %} content" id="main-content">
+      <div class="{% if page.page_type == 'event_page' %}col-lg-7{% else %}col-lg-12{% endif %} col-sm-12 content" id="main-content">
         {% include asides/event_subnav.html %}
         {% if page.subtitle %}
           <h2>{{ page.subtitle }}</h2>
         {% endif %}
         {{ content }}
       </div>
-      {% if page.page_type == 'event_page' %}
-      <aside class="col-lg-5 col-sm-12 collapse in" id="meta-aside">
+      <aside class="col-lg-5 col-sm-12 collapse {% if page.page_type == 'event_page' %}in{% else %}invisible{% endif %}" id="meta-aside">
         {% include asides/event_meta.html %}
       </aside>
-      {% endif %}
     </div>
   </article>
   {% if page.footer %}

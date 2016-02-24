@@ -22,6 +22,7 @@ organizers:
 permalink: /events/5th-pint-workshop/
 subtitle: Breif overview
 page_type: event_page
+no_lead: true
 ---
 
 The Fifth Workshop on Parallel-in-time Integration Workshop will be

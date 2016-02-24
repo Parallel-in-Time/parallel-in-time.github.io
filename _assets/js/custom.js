@@ -26,7 +26,7 @@ $(document).ready(function() {
         }
     });
 
-    //$('article.post-content .content > p:first').addClass('lead');
+    $('article.post-content[data-with-lead="true"]').find('.content > p:first').addClass('lead');
 
     //
     // Beautify Ref Lists
