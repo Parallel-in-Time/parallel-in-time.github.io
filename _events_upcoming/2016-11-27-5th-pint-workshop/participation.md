@@ -26,25 +26,36 @@ page_type: event_subpage
 no_lead: true
 ---
 
-BIRS workshops are by invitation only.
-If you would like to attend the workshop, please contact [Matthew Emmett](mailto:memmett@gmail.com).
+BIRS workshops are by invitation only.  If you would like to attend
+the workshop, please contact [Matthew Emmett](mailto:memmett@gmail.com).
 
-Accommodation and meals are covered by BIRS (yes, room and board are *free of charge*!).
-As such, **participants are expected to cover their own airfare and transportation costs**, including costs associated with getting from the [Calgary International Aiport (YYC)][YYC] to BIRS.
+Accommodation and meals are covered by BIRS (yes, room and board are
+*free of charge*!).  As such, **participants are expected to cover
+their own airfare and transportation costs**, including costs
+associated with getting from the [Calgary International Aiport
+(YYC)][YYC] to BIRS.
 
-We encourage all invited participants to submit an abstract for review by the scientific by the [Parallel-in-Time Scientific Committee][PINTSC].
-Unfortunately, due to scheduling constraints, it may not be possible for all participants to give a talk.
+We encourage all invited participants to submit an abstract for review
+by the scientific by the [Parallel-in-Time Scientific
+Committee][PINTSC].  Unfortunately, due to scheduling constraints, it
+may not be possible for all participants to give a talk.
 
-**The first round of abstracts are due by March 19 2016.**
-Abstracts can be submitted online through [the abstract submission form][ABSTRACTS] or by emailing them to [Matthew Emmett](mailto:memmett@gmail.com).
+**The first round of abstracts are due by March 19 2016.** Abstracts
+can be submitted online through [the abstract submission
+form][ABSTRACTS] or by emailing them to [Matthew Emmett](mailto:memmett@gmail.com).
 
 ## Proceedings
 
-Participants with accepted abstracts will be invited to publish their contributions, in the format of a short paper (maximum of 20 pages) in the proceedings of the workshop, which will be published as a special issue of **Computing and Visualization in Science** (Springer).
+Participants with accepted abstracts will be invited to publish their
+contributions, in the format of a short paper (maximum of 20 pages) in
+the proceedings of the workshop, which will be published as a special
+issue of **Computing and Visualization in Science** (Springer).
 
 ## Funding
 
-The organisers and scientific committee would like to thank [BIRS][BIRS] for graciously hosting the workshop and [AARMS][AARMS] for further support
+The organisers and scientific committee would like to thank
+[BIRS][BIRS] for graciously hosting the workshop and [AARMS][AARMS]
+for further support
 
 {% raw %}
 <div class="row">
