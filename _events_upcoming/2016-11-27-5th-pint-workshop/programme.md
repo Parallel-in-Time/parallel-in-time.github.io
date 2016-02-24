@@ -1,7 +1,8 @@
 ---
 layout: page_event
 title: 5th Workshop on Parallel-in-Time Integration
-date: 2014-06-16 00:00:00 +0000
+date: 2016-02-23 00:00:00 +0000
+updated: 2016-02-24 08:32:00 +0100
 event_location: Banff, Canada
 event_start: 2016-11-27 00:00
 event_end: 2016-12-02 00:00
@@ -28,7 +29,6 @@ no_lead: true
 This 5-day workshop will consist of numerous talks, open discussion
 periods, and a few software workshops.
 
-A detailed schedule will eventually be posted on our [PinT@BIRS
-2016][PINT16BIRS] website.
+A detailed schedule will eventually be posted on our [PinT@BIRS 2016][PINT16BIRS] website.
 
 [PINT16BIRS]: http://www.birs.ca/events/2016/5-day-workshops/16w5030

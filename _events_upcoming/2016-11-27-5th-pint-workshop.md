@@ -1,7 +1,8 @@
 ---
 layout: page_event
 title: 5th Workshop on Parallel-in-Time Integration
-date: 2014-06-16 00:00:00 +0000
+date: 2016-02-23 00:00:00 +0000
+updated: 2016-02-24 08:32:00 +0100
 event_location: Banff, Canada
 event_start: 2016-11-27 00:00
 event_end: 2016-12-02 00:00
@@ -20,16 +21,16 @@ organizers:
   - name: Michael Minion
     homepage: https://ccse.lbl.gov/people/minion/
 permalink: /events/5th-pint-workshop/
-subtitle: Breif overview
+subtitle: Brief overview
 page_type: event_page
 no_lead: true
 ---
 
-The Fifth Workshop on Parallel-in-time Integration Workshop will be
-held at the [Banff International Research Station (BIRS)][BIRS] from
-November 27 to December 2, 2016.  BIRS is located on the campus of the
-[Banff Centre][BANFFCENTRE] in the mountain town of [Banff][Banff],
-just inside the Canadian Rockies.  BIRS is a relaxed and picturesque
+The Fifth Parallel-in-time Integration Workshop will be held at the
+[Banff International Research Station (BIRS)][BIRS] from November 27
+to December 2, 2016.  BIRS is located on the campus of the [Banff
+Centre][BANFFCENTRE] in the mountain town of [Banff][Banff], just
+inside the Canadian Rockies.  BIRS is a relaxed and picturesque
 location for focused research and collaboration.
 
 This workshop is the fifth *Parallel-in-time Integration* workshop,

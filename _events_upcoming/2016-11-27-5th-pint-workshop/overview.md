@@ -1,7 +1,8 @@
 ---
 layout: page_event
 title: 5th Workshop on Parallel-in-Time Integration
-date: 2014-06-16 00:00:00 +0000
+date: 2016-02-23 00:00:00 +0000
+updated: 2016-02-24 08:32:00 +0100
 event_location: Banff, Canada
 event_start: 2016-11-27 00:00
 event_end: 2016-12-02 00:00
@@ -48,8 +49,8 @@ applicability to complex systems.
 
 ### Showcase
 
-Recent advances in parallel-in-time integration, in terms of both
-theoretical aspects and practical advances, will be showcased by
+Recent  advances in  parallel-in-time  integration, in  terms of  both
+theoretical  aspects  and practical  advances,  will  be showcased  by
 participants through a series of contributed talks.
 
 ### Educate
