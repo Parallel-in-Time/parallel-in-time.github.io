@@ -22,6 +22,7 @@ organizers:
 subtitle: Programme
 permalink: /events/5th-pint-workshop/programme/
 page_type: event_subpage
+no_lead: true
 ---
 
 This 5-day workshop will consist of numerous talks, open discussion

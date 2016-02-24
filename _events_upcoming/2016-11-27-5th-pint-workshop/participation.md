@@ -22,6 +22,7 @@ organizers:
 subtitle: Participation
 permalink: /events/5th-pint-workshop/participation/
 page_type: event_subpage
+no_lead: true
 ---
 
 BIRS workshops are by invitation only.  If you would like to attend
