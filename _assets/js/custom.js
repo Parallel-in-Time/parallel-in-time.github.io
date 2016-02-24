@@ -1,32 +1,42 @@
 //= require ./vendor/bootstrap-sprockets
 //= require ./vendor/jquery.githubRepoWidget
 
+var toggle_meta_aside = function(desired_state) {
+    var meta_aside = $('#meta-aside');
+
+    if (desired_state === 'show' && meta_aside.hasClass('invisible')) {
+        // make aside meta visible again
+        $('#show-meta-aside').addClass('invisible');
+        meta_aside.removeClass('invisible').addClass('in');
+        $('article div#main-content').addClass('col-lg-7').removeClass('col-lg-12');
+
+    } else if (desired_state === 'hide' && !meta_aside.hasClass('invisible')) {
+        // make aside meta invisible
+        $('#show-meta-aside').removeClass('invisible');
+        meta_aside.addClass('invisible').removeClass('in');
+        $('article div#main-content').removeClass('col-lg-7').addClass('col-lg-12');
+    }
+};
+
 $(document).ready(function() {
-    // from http://stackoverflow.com/a/20469901/588243
-    $.extend({
-        replaceTag: function (currentElem, newTagObj, keepProps) {
-            var $currentElem = $(currentElem);
-            var i, $newTag = $(newTagObj).clone();
-            if (keepProps) {
-                newTag = $newTag[0];
-                newTag.className = currentElem.className;
-                $.extend(newTag.classList, currentElem.classList);
-                $.extend(newTag.attributes, currentElem.attributes);
-            }
-            $currentElem.wrapAll($newTag);
-            $currentElem.contents().unwrap();
-            return this; // Suggested by ColeLawrence
-        }
+    // activate tooltips
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $('#hide-meta-aside').click(function() {
+        toggle_meta_aside('hide')
     });
-    $.fn.extend({
-        replaceTag: function (newTagObj, keepProps) {
-            return this.each(function() {
-                jQuery.replaceTag(this, newTagObj, keepProps);
-            });
-        }
+
+    $('#show-meta-aside').click(function() {
+        toggle_meta_aside('show')
     });
 
     $('article.post-content[data-with-lead="true"]').find('.content > p:first').addClass('lead');
+
+    var event_article = $('.post-event article');
+    if (event_article.attr('data-page-type') === 'event_subpage') {
+        // we are on an event's sub-page
+        toggle_meta_aside('hide');
+    }
 
     //
     // Beautify Ref Lists
