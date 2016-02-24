@@ -19,18 +19,17 @@ organizers:
     homepage: http://icsweb.inf.unisi.ch/cms/index.php/people/23-rolf-krause.html
   - name: Michael Minion
     homepage: https://ccse.lbl.gov/people/minion/
-permalink:
+permalink: /events/5th-pint-workshop/
+subtitle: Breif overview
 page_type: event_page
 ---
 
 The Fifth Workshop on Parallel-in-time Integration Workshop will be
 held at the [Banff International Research Station (BIRS)][BIRS] from
-November 27 to December 2, 2016.
-
-BIRS is located on the campus of the [Banff Centre][BANFFCENTRE] in
-the mountain town of [Banff][Banff], just inside the Canadian Rockies.
-BIRS is a relaxed and picturesque location for focused research and
-collaboration.
+November 27 to December 2, 2016.  BIRS is located on the campus of the
+[Banff Centre][BANFFCENTRE] in the mountain town of [Banff][Banff],
+just inside the Canadian Rockies.  BIRS is a relaxed and picturesque
+location for focused research and collaboration.
 
 This workshop is the fifth *Parallel-in-time Integration* workshop,
 and will build upon the success of the preceding four workshops:
@@ -45,9 +44,17 @@ their expertise for their mutual benefit.  Participants in the
 workshop will include domain experts in time-parallel, multigrid, and
 domain decomposition methods.
 
-Please see the [PinT@BIRS 2016 website][PINT16BIRS] for more information.
+The workshop is organised by
+
+1. Matthew Emmett (Computer Modelling Group Ltd.)
+2. Martin Gander (Université de Genève)
+3. Ronald Haynes (Memorial University of Newfoundland)
+4. Rolf Krause (Università della Svizzera italiana)
+5. Michael Minion (Lawrence Berkeley National Laboratory / Stanford University)
+
+in conjunction with the [Parallel-in-Time Scientific Committee][PINTSC].
 
 [Banff]: https://www.banff.ca/
 [BIRS]: http://www.birs.ca/
-[PINT16BIRS]: http://www.birs.ca/events/2016/5-day-workshops/16w5030
 [BANFFCENTRE]: https://www.banffcentre.ca/
+[PINTSC]: http://www.parallelintime.org/events/2015/06/26/sc-election-result.html
