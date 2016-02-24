@@ -1,7 +1,8 @@
 ---
 layout: page_event
 title: 5th Workshop on Parallel-in-Time Integration
-date: 2014-06-16 00:00:00 +0000
+date: 2016-02-23 00:00:00 +0000
+updated: 2016-02-24 08:32:00 +0100
 event_location: Banff, Canada
 event_start: 2016-11-27 00:00
 event_end: 2016-12-02 00:00
@@ -25,42 +26,36 @@ page_type: event_subpage
 no_lead: true
 ---
 
-BIRS workshops are by invitation only.  If you would like to attend
-the workshop, please contact [Matthew
-Emmett](mailto:memmett@gmail.com).
+BIRS workshops are by invitation only.
+If you would like to attend the workshop, please contact [Matthew Emmett](mailto:memmett@gmail.com).
 
-Accommodation and meals are covered by BIRS (yes, room and board are
-*free of charge*!).  As such, **participants are expected to cover their
-own airfare and transportation costs**, including costs associated with
-getting from the [Calgary International Aiport (YYC)][YYC] to BIRS.
+Accommodation and meals are covered by BIRS (yes, room and board are *free of charge*!).
+As such, **participants are expected to cover their own airfare and transportation costs**, including costs associated with getting from the [Calgary International Aiport (YYC)][YYC] to BIRS.
 
-We encourage all invited participants to submit an abstract for review
-by the scientific by the [Parallel-in-Time Scientific
-Committee][PINTSC]. Unfortunately, due to scheduling constraints, it
-may not be possible for all participants to give a talk.
+We encourage all invited participants to submit an abstract for review by the scientific by the [Parallel-in-Time Scientific Committee][PINTSC].
+Unfortunately, due to scheduling constraints, it may not be possible for all participants to give a talk.
 
-**The first round of abstracts are due by March 19 2016.** Abstracts
-can be submitted online through [the abstract submission
-form][ABSTRACTS] or by emailing them to [Matthew
-Emmett](mailto:memmett@gmail.com).
+**The first round of abstracts are due by March 19 2016.**
+Abstracts can be submitted online through [the abstract submission form][ABSTRACTS] or by emailing them to [Matthew Emmett](mailto:memmett@gmail.com).
 
 ## Proceedings
 
-Participants with accepted abstracts will be invited to publish their
-contributions, in the format of a short paper (maximum of 20 pages) in
-the proceedings of the workshop, which will be published as a special
-issue of **Computing and Visualization in Science** (Springer).
+Participants with accepted abstracts will be invited to publish their contributions, in the format of a short paper (maximum of 20 pages) in the proceedings of the workshop, which will be published as a special issue of **Computing and Visualization in Science** (Springer).
 
 ## Funding
 
-The organisers and scientific committee would like to thank
-[BIRS][BIRS] for graciously hosting the workshop and [AARMS][AARMS]
-for further support
+The organisers and scientific committee would like to thank [BIRS][BIRS] for graciously hosting the workshop and [AARMS][AARMS] for further support
 
-<center markdown="0">
-<a href="http://www.birs.ca/" style="text-decoration:none;"><img width="100px" src="http://www.birs.ca/~nassif/image/birs_logo.jpg"/></a>&nbsp;&nbsp;
-<a href="https://aarms.math.ca/" style="text-decoration:none;"><img width="100px" src="https://aarms.math.ca/wp-content/themes/stargazer-child/aarmslogo.png"/></a>
-</center>
+{% raw %}
+<div class="row">
+  <a class="col-xs-4 col-xs-offset-2 col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-4" href="http://www.birs.ca/" target="_blank">
+    <img class="img-responsive center-block" alt="Logo of BIRS" src="http://www.birs.ca/~nassif/image/birs_logo.jpg">
+  </a>
+  <a class="col-xs-4 col-sm-3 col-md-2" href="https://aarms.math.ca/" target="_blank">
+    <img class="img-responsive center-block" alt="Logo of AARMS" src="https://aarms.math.ca/wp-content/themes/stargazer-child/aarmslogo.png">
+  </a>
+</div>
+{% endraw %}
 
 [BIRS]: http://www.birs.ca/
 [PINT16BIRS]: http://www.birs.ca/events/2016/5-day-workshops/16w5030
