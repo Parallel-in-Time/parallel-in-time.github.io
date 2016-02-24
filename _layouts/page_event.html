@@ -9,16 +9,18 @@ layout: default
   </div>
   <article class="post-content">
     <div class="row">
-      <div class="col-lg-7 col-sm-12 content" id="main-content">
+      <div class="{% if page.page_type == 'event_page' %}col-lg-7 col-sm-12{% endif %} content" id="main-content">
         {% include asides/event_subnav.html %}
         {% if page.subtitle %}
           <h2>{{ page.subtitle }}</h2>
         {% endif %}
         {{ content }}
       </div>
+      {% if page.page_type == 'event_page' %}
       <aside class="col-lg-5 col-sm-12 collapse in" id="meta-aside">
         {% include asides/event_meta.html %}
       </aside>
+      {% endif %}
     </div>
   </article>
   {% if page.footer %}

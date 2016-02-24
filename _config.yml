@@ -69,8 +69,6 @@ collections:
     output: true
   codes:
     output: true
-  pint2016:
-    output: true
 
 scholar:
   bibtex_filters:
