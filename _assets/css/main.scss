@@ -36,6 +36,34 @@ html {
       }
     }
 
+    aside {
+      #hide-meta-aside {
+        border: 0 !important;
+
+        i {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    #subnav #show-meta-aside-wrapper {
+      @include pull-right();
+      text-align: right;
+
+      &:focus,
+      &:hover,
+      a {
+        border: 0 !important;
+        background: none;
+      }
+
+      a {
+        i {
+          vertical-align: middle;
+        }
+      }
+    }
+
     .event-meta {
       .label {
         margin: 0.25em;
