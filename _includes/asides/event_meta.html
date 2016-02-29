@@ -1,12 +1,19 @@
 <section class="event-meta panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Workshop Profile</h3>
+    <h3 class="panel-title">
+      Workshop Profile
+      <span class="pull-right">
+        <a id="hide-meta-aside" role="button" title="Hide Profile" data-toggle="tooltip">
+          <i class="fa fa-fw fa-minus"></i>
+        </a>
+      </span>
+    </h3>
   </div>
   <div class="panel-body">
     {% if page.logo %}
       <div class="row">
         <div class="col-md-12 logo">
-          <img src="{{ root_url }}/images/{{ page.logo }}" alt="{{ page.title }} Logo" />
+          {% img '{{ page.logo }}' alt:"{{ page.title }} Logo" %}
         </div>
       </div>
     {% endif %}
@@ -14,7 +21,15 @@
       <div class="row">
         <label class="col-md-4 control-label">Homepage</label>
         <div class="col-md-8">
-          <a href="{{ page.event_url }}">{% if page.event_short_url %}{{ page.event_short_url }}{% else %}{{ page.event_url | trim_url }}{% endif %}</a>
+          <a href="{{ page.event_url }}" target="_blank">{% if page.event_short_url %}{{ page.event_short_url }}{% else %}{{ page.event_url | trim_url }}{% endif %}</a>
+          {% if page.wayback_url %}
+            <span class="pull-right">
+              <a href="{{ page.wayback_url }}" target="_blank"
+                 title="Event web site in Archive.org Wayback machine">
+                <i class="fa fa-history fa-fw"></i>
+              </a>
+            </span>
+          {% endif %}
         </div>
       </div>
     {% endif %}

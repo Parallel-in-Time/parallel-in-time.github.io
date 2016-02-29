@@ -2,18 +2,23 @@
 layout: default
 ---
 <div class="post post-event">
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    {% if page.subtitle %}
-      <h2>{{ page.subtitle }}</h2>
-    {% endif %}
-  </header>
-  <article class="post-content">
+  <div class="row">
+    <header class="col-sm-12 post-header">
+      <h1>{{ page.title }}</h1>
+    </header>
+  </div>
+  <article class="post-content"
+           data-with-lead="{% if page.no_lead %}false{% else %}true{% endif %}"
+           data-page-type="{{ page.page_type }}">
     <div class="row">
-      <div class="col-md-8 content">
+      <div class="col-lg-7 col-sm-12 content" id="main-content">
+        {% include asides/event_subnav.html %}
+        {% if page.subtitle %}
+          <h2>{{ page.subtitle }}</h2>
+        {% endif %}
         {{ content }}
       </div>
-      <aside class="col-md-4">
+      <aside class="col-lg-5 col-sm-12 collapse in" id="meta-aside">
         {% include asides/event_meta.html %}
       </aside>
     </div>

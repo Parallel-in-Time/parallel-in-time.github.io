@@ -1,11 +1,10 @@
-# Created by http://www.gitignore.io
+### Travis ###
+travis_deploy_rsa
 
 ### Jekyll ###
 _site/
-
-
-### Octopress ###
-.deploy/
+.asset-cache/
+.jekyll-metadata
 
 
 ### Ruby ###
@@ -34,10 +33,11 @@ build/
 ## Environment normalisation:
 /.bundle/
 /lib/bundler/man/
+/vendor/
 
 # for a library or gem, you might want to ignore these files since the code is
 # intended to run in multiple environments; otherwise, check them in:
-Gemfile.lock
+# Gemfile.lock
 # .ruby-version
 # .ruby-gemset
 
@@ -75,9 +75,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
-### Sass ###
-.sass-cache
 
 
 ### IDEs ###

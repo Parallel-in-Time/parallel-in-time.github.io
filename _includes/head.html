@@ -6,12 +6,6 @@
   <meta name="description" content="{{ site.description }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/octicons/octicons.min.css">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  {% css main %}
+  {% js vendor/jquery-1.12.0 %}
 </head>

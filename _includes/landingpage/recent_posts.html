@@ -1,5 +1,5 @@
 <section>
-  <a type="button" class="btn btn-default btn-sm pull-right" href="{{ site.subscribe_rss }}" role="button" title="subscribe via RSS">
+  <a type="button" class="btn btn-default btn-sm pull-right" href="{{ site.baseurl }}/feed.xml" role="button" title="subscribe via RSS">
     <i class="fa fa-rss"></i>
     <span class="hidden-xs">RSS</span>
   </a>
@@ -8,7 +8,7 @@
   </h3>
   {{ site.post }}
   <ul class="list-group">
-    {% for post in site.posts limit: site.recent_posts %}
+    {% for post in site.posts limit: 5 %}
       <li class="list-group-item">
         <span class="label label-default">{{ post.date | date_to_string }}</span>
         <a href="{{ post.url }}">{{ post.title | titlecase }}</a>

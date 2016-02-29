@@ -21,7 +21,9 @@ footer: false
         </h2>
       </div>
       <div class="panel-body">
-        {% if group.logo %}<img src="{{ root_url }}/images/{{ group.logo }}" class="groups-logo img-responsive pull-left" alt="{{ group.title }} Logo">{% endif %}
+        {% if group.logo %}
+          {% img '{{ group.logo }}' class:"groups-logo img-responsive pull-left" alt:"{{ group.title }} Logo" %}
+        {% endif %}
         {% if group.short_desc %}{{ group.short_desc }}{% endif %}
       </div>
     </div>
