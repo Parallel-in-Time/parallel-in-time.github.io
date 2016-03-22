@@ -164,6 +164,74 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          AlhubailEtAl2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseAlhubailEtAl2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseAlhubailEtAl2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalAlhubailEtAl2016Abstract"
+                    aria-expanded="false" aria-controls="modalAlhubailEtAl2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="AlhubailEtAl2016">M. Alhubail and Q. Wang, “The swept rule for breaking the latency barrier in time advancing PDEs,” <i>Journal of Computational Physics</i>, vol. 307, pp. 110–121, 2016 [Online]. Available at: <a href="http://dx.doi.org/10.1016/j.jcp.2015.11.026" target="_blank">http://dx.doi.org/10.1016/j.jcp.2015.11.026</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseAlhubailEtAl2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{AlhubailEtAl2016,
+  author = {Alhubail, Maitham and Wang, Qiqi},
+  doi = {10.1016/j.jcp.2015.11.026},
+  journal = {Journal of Computational Physics},
+  pages = {110 - 121},
+  title = {The swept rule for breaking the latency barrier in time advancing {PDEs}},
+  url = {http://dx.doi.org/10.1016/j.jcp.2015.11.026},
+  volume = {307},
+  year = {2016}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalAlhubailEtAl2016Abstract" tabindex="-1" role="dialog" aria-labelledby="modalAlhubailEtAl2016AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalAlhubailEtAl2016AbstractTitle">
+            Abstract for BibTeX entry <code>AlhubailEtAl2016</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          This article investigates the swept rule of space-time domain decomposition, an idea to break the latency barrier via communicating less often when explicitly solving time-dependent PDEs. The swept rule decomposes space and time among computing nodes in ways that exploit the domains of influence and the domain of dependency, making it possible to communicate once per many timesteps without redundant computation. The article presents simple theoretical analysis to the performance of the swept rule which then was shown to be accurate by conducting numerical experiments.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           Beck2016
         </div>
       </div>
@@ -177,7 +245,7 @@
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalBeck2016Abstract"
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalBeck2016Abstract"
                     aria-expanded="false" aria-controls="modalBeck2016Abstract">
               Abstract
             </button>
@@ -200,6 +268,460 @@
   school = {Ruprecht-Karls-Universit\"{a}t Heidelberg},
   url = {http://archiv.ub.uni-heidelberg.de/volltextserver/20092/1/TBeck_Phd_a.pdf},
   year = {2016}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalBeck2016Abstract" tabindex="-1" role="dialog" aria-labelledby="modalBeck2016AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalBeck2016AbstractTitle">
+            Abstract for BibTeX entry <code>Beck2016</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          This work investigates the potential of an in-time parallelization of atmospheric chemical kinetics. Its numerical calculation is one time-consuming step within the numerical prediction of the air quality. The widely used parallelization strategies only allow a limited potential level of parallelism. A higher level of parallelism within the codes will be necessary to enable benefits from future exa-scale computing architectures. In air quality prediction codes, chemical kinetics is typically considered to react in isolated boxes over short splitting intervals. This allows their trivial parallelization in space, which however is limited by the number of grid entities. This work pursues a parallelization beyond this trivial potential and investigates a parallelization across time using the so called “parareal algorithm”. The latter is an iterative prediction-correction scheme, whose efficiency strongly depends on the choice of the predictor. For that purpose, different options are being investigate and compared: Time-stepping schemes with fixed step size, adaptive time-stepping schemes and repro-models, functional representations, that map a given state to a later state in time. Only the choice of repromodels leads to a speed-up through parallelism, compared to the sequential reference for the scenarios considered here.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          BoltenEtAl2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseBoltenEtAl2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseBoltenEtAl2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalBoltenEtAl2016Abstract"
+                    aria-expanded="false" aria-controls="modalBoltenEtAl2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="BoltenEtAl2016">M. Bolten, D. Moser, and R. Speck, “A multigrid perspective on the parallel full approximation scheme in space and time,” arXiv:1603.03586 [math.NA], 2016 [Online]. Available at: <a href="http://arxiv.org/abs/1603.03586" target="_blank">http://arxiv.org/abs/1603.03586</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseBoltenEtAl2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{BoltenEtAl2016,
+  author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
+  howpublished = {arXiv:1603.03586 [math.NA]},
+  title = {A multigrid perspective on the parallel full approximation scheme in space and time},
+  url = {http://arxiv.org/abs/1603.03586},
+  year = {2016}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalBoltenEtAl2016Abstract" tabindex="-1" role="dialog" aria-labelledby="modalBoltenEtAl2016AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalBoltenEtAl2016AbstractTitle">
+            Abstract for BibTeX entry <code>BoltenEtAl2016</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          For the numerical solution of time-dependent partial differential equations, time-parallel methods have recently shown to provide a promising way to extend prevailing strong-scaling limits of numerical codes. One of the most complex methods in this field is the "Parallel Full Approximation Scheme in Space and Time" (PFASST). PFASST already shows promising results for many use cases and many more is work in progress. However, a solid and reliable mathematical foundation is still missing. We show that under certain assumptions the PFASST algorithm can be conveniently and rigorously described as a multigrid-in-time method. Following this equivalence, first steps towards a comprehensive analysis of PFASST using block-wise local Fourier analysis are taken. The theoretical results are applied to examples of diffusive and advective type.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          DeVuyst2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseDeVuyst2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseDeVuyst2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalDeVuyst2016Abstract"
+                    aria-expanded="false" aria-controls="modalDeVuyst2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="DeVuyst2016">F. De Vuyst, “Efficient solvers for time-dependent problems: a review of IMEX, LATIN, PARAEXP and PARAREAL algorithms for heat-type problems with potential use of approximate exponential integrators and reduced-order models,” <i>Advanced Modeling and Simulation in Engineering Sciences</i>, pp. 3–8, 2016 [Online]. Available at: <a href="http://dx.doi.org/10.1186/s40323-016-0063-y" target="_blank">http://dx.doi.org/10.1186/s40323-016-0063-y</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseDeVuyst2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{DeVuyst2016,
+  author = {De Vuyst, Florian},
+  title = {Efficient solvers for time-dependent problems: a review of {IMEX}, {LATIN}, {PARAEXP} and {PARAREAL} algorithms for heat-type problems with potential use of approximate exponential integrators and reduced-order models},
+  journal = {Advanced Modeling and Simulation in Engineering Sciences},
+  pages = {3--8},
+  url = {http://dx.doi.org/10.1186/s40323-016-0063-y},
+  year = {2016}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          FalgoutEtAl2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseFalgoutEtAl2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseFalgoutEtAl2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalFalgoutEtAl2016Abstract"
+                    aria-expanded="false" aria-controls="modalFalgoutEtAl2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="FalgoutEtAl2016">R. D. Falgout, T. A. Manteuffel, B. Southworth, and J. B. Schroder, <i>Parallel-In-Time For Moving Meshes</i>. 2016 [Online]. Available at: <a href="http://www.osti.gov/scitech/servlets/purl/1239230" target="_blank">http://www.osti.gov/scitech/servlets/purl/1239230</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseFalgoutEtAl2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@book{FalgoutEtAl2016,
+  author = {Falgout, R. D. and Manteuffel, T. A. and Southworth, B. and Schroder, J. B.},
+  doi = {10.2172/1239230},
+  title = {Parallel-In-Time For Moving Meshes},
+  url = {http://www.osti.gov/scitech/servlets/purl/1239230},
+  year = {2016}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalFalgoutEtAl2016Abstract" tabindex="-1" role="dialog" aria-labelledby="modalFalgoutEtAl2016AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalFalgoutEtAl2016AbstractTitle">
+            Abstract for BibTeX entry <code>FalgoutEtAl2016</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          With steadily growing computational resources available, scientists must develop effective ways to utilize the increased resources. High performance, highly parallel software has become a standard. However until recent years parallelism has focused primarily on the spatial domain. When solving a space-time partial differential equation (PDE), this leads to a sequential bottleneck in the temporal dimension, particularly when taking a large number of time steps. The XBraid parallel-in-time library was developed as a practical way to add temporal parallelism to existing sequential codes with only minor modi cations. In this work, a rezoning-type moving mesh is applied to a diffusion problem and formulated in a parallel-in-time framework. Tests and scaling studies are run using XBraid and demonstrate excellent results for the simple model problem considered herein.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          Lederman2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseLederman2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseLederman2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalLederman2016Abstract"
+                    aria-expanded="false" aria-controls="modalLederman2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="Lederman2016">C. Lederman, R. Martin, and J.-L. Cambier, “Time-parallel solutions to differential equations via functional optimization,” <i>Computational and Applied Mathematics</i>, pp. 1–25, 2016 [Online]. Available at: <a href="http://dx.doi.org/10.1007/s40314-016-0319-7" target="_blank">http://dx.doi.org/10.1007/s40314-016-0319-7</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseLederman2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{Lederman2016,
+  author = {Lederman, C. and Martin, R. and Cambier, J.-L.},
+  title = {Time-parallel solutions to differential equations via functional optimization},
+  journal = {Computational and Applied Mathematics},
+  year = {2016},
+  pages = {1--25},
+  doi = {10.1007/s40314-016-0319-7},
+  url = {http://dx.doi.org/10.1007/s40314-016-0319-7}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalLederman2016Abstract" tabindex="-1" role="dialog" aria-labelledby="modalLederman2016AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalLederman2016AbstractTitle">
+            Abstract for BibTeX entry <code>Lederman2016</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          We describe an approach to solving a generic time-dependent differential equation (DE) that recasts the problem as a functional optimization one. The techniques employed to solve for the functional minimum, which we relate to the Sobolev Gradient method, allow for large-scale parallelization in time, and therefore potential faster “wall-clock” time computing on machines with significant parallel computing capacity. We are able to come up with numerous different discretizations and approximations for our optimization-derived equations, each of which either puts an existing approach, the Parareal method, in an optimization context, or provides a new time-parallel (TP) scheme with potentially faster convergence to the DE solution. We describe how the approach is particularly effective for solving multiscale DEs and present TP schemes that incorporate two different solution scales. Sample results are provided for three differential equations, solved with TP schemes, and we discuss how the choice of TP scheme can have an orders of magnitude effect on the accuracy or convergence rate.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          NielsenHesthaven2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseNielsenHesthaven2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseNielsenHesthaven2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalNielsenHesthaven2016Abstract"
+                    aria-expanded="false" aria-controls="modalNielsenHesthaven2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="NielsenHesthaven2016">A. S. Nielsen and J. S. Hesthaven, “Fault Tolerance in the Parareal Method,” EPFL-CONF-216982, 2016 [Online]. Available at: <a href="http://infoscience.epfl.ch/record/216982" target="_blank">http://infoscience.epfl.ch/record/216982</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseNielsenHesthaven2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{NielsenHesthaven2016,
+  author = {Nielsen, Allan Svejstrup and Hesthaven, Jan S.},
+  title = {Fault Tolerance in the Parareal Method},
+  year = {2016},
+  url = {http://infoscience.epfl.ch/record/216982},
+  howpublished = {EPFL-CONF-216982}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalNielsenHesthaven2016Abstract" tabindex="-1" role="dialog" aria-labelledby="modalNielsenHesthaven2016AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalNielsenHesthaven2016AbstractTitle">
+            Abstract for BibTeX entry <code>NielsenHesthaven2016</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          Parallel-in-time integration is an often advocated approach for extracting parallelism in the solution of PDEs beyond what is possible using spacial domain decomposition tech- niques. Due to the comparatively low parallel efficiency of parallel-in-time integration techniques, they are primar- ily of interest as an extension for classical approaches at parallelism. As such, potential applications are expected to scale across several hundreds, or possibly thousands of nodes, making algorithmic resilience towards hardware in- duced errors highly relevant. In this work we develop a scheduling scheme for the parareal algorithm that is resilient to node-loss. The fault-tolerant scheme is based on a popu- lar approach introduced by E. Aubanel in [1], modified with a set of MPI interface extensions for implementing recov- ery strategies available in the ULFM framework. In ad- dition, we demonstrate how the parareal algorithm may be made resilient towards Silent-Data-Corruption (SDC) errors by viewing it as a point-iterative method, locally monitor- ing the residual between consecutive iterations so to discard potentially corrupt iterations.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          RuprechtEtAl2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseRuprechtEtAl2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseRuprechtEtAl2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalRuprechtEtAl2016Abstract"
+                    aria-expanded="false" aria-controls="modalRuprechtEtAl2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="RuprechtEtAl2016">D. Ruprecht, R. Speck, and R. Krause, “Parareal for Diffusion Problems with Space- and Time-Dependent Coefficients,” in <i>Domain Decomposition Methods in Science and Engineering XXII</i>, 2016, pp. 371–378 [Online]. Available at: <a href="http://dx.doi.org/10.1007/978-3-319-18827-0_37" target="_blank">http://dx.doi.org/10.1007/978-3-319-18827-0_37</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseRuprechtEtAl2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@inproceedings{RuprechtEtAl2016,
+  author = {Ruprecht, Daniel and Speck, Robert and Krause, Rolf},
+  booktitle = {Domain Decomposition Methods in Science and Engineering {XXII}},
+  doi = {10.1007/978-3-319-18827-0_37},
+  editor = {Dickopf, Thomas and Gander, J. Martin and Halpern, Laurence and Krause, Rolf and Pavarino, F. Luca},
+  pages = {371--378},
+  publisher = {Springer International Publishing},
+  url = {http://dx.doi.org/10.1007/978-3-319-18827-0_37},
+  title = {Parareal for Diffusion Problems with Space- and Time-Dependent Coefficients},
+  year = {2016}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalRuprechtEtAl2016Abstract" tabindex="-1" role="dialog" aria-labelledby="modalRuprechtEtAl2016AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalRuprechtEtAl2016AbstractTitle">
+            Abstract for BibTeX entry <code>RuprechtEtAl2016</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          For the time-parallel Parareal method, there exists both numerical and analytical proof that it converges very well
+for diffusive problems like the heat equation. Many applications, however, do not lead to simple homogeneous
+diffusive problems but feature strongly inhomogeneous and possibly anisotropic coefficients. In the talk, we will
+present results from a numerical study of how non-constant coefficients in a diffusion problem influence the convergence
+behaviour of Parareal. Further, the effect of different parameters like e.g. temporal and spatial resolution
+and geometry is explored.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          Wu2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseWu2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseWu2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalWu2016Abstract"
+                    aria-expanded="false" aria-controls="modalWu2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="Wu2016">S.-L. Wu, “A second-order parareal algorithm for fractional PDEs,” <i>Journal of Computational Physics</i>, vol. 307, pp. 280–290, 2016 [Online]. Available at: <a href="http://dx.doi.org/10.1016/j.jcp.2015.12.007" target="_blank">http://dx.doi.org/10.1016/j.jcp.2015.12.007</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseWu2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{Wu2016,
+  title = {A second-order parareal algorithm for fractional {PDEs}},
+  journal = {Journal of Computational Physics},
+  volume = {307},
+  pages = {280 -- 290},
+  year = {2016},
+  url = {http://dx.doi.org/10.1016/j.jcp.2015.12.007},
+  doi = {10.1016/j.jcp.2015.12.007},
+  author = {Wu, Shu-Lin}
 }
 </pre>
       </div>
@@ -1109,60 +1631,6 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          RuprechtEtAl2015_DDM
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseRuprechtEtAl2015_DDMBibtex"
-                    aria-expanded="false" aria-controls="collapseRuprechtEtAl2015_DDMBibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalRuprechtEtAl2015_DDMAbstract"
-                    aria-expanded="false" aria-controls="modalRuprechtEtAl2015_DDMAbstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="RuprechtEtAl2015_DDM">D. Ruprecht, R. Speck, and R. Krause, “Parareal for diffusion problems with space- and time-dependent coefficients,” in <i>Domain Decomposition Methods in Science and Engineering XXII</i>, 2015, vol. 104, pp. 3–10 [Online]. Available at: <a href="http://dx.doi.org/10.1007/978-3-319-18827-0_1" target="_blank">http://dx.doi.org/10.1007/978-3-319-18827-0_1</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseRuprechtEtAl2015_DDMBibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@inproceedings{RuprechtEtAl2015_DDM,
-  author = {Ruprecht, Daniel and Speck, Robert and Krause, Rolf},
-  booktitle = {Domain Decomposition Methods in Science and Engineering {XXII}},
-  editors = {Dickopf, Th. and Gander, M. J. and Halpern, L. and Krause, R. and Pavarino, L. F.},
-  pages = {3--10},
-  publisher = {{Springer International Publishing Switzerland}},
-  series = {{Lecture Notes in Computational Science and Engineering}},
-  title = {Parareal for diffusion problems with space- and time-dependent coefficients},
-  url = {http://dx.doi.org/10.1007/978-3-319-18827-0_1},
-  volume = {104},
-  year = {2015}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
           Ruprecht2015
         </div>
       </div>
@@ -1561,60 +2029,6 @@
 		convergence after a fault.
 		The efficiency of different strategies is assessed for examples of diffusive and advective type.
         </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          SpeckEtAl2015_DDM
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSpeckEtAl2015_DDMBibtex"
-                    aria-expanded="false" aria-controls="collapseSpeckEtAl2015_DDMBibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSpeckEtAl2015_DDMAbstract"
-                    aria-expanded="false" aria-controls="modalSpeckEtAl2015_DDMAbstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="SpeckEtAl2015_DDM">R. Speck, D. Ruprecht, M. Minion, M. Emmett, and R. Krause, “Inexact spectral deferred corrections,” in <i>Domain Decomposition Methods in Science and Engineering XXII</i>, 2015, vol. 104, pp. 127–133 [Online]. Available at: <a href="http://dx.doi.org/10.1007/978-3-319-18827-0_66" target="_blank">http://dx.doi.org/10.1007/978-3-319-18827-0_66</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseSpeckEtAl2015_DDMBibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@inproceedings{SpeckEtAl2015_DDM,
-  author = {Speck, Robert and Ruprecht, Daniel and Minion, Michael and Emmett, Matthew and Krause, Rolf},
-  booktitle = {{Domain Decomposition Methods in Science and Engineering {XXII}}},
-  editors = {Dickopf, Th. and Gander, M. J. and Halpern, L. and Krause, R. and Pavarino, L. F.},
-  pages = {127--133},
-  publisher = {{Springer International Publishing Switzerland}},
-  series = {{Lecture Notes in Computational Science and Engineering}},
-  title = {{Inexact spectral deferred corrections}},
-  url = {http://dx.doi.org/10.1007/978-3-319-18827-0_66},
-  volume = {104},
-  year = {2015}
-}
-</pre>
       </div>
     </div>
   </div>
