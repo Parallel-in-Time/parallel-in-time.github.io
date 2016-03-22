@@ -2493,15 +2493,15 @@
 %
 
 @article{AlhubailEtAl2016,
-        title = {The swept rule for breaking the latency barrier in time advancing {PDEs}},
-        journal = {Journal of Computational Physics},
-        volume = {307},
-        pages = {110 - 121},
-        year = {2016},
-        url = {http://dx.doi.org/10.1016/j.jcp.2015.11.026},
-        doi = {10.1016/j.jcp.2015.11.026},
+        abstract = {{This article investigates the swept rule of space-time domain decomposition, an idea to break the latency barrier via communicating less often when explicitly solving time-dependent PDEs. The swept rule decomposes space and time among computing nodes in ways that exploit the domains of influence and the domain of dependency, making it possible to communicate once per many timesteps without redundant computation. The article presents simple theoretical analysis to the performance of the swept rule which then was shown to be accurate by conducting numerical experiments.}},
         author = {Maitham Alhubail and Qiqi Wang},
-        abstract = {{This article investigates the swept rule of space-time domain decomposition, an idea to break the latency barrier via communicating less often when explicitly solving time-dependent PDEs. The swept rule decomposes space and time among computing nodes in ways that exploit the domains of influence and the domain of dependency, making it possible to communicate once per many timesteps without redundant computation. The article presents simple theoretical analysis to the performance of the swept rule which then was shown to be accurate by conducting numerical experiments.}}
+        doi = {10.1016/j.jcp.2015.11.026},
+        journal = {Journal of Computational Physics},
+        pages = {110 - 121},
+        title = {The swept rule for breaking the latency barrier in time advancing {PDEs}},
+        url = {http://dx.doi.org/10.1016/j.jcp.2015.11.026},
+        volume = {307},
+        year = {2016},
 }
 
 @phdthesis{Beck2016,
@@ -2513,24 +2513,33 @@
 }
 
 @unpublished{BoltenEtAl2016,
+	abstract = {{For the numerical solution of time-dependent partial differential equations, time-parallel methods have recently shown to provide a promising way to extend prevailing strong-scaling limits of numerical codes. One of the most complex methods in this field is the "Parallel Full Approximation Scheme in Space and Time" (PFASST). PFASST already shows promising results for many use cases and many more is work in progress. However, a solid and reliable mathematical foundation is still missing. We show that under certain assumptions the PFASST algorithm can be conveniently and rigorously described as a multigrid-in-time method. Following this equivalence, first steps towards a comprehensive analysis of PFASST using block-wise local Fourier analysis are taken. The theoretical results are applied to examples of diffusive and advective type.}},
 	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
+	howpublished = {arXiv:1603.03586 [math.NA]},
 	title = {A multigrid perspective on the parallel full approximation scheme in space and time},
 	url = {http://arxiv.org/abs/1603.03586},
-	howpublished = {arXiv:1603.03586 [math.NA]},
 	year = {2016},
-	abstract = {{For the numerical solution of time-dependent partial differential equations, time-parallel methods have recently shown to provide a promising way to extend prevailing strong-scaling limits of numerical codes. One of the most complex methods in this field is the "Parallel Full Approximation Scheme in Space and Time" (PFASST). PFASST already shows promising results for many use cases and many more is work in progress. However, a solid and reliable mathematical foundation is still missing. We show that under certain assumptions the PFASST algorithm can be conveniently and rigorously described as a multigrid-in-time method. Following this equivalence, first steps towards a comprehensive analysis of PFASST using block-wise local Fourier analysis are taken. The theoretical results are applied to examples of diffusive and advective type.}}
+}
+
+@article{DeVuyst2016,
+	author = {De Vuyst, Florian},
+	title = {Efficient solvers for time-dependent problems: a review of {IMEX}, {LATIN}, {PARAEXP} and {PARAREAL} algorithms for heat-type problems with potential use of approximate exponential integrators and reduced-order models},
+	journal = {Advanced Modeling and Simulation in Engineering Sciences},
+	pages = {3--8},
+	url = {http://dx.doi.org/10.1186/s40323-016-0063-y},
+	year = {2016}
 }
 
 @book{FalgoutEtAl2016, 
-	place={United States}, 
-	title={Parallel-In-Time For Moving Meshes}, 
-	url={http://www.osti.gov/scitech/servlets/purl/1239230}, 
-	DOI={10.2172/1239230}, 
-	abstract = {{With steadily growing computational resources available, scientists must develop e ective ways to utilize the increased resources. High performance, highly parallel software has be- come a standard. However until recent years parallelism has focused primarily on the spatial domain. When solving a space-time partial di erential equation (PDE), this leads to a sequential bottleneck in the temporal dimension, particularly when taking a large number of time steps. The XBraid parallel-in-time library was developed as a practical way to add temporal parallelism to existing se- quential codes with only minor modi cations. In this work, a rezoning-type moving mesh is applied to a di usion problem and formulated in a parallel-in-time framework. Tests and scaling studies are run using XBraid and demonstrate excellent results for the simple model problem considered herein.}}, 		author = {Falgout, R. D. and Manteuffel, T. A. and Southworth, B. and Schroder, J. B.}, 
+	abstract = {{With steadily growing computational resources available, scientists must develop effective ways to utilize the increased resources. High performance, highly parallel software has become a standard. However until recent years parallelism has focused primarily on the spatial domain. When solving a space-time partial differential equation (PDE), this leads to a sequential bottleneck in the temporal dimension, particularly when taking a large number of time steps. The XBraid parallel-in-time library was developed as a practical way to add temporal parallelism to existing sequential codes with only minor modi cations. In this work, a rezoning-type moving mesh is applied to a diffusion problem and formulated in a parallel-in-time framework. Tests and scaling studies are run using XBraid and demonstrate excellent results for the simple model problem considered herein.}}, 		
+	author = {Falgout, R. D. and Manteuffel, T. A. and Southworth, B. and Schroder, J. B.}, 
+	doi = {10.2172/1239230}, 
+	title = {Parallel-In-Time For Moving Meshes}, 
+	url = {http://www.osti.gov/scitech/servlets/purl/1239230}, 
 	year={2016},
 }
 
-@Article{Lederman2016,
+@article{Lederman2016,
         author = {Lederman, C. and Martin, R. and Cambier, J.-L.},
         title = {Time-parallel solutions to differential equations via functional optimization},
         journal = {Computational and Applied Mathematics},
@@ -2550,22 +2559,22 @@
 	abstract = {{Parallel-in-time integration is an often advocated approach for extracting parallelism in the solution of PDEs beyond what is possible using spacial domain decomposition tech- niques. Due to the comparatively low parallel efficiency of parallel-in-time integration techniques, they are primar- ily of interest as an extension for classical approaches at parallelism. As such, potential applications are expected to scale across several hundreds, or possibly thousands of nodes, making algorithmic resilience towards hardware in- duced errors highly relevant. In this work we develop a scheduling scheme for the parareal algorithm that is resilient to node-loss. The fault-tolerant scheme is based on a popu- lar approach introduced by E. Aubanel in [1], modified with a set of MPI interface extensions for implementing recov- ery strategies available in the ULFM framework. In ad- dition, we demonstrate how the parareal algorithm may be made resilient towards Silent-Data-Corruption (SDC) errors by viewing it as a point-iterative method, locally monitor- ing the residual between consecutive iterations so to discard potentially corrupt iterations.}}
 }
 
-@Inbook{RuprechtEtAl2016,
+@Inproceedings{RuprechtEtAl2016,
 	abstract = {{For the time-parallel Parareal method, there exists both numerical and analytical proof that it converges very well
 for diffusive problems like the heat equation. Many applications, however, do not lead to simple homogeneous
 diffusive problems but feature strongly inhomogeneous and possibly anisotropic coefficients. In the talk, we will
 present results from a numerical study of how non-constant coefficients in a diffusion problem influence the convergence
 behaviour of Parareal. Further, the effect of different parameters like e.g. temporal and spatial resolution
 and geometry is explored.}},
-        author="Ruprecht, Daniel and Speck, Robert and Krause, Rolf",
-        editor="Dickopf, Thomas and Gander, J. Martin and Halpern, Laurence and Krause, Rolf and Pavarino, F. Luca",
-        chapter="Parareal for Diffusion Problems with Space- and Time-Dependent Coefficients",
-        title="Domain Decomposition Methods in Science and Engineering {XXII}",
-        year="2016",
-        publisher="Springer International Publishing",
-        pages="371--378",
-        doi="10.1007/978-3-319-18827-0_37",
-        url="http://dx.doi.org/10.1007/978-3-319-18827-0_37"
+        author = {Ruprecht, Daniel and Speck, Robert and Krause, Rolf},
+        booktitle = {Domain Decomposition Methods in Science and Engineering {XXII}},
+        doi = {10.1007/978-3-319-18827-0_37},
+        editor = {Dickopf, Thomas and Gander, J. Martin and Halpern, Laurence and Krause, Rolf and Pavarino, F. Luca},
+        pages = {371--378},
+        publisher = {Springer International Publishing},
+        url = {http://dx.doi.org/10.1007/978-3-319-18827-0_37},
+        title = {Parareal for Diffusion Problems with Space- and Time-Dependent Coefficients},
+        year = {2016},
 }
 
 @article{Wu2016,
