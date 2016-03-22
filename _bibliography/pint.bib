@@ -2505,6 +2505,7 @@
 }
 
 @phdthesis{Beck2016,
+	abstract = {{This work investigates the potential of an in-time parallelization of atmospheric chemical kinetics. Its numerical calculation is one time-consuming step within the numerical prediction of the air quality. The widely used parallelization strategies only allow a limited potential level of parallelism. A higher level of parallelism within the codes will be necessary to enable benefits from future exa-scale computing architectures. In air quality prediction codes, chemical kinetics is typically considered to react in isolated boxes over short splitting intervals. This allows their trivial parallelization in space, which however is limited by the number of grid entities. This work pursues a parallelization beyond this trivial potential and investigates a parallelization across time using the so called ``parareal algorithm''. The latter is an iterative prediction-correction scheme, whose efficiency strongly depends on the choice of the predictor. For that purpose, different options are being investigate and compared: Time-stepping schemes with fixed step size, adaptive time-stepping schemes and repro-models, functional representations, that map a given state to a later state in time. Only the choice of repromodels leads to a speed-up through parallelism, compared to the sequential reference for the scenarios considered here.}},
 	author = {Beck, Teresa},
 	title = {In-Time Parallelization Of Atmospheric Chemical Kinetics},
 	school = {Ruprecht-Karls-Universit\"{a}t Heidelberg},
