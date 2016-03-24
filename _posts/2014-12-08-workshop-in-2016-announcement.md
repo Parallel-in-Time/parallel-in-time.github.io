@@ -15,5 +15,5 @@ The workshop series on parallel-in-time integration will continue in 2016 and ta
 continent for the first time.
 In November 2016, the workshop will be hosted by the [Banff International Research Station](http://www.birs.ca/) in
 Canada.
-Please check out the entry at [parallelintime.org](/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html)
+Please check out the entry at [parallelintime.org](/events/5th-pint-workshop/)
 for more information.

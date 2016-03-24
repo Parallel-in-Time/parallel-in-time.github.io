@@ -10,7 +10,7 @@ categories:
 Successful 4th Workshop on Parallel-in-Time Integration in Dresden, Germany.
 
 <!--more-->
-The [4th PinT workshop](/events/past/2015/4th-workshop-on-parallel-in-time-integration.html) in
+The [4th PinT workshop](/events/4th-pint-workshop/) in
 Dresden turned out to be another great event in the _Parallel-in-time integration_ workshop series:
 With 40 participants from 9 different countries, this workshop again provided a lively forum for
 many interesting discussions around a great many different aspects of PinT.
@@ -23,5 +23,5 @@ Moreover, in order to support the continuation of the workshop series,
 committee will take place within four weeks after the workshop.
 
 Certainly, everybody is now looking forward to the
-[5th workshop](/events/upcoming/2016/5th-workshop-on-parallel-in-time-integration.html) in the
+[5th workshop](/events/5th-pint-workshop/) in the
 series in November 2016 in Canada.
