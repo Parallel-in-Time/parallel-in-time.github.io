@@ -40,7 +40,7 @@ by the scientific by the [Parallel-in-Time Scientific
 Committee][PINTSC].  Unfortunately, due to scheduling constraints, it
 may not be possible for all participants to give a talk.
 
-**The first round of abstracts are due by March 19 2016.** Abstracts
+**Abstracts are due by September 23 2016.** Abstracts
 can be submitted online through [the abstract submission
 form][ABSTRACTS] or by emailing them to [Matthew Emmett](mailto:memmett@gmail.com).
 
@@ -53,9 +53,13 @@ issue of **Computing and Visualization in Science** (Springer).
 
 ## Funding
 
+Limited travel funding is available for:
+1. Students from the EU; please see the [travel grants][JSCGRANTS] page.
+2. Students from Atlantic Canada; please contact [Matthew Emmett](mailto:memmett@gmail.com).
+
 The organisers and scientific committee would like to thank
 [BIRS][BIRS] for graciously hosting the workshop and [AARMS][AARMS]
-for further support
+and [JSC][JSC] for further support.
 
 {% raw %}
 <div class="row">
@@ -74,4 +78,6 @@ for further support
 [YYC]: http://www.yyc.com/
 [PINTSC]: http://www.parallelintime.org/events/2015/06/26/sc-election-result.html
 [AARMS]: https://aarms.math.ca/
+[JSC]: http://www.fz-juelich.de/ias/jsc
+[JSCGRANTS]: http://www.parallelintime.org/events/travel_grants.html
 [ABSTRACTS]: https://docs.google.com/forms/d/1wj7wnrhe6u4hVl2552oUrSBWb7vRkHUjZsAqBu135Qw/viewform
