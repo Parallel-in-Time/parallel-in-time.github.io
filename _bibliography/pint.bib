@@ -2199,7 +2199,7 @@
 	editors = {Carraro, T. and Geiger, M. and K\"orkel, S. and Rannacher, R.},
 	publisher = {Springer},
 	title = {{50 years of Time Parallel Time Integration}},
-	url = {{http://www.unige.ch/%7Egander/Preprints/50YearsTimeParallel.pdf}},
+	url = {http://dx.doi.org/10.1007/978-3-319-23321-5_3},
 	year = {2015},
 }
 
@@ -2503,6 +2503,19 @@
         volume = {307},
         year = {2016},
 }
+
+@article{Astorino2016,
+        abstract ={{In this work, we propose a new numerical procedure for the simulation of time-dependent problems based on the coupling between the finite element method (FEM) and the lattice Boltzmann method. The procedure exploits the Parareal paradigm to efficiently couple the two numerical methods, allowing independent grid size and time-step size. The motivations behind this approach are wide-ranging. In particular, one technique may be more efficient or physically more appropriate or less memory consuming than the other depending on the target of the simulation and/or on the sub-region of the computational domain. Furthermore, the coupling with FEM may circumvent some difficulties inherent to lattice Boltzmann discretization, for some domains with complex boundaries, or for some kind of boundary conditions. The theoretical and numerical framework is presented for the time-dependent heat equation in order to describe and validate numerically the methodology in a simple situation.}}, 
+        author = {Astorino, Matteo and Chouly, Franz and Quarteroni, Alfio}, 
+        journal = {Applied Mathematics Research eXpress},
+        title = {A Time-Parallel Framework for Coupling Finite Element and Lattice Boltzmann Methods},
+        url = {http://dx.doi.org/10.1093/amrx/abv009}, 
+        volume = {2016}, 
+        number = {1}, 
+        pages = {24-67},         
+        year = {2016},         
+}
+
 
 @phdthesis{Beck2016,
 	abstract = {{This work investigates the potential of an in-time parallelization of atmospheric chemical kinetics. Its numerical calculation is one time-consuming step within the numerical prediction of the air quality. The widely used parallelization strategies only allow a limited potential level of parallelism. A higher level of parallelism within the codes will be necessary to enable benefits from future exa-scale computing architectures. In air quality prediction codes, chemical kinetics is typically considered to react in isolated boxes over short splitting intervals. This allows their trivial parallelization in space, which however is limited by the number of grid entities. This work pursues a parallelization beyond this trivial potential and investigates a parallelization across time using the so called ``parareal algorithm''. The latter is an iterative prediction-correction scheme, whose efficiency strongly depends on the choice of the predictor. For that purpose, different options are being investigate and compared: Time-stepping schemes with fixed step size, adaptive time-stepping schemes and repro-models, functional representations, that map a given state to a later state in time. Only the choice of repromodels leads to a speed-up through parallelism, compared to the sequential reference for the scenarios considered here.}},
