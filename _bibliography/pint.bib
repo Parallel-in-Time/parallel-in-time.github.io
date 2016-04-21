@@ -1175,7 +1175,7 @@
 }
 
 @article{SamaddarEtAl2010,
-	author = {Samaddar, Debasmita and Newman, David E. and Sánchez, Raul S.},
+	author = {Samaddar, Debasmita and Newman, David E. and S\'{a}nchez, Raul S.},
 	issue = {18},
 	journal = {Journal of Computational Physics},
 	pages = {6558--6573},
@@ -2137,6 +2137,16 @@
 	year = {2015},
 }
 
+@inproceedings{CarracciuoloEtAl2015,  
+        abstract = {{We consider linear systems that arise from the discretization of evolutionary models. Typically, solution algorithms are based on a time-stepping approach, solving for one time step after the other. Parallelism is limited to the spatial dimension only. Because time is sequential in nature, the idea of simultaneously solving along time steps is not intuitive. One approach to achieve parallelism in time direction is MGRIT algorithm [7], based on multigrid reduction (MGR) techniques. Here we refer to this approach as MGR-1D. Other kind of approach is the space-time multigrid, where time is simply another dimension in the grid. Analougsly, we refer to this approach as MGR-4D. In this work, motivated by the need of maximizing the availability of new algorithms to climate science, we propose a new parallel approach that mixes both the MGR-1D idea and classical space multigrid methods. We refer to it as the MGR3D+1 approach. Moreover, we discuss their implementation in the high performance scientific library PETSc, as starting point to develope more efficient and scalable algorithms in ocean models.}}, 
+        author = {L. Carracciuolo and L. D'Amore and V. Mele},         
+        booktitle = {High Performance Computing Simulation (HPCS), 2015 International Conference on}, 
+        pages = {595-598},         
+        title = {Toward a fully parallel multigrid in time algorithm in PETSc environment: A case study in ocean models}, 
+        url = {http://dx.doi.org/10.1109/HPCSim.2015.7237098}, 
+        year = {2015}, 
+}
+
 @unpublished{FalgoutEtAl2015,
 	abstract = {{We consider the comparison of multigrid methods for parabolic partial differential equations that allow
 		space-time concurrency.
@@ -2326,18 +2336,10 @@
 }
 
 @unpublished{Ruprecht2015,
-	abstract = {{The paper presents a comparison between MPI and OpenMP implementations of the parallel-in-time
-		integration method Parareal.
-		A special-purpose, lightweight FORTRAN code is described, which serves as a benchmark.
-		To allow for a fair comparison, an OpenMP implementation of Parareal with pipelining is introduced, which relies
-		on manual control of locks for synchronisation.
-		Performance is compared in terms of runtime, speedup, memory footprint and energy-to-solution.
-		The pipelined shared memory implementation is found to be the most efficient, particularly with respect to
-		memory footprint.
-		Its higher implementation complexity, however, might make it difficult to use in legacy codes.}},
+	abstract = {{The paper introduces an OpenMP implementation of pipelined Parareal and compares it to a standard MPI-based implementation. Both versions yield essentially identical runtimes, but, depending on the compiler, the OpenMP variant consumes about 7\% less energy. However, its key advantage is a significantly smaller memory footprint. The higher implementation complexity, including manual control of locks, might make it difficult to use in legacy codes, though}},
 	author = {Ruprecht, Daniel},
 	howpublished = {arXiv:1509.06935 [cs.MS]},
-	title = {{Implementing Parareal - OpenMP or MPI?}},
+	title = {{A shared memory implementation of pipelined Parareal}},
 	url = {http://arxiv.org/abs/1509.06935},
 	year = {2015},
 }
