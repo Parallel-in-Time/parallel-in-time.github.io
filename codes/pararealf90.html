@@ -174,7 +174,7 @@ effect of different parallelisation strategies on runtime, memory footprint and 
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="Ruprecht2015">D. Ruprecht, “Implementing Parareal - OpenMP or MPI?,” arXiv:1509.06935 [cs.MS], 2015 [Online]. Available at: <a href="http://arxiv.org/abs/1509.06935" target="_blank">http://arxiv.org/abs/1509.06935</a></span>
+      <span id="Ruprecht2015">D. Ruprecht, “A shared memory implementation of pipelined Parareal,” arXiv:1509.06935 [cs.MS], 2015 [Online]. Available at: <a href="http://arxiv.org/abs/1509.06935" target="_blank">http://arxiv.org/abs/1509.06935</a></span>
     </div>
   </div>
   <div class="collapse" id="collapseRuprecht2015Bibtex">
@@ -183,7 +183,7 @@ effect of different parallelisation strategies on runtime, memory footprint and 
         <pre class="abstract">@unpublished{Ruprecht2015,
   author = {Ruprecht, Daniel},
   howpublished = {arXiv:1509.06935 [cs.MS]},
-  title = {{Implementing Parareal - OpenMP or MPI?}},
+  title = {{A shared memory implementation of pipelined Parareal}},
   url = {http://arxiv.org/abs/1509.06935},
   year = {2015}
 }
@@ -202,15 +202,7 @@ effect of different parallelisation strategies on runtime, memory footprint and 
           </h4>
         </div>
         <div class="modal-body">
-          The paper presents a comparison between MPI and OpenMP implementations of the parallel-in-time
-		integration method Parareal.
-		A special-purpose, lightweight FORTRAN code is described, which serves as a benchmark.
-		To allow for a fair comparison, an OpenMP implementation of Parareal with pipelining is introduced, which relies
-		on manual control of locks for synchronisation.
-		Performance is compared in terms of runtime, speedup, memory footprint and energy-to-solution.
-		The pipelined shared memory implementation is found to be the most efficient, particularly with respect to
-		memory footprint.
-		Its higher implementation complexity, however, might make it difficult to use in legacy codes.
+          The paper introduces an OpenMP implementation of pipelined Parareal and compares it to a standard MPI-based implementation. Both versions yield essentially identical runtimes, but, depending on the compiler, the OpenMP variant consumes about 7% less energy. However, its key advantage is a significantly smaller memory footprint. The higher implementation complexity, including manual control of locks, might make it difficult to use in legacy codes, though
         </div>
       </div>
     </div>
