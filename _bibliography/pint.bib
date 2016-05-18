@@ -2612,6 +2612,14 @@ and geometry is explored.}},
         year = {2016},
 }
 
+@unpublished{SchreiberEtAl2016,
+	abstract = {{AbstractThis paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory PDEs, whichis a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization inthis solver allows us to significantly exceed the computing resources used by parallelization-in-space methods andresults in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascaleperformance for weather prediction is that the strong scaling limit ? the parallel performance for a fixed problem sizewith an increasing number of processors ? saturates. A main avenue to circumvent this problem is to introduce newnumerical techniques that take advantage of time parallelism. In this paper we use a time-parallel approximation thatretains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the originalproblem into a large set of independent terms and (b) solving each of these terms independent of each other whichcan now be accomplished on a large number of HPC resources. Our results are conducted on up to 3586 cores forproblem sizes with a parallelization-in-space scalability limited already on a single node. We gain significant reductionsin the time-to-solution of 118.3 for spectral methods and 1503.0 for finite-difference methods with the parallelization-in-time approach. A developed and validated performance model gives the scalability limitations a-priory for this newapproach and allows us to extrapolate the performance method towards large-scale system. This work has the potentialto contribute as a basic building block of parallelization-in-time approaches, with possible major implications in appliedareas modelling oscillatory dominated problems.}},
+	author = {Schreiber, Martin and Peixoto, Pedro S. and Haut, Terry and Wingate, Beth},
+	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
+	url = {http://www.ime.usp.br/%7epedrosp/wp/wordpress/wp-content/uploads/2015/05/paper_2016_rexi_hpc.pdf},
+	year = {2016}
+}
+
 @article{Wu2016,
         title = {A second-order parareal algorithm for fractional {PDEs}},
         journal = {Journal of Computational Physics},
