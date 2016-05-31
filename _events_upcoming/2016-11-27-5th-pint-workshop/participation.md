@@ -40,7 +40,7 @@ by the scientific by the [Parallel-in-Time Scientific
 Committee][PINTSC].  Unfortunately, due to scheduling constraints, it
 may not be possible for all participants to give a talk.
 
-**Abstracts are due by September 23 2016.** Abstracts
+**Abstracts are due by June 30 2016.** Abstracts
 can be submitted online through [the abstract submission
 form][ABSTRACTS] or by emailing them to [Matthew Emmett](mailto:memmett@gmail.com).
 
