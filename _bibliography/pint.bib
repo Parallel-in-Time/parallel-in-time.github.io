@@ -2585,12 +2585,21 @@
         url = {http://dx.doi.org/10.1007/s40314-016-0319-7}
 }
 
-@unpublished{NielsenHesthaven2016,
-	author = {Nielsen, Allan Svejstrup and Hesthaven, Jan S.},
-	title = {Fault Tolerance in the Parareal Method},
-	year = {2016},
-	url = {http://infoscience.epfl.ch/record/216982},
-	howpublished = {EPFL-CONF-216982},
+@inproceedings{NielsenHesthaven2016,
+         author = {Nielsen, Allan S. and Hesthaven, Jan S.},
+         title = {Fault Tolerance in the Parareal Method},
+         booktitle = {Proceedings of the ACM Workshop on Fault-Tolerance for HPC at Extreme Scale},
+         series = {FTXS '16},
+         year = {2016},
+         isbn = {978-1-4503-4349-7},
+         location = {Kyoto, Japan},
+         pages = {1--8},
+         numpages = {8},
+         url = {http://dx.doi.org/10.1145/2909428.2909431},
+         doi = {10.1145/2909428.2909431},
+         acmid = {2909431},
+         publisher = {ACM},
+         address = {New York, NY, USA},
 	abstract = {{Parallel-in-time integration is an often advocated approach for extracting parallelism in the solution of PDEs beyond what is possible using spacial domain decomposition tech- niques. Due to the comparatively low parallel efficiency of parallel-in-time integration techniques, they are primar- ily of interest as an extension for classical approaches at parallelism. As such, potential applications are expected to scale across several hundreds, or possibly thousands of nodes, making algorithmic resilience towards hardware in- duced errors highly relevant. In this work we develop a scheduling scheme for the parareal algorithm that is resilient to node-loss. The fault-tolerant scheme is based on a popu- lar approach introduced by E. Aubanel in [1], modified with a set of MPI interface extensions for implementing recov- ery strategies available in the ULFM framework. In ad- dition, we demonstrate how the parareal algorithm may be made resilient towards Silent-Data-Corruption (SDC) errors by viewing it as a point-iterative method, locally monitor- ing the residual between consecutive iterations so to discard potentially corrupt iterations.}}
 }
 
@@ -2613,7 +2622,23 @@ and geometry is explored.}},
 }
 
 @unpublished{SchreiberEtAl2016,
-	abstract = {{AbstractThis paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory PDEs, whichis a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization inthis solver allows us to significantly exceed the computing resources used by parallelization-in-space methods andresults in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascaleperformance for weather prediction is that the strong scaling limit ? the parallel performance for a fixed problem sizewith an increasing number of processors ? saturates. A main avenue to circumvent this problem is to introduce newnumerical techniques that take advantage of time parallelism. In this paper we use a time-parallel approximation thatretains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the originalproblem into a large set of independent terms and (b) solving each of these terms independent of each other whichcan now be accomplished on a large number of HPC resources. Our results are conducted on up to 3586 cores forproblem sizes with a parallelization-in-space scalability limited already on a single node. We gain significant reductionsin the time-to-solution of 118.3 for spectral methods and 1503.0 for finite-difference methods with the parallelization-in-time approach. A developed and validated performance model gives the scalability limitations a-priory for this newapproach and allows us to extrapolate the performance method towards large-scale system. This work has the potentialto contribute as a basic building block of parallelization-in-time approaches, with possible major implications in appliedareas modelling oscillatory dominated problems.}},
+	abstract = {{Abstract
+This paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory PDEs, which
+is a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization in
+this solver allows us to significantly exceed the computing resources used by parallelization-in-space methods and
+results in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascale
+performance for weather prediction is that the strong scaling limit ? the parallel performance for a fixed problem size
+with an increasing number of processors ? saturates. A main avenue to circumvent this problem is to introduce new
+numerical techniques that take advantage of time parallelism. In this paper we use a time-parallel approximation that
+retains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the original
+problem into a large set of independent terms and (b) solving each of these terms independent of each other which
+can now be accomplished on a large number of HPC resources. Our results are conducted on up to 3586 cores for
+problem sizes with a parallelization-in-space scalability limited already on a single node. We gain significant reductions
+in the time-to-solution of 118.3 for spectral methods and 1503.0 for finite-difference methods with the parallelization-in-
+time approach. A developed and validated performance model gives the scalability limitations a-priory for this new
+approach and allows us to extrapolate the performance method towards large-scale system. This work has the potential
+to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied
+areas modelling oscillatory dominated problems.}},
 	author = {Schreiber, Martin and Peixoto, Pedro S. and Haut, Terry and Wingate, Beth},
 	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
 	url = {http://www.ime.usp.br/%7epedrosp/wp/wordpress/wp-content/uploads/2015/05/paper_2016_rexi_hpc.pdf},
