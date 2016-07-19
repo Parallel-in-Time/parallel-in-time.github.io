@@ -2633,6 +2633,14 @@
 	abstract = {{Parallel-in-time integration is an often advocated approach for extracting parallelism in the solution of PDEs beyond what is possible using spacial domain decomposition tech- niques. Due to the comparatively low parallel efficiency of parallel-in-time integration techniques, they are primar- ily of interest as an extension for classical approaches at parallelism. As such, potential applications are expected to scale across several hundreds, or possibly thousands of nodes, making algorithmic resilience towards hardware in- duced errors highly relevant. In this work we develop a scheduling scheme for the parareal algorithm that is resilient to node-loss. The fault-tolerant scheme is based on a popu- lar approach introduced by E. Aubanel in [1], modified with a set of MPI interface extensions for implementing recov- ery strategies available in the ULFM framework. In ad- dition, we demonstrate how the parareal algorithm may be made resilient towards Silent-Data-Corruption (SDC) errors by viewing it as a point-iterative method, locally monitor- ing the residual between consecutive iterations so to discard potentially corrupt iterations.}}
 }
 
+@unpublished{PagesEtAl2016,
+	author = {Pages, Gilles and Pironneau, Olivier and Sall, Guillaume},
+	title = {The Parareal Algorithm for American Options},
+	howpublished = {hal-01320331},
+	url = {http://hal.upmc.fr/hal-01320331},
+	year = {2016}
+}
+	
 @Inproceedings{RuprechtEtAl2016,
 	abstract = {{For the time-parallel Parareal method, there exists both numerical and analytical proof that it converges very well
 for diffusive problems like the heat equation. Many applications, however, do not lead to simple homogeneous
