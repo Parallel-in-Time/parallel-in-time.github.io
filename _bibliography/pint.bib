@@ -2676,3 +2676,15 @@ areas modelling oscillatory dominated problems.}},
         volume = {67},
         year = {2016},
 }
+
+@article{Wu2016_JCAM,
+	abstract = {{Abstract Parareal is an iterative algorithm and is characterized by two propagators G and F , which are respectively associated with large step size Δ T and small step size Δ t , where Δ T = J Δ t and J ≥ 2 is an integer. For symmetric positive definite (SPD) system u ′ ( t ) + A u ( t ) = g ( t ) arising from semi-discretizing time-dependent PDEs, if we fix the G -propagator to the Backward-Euler method and choose for F some L -stable time-integrator it can be proven that the convergence factors of the corresponding parareal algorithms satisfy ρ ≈ 1 3 , ∀ J ≥ 2 and ∀ σ ( A ) ⊂ [ 0 , + ∞ ) , where σ ( A ) is the spectrum of the matrix A . However, this result does not hold when time-integrators that lack L -stability, such as the Trapezoidal rule and the 4th-order Gauss \{RK\} method, are chosen as the F -propagator. The parareal algorithms using these two methods for the F -propagator are denoted by Parareal-TR and Parareal-Gauss4. In this paper, we propose a strategy to let these two parareal algorithms possess such a uniform convergence property. The idea is to choose an L -stable propagator F ˜ and on each coarse time-interval [ T n , T n + 1 ] we perform first two steps of F ˜ , then followed by J − 2 steps of F . Precisely, for the Trapezoidal rule we select the 2nd-order \{SDIRK\} method as the F ˜ -propagator, and for the 4th-order Gauss \{RK\} method we select the 4th-order Lobatto III-C method as the F ˜ -propagator. Numerical results are given to support our theoretical conclusions.}},
+	author = {Shu-Lin Wu},
+	doi = {10.1016/j.cam.2016.05.036},
+	journal = {Journal of Computational and Applied Mathematics},
+	pages = {391 - 407},
+	title = {Towards essential improvement for the Parareal-TR and Parareal-Gauss4 algorithms},
+	url = {http://dx.doi.org/10.1016/j.cam.2016.05.036},
+	volume = {308},
+	year = {2016},
+}
