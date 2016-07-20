@@ -65,6 +65,23 @@
 }
 
 %
+% 1978
+%
+
+@article{Franklin1978, 
+        abstract = {This paper presents a performance comparison of three parallel algorithms for the solution of sets of coupled first-order differential equations. A general format for comparison of the algorithms is given, and performance equations for the two processor cases are developed. The equations take into account both the computational and intercommunications requirements of the processors. These equations are applied to a benchmark of six problems and a simple, single bus multiprocessor architecture. The more than two processor case is considered for one of the parallel algorithms.}, 
+        author = {M. A. Franklin}, 
+        journal = {IEEE Transactions on Computers}, 
+        title = {Parallel Solution of Ordinary Differential Equations}, 
+        year = {1978}, 
+        volume = {C-27}, 
+        number = {5}, 
+        pages = {413-420}, 
+        doi = {10.1109/TC.1978.1675121}, 
+        url = {http://dx.doi.org/10.1109/TC.1978.1675121}
+}
+
+%
 % 1984
 %
 
@@ -134,6 +151,24 @@
 	year = {1989}
 }
 
+@inproceedings{GallopoulosEtAl1989,
+	abstract = {{We propose new parallel algorithms for the solution of linear parabolic problems. The first of these methods is based on using polynomial approximation to the exponential. It does not require solving any linear systems and is highly parallelizable. The two other methods proposed are based on Padé and Chebyshev approximations to the matrix exponential. The parallelization of these methods is achieved by using partial fraction decomposition techniques to solve the resulting systems and thus offers the potential for increased time parallelism in time dependent problems. We also present experimental results from the Alliant FX/8 and the Cray Y-MP/832 vector multiprocessors.}},
+         author = {Gallopoulos, E. and Saad, Y.},
+         title = {On the Parallel Solution of Parabolic Equations},
+         booktitle = {Proceedings of the 3rd International Conference on Supercomputing},
+         series = {ICS '89},
+         year = {1989},
+         isbn = {0-89791-309-4},
+         location = {Crete, Greece},
+         pages = {17--28},
+         numpages = {12},
+         url = {http://doi.acm.org/10.1145/318789.318793},
+         doi = {10.1145/318789.318793},
+         acmid = {318793},
+         publisher = {ACM},
+         address = {New York, NY, USA},
+} 
+
 %
 % 1990
 % 
@@ -164,6 +199,19 @@
 	year = {1991}
 }
 
+@article{Jackson1991,
+	abstract = {{The parallel solution of Initial Value Problems for Ordinary Differential Equations has become an active area of research during the past few years. We briefly survey the recent developments in this area, with particular emphasis on traditional forward-step methods that offer the potential for effective small-scale parallelism on currently existing machines.}},
+	author = {Jackson, Kenneth R.},
+	title = {A SURVEY OF PARALLEL NUMERICAL METHODS FOR INITIAL VALUE PROBLEMS FOR ORDINARY DIFFERENTIAL EQUATIONS},
+	journal = {IEEE Transactions on Magnetics},
+	volume = {27},
+	issue = {5},
+	year = {1991},
+	pages = {3792--3797},
+	doi = {10.1109/20.104928},
+	url = {http://dx.doi.org/10.1109/20.104928}
+}
+	
 @article{MurataEtAl1991,
 	author = {Murata, S. and Satofuka, N. and Kushiyama, T.},
 	journal = {Computers \& Fluids},
@@ -369,6 +417,19 @@
 	url = {http://dx.doi.org/10.1137/0916050},
 	volume = {16},
 	year = {1995}
+}
+
+@article{JacksonEtAl1995,
+	abstract = {{The authors examine the potential for parallelism in Runge–Kutta (RK) methods based on formulas in standard one-step form. Both negative and positive results are presented. Many of the negative results are based on a theorem that bounds the order of an RK formula in terms of the minimal polynomial associated with its coefficient matrix. The positive results are largely examples of prototypical formulas that offer a potential for effective “coarse-grain” parallelism on machines with a few processors.}},
+	author = {K. R. Jackson and S. P. N{\o}rsett},
+        title = {The Potential for Parallelism in Runge–Kutta Methods. Part 1: RK Formulas in Standard Form},
+        journal = {SIAM Journal on Numerical Analysis},
+        volume = {32},
+        number = {1},
+        pages = {49-82},
+        year = {1995},
+        doi = {10.1137/0732002},
+        URL = {http://dx.doi.org/10.1137/0732002},
 }
 
 @article{VandewalleHorton1995,
@@ -2044,6 +2105,19 @@
 	year = {2014}
 }
 
+@Inbook{VanDerValkEtAl2014,
+        author = {van der Valk, Paul L. C. and Rixen, Daniel J.},
+        editor = {Allen, Matt and Mayes, Randy and Rixen, Daniel},
+        title = {Towards a Parallel Time Integration Method for Nonlinear Systems},
+        booktitle = {Dynamics of Coupled Structures, Volume 1: Proceedings of the 32nd IMAC,  A Conference and Exposition on Structural Dynamics, 2014},
+        year = {2014},
+        publisher = {Springer International Publishing},
+        address = {Cham},
+        pages = {135--145},
+        doi = {10.1007/978-3-319-04501-6_12},
+        url = {http://dx.doi.org/10.1007/978-3-319-04501-6_12}
+}
+
 @article{Wu2014,
 	author = {Wu, Shu-Lin},
 	journal = {IMA Journal of Numerical Analysis},
@@ -2556,6 +2630,14 @@
 	year = {2016}
 }
 
+@unpublished{DobrevEtAl2016,
+	author = {Dobrev, V. and Kolev, T. and Petersson, N. A. and Schroder, J.},
+	title = {TWO-LEVEL CONVERGENCE THEORY FOR PARALLEL TIME INTEGRATION WITH MULTIGRID},
+	howpublished = {LLNL},
+	url = {http://computation.llnl.gov/projects/parallel-time-integration-multigrid/mgrit-theory-2016.pdf},
+	year = {2016},
+}
+
 @book{FalgoutEtAl2016, 
 	abstract = {{With steadily growing computational resources available, scientists must develop effective ways to utilize the increased resources. High performance, highly parallel software has become a standard. However until recent years parallelism has focused primarily on the spatial domain. When solving a space-time partial differential equation (PDE), this leads to a sequential bottleneck in the temporal dimension, particularly when taking a large number of time steps. The XBraid parallel-in-time library was developed as a practical way to add temporal parallelism to existing sequential codes with only minor modi cations. In this work, a rezoning-type moving mesh is applied to a diffusion problem and formulated in a parallel-in-time framework. Tests and scaling studies are run using XBraid and demonstrate excellent results for the simple model problem considered herein.}}, 		
 	author = {Falgout, R. D. and Manteuffel, T. A. and Southworth, B. and Schroder, J. B.}, 
@@ -2565,6 +2647,14 @@
 	year={2016},
 }
 
+@unpublished{FalgoutEtAl2016_sisc,
+	author = {Falgout, R. D. and Manteuffel, T. A. and O'Neill, B. and Schroder, J. B.},
+	title = {MULTIGRID REDUCTION IN TIME FOR NONLINEAR PARABOLIC PROBLEMS},
+	howpublished = {LLNL},
+	url = {http://computation.llnl.gov/projects/parallel-time-integration-multigrid/mgrit_nonlinear_2016.pdf},
+	year = {2016},
+}
+
 @unpublished{Guetat2016,
 	abstract = {{In this paper, we present a new parallel algorithm for time dependent problems based on coupling parareal with non-overlapping domain decomposition method in order to increase parallelism in time and in space. For this we focus on the iterative methods of parallization in space to solve the interface problem like Neumann-Neumann method. In the new algorithm, the coarse temporel propagator is defined on the global domain and the Neumann-Neumann method is chosen as a fine propagator with a few iterations. We present the rigorous convergence analysis of the new coupled algorithm on bounded time interval. Numerical experiments illustrate the performance of this new algorithm and confirm our analysis.}},
 	author = {Guetat, Rim},
@@ -2572,6 +2662,19 @@
 	url = {https://hal.archives-ouvertes.fr/hal-01312528/},
 	title = {Coupling Parareal with Non-Overlapping Domain Decomposition Method},
 	year = {2016}
+}
+
+@article{Haut02016,
+	abstract ={The manuscript presents a technique for efficiently solving the classical wave equation, the shallow water equations, and, more generally, equations of the form $\partial u /\partial t = \mathcal {L}u$, where $\mathcal {L}$ is a skew-Hermitian differential operator. The idea is to explicitly construct an approximation to the time-evolution operator $\exp (\tau \mathcal {L})$ for a relatively large time-step $\tau $. Recently developed techniques for approximating oscillatory scalar functions by rational functions, and accelerated algorithms for computing functions of discretized differential operators are exploited. Principal advantages of the proposed method include: stability even for large time-steps, the possibility to parallelize in time over many characteristic wavelengths and large speed-ups over existing methods in situations where simulation over long times are required. Numerical examples involving the 2D rotating shallow water equations and the 2D wave equation in an inhomogenous medium are presented, and the method is compared to the 4th order Runge–Kutta (RK4) method and to the use of Chebyshev polynomials. The new method achieved high accuracy over long-time intervals, and with speeds that are orders of magnitude faster than both RK4 and the use of Chebyshev polynomials.}, 
+	author = {Haut, T. S. and Babb, T. and Martinsson, P. G. and Wingate, B. A.}, 
+	doi = {10.1093/imanum/drv021}, 
+	journal = {IMA Journal of Numerical Analysis},
+	number = {2}, 
+	pages = {688-716}, 
+	title = {A high-order time-parallel scheme for solving wave propagation problems via the direct construction of an approximate time-evolution operator},
+	URL = {http://dx.doi.org/10.1093/imanum/drv021}, 
+	volume = {36}, 
+	year = {2016}, 
 }
 
 @article{Lederman2016,
@@ -2585,15 +2688,57 @@
         url = {http://dx.doi.org/10.1007/s40314-016-0319-7}
 }
 
-@unpublished{NielsenHesthaven2016,
-	author = {Nielsen, Allan Svejstrup and Hesthaven, Jan S.},
-	title = {Fault Tolerance in the Parareal Method},
-	year = {2016},
-	url = {http://infoscience.epfl.ch/record/216982},
-	howpublished = {EPFL-CONF-216982},
+@inproceedings{MatsuokaEtAl2016,
+	abstract = {{Slowdown and inevitable end in exponential scaling of processor performance, the end of the so-called "Moore's Law" is predicted to occur around 2025--2030 timeframe. Because CMOS semiconductor voltage is also approaching its limits, this means that logic transistor power will become constant, and as a result, the system FLOPS will cease to improve, resulting in serious consequences for IT in general, especially supercomputing. Existing attempts to overcome the end of Moore's law are rather limited in their future outlook or applicability. We claim that data-oriented parameters, such as bandwidth and capacity, or BYTES, are the new parameters that will allow continued performance gains for periods even after computing performance or FLOPS ceases to improve, due to continued advances in storage device technologies and optics, and manufacturing technologies including 3-D packaging. Such transition from FLOPS to BYTES will lead to disruptive changes in the overall systems from applications, algorithms, software to architecture, as to what parameter to optimize for, in order to achieve continued performance growth over time. We are launching a new set of research efforts to investigate and devise new technologies to enable such disruptive changes from FLOPS to BYTES in the Post-Moore era, focusing on HPC, where there is extreme sensitivity to performance, and expect the results to disseminate to the rest of IT.}},
+         author = {Matsuoka, Satoshi and Amano, Hideharu and Nakajima, Kengo and Inoue, Koji and Kudoh, Tomohiro and Maruyama, Naoya and Taura, Kenjiro and Iwashita, Takeshi and Katagiri, Takahiro and Hanawa, Toshihiro and Endo, Toshio},
+         title = {From FLOPS to BYTES: Disruptive Change in High-performance Computing Towards the Post-moore Era},
+         booktitle = {Proceedings of the ACM International Conference on Computing Frontiers},
+         series = {CF '16},
+         year = {2016},
+         location = {Como, Italy},
+         pages = {274--281},
+         numpages = {8},
+         url = {http://dx.doi.org/10.1145/2903150.2906830},
+         doi = {10.1145/2903150.2906830},
+         publisher = {ACM},
+         address = {New York, NY, USA},
+ }
+
+@unpublished{MerkelEtAl2016,
+	abstract = {{Recently, ParaExp was proposed for the time integration of hyperbolic problems. It splits the time interval of interest into sub-intervals and computes the solution on each sub-interval in parallel. The overall solution is decomposed into a particular solution defined on each sub-interval with zero initial conditions and a homogeneous solution propagated by the matrix exponential applied to the initial conditions. The efficiency of the method results from fast approximations of this matrix exponential using tools from linear algebra. This paper deals with the application of ParaExp to electromagnetic wave problems in time-domain. Numerical tests are carried out for an electric circuit and an electromagnetic wave problem discretized by the Finite Integration Technique.}},
+	author = {Merkel, Melina and Niyonzima, Innocent and Sch\"ops, Sebastian},
+	howpublished = {arXiv:1607.00368 [math.NA]},
+	title = {An Application of ParaExp to Electromagnetic Wave Problems},
+	url = {http://arxiv.org/abs/1607.00368},
+	year = {2016}
+}
+
+@inproceedings{NielsenHesthaven2016,
+         author = {Nielsen, Allan S. and Hesthaven, Jan S.},
+         title = {Fault Tolerance in the Parareal Method},
+         booktitle = {Proceedings of the ACM Workshop on Fault-Tolerance for HPC at Extreme Scale},
+         series = {FTXS '16},
+         year = {2016},
+         isbn = {978-1-4503-4349-7},
+         location = {Kyoto, Japan},
+         pages = {1--8},
+         numpages = {8},
+         url = {http://dx.doi.org/10.1145/2909428.2909431},
+         doi = {10.1145/2909428.2909431},
+         acmid = {2909431},
+         publisher = {ACM},
+         address = {New York, NY, USA},
 	abstract = {{Parallel-in-time integration is an often advocated approach for extracting parallelism in the solution of PDEs beyond what is possible using spacial domain decomposition tech- niques. Due to the comparatively low parallel efficiency of parallel-in-time integration techniques, they are primar- ily of interest as an extension for classical approaches at parallelism. As such, potential applications are expected to scale across several hundreds, or possibly thousands of nodes, making algorithmic resilience towards hardware in- duced errors highly relevant. In this work we develop a scheduling scheme for the parareal algorithm that is resilient to node-loss. The fault-tolerant scheme is based on a popu- lar approach introduced by E. Aubanel in [1], modified with a set of MPI interface extensions for implementing recov- ery strategies available in the ULFM framework. In ad- dition, we demonstrate how the parareal algorithm may be made resilient towards Silent-Data-Corruption (SDC) errors by viewing it as a point-iterative method, locally monitor- ing the residual between consecutive iterations so to discard potentially corrupt iterations.}}
 }
 
+@unpublished{PagesEtAl2016,
+	author = {Pages, Gilles and Pironneau, Olivier and Sall, Guillaume},
+	title = {The Parareal Algorithm for American Options},
+	howpublished = {hal-01320331},
+	url = {http://hal.upmc.fr/hal-01320331},
+	year = {2016}
+}
+	
 @Inproceedings{RuprechtEtAl2016,
 	abstract = {{For the time-parallel Parareal method, there exists both numerical and analytical proof that it converges very well
 for diffusive problems like the heat equation. Many applications, however, do not lead to simple homogeneous
@@ -2613,7 +2758,23 @@ and geometry is explored.}},
 }
 
 @unpublished{SchreiberEtAl2016,
-	abstract = {{AbstractThis paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory PDEs, whichis a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization inthis solver allows us to significantly exceed the computing resources used by parallelization-in-space methods andresults in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascaleperformance for weather prediction is that the strong scaling limit ? the parallel performance for a fixed problem sizewith an increasing number of processors ? saturates. A main avenue to circumvent this problem is to introduce newnumerical techniques that take advantage of time parallelism. In this paper we use a time-parallel approximation thatretains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the originalproblem into a large set of independent terms and (b) solving each of these terms independent of each other whichcan now be accomplished on a large number of HPC resources. Our results are conducted on up to 3586 cores forproblem sizes with a parallelization-in-space scalability limited already on a single node. We gain significant reductionsin the time-to-solution of 118.3 for spectral methods and 1503.0 for finite-difference methods with the parallelization-in-time approach. A developed and validated performance model gives the scalability limitations a-priory for this newapproach and allows us to extrapolate the performance method towards large-scale system. This work has the potentialto contribute as a basic building block of parallelization-in-time approaches, with possible major implications in appliedareas modelling oscillatory dominated problems.}},
+	abstract = {{Abstract
+This paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory PDEs, which
+is a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization in
+this solver allows us to significantly exceed the computing resources used by parallelization-in-space methods and
+results in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascale
+performance for weather prediction is that the strong scaling limit ? the parallel performance for a fixed problem size
+with an increasing number of processors ? saturates. A main avenue to circumvent this problem is to introduce new
+numerical techniques that take advantage of time parallelism. In this paper we use a time-parallel approximation that
+retains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the original
+problem into a large set of independent terms and (b) solving each of these terms independent of each other which
+can now be accomplished on a large number of HPC resources. Our results are conducted on up to 3586 cores for
+problem sizes with a parallelization-in-space scalability limited already on a single node. We gain significant reductions
+in the time-to-solution of 118.3 for spectral methods and 1503.0 for finite-difference methods with the parallelization-in-
+time approach. A developed and validated performance model gives the scalability limitations a-priory for this new
+approach and allows us to extrapolate the performance method towards large-scale system. This work has the potential
+to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied
+areas modelling oscillatory dominated problems.}},
 	author = {Schreiber, Martin and Peixoto, Pedro S. and Haut, Terry and Wingate, Beth},
 	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
 	url = {http://www.ime.usp.br/%7epedrosp/wp/wordpress/wp-content/uploads/2015/05/paper_2016_rexi_hpc.pdf},
@@ -2641,4 +2802,16 @@ and geometry is explored.}},
         url = {http://dx.doi.org/10.1007/s10915-015-0100-x},
         volume = {67},
         year = {2016},
+}
+
+@article{Wu2016_JCAM,
+	abstract = {{Abstract Parareal is an iterative algorithm and is characterized by two propagators G and F , which are respectively associated with large step size Δ T and small step size Δ t , where Δ T = J Δ t and J ≥ 2 is an integer. For symmetric positive definite (SPD) system u ′ ( t ) + A u ( t ) = g ( t ) arising from semi-discretizing time-dependent PDEs, if we fix the G -propagator to the Backward-Euler method and choose for F some L -stable time-integrator it can be proven that the convergence factors of the corresponding parareal algorithms satisfy ρ ≈ 1 3 , ∀ J ≥ 2 and ∀ σ ( A ) ⊂ [ 0 , + ∞ ) , where σ ( A ) is the spectrum of the matrix A . However, this result does not hold when time-integrators that lack L -stability, such as the Trapezoidal rule and the 4th-order Gauss \{RK\} method, are chosen as the F -propagator. The parareal algorithms using these two methods for the F -propagator are denoted by Parareal-TR and Parareal-Gauss4. In this paper, we propose a strategy to let these two parareal algorithms possess such a uniform convergence property. The idea is to choose an L -stable propagator F ˜ and on each coarse time-interval [ T n , T n + 1 ] we perform first two steps of F ˜ , then followed by J − 2 steps of F . Precisely, for the Trapezoidal rule we select the 2nd-order \{SDIRK\} method as the F ˜ -propagator, and for the 4th-order Gauss \{RK\} method we select the 4th-order Lobatto III-C method as the F ˜ -propagator. Numerical results are given to support our theoretical conclusions.}},
+	author = {Shu-Lin Wu},
+	doi = {10.1016/j.cam.2016.05.036},
+	journal = {Journal of Computational and Applied Mathematics},
+	pages = {391 - 407},
+	title = {Towards essential improvement for the Parareal-TR and Parareal-Gauss4 algorithms},
+	url = {http://dx.doi.org/10.1016/j.cam.2016.05.036},
+	volume = {308},
+	year = {2016},
 }
