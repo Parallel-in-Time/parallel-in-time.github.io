@@ -173,6 +173,18 @@
 % 1990
 % 
 
+@article{VanderHouwen1990,
+    title = {{Parallel iteration of high-order Runge-Kutta methods with stepsize control}},
+    journal = {Journal of Computational and Applied Mathematics},
+    volume = {29},
+    number = {1},
+    pages = {111 - 127},
+    year = {1990},
+    url = {http://dx.doi.org/10.1016/0377-0427(90)90200-J},
+    author = {Van Der Houwen, P.J. and Sommeijer, B.P.},
+    abstract = {This paper investigates iterated Runge-Kutta methods of high order designed in such a way that the right-hand side evaluations can be computed in parallel. Using stepsize control based on embedded formulas a highly efficient code is developed. On parallel computers, the 8th-order mode of this code is more efficient than the DOPR18 implementation of the formulas of Prince and Dormand. The 10th-order mode is about twice as cheap for comparable accuracies.}
+}
+
 @article{Womble1990,
 	author = {Womble, D. E},
 	journal = {SIAM Journal on Scientific and Statistical Computing},
@@ -222,6 +234,20 @@
 	volume = {19},
 	year = {1991}
 }
+
+@article{VanderHouwen1991,
+    author = {van der Houwen, P. J. and Sommeijer, B. P.},
+    title = {{Iterated Runge-Kutta Methods on Parallel Computers}},
+    journal = {SIAM Journal on Scientific and Statistical Computing},
+    volume = {12},
+    number = {5},
+    pages = {1000--1028},
+    year = {1991},
+    doi = {10.1137/0912054},
+    URL = {http://dx.doi.org/10.1137/0912054}
+}
+
+
 
 %
 % 1992
@@ -318,6 +344,30 @@
 	url = {http://dx.doi.org/10.1006/icse.1993.1007},
 	volume = {5},
 	year = {1993}
+}
+
+@article{Sommeijer1993,
+    title = {{Parallel-iterated Runge-Kutta methods for stiff ordinary differential equations}},
+    journal = {{Journal of Computational and Applied Mathematics}},
+    volume = {45},
+    number = {1},
+    pages = {151--168},
+    year = {1993},
+    url = {http://dx.doi.org/10.1016/0377-0427(93)90271-C},
+    author = {Sommeijer, B.P.},
+    abstract = {For the numerical integration of a stiff ordinary differential equation, fully implicit Runge-Kutta methods offer nice properties, like a high classical order and high stage order as well as an excellent stability behaviour. However, such methods need the solution of a set of highly coupled equations for the stage values and this is a considerable computational task. This paper discusses an iteration scheme to tackle this problem. By means of a suitable choice of the iteration parameters, the implicit relations for the stage values, as they occur in each iteration, can be uncoupled so that they can be solved in parallel. The resulting scheme can be cast into the class of Diagonally Implicit Runge-Kutta (DIRK) methods and, similar to these methods, requires only one LU factorization per step (per processor). The stability as well as the computational efficiency of the process strongly depends on the particular choice of the iteration parameters and on the number of iterations performed. We discuss several choices to obtain good stability and fast convergence. Based on these approaches, we wrote two codes possessing local error control and stepsize variation. We have implemented both codes on an ALLIANT FX/4 machine (four parallel vector processors and shared memory) and measured their speedup factors for a number of test problems. Furthermore, the performance of these codes is compared with the performance of the best stiff ODE codes for sequential computers, like SIMPLE, LSODE and RADAU5.}
+}
+
+@article{VanderHouwen1993,
+    title = {{Analysis of parallel diagonally implicit iteration of Runge-Kutta methods}},
+    journal = {Applied Numerical Mathematics},
+    volume = {11},
+    number = {1},
+    pages = {169--188},
+    year = {1993},
+    url = {http://dx.doi.org/10.1016/0168-9274(93)90047-U},
+    author = {van der Houwen, P.J. and Sommeijer, B.P.},
+    abstract = {In this paper, we analyze parallel, diagonally implicit iteration of Runge-Kutta methods (PDIRK methods) for solving large systems of stiff equations on parallel computers. Like Newton-iterated backward differentiation formulas (BDFs), these PDIRK methods are such that in each step the (sequential) costs consist of solving a number of linear systems with the same matrix of coefficients and with the same dimension as the system of differential equations. Although for PDIRK methods the number of linear systems is usually higher than for Newton iteration of BDFs, the more computationally intensive work of computing the matrix of coefficients and its LU-decomposition are identical. The advantage of PDIRK methods over Newton-iterated BDFs is their unconditional stability (A-stability for Gauss-based methods and L-stability for Radau-based methods) for any order of accuracy. Special characteristics of the PDIRK methods will be studied, such as the rate of convergence, the influence of particular predictors on the resulting stability properties, and the stiff error constants in the global error.}
 }
 
 @book{Vandewalle1993,
