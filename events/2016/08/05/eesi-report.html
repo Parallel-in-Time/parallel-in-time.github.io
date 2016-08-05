@@ -3,10 +3,10 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Parallel-in-Time</title>
+  <title>PINT in EESI report</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallelintime.org/">
+  <link rel="canonical" href="http://parallelintime.org/events/2016/08/05/eesi-report.html">
 
   <link type="text/css" rel="stylesheet" href="/assets/main-81ba415bf08330ed572889dba401e842410a7e0d76800de89a3ee4e32fb5582f.css">
   <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-8e4e71a9f77a070acc74ea98abe2daf6a1b292abe2705fe12f7be38194874740.js"></script>
@@ -104,85 +104,93 @@
 </header>
 
     <main>
-      <div class="jumbotron">
-        <div class="container">
-          <h1>Parallel-in-Time</h1>
-          <p>About Parallel-in-Time Methods</p>
+      <div class="container">
+        <div class="post">
+  <header class="post-header">
+    <h1>PINT in EESI report</h1>
+  </header>
+  <article class="post-content">
+    <p>Parallel-in-time integration was mentioned prominently in two reports by the <a href="http://www.eesi-project.eu/">European Exascale Software Initiative</a> (EESI) last year.</p>
+
+<!--more-->
+
+<ul>
+  <li>The  report <a href="http://www.eesi-project.eu/wp-content/uploads/2015/05/EESI2_D7.3_Final-report-on-EESI2-exascale-vision-roadmap-and-recommendations.pdf">D 7.3 2015 Update Vision &amp; Recommendation</a> acknowledges parallel-in-time integration as a potentially <em>disruptive approach</em> and a <em>fundamental step toward in Exascale Simulations</em>.</li>
+  <li>The <a href="http://www.eesi-project.eu/wp-content/uploads/2015/05/EESI2_D3.3_Final-report-on-application-grand-challenges.pdf">D 3.3 Final report on applications working groups</a> confirms this, attesting parallel-in-time integration <em>a huge potential for a better exploration of future Exascale architectures</em>. It cites our successful <a href="/events/index.html">workshop series</a> and mention scaling results published in 2013<a href="#RuprechtEtAl2013_SC">[1]</a> for the <a href="/methods/pfasst.html">PFASST</a> using all 458,752 of the IBM BlueGene/Q JUQUEEN at <a href="http://www.fz-juelich.de/ias/jsc/DE/Home/home_node.html">Juelich Supercomputing Centre</a>.</li>
+</ul>
+
+<ol class="bibliography"><li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          RuprechtEtAl2013_SC
         </div>
       </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseRuprechtEtAl2013_SCBibtex" aria-expanded="false" aria-controls="collapseRuprechtEtAl2013_SCBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalRuprechtEtAl2013_SCAbstract" aria-expanded="false" aria-controls="modalRuprechtEtAl2013_SCAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="container">
-        <div class="row">
-  <div class="col-md-4">
-    <section>
-  <h3>A new community resource</h3>
-  <p>This website collects information about people, methods and software in the field of
-    parallel-in-time integration methods.</p>
-  <p>If you would like for your group, your method, your code or your event to be mentioned here,
-    it is (relatively) simple to add content: The website is based on
-    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io"
-       target="_blank">GitHub Pages</a>, making it easy for everyone to contribute: See the
-    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/wiki"
-       target="_blank">Wiki</a> for more detailed information.</p>
-</section>
-
+    <div class="bibtex-ref-entry">
+      <span id="RuprechtEtAl2013_SC">D. Ruprecht, R. Speck, M. Emmett, M. Bolten, and R. Krause, “Poster: Extreme-scale space-time parallelism,” in <i>Proceedings of the 2013 Conference on High Performance Computing Networking, Storage and Analysis Companion</i>, 2013 [Online]. Available at: <a href="http://sc13.supercomputing.org/sites/default/files/PostersArchive/tech_posters/post148s2-file3.pdf" target="_blank">http://sc13.supercomputing.org/sites/default/files/PostersArchive/tech_posters/post148s2-file3.pdf</a></span>
+    </div>
   </div>
-  <div class="col-md-4">
-    <section>
-  <h3>Parallel-in-time workshop series</h3>
-  <p>This website also provides all the information about the parallel-in-time workshop series.
-    Check out <a href=/events/index.html>workshops</a> for more information.</p>
-</section>
-<section>
-  <h3>Email list</h3>
-  <p>You can join our email list to send and receive information about events all around
-    parallel-in-time integration: Just send an email to
-    <em>parallelintime+subscribe[AT]googlegroups.com</em> and wait for your request to be accepted.</p>
-</section>
+  <div class="collapse" id="collapseRuprechtEtAl2013_SCBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@inproceedings{RuprechtEtAl2013_SC,
+  author = {Ruprecht, Daniel and Speck, Robert and Emmett, Matthew and Bolten, Matthias and Krause, Rolf},
+  booktitle = {{Proceedings of the 2013 Conference on High Performance Computing Networking, Storage and Analysis Companion}},
+  location = {Denver, Colorado, USA},
+  series = {{SC '13 Companion}},
+  title = {{Poster: Extreme-scale space-time parallelism}},
+  url = {http://sc13.supercomputing.org/sites/default/files/PostersArchive/tech_posters/post148s2-file3.pdf},
+  year = {2013}
+}
+</pre>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">
-    <section>
-  <a type="button" class="btn btn-default btn-sm pull-right" href="/feed.xml" role="button" title="subscribe via RSS">
-    <i class="fa fa-rss"></i>
-    <span class="hidden-xs">RSS</span>
-  </a>
-  <h3>
-    Recent News
-  </h3>
   
-  <ul class="list-group">
-    
-      <li class="list-group-item">
-        <span class="label label-default">05 Aug 2016</span>
-        <a href="/events/2016/08/05/eesi-report.html">PINT in EESI report</a>
-      </li>
-    
-      <li class="list-group-item">
-        <span class="label label-default">19 Jul 2016</span>
-        <a href="/events/2016/07/19/siamcse.html">PINT Plenary at SIAM CSE 2017</a>
-      </li>
-    
-      <li class="list-group-item">
-        <span class="label label-default">23 Feb 2016</span>
-        <a href="/events/grants/2016/02/23/jsc-travel-grants.html">JSC awards travel grants for PhD students</a>
-      </li>
-    
-      <li class="list-group-item">
-        <span class="label label-default">17 Dec 2015</span>
-        <a href="/2015/12/17/pint-in-h2020.html">PINT in H2020 Call</a>
-      </li>
-    
-      <li class="list-group-item">
-        <span class="label label-default">17 Dec 2015</span>
-        <a href="/events/2015/12/17/siampp-ms.html">Minisymposium at SIAM PP 2016</a>
-      </li>
-    
-  </ul>
-</section>
-
-  </div>
 </div>
+</li></ol>
 
+  </article>
+  <footer>
+  
+<i class="fa fa-user"></i> <span class="byline author vcard">Posted by <span class="fn">Daniel Ruprecht</span></span>
+
+  &#8226;
+  
+
+
+
+
+  <i class="fa fa-calendar"></i> Created on <time datetime="2016-08-05T07:50:44+00:00">05 Aug 2016</time>
+
+
+
+  
+
+
+  
+</footer>
+
+</div>
       </div>
     </main>
     <footer id="site-footer">
