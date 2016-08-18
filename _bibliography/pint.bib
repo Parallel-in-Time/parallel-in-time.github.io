@@ -2786,6 +2786,21 @@
 	abstract = {{Parallel-in-time integration is an often advocated approach for extracting parallelism in the solution of PDEs beyond what is possible using spacial domain decomposition tech- niques. Due to the comparatively low parallel efficiency of parallel-in-time integration techniques, they are primar- ily of interest as an extension for classical approaches at parallelism. As such, potential applications are expected to scale across several hundreds, or possibly thousands of nodes, making algorithmic resilience towards hardware in- duced errors highly relevant. In this work we develop a scheduling scheme for the parareal algorithm that is resilient to node-loss. The fault-tolerant scheme is based on a popu- lar approach introduced by E. Aubanel in [1], modified with a set of MPI interface extensions for implementing recov- ery strategies available in the ULFM framework. In ad- dition, we demonstrate how the parareal algorithm may be made resilient towards Silent-Data-Corruption (SDC) errors by viewing it as a point-iterative method, locally monitor- ing the residual between consecutive iterations so to discard potentially corrupt iterations.}}
 }
 
+@article{OngEtAl2016,
+	abstract = {{Revisionist integral deferred correction methods are a family of parallel-in-time methods to solve systems of initial values problems. The approach is able to bootstrap lower-order time integrators to provide high-order approximations in approximately the same wall-clock time, hence providing a multiplicative increase in the number of compute cores utilized. Here we provide a library that automatically produces a parallel-in-time solution of a system of initial value problems given user-supplied code for the right-hand side of the system and a sequential code for a first-order timestep. The user-supplied timestep routine may be explicit or implicit and may make use of any auxiliary libraries that take care of the solution of any nonlinear algebraic systems that may arise or the numerical linear algebra required.}},
+         author = {Ong, Benjamin W. and Haynes, Ronald D. and Ladd, Kyle},
+         articleno = {8},
+         doi = {10.1145/2964377},
+         title = {Algorithm 965: {RIDC} Methods: A Family of Parallel Time Integrators},
+         journal = {ACM Trans. Math. Softw.},
+         number = {1},
+         numpages = {13},
+         pages = {8:1--8:13},
+         url = {http://dx.doi.org/10.1145/2964377},
+         volume = {43},
+         year = {2016},
+} 
+
 @unpublished{PagesEtAl2016,
 	author = {Pages, Gilles and Pironneau, Olivier and Sall, Guillaume},
 	title = {The Parareal Algorithm for American Options},
