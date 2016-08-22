@@ -2255,6 +2255,18 @@
         year = {2015}, 
 }
 
+@article{ChristliebEtAl2015,
+	abstract ={{Adaptive step-size control is a critical feature for the robust and efficient numerical solution of initial-value problems in ordinary differential equations. In this paper, we show that adaptive step-size control can be incorporated within a family of parallel time integrators known as revisionist integral deferred correction (RIDC) methods. The RIDC framework allows for various strategies to implement step-size control, and we report results from exploring a few of them.}},
+	author = {Christlieb, Andrew J. and MacDonald, Colin B. and Ong, Benjaming W. and Spiteri, Raymond J.},
+	title = {Revisionist integral deferred correction with adaptive step-size control},
+	journal = {Communications in Applied Mathematics and Computational Science},
+	volume = {10},
+	issue = {1},
+	pages = {1--25},
+	year = {2015},
+	url = {http://dx.doi.org/10.2140/camcos.2015.10.1}
+}
+
 @unpublished{FalgoutEtAl2015,
 	abstract = {{We consider the comparison of multigrid methods for parabolic partial differential equations that allow
 		space-time concurrency.
@@ -2711,6 +2723,14 @@
 	year = {2016}, 
 }
 
+@unpublished{LecouvezEtAl2016,
+	author = {Lecouvez, M. and Falgout, R. and Woodward, C. and Top, P.},
+	title = {A Parallel Multigrid Reduction in Time Method for Power Systems},
+	howpublished = {LLNL-CONF-679148},
+	url = {http://www.osti.gov/scitech/biblio/1281664},
+	year = {2016}
+}
+
 @article{Lederman2016,
         author = {Lederman, C. and Martin, R. and Cambier, J.-L.},
         title = {Time-parallel solutions to differential equations via functional optimization},
@@ -2785,6 +2805,21 @@
          address = {New York, NY, USA},
 	abstract = {{Parallel-in-time integration is an often advocated approach for extracting parallelism in the solution of PDEs beyond what is possible using spacial domain decomposition tech- niques. Due to the comparatively low parallel efficiency of parallel-in-time integration techniques, they are primar- ily of interest as an extension for classical approaches at parallelism. As such, potential applications are expected to scale across several hundreds, or possibly thousands of nodes, making algorithmic resilience towards hardware in- duced errors highly relevant. In this work we develop a scheduling scheme for the parareal algorithm that is resilient to node-loss. The fault-tolerant scheme is based on a popu- lar approach introduced by E. Aubanel in [1], modified with a set of MPI interface extensions for implementing recov- ery strategies available in the ULFM framework. In ad- dition, we demonstrate how the parareal algorithm may be made resilient towards Silent-Data-Corruption (SDC) errors by viewing it as a point-iterative method, locally monitor- ing the residual between consecutive iterations so to discard potentially corrupt iterations.}}
 }
+
+@article{OngEtAl2016,
+	abstract = {{Revisionist integral deferred correction methods are a family of parallel-in-time methods to solve systems of initial values problems. The approach is able to bootstrap lower-order time integrators to provide high-order approximations in approximately the same wall-clock time, hence providing a multiplicative increase in the number of compute cores utilized. Here we provide a library that automatically produces a parallel-in-time solution of a system of initial value problems given user-supplied code for the right-hand side of the system and a sequential code for a first-order timestep. The user-supplied timestep routine may be explicit or implicit and may make use of any auxiliary libraries that take care of the solution of any nonlinear algebraic systems that may arise or the numerical linear algebra required.}},
+         author = {Ong, Benjamin W. and Haynes, Ronald D. and Ladd, Kyle},
+         articleno = {8},
+         doi = {10.1145/2964377},
+         title = {Algorithm 965: {RIDC} Methods: A Family of Parallel Time Integrators},
+         journal = {ACM Trans. Math. Softw.},
+         number = {1},
+         numpages = {13},
+         pages = {8:1--8:13},
+         url = {http://dx.doi.org/10.1145/2964377},
+         volume = {43},
+         year = {2016},
+} 
 
 @unpublished{PagesEtAl2016,
 	author = {Pages, Gilles and Pironneau, Olivier and Sall, Guillaume},
