@@ -7,6 +7,18 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PINT Plenary at  USNCCM</title>
+        <description>&lt;p&gt;Plenary talk by Beth Wingate on parallel-in-time at the &lt;a href=&quot;http://14.usnccm.org/plenary-and-semi-plenary-speakers&quot;&gt;14th U.S. National Congress on Computational Mechanics&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;Once again, &lt;a href=&quot;/groups/uoe.html&quot;&gt;Beth Wingate&lt;/a&gt; from the University of Exeter will champion parallel-in-time integration in a &lt;a href=&quot;http://14.usnccm.org/plenary-and-semi-plenary-speakers&quot;&gt;plenary talk&lt;/a&gt; at a major conference, this time at USNCCM in Montreal, Canada.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Sep 2016 07:50:44 +0000</pubDate>
+        <link>http://parallelintime.org/events/2016/09/07/usnccm-plenary.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2016/09/07/usnccm-plenary.html</guid>
+      </item>
+    
+      <item>
         <title>PINT in EESI report</title>
         <description>&lt;p&gt;Parallel-in-time integration was mentioned prominently in two reports by the &lt;a href=&quot;http://www.eesi-project.eu/&quot;&gt;European Exascale Software Initiative&lt;/a&gt; (EESI) last year.&lt;/p&gt;
 
@@ -283,24 +295,6 @@ and administrated the election through the &lt;a href=&quot;https://vote.heliosv
         <pubDate>Fri, 26 Jun 2015 09:21:44 +0000</pubDate>
         <link>http://parallelintime.org/events/2015/06/26/sc-election-result.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2015/06/26/sc-election-result.html</guid>
-      </item>
-    
-      <item>
-        <title>Election of Scientific Committee</title>
-        <description>&lt;p&gt;The election for the scientific committee is open until July 3rd 2015, 4pm GMT.&lt;/p&gt;
-
-&lt;!--more--&gt;
-&lt;p&gt;Following the &lt;a href=&quot;/events/bylaws.html&quot;&gt;bylaws&lt;/a&gt; put in place during the workshop in Dresden in May 2015, the election of a
-scientific committee for the PINT workshop series is now underway.
-Everyone who was officially registered for one of the last three workshops (Manchester, Jülich or Dresden) is eligible
-to cast a vote and should have received a corresponding email from the helios online voting system.&lt;/p&gt;
-
-&lt;p&gt;In case you were registered for one of those workshops but &lt;em&gt;did not receive an email&lt;/em&gt;, please contact Michael Klöppel
-from the voting committee at michael[DOT]kloeppel[AT]tu-dresden[DOT]de before July 2nd.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 26 Jun 2015 09:21:44 +0000</pubDate>
-        <link>http://parallelintime.org/events/2015/06/26/sc-election.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2015/06/26/sc-election.html</guid>
       </item>
     
   </channel>
