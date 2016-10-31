@@ -2667,6 +2667,19 @@
 	year = {2016},
 }
 
+@article{ChaudryEtAl2016,
+	abstract = {{We consider numerical methods for initial value problems that employ a two-stage approach consisting of solution on a relatively coarse discretization followed by solution on a relatively fine discretization. Examples include adaptive error control, parallel-in-time solution schemes, and efficient solution of adjoint problems for computing a posteriori error estimates. We describe a general formulation of two-stage computations and then perform a general a posteriori error analysis based on computable residuals and solution of an adjoint problem. The analysis accommodates various variations in the two-stage computation and in the formulation of the adjoint problems. We apply the analysis to computing “dual-weighted” a posteriori error estimates, developing novel algorithms for efficient solution that take into account cancellation of error, and to the Parareal algorithm. We test the various results using several numerical examples.}},
+        author = {Jehanzeb Hameed Chaudhry and Don Estep and Simon Tavener and Varis Carey and Jeff Sandelin},
+        title = {A Posteriori Error Analysis of Two-Stage Computation Methods with Application to Efficient Discretization and the Parareal Algorithm},
+        journal = {SIAM Journal on Numerical Analysis},
+        volume = {54},
+        number = {5},
+        pages = {2974-3002},
+        year = {2016},
+        doi = {10.1137/16M1079014},
+        url = {http://dx.doi.org/10.1137/16M1079014},
+}
+
 @article{DeVuyst2016,
 	author = {De Vuyst, Florian},
 	title = {Efficient solvers for time-dependent problems: a review of {IMEX}, {LATIN}, {PARAEXP} and {PARAREAL} algorithms for heat-type problems with potential use of approximate exponential integrators and reduced-order models},
@@ -2699,6 +2712,14 @@
 	howpublished = {LLNL},
 	url = {http://computation.llnl.gov/projects/parallel-time-integration-multigrid/mgrit_nonlinear_2016.pdf},
 	year = {2016},
+}
+
+@unpublished{GanderHalerpn2016,
+	author = {Martin J. Gander and Laurence Halpern},
+	title = {Time Parallelization for Nonlinear Problems Based on Diagonalization},
+	howpublished={Preprint},
+	url = {https://www.unige.ch/~gander/Preprints/Halpern_MS3-1.pdf},
+	year = {2016}
 }
 
 @unpublished{Guetat2016,
@@ -2904,4 +2925,33 @@ areas modelling oscillatory dominated problems.}},
 	url = {http://dx.doi.org/10.1016/j.cam.2016.05.036},
 	volume = {308},
 	year = {2016},
+}
+
+@article{WuZhou2016_JCP,
+	author = {Shu-Lin Wu and Tao Zhou},
+	doi = {10.1016/j.jcp.2016.10.046},
+        journal = {Journal of Computational Physics},
+        number = {},
+        pages = {},
+        title = {Fast parareal iterations for fractional diffusion equations},
+        url = {http://dx.doi.org/10.1016/j.jcp.2016.10.046},
+        volume = {},
+        year = {2016},
+}
+
+@unpublished{ZhangEtAl2016,
+	abstract = {{In this papers, we couple the parareal algorithm with projection methods
+of the trajectory on a specific manifold, defined by the preservation of
+some conserved quantities of the differential equations. First, projection
+methods are introduced as the coarse and fine propagators. Second, we
+also apply the projection methods for systems with conserved quantities
+in the correction step of original parareal algorithm. Finally, three numerical
+experiments are performed by different kinds of algorithms to show
+the property of convergence in iteration, and preservation in conserved
+quantities of model systems.}},
+	author = {Zhang, Liying and Zhou, Weien and Hong, Jialin},
+	title = {Parareal algorithms applied to stochastic differential equations with conserved quantities},
+	howpublished = {arXiv:1609.08299v1 [math.NA] },
+	url = {https://arxiv.org/pdf/1609.08299.pdf},
+	year = {2016}
 }
