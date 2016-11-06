@@ -2667,6 +2667,34 @@
 	year = {2016},
 }
 
+@unpublished{CarlbergEtAl2016,
+	abstract = {{This work proposes a data-driven method for enabling the efficient, stable time-parallel numerical solution of
+systems of ordinary differential equations (ODEs). The method assumes that low-dimensional bases that accurately capture
+the time evolution of the dynamical-system state are available; these bases can be computed from snapshot data by proper
+orthogonal decomposition (POD) in the case of parameterized ODEs, for example. The method adopts the parareal framework
+for time parallelism, which is defined by an initialization method, a coarse propagator that advances solutions on a coarse
+time grid, and a fine propagator that operates on an underlying fine time grid. Rather than employing usual approaches for
+initialization and coarse propagation (e.g., a typical time integrator applied with a large time step), we propose novel datadriven
+techniques that leverage the available time-evolution bases. The coarse propagator is defined by a forecast (proposed in
+Ref. [11]) applied locally within each coarse time interval, which comprises the following steps: (1) apply the fine propagator
+for a small number of time steps, (2) approximate the state over the entire coarse time interval using gappy POD with the local
+time-evolution bases, and (3) select the approximation at the end of the time interval as the propagated state. We also propose
+both local-forecast initialization (i.e., the local-forecast coarse propagator applied sequentially) and global-forecast initialization
+(i.e., the local-forecast coarse propagator applied over the entire time interval with global time-evolution bases). The method
+is particularly well suited for POD-based reduced-order models (ROMs). In this case, spatial parallelism quickly saturates, as
+the ROM dynamical system is low dimensional; thus, time parallelism is needed to enable lower wall times. Further, the timeevolution
+bases can be extracted from readily available data, i.e., the right singular vectors arising during POD computation.
+In addition to performing analyses related to the method’s accuracy, speedup, and stability, we also numerically demonstrate
+the method’s performance. Here, numerical experiments on ROMs for a nonlinear convection–reaction problem demonstrate
+the method’s ability to realize near-ideal speedups; global-forecast initialization with a local-forecast coarse propagator leads
+to the best performance}},
+	author = {Carlberg, Kevin and Brencher, Lukas and Haasdonk, Bernard and Barth, Andreas},
+	title = {Data-driven time parallelism via forecasting},
+	howpublished = {arXiv:1610.09049v1 [cs.NA]},
+	url = {https://arxiv.org/pdf/1610.09049.pdf},
+	year = {2016},
+}
+
 @article{ChaudryEtAl2016,
 	abstract = {{We consider numerical methods for initial value problems that employ a two-stage approach consisting of solution on a relatively coarse discretization followed by solution on a relatively fine discretization. Examples include adaptive error control, parallel-in-time solution schemes, and efficient solution of adjoint problems for computing a posteriori error estimates. We describe a general formulation of two-stage computations and then perform a general a posteriori error analysis based on computable residuals and solution of an adjoint problem. The analysis accommodates various variations in the two-stage computation and in the formulation of the adjoint problems. We apply the analysis to computing “dual-weighted” a posteriori error estimates, developing novel algorithms for efficient solution that take into account cancellation of error, and to the Parareal algorithm. We test the various results using several numerical examples.}},
         author = {Jehanzeb Hameed Chaudhry and Don Estep and Simon Tavener and Varis Carey and Jeff Sandelin},
