@@ -447,6 +447,90 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          CarlbergEtAl2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseCarlbergEtAl2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseCarlbergEtAl2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalCarlbergEtAl2016Abstract"
+                    aria-expanded="false" aria-controls="modalCarlbergEtAl2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="CarlbergEtAl2016">K. Carlberg, L. Brencher, B. Haasdonk, and A. Barth, “Data-driven time parallelism via forecasting,” arXiv:1610.09049v1 [cs.NA], 2016 [Online]. Available at: <a href="https://arxiv.org/pdf/1610.09049.pdf" target="_blank">https://arxiv.org/pdf/1610.09049.pdf</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseCarlbergEtAl2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{CarlbergEtAl2016,
+  author = {Carlberg, Kevin and Brencher, Lukas and Haasdonk, Bernard and Barth, Andreas},
+  title = {Data-driven time parallelism via forecasting},
+  howpublished = {arXiv:1610.09049v1 [cs.NA]},
+  url = {https://arxiv.org/pdf/1610.09049.pdf},
+  year = {2016}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalCarlbergEtAl2016Abstract" tabindex="-1" role="dialog" aria-labelledby="modalCarlbergEtAl2016AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalCarlbergEtAl2016AbstractTitle">
+            Abstract for BibTeX entry <code>CarlbergEtAl2016</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          This work proposes a data-driven method for enabling the efficient, stable time-parallel numerical solution of
+systems of ordinary differential equations (ODEs). The method assumes that low-dimensional bases that accurately capture
+the time evolution of the dynamical-system state are available; these bases can be computed from snapshot data by proper
+orthogonal decomposition (POD) in the case of parameterized ODEs, for example. The method adopts the parareal framework
+for time parallelism, which is defined by an initialization method, a coarse propagator that advances solutions on a coarse
+time grid, and a fine propagator that operates on an underlying fine time grid. Rather than employing usual approaches for
+initialization and coarse propagation (e.g., a typical time integrator applied with a large time step), we propose novel datadriven
+techniques that leverage the available time-evolution bases. The coarse propagator is defined by a forecast (proposed in
+Ref. [11]) applied locally within each coarse time interval, which comprises the following steps: (1) apply the fine propagator
+for a small number of time steps, (2) approximate the state over the entire coarse time interval using gappy POD with the local
+time-evolution bases, and (3) select the approximation at the end of the time interval as the propagated state. We also propose
+both local-forecast initialization (i.e., the local-forecast coarse propagator applied sequentially) and global-forecast initialization
+(i.e., the local-forecast coarse propagator applied over the entire time interval with global time-evolution bases). The method
+is particularly well suited for POD-based reduced-order models (ROMs). In this case, spatial parallelism quickly saturates, as
+the ROM dynamical system is low dimensional; thus, time parallelism is needed to enable lower wall times. Further, the timeevolution
+bases can be extracted from readily available data, i.e., the right singular vectors arising during POD computation.
+In addition to performing analyses related to the method’s accuracy, speedup, and stability, we also numerically demonstrate
+the method’s performance. Here, numerical experiments on ROMs for a nonlinear convection–reaction problem demonstrate
+the method’s ability to realize near-ideal speedups; global-forecast initialization with a local-forecast coarse propagator leads
+to the best performance
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           ChaudryEtAl2016
         </div>
       </div>
