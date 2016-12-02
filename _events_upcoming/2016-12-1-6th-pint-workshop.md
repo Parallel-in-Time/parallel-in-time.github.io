@@ -21,7 +21,7 @@ organizers:
   - name: Jacob Schroder
     homepage:
   - name: Robert Speck
-    homepage: 
+    homepage: http://www.fz-juelich.de/ias/jsc/speck_r
 permalink: /events/6th-pint-workshop/
 subtitle: Brief overview
 page_type: event_page
@@ -29,4 +29,3 @@ no_lead: true
 ---
 
 The Sixth Parallel-in-time Integration Workshop will be held at the [Centro Congressi Stefano](http://www.csf.ethz.ch/) in [Ascona/Locarno](https://goo.gl/maps/zFmKhLY6BW32) in Switzerland. Stay tuned for more information! 
-
