@@ -7,6 +7,21 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PinT Benchmark Suite Proposal</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://mathgeek.us/&quot;&gt;Ben Ong&lt;/a&gt; set up a template for writing the PinT benchmark proposal, see &lt;a href=&quot;https://github.com/Parallel-in-Time/benchmark_suite_proposal&quot;&gt;PinT @ GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Based on the open questions session at the &lt;a href=&quot;/events/5th-pint-workshop/&quot;&gt;5th PinT Workshop&lt;/a&gt;, there is now a template for writing short paragraphs on one (or more) of the 10 benchmark problems the community has identified.
+The LaTeX files can be obtained &lt;a href=&quot;https://github.com/Parallel-in-Time/benchmark_suite_proposal&quot;&gt;here&lt;/a&gt;.
+The repository also contains information on how to participate.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Dec 2016 16:16:00 +0000</pubDate>
+        <link>http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</guid>
+      </item>
+    
+      <item>
         <title>PINT Plenary at  USNCCM</title>
         <description>&lt;p&gt;Plenary talk by Beth Wingate on parallel-in-time at the &lt;a href=&quot;http://14.usnccm.org/plenary-and-semi-plenary-speakers&quot;&gt;14th U.S. National Congress on Computational Mechanics&lt;/a&gt;.&lt;/p&gt;
 
@@ -267,34 +282,6 @@ If you would like to contribute to the mini symposium with a presentation, pleas
         <pubDate>Thu, 23 Jul 2015 07:26:44 +0000</pubDate>
         <link>http://parallelintime.org/events/2015/07/23/siampp-minisymposium.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2015/07/23/siampp-minisymposium.html</guid>
-      </item>
-    
-      <item>
-        <title>First scientific committee elected</title>
-        <description>&lt;p&gt;The election for the scientific committee is now closed and the results available.
-As we had 7 candidates for 7 open positions, the outcome is not a big surprise.
-Nevertheless, the first election of a scientific committee will hopefully be an important milestone and help to
-successfully continue the PINT workshop series for many years to come.&lt;/p&gt;
-
-&lt;!--more--&gt;
-&lt;p&gt;The following colleagues have been elected as members of the first scientific committee:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Martin J. Gander, University of Geneva, Switzerland&lt;/li&gt;
-  &lt;li&gt;Stefan Güttel, University of Manchester, UK&lt;/li&gt;
-  &lt;li&gt;Ron Haynes, Memorial University of Newfoundland, Canada&lt;/li&gt;
-  &lt;li&gt;Rolf Krause, University of Lugano, Switzerland,&lt;/li&gt;
-  &lt;li&gt;Daniel Ruprecht, University of Lugano, Switzerland (soon: University of Leeds, UK)&lt;/li&gt;
-  &lt;li&gt;Jacob Schroder, Lawrence Livermore National Laboratory, USA&lt;/li&gt;
-  &lt;li&gt;Robert Speck, Jülich Supercomputing Centre, Germany&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Support from Michael Klöppel at TU Dresden is thankfully acknowledged&lt;/strong&gt;: he served as the voting committee and set up
-and administrated the election through the &lt;a href=&quot;https://vote.heliosvoting.org/&quot;&gt;helios&lt;/a&gt; online voting system.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 26 Jun 2015 09:21:44 +0000</pubDate>
-        <link>http://parallelintime.org/events/2015/06/26/sc-election-result.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2015/06/26/sc-election-result.html</guid>
       </item>
     
   </channel>
