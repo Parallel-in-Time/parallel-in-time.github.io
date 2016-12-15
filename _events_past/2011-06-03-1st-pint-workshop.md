@@ -20,6 +20,7 @@ invited:
   - name: Michael Minion
   - name: Stefan Güttel
 permalink:
+subtitle: Brief overview
 page_type: event_page
 ---
 

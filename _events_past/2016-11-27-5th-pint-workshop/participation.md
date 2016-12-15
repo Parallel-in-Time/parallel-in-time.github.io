@@ -8,7 +8,7 @@ event_start: 2016-11-27 00:00
 event_end: 2016-12-02 00:00
 event_url: http://www.birs.ca/events/2016/5-day-workshops/16w5030
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Matt Emmett
     homepage: http://ccse.lbl.gov/people/emmett/

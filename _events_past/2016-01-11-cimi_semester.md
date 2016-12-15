@@ -23,6 +23,7 @@ invited:
   - name: Robert Speck
     homepage: http://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/speck_r.html
 permalink:
+subtitle: Brief overview
 page_type: event_page
 ---
 
