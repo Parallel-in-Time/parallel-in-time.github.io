@@ -19,6 +19,7 @@ invited:
   - name: Michael Minion
   - name: Benjamin Ong
 permalink:
+subtitle: Brief overview
 page_type: event_page
 ---
 
