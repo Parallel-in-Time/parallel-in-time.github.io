@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://parallelintime.org/events/2016/12/15/banff-postnews.html</loc>
+<lastmod>2016-12-15T09:21:44+00:00</lastmod>
+</url>
+<url>
 <loc>http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</loc>
 <lastmod>2016-12-02T16:16:00+00:00</lastmod>
 </url>
@@ -138,16 +142,7 @@
 <loc>http://parallelintime.org/news/page4/</loc>
 </url>
 <url>
-<loc>http://parallelintime.org/events/5th-pint-workshop/</loc>
-</url>
-<url>
-<loc>http://parallelintime.org/events/5th-pint-workshop/overview/</loc>
-</url>
-<url>
-<loc>http://parallelintime.org/events/5th-pint-workshop/participation/</loc>
-</url>
-<url>
-<loc>http://parallelintime.org/events/5th-pint-workshop/programme/</loc>
+<loc>http://parallelintime.org/news/page5/</loc>
 </url>
 <url>
 <loc>http://parallelintime.org/events/6th-pint-workshop/</loc>
@@ -166,6 +161,18 @@
 </url>
 <url>
 <loc>http://parallelintime.org/events/cimi_semester/</loc>
+</url>
+<url>
+<loc>http://parallelintime.org/events/5th-pint-workshop/</loc>
+</url>
+<url>
+<loc>http://parallelintime.org/events/5th-pint-workshop/overview/</loc>
+</url>
+<url>
+<loc>http://parallelintime.org/events/5th-pint-workshop/participation/</loc>
+</url>
+<url>
+<loc>http://parallelintime.org/events/5th-pint-workshop/programme/</loc>
 </url>
 <url>
 <loc>http://parallelintime.org/groups/lbnl.html</loc>

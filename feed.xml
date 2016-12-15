@@ -7,6 +7,23 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Successful workshop in Banff</title>
+        <description>&lt;p&gt;Successful 5th Workshop on Parallel-in-Time Integration in Banff, Canada.&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;The &lt;a href=&quot;/events/5th-pint-workshop/&quot;&gt;5th PinT workshop&lt;/a&gt; at the &lt;a href=&quot;http://www.birs.ca/events/2016/5-day-workshops/16w5030&quot;&gt;Banff International Research Station&lt;/a&gt; in Canada brought our workshop series to the North American continent for the first time. 
+We had 41 participants from 10 countries - Austria, Belgium, Canada, China, France, Germany, Japan, Switzerland, UK and the US - which underscores the truly international character of the parallel-in-time research community.
+The &lt;a href=&quot;http://www.birs.ca/workshops/2016/16w5030/groupphoto.jpg&quot;&gt;optimal mix&lt;/a&gt; of already well-known colleagues and ``fresh faces’’ together with the perfect environment provided by BIRS (what other location offers fighting elk on the way to breakfast?) made the workshop again an incredibly productive and interesting event.
+For the first time there will be workshop proceedings to be published as a special issue of the Springer journal &lt;a href=&quot;http://link.springer.com/journal/791&quot;&gt;Computing and Visualization in Science&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We can now look forward to the &lt;a href=&quot;/events/6th-pint-workshop/&quot;&gt;6th workshop&lt;/a&gt; in the series in October 2017 in Switzerland.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Dec 2016 09:21:44 +0000</pubDate>
+        <link>http://parallelintime.org/events/2016/12/15/banff-postnews.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2016/12/15/banff-postnews.html</guid>
+      </item>
+    
+      <item>
         <title>PinT Benchmark Suite Proposal</title>
         <description>&lt;p&gt;&lt;a href=&quot;http://mathgeek.us/&quot;&gt;Ben Ong&lt;/a&gt; set up a template for writing the PinT benchmark proposal, see &lt;a href=&quot;https://github.com/Parallel-in-Time/benchmark_suite_proposal&quot;&gt;PinT @ GitHub&lt;/a&gt;.&lt;/p&gt;
 
@@ -249,39 +266,6 @@ You can find more information here on &lt;a href=&quot;/events/cimi_semester/&qu
         <pubDate>Fri, 13 Nov 2015 07:26:44 +0000</pubDate>
         <link>http://parallelintime.org/events/2015/11/13/toulouse-registration.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2015/11/13/toulouse-registration.html</guid>
-      </item>
-    
-      <item>
-        <title>Minisymposium at SIAM PP 2016</title>
-        <description>&lt;p&gt;Plans for a proposal for a PINT mini symposium at SIAM PP 2016 in Paris.&lt;/p&gt;
-
-&lt;!--more--&gt;
-&lt;p&gt;With mini symposia related to parallel-in-time integration at&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=15471&quot;&gt;SIAM CS&amp;amp;E 2013&lt;/a&gt; in Boston,&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=17906&quot;&gt;SIAM PP 2014&lt;/a&gt; in Savannah,&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=19996&quot;&gt;SIAM CS&amp;amp;E 2015&lt;/a&gt; in Salt Lake City&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;and an &lt;a href=&quot;https://www.pathlms.com/siam/courses/1043/sections/1256&quot;&gt;invited talk&lt;/a&gt; by Rob Falgout also at SIAM CS&amp;amp;E 2015,
-the topic has been well represented at SIAM conferences in the last years.&lt;/p&gt;
-
-&lt;p&gt;To continue these efforts, a proposal for a mini symposium on &lt;em&gt;parallel-in-time integration methods&lt;/em&gt; for the upcoming
-&lt;a href=&quot;http://www.siam.org/meetings/pp16/&quot;&gt;SIAM PP 2016&lt;/a&gt; (April 12-15, 2016) in Paris is in the planning stage.
-If you would like to contribute to the mini symposium with a presentation, please contact one of the organisers:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tobias Neckel, TU Munich&lt;/li&gt;
-  &lt;li&gt;Daniel Ruprecht, &lt;a href=&quot;/groups/usi.html&quot;&gt;USI Lugano&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Martin Schreiber, &lt;a href=&quot;http://www.parallelintime.org/groups/uoe.html&quot;&gt;University of Exeter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The deadline for proposals is in September, so the list of speakers will have to be finalised towards the end of August.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 23 Jul 2015 07:26:44 +0000</pubDate>
-        <link>http://parallelintime.org/events/2015/07/23/siampp-minisymposium.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2015/07/23/siampp-minisymposium.html</guid>
       </item>
     
   </channel>
