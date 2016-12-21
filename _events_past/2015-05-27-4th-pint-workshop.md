@@ -34,6 +34,7 @@ invited:
   - name: Beth Wingate
     homepage: http://emps.exeter.ac.uk/mathematics/staff/bw290
 permalink:
+subtitle: Brief overview
 page_type: event_page
 ---
 

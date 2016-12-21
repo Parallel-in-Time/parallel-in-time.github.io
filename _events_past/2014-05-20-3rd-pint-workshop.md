@@ -32,6 +32,7 @@ invited:
     homepage: http://ta.twi.tudelft.nl/mf/users/oosterle/
 logo: logo_jsc.png
 permalink:
+subtitle: Brief overview
 page_type: event_page
 ---
 

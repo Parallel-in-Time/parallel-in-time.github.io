@@ -98,7 +98,7 @@ $(document).ready(function() {
   var pint_pub_chart = new Chart(ctx).Bar(data, options);
   $("#stats-buttons").append('<div class="btn-group btn-group-xs" role="group"><button class="btn btn-xs btn-default" data-toggle="collapse" data-target="#chart-raw-data" aria-expanded="false" aria-controls="#chart-raw-data">JSON data of plot</button></div>');
   $("#chart-raw-data").html('<pre>'+JSON.stringify(years_counts, null, 2)+'</pre>');
-  $("#image-download-docu").text('To download the plot and use it in your publications, right-click it. It is licensed under a Creative Commons Attribution 3.0 license.');
+  $("#image-download-docu").text('To download the plot and use it in your publications, right-click it. It is licensed under a Creative Commons Attribution 3.0 license. If you use the BibTex file or figure in a publication, a reference to this website would be much appreciated.');
 
   $('.year-btn-group').removeClass('hidden');
 });
