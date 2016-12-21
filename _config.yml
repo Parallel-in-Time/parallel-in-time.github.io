@@ -1,6 +1,6 @@
 # Site settings
 title: Parallel-in-Time
-email: daniel.ruprecht@leeds.ac.uk
+email: d.ruprecht@leeds.ac.uk
 author: "Parallel-in-Time Enthusiasts"
 description: ""
 baseurl: ""
@@ -94,4 +94,4 @@ scholar:
 
   query: "@*"
 
-google_analytics_tracking_id: UA-62723342-1
+google_analytics_tracking_id: UA-89097376-2
