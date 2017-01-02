@@ -174,6 +174,29 @@
 
 
 
+  <h2 id="year2017" class="year">2017 <span class="count-stat"></span></h2>
+
+  <ol class="bibliography"></ol>
+  <div class="row">
+  <div class="col-md-offset-4 col-md-4 col-sm-offset-2 col-sm-8 col-xs-12">
+    <div class="btn-group btn-group-sm btn-group-justified center-block" role="group" aria-label="...">
+      <a href="#" role="button" class="btn btn-default btn-sm">
+        <i class="fa fa-fw fa-arrow-up"></i>
+        top
+      </a>
+      <div class="btn-group btn-group-sm year-btn-group hidden" role="group">
+        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          Years
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu years" role="menu">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <h2 id="year2016" class="year">2016 <span class="count-stat"></span></h2>
 
   <ol class="bibliography"><li><div class="bibtex-entry-container">
@@ -1729,6 +1752,73 @@ time approach. A developed and validated performance model gives the scalability
 approach and allows us to extrapolate the performance method towards large-scale system. This work has the potential
 to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied
 areas modelling oscillatory dominated problems.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          SekineEtAl2016
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSekineEtAl2016Bibtex"
+                    aria-expanded="false" aria-controls="collapseSekineEtAl2016Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSekineEtAl2016Abstract"
+                    aria-expanded="false" aria-controls="modalSekineEtAl2016Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="SekineEtAl2016">T. Sekine, T. Tsuji, T. Oyama, F. Magoulès, and K. Uchida, “Speedup of parallel computing by parareal method in transient stability analysis of Japanese power system,” in <i>2016 IEEE Innovative Smart Grid Technologies - Asia (ISGT-Asia)</i>, 2016, pp. 1177–1182 [Online]. Available at: <a href="http://dx.doi.org/10.1109/ISGT-Asia.2016.7796552" target="_blank">http://dx.doi.org/10.1109/ISGT-Asia.2016.7796552</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseSekineEtAl2016Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@inproceedings{SekineEtAl2016,
+  author = {Sekine, T. and Tsuji, T. and Oyama, T. and Magoulès, F. and Uchida, K.},
+  booktitle = {2016 IEEE Innovative Smart Grid Technologies - Asia (ISGT-Asia)},
+  doi = {10.1109/ISGT-Asia.2016.7796552},
+  pages = {1177-1182},
+  title = {Speedup of parallel computing by parareal method in transient stability analysis of Japanese power system},
+  url = {http://dx.doi.org/10.1109/ISGT-Asia.2016.7796552},
+  year = {2016}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalSekineEtAl2016Abstract" tabindex="-1" role="dialog" aria-labelledby="modalSekineEtAl2016AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSekineEtAl2016AbstractTitle">
+            Abstract for BibTeX entry <code>SekineEtAl2016</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          Long computation time is required for transient stability analysis of power systems because it can be expressed as combination of differential and algebraic equations. In order to finish the calculation within a practical amount of time, it is an effective approach that applying Parareal method as one of parallel computing technique to transient stability analysis. In the Parareal method, the accuracy of the result is gradually updated through iterative procedures in combination with rough estimation of entire waveform and detailed calculation for each decomposed time window. Based on the Parareal method, the authors have developed a new stability assessment method by using chaos theory. If an operating point is in unstable region, the trajectory has the chaotic property, “sensitive dependence on initial conditions”. Therefore, it is possible to assess the stability by detecting the convergence characteristics of the estimated waveform at each iterative procedure by the Parareal method. The effectiveness of the proposed method was tested by using IEEJ WEST10 system model.
         </div>
       </div>
     </div>
