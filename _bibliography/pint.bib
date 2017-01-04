@@ -2366,26 +2366,6 @@
         year = {2015}, 
 }
 
-@unpublished{KooijEtAl2015,
-	abstract = {{A parallel time integration method for nonlinear partial differential equations is proposed.
-		It is based on a new implementation of the Paraexp method for linear partial differential equations (PDEs)
-		employing a block Krylov subspace method.
-		For nonlinear PDEs the algorithm is based on our Paraexp implementation within a waveform relaxation.
-		The initial value problem is solved iteratively on a complete time interval.
-		Nonlinear terms are treated as a source term, provided by the solution from the previous iteration.
-		At each iteration, the problem is decoupled into independent subproblems by the principle of superposition.
-		The decoupled subproblems are solved fast by exponential integration, based on a block Krylov method.
-		The new time integration is demonstrated for the one-dimensional advection-diffusion equation and the viscous
-		Burgers equation.
-		Numerical experiments confirm excellent parallel scaling for the linear advection-diffusion problem, and good
-		scaling in case the nonlinear Burgers equation is simulated.}},
-	author = {{Kooij}, G.~L. and {Botchev}, M.~A. and {Geurts}, B.~J.},
-	howpublished = {arXiv:1509.04567 [math.NA]},
-	title = {{A Block {K}rylov Subspace Implementation of the Time-Parallel {P}araexp Method and its Extension for Nonlinear Partial Differential Equations}},
-	url = {http://arxiv.org/abs/1509.04567},
-	year = {2015},
-}
-
 @article{KreienbuehlEtAl2015,
 	abstract = {{In-silico investigation of skin permeation is an important but also computationally demanding problem.
 		To resolve all scales involved in full detail will not only require exascale computing capacities but also
@@ -2708,6 +2688,19 @@ to the best performance}},
 	year = {2016},
 }
 
+@article{EghbalEtAl2016,
+        abstract = {{The parareal algorithm is used to obtain temporal parallelization added to the parallelism obtained from the conventional spatial domain decomposition techniques for hydrodynamic problems. Parareal solution becomes unstable at high Reynolds numbers where the non-linear convection term in the Navier-Stokes equations becomes much larger than the diffusion term. A new framework that allows using parareal for unsteady high Reynolds number hydrodynamic problems is proposed where parareal coarse and fine time integration operators are incorporated with coarse and fine spatial grids respectively and \{RANS\} or \{DES\} turbulence models are employed with a blended filter that can be tuned for the stability of the method. This framework is composed of three solution stages where parareal serves as a transitional stage that bridges a coarse grid solution to a fine grid one. While in lower Reynolds number problems parareal solution can serve as a final solution, in higher Reynolds number problems with high degree of non-linearity parareal provides a shorter path to the final solution. Anticipating a parareal stage in a transitional sense allows a looser convergence requirement which leads to high speedup gains in that stage. On the other hand improved initial values at the beginning of the last stage yields a shorter final fine stage solution. A windowing technique is employed in this methodology to further control the parareal instabilities by keeping the parareal corrections smaller while still being able to cover an arbitrary simulation time with given computational resources. Application of this methodology has been illustrated with a fully turbulent vortex shedding from a cylinder and a flow from the Grand Passage tidal zone in the Bay of Fundy. It is concluded that a tuned turbulence model may sufficiently stabilize the parareal methodology for many practical problems such that it becomes applicable in the initialization process if not accurate enough as a final solution. \{MPI\} and OpenMP programming paradigms are used for temporal parallelism introduced by parareal and data parallelism obtained via spatial domain decomposition methods respectively. Also all computational tasks are accelerated using \{CUDA\} compatible GPGPUs.}},
+        author = {Araz Eghbal and Andrew G. Gerber and Eric Aubanel},
+        doi = {10.1016/j.jocs.2016.12.006},
+        journal = "Journal of Computational Science ",
+        number = {},
+        pages = { -- },
+        title = {Acceleration of Unsteady Hydrodynamic Simulations Using the Parareal Algorithm},
+        url = {http://dx.doi.org/10.1016/j.jocs.2016.12.006},
+        volume = {},
+        year = {2016},
+}
+
 @book{FalgoutEtAl2016, 
 	abstract = {{With steadily growing computational resources available, scientists must develop effective ways to utilize the increased resources. High performance, highly parallel software has become a standard. However until recent years parallelism has focused primarily on the spatial domain. When solving a space-time partial differential equation (PDE), this leads to a sequential bottleneck in the temporal dimension, particularly when taking a large number of time steps. The XBraid parallel-in-time library was developed as a practical way to add temporal parallelism to existing sequential codes with only minor modi cations. In this work, a rezoning-type moving mesh is applied to a diffusion problem and formulated in a parallel-in-time framework. Tests and scaling studies are run using XBraid and demonstrate excellent results for the simple model problem considered herein.}}, 		
 	author = {Falgout, R. D. and Manteuffel, T. A. and Southworth, B. and Schroder, J. B.}, 
@@ -2753,7 +2746,7 @@ a performance model that, for a multigrid-in-time solver, makes the decision on 
 	year = {2016}
 }
 
-@article{Haut02016,
+@article{Haut2016,
 	abstract ={The manuscript presents a technique for efficiently solving the classical wave equation, the shallow water equations, and, more generally, equations of the form $\partial u /\partial t = \mathcal {L}u$, where $\mathcal {L}$ is a skew-Hermitian differential operator. The idea is to explicitly construct an approximation to the time-evolution operator $\exp (\tau \mathcal {L})$ for a relatively large time-step $\tau $. Recently developed techniques for approximating oscillatory scalar functions by rational functions, and accelerated algorithms for computing functions of discretized differential operators are exploited. Principal advantages of the proposed method include: stability even for large time-steps, the possibility to parallelize in time over many characteristic wavelengths and large speed-ups over existing methods in situations where simulation over long times are required. Numerical examples involving the 2D rotating shallow water equations and the 2D wave equation in an inhomogenous medium are presented, and the method is compared to the 4th order Runge–Kutta (RK4) method and to the use of Chebyshev polynomials. The new method achieved high accuracy over long-time intervals, and with speeds that are orders of magnitude faster than both RK4 and the use of Chebyshev polynomials.}, 
 	author = {Haut, T. S. and Babb, T. and Martinsson, P. G. and Wingate, B. A.}, 
 	doi = {10.1093/imanum/drv021}, 
@@ -3000,4 +2993,21 @@ quantities of model systems.}},
 	howpublished = {arXiv:1609.08299v1 [math.NA] },
 	url = {https://arxiv.org/pdf/1609.08299.pdf},
 	year = {2016}
+}
+
+%
+% 2017
+%
+
+@article{KooijEtAl2017,
+        abstract = {{A parallel time integration method for nonlinear partial differential equations is proposed. It is based on a new implementation of the Paraexp method for linear partial differential equations (PDEs) employing a block Krylov subspace method. For nonlinear \{PDEs\} the algorithm is based on our Paraexp implementation within a waveform relaxation. The initial value problem is solved iteratively on a complete time interval. Nonlinear terms are treated as source terms, provided by the solution from the previous iteration. At each iteration, the problem is decoupled into independent subproblems by the principle of superposition. The decoupled subproblems are solved fast by exponential integration, based on a block Krylov method. The new time integration is demonstrated for the one-dimensional advection–diffusion equation and the viscous Burgers equation. Numerical experiments confirm excellent parallel scaling for the linear advection–diffusion problem, and good scaling in case the nonlinear Burgers equation is simulated.}},
+        author = {G.L. Kooij and M.A. Botchev and B.J. Geurts},
+        doi = {10.1016/j.cam.2016.09.036},
+        journal = {Journal of Computational and Applied Mathematics},
+        note = {Selected Papers from NUMDIFF-14},
+        pages = {229 - 246},
+        title = {A block Krylov subspace implementation of the time-parallel Paraexp method and its extension for nonlinear partial differential equations},
+        url = {http://dx.doi.org/10.1016/j.cam.2016.09.036},
+        volume = {316},
+        year = {2017},
 }
