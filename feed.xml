@@ -7,6 +7,19 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Parallel-in-time Twitter hashtag</title>
+        <description>&lt;p&gt;Parallel-in-time goes Twitter.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;If you are using Twitter, you can use the hash tag &lt;a href=&quot;https://twitter.com/hashtag/parallelintime?src=hash&quot;&gt;#parallelintime&lt;/a&gt; for everything that relates to PINT integration.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Jan 2017 10:17:44 +0000</pubDate>
+        <link>http://parallelintime.org/events/2017/01/17/pint-hashtag.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2017/01/17/pint-hashtag.html</guid>
+      </item>
+    
+      <item>
         <title>Mini symposium at SIAM CSE 2017</title>
         <description>&lt;p&gt;A &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=60892&quot;&gt;mini symposium&lt;/a&gt; about parallel-in-time integration with 8 talks will take place at the &lt;a href=&quot;https://www.siam.org/meetings/cse17/&quot;&gt;SIAM Conference on Computational Science and Engineering&lt;/a&gt; 2017.&lt;/p&gt;
 
@@ -209,71 +222,6 @@ with a total of 12 speakers!&lt;/p&gt;
         <pubDate>Thu, 17 Dec 2015 08:26:44 +0000</pubDate>
         <link>http://parallelintime.org/events/2015/12/17/siampp-ms.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2015/12/17/siampp-ms.html</guid>
-      </item>
-    
-      <item>
-        <title>PINT for Exascale computing</title>
-        <description>&lt;p&gt;A report sponsored by the US Department of Energy on &lt;em&gt;Applied Mathematics Research for Exascale Computing&lt;/em&gt; lists
-parallel-in-time integration as one of six future directions of research in model discretisation.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Even though the report &lt;a href=&quot;#DongarraEtAl2014&quot;&gt;[1]&lt;/a&gt; already appeared in 2014 and is strictly speaking no longer news, it
-is still exciting to see PINT being mentioned prominently as one of the promising avenues for the path to exascale
-computing.&lt;/p&gt;
-
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;div class=&quot;bibtex-entry-container&quot;&gt;
-  &lt;div&gt;
-    &lt;div class=&quot;col-md-3 col-sm-12 bibtex-ref-meta hidden&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-md-12 ref-label label label-default&quot;&gt;
-          DongarraEtAl2014
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;btn-group btn-group-xs btn-group-justified&quot; role=&quot;group&quot;&gt;
-          &lt;div class=&quot;btn-group btn-group-xs&quot; role=&quot;group&quot;&gt;
-            &lt;button class=&quot;btn btn-default&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseDongarraEtAl2014Bibtex&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseDongarraEtAl2014Bibtex&quot;&gt;
-              BibTeX
-            &lt;/button&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;btn-group btn-group-xs&quot; role=&quot;group&quot;&gt;
-            
-            &lt;button class=&quot;btn btn-default&quot; disabled=&quot;disabled&quot; data-toggle=&quot;modal&quot; data-target=&quot;#modalDongarraEtAl2014Abstract&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;modalDongarraEtAl2014Abstract&quot;&gt;
-              Abstract
-            &lt;/button&gt;
-            
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;bibtex-ref-entry&quot;&gt;
-      &lt;span id=&quot;DongarraEtAl2014&quot;&gt;J. Dongarra and al., “Applied Mathematics Research for Exascale Computing,” Lawrence Livermore National Laboratory, LLNL-TR-651000, 2014 [Online]. Available at: &lt;a href=&quot;http://science.energy.gov/%7E/media/ascr/pdf/research/am/docs/EMWGreport.pdf&quot; target=&quot;_blank&quot;&gt;http://science.energy.gov/%7E/media/ascr/pdf/research/am/docs/EMWGreport.pdf&lt;/a&gt;&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;collapse&quot; id=&quot;collapseDongarraEtAl2014Bibtex&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-12&quot;&gt;
-        &lt;pre class=&quot;abstract&quot;&gt;@techreport{DongarraEtAl2014,
-  author = {Dongarra, J. and al.},
-  institution = {Lawrence Livermore National Laboratory},
-  number = {LLNL-TR-651000},
-  title = {{Applied Mathematics Research for Exascale Computing}},
-  url = {{http://science.energy.gov/%7E/media/ascr/pdf/research/am/docs/EMWGreport.pdf}},
-  year = {2014}
-}
-&lt;/pre&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  
-&lt;/div&gt;
-&lt;/li&gt;&lt;/ol&gt;
-</description>
-        <pubDate>Thu, 17 Dec 2015 07:26:44 +0000</pubDate>
-        <link>http://parallelintime.org/2015/12/17/pint-in-doe-exascale.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/2015/12/17/pint-in-doe-exascale.html</guid>
       </item>
     
   </channel>
