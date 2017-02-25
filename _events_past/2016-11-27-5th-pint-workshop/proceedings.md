@@ -26,7 +26,7 @@ page_type: event_subpage
 no_lead: true
 ---
 
-Workshop proceedings will be published as a special issue of the Springer journal [Computing and Visualization in Science](http://link.springer.com/journal/791). Papers will undergo the standard review process. LaTeX sources for the journal can be downloaded [here](https://www.ctan.org/tex-archive/macros/latex/contrib/springer/svjour/cvs?lang=de).
+Workshop proceedings will be published as a special issue of the Springer journal [Computing and Visualization in Science](http://link.springer.com/journal/791). Papers will undergo the standard review process. LaTeX sources for the journal can be downloaded [here](http://static.springer.com/sgw/documents/468198/application/zip/LaTeX.zip).
 
 **The deadline for the submission is 30th April 2017**. Further details will be announced here in due time.
 
