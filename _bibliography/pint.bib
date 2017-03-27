@@ -3009,6 +3009,15 @@ quantities of model systems.}},
 % 2017
 %
 
+@unpublished{BoltenEtAl2017,
+	abstract = {{For time-dependent partial differential equations, parallel-in-time integration using the "parallel full approximation scheme in space and time" (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time-steps simultaneously using a space-time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as multigrid method and in this paper, we will use this multigrid formulation and in particular PFASST's iteration matrix to show that in the non-stiff as well as in the stiff limit PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time-steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.}},
+	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
+	title = {Asymptotic convergence of the parallel full approximation scheme in space and time for linear problems},
+	howpublished = {arXiv:1703.07120 [math.NA]},
+	url = {https://arxiv.org/abs/1703.07120},
+	year = {2017}
+}
+
 @article{KooijEtAl2017,
         abstract = {{A parallel time integration method for nonlinear partial differential equations is proposed. It is based on a new implementation of the Paraexp method for linear partial differential equations (PDEs) employing a block Krylov subspace method. For nonlinear \{PDEs\} the algorithm is based on our Paraexp implementation within a waveform relaxation. The initial value problem is solved iteratively on a complete time interval. Nonlinear terms are treated as source terms, provided by the solution from the previous iteration. At each iteration, the problem is decoupled into independent subproblems by the principle of superposition. The decoupled subproblems are solved fast by exponential integration, based on a block Krylov method. The new time integration is demonstrated for the one-dimensional advection–diffusion equation and the viscous Burgers equation. Numerical experiments confirm excellent parallel scaling for the linear advection–diffusion problem, and good scaling in case the nonlinear Burgers equation is simulated.}},
         author = {G.L. Kooij and M.A. Botchev and B.J. Geurts},
@@ -3028,6 +3037,15 @@ quantities of model systems.}},
 	title = {Wave propagation characteristics of Parareal},
 	howpublished = {arXiv:1701.01359 [math.NA]},
 	url = {https://arxiv.org/abs/1701.01359},
+	year = {2017}
+}
+
+@unpublished{Speck2017,
+	abstract = {{In this paper we present two strategies to enable "parallelization across the method" for spectral deferred corrections (SDC). Using standard low-order time-stepping methods in an iterative fashion, SDC can be seen as preconditioned Picard iteration for the collocation problem. Typically, a serial Gauss-Seidel-like preconditioner is used, computing updates for each collocation node one by one. The goal of this paper is to show how this process can be parallelized, so that all collocation nodes are updated simultaneously. The first strategy aims at finding parallel preconditioners for the Picard iteration and we test three choices using four different test problems. For the second strategy we diagonalize the quadrature matrix of the collocation problem directly. In order to integrate non-linear problems we employ simplified and inexact Newton methods. Here, we estimate the speed of convergence depending on the time-step size and verify our results using a non-linear diffusion problem.}},
+	author = {Speck, Robert},
+	title = {Parallelizing spectral deferred corrections across the method},
+	howpublished = {arXiv:1703.08079 [math.NA]},
+	url = {https://arxiv.org/abs/1703.08079},
 	year = {2017}
 }
 
@@ -3051,13 +3069,4 @@ quantities of model systems.}},
         url = {http://dx.doi.org/10.1002/mma.4273},
         title = {Three rapidly convergent parareal solvers with application to time-dependent PDEs with fractional Laplacian},
         year = {2017},
-}
-
-@unpublished{BoltenEtAl2017,
-	abstract = {{For time-dependent partial differential equations, parallel-in-time integration using the "parallel full approximation scheme in space and time" (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time-steps simultaneously using a space-time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as multigrid method and in this paper, we will use this multigrid formulation and in particular PFASST's iteration matrix to show that in the non-stiff as well as in the stiff limit PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time-steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.}},
-	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
-	title = {Asymptotic convergence of the parallel full approximation scheme in space and time for linear problems},
-	howpublished = {arXiv:1703.07120 [math.NA]},
-	url = {https://arxiv.org/abs/1703.07120},
-	year = {2017}
 }
