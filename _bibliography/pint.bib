@@ -3009,6 +3009,23 @@ quantities of model systems.}},
 % 2017
 %
 
+@unpublished{BadiaEtAl2017,
+	abstract = {{In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential
+equations. The approach is based on an efficient multilevel solver of the Schur complement
+related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method.
+Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton
+method over the global nonlinear ODE, using the multilevel Schur complement solver at every
+nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur
+complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments
+show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational
+resources to solve for more time steps the same problem.}},
+	author = {Badia, Santiago and Olm, Marc},
+	title = {Nonlinear parallel-in-time {S}chur complement solvers for ordinary differential equations},
+	howpublished = {arXiv:1703.08466v1 [math.NA]},
+	url = {https://arxiv.org/pdf/1703.08466.pdf},
+	year = {2017}
+}
+
 @unpublished{BoltenEtAl2017,
 	abstract = {{For time-dependent partial differential equations, parallel-in-time integration using the "parallel full approximation scheme in space and time" (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time-steps simultaneously using a space-time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as multigrid method and in this paper, we will use this multigrid formulation and in particular PFASST's iteration matrix to show that in the non-stiff as well as in the stiff limit PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time-steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.}},
 	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
