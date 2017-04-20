@@ -3031,6 +3031,15 @@ quantities of model systems.}},
         year = {2017},
 }
 
+@article{KreienbuehlEtAl2017,
+	abstract = {{This article demonstrates the applicability of the parallel-in-time method Parareal to the numerical solution of the Einstein gravity equations for the spherical collapse of a massless scalar field. To account for the shrinking of the spatial domain in time, a tailored load balancing scheme is proposed and compared to load balancing based on number of time steps alone. The performance of Parareal is studied for both the sub-critical and black hole case; our experiments show that Parareal generates substantial speedup and, in the super-critical regime, can reproduce Choptuik's black hole mass scaling law.}},
+	author = {Kreienbuehl, Andreas and Benedusi, Pietro and Ruprecht, Daniel and Krause, Rolf},
+	journal = {Communications in Applied Mathematics and Computational Science},
+	note = {Accepted},
+	url = {https://arxiv.org/abs/1509.01572},
+	year = {2017},
+}
+
 @unpublished{Ruprecht2017,
 	abstract = {{The paper derives and analyses the (semi-)discrete dispersion relation of the Parareal parallel-in-time integration method. It investigates Parareal's wave propagation characteristics with the aim to better understand what causes the well documented stability problems for hyperbolic equations. The analysis shows that the instability is caused by convergence of the amplification factor to the exact value from above for medium to high wave numbers. Phase errors in the coarse propagator are identified as the culprit, which suggests that specifically tailored coarse level methods could provide a remedy.}},
 	author = {Ruprecht, D.},
@@ -3050,12 +3059,12 @@ quantities of model systems.}},
 }
 
 @article{SpeckRuprecht2017,
-        abstract = {{Abstract We introduce and analyze different strategies for the parallel-in-time integration method \{PFASST\} to recover from hard faults and subsequent data loss. Since \{PFASST\} stores solutions at multiple time steps on different processors, information from adjacent steps can be used to recover after a processor has failed. PFASST’s multi-level hierarchy allows to use the coarse level for correcting the reconstructed solution, which can help to minimize overhead. A theoretical model is devised linking overhead to the number of additional \{PFASST\} iterations required for convergence after a fault. The potential efficiency of different strategies is assessed in terms of required additional iterations for examples of diffusive and advective type.}},
+        abstract = {{Abstract We introduce and analyze different strategies for the parallel-in-time integration method PFASST to recover from hard faults and subsequent data loss. Since PFASST stores solutions at multiple time steps on different processors, information from adjacent steps can be used to recover after a processor has failed. PFASST’s multi-level hierarchy allows to use the coarse level for correcting the reconstructed solution, which can help to minimize overhead. A theoretical model is devised linking overhead to the number of additional PFASST iterations required for convergence after a fault. The potential efficiency of different strategies is assessed in terms of required additional iterations for examples of diffusive and advective type.}},
        author = {Robert Speck and Daniel Ruprecht},
         doi = {10.1016/j.parco.2016.12.001},
         journal = {Parallel Computing},
         pages = {20 -- 37},
-        title = {Toward fault-tolerant parallel-in-time integration with \{PFASST\} },
+        title = {Toward fault-tolerant parallel-in-time integration with {PFASST} },
         url = "http://dx.doi.org/10.1016/j.parco.2016.12.001",
         volume = {62},
         year = {2017},
