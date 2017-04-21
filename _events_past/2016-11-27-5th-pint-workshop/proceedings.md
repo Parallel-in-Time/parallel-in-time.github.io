@@ -32,7 +32,7 @@ Workshop proceedings will be published as a special issue of the Springer journa
 
 **Important:** When submitting, please select *Proceedings PINT Workshop* under *Category*.
 
-The deadline for the submission is **30th April 2017**.
+The deadline for the submission is **8 May 2017** (extended deadline from 30 April).
 
 Guest editors for this issue will be
 
