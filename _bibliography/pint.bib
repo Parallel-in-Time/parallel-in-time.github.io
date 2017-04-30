@@ -3059,6 +3059,17 @@ quantities of model systems.}},
 	year = {2017}
 }
 
+@article{SchreiberEtAl2017,
+    abstract = {{This paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory partial differential equations, which is a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization in this solver allows us to significantly exceed the computing resources used by parallelization-in-space methods and results in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascale performance for weather prediction is that the strong scaling limit – the parallel performance for a fixed problem size with an increasing number of processors – saturates. A main avenue to circumvent this problem is to introduce new numerical techniques that take advantage of time parallelism. In this paper, we use a time-parallel approximation that retains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the original problem into a large set of independent terms and (b) solving each of these terms independently of each other which can now be accomplished on a large number of high-performance computing resources. Our results are conducted on up to 3586 cores for problem sizes with the parallelization-in-space scalability limited already on a single node. We gain significant reductions in the time-to-solution of 118.3× for spectral methods and 1503.0× for finite-difference methods with the parallelization-in-time approach. A developed and calibrated performance model gives the scalability limitations a priori for this new approach and allows us to extrapolate the performance of the method towards large-scale systems. This work has the potential to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied areas modelling oscillatory dominated problems.}},
+	author = {Martin Schreiber and Pedro S Peixoto and Terry Haut and Beth Wingate},
+	doi = {10.1177/1094342016687625},
+	journal = {The International Journal of High Performance Computing Applications},
+	pages = {1094342016687625},
+	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
+	url = {http://dx.doi.org/10.1177/1094342016687625},
+	year = {2017}
+}
+
 @unpublished{Speck2017,
 	abstract = {{In this paper we present two strategies to enable "parallelization across the method" for spectral deferred corrections (SDC). Using standard low-order time-stepping methods in an iterative fashion, SDC can be seen as preconditioned Picard iteration for the collocation problem. Typically, a serial Gauss-Seidel-like preconditioner is used, computing updates for each collocation node one by one. The goal of this paper is to show how this process can be parallelized, so that all collocation nodes are updated simultaneously. The first strategy aims at finding parallel preconditioners for the Picard iteration and we test three choices using four different test problems. For the second strategy we diagonalize the quadrature matrix of the collocation problem directly. In order to integrate non-linear problems we employ simplified and inexact Newton methods. Here, we estimate the speed of convergence depending on the time-step size and verify our results using a non-linear diffusion problem.}},
 	author = {Speck, Robert},
