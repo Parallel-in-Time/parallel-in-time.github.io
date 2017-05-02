@@ -3009,6 +3009,15 @@ quantities of model systems.}},
 % 2017
 %
 
+@unpublished{ArielEtAl2017,
+	abstract = {{A weighted version of the parareal method for parallel-in-time computation of time dependent problems is presented. Linear stability analysis for a scalar weighing strategy shows that the new scheme may enjoy favorable stability properties with marginal reduction in accuracy at worse. More complicated matrix-valued weights are applied in numerical examples. The weights are optimized using information from past iterations, providing a systematic framework for using the parareal iterations as an approach to multiscale coupling. The advantage of the method is demonstrated using numerical examples, including some well-studied nonlinear Hamiltonian systems.}},
+	author = {Ariel, Gil and Nguyen, Hieu and Tsai, Richard},
+	title = {\theta-parareal schemes},
+	howpublished = {arXiv:1704.06882 [math.NA]},
+	url = {https://arxiv.org/abs/1704.06882},
+	year = {2017},
+}
+
 @unpublished{BoltenEtAl2017,
 	abstract = {{For time-dependent partial differential equations, parallel-in-time integration using the "parallel full approximation scheme in space and time" (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time-steps simultaneously using a space-time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as multigrid method and in this paper, we will use this multigrid formulation and in particular PFASST's iteration matrix to show that in the non-stiff as well as in the stiff limit PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time-steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.}},
 	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
@@ -3037,6 +3046,7 @@ quantities of model systems.}},
 	journal = {Communications in Applied Mathematics and Computational Science},
 	note = {Accepted},
 	url = {https://arxiv.org/abs/1509.01572},
+	title = {Time parallel gravitational collapse simulation},
 	year = {2017},
 }
 
@@ -3046,6 +3056,17 @@ quantities of model systems.}},
 	title = {Wave propagation characteristics of Parareal},
 	howpublished = {arXiv:1701.01359 [math.NA]},
 	url = {https://arxiv.org/abs/1701.01359},
+	year = {2017}
+}
+
+@article{SchreiberEtAl2017,
+    abstract = {{This paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory partial differential equations, which is a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization in this solver allows us to significantly exceed the computing resources used by parallelization-in-space methods and results in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascale performance for weather prediction is that the strong scaling limit – the parallel performance for a fixed problem size with an increasing number of processors – saturates. A main avenue to circumvent this problem is to introduce new numerical techniques that take advantage of time parallelism. In this paper, we use a time-parallel approximation that retains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the original problem into a large set of independent terms and (b) solving each of these terms independently of each other which can now be accomplished on a large number of high-performance computing resources. Our results are conducted on up to 3586 cores for problem sizes with the parallelization-in-space scalability limited already on a single node. We gain significant reductions in the time-to-solution of 118.3× for spectral methods and 1503.0× for finite-difference methods with the parallelization-in-time approach. A developed and calibrated performance model gives the scalability limitations a priori for this new approach and allows us to extrapolate the performance of the method towards large-scale systems. This work has the potential to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied areas modelling oscillatory dominated problems.}},
+	author = {Martin Schreiber and Pedro S Peixoto and Terry Haut and Beth Wingate},
+	doi = {10.1177/1094342016687625},
+	journal = {The International Journal of High Performance Computing Applications},
+	pages = {1094342016687625},
+	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
+	url = {http://dx.doi.org/10.1177/1094342016687625},
 	year = {2017}
 }
 
