@@ -28,7 +28,11 @@ no_lead: true
 
 Workshop proceedings will be published as a special issue of the Springer journal [Computing and Visualization in Science](http://link.springer.com/journal/791). Papers will undergo the standard review process. LaTeX sources for the journal can be downloaded [here](http://static.springer.com/sgw/documents/468198/application/zip/LaTeX.zip).
 
-**The deadline for the submission is 30th April 2017**. Further details will be announced here in due time.
+**Submission is now open**: Please use the *new* online submission system available [here](https://cvs.gcsc.uni-frankfurt.de/en/papers/new?sid=WBXGL0AwwteFze3QG) to submit your paper. Papers should be regular length journal papers (around 10 to 15 pages). Please check out the [instructions for authors](http://www.springer.com/mathematics/computational+science+%26+engineering/journal/791?detailsPage=pltci_1060654).
+
+**Important:** When submitting, please select *Proceedings PINT Workshop* under *Category*.
+
+The deadline for the submission is **8 May 2017** (extended deadline from 30 April).
 
 Guest editors for this issue will be
 
