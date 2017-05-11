@@ -3008,13 +3008,29 @@ quantities of model systems.}},
 %
 % 2017
 %
-
 @unpublished{ArielEtAl2017,
 	abstract = {{A weighted version of the parareal method for parallel-in-time computation of time dependent problems is presented. Linear stability analysis for a scalar weighing strategy shows that the new scheme may enjoy favorable stability properties with marginal reduction in accuracy at worse. More complicated matrix-valued weights are applied in numerical examples. The weights are optimized using information from past iterations, providing a systematic framework for using the parareal iterations as an approach to multiscale coupling. The advantage of the method is demonstrated using numerical examples, including some well-studied nonlinear Hamiltonian systems.}},
 	author = {Ariel, Gil and Nguyen, Hieu and Tsai, Richard},
 	title = {\theta-parareal schemes},
 	howpublished = {arXiv:1704.06882 [math.NA]},
 	url = {https://arxiv.org/abs/1704.06882},
+	year = {2017},
+}
+
+@unpublished{BadiaEtAl2017,
+	abstract = {{In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential
+equations. The approach is based on an efficient multilevel solver of the Schur complement
+related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method.
+Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton
+method over the global nonlinear ODE, using the multilevel Schur complement solver at every
+nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur
+complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments
+show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational
+resources to solve for more time steps the same problem.}},
+	author = {Badia, Santiago and Olm, Marc},
+	title = {Nonlinear parallel-in-time {S}chur complement solvers for ordinary differential equations},
+	howpublished = {arXiv:1703.08466v1 [math.NA]},
+	url = {https://arxiv.org/pdf/1703.08466.pdf},
 	year = {2017},
 }
 
@@ -3101,6 +3117,17 @@ quantities of model systems.}},
         url = {http://dx.doi.org/10.1002/mma.4273},
         title = {Three rapidly convergent parareal solvers with application to time-dependent PDEs with fractional Laplacian},
         year = {2017},
+}
+
+@article{Wu2017b,
+	author = {Shu-Lin Wu},
+	doi = {10.1016/j.amc.2017.02.012},
+	journal = {Applied Mathematics and Computation},
+	title = {An efficient parareal algorithm for a class of time-dependent problems with fractional Laplacian},
+	pages = {329-- 341},
+	url = {http://dx.doi.org/10.1016/j.amc.2017.02.012},
+	volume = {307},
+	year = {2017},
 }
 
 @article{WuEtAl2017,
