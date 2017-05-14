@@ -3069,11 +3069,23 @@ resources to solve for more time steps the same problem.}},
 }
 
 @unpublished{FischerEtAl2017,
-	abstract = {{}},
+	abstract = {{Parallel in time methods for solving initial value problems are a means
+to increase the parallelism of numerical simulations. Hybrid parareal
+schemes interleaving the parallel in time iteration with an iterative solution
+of the individual time steps are among the most efficient methods
+for general nonlinear problems. Despite the hiding of communication time
+behind computation, communication has in certain situations a significant
+impact on the total runtime. Here we present strict, yet no sharp, error
+bounds for hybrid parareal methods with inexact communication due to
+lossy data compression, and derive theoretical estimates of the impact
+of compression on parallel efficiency of the algorithms. These and some
+computational experiments suggest that compression is a viable method
+to make hybrid parareal schemes robust with respect to low bandwidth
+setups.}},
 	author = {Fischer, L. and G\"otschel, S. and Weiser, M.},
-	howpublished = {},
-	title = {},
-	url = {},
+	howpublished = {ZIB Report 17-25 (May 2017)},
+	title = {Lossy data compression reduces communication time in hybrid time-parallel integrators},
+	url = {https://opus4.kobv.de/opus4-zib/files/6396/ZR-17-25.pdf},
 	year = {2017}
 }
 	
