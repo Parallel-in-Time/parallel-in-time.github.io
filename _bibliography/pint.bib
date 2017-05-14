@@ -3068,6 +3068,36 @@ resources to solve for more time steps the same problem.}},
 	year = {2017},
 }
 
+@unpublished{FischerEtAl2017,
+	abstract = {{Parallel in time methods for solving initial value problems are a means
+to increase the parallelism of numerical simulations. Hybrid parareal
+schemes interleaving the parallel in time iteration with an iterative solution
+of the individual time steps are among the most efficient methods
+for general nonlinear problems. Despite the hiding of communication time
+behind computation, communication has in certain situations a significant
+impact on the total runtime. Here we present strict, yet no sharp, error
+bounds for hybrid parareal methods with inexact communication due to
+lossy data compression, and derive theoretical estimates of the impact
+of compression on parallel efficiency of the algorithms. These and some
+computational experiments suggest that compression is a viable method
+to make hybrid parareal schemes robust with respect to low bandwidth
+setups.}},
+	author = {Fischer, L. and G\"otschel, S. and Weiser, M.},
+	howpublished = {ZIB Report 17-25 (May 2017)},
+	title = {Lossy data compression reduces communication time in hybrid time-parallel integrators},
+	url = {https://opus4.kobv.de/opus4-zib/files/6396/ZR-17-25.pdf},
+	year = {2017}
+}
+	
+@unpublished{GuentherEtAl2017,
+	abstract = {{In this paper, an adjoint solver for the multigrid in time software library XBraid is presented. XBraid provides a non-intrusive approach for simulating unsteady dynamics on multiple processors while parallelizing not only in space but also in the time domain. It applies an iterative multigrid reduction in time algorithm to existing spatially parallel classical time propagators and computes the unsteady solution parallel in time. Techniques from Automatic Differentiation are used to develop a consistent discrete adjoint solver which provides sensitivity information of output quantities with respect to design parameter changes. The adjoint code runs backwards through the primal XBraid actions and accumulates gradient information parallel in time. It is highly non-intrusive as existing adjoint time propagators can easily be integrated through the adjoint interface. The adjoint code is validated on advection-dominated flow with periodic upstream boundary condition. It provides similar strong scaling results as the primal XBraid solver and offers great potential for speeding up the overall computational costs for sensitivity analysis using multiple processors}},
+	author = {G\"unther, S. and Gauger, N. R. and Schroder, J. B.},
+	howpublished = {arXiv:1705.00663 [math.OC]},
+	title = {A Non-Intrusive Parallel-in-Time Adjoint Solver with the {XBraid} Library},
+	url = {https://arxiv.org/abs/1705.00663},
+	year = {2017}
+}
+
 @unpublished{Ruprecht2017,
 	abstract = {{The paper derives and analyses the (semi-)discrete dispersion relation of the Parareal parallel-in-time integration method. It investigates Parareal's wave propagation characteristics with the aim to better understand what causes the well documented stability problems for hyperbolic equations. The analysis shows that the instability is caused by convergence of the amplification factor to the exact value from above for medium to high wave numbers. Phase errors in the coarse propagator are identified as the culprit, which suggests that specifically tailored coarse level methods could provide a remedy.}},
 	author = {Ruprecht, D.},
