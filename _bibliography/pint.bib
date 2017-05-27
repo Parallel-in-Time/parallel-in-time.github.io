@@ -1463,6 +1463,16 @@
 	year = {2012}
 }
 
+@unpublished{Loic2012,
+	abstract = {{The Parareal algorithm is used to solve time-dependent problems considering multiple solvers that may work in parallel. The key feature is a initial rough approximation of the solution that is iteratively refined by the parallel solvers. We report a derivation of the Parareal method that uses a convergence acceleration technique to improve the accuracy of the solution. Our approach uses firstly an explicit ODE solver to perform the parallel computations with different time-steps and then, a decomposition of the solution into specific convergent series, based on an extrapolation method, allows to refine the precision of the solution. Our proposed method exploits basic explicit integration methods, such as for example the explicit Euler scheme, in order to preserve the simplicity of the global parallel algorithm. The first part of the paper outlines the proposed method applied to the simple explicit Euler scheme and then the derivation of the classical Parareal algorithm is discussed and illustrated with numerical examples.}},
+	author = {Lo{\"i}c, Michel},
+	title = {Semi-explicit Parareal method based on convergence acceleration technique},
+	howpublished = {arXiv:1212.4703 [cs.SY]},
+	url = {https://arxiv.org/abs/1212.4703},
+	year = {2012},
+}
+	
+
 @unpublished{OngEtAl2012,
 	author = {Ong, Benjamin W. and Melfi, Andrew and Christlieb, Andrew J.},
 	note = {arXiv:1209.4297 [cs.DC]},
@@ -3088,6 +3098,14 @@ setups.}},
 	url = {https://opus4.kobv.de/opus4-zib/files/6396/ZR-17-25.pdf},
 	year = {2017}
 }
+
+@unpublished{GanderEtAl2017,
+	author = {Martin J. Gander and Stefan G{\"u}ttel and Madalina Petcu},
+	title = {A nonlinear {ParaExp} algorithm},
+	howpublished = {MIMS EPrint: 2017.17},
+	url = {http://eprints.ma.man.ac.uk/2550/01/covered/MIMS_ep2017_17.pdf},
+	year = {2017}
+}
 	
 @unpublished{GuentherEtAl2017,
 	abstract = {{In this paper, an adjoint solver for the multigrid in time software library XBraid is presented. XBraid provides a non-intrusive approach for simulating unsteady dynamics on multiple processors while parallelizing not only in space but also in the time domain. It applies an iterative multigrid reduction in time algorithm to existing spatially parallel classical time propagators and computes the unsteady solution parallel in time. Techniques from Automatic Differentiation are used to develop a consistent discrete adjoint solver which provides sensitivity information of output quantities with respect to design parameter changes. The adjoint code runs backwards through the primal XBraid actions and accumulates gradient information parallel in time. It is highly non-intrusive as existing adjoint time propagators can easily be integrated through the adjoint interface. The adjoint code is validated on advection-dominated flow with periodic upstream boundary condition. It provides similar strong scaling results as the primal XBraid solver and offers great potential for speeding up the overall computational costs for sensitivity analysis using multiple processors}},
@@ -3095,6 +3113,15 @@ setups.}},
 	howpublished = {arXiv:1705.00663 [math.OC]},
 	title = {A Non-Intrusive Parallel-in-Time Adjoint Solver with the {XBraid} Library},
 	url = {https://arxiv.org/abs/1705.00663},
+	year = {2017}
+}
+
+@unpublished{MerkelEtAl2017,
+	abstract = {{Recently, ParaExp was proposed for the time integration of linear hyperbolic problems. It splits the time interval of interest into sub-intervals and computes the solution on each sub-interval in parallel. The overall solution is decomposed into a particular solution defined on each sub-interval with zero initial conditions and a homogeneous solution propagated by the matrix exponential applied to the initial conditions. The efficiency of the method depends on fast approximations of this matrix exponential based on recent results from numerical linear algebra. This paper deals with the application of ParaExp in combination with Leapfrog to electromagnetic wave problems in time-domain. Numerical tests are carried out for a simple toy problem and a realistic spiral inductor model discretized by the Finite Integration Technique.}},
+	author = {M. Merkel and I. Niyonzima and S. Sch{\"o}ps},
+	title = {ParaExp using Leapfrog as Integrator for High-Frequency Electromagnetic Simulations},
+	howpublished = {arXiv:1705.08019v1 [math.NA] },
+	url = {https://arxiv.org/pdf/1705.08019.pdf},
 	year = {2017}
 }
 
