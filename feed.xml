@@ -7,6 +7,20 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PinT in SIAM News</title>
+        <description>&lt;p&gt;Parallel-in-time integration was mentioned prominently in the recent SIAM News, see &lt;a href=&quot;https://sinews.siam.org/Details-Page/climate-prediction-exascale-computing-and-time-parallelism&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;In the current issue of SIAM News (Volume 50, Number 04, May 2017), parallel-in-time integration was mentioned in the research article “&lt;a href=&quot;https://sinews.siam.org/Details-Page/climate-prediction-exascale-computing-and-time-parallelism&quot;&gt;Climate Predictions, Exascale Computing, and Time Parallelism&lt;/a&gt;”” by Paul Davis.
+Based on Beth Wingate’s &lt;a href=&quot;/events/2016/07/19/siamcse.html&quot;&gt;plenary talk&lt;/a&gt; at SIAM CSE 2017, he discusses opportunities, challenges and first results, in particular with respect to climate simulations.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 May 2017 10:00:00 +0000</pubDate>
+        <link>http://parallelintime.org/events/2017/05/30/siam-news.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2017/05/30/siam-news.html</guid>
+      </item>
+    
+      <item>
         <title>Parallel-in-time Twitter hashtag</title>
         <description>&lt;p&gt;Parallel-in-time goes Twitter.&lt;/p&gt;
 
@@ -198,30 +212,6 @@ of simulation codes across a wide range of application domains&lt;/em&gt;.&lt;/p
         <pubDate>Thu, 17 Dec 2015 09:26:44 +0000</pubDate>
         <link>http://parallelintime.org/2015/12/17/pint-in-h2020.html</link>
         <guid isPermaLink="true">http://parallelintime.org/2015/12/17/pint-in-h2020.html</guid>
-      </item>
-    
-      <item>
-        <title>Minisymposium at SIAM PP 2016</title>
-        <description>&lt;p&gt;The &lt;a href=&quot;/news/2015/07/23/siampp-minisymposium.html&quot;&gt;proposal&lt;/a&gt; for a mini symposium on parallel-in-time integration at the
-&lt;a href=&quot;http://www.siam.org/meetings/pp16/index.php&quot;&gt;SIAM Conference on Parallel Processing for Scientific Computing&lt;/a&gt; in 2016
-in Paris was successful.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;We are excited to announce that we will have a mini symposium on &lt;em&gt;parallel-in-time integration methods&lt;/em&gt; at SIAM PP 2016
-with a total of 12 speakers!&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=22127&quot;&gt;Part I&lt;/a&gt; takes place on Tuesday 12 April 2016 from 1:10 PM to 2:50 PM.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=22128&quot;&gt;Part II&lt;/a&gt; takes place on Tuesday 12 April 2016 from 3:20 PM to 5:00 PM.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=22129&quot;&gt;Part III&lt;/a&gt; takes place Wednesday 13 April 2016 from 10:35 AM to 12:15 AM.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See you all in Paris in 2016!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Dec 2015 08:26:44 +0000</pubDate>
-        <link>http://parallelintime.org/events/2015/12/17/siampp-ms.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2015/12/17/siampp-ms.html</guid>
       </item>
     
   </channel>
