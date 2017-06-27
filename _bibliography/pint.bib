@@ -951,6 +951,17 @@
 	year = {2007},
 }
 
+@inbook{Ulbrich2007,
+	author = {Stefan Ulbrich},
+	title = {7. Generalized SQP Methods with ``Parareal'' Time-Domain Decomposition for Time-Dependent PDE-Constrained Optimization},
+	booktitle = {Real-Time PDE-Constrained Optimization},
+	chapter = {},
+	pages = {145-168},
+	doi = {10.1137/1.9780898718935.ch7},
+	url = {https://dx.doi.org/10.1137/1.9780898718935.ch7},
+	year = {2007}
+}
+
 %
 % 2008
 %
@@ -2554,6 +2565,19 @@
 	year = {2015}
 }
 
+@Inbook{Ulbrich2015,
+	author= {Ulbrich, Stefan},
+	editor= {Carraro, Thomas and Geiger, Michael and K{\"o}rkel, Stefan and Rannacher, Rolf},
+	title= {{Preconditioners Based on ``Parareal'' Time-Domain Decomposition for Time-Dependent PDE-Constrained Optimization}},
+	bookTitle= {{Multiple Shooting and Time Domain Decomposition Methods: MuS-TDD, Heidelberg, May 6-8, 2013}},
+	year= {2015},
+	publisher= {Springer International Publishing},
+	address= {Cham},
+	pages= {203--232},
+	doi= {10.1007/978-3-319-23321-5_8},
+	url= {http://dx.doi.org/10.1007/978-3-319-23321-5_8}
+}
+
 @article{Wang2015,
 	abstract = {{Parareal algorithm is a very powerful parallel computation method and has received much
 		interest from many researchers over the past few years.
@@ -2827,12 +2851,16 @@ a performance model that, for a multigrid-in-time solver, makes the decision on 
          address = {New York, NY, USA},
  }
 
-@unpublished{MerkelEtAl2016,
+@inproceedings{MerkelEtAl2016,
 	abstract = {{Recently, ParaExp was proposed for the time integration of hyperbolic problems. It splits the time interval of interest into sub-intervals and computes the solution on each sub-interval in parallel. The overall solution is decomposed into a particular solution defined on each sub-interval with zero initial conditions and a homogeneous solution propagated by the matrix exponential applied to the initial conditions. The efficiency of the method results from fast approximations of this matrix exponential using tools from linear algebra. This paper deals with the application of ParaExp to electromagnetic wave problems in time-domain. Numerical tests are carried out for an electric circuit and an electromagnetic wave problem discretized by the Finite Integration Technique.}},
 	author = {Merkel, Melina and Niyonzima, Innocent and Sch\"ops, Sebastian},
-	howpublished = {arXiv:1607.00368 [math.NA]},
+	booktitle = {Proceedings of 2016 URSI International Symposium on Electromagnetic Theory (EMTS)},
+	editor = {Sihvola, Ari},
+	note = {arXiv:1607.00368 [math.NA]},
+	publisher = {IEEE},
 	title = {An Application of ParaExp to Electromagnetic Wave Problems},
-	url = {http://arxiv.org/abs/1607.00368},
+	url = {https://doi.org/10.1109/URSI-EMTS.2016.7571330},
+	doi = {10.1109/URSI-EMTS.2016.7571330},
 	year = {2016}
 }
 
@@ -3142,6 +3170,15 @@ setups.}},
 	pages = {1094342016687625},
 	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
 	url = {http://dx.doi.org/10.1177/1094342016687625},
+	year = {2017}
+}
+
+@unpublished{SchoepsEtAl2017,
+	abstract = {In this contribution the usage of the Parareal method is proposed for the time-parallel solution of the eddy current problem. The method is adapted to the particular challenges of the problem that are related to the differential algebraic character due to non-conducting regions. It is shown how the necessary modification can be automatically incorporated by using a suitable time stepping method. The paper closes with a first demonstration of a simulation of a realistic four-pole induction machine model using Parareal.},
+	author = {Sch\"ops, Sebastian and Niyonzima, Innocent and Clemens, Markus},
+	title = {Parallel-In-Time Simulation of Eddy Current Problems Using Parareal},
+	howpublished = {arXiv:1706.05750v1 [cs.CE]},
+	url = {https://arxiv.org/abs/1706.05750},
 	year = {2017}
 }
 
