@@ -7,6 +7,19 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Parareal animation</title>
+        <description>&lt;p&gt;Video animating Parareal provided by &lt;a href=&quot;http://emps.exeter.ac.uk/mathematics/staff/ap553&quot;&gt;Adam Peddle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Thanks to Adam for producing a &lt;a href=&quot;https://en.wikipedia.org/wiki/File:Parareal_Animation.ogv&quot;&gt;very nice animation of Parareal&lt;/a&gt; and publishing it under a &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/deed.en&quot;&gt;CC BY-SA 4.0&lt;/a&gt; license and making it available for the &lt;a href=&quot;https://en.wikipedia.org/wiki/Parareal&quot;&gt;Parareal&lt;/a&gt; entry on Wikipedia. You can use the video in your talks to introduce Parareal under the condition that you credit Adam as the creator.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 24 Jun 2017 10:00:00 +0000</pubDate>
+        <link>http://parallelintime.org/events/2017/06/24/apint-vid.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2017/06/24/apint-vid.html</guid>
+      </item>
+    
+      <item>
         <title>PinT in SIAM News</title>
         <description>&lt;p&gt;Parallel-in-time integration was mentioned prominently in the recent SIAM News, see &lt;a href=&quot;https://sinews.siam.org/Details-Page/climate-prediction-exascale-computing-and-time-parallelism&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -191,27 +204,6 @@ is providing travel support for PhD students working in the field of parallel-in
         <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
         <link>http://parallelintime.org/events/grants/2016/02/23/jsc-travel-grants.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/grants/2016/02/23/jsc-travel-grants.html</guid>
-      </item>
-    
-      <item>
-        <title>PINT in H2020 Call</title>
-        <description>&lt;p&gt;Parallel-in-time integration is mentioned in the FETHPC Call &lt;em&gt;Transition to Exascale Computing&lt;/em&gt; in Horizon 2020.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The Horizon 2020 call
-&lt;a href=&quot;http://ec.europa.eu/research/participants/portal/desktop/en/opportunities/h2020/topics/2220-fethpc-02-2017.html&quot;&gt;FETHPC-02-2017&lt;/a&gt;
-&lt;em&gt;Transition to Exascale Computing&lt;/em&gt; has been published on 14 October 2015.
-It includes five subtopics, one of them being &lt;em&gt;Mathematics and algorithms for extreme scale HPC systems and applications
-working with extreme data&lt;/em&gt;.
-As part of this subtopic, the call acknowledges that &lt;em&gt;Parallel-in-time methods may be investigated to boost parallelism
-of simulation codes across a wide range of application domains&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Deadline for submission of proposals is 26 September 2017.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Dec 2015 09:26:44 +0000</pubDate>
-        <link>http://parallelintime.org/2015/12/17/pint-in-h2020.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/2015/12/17/pint-in-h2020.html</guid>
       </item>
     
   </channel>
