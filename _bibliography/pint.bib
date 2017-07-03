@@ -3144,6 +3144,15 @@ setups.}},
 	year = {2017}
 }
 
+@unpublished{MasthayEtAl2017,
+	abstract = {{We present a full implementation of the parareal algorithm—an integration technique to solve differential equations in parallel— in the Julia programming language for a fully general, first-order, initial-value problem. Our implementation accepts both coarse and fine integrators as functional arguments. We use Euler’s method and another Runge-Kutta integration technique as the integrators in our experiments. We also present a simulation of the algorithm for purposes of pedagogy.}},
+	author = {Tyler M. Masthay and Saverio Perugini},
+	title = {Parareal Algorithm Implementation and Simulation in Julia},
+	howpublished = {arXiv:1706.08569v1 [cs.MS]},
+	url = {https://arxiv.org/pdf/1706.08569.pdf},
+	year = {2017},
+}
+
 @unpublished{MerkelEtAl2017,
 	abstract = {{Recently, ParaExp was proposed for the time integration of linear hyperbolic problems. It splits the time interval of interest into sub-intervals and computes the solution on each sub-interval in parallel. The overall solution is decomposed into a particular solution defined on each sub-interval with zero initial conditions and a homogeneous solution propagated by the matrix exponential applied to the initial conditions. The efficiency of the method depends on fast approximations of this matrix exponential based on recent results from numerical linear algebra. This paper deals with the application of ParaExp in combination with Leapfrog to electromagnetic wave problems in time-domain. Numerical tests are carried out for a simple toy problem and a realistic spiral inductor model discretized by the Finite Integration Technique.}},
 	author = {M. Merkel and I. Niyonzima and S. Sch{\"o}ps},
@@ -3151,6 +3160,15 @@ setups.}},
 	howpublished = {arXiv:1705.08019v1 [math.NA] },
 	url = {https://arxiv.org/pdf/1705.08019.pdf},
 	year = {2017}
+}
+
+@unpublished{PeddleEtAl2017,
+	abstract = {{A variant of the Parareal method for highly oscillatory systems of PDEs was proposed by [21]. In that work they proved superlinear convergence of the method in the limit of infinite time scale separation. Their coarse solver features a coordinate transformation and a fast-wave averaging method inspired by analysis of multiple scales PDEs and is integrated using an HMM-type method. However, for many physical applications the timescale separation is finite, not infinite. In this paper we prove convergence for finite timescale separaration by extending the error bound on the coarse propagator to this case. We show that convergence requires the solution of an optimization problem that involves the averaging window interval, the time step, and the parameters in the problem. We also propose a method for choosing the averaging window relative to the time step based as a function of the finite frequencies inherent in the problem.}},
+	author = {Adam Peddle and Terry Haut and Beth Wingate},
+	title = {Parareal Convergence for Oscillatory {PDE}s with Finite Time-scale Separation},
+	howpublished = {arXiv:1705.09565v1 [math.NA]},
+	url = {https://arxiv.org/pdf/1705.09565.pdf},
+	year = {2017},
 }
 
 @unpublished{Ruprecht2017,
