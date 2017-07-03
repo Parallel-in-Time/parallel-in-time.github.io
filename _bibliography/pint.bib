@@ -3144,6 +3144,15 @@ setups.}},
 	year = {2017}
 }
 
+@unpublished{HuEtAl2017,
+	abstract = {{This work deals with the efficient numerical solution of the time-fractional heat equation discretized on non-uniform temporal meshes. Non-uniform grids are essential to capture the singularities of “typical” solutions of time-fractional problems. We propose an efficient parallel-in-time multigrid method based on the waveform relaxation technique, which accounts for the nonlocal character of the fractional differential operator. To maintain an optimal complexity, which can be obtained for the case of uniform grids, we approximate the coefficient matrix corresponding to the temporal discretization by its hierarchical matrix (H-matrix) representation. In particular, the proposed method has a computational cost of O(kNM log(M)), where M is the number of time steps, N is the number of spatial grid points, and k is a parameter which controls the accuracy of the H-matrix approximation. The efficiency and the good convergence of the algorithm, which can be theoretically justified by a semi-algebraic mode analysis, are demonstrated through numerical experiments in both one- and two-dimensional spaces.}},
+	author = {Xiaozhe Hu and Carmen Rodrigo and Francisco J. Gaspar},
+	title = {Using hierarchical matrices in the solution of the time-fractional heat equation by multigrid waveform relaxation},
+	howpublished = {arXiv:1706.07632v1 [math.NA] },
+	url = {https://arxiv.org/pdf/1706.07632.pdf},
+	year = {2017},
+}
+
 @unpublished{MasthayEtAl2017,
 	abstract = {{We present a full implementation of the parareal algorithm—an integration technique to solve differential equations in parallel— in the Julia programming language for a fully general, first-order, initial-value problem. Our implementation accepts both coarse and fine integrators as functional arguments. We use Euler’s method and another Runge-Kutta integration technique as the integrators in our experiments. We also present a simulation of the algorithm for purposes of pedagogy.}},
 	author = {Tyler M. Masthay and Saverio Perugini},
