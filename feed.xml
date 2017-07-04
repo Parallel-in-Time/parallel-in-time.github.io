@@ -7,6 +7,19 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Submission open for 6th workshop on parallel-in-time integration</title>
+        <description>&lt;p&gt;Abstract submission is now open for the &lt;a href=&quot;/events/6th-pint-workshop/&quot;&gt;6th International Workshop on Parallel-in-time integration&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;You can find information about how to submit an abstract &lt;a href=&quot;https://www.ics.usi.ch/index.php/news/248-6th-workshop-on-parallel-in-time-methods-in-monte-verita&quot;&gt;here&lt;/a&gt;. The workshop will take place from 23 to 27 October 2017 in Ascona, Switzerland. The registration fee is 500 CHF and includes accommodation in the &lt;a href=&quot;http://www.monteverita.org/en/24/conference-centre-monte-verita.aspx&quot;&gt;Monte Verita Conference Centre&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Jul 2017 07:00:00 +0000</pubDate>
+        <link>http://parallelintime.org/events/2017/07/04/6th-pint-submission.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2017/07/04/6th-pint-submission.html</guid>
+      </item>
+    
+      <item>
         <title>Parareal animation</title>
         <description>&lt;p&gt;Video animating Parareal provided by &lt;a href=&quot;http://emps.exeter.ac.uk/mathematics/staff/ap553&quot;&gt;Adam Peddle&lt;/a&gt;.&lt;/p&gt;
 
@@ -15,8 +28,8 @@
 &lt;p&gt;Thanks to Adam for producing a &lt;a href=&quot;https://en.wikipedia.org/wiki/File:Parareal_Animation.ogv&quot;&gt;very nice animation of Parareal&lt;/a&gt; and publishing it under a &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/deed.en&quot;&gt;CC BY-SA 4.0&lt;/a&gt; license and making it available for the &lt;a href=&quot;https://en.wikipedia.org/wiki/Parareal&quot;&gt;Parareal&lt;/a&gt; entry on Wikipedia. You can use the video in your talks to introduce Parareal under the condition that you credit Adam as the creator.&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Jun 2017 10:00:00 +0000</pubDate>
-        <link>http://parallelintime.org/events/2017/06/24/apint-vid.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2017/06/24/apint-vid.html</guid>
+        <link>http://parallelintime.org/events/2017/06/24/apint-video.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2017/06/24/apint-video.html</guid>
       </item>
     
       <item>
@@ -190,20 +203,6 @@ The repository also contains information on how to participate.&lt;/p&gt;
         <pubDate>Tue, 19 Jul 2016 07:50:44 +0000</pubDate>
         <link>http://parallelintime.org/events/2016/07/19/siamcse.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2016/07/19/siamcse.html</guid>
-      </item>
-    
-      <item>
-        <title>JSC awards travel grants for PhD students</title>
-        <description>&lt;p&gt;For the next three workshops, &lt;a href=&quot;http://www.fz-juelich.de/ias/jsc&quot;&gt;Jülich Supercomputing Centre&lt;/a&gt;
-is providing travel support for PhD students working in the field of parallel-in-time integration methods.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Click &lt;a href=&quot;/events/travel_grants.html&quot;&gt;here&lt;/a&gt; for more details.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://parallelintime.org/events/grants/2016/02/23/jsc-travel-grants.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/grants/2016/02/23/jsc-travel-grants.html</guid>
       </item>
     
   </channel>
