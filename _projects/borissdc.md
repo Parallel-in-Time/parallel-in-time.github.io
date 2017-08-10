@@ -12,7 +12,7 @@ members:
   - name: Krasymyr Tretiak (University of Leeds)
 ---
 
-{% cite WinkelEtAl2015 --file sdc.bib %}
+{% cite WinkelEtAl2015 --file other/sdc %}
 
 
-{% bibliography --file sdc --cited %}
+{% bibliography --file other/sdc --cited %}
