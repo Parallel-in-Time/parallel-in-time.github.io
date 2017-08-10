@@ -9,12 +9,28 @@
           {% img '{{ page.logo }}' alt:"{{ page.title }} Logo" %}
         </div>
       </div>
+      <br>
     {% endif %}
     {% if page.group_url %}
       <div class="row">
         <label class="col-md-4 control-label">Homepage</label>
         <div class="col-md-8">
-          <a href="{{ page.group_url }}">{{ page.group_url | trim_url }}</a>
+            {% if page.group_url | size > 0 %}
+              <a href="{{ page.group_url }}" target="_blank"
+                 title="Group's homepage"
+                 data-toggle="tooltip"
+                 role="button">
+            {% else %}
+              <button class="btn btn-sm btn-link" disabled
+                      title="Group's homepage not available" data-toggle="tooltip">
+            {% endif %}
+              <i class="fa fa-fw fa-globe"></i>
+            {% if page.group_url | size > 0 %}
+              </a>
+            {% else %}
+              </button>
+            {% endif %}
+          <!-- <a href="{{ page.group_url }}">{{ page.group_url | trim_url }}</a> -->
         </div>
       </div>
     {% endif %}
