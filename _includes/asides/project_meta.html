@@ -9,12 +9,28 @@
           {% img '{{ page.logo }}' alt:"{{ page.title }} Logo" %}
         </div>
       </div>
-    {% endif %}
+      <br>
+    {% endif %}    
     {% if page.project_url %}
       <div class="row">
         <label class="col-md-4 control-label">Homepage</label>
         <div class="col-md-8">
-          <a href="{{ page.project_url }}">{{ page.project_url | trim_url }}</a>
+          {% if page.project_url | size > 0 %}
+            <a href="{{ page.project_url }}" target="_blank"
+               title="Project's homepage"
+               data-toggle="tooltip"
+               role="button">
+          {% else %}
+            <button class="btn btn-sm btn-link" disabled
+                    title="Project's homepage not available" data-toggle="tooltip">
+          {% endif %}
+            <i class="fa fa-fw fa-globe"></i>
+          {% if page.project_url | size > 0 %}
+            </a>
+          {% else %}
+            </button>
+          {% endif %}
+          <!-- <a href="{{ page.project_url }}">{{ page.project_url | trim_url }}</a> -->
         </div>
       </div>
     {% endif %}
