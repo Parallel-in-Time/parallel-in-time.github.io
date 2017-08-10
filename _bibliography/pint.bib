@@ -572,6 +572,7 @@
 }
 
 @article{LionsEtAl2001,
+	abstract = {{The purpose of this Note is to propose a time discretization of a partial differential evolution equation that allows for parallel implementations. The method, based on an Euler scheme, combines coarse resolutions and independent fine resolutions in time in the same spirit as standard spacial approximations. The resulting parallel implementation is done in the non standard time direction. Its main goal concerns real time problems, hence the proposed terminology of “parareal” algorithm.}},
 	author = {Lions, J.-L. and Maday, Yvon and Turinici, Gabriel},
 	journal = {Comptes Rendus de l'Académie des Sciences - Series I - Mathematics},
 	pages = {661--668},
@@ -2002,6 +2003,7 @@
 }
 
 @article{Randles2014,
+	abstract = {{Fluid dynamics simulations using grid-based methods, such as the lattice Boltzmann equation, can benefit from parallel-in-space computation. However, for a fixed-size simulation of this type, the efficiency of larger processor counts will saturate when the number of grid points per core becomes too small. To overcome this fundamental strong scaling limit in space-parallel approaches, we present a novel time-parallel version of the lattice Boltzmann method using the parareal algorithm. This method is based on a predictor–corrector scheme combined with mesh refinement to enable the simulation of larger number of time steps. We present results of up to a 32× increase in speed for a model system consisting of a cylinder with conditions for laminar flow. The parallel gain obtainable is predicted with strong accuracy, providing a quantitative understanding of the potential impact of this method.}},
 	author = {Randles, Amanda and Kaxiras, Efthimios},
 	journal = {Journal of Computational Physics},
 	pages = {577--586},
