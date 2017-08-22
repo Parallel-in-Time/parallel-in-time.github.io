@@ -3190,6 +3190,18 @@ setups.}},
 	year = {2017}
 }
 
+@article{Pazner2017700,
+	abstract = {{Abstract In this paper, we develop new techniques for solving the large, coupled linear systems that arise from fully implicit Runge–Kutta methods. This method makes use of the iterative preconditioned \{GMRES\} algorithm for solving the linear systems, which has seen success for fluid flow problems and discontinuous Galerkin discretizations. By transforming the resulting linear system of equations, one can obtain a method which is much less computationally expensive than the untransformed formulation, and which compares competitively with other time-integration schemes, such as diagonally implicit Runge–Kutta (DIRK) methods. We develop and test several ILU-based preconditioners effective for these large systems. We additionally employ a parallel-in-time strategy to compute the Runge–Kutta stages simultaneously. Numerical experiments are performed on the Navier–Stokes equations using Euler vortex and 2D and 3D \{NACA\} airfoil test cases in serial and in parallel settings. The fully implicit Radau \{IIA\} Runge–Kutta methods compare favorably with equal-order \{DIRK\} methods in terms of accuracy, number of \{GMRES\} iterations, number of matrix–vector multiplications, and wall-clock time, for a wide range of time steps.}},
+	author = {Will Pazner and Per-Olof Persson},
+	doi = {10.1016/j.jcp.2017.01.050},
+	journal = {Journal of Computational Physics},
+	pages = {700--717},
+	title = {{Stage-parallel fully implicit Runge–Kutta solvers for discontinuous Galerkin fluid simulations}},
+	url = {https://doi.org/10.1016/j.jcp.2017.01.050},
+	volume = {335},
+	year = {2017},
+}
+
 @unpublished{PeddleEtAl2017,
 	abstract = {{A variant of the Parareal method for highly oscillatory systems of PDEs was proposed by [21]. In that work they proved superlinear convergence of the method in the limit of infinite time scale separation. Their coarse solver features a coordinate transformation and a fast-wave averaging method inspired by analysis of multiple scales PDEs and is integrated using an HMM-type method. However, for many physical applications the timescale separation is finite, not infinite. In this paper we prove convergence for finite timescale separaration by extending the error bound on the coarse propagator to this case. We show that convergence requires the solution of an optimization problem that involves the averaging window interval, the time step, and the parameters in the problem. We also propose a method for choosing the averaging window relative to the time step based as a function of the finite frequencies inherent in the problem.}},
 	author = {Adam Peddle and Terry Haut and Beth Wingate},
