@@ -136,18 +136,84 @@
       <div class="col-md-8">
         <p><em>This project is funded through <a href="https://www.archer.ac.uk/community/eCSE/eCSE-projects.php">ARCHER’s Embedded CSE (eCSE)</a> support</em></p>
 
-<p><a href="http://www.2020science.net/software/hemelb.html">HemeLB</a> is code designed to simulate blood flow in arteries using Lattice-Boltzmann methods (LBM). For complex geometries like the <a href="https://en.wikipedia.org/wiki/Circle_of_Willis">Circle of Willis</a>, it scales up to 25k cores on the Cray XC30 supercomputer <a href="http://www.archer.ac.uk/about-archer/hardware/">ARCHER</a> but simulations still take several days to complete. Building on the work by Randles and Kaxiras <a href="#Randles2014">[1]</a>, this project will integrate parallel-in-time integration capacities into HemeLB to extend scaling and reduce wall-clock times.</p>
+<p><a href="http://www.2020science.net/software/hemelb.html">HemeLB</a> <a href="#GroenEtAl2013">[1]</a> is code designed to simulate blood flow in arteries using Lattice-Boltzmann methods (LBM). For complex geometries like the <a href="https://en.wikipedia.org/wiki/Circle_of_Willis">Circle of Willis</a>, it scales up to 25k cores on the Cray XC30 supercomputer <a href="http://www.archer.ac.uk/about-archer/hardware/">ARCHER</a> but simulations still take several days to complete. Building on the work by Randles and Kaxiras <a href="#Randles2014">[2]</a>, this project will integrate parallel-in-time integration capacities into HemeLB to extend scaling and reduce wall-clock times.</p>
 
 <p>The aims of the project are:</p>
 
 <ol>
-  <li>Implement the <a href="https://en.wikipedia.org/wiki/Parareal">Parareal</a> <a href="#LionsEtAl2001">[2]</a> algorithm into HemeLB to provide parallel-in-time integration capacities.</li>
+  <li>Implement the <a href="https://en.wikipedia.org/wiki/Parareal">Parareal</a> <a href="#LionsEtAl2001">[3]</a> algorithm into HemeLB to provide parallel-in-time integration capacities.</li>
   <li>Optimise communication and scheduling in time to minimise overheads and improve efficiency and resource utilisation of Parareal.</li>
   <li>Demonstrate speedup of five or better using the Circle of Willis simulation model, thus bringing simulations times down to a day or less.</li>
   <li>Simplify and automate the Parallel-In-Time implementation, allowing others in the community to perform these runs with a single-line command using FabSim.</li>
   <li>Continuously provide information about the employed parallel-in-time approach to the ARCHER community to facilitate adoption for other codes.</li>
 </ol>
 
+<ol class="bibliography"><li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          GroenEtAl2013
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseGroenEtAl2013Bibtex" aria-expanded="false" aria-controls="collapseGroenEtAl2013Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalGroenEtAl2013Abstract" aria-expanded="false" aria-controls="modalGroenEtAl2013Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="GroenEtAl2013">D. Groen, J. Hetherington, H. B. Carver, R. W. Nash, M. O. Bernabeu, and P. V. Coveney, “Analysing and modelling the performance of the HemeLB lattice-Boltzmann simulation environment,” <i>Journal of Computational Science</i>, vol. 4, no. 5, pp. 412–422, 2013 [Online]. Available at: <a href="https://dx.doi.org/10.1016/j.jocs.2013.03.002" target="_blank">https://dx.doi.org/10.1016/j.jocs.2013.03.002</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseGroenEtAl2013Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{GroenEtAl2013,
+  author = {Groen, Derek and Hetherington, James and Carver, Hywel B and Nash, Rupert W and Bernabeu, Miguel O and Coveney, Peter V},
+  url = {https://dx.doi.org/10.1016/j.jocs.2013.03.002},
+  journal = {Journal of Computational Science},
+  number = {5},
+  pages = {412--422},
+  title = {Analysing and modelling the performance of the HemeLB lattice-Boltzmann simulation environment},
+  volume = {4},
+  year = {2013}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalGroenEtAl2013Abstract" tabindex="-1" role="dialog" aria-labelledby="modalGroenEtAl2013AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalGroenEtAl2013AbstractTitle">
+            Abstract for BibTeX entry <code>GroenEtAl2013</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          We investigate the performance of the HemeLB lattice-Boltzmann simulator for cerebrovascular blood flow, aimed at providing timely and clinically relevant assistance to neurosurgeons. HemeLB is optimised for sparse geometries, supports interactive use, and scales well to 32,768 cores for problems with  81 million lattice sites. We obtain a maximum performance of 29.5 billion site updates per second, with only an 11% slowdown for highly sparse problems (5% fluid fraction). We present steering and visualisation performance measurements and provide a model which allows users to predict the performance, thereby determining how to run simulations with maximum accuracy within time constraints.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li></ol>
 <ol class="bibliography"><li><div class="bibtex-entry-container">
   <div>
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
@@ -319,7 +385,7 @@
         <div class="col-md-8">
           
             <span class="clearfix">
-              Derek Groen (Brunel University)
+              Derek Groen (Brunel University London)
               
             </span>
           
@@ -329,12 +395,12 @@
             </span>
           
             <span class="clearfix">
-              Rupert Nash (University of Edinburgh)
+              Rupert Nash (EPCC, University of Edinburgh)
               
             </span>
           
             <span class="clearfix">
-              David Scott (University of Edinburgh)
+              David Scott (EPCC, University of Edinburgh)
               
             </span>
           
