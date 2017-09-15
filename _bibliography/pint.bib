@@ -2485,15 +2485,6 @@
 	year = {2015},
 }
 
-@unpublished{Ruprecht2015,
-	abstract = {{The paper introduces an OpenMP implementation of pipelined Parareal and compares it to a standard MPI-based implementation. Both versions yield essentially identical runtimes, but, depending on the compiler, the OpenMP variant consumes about 7\% less energy. However, its key advantage is a significantly smaller memory footprint. The higher implementation complexity, including manual control of locks, might make it difficult to use in legacy codes, though}},
-	author = {Ruprecht, Daniel},
-	howpublished = {arXiv:1509.06935 [cs.MS]},
-	title = {{A shared memory implementation of pipelined Parareal}},
-	url = {http://arxiv.org/abs/1509.06935},
-	year = {2015},
-}
-
 @article{Scheibe2015,
 	author = {Scheibe, Timothy D. and Murphy, Ellyn M. and Chen, Xingyuan and Rice, Amy K. and Carroll, Kenneth C. and Palmer, Bruce J. and Tartakovsky, Alexandre M. and Battiato, Ilenia and Wood, Brian D.},
 	journal = {Groundwater},
@@ -3172,6 +3163,14 @@ setups.}},
 	year = {2017},
 }
 
+@unpublished{JanssonEtAl2017,
+	author = {Johan Jansson and Johan Hoffman},
+	title = {Direct FEM parallel-in-time computation of turbulent flow},
+	howpublished.= {KTH Preprint},
+	year = {2017},
+	url = {http://www.csc.kth.se/%7ejjan/publications/pit_preprint_2017-08-09.pdf},
+}
+
 @unpublished{MasthayEtAl2017,
 	abstract = {{We present a full implementation of the parareal algorithm—an integration technique to solve differential equations in parallel— in the Julia programming language for a fully general, first-order, initial-value problem. Our implementation accepts both coarse and fine integrators as functional arguments. We use Euler’s method and another Runge-Kutta integration technique as the integrators in our experiments. We also present a simulation of the algorithm for purposes of pedagogy.}},
 	author = {Tyler M. Masthay and Saverio Perugini},
@@ -3218,6 +3217,19 @@ setups.}},
 	howpublished = {arXiv:1701.01359 [math.NA]},
 	url = {https://arxiv.org/abs/1701.01359},
 	year = {2017}
+}
+
+@Inbook{Ruprecht2017_lncs,
+	abstract={{For the parallel-in-time integration method Parareal, pipelining can be used to hide some of the cost of the serial correction step and improve its efficiency. The paper introduces a basic OpenMP implementation of pipelined Parareal and compares it to a standard MPI-based variant. Both versions yield almost identical runtimes, but, depending on the compiler, the OpenMP variant consumes about 7{\%} less energy and has a significantly smaller memory footprint. However, its higher implementation complexity might make it difficult to use in legacy codes and in combination with spatial parallelisation.}},
+	author={Ruprecht, Daniel},
+	booktitle={Euro-Par 2017: Parallel Processing: 23rd International Conference on Parallel and Distributed Computing, Santiago de Compostela, Spain, August 28 -- September 1, 2017, Proceedings},
+	doi={10.1007/978-3-319-64203-1_48},
+	editor={Rivera, Francisco F. and Pena, Tom{\'a}s F. and Cabaleiro, Jos{\'e} C.},
+	pages={669--681},	
+	publisher={Springer International Publishing},
+	url={https://doi.org/10.1007/978-3-319-64203-1_48},
+	title={Shared Memory Pipelined Parareal},
+	year={2017},
 }
 
 @article{SchreiberEtAl2017,
