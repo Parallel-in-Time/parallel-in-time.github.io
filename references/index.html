@@ -384,6 +384,70 @@ resources to solve for more time steps the same problem.
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          DeSterckEtAl2017
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseDeSterckEtAl2017Bibtex"
+                    aria-expanded="false" aria-controls="collapseDeSterckEtAl2017Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalDeSterckEtAl2017Abstract"
+                    aria-expanded="false" aria-controls="modalDeSterckEtAl2017Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="DeSterckEtAl2017">H. De Sterck, R. D. Falgout, A. J. M. Howse, S. P. MacLachlan, and J. B. Schroder, “Parallel-In-Time Multigrid With Adaptive Spatial Coarsening For The Linear Advection And Inviscid Burgers Equations,” 2017 [Online]. Available at: <a href="https://www.math.mun.ca/%7Esmaclachlan/research/MGRIT_hyp.pdf" target="_blank">https://www.math.mun.ca/%7Esmaclachlan/research/MGRIT_hyp.pdf</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseDeSterckEtAl2017Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{DeSterckEtAl2017,
+  author = {De Sterck, Hans and Falgout, Robert D. and Howse, Alexander J. M. and MacLachlan, Scott P. and Schroder, Jacob B.},
+  title = {Parallel-In-Time Multigrid With Adaptive Spatial Coarsening For The Linear Advection And Inviscid Burgers Equations},
+  url = {https://www.math.mun.ca/%7Esmaclachlan/research/MGRIT_hyp.pdf},
+  year = {2017}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalDeSterckEtAl2017Abstract" tabindex="-1" role="dialog" aria-labelledby="modalDeSterckEtAl2017AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalDeSterckEtAl2017AbstractTitle">
+            Abstract for BibTeX entry <code>DeSterckEtAl2017</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           KooijEtAl2017
         </div>
       </div>
