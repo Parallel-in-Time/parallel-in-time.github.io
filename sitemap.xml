@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://parallelintime.org/events/2017/10/25/7th-pint-workshop-announced.html</loc>
+<lastmod>2017-10-25T23:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>http://parallelintime.org/events/2017/07/04/6th-pint-submission.html</loc>
 <lastmod>2017-07-04T07:00:00+00:00</lastmod>
 </url>
@@ -169,6 +173,9 @@
 </url>
 <url>
 <loc>http://parallelintime.org/events/6th-pint-workshop/</loc>
+</url>
+<url>
+<loc>http://parallelintime.org/events/7th-pint-workshop/</loc>
 </url>
 <url>
 <loc>http://parallelintime.org/events/1st-pint-workshop/</loc>

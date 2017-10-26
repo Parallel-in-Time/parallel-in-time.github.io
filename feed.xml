@@ -7,6 +7,19 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>2018 PINT workshop in Roscoff, France</title>
+        <description>&lt;p&gt;The 7th workshop on parallel-in-time integration will take place in May 2018 in Roscoff, France.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Please &lt;a href=&quot;/events/7th-pint-workshop/&quot;&gt;see here&lt;/a&gt; for additional information.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Oct 2017 23:00:00 +0000</pubDate>
+        <link>http://parallelintime.org/events/2017/10/25/7th-pint-workshop-announced.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2017/10/25/7th-pint-workshop-announced.html</guid>
+      </item>
+    
+      <item>
         <title>Submission open for 6th workshop on parallel-in-time integration</title>
         <description>&lt;p&gt;Abstract submission is now open for the &lt;a href=&quot;/events/6th-pint-workshop/&quot;&gt;6th International Workshop on Parallel-in-time integration&lt;/a&gt;.&lt;/p&gt;
 
@@ -187,22 +200,6 @@ The repository also contains information on how to participate.&lt;/p&gt;
         <pubDate>Fri, 05 Aug 2016 07:50:44 +0000</pubDate>
         <link>http://parallelintime.org/events/2016/08/05/eesi-report.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2016/08/05/eesi-report.html</guid>
-      </item>
-    
-      <item>
-        <title>PINT Plenary at SIAM CSE 2017</title>
-        <description>&lt;p&gt;Plenary talk by Beth Wingate on parallel-in-time at SIAM CSE 2017 conference.&lt;/p&gt;
-
-&lt;!--more--&gt;
-&lt;p&gt;Parallel-in-time integration will again be prominently represented at the &lt;a href=&quot;https://www.siam.org/meetings/cse17/&quot;&gt;SIAM Conference on Computational Science and Engineering&lt;/a&gt; in 2017 in Atlanta. &lt;a href=&quot;http://emps.exeter.ac.uk/mathematics/staff/bw290&quot;&gt;Beth Wingate&lt;/a&gt; from University of Exeter will give a plenary talk about her recent work on Parareal for oscillatory problems.&lt;/p&gt;
-
-&lt;p&gt;A mini symposium is also in planning, please see the PINT &lt;a href=&quot;https://groups.google.com/forum/#!forum/parallelintime&quot;&gt;emailing list&lt;/a&gt; (login required). If you are not yet a member, please see &lt;a href=&quot;/events/2015/04/24/email-list-announcement.html&quot;&gt;here&lt;/a&gt; how to subscribe - it’s easy.&lt;/p&gt;
-
-&lt;p&gt;At the previous SIAM CSE in 2015, &lt;a href=&quot;https://www.pathlms.com/siam/courses/1043/sections/1256&quot;&gt;Rob Falgout&lt;/a&gt; gave a plenary talk about the MGRIT multi-grid reduction method.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 19 Jul 2016 07:50:44 +0000</pubDate>
-        <link>http://parallelintime.org/events/2016/07/19/siamcse.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2016/07/19/siamcse.html</guid>
       </item>
     
   </channel>
