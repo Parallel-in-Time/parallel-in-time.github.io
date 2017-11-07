@@ -3136,6 +3136,20 @@ setups.}},
 	url = {http://eprints.ma.man.ac.uk/2550/01/covered/MIMS_ep2017_17.pdf},
 	year = {2017}
 }
+
+@article{GasparRodrigo2017,
+	abstract = {In this work, we propose an efficient and robust multigrid method for solving the time-fractional heat equation. Due to the nonlocal property of fractional differential operators, numerical methods usually generate systems of equations for which the coefficient matrix is dense. Therefore, the design of efficient solvers for the numerical simulation of these problems is a difficult task. We develop a parallel-in-time multigrid algorithm based on the waveform relaxation approach, whose application to time-fractional problems seems very natural due to the fact that the fractional derivative at each spatial point depends on the values of the function at this point at all earlier times. Exploiting the Toeplitz-like structure of the coefficient matrix, the proposed multigrid waveform relaxation method has a computational cost of $O(NM\log(M))$ operations, where $M$ is the number of time steps and $N$ is the number of spatial grid points. A semialgebraic mode analysis is also developed to theoretically confirm the good results obtained. Several numerical experiments, including examples with nonsmooth solutions and a nonlinear problem with applications in porous media, are presented.},
+	author = {Francisco J. Gaspar and Carmen Rodrigo},
+	title = {Multigrid Waveform Relaxation for the Time-Fractional Heat Equation},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {39},
+	number = {4},
+	pages = {A1201-A1224},
+	year = {2017},
+	doi = {10.1137/16M1090193},
+	URL = {https://doi.org/10.1137/16M1090193},
+}
+
 	
 @unpublished{GuentherEtAl2017,
 	abstract = {{In this paper, an adjoint solver for the multigrid in time software library XBraid is presented. XBraid provides a non-intrusive approach for simulating unsteady dynamics on multiple processors while parallelizing not only in space but also in the time domain. It applies an iterative multigrid reduction in time algorithm to existing spatially parallel classical time propagators and computes the unsteady solution parallel in time. Techniques from Automatic Differentiation are used to develop a consistent discrete adjoint solver which provides sensitivity information of output quantities with respect to design parameter changes. The adjoint code runs backwards through the primal XBraid actions and accumulates gradient information parallel in time. It is highly non-intrusive as existing adjoint time propagators can easily be integrated through the adjoint interface. The adjoint code is validated on advection-dominated flow with periodic upstream boundary condition. It provides similar strong scaling results as the primal XBraid solver and offers great potential for speeding up the overall computational costs for sensitivity analysis using multiple processors}},
@@ -3145,6 +3159,15 @@ setups.}},
 	url = {https://arxiv.org/abs/1705.00663},
 	year = {2017}
 }
+
+@phdthesis{Howse2017,
+	author = {Howse, Alexander James Maxwell},
+	title = {Nonlinear Preconditioning Methods for Optimization and Parallel-In-Time Methods for 1D Scalar Hyperbolic Partial Differential Equations},
+	year = {2017},
+	publisher = {UWSpace},
+	url = {http://hdl.handle.net/10012/12559}
+}
+
 
 @unpublished{HuEtAl2017,
 	abstract = {{This work deals with the efficient numerical solution of the time-fractional heat equation discretized on non-uniform temporal meshes. Non-uniform grids are essential to capture the singularities of “typical” solutions of time-fractional problems. We propose an efficient parallel-in-time multigrid method based on the waveform relaxation technique, which accounts for the nonlocal character of the fractional differential operator. To maintain an optimal complexity, which can be obtained for the case of uniform grids, we approximate the coefficient matrix corresponding to the temporal discretization by its hierarchical matrix (H-matrix) representation. In particular, the proposed method has a computational cost of O(kNM log(M)), where M is the number of time steps, N is the number of spatial grid points, and k is a parameter which controls the accuracy of the H-matrix approximation. The efficiency and the good convergence of the algorithm, which can be theoretically justified by a semi-algebraic mode analysis, are demonstrated through numerical experiments in both one- and two-dimensional spaces.}},
@@ -3231,6 +3254,21 @@ setups.}},
         volume = {62},
         year = {2017},
  }
+ 
+@inproceedings{WangPeng2017, 
+	author = {S. Wang and Z. Peng}, 
+	booktitle = {2017 International Conference on Electromagnetics in Advanced Applications (ICEAA)}, 
+	title = {Space-time parallel computation for time-domain Maxwell's equations}, 
+	year = {2017}, 
+	volume = {}, 
+	number = {}, 
+	pages = {1680-1683}, 
+	abstract = {This work addresses a growing need for the parallel-in-time simulation capability in electromagnetics (EM) applications. Currently time-dependent EM solvers are typically parallel only in space. The sequential-in-time nature of these solvers can achieve good parallel scaling when the number of spatial mesh points per core is large. But the parallel efficiency quickly deteriorates and even saturates if spatial parallelism has been fully exploited. We proposed a new time domain EM solver to harvest parallelism in both spatial and temporal dimension. The spatial parallelism is achieved by discontinuous Galerkin formulation, and the temporal parallelism is enabled by Krylov subspace method based exponential integrator. This work results in a highly scalable parallel time domain solver which can amend the scalability issue for traditional ones. The convergence and parallel performance are validated through numerical experiments.}, 
+	keywords={Galerkin method;Maxwell equations;space-time configurations;Krylov subspace method;discontinuous Galerkin formulation;electromagnetics applications;exponential integrator;numerical experiments;parallel efficiency;parallel performance;parallel scaling;parallel time domain;parallel-in-time simulation capability;sequential-in-time nature;space-time parallel computation;spatial dimension;spatial mesh points;spatial parallelism;temporal dimension;temporal parallelism;time domain EM solver;time-dependent EM solvers;time-domain Maxwell's equations;Convergence;Maxwell equations;Method of moments;Parallel processing;Program processors;Time-domain analysis}, 
+	doi = {10.1109/ICEAA.2017.8065615}, 
+	url = {http://ieeexplore.ieee.org/document/8065615/},
+	month={Sept},
+}
  
 @article {Wu2017,
         author = {Wu, Shu-Lin},
