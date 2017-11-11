@@ -3077,21 +3077,14 @@ quantities of model systems.}},
 	year = {2017},
 }
 
-@unpublished{BadiaEtAl2017,
-	abstract = {{In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential
-equations. The approach is based on an efficient multilevel solver of the Schur complement
-related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method.
-Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton
-method over the global nonlinear ODE, using the multilevel Schur complement solver at every
-nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur
-complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments
-show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational
-resources to solve for more time steps the same problem.}},
-	author = {Badia, Santiago and Olm, Marc},
-	title = {Nonlinear parallel-in-time {S}chur complement solvers for ordinary differential equations},
-	howpublished = {arXiv:1703.08466v1 [math.NA]},
-	url = {https://arxiv.org/pdf/1703.08466.pdf},
+@article{BadiaEtAl2017,
+	abstract = {{Abstract In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential equations. The approach is based on an efficient multilevel solver of the Schur complement related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method. Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton method over the global nonlinear ODE, using the multilevel Schur complement solver at every nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational resources to solve for more time steps the same problem.}},
+	author = {Santiago Badia and Marc Olm},
+	title = {Nonlinear parallel-in-time Schur complement solvers for ordinary differential equations},
+	journal = {Journal of Computational and Applied Mathematics},
 	year = {2017},
+	url = {https://doi.org/10.1016/j.cam.2017.09.033},
+	doi = {10.1016/j.cam.2017.09.033},
 }
 
 @unpublished{BoltenEtAl2017,
@@ -3111,30 +3104,19 @@ resources to solve for more time steps the same problem.}},
 	year = {2017}
 }
 
-@article{KooijEtAl2017,
-        abstract = {{A parallel time integration method for nonlinear partial differential equations is proposed. It is based on a new implementation of the Paraexp method for linear partial differential equations (PDEs) employing a block Krylov subspace method. For nonlinear \{PDEs\} the algorithm is based on our Paraexp implementation within a waveform relaxation. The initial value problem is solved iteratively on a complete time interval. Nonlinear terms are treated as source terms, provided by the solution from the previous iteration. At each iteration, the problem is decoupled into independent subproblems by the principle of superposition. The decoupled subproblems are solved fast by exponential integration, based on a block Krylov method. The new time integration is demonstrated for the one-dimensional advection–diffusion equation and the viscous Burgers equation. Numerical experiments confirm excellent parallel scaling for the linear advection–diffusion problem, and good scaling in case the nonlinear Burgers equation is simulated.}},
-        author = {G.L. Kooij and M.A. Botchev and B.J. Geurts},
-        doi = {10.1016/j.cam.2016.09.036},
-        journal = {Journal of Computational and Applied Mathematics},
-        note = {Selected Papers from NUMDIFF-14},
-        pages = {229 - 246},
-        title = {A block Krylov subspace implementation of the time-parallel Paraexp method and its extension for nonlinear partial differential equations},
-        url = {http://dx.doi.org/10.1016/j.cam.2016.09.036},
-        volume = {316},
-        year = {2017},
+@article{FalgoutEtAl2017,
+	abstract = {{The need for parallelism in the time dimension is being driven by changes in computer architectures, where performance increases are now provided through greater concurrency, not faster clock speeds. This creates a bottleneck for sequential time marching schemes because they lack parallelism in the time dimension. Multigrid reduction in time (MGRIT) is an iterative procedure that allows for temporal parallelism by utilizing multigrid reduction techniques and a multilevel hierarchy of coarse time grids. MGRIT has been shown to be effective for linear problems, with speedups of up to 50 times. The goal of this work is the efficient solution of nonlinear problems with MGRIT, where efficiency is defined as achieving similar performance when compared to an equivalent linear problem. The benchmark nonlinear problem is the $p$-Laplacian, where p=4 corresponds to a well-known nonlinear diffusion equation and $p=2$ corresponds to the standard linear diffusion operator, our benchmark linear problem. The key difficulty encountered is that the nonlinear time-step solver becomes progressively more expensive on coarser time levels as the time-step size increases. To overcome such difficulties, multigrid research has historically targeted an accumulated body of experience regarding how to choose an appropriate solver for a specific problem type. To that end, this paper develops a library of MGRIT optimizations and modifications, most important an alternate initial guess for the nonlinear time-step solver and delayed spatial coarsening, that will allow many nonlinear parabolic problems to be solved with parallel scaling behavior comparable to the corresponding linear problem.}},
+	author = {R. D. Falgout and T. A. Manteuffel and B. O'Neill and J. B. Schroder},
+	title = {Multigrid Reduction in Time for Nonlinear Parabolic Problems: A Case Study},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {39},
+	number = {5},
+	pages = {S298-S322},
+	year = {2017},
+	doi = {10.1137/16M1082330},
+        url = {https://doi.org/10.1137/16M1082330},
 }
 
-@article{KreienbuehlEtAl2017,
-	abstract = {{This article demonstrates the applicability of the parallel-in-time method Parareal to the numerical solution of the Einstein gravity equations for the spherical collapse of a massless scalar field. To account for the shrinking of the spatial domain in time, a tailored load balancing scheme is proposed and compared to load balancing based on number of time steps alone. The performance of Parareal is studied for both the sub-critical and black hole case; our experiments show that Parareal generates substantial speedup and, in the super-critical regime, can reproduce Choptuik's black hole mass scaling law.}},
-	author = {Kreienbuehl, Andreas and Benedusi, Pietro and Ruprecht, Daniel and Krause, Rolf},
-	issue = {1},
-	journal = {Communications in Applied Mathematics and Computational Science},
-	pages = {109 -- 128},
-	title = {Time-parallel gravitational collapse simulation},
-	url = {http://dx.doi.org/10.2140/camcos.2017.12.109},
-	volume = {12},
-	year = {2017},
-}
 
 @unpublished{FischerEtAl2017,
 	abstract = {{Parallel in time methods for solving initial value problems are a means
@@ -3212,6 +3194,31 @@ setups.}},
 	howpublished.= {KTH Preprint},
 	year = {2017},
 	url = {http://www.csc.kth.se/%7ejjan/publications/pit_preprint_2017-08-09.pdf},
+}
+
+@article{KooijEtAl2017,
+        abstract = {{A parallel time integration method for nonlinear partial differential equations is proposed. It is based on a new implementation of the Paraexp method for linear partial differential equations (PDEs) employing a block Krylov subspace method. For nonlinear \{PDEs\} the algorithm is based on our Paraexp implementation within a waveform relaxation. The initial value problem is solved iteratively on a complete time interval. Nonlinear terms are treated as source terms, provided by the solution from the previous iteration. At each iteration, the problem is decoupled into independent subproblems by the principle of superposition. The decoupled subproblems are solved fast by exponential integration, based on a block Krylov method. The new time integration is demonstrated for the one-dimensional advection–diffusion equation and the viscous Burgers equation. Numerical experiments confirm excellent parallel scaling for the linear advection–diffusion problem, and good scaling in case the nonlinear Burgers equation is simulated.}},
+        author = {G.L. Kooij and M.A. Botchev and B.J. Geurts},
+        doi = {10.1016/j.cam.2016.09.036},
+        journal = {Journal of Computational and Applied Mathematics},
+        note = {Selected Papers from NUMDIFF-14},
+        pages = {229 - 246},
+        title = {A block Krylov subspace implementation of the time-parallel Paraexp method and its extension for nonlinear partial differential equations},
+        url = {http://dx.doi.org/10.1016/j.cam.2016.09.036},
+        volume = {316},
+        year = {2017},
+}
+
+@article{KreienbuehlEtAl2017,
+	abstract = {{This article demonstrates the applicability of the parallel-in-time method Parareal to the numerical solution of the Einstein gravity equations for the spherical collapse of a massless scalar field. To account for the shrinking of the spatial domain in time, a tailored load balancing scheme is proposed and compared to load balancing based on number of time steps alone. The performance of Parareal is studied for both the sub-critical and black hole case; our experiments show that Parareal generates substantial speedup and, in the super-critical regime, can reproduce Choptuik's black hole mass scaling law.}},
+	author = {Kreienbuehl, Andreas and Benedusi, Pietro and Ruprecht, Daniel and Krause, Rolf},
+	issue = {1},
+	journal = {Communications in Applied Mathematics and Computational Science},
+	pages = {109 -- 128},
+	title = {Time-parallel gravitational collapse simulation},
+	url = {http://dx.doi.org/10.2140/camcos.2017.12.109},
+	volume = {12},
+	year = {2017},
 }
 
 @unpublished{MasthayEtAl2017,
