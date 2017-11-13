@@ -2736,14 +2736,6 @@ to the best performance}},
 	year = {2016}
 }
 
-@unpublished{DobrevEtAl2016,
-	author = {Dobrev, V. and Kolev, T. and Petersson, N. A. and Schroder, J.},
-	title = {TWO-LEVEL CONVERGENCE THEORY FOR PARALLEL TIME INTEGRATION WITH MULTIGRID},
-	howpublished = {LLNL},
-	url = {http://computation.llnl.gov/projects/parallel-time-integration-multigrid/mgrit-theory-2016.pdf},
-	year = {2016},
-}
-
 @article{EghbalEtAl2016,
         abstract = {{The parareal algorithm is used to obtain temporal parallelization added to the parallelism obtained from the conventional spatial domain decomposition techniques for hydrodynamic problems. Parareal solution becomes unstable at high Reynolds numbers where the non-linear convection term in the Navier-Stokes equations becomes much larger than the diffusion term. A new framework that allows using parareal for unsteady high Reynolds number hydrodynamic problems is proposed where parareal coarse and fine time integration operators are incorporated with coarse and fine spatial grids respectively and \{RANS\} or \{DES\} turbulence models are employed with a blended filter that can be tuned for the stability of the method. This framework is composed of three solution stages where parareal serves as a transitional stage that bridges a coarse grid solution to a fine grid one. While in lower Reynolds number problems parareal solution can serve as a final solution, in higher Reynolds number problems with high degree of non-linearity parareal provides a shorter path to the final solution. Anticipating a parareal stage in a transitional sense allows a looser convergence requirement which leads to high speedup gains in that stage. On the other hand improved initial values at the beginning of the last stage yields a shorter final fine stage solution. A windowing technique is employed in this methodology to further control the parareal instabilities by keeping the parareal corrections smaller while still being able to cover an arbitrary simulation time with given computational resources. Application of this methodology has been illustrated with a fully turbulent vortex shedding from a cylinder and a flow from the Grand Passage tidal zone in the Bay of Fundy. It is concluded that a tuned turbulence model may sufficiently stabilize the parareal methodology for many practical problems such that it becomes applicable in the initialization process if not accurate enough as a final solution. \{MPI\} and OpenMP programming paradigms are used for temporal parallelism introduced by parareal and data parallelism obtained via spatial domain decomposition methods respectively. Also all computational tasks are accelerated using \{CUDA\} compatible GPGPUs.}},
         author = {Araz Eghbal and Andrew G. Gerber and Eric Aubanel},
@@ -3077,21 +3069,14 @@ quantities of model systems.}},
 	year = {2017},
 }
 
-@unpublished{BadiaEtAl2017,
-	abstract = {{In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential
-equations. The approach is based on an efficient multilevel solver of the Schur complement
-related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method.
-Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton
-method over the global nonlinear ODE, using the multilevel Schur complement solver at every
-nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur
-complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments
-show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational
-resources to solve for more time steps the same problem.}},
-	author = {Badia, Santiago and Olm, Marc},
-	title = {Nonlinear parallel-in-time {S}chur complement solvers for ordinary differential equations},
-	howpublished = {arXiv:1703.08466v1 [math.NA]},
-	url = {https://arxiv.org/pdf/1703.08466.pdf},
+@article{BadiaEtAl2017,
+	abstract = {{Abstract In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential equations. The approach is based on an efficient multilevel solver of the Schur complement related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method. Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton method over the global nonlinear ODE, using the multilevel Schur complement solver at every nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational resources to solve for more time steps the same problem.}},
+	author = {Santiago Badia and Marc Olm},
+	title = {Nonlinear parallel-in-time Schur complement solvers for ordinary differential equations},
+	journal = {Journal of Computational and Applied Mathematics},
 	year = {2017},
+	url = {https://doi.org/10.1016/j.cam.2017.09.033},
+	doi = {10.1016/j.cam.2017.09.033},
 }
 
 @unpublished{BoltenEtAl2017,
@@ -3111,30 +3096,33 @@ resources to solve for more time steps the same problem.}},
 	year = {2017}
 }
 
-@article{KooijEtAl2017,
-        abstract = {{A parallel time integration method for nonlinear partial differential equations is proposed. It is based on a new implementation of the Paraexp method for linear partial differential equations (PDEs) employing a block Krylov subspace method. For nonlinear \{PDEs\} the algorithm is based on our Paraexp implementation within a waveform relaxation. The initial value problem is solved iteratively on a complete time interval. Nonlinear terms are treated as source terms, provided by the solution from the previous iteration. At each iteration, the problem is decoupled into independent subproblems by the principle of superposition. The decoupled subproblems are solved fast by exponential integration, based on a block Krylov method. The new time integration is demonstrated for the one-dimensional advection–diffusion equation and the viscous Burgers equation. Numerical experiments confirm excellent parallel scaling for the linear advection–diffusion problem, and good scaling in case the nonlinear Burgers equation is simulated.}},
-        author = {G.L. Kooij and M.A. Botchev and B.J. Geurts},
-        doi = {10.1016/j.cam.2016.09.036},
-        journal = {Journal of Computational and Applied Mathematics},
-        note = {Selected Papers from NUMDIFF-14},
-        pages = {229 - 246},
-        title = {A block Krylov subspace implementation of the time-parallel Paraexp method and its extension for nonlinear partial differential equations},
-        url = {http://dx.doi.org/10.1016/j.cam.2016.09.036},
-        volume = {316},
-        year = {2017},
+
+@article{DobrevEtAl2017,
+	abstract = {{In this paper we develop a two-grid convergence theory for the parallel-in-time scheme known as multigrid reduction in time (MGRIT), as it is implemented in the open-source package [XBraid: Parallel Multigrid in Time, http://llnl.gov/casc/xbraid]. MGRIT is a scalable and multilevel approach to parallel-in-time simulations that nonintrusively uses existing time-stepping schemes, and in a specific two-level setting it is equivalent to the widely known parareal algorithm. The goal of this paper is twofold. First, we present a two-level MGRIT convergence analysis for linear problems where the spatial discretization matrix can be diagonalized, and then apply this analysis to our two basic model problems, the heat equation and the advection equation. One important assumption is that the coarse and fine time-grid propagators can be diagaonalized by the same set of eigenvectors, which is often the case when the same spatial discretization operator is used on the coarse and fine time grids. In many cases, the MGRIT algorithm is guaranteed to converge, and we demonstrate numerically that the theoretically predicted convergence rates are sharp in practice for our model problems. Second, we explore how the convergence of MGRIT compares to the stability of the chosen time-stepping scheme. In particular, we demonstrate that a stable time-stepping scheme does not necessarily imply convergence of MGRIT, although MGRIT with FCF-relaxation always converges for the diffusion dominated problems considered here.}},
+	author = {V. A. Dobrev and Tz. Kolev and N. A. Petersson and J. B. Schroder},
+	title = {Two-Level Convergence Theory for Multigrid Reduction in Time (MGRIT)},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {39},
+	number = {5},
+	pages = {S501-S527},
+	year = {2017},
+	doi = {10.1137/16M1074096},
+	url = {https://doi.org/10.1137/16M1074096},
 }
 
-@article{KreienbuehlEtAl2017,
-	abstract = {{This article demonstrates the applicability of the parallel-in-time method Parareal to the numerical solution of the Einstein gravity equations for the spherical collapse of a massless scalar field. To account for the shrinking of the spatial domain in time, a tailored load balancing scheme is proposed and compared to load balancing based on number of time steps alone. The performance of Parareal is studied for both the sub-critical and black hole case; our experiments show that Parareal generates substantial speedup and, in the super-critical regime, can reproduce Choptuik's black hole mass scaling law.}},
-	author = {Kreienbuehl, Andreas and Benedusi, Pietro and Ruprecht, Daniel and Krause, Rolf},
-	issue = {1},
-	journal = {Communications in Applied Mathematics and Computational Science},
-	pages = {109 -- 128},
-	title = {Time-parallel gravitational collapse simulation},
-	url = {http://dx.doi.org/10.2140/camcos.2017.12.109},
-	volume = {12},
+@article{FalgoutEtAl2017,
+	abstract = {{The need for parallelism in the time dimension is being driven by changes in computer architectures, where performance increases are now provided through greater concurrency, not faster clock speeds. This creates a bottleneck for sequential time marching schemes because they lack parallelism in the time dimension. Multigrid reduction in time (MGRIT) is an iterative procedure that allows for temporal parallelism by utilizing multigrid reduction techniques and a multilevel hierarchy of coarse time grids. MGRIT has been shown to be effective for linear problems, with speedups of up to 50 times. The goal of this work is the efficient solution of nonlinear problems with MGRIT, where efficiency is defined as achieving similar performance when compared to an equivalent linear problem. The benchmark nonlinear problem is the $p$-Laplacian, where p=4 corresponds to a well-known nonlinear diffusion equation and $p=2$ corresponds to the standard linear diffusion operator, our benchmark linear problem. The key difficulty encountered is that the nonlinear time-step solver becomes progressively more expensive on coarser time levels as the time-step size increases. To overcome such difficulties, multigrid research has historically targeted an accumulated body of experience regarding how to choose an appropriate solver for a specific problem type. To that end, this paper develops a library of MGRIT optimizations and modifications, most important an alternate initial guess for the nonlinear time-step solver and delayed spatial coarsening, that will allow many nonlinear parabolic problems to be solved with parallel scaling behavior comparable to the corresponding linear problem.}},
+	author = {R. D. Falgout and T. A. Manteuffel and B. O'Neill and J. B. Schroder},
+	title = {Multigrid Reduction in Time for Nonlinear Parabolic Problems: A Case Study},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {39},
+	number = {5},
+	pages = {S298-S322},
 	year = {2017},
+	doi = {10.1137/16M1082330},
+        url = {https://doi.org/10.1137/16M1082330},
 }
+
 
 @unpublished{FischerEtAl2017,
 	abstract = {{Parallel in time methods for solving initial value problems are a means
@@ -3214,6 +3202,31 @@ setups.}},
 	url = {http://www.csc.kth.se/%7ejjan/publications/pit_preprint_2017-08-09.pdf},
 }
 
+@article{KooijEtAl2017,
+        abstract = {{A parallel time integration method for nonlinear partial differential equations is proposed. It is based on a new implementation of the Paraexp method for linear partial differential equations (PDEs) employing a block Krylov subspace method. For nonlinear \{PDEs\} the algorithm is based on our Paraexp implementation within a waveform relaxation. The initial value problem is solved iteratively on a complete time interval. Nonlinear terms are treated as source terms, provided by the solution from the previous iteration. At each iteration, the problem is decoupled into independent subproblems by the principle of superposition. The decoupled subproblems are solved fast by exponential integration, based on a block Krylov method. The new time integration is demonstrated for the one-dimensional advection–diffusion equation and the viscous Burgers equation. Numerical experiments confirm excellent parallel scaling for the linear advection–diffusion problem, and good scaling in case the nonlinear Burgers equation is simulated.}},
+        author = {G.L. Kooij and M.A. Botchev and B.J. Geurts},
+        doi = {10.1016/j.cam.2016.09.036},
+        journal = {Journal of Computational and Applied Mathematics},
+        note = {Selected Papers from NUMDIFF-14},
+        pages = {229 - 246},
+        title = {A block Krylov subspace implementation of the time-parallel Paraexp method and its extension for nonlinear partial differential equations},
+        url = {http://dx.doi.org/10.1016/j.cam.2016.09.036},
+        volume = {316},
+        year = {2017},
+}
+
+@article{KreienbuehlEtAl2017,
+	abstract = {{This article demonstrates the applicability of the parallel-in-time method Parareal to the numerical solution of the Einstein gravity equations for the spherical collapse of a massless scalar field. To account for the shrinking of the spatial domain in time, a tailored load balancing scheme is proposed and compared to load balancing based on number of time steps alone. The performance of Parareal is studied for both the sub-critical and black hole case; our experiments show that Parareal generates substantial speedup and, in the super-critical regime, can reproduce Choptuik's black hole mass scaling law.}},
+	author = {Kreienbuehl, Andreas and Benedusi, Pietro and Ruprecht, Daniel and Krause, Rolf},
+	issue = {1},
+	journal = {Communications in Applied Mathematics and Computational Science},
+	pages = {109 -- 128},
+	title = {Time-parallel gravitational collapse simulation},
+	url = {http://dx.doi.org/10.2140/camcos.2017.12.109},
+	volume = {12},
+	year = {2017},
+}
+
 @unpublished{MasthayEtAl2017,
 	abstract = {{We present a full implementation of the parareal algorithm—an integration technique to solve differential equations in parallel— in the Julia programming language for a fully general, first-order, initial-value problem. Our implementation accepts both coarse and fine integrators as functional arguments. We use Euler’s method and another Runge-Kutta integration technique as the integrators in our experiments. We also present a simulation of the algorithm for purposes of pedagogy.}},
 	author = {Tyler M. Masthay and Saverio Perugini},
@@ -3262,13 +3275,14 @@ setups.}},
 	year = {2017},
 }
 
-@unpublished{Ruprecht2017,
+@article{Ruprecht2017,
 	abstract = {{The paper derives and analyses the (semi-)discrete dispersion relation of the Parareal parallel-in-time integration method. It investigates Parareal's wave propagation characteristics with the aim to better understand what causes the well documented stability problems for hyperbolic equations. The analysis shows that the instability is caused by convergence of the amplification factor to the exact value from above for medium to high wave numbers. Phase errors in the coarse propagator are identified as the culprit, which suggests that specifically tailored coarse level methods could provide a remedy.}},
 	author = {Ruprecht, D.},
 	title = {Wave propagation characteristics of Parareal},
-	howpublished = {arXiv:1701.01359 [math.NA]},
+	journal = {Computing and Visualization in Science},
 	url = {https://arxiv.org/abs/1701.01359},
-	year = {2017}
+	year = {2017},
+	note = {Accepted}
 }
 
 @Inbook{Ruprecht2017_lncs,
@@ -3325,7 +3339,7 @@ setups.}},
         year = {2017},
  }
  
-@inproceedings{WangPeng2017, 
+ @inproceedings{WangPeng2017, 
 	author = {S. Wang and Z. Peng}, 
 	booktitle = {2017 International Conference on Electromagnetics in Advanced Applications (ICEAA)}, 
 	title = {Space-time parallel computation for time-domain Maxwell's equations}, 
@@ -3334,7 +3348,6 @@ setups.}},
 	number = {}, 
 	pages = {1680-1683}, 
 	abstract = {This work addresses a growing need for the parallel-in-time simulation capability in electromagnetics (EM) applications. Currently time-dependent EM solvers are typically parallel only in space. The sequential-in-time nature of these solvers can achieve good parallel scaling when the number of spatial mesh points per core is large. But the parallel efficiency quickly deteriorates and even saturates if spatial parallelism has been fully exploited. We proposed a new time domain EM solver to harvest parallelism in both spatial and temporal dimension. The spatial parallelism is achieved by discontinuous Galerkin formulation, and the temporal parallelism is enabled by Krylov subspace method based exponential integrator. This work results in a highly scalable parallel time domain solver which can amend the scalability issue for traditional ones. The convergence and parallel performance are validated through numerical experiments.}, 
-	keywords={Galerkin method;Maxwell equations;space-time configurations;Krylov subspace method;discontinuous Galerkin formulation;electromagnetics applications;exponential integrator;numerical experiments;parallel efficiency;parallel performance;parallel scaling;parallel time domain;parallel-in-time simulation capability;sequential-in-time nature;space-time parallel computation;spatial dimension;spatial mesh points;spatial parallelism;temporal dimension;temporal parallelism;time domain EM solver;time-dependent EM solvers;time-domain Maxwell's equations;Convergence;Maxwell equations;Method of moments;Parallel processing;Program processors;Time-domain analysis}, 
 	doi = {10.1109/ICEAA.2017.8065615}, 
 	url = {http://ieeexplore.ieee.org/document/8065615/},
 	month={Sept},
