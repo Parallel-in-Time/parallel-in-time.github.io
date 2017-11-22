@@ -3318,6 +3318,15 @@ setups.}},
 	year = {2017}
 }
 
+@unpublished{SchroderEtAl2017,
+	abstract = {{This work presents a time-parallel approach for solving power grid problems with scheduled events (e.g., a square pulse applied to a bus). The multigrid reduction in time (MGRIT) method, implemented in the XBraid code, is used to nonintrusively add time parallelism to GridDyn, an existing open-source power grid simulation tool. The approach extends standard practices for sequential time stepping and scheduled events to the time-parallel setting and then explores temporal refinement. The paper concludes with parallel experiments validating the approach and showing speedups of around 50x for the WECC 179 bus system. Scalability with respect to scheduled events is examined by applying a one second long square pulse to bus 143 every 2 seconds}},
+	author = {Jacob B. Schroder and Robert D. Falgout and Carol S. Woodward and Philip Top},
+	title = {Parallel-in-Time Solution of Power Systems with Scheduled Events},
+	howpublished = {LLNL Preprint},
+	url = {https://computation.llnl.gov/projects/parallel-time-integration-multigrid/2017_PES_Paper_v1.pdf},
+	year = {2017}
+}
+
 @unpublished{Speck2017,
 	abstract = {{In this paper we present two strategies to enable "parallelization across the method" for spectral deferred corrections (SDC). Using standard low-order time-stepping methods in an iterative fashion, SDC can be seen as preconditioned Picard iteration for the collocation problem. Typically, a serial Gauss-Seidel-like preconditioner is used, computing updates for each collocation node one by one. The goal of this paper is to show how this process can be parallelized, so that all collocation nodes are updated simultaneously. The first strategy aims at finding parallel preconditioners for the Picard iteration and we test three choices using four different test problems. For the second strategy we diagonalize the quadrature matrix of the collocation problem directly. In order to integrate non-linear problems we employ simplified and inexact Newton methods. Here, we estimate the speed of convergence depending on the time-step size and verify our results using a non-linear diffusion problem.}},
 	author = {Speck, Robert},
