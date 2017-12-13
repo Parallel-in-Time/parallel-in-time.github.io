@@ -7,6 +7,66 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Open postdoc position at JSC</title>
+        <description>&lt;p&gt;JSC has an open position for a &lt;a href=&quot;http://www.fz-juelich.de/SharedDocs/Stellenangebote/_common/dna/2017-288-EN-JSC.html&quot;&gt;postdoc&lt;/a&gt; in the field of parallel-in-time integration methods!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Jülich Supercomputing Centre is looking to recruit a postdoc in the
+field of mathematics and/or scientific computing with a special focus on
+parallel-in-time integration methods.&lt;/p&gt;
+
+&lt;p&gt;The goal of this project is the analysis and adjustment of the parallel
+full approximation scheme in space and time (“PFASST”) for hyperbolic
+problems. A close collaboration with our partners at RWTH Aachen
+University (Germany) and University of Leeds (UK) is intended.&lt;/p&gt;
+
+&lt;p&gt;Candidates should hold a university degree in the field of mathematics
+or scientific computing, followed by a doctoral degree. They should have
+profound knowledge of iterative methods, numerical ODE solvers and
+hyperbolic problems as well as a strong expertise in C++ or Python
+programming. Social competence and good communication skills for
+collaborative work in and with interdisciplinary teams are essential.&lt;/p&gt;
+
+&lt;p&gt;The project runs for 2 years (further project proposals are planned) and
+should start &lt;strong&gt;as soon as possible&lt;/strong&gt;. For more information and to apply, please see &lt;a href=&quot;http://www.fz-juelich.de/SharedDocs/Stellenangebote/_common/dna/2017-288-EN-JSC.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 11 Dec 2017 23:00:00 +0000</pubDate>
+        <link>http://parallelintime.org/jobs/2017/12/11/postdoc-position-at-jsc.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/jobs/2017/12/11/postdoc-position-at-jsc.html</guid>
+      </item>
+    
+      <item>
+        <title>Open PhD position at JSC</title>
+        <description>&lt;p&gt;JSC has an open position for a &lt;a href=&quot;http://www.fz-juelich.de/SharedDocs/Stellenangebote/_common/dipldok/d149-2017-jsc.html&quot;&gt;PhD student&lt;/a&gt; in the field of parallel-in-time integration methods!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;For early 2018, Jülich Supercomputing Centre is recruiting a PhD
+student in the field of mathematics and/or scientific computing with a
+special focus on parallel-in-time integration methods.&lt;/p&gt;
+
+&lt;p&gt;The goal of this project is the development and analysis of
+fault-tolerant iterative time-stepping methods to protect against node
+failure and bit flips on large-scale supercomputers. The project is
+embedded into the interdisciplinary research setting of the Joint
+Laboratory for Extreme Scale Computing (&lt;a href=&quot;https://jlesc.github.io/&quot;&gt;JLESC&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Candidates should hold a university degree in the field of mathematics
+or scientific computing and should have profound knowledge of iterative
+methods and numerical ODE solvers as well as a strong expertise in C++
+programming. Social competence and good communication skills for
+collaborative work in and with interdisciplinary teams are essential.&lt;/p&gt;
+
+&lt;p&gt;The project runs for 3 years, salary is based on a research fellowship
+for international students. For more information, please see &lt;a href=&quot;http://www.fz-juelich.de/SharedDocs/Stellenangebote/_common/dipldok/d149-2017-jsc.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 11 Dec 2017 23:00:00 +0000</pubDate>
+        <link>http://parallelintime.org/jobs/2017/12/11/phd-position-at-jsc.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/jobs/2017/12/11/phd-position-at-jsc.html</guid>
+      </item>
+    
+      <item>
         <title>2018 PINT workshop in Roscoff, France</title>
         <description>&lt;p&gt;The 7th workshop on parallel-in-time integration will take place in May 2018 in Roscoff, France.&lt;/p&gt;
 
@@ -122,84 +182,6 @@ The repository also contains information on how to participate.&lt;/p&gt;
         <pubDate>Fri, 02 Dec 2016 16:16:00 +0000</pubDate>
         <link>http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</guid>
-      </item>
-    
-      <item>
-        <title>PINT Plenary at  USNCCM</title>
-        <description>&lt;p&gt;Plenary talk by Beth Wingate on parallel-in-time at the &lt;a href=&quot;http://14.usnccm.org/plenary-and-semi-plenary-speakers&quot;&gt;14th U.S. National Congress on Computational Mechanics&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--more--&gt;
-&lt;p&gt;Once again, &lt;a href=&quot;/groups/uoe.html&quot;&gt;Beth Wingate&lt;/a&gt; from the University of Exeter will champion parallel-in-time integration in a &lt;a href=&quot;http://14.usnccm.org/plenary-and-semi-plenary-speakers&quot;&gt;plenary talk&lt;/a&gt; at a major conference, this time at USNCCM in Montreal, Canada.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 07 Sep 2016 07:50:44 +0000</pubDate>
-        <link>http://parallelintime.org/events/2016/09/07/usnccm-plenary.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2016/09/07/usnccm-plenary.html</guid>
-      </item>
-    
-      <item>
-        <title>PINT in EESI report</title>
-        <description>&lt;p&gt;Parallel-in-time integration was mentioned prominently in two reports by the &lt;a href=&quot;http://www.eesi-project.eu/&quot;&gt;European Exascale Software Initiative&lt;/a&gt; (EESI) last year.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The  report &lt;a href=&quot;http://www.eesi-project.eu/wp-content/uploads/2015/05/EESI2_D7.3_Final-report-on-EESI2-exascale-vision-roadmap-and-recommendations.pdf&quot;&gt;D 7.3 2015 Update Vision &amp;amp; Recommendation&lt;/a&gt; acknowledges parallel-in-time integration as a potentially &lt;em&gt;disruptive approach&lt;/em&gt; and a &lt;em&gt;fundamental step toward in Exascale Simulations&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;The &lt;a href=&quot;http://www.eesi-project.eu/wp-content/uploads/2015/05/EESI2_D3.3_Final-report-on-application-grand-challenges.pdf&quot;&gt;D 3.3 Final report on applications working groups&lt;/a&gt; confirms this, attesting parallel-in-time integration &lt;em&gt;a huge potential for a better exploration of future Exascale architectures&lt;/em&gt;. It cites our successful &lt;a href=&quot;/events/index.html&quot;&gt;workshop series&lt;/a&gt; and mention scaling results published in 2013&lt;a href=&quot;#RuprechtEtAl2013_SC&quot;&gt;[1]&lt;/a&gt; for the &lt;a href=&quot;/methods/pfasst.html&quot;&gt;PFASST&lt;/a&gt; using all 458,752 of the IBM BlueGene/Q JUQUEEN at &lt;a href=&quot;http://www.fz-juelich.de/ias/jsc/DE/Home/home_node.html&quot;&gt;Juelich Supercomputing Centre&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;div class=&quot;bibtex-entry-container&quot;&gt;
-  &lt;div&gt;
-    &lt;div class=&quot;col-md-3 col-sm-12 bibtex-ref-meta hidden&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-md-12 ref-label label label-default&quot;&gt;
-          RuprechtEtAl2013_SC
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;btn-group btn-group-xs btn-group-justified&quot; role=&quot;group&quot;&gt;
-          &lt;div class=&quot;btn-group btn-group-xs&quot; role=&quot;group&quot;&gt;
-            &lt;button class=&quot;btn btn-default&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseRuprechtEtAl2013_SCBibtex&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseRuprechtEtAl2013_SCBibtex&quot;&gt;
-              BibTeX
-            &lt;/button&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;btn-group btn-group-xs&quot; role=&quot;group&quot;&gt;
-            
-            &lt;button class=&quot;btn btn-default&quot; disabled=&quot;disabled&quot; data-toggle=&quot;modal&quot; data-target=&quot;#modalRuprechtEtAl2013_SCAbstract&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;modalRuprechtEtAl2013_SCAbstract&quot;&gt;
-              Abstract
-            &lt;/button&gt;
-            
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;bibtex-ref-entry&quot;&gt;
-      &lt;span id=&quot;RuprechtEtAl2013_SC&quot;&gt;D. Ruprecht, R. Speck, M. Emmett, M. Bolten, and R. Krause, “Poster: Extreme-scale space-time parallelism,” in &lt;i&gt;Proceedings of the 2013 Conference on High Performance Computing Networking, Storage and Analysis Companion&lt;/i&gt;, 2013 [Online]. Available at: &lt;a href=&quot;http://sc13.supercomputing.org/sites/default/files/PostersArchive/tech_posters/post148s2-file3.pdf&quot; target=&quot;_blank&quot;&gt;http://sc13.supercomputing.org/sites/default/files/PostersArchive/tech_posters/post148s2-file3.pdf&lt;/a&gt;&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;collapse&quot; id=&quot;collapseRuprechtEtAl2013_SCBibtex&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-12&quot;&gt;
-        &lt;pre class=&quot;abstract&quot;&gt;@inproceedings{RuprechtEtAl2013_SC,
-  author = {Ruprecht, Daniel and Speck, Robert and Emmett, Matthew and Bolten, Matthias and Krause, Rolf},
-  booktitle = {Proceedings of the 2013 Conference on High Performance Computing Networking, Storage and Analysis Companion},
-  location = {Denver, Colorado, USA},
-  series = {{SC &#39;13 Companion}},
-  title = {Poster: Extreme-scale space-time parallelism},
-  url = {http://sc13.supercomputing.org/sites/default/files/PostersArchive/tech_posters/post148s2-file3.pdf},
-  year = {2013}
-}
-&lt;/pre&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  
-&lt;/div&gt;
-&lt;/li&gt;&lt;/ol&gt;
-</description>
-        <pubDate>Fri, 05 Aug 2016 07:50:44 +0000</pubDate>
-        <link>http://parallelintime.org/events/2016/08/05/eesi-report.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2016/08/05/eesi-report.html</guid>
       </item>
     
   </channel>
