@@ -7,36 +7,6 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Open postdoc position at JSC</title>
-        <description>&lt;p&gt;JSC has an open position for a &lt;a href=&quot;http://www.fz-juelich.de/SharedDocs/Stellenangebote/_common/dna/2017-288-EN-JSC.html&quot;&gt;postdoc&lt;/a&gt; in the field of parallel-in-time integration methods!&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Jülich Supercomputing Centre is looking to recruit a postdoc in the
-field of mathematics and/or scientific computing with a special focus on
-parallel-in-time integration methods.&lt;/p&gt;
-
-&lt;p&gt;The goal of this project is the analysis and adjustment of the parallel
-full approximation scheme in space and time (“PFASST”) for hyperbolic
-problems. A close collaboration with our partners at RWTH Aachen
-University (Germany) and University of Leeds (UK) is intended.&lt;/p&gt;
-
-&lt;p&gt;Candidates should hold a university degree in the field of mathematics
-or scientific computing, followed by a doctoral degree. They should have
-profound knowledge of iterative methods, numerical ODE solvers and
-hyperbolic problems as well as a strong expertise in C++ or Python
-programming. Social competence and good communication skills for
-collaborative work in and with interdisciplinary teams are essential.&lt;/p&gt;
-
-&lt;p&gt;The project runs for 2 years (further project proposals are planned) and
-should start &lt;strong&gt;as soon as possible&lt;/strong&gt;. For more information and to apply, please see &lt;a href=&quot;http://www.fz-juelich.de/SharedDocs/Stellenangebote/_common/dna/2017-288-EN-JSC.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 11 Dec 2017 23:00:00 +0000</pubDate>
-        <link>http://parallelintime.org/jobs/2017/12/11/postdoc-position-at-jsc.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/jobs/2017/12/11/postdoc-position-at-jsc.html</guid>
-      </item>
-    
-      <item>
         <title>Open PhD position at JSC</title>
         <description>&lt;p&gt;JSC has an open position for a &lt;a href=&quot;http://www.fz-juelich.de/SharedDocs/Stellenangebote/_common/dipldok/d149-2017-jsc.html&quot;&gt;PhD student&lt;/a&gt; in the field of parallel-in-time integration methods!&lt;/p&gt;
 
@@ -182,6 +152,18 @@ The repository also contains information on how to participate.&lt;/p&gt;
         <pubDate>Fri, 02 Dec 2016 16:16:00 +0000</pubDate>
         <link>http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</guid>
+      </item>
+    
+      <item>
+        <title>PINT Plenary at  USNCCM</title>
+        <description>&lt;p&gt;Plenary talk by Beth Wingate on parallel-in-time at the &lt;a href=&quot;http://14.usnccm.org/plenary-and-semi-plenary-speakers&quot;&gt;14th U.S. National Congress on Computational Mechanics&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;Once again, &lt;a href=&quot;/groups/uoe.html&quot;&gt;Beth Wingate&lt;/a&gt; from the University of Exeter will champion parallel-in-time integration in a &lt;a href=&quot;http://14.usnccm.org/plenary-and-semi-plenary-speakers&quot;&gt;plenary talk&lt;/a&gt; at a major conference, this time at USNCCM in Montreal, Canada.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Sep 2016 07:50:44 +0000</pubDate>
+        <link>http://parallelintime.org/events/2016/09/07/usnccm-plenary.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/events/2016/09/07/usnccm-plenary.html</guid>
       </item>
     
   </channel>
