@@ -3468,6 +3468,16 @@ setups.}},
 	Year = {2018},
 }
 
+@article{Subber2018,
+	abstract = {{In this paper, we adapt a parallel time integration scheme to track the trajectories of noisy non-linear dynamical systems. Specifically, we formulate a parallel algorithm to generate the sample path of nonlinear oscillator defined by stochastic differential equations (SDEs) using the so-called parareal method for ordinary differential equations (ODEs). The presence of Wiener process in \{SDEs\} causes difficulties in the direct application of any numerical integration techniques of \{ODEs\} including the parareal algorithm. The parallel implementation of the algorithm involves two \{SDEs\} solvers, namely a fine-level scheme to integrate the system in parallel and a coarse-level scheme to generate and correct the required initial conditions to start the fine-level integrators. For the numerical illustration, a randomly excited Duffing oscillator is investigated in order to study the performance of the stochastic parallel algorithm with respect to a range of system parameters. The distributed implementation of the algorithm exploits Massage Passing Interface (MPI).}},
+	author = {Waad Subber and Abhijit Sarkar},
+	title = {A Parallel Time Integrator for Noisy Nonlinear Oscillatory Systems},
+	journal = {Journal of Computational Physics},
+	year = {2018},
+	doi = {10.1016/j.jcp.2018.01.019},
+	url = {https://doi.org/10.1016/j.jcp.2018.01.019},
+}
+
 
 @article{WuZhou2018_JCP,
 	abstract = {It is challenge work to design parareal algorithms for time-fractional differential equations due to the historical effect of the fractional operator. A direct extension of the classical parareal methed to such equations will lead to unbalance computational time in each process. In this work, we present an efficient parareal iteration scheme to overcome this issue, by adopting two recently developed local time-integrators for time fractional operators. In both approaches, one introduces auxiliary variables to localized the fractional operator. To this end, we propose a new strategy to perform the coarse grid correction so that the auxiliary variables and the solution variable are corrected separately in a mixed pattern. It is shown that the proposed parareal algorithm admits robust rate of convergence. Numerical examples are presented to support our conclusions.},
