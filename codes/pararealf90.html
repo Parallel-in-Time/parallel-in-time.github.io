@@ -145,9 +145,75 @@
 
 <p>Provides implementations of <a href="/methods/parareal.html">Parareal</a> in both MPI and OpenMP to allow for a comparison of the
 effect of different parallelisation strategies on runtime, memory footprint and energy consumption.
-(missing reference)</p>
+<a href="#Ruprecht2017_lncs">[1]</a></p>
 
-<ol class="bibliography"></ol>
+<ol class="bibliography"><li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          Ruprecht2017_lncs
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseRuprecht2017_lncsBibtex" aria-expanded="false" aria-controls="collapseRuprecht2017_lncsBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalRuprecht2017_lncsAbstract" aria-expanded="false" aria-controls="modalRuprecht2017_lncsAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="Ruprecht2017_lncs">D. Ruprecht, “Shared Memory Pipelined Parareal,” in <i>Euro-Par 2017: Parallel Processing: 23rd International Conference on Parallel and Distributed Computing, Santiago de Compostela, Spain, August 28 – September 1, 2017, Proceedings</i>, F. F. Rivera, T. F. Pena, and J. C. Cabaleiro, Eds. Springer International Publishing, 2017, pp. 669–681 [Online]. Available at: <a href="https://doi.org/10.1007/978-3-319-64203-1_48" target="_blank">https://doi.org/10.1007/978-3-319-64203-1_48</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseRuprecht2017_lncsBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@inbook{Ruprecht2017_lncs,
+  author = {Ruprecht, Daniel},
+  booktitle = {Euro-Par 2017: Parallel Processing: 23rd International Conference on Parallel and Distributed Computing, Santiago de Compostela, Spain, August 28 -- September 1, 2017, Proceedings},
+  doi = {10.1007/978-3-319-64203-1_48},
+  editor = {Rivera, Francisco F. and Pena, Tom{\'a}s F. and Cabaleiro, Jos{\'e} C.},
+  pages = {669--681},
+  publisher = {Springer International Publishing},
+  url = {https://doi.org/10.1007/978-3-319-64203-1_48},
+  title = {Shared Memory Pipelined Parareal},
+  year = {2017}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalRuprecht2017_lncsAbstract" tabindex="-1" role="dialog" aria-labelledby="modalRuprecht2017_lncsAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalRuprecht2017_lncsAbstractTitle">
+            Abstract for BibTeX entry <code>Ruprecht2017_lncs</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          For the parallel-in-time integration method Parareal, pipelining can be used to hide some of the cost of the serial correction step and improve its efficiency. The paper introduces a basic OpenMP implementation of pipelined Parareal and compares it to a standard MPI-based variant. Both versions yield almost identical runtimes, but, depending on the compiler, the OpenMP variant consumes about 7% less energy and has a significantly smaller memory footprint. However, its higher implementation complexity might make it difficult to use in legacy codes and in combination with spatial parallelisation.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li></ol>
 
       </div>
       <aside class="col-md-4">

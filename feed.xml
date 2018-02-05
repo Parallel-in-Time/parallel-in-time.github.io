@@ -7,6 +7,19 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PinT at SIAM Linear Algebra</title>
+        <description>&lt;p&gt;Parallel-in-time integration present also at the &lt;a href=&quot;http://www.math.hkbu.edu.hk/siam-ala18/Minisymposia.php&quot;&gt;SIAM Conference on Applied Linear Algebra.&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Thanks to Xiao-Chuan Cai and Hans De Sterck for putting together a mini symposium on &lt;em&gt;iterative solvers for parallel-in-time integration&lt;/em&gt; at SIAM ALA 2018 in Hong Kong. After PinT &lt;a href=&quot;/events/2016/12/23/siamcse-ms.html&quot;&gt;being present&lt;/a&gt; in all SIAM PP and SIAM CSE conferences since 2013, including this year’s &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=63542&quot;&gt;SIAM Parallel Processing 2018&lt;/a&gt;, this is the first time it features prominently at SIAM ALA.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Feb 2018 14:07:00 +0000</pubDate>
+        <link>http://parallelintime.org/jobs/2018/02/03/pint-siamla.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/jobs/2018/02/03/pint-siamla.html</guid>
+      </item>
+    
+      <item>
         <title>Open PhD position at JSC</title>
         <description>&lt;p&gt;JSC has an open position for a &lt;a href=&quot;http://www.fz-juelich.de/SharedDocs/Stellenangebote/_common/dipldok/d149-2017-jsc.html&quot;&gt;PhD student&lt;/a&gt; in the field of parallel-in-time integration methods!&lt;/p&gt;
 
@@ -152,18 +165,6 @@ The repository also contains information on how to participate.&lt;/p&gt;
         <pubDate>Fri, 02 Dec 2016 16:16:00 +0000</pubDate>
         <link>http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</guid>
-      </item>
-    
-      <item>
-        <title>PINT Plenary at  USNCCM</title>
-        <description>&lt;p&gt;Plenary talk by Beth Wingate on parallel-in-time at the &lt;a href=&quot;http://14.usnccm.org/plenary-and-semi-plenary-speakers&quot;&gt;14th U.S. National Congress on Computational Mechanics&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--more--&gt;
-&lt;p&gt;Once again, &lt;a href=&quot;/groups/uoe.html&quot;&gt;Beth Wingate&lt;/a&gt; from the University of Exeter will champion parallel-in-time integration in a &lt;a href=&quot;http://14.usnccm.org/plenary-and-semi-plenary-speakers&quot;&gt;plenary talk&lt;/a&gt; at a major conference, this time at USNCCM in Montreal, Canada.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 07 Sep 2016 07:50:44 +0000</pubDate>
-        <link>http://parallelintime.org/events/2016/09/07/usnccm-plenary.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2016/09/07/usnccm-plenary.html</guid>
       </item>
     
   </channel>
