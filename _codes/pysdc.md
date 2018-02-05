@@ -5,7 +5,7 @@ date: 2015-06-03 10:45:00 +0200
 navbar: Codes
 subnavbar: pysdc
 logo: 
-code_url: http://parallel-in-time.github.io/pySDC
+code_url: http://www.parallelintime.org/pySDC/
 language: Python
 github_repo: "Parallel-in-Time/pySDC"
 license: 2-clause BSD

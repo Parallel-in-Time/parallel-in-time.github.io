@@ -24,6 +24,6 @@ A lightweight special-purpose Fortran90 implementation of Parareal.
 
 Provides implementations of [Parareal](/methods/parareal.html) in both MPI and OpenMP to allow for a comparison of the
 effect of different parallelisation strategies on runtime, memory footprint and energy consumption.
-{% cite Ruprecht2015 %}
+{% cite Ruprecht2017_lncs %}
 
 {% bibliography --cited %}
