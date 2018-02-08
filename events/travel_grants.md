@@ -33,6 +33,89 @@ For future events, a deadline will be announced together with the workshop.
 
 ## Previous Grantees
 
+### [6th Conference on Parallel-in-Time Integration, Ascona, Switzerland](/events/6th-pint-workshop/)
+
+**Ben S. Southworth**, University of Colorado at Boulder, USA
+
+Talk: "Solving Space-time Discretizations of the Wave Equation with Algebraic Multigrid"
+
+Algebraic multigrid (AMG) is an iterative solver for large sparse linear systems
+that, for many applications, scales linearly in complexity with the number of
+degrees of freedom. It also scales in parallel to hundreds of thousands of cores,
+making it a key component of many high-performance simulation codes. For the
+symmetric positive definite case, often resulting from the discretization of elliptic
+partial differential equations (PDEs), convergence of AMG is well motivated and
+AMG is among the fastest numerical solvers available. However, highly nonsymmetric
+matrices pose difficulties for AMG in theory and in practice. Although a number of efforts have been made to develop AMG for nonsymmetric linear systems, few have considered highly nonsymmetric cases, and those that have demonstrated success on nonsymmetric systems typically use a multilevel
+strategy that does not scale well in parallel (K-cycles or W-cycles). Each of these
+issues are likely part of the reason that AMG has yet to be demonstrated as an
+effective parallel-in-time solver. Although a number of works have looked at
+geometric multigrid and parabolic PDEs, there is a large gap in the parallel-intime
+literature in terms of algebraic solvers and/or space-time discretizations of
+hyperbolic PDEs.
+
+Although hyperbolic PDEs arise frequently in physical simulation, their
+solution is often constrained to sequential, explicit time stepping schemes, or
+implicit schemes with relatively slow (not O(n)) linear solvers. Recently, we
+developed a reduction-based algebraic multigrid (AMG) solver, AMGir, and its
+generalization LAIR, to solve upwind discretizations of the steady- state
+transport equation. AMGir/LAIR proved to be a fast and robust solver for the
+steady-state transport equation, even on unstructured meshes and with high-order
+finite elements. Due to the success of AMGir/LAIR applied to upwind
+discretizations of gradients, a natural research direction to consider is further
+developing the method with a focus on parallel-in-time applications. Full spacetime
+discretizations often use some form of upwind or semi-upwind discretization
+in time, which leads to a global space-time matrix amenable to AMGir/LAIR. 
+
+Here, we consider a discretization of the 2d-space, 1d-time, wave equation written
+in first-order form, corresponding to a system with two variables. A modification
+of AMGir/LAIR is developed to account for the system structure, and the method
+proves very effective. In particular, the reduction aspect of AMGir/LAIR applied
+to the wave equation is striking – initial iterations appear to diverge, but
+convergence factors then plummet to ρ ~ 1E−10. AMGir/LAIR is able to seamlessly
+handle the system structure and solve the space-time wave equation, a well-known
+challenging parallel-in-time problem, showing promise as a robust framework for
+parallel-in-time.
+
+**Federico Danieli**, Mathematical Institute, University of Oxford, UK
+
+Title: "An Alternative to the Coarse Solver for the Parareal Algorithm"
+
+The Parareal algorithm is one of the simplest and most widely spread techniques
+to achieve parallelisation in the computation of the solution of ODEs and PDEs
+by splitting their time domain. However, ensuring its stability can be a challenging
+task, which for the largest part revolves around the choice of the most apt pair of
+fine and coarse solvers for the problem at hand. Stability is also an issue in the
+case of advection-dominated equations, where the algorithm has often been shown
+to perform poorly. In the attempt to overcome these problems, an alternative
+formulation of Parareal is presented. Starting from an interpretation of the
+algorithm as a Newton method, we notice how the sensitivity of the solution from
+the application of the fine solver, with respect to variations on the initial
+conditions, appears in the update formula. Rather than resorting to the application
+of a coarse solver in order to approximate this term and consequently propagate
+the update along the time domain, we aim to estimate this sensitivity in a direct
+manner. The approach chosen is suitable for systems of ODEs of small size and
+some simple PDEs, and extensions to general cases are not trivial and still remain
+object of further work. However, the first experiments on model problems show the
+potential of this method to overcome some of the limitations of Parareal, as well
+as to boost its convergence speed.
+
+**Marc Olm**, Technical University of Catalonia & CIMNE, Spain
+
+Title: "Nonlinear parallel-in-time multilevel Schur complement solvers for ordinary differential equations"
+
+In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary
+differential equations. The approach is based on an efficient multilevel solver of the
+Schur complement related to a multilevel time partition. For linear problems, the
+scheme leads to a fast direct method. Next, two different strategies for solving
+nonlinear ODEs are proposed. First, we consider a Newton method over the global
+nonlinear ODE, using the multilevel Schur complement solver at every nonlinear
+iteration. Second, we state the global nonlinear problem in terms of the nonlinear
+Schur complement (at an arbitrary level), and perform nonlinear iterations over it.
+Numerical experiments show that the proposed schemes are weakly scalable, i.e.,
+we can efficiently exploit increasing computational resources to solve for more time
+steps the same problem. 
+
 ### [5th PinT Workshop, Banff, Canada](/events/5th-pint-workshop/)
 
 **Thibaut Lunet**, ISAE-Supaero & CERFACS, Toulouse, France
