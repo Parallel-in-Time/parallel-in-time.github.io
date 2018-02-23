@@ -3,10 +3,10 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>BorisSDC</title>
+  <title>PalMod</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallelintime.org/projects/borissdc.html">
+  <link rel="canonical" href="http://parallelintime.org/projects/palmod.html">
 
   <link type="text/css" rel="stylesheet" href="/assets/main-81ba415bf08330ed572889dba401e842410a7e0d76800de89a3ee4e32fb5582f.css">
   <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-8e4e71a9f77a070acc74ea98abe2daf6a1b292abe2705fe12f7be38194874740.js"></script>
@@ -95,11 +95,11 @@
       <a href="/projects/sppexa.html">ExaSolvers</a>
     </li>
   
-    <li class="active">
+    <li >
       <a href="/projects/borissdc.html">BorisSDC</a>
     </li>
   
-    <li >
+    <li class="active">
       <a href="/projects/palmod.html">PalMod</a>
     </li>
   
@@ -131,33 +131,70 @@
         <div class="post post-project">
   <header class="post-header">
     <h1>
-      BorisSDC
+      PalMod
     </h1>
     
   </header>
   <article class="post-content content">
     <div class="row">
       <div class="col-md-8">
-        <p><a href="#WinkelEtAl2015">[1]</a></p>
+        <p><em>The Parareal Algorithm in PalMod</em></p>
+
+<p>In high-performance computing facilities, the number of cores has increased rapidly in the last years, and will do so further in the future. In contrast, the speed of each single core does not grow any more. Thus, the exploitation of parallelism becomes a crucial point in every design of simulation software where high computational effort is needed. This naturally refers to climate simulations, may these be predictions or paleo runs as in PalMod.</p>
+
+<p>The setting in paleo-computing is special because of two facts: At first, the spatial resolution is numerically coupled with the time-step due to stability conditions.  Secondly, the needed long time horizons prohibit short time-steps, and thus restrict also the spatial resolution. As a result, the high number of available cores cannot be used to reduce the overall computation time. They may nevertheless be used to perform parallel ensemble and sensitivity experiments.</p>
+
+<p>The concept of time-parallelism allows to exploit more and more hardware cores. It breaks the intuitively clear and familiar concept of a “serial” time: Here steps in the algorithm only partly reflect an actual step from one time instant to another. Contrarily, the steps of a parallel-in-time algorithm are internal steps on the way towards the final solution, which gives a continuous trajectory at the end of the computation. 
+In several research papers, it can already be seen that also problems with different internal time scales or including chaotic behavior (e.g. the Lorenz system) can be treated with this method.</p>
+
+<p>However, applying a parallel-in-time method to the PalMod setting still is a challenge, since it has to be implemented using the available Earth System Models. Here, several options are thinkable: Coupling between different spatial resolutions as well as the usage of simpler reduced or intermediate complexity models. In this context, the parareal method is a mathematical key enabler for faster climate simulations and with this perfectly fits to the ambitious goal of the PalMod project. Currently the parareal method is implemented in the simulation environment of PalMod’s Work Package 4.3. 
+In PalMod, we make use of the Micro-Macro Parareal approach, in cooperation with G. Samaey, KU Leuven: In this version of Parareal <a href="#LegollEtAl2013">[1]</a> , the coarse propagator in the Paraeal setting  is a model with a different structure. This can be a simpler model.</p>
+
+<p>In our first example, the coarse model is a zero-dimensional so-called Energy Balance Model (EBM). This model  is based on the balance of incoming and outgoing for the whole Earth as 0-D point in space. The only state variable is the global mean temperature. The original, fine model in the Micro-Macro setting is based on the same modeling principles, but spatially one-dimensional. Additional lifting and averaging operators have to be constructed for the algorithm:</p>
+
+<ul>
+  <li>To obtain the initial values for the fine model on each subinterval, the coarse output has to be lifted to the fine resolution.</li>
+  <li>To compute the jumps, the fine output has to be restricted/averaged.</li>
+</ul>
+
+<p>By now, simplified model examples have been tested with Parareal in PalMod:</p>
+
+<ul>
+  <li>0-d and 1-d EBMs (see Figure 1 for convergence results)</li>
+  <li>2-d rotating shallow water equations</li>
+  <li>Coupled 2-d ocean and EBM with reduced order model for ocean.</li>
+</ul>
+
+<p>Candidates for the PalMod project are:</p>
+
+<ul>
+  <li>Different resolutions of Earth System Models (ESMs)</li>
+  <li>Earth System Models of Intermediate Complexity (EMICs) as coarse model</li>
+  <li>Newly constructed reduced order models as coarse models</li>
+</ul>
+
+<p><img src="/projects/palmod_parareal.png" alt="alt palmod_parareal" /></p>
+
+<p><strong>Figure 1</strong> <em>Convergence of micro-macro parareal method for  0-D/1-D nonlinear Energy Balance Model and different numbers N of parareal  subintervals.</em></p>
 
 <ol class="bibliography"><li><div class="bibtex-entry-container">
   <div>
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          WinkelEtAl2015
+          LegollEtAl2013
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseWinkelEtAl2015Bibtex" aria-expanded="false" aria-controls="collapseWinkelEtAl2015Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseLegollEtAl2013Bibtex" aria-expanded="false" aria-controls="collapseLegollEtAl2013Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalWinkelEtAl2015Abstract" aria-expanded="false" aria-controls="modalWinkelEtAl2015Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalLegollEtAl2013Abstract" aria-expanded="false" aria-controls="modalLegollEtAl2013Abstract">
               Abstract
             </button>
             
@@ -167,38 +204,23 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="WinkelEtAl2015">M. Winkel, R. Speck, and D. Ruprecht, “A high-order Boris integrator,” <i>Journal of Computational Physics</i>, vol. 295, pp. 456–474, 2015 [Online]. Available at: <a href="http://dx.doi.org/10.1016/j.jcp.2015.04.022" target="_blank">http://dx.doi.org/10.1016/j.jcp.2015.04.022</a></span>
+      <span id="LegollEtAl2013">F. Legoll, T. Lelièvre, and G. Samaey, “A Micro-Macro Parareal Algorithm: Application to Singularly Perturbed Ordinary Differential Equations,” <i>SIAM Journal on Scientific Computing</i>, vol. 35, no. 4, pp. A1951–A1986, 2013 [Online]. Available at: <a href="http://dx.doi.org/10.1137/120872681" target="_blank">http://dx.doi.org/10.1137/120872681</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseWinkelEtAl2015Bibtex">
+  <div class="collapse" id="collapseLegollEtAl2013Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@article{WinkelEtAl2015,
-  title = {A high-order {B}oris integrator},
-  author = {Winkel, M. and Speck, R. and Ruprecht, D.},
-  journal = {Journal of Computational Physics},
-  year = {2015},
-  url = {http://dx.doi.org/10.1016/j.jcp.2015.04.022},
-  volume = {295},
-  pages = {456--474}
+        <pre class="abstract">@article{LegollEtAl2013,
+  author = {Legoll, F. and Lelièvre, T. and Samaey, G.},
+  journal = {SIAM Journal on Scientific Computing},
+  number = {4},
+  pages = {A1951--A1986},
+  title = {{A Micro-Macro Parareal Algorithm: Application to Singularly Perturbed Ordinary Differential Equations}},
+  url = {http://dx.doi.org/10.1137/120872681},
+  volume = {35},
+  year = {2013}
 }
 </pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalWinkelEtAl2015Abstract" tabindex="-1" role="dialog" aria-labelledby="modalWinkelEtAl2015AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalWinkelEtAl2015AbstractTitle">
-            Abstract for BibTeX entry <code>WinkelEtAl2015</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          This work introduces the high-order Boris-SDC method for integrating the equations of motion for electrically charged particles in electric and magnetic fields. Boris-SDC relies on a combination of the Boris-integrator with spectral deferred corrections (SDC). SDC can be considered as preconditioned Picard iteration to compute the stages of a collocation method. In this interpretation, inverting the preconditioner corresponds to a sweep with a low-order method. In Boris-SDC, the Boris method, a second-order Lorentz force integrator based on velocity-Verlet, is used as a sweeper/preconditioner. The presented method provides a generic way to extend the classical Boris integrator, which is widely used in essentially all particle-based plasma physics simulations involving magnetic fields, to a high-order method. Stability, convergence order and conservation properties of the method are demonstrated for different simulation setups. Boris-SDC reproduces the expected high order of convergence for a single particle and for the center-of-mass of a particle cloud in a Penning trap and shows good long-term energy stability.
-        </div>
       </div>
     </div>
   </div>
@@ -216,7 +238,7 @@
     
       <div class="row">
         <div class="col-md-12 logo">
-          <img src="/assets/epsrc-80f1c68574c606ce57452a9c62b8482345ae95f915f0cc96e965b8bf1f4125b5.png" alt="BorisSDC Logo">
+          <img src="/assets/palmod-b44e3e16bef365a21769f512c500c728b06981f47e129e40b47a9f49a4d1b1e4.png" alt="PalMod Logo">
         </div>
       </div>
       <br>
@@ -226,7 +248,7 @@
         <label class="col-md-4 control-label">Homepage</label>
         <div class="col-md-8">
           
-            <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/P02372X/1" target="_blank"
+            <a href="https://www.palmod.de/home" target="_blank"
                title="Project's homepage"
                data-toggle="tooltip"
                role="button">
@@ -235,7 +257,7 @@
           
             </a>
           
-          <!-- <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/P02372X/1">gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/P02372X/1</a> -->
+          <!-- <a href="https://www.palmod.de/home">www.palmod.de/home</a> -->
         </div>
       </div>
     
@@ -246,12 +268,7 @@
         <div class="col-md-8">
           
             <span class="clearfix">
-              Daniel Ruprecht (University of Leeds)
-              
-            </span>
-          
-            <span class="clearfix">
-              Krasymyr Tretiak (University of Leeds)
+              Prof. Thomas Slawig, Christian-Albrechts-Universitaet zu Kiel
               
             </span>
           
