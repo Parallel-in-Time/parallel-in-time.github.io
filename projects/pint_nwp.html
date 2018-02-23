@@ -3,10 +3,10 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ParaPhase</title>
+  <title>Parallel paradigms for NWP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallelintime.org/projects/paraphase.html">
+  <link rel="canonical" href="http://parallelintime.org/projects/pint_nwp.html">
 
   <link type="text/css" rel="stylesheet" href="/assets/main-81ba415bf08330ed572889dba401e842410a7e0d76800de89a3ee4e32fb5582f.css">
   <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-8e4e71a9f77a070acc74ea98abe2daf6a1b292abe2705fe12f7be38194874740.js"></script>
@@ -87,7 +87,7 @@
     <a href="/projects/index.html">Overview</a>
   </li>
   
-    <li class="active">
+    <li >
       <a href="/projects/paraphase.html">ParaPhase</a>
     </li>
   
@@ -103,7 +103,7 @@
       <a href="/projects/palmod.html">PalMod</a>
     </li>
   
-    <li >
+    <li class="active">
       <a href="/projects/pint_nwp.html">Parallel paradigms for NWP</a>
     </li>
   
@@ -135,24 +135,24 @@
         <div class="post post-project">
   <header class="post-header">
     <h1>
-      ParaPhase
+      Parallel paradigms for NWP
     </h1>
     
   </header>
   <article class="post-content content">
     <div class="row">
       <div class="col-md-8">
-        <p>Phase-field models are an important class of mathematical techniques for the description of a multitude of physical and technical processes. Examples are the modelling of cracks and fracture propagation in solid media like ceramics or dry soil, the representation of liquid phase epitaxy for solar cells, semi-conductors or LEDs as well as melting and solidification processes of alloys. The price for the broad applicability and mathematical elegance of this approach is the significant computing cost required for the simulation of phase-field equations at large scales, demanding the use of modern HPC architectures.</p>
+        <p>Weather forecasts and climate simulations require dedicated high performance supercomputers to run. Advances in the power of supercomputers bring the possibility of simulating the atmosphere at higher resolution (i.e. with more detail) without having to wait longer for the answer. It has been consistently shown that increasing the resolution of atmosphere models results in more accurate weather forecasts and climate simulations.</p>
 
-<p>The goal of the project “ParaPhase – space-time parallel adaptive simulation of phase-field models on HPC architectures” funded by the German Federal Ministry of Education and Research (FKZ 01IH15005A, BMBF program “<a href="https://www.bmbf.de/de/ikt-2020-forschung-fuer-innovation-854.html">IKT 2020 -  Forschung für Innovation</a>”) is the development of algorithms and methods that allow for highly efficient space-time parallel and adaptive simulations of phase-field problems. Three key aspects are addressed in the course of the project:</p>
+<p>However, getting models that can make full use of state-of-the-art supercomputers is very challenging. The Met Office is in the process of installing a new Cray XC40 supercomputer which which will deliver 16 petaflops (16 quadrillion arithmetic operations per second) peak processing power by using 4800000 individual processors computing together at the same time (in parallel). In the next few decades supercomputers are expected to deliver more and more computing power, by using more and more processors. The main thing that slows down computations on these massively parallel supercomputers is communicating data between processors. Unfortunately, the physics of the atmosphere means that the weather in one location is intrinsically linked with the weather at all other locations on the globe; this means that a lot of data communication between processors is required.</p>
 
-<ol>
-  <li><strong>Heterogeneous parallelization in space</strong>. The adaptive phase-field multigrid algorithm TNNMG will be parallelized using load-balanced decomposition techniques and GPU-based acceleration of the smoother.</li>
-  <li><strong>Innovative parallelization in time</strong>. For optimal parallel performance even on extreme scale platforms, novel approaches like Parareal and the “parallel full approximation scheme in space and time” for the parallelization in the temporal direction will be used, exploiting the hierarchical structures of spatial discretization and solver.</li>
-  <li><strong>High-order methods in space and time</strong>. To increase the arithmetic intensity, i.e., the ratio between computation and memory access, flexible high-order methods in space (using the Discontinuous Galerkin approach) and time (using spectral deferred corrections) will be implemented and combined.</li>
-</ol>
+<p>Scientists who develop atmosphere models are currently grappling with the fact that we are close to the limit of what is possible in terms of resolution and simulation speed, due to the communication requirements of the mathematical algorithms that are used to solve the equations that predict how the weather evolves in time. At the moment, these algorithms use geographic parallelism: the globe is divided up into overlapping pieces and each piece is given to a different processor, which must communicate data to processors that share geographic locations on the overlaps. To speed up a model, we need to use more and more processors on smaller and smaller regions. The speed-up is eventually limited when there are so many overlapping regions that all of the globe is covered by overlaps, and the model spends all of the time communicating.</p>
 
-<p>The interdisciplinary consortium consists of two partners with a long-standing experience in the particular field of applications (the groups of <a href="http://www.mps.uni-bayreuth.de/de/team/Emmerich_Heike/">Heike Emmerich</a> at Universität Bayreuth and <a href="http://www.mechbau.uni-stuttgart.de/ls1/members/profs/keip/">Marc-Andre Keip</a> at Universität Stuttgart) as well as four partners with a strong background in methods, algorithms and HPC (the groups of <a href="http://page.mi.fu-berlin.de/graeser/">Carsten Gräser</a> at FU Berlin, <a href="http://www.math.tu-dresden.de/~osander/">Oliver Sander</a> at TU Dresden, <a href="http://www.fz-juelich.de/ias/jsc/speck_r">Robert Speck</a> at JSC and Jiri Kraus from the <a href="http://www.fz-juelich.de/ias/jsc/EN/Research/HPCTechnology/ExaScaleLabs/NVLAB/_node.html">NVIDIA Application Lab</a>). While the algorithms developed in this project will be primarily used for studying fracture propagation and liquid phase epitaxy, these problem classes already represent a wide range of challenges in industrial applications. Based on the open source software <a href="https://dune-project.org/">DUNE</a>, the “Distributed and Unified Numerics Environment”, the resulting algorithms will help to make large-scale HPC simulations accessible for researchers in these fields.</p>
+<p>This means that it is time to invent new mathematical algorithms that can make better use of the parallel computer. In this project we will develop algorithms that are time-parallel as well as geographic-parallel. Instead of advancing the forecast of the model forwards step by step in time, these methods produce several different estimates of the weather at the next step, before combining them together to make a more accurate solution. Each of these different estimates can be independently calculated, which introduces additional parallel computation into the model.</p>
+
+<p>This project is in close partnership with the Met Office. If successful, these algorithms will lead to faster and higher resolution weather forecast and climate prediction models at the Met Office, leading to more accurate forecasts for government, industry and the general public. The Met Office provides forecasts for customers across the transport sector, particularly for aviation planning (so that aeroplanes can avoid headwinds and make use of tailwinds) and predictions of the motion of volcanic ash clouds. It also provides forecasts for retail and leisure, insurers, the Ministry of Defence, and the Environment Agency (including flood forecasting). More accurate forecasts will allow all of these business organisations to plan further into the future, avoiding risks and unnecessary costs.</p>
+
+<ol class="bibliography"></ol>
 
       </div>
       <aside class="col-md-4">
@@ -164,7 +164,7 @@
     
       <div class="row">
         <div class="col-md-12 logo">
-          <img src="/assets/paraphase-logo-e89c29a04b7cec658789831d8f39f40b606125698dfc3e7d294a3cccdd55daf8.png" alt="ParaPhase Logo">
+          <img src="/assets/nerc_logo-db9e8ed5a2e13d19b58b7c1b532364094343dc4c50c4f0f171ecd588e4ac2b7f.png" alt="Parallel paradigms for NWP Logo">
         </div>
       </div>
       <br>
@@ -174,7 +174,7 @@
         <label class="col-md-4 control-label">Homepage</label>
         <div class="col-md-8">
           
-            <a href="http://www.paraphase.de" target="_blank"
+            <a href="http://gotw.nerc.ac.uk/list_full.asp?pcode=NE%2FR008795%2F1" target="_blank"
                title="Project's homepage"
                data-toggle="tooltip"
                role="button">
@@ -183,7 +183,7 @@
           
             </a>
           
-          <!-- <a href="http://www.paraphase.de">www.paraphase.de</a> -->
+          <!-- <a href="http://gotw.nerc.ac.uk/list_full.asp?pcode=NE%2FR008795%2F1">gotw.nerc.ac.uk/list_full.asp?pcode=NE%2FR008795%2F1</a> -->
         </div>
       </div>
     
@@ -194,32 +194,37 @@
         <div class="col-md-8">
           
             <span class="clearfix">
-              Heike Emmerich (Univ. Bayreuth)
+              Colin Cotter (Imperial College London)
               
             </span>
           
             <span class="clearfix">
-              Carsten Gräser (FU Berlin)
+              Daniel Ruprecht (University of Leeds)
               
             </span>
           
             <span class="clearfix">
-              Marc-Andre Keip (Univ. Stuttgart)
+              Beth Wingate (University of Exeter)
               
             </span>
           
             <span class="clearfix">
-              Jiri Kraus (NVIDIA)
+              David Ham (Imperial College London)
               
             </span>
           
             <span class="clearfix">
-              Oliver Sander (TU Dresden)
+              Martin Schreiber (University of Exeter)
               
             </span>
           
             <span class="clearfix">
-              Robert Speck (Forschungszentrum Jülich)
+              David Acreman (University of Exeter)
+              
+            </span>
+          
+            <span class="clearfix">
+              Jemma Shipton (Imperial College London)
               
             </span>
           
