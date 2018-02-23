@@ -5,8 +5,8 @@ date: 2017-10-25 00:00:00 +0000
 updated: 2017-10-25 00:00:00 +0100
 event_location: Roscoff, France
 event_start: 2018-5-2 00:00
-event_end: 2018-5-6 00:00
-event_url: https://goo.gl/maps/MV4B7Bf8sLu
+event_end: 2018-5-5 00:00
+event_url: http://www.math.univ-paris13.fr/~japhet/PINT2018
 navbar: Events
 subnavbar: Upcoming
 organizers:
@@ -22,4 +22,16 @@ page_type: event_page
 no_lead: true
 ---
 
-The Seventh Parallel-in-time Integration Workshop will be held in Roscoff in Britanny, France. Stay tuned for more information! 
+The Seventh Parallel-in-time Integration Workshop will be held from 2nd to 5th May 2018 in Roscoff in Britanny, France.
+
+Invited speakers:
+
+ - Jan Hesthaven, EFP Lausanne
+ - Rolf Krause, University of Lugano
+ - Debasmita Samaddar, Culham Centre for Fusion Energy
+ - Giovanni Samaey, KU Leuven
+ - Shu-Lin Wu, Sichuan University
+
+See also the [flyer](http://www.math.univ-paris13.fr/~japhet/PINT/PINT2018_poster.pdf) for additional information.
+
+Please note that the **deadline for abstract submission** is 23rd March 2018.
