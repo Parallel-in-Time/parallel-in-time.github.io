@@ -3468,6 +3468,15 @@ setups.}},
 	Year = {2018},
 }
 
+@unpublished{NeumuellerSmears2018,
+	abstract = {{We present original time-parallel algorithms for the solution of the implicit Euler discretization of general linear parabolic evolution equations with time-dependent self-adjoint spatial operators. Motivated by the inf-sup theory of parabolic problems, we show that the standard nonsymmetric time-global system can be equivalently reformulated as an original symmetric saddle-point system that remains inf-sup stable with respect to the same natural parabolic norms. We then propose and analyse an efficient and readily implementable parallel-in-time preconditioner to be used with an inexact Uzawa method. The proposed preconditioner is non-intrusive and easy to implement in practice, and also features the key theoretical advantages of robust spectral bounds, leading to convergence rates that are independent of the number of time-steps, final time, or spatial mesh sizes, and also a theoretical parallel complexity that grows only logarithmically with respect to the number of time-steps. Numerical experiments with large-scale parallel computations show the effectiveness of the method, along with its good weak and strong scaling properties.}},
+	author = {Martin Neumueller and Iain Smears},
+	title = {Time-parallel iterative solvers for parabolic evolution equations},
+	howpublished = {arXiv:1802.08126v1 [math.NA]},
+	url = {https://arxiv.org/pdf/1802.08126.pdf},
+	year = {2018},
+}
+
 @article{Subber2018,
 	abstract = {{In this paper, we adapt a parallel time integration scheme to track the trajectories of noisy non-linear dynamical systems. Specifically, we formulate a parallel algorithm to generate the sample path of nonlinear oscillator defined by stochastic differential equations (SDEs) using the so-called parareal method for ordinary differential equations (ODEs). The presence of Wiener process in \{SDEs\} causes difficulties in the direct application of any numerical integration techniques of \{ODEs\} including the parareal algorithm. The parallel implementation of the algorithm involves two \{SDEs\} solvers, namely a fine-level scheme to integrate the system in parallel and a coarse-level scheme to generate and correct the required initial conditions to start the fine-level integrators. For the numerical illustration, a randomly excited Duffing oscillator is investigated in order to study the performance of the stochastic parallel algorithm with respect to a range of system parameters. The distributed implementation of the algorithm exploits Massage Passing Interface (MPI).}},
 	author = {Waad Subber and Abhijit Sarkar},
