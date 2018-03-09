@@ -3,10 +3,10 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>PararealF90</title>
+  <title>PinT-TF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallelintime.org/codes/pararealf90.html">
+  <link rel="canonical" href="http://parallelintime.org/codes/pinttf.html">
 
   <link type="text/css" rel="stylesheet" href="/assets/main-81ba415bf08330ed572889dba401e842410a7e0d76800de89a3ee4e32fb5582f.css">
   <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-8e4e71a9f77a070acc74ea98abe2daf6a1b292abe2705fe12f7be38194874740.js"></script>
@@ -95,11 +95,11 @@
       <a href="/codes/libridc.html">libridc</a>
     </li>
   
-    <li class="active">
+    <li >
       <a href="/codes/pararealf90.html">PararealF90</a>
     </li>
   
-    <li >
+    <li class="active">
       <a href="/codes/pinttf.html">PinT-TF</a>
     </li>
   
@@ -139,85 +139,19 @@
       <div class="container">
         <div class="post post-code">
   <header class="post-header">
-    <h1>PararealF90</h1>
+    <h1>PinT-TF</h1>
     
   </header>
   <article class="post-content">
     <div class="row">
       <div class="col-md-8 content">
-        <p>A lightweight special-purpose Fortran90 implementation of Parareal.</p>
+        <p>In order to quickly explore the applicability of the <a href="/methods/parareal.html">Parareal</a> algorithm, we have built the very light-weighted framework. As a path finder of applying the parareal algorithm to real-world computing problems, it provides a basic space-time parallel and performance profiling functionalities.</p>
 
-<p>Provides implementations of <a href="/methods/parareal.html">Parareal</a> in both MPI and OpenMP to allow for a comparison of the
-effect of different parallelisation strategies on runtime, memory footprint and energy consumption.
-<a href="#Ruprecht2017_lncs">[1]</a></p>
+<p>The framework implemented the Parareal skeleton on an uniform mesh(1D/2D/3D), and some common linear solvers and time integrators, including SOR, BiCGStab, Newton-Raphson etc. For running a test, You only need to provide problem-specific stencil code, and then choose a proper combination of solvers. All the parameters controlling the space-time domain division, convergence check, coarsening factor etc. can be predefined through an .INI file, easily be changed and tuned. If some default function cannot be able to support some specific problem, it can be easily be extended by writting a new implementation in problem-specific sub classes.</p>
 
-<ol class="bibliography"><li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          Ruprecht2017_lncs
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseRuprecht2017_lncsBibtex" aria-expanded="false" aria-controls="collapseRuprecht2017_lncsBibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalRuprecht2017_lncsAbstract" aria-expanded="false" aria-controls="modalRuprecht2017_lncsAbstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
+<p>The framework is mainly written by C++ for good template and extension, most BLAS related calculations is performed by Fortran for performance reason and easy matrix manipulation. It is very light-weighted, the only necessary third library is <a href="https://github.com/benhoyt/inih">inih</a>, a small but excellent .INI file parser. HDF5 output and performance monitoring are also optionally supported by <a href="https://www.hdfgroup.org/HDF5">HDF5</a> library and <a href="https://github.com/avr-aics-riken/PMlib">PMLlib</a> respectively.</p>
 
-    <div class="bibtex-ref-entry">
-      <span id="Ruprecht2017_lncs">D. Ruprecht, “Shared Memory Pipelined Parareal,” in <i>Euro-Par 2017: Parallel Processing: 23rd International Conference on Parallel and Distributed Computing, Santiago de Compostela, Spain, August 28 – September 1, 2017, Proceedings</i>, F. F. Rivera, T. F. Pena, and J. C. Cabaleiro, Eds. Springer International Publishing, 2017, pp. 669–681 [Online]. Available at: <a href="https://doi.org/10.1007/978-3-319-64203-1_48" target="_blank">https://doi.org/10.1007/978-3-319-64203-1_48</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseRuprecht2017_lncsBibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@inbook{Ruprecht2017_lncs,
-  author = {Ruprecht, Daniel},
-  booktitle = {Euro-Par 2017: Parallel Processing: 23rd International Conference on Parallel and Distributed Computing, Santiago de Compostela, Spain, August 28 -- September 1, 2017, Proceedings},
-  doi = {10.1007/978-3-319-64203-1_48},
-  editor = {Rivera, Francisco F. and Pena, Tom{\'a}s F. and Cabaleiro, Jos{\'e} C.},
-  pages = {669--681},
-  publisher = {Springer International Publishing},
-  url = {https://doi.org/10.1007/978-3-319-64203-1_48},
-  title = {Shared Memory Pipelined Parareal},
-  year = {2017}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalRuprecht2017_lncsAbstract" tabindex="-1" role="dialog" aria-labelledby="modalRuprecht2017_lncsAbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalRuprecht2017_lncsAbstractTitle">
-            Abstract for BibTeX entry <code>Ruprecht2017_lncs</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          For the parallel-in-time integration method Parareal, pipelining can be used to hide some of the cost of the serial correction step and improve its efficiency. The paper introduces a basic OpenMP implementation of pipelined Parareal and compares it to a standard MPI-based variant. Both versions yield almost identical runtimes, but, depending on the compiler, the OpenMP variant consumes about 7% less energy and has a significantly smaller memory footprint. However, its higher implementation complexity might make it difficult to use in legacy codes and in combination with spatial parallelisation.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li></ol>
+<p>At current release, the code has provided two examples for heat equation and Allen-Cahn equation. We will continue to improve the generality and adaptability of it.</p>
 
       </div>
       <aside class="col-md-4">
@@ -234,9 +168,9 @@ effect of different parallelisation strategies on runtime, memory footprint and 
           
           
           
-          <a href="https://github.com/Parallel-in-Time/PararealF90">
+          <a href="https://github.com/xjtju/PinT">
             
-              <i class="fa fa-github fa-fw"></i>/Parallel-in-Time/PararealF90
+              <i class="fa fa-github fa-fw"></i>/xjtju/PinT
             
           </a>
         </div>
@@ -246,7 +180,7 @@ effect of different parallelisation strategies on runtime, memory footprint and 
       <div class="row">
         <label class="col-md-4 control-label">Language</label>
         <div class="col-md-8">
-          F90
+          C++,F90
         </div>
       </div>
     
@@ -254,32 +188,10 @@ effect of different parallelisation strategies on runtime, memory footprint and 
       <div class="row">
         <label class="col-md-4 control-label">License</label>
         <div class="col-md-8">
-          BSD 2-clause
+          MIT
         </div>
       </div>
     
-    
-      <div class="row">
-        <label class="col-md-4 control-label">Releases</label>
-        <div class="col-md-8">
-          
-            <span class="clearfix">
-              1.0
-              
-                <small>&ensp;(<time datetime="2015-09-23">2015-09-23</time>)</small>
-              
-              <span class="pull-right">
-                
-                  <a href="https://github.com/Parallel-in-Time/PararealF90/releases/tag/v1.0" title="Release Page"><i class="fa fa-link fa-fw"></i></a>
-                
-                
-                  <a href="https://github.com/Parallel-in-Time/PararealF90/releases/tag/v1.0" title="Download Sources as zip"><i class="fa fa-download fa-fw"></i></a>
-                
-              </span>
-            </span>
-          
-        </div>
-      </div>
     
     
       <div class="row">
@@ -288,13 +200,45 @@ effect of different parallelisation strategies on runtime, memory footprint and 
           
             <span class="clearfix">
               
-                Daniel Ruprecht
+                Jian Xiao
+              
+              
+                <span class="pull-right">
+                  
+                    <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
+                  
+                  
+                    <a href="mailto:xiaojian@tju.edu.cn" title="email: xiaojian@tju.edu.cn"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  
+                  
+                </span>
+              
+            </span>
+          
+            <span class="clearfix">
+              
+                Mikio Iizuka
               
               
                 <span class="pull-right">
                   
                   
-                    <a href="mailto:d.ruprecht@leeds.ac.uk" title="email: d.ruprecht@leeds.ac.uk"><i class="fa fa-envelope-o fa-fw"></i></a>
+                    <a href="mailto:iizuka.mikio.903@m.kyushu-u.ac.jp" title="email: iizuka.mikio.903@m.kyushu-u.ac.jp"><i class="fa fa-envelope-o fa-fw"></i></a>
+                  
+                  
+                </span>
+              
+            </span>
+          
+            <span class="clearfix">
+              
+                Kenji Ono
+              
+              
+                <span class="pull-right">
+                  
+                  
+                    <a href="mailto:keno@cc.kyushu-u.ac.jp" title="email: keno@cc.kyushu-u.ac.jp"><i class="fa fa-envelope-o fa-fw"></i></a>
                   
                   
                 </span>
@@ -308,7 +252,7 @@ effect of different parallelisation strategies on runtime, memory footprint and 
 </section>
 
 
-<section class="github-widget" data-repo="Parallel-in-Time/PararealF90"></section>
+<section class="github-widget" data-repo="xjtju/PinT"></section>
 
 
       </aside>
