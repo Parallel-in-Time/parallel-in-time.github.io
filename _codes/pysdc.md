@@ -17,3 +17,7 @@ developers:
     email: daniel.ruprecht@usi.ch
 short_desc: A Python prototyping framework for SDC-based integration routines.
 ---
+
+The pySDC project is a Python implementation of the spectral deferred correction (SDC) approach and its flavors, esp. the multilevel extension MLSDC and PFASST. It is intended for rapid prototyping and educational purposes. New ideas like e.g. sweepers or predictors can be tested and first toy problems can be easily implemented.
+
+The code is hosted on [GitHub](https://github.com/Parallel-in-Time/pySDC) and [PyPI](https://pypi.python.org/pypi/pySDC).
