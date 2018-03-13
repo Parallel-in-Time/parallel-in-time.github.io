@@ -10,7 +10,7 @@ footer: true
 ---
 
 ## Description
-For the next three workshops, [Jülich Supercomputing Centre](http://www.fz-juelich.de/ias/jsc)
+[Jülich Supercomputing Centre](http://www.fz-juelich.de/ias/jsc)
 is providing travel support for PhD students working in the field of parallel-in-time integration methods.
 
 With this commitment, JSC is emphasizing the importance of regular community meetings, in particular for
@@ -27,9 +27,7 @@ These should include:
 Also, students traveling to one of the meetings via this grant are expected to present their work either
 on a poster or during a talk.
 
-This offer is starting with the [5th PinT Workshop](/events/5th-pint-workshop/) at BIRS. Students who would like to apply should write to r.speck@fz-juelich.de as soon as possible.
-
-For future events, a deadline will be announced together with the workshop.
+Details on the application procedure will be posted for each workshop separately on the respective local websites.
 
 ## Previous Grantees
 
