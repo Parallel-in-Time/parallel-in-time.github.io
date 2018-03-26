@@ -30,6 +30,7 @@ Invited speakers:
  - Rolf Krause, University of Lugano
  - Debasmita Samaddar, Culham Centre for Fusion Energy
  - Giovanni Samaey, KU Leuven
+ - Iain Smears, University College London
  - Shu-Lin Wu, Sichuan University
 
 See also the [flyer](http://www.math.univ-paris13.fr/~japhet/PINT/PINT2018_poster.pdf) for additional information.
