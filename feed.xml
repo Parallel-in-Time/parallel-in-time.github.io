@@ -7,6 +7,24 @@
     <atom:link href="http://parallelintime.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PINT at SIAM Annual Meeting 2018</title>
+        <description>&lt;p&gt;Parallel-in-time integration is also represented with a mini symposium at the &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=64851&quot;&gt;SIAM Annual Meeting 2018&lt;/a&gt;. This means that the topic will be/was present at three major SIAM conferences in 2018:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=63542&quot;&gt;SIAM Parallel Processing in Scientific Computing 2018&lt;/a&gt; in Tokyo, Japan.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.math.hkbu.edu.hk/siam-ala18/Minisymposia.php&quot;&gt;SIAM Conference on Applied Linear Algebra 2018&lt;/a&gt; in Hong Kong, China.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=64851&quot;&gt;SIAM Annual Meeting 2018&lt;/a&gt; in Oregon, USA.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--more--&gt;
+
+</description>
+        <pubDate>Sat, 03 Feb 2018 14:07:00 +0000</pubDate>
+        <link>http://parallelintime.org/jobs/2018/02/03/pint-at-siam-an.html</link>
+        <guid isPermaLink="true">http://parallelintime.org/jobs/2018/02/03/pint-at-siam-an.html</guid>
+      </item>
+    
+      <item>
         <title>Abstract submission for 7th PINT Workshop now open</title>
         <description>&lt;p&gt;Abstract submission is now open for the &lt;a href=&quot;http://www.math.univ-paris13.fr/~japhet/PINT/PINT2018_scientific_program.htm&quot;&gt;7th Workshop on Parallel-in-time Integration&lt;/a&gt;, taking place from 2nd to 5th May 2018 in Roscoff, France.&lt;/p&gt;
 
@@ -132,21 +150,6 @@ For the first time there will be workshop proceedings to be published as a speci
         <pubDate>Thu, 15 Dec 2016 09:21:44 +0000</pubDate>
         <link>http://parallelintime.org/events/2016/12/15/banff-postnews.html</link>
         <guid isPermaLink="true">http://parallelintime.org/events/2016/12/15/banff-postnews.html</guid>
-      </item>
-    
-      <item>
-        <title>PinT Benchmark Suite Proposal</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://mathgeek.us/&quot;&gt;Ben Ong&lt;/a&gt; set up a template for writing the PinT benchmark proposal, see &lt;a href=&quot;https://github.com/Parallel-in-Time/benchmark_suite_proposal&quot;&gt;PinT @ GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Based on the open questions session at the &lt;a href=&quot;/events/5th-pint-workshop/&quot;&gt;5th PinT Workshop&lt;/a&gt;, there is now a template for writing short paragraphs on one (or more) of the 10 benchmark problems the community has identified.
-The LaTeX files can be obtained &lt;a href=&quot;https://github.com/Parallel-in-Time/benchmark_suite_proposal&quot;&gt;here&lt;/a&gt;.
-The repository also contains information on how to participate.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 02 Dec 2016 16:16:00 +0000</pubDate>
-        <link>http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</link>
-        <guid isPermaLink="true">http://parallelintime.org/events/2016/12/02/benchmark-proposal.html</guid>
       </item>
     
   </channel>
