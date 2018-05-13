@@ -3560,6 +3560,15 @@ setups.}},
 	year = {2018},
 }
 
+@unpublished{MadayMula2018,
+	abstract = {{In this paper, we consider the problem of accelerating the numerical simulation of time dependent problems by time domain decomposition. The available algorithms enabling such decompositions present severe efficiency limitations and are an obstacle for the solution of large scale and high dimensional problems. Our main contribution is the significant improvement of the parallel efficiency of the parareal in time method, an iterative predictor-corrector algorithm. This is achieved by first reformulating the algorithm in a rigorous infinite dimensional functional space setting. We then formulate implementable versions where time dependent subproblems are solved at increasing accuracy across the parareal iterations (in opposition to the classical version where the subproblems are solved at a fixed high accuracy). Aside from the important improvement in parallel efficiency and as a natural by product, the new approach provides a rigourous online stopping criterion with a posteriori error estimators and the numerical cost to achieve a certain final accuracy is designed to be near-minimal. We illustrate the gain in efficiency of the new approach on simple numerical experiments. In addition to this, we discuss the potential benefits of reusing information from previous parareal iterations to enhance efficiency even more.}},
+	author = {Yvon Maday and Olga Mula},
+	title = {A Scalable Adaptive Parareal Algorithm With Online Stopping Criterion},
+	howpublished = {hal-01781257, version 1},
+	url = {https://hal.archives-ouvertes.fr/hal-01781257/},
+	year = {2018},
+}
+
 @Article{MagoulesEtAl2018,
 	abstract = {{Spatial domain decomposition methods have been largely investigated in the last decades, while time domain decomposition seems to be contrary to intuition and so is not as popular as the former. However, many attractive methods have been proposed, especially the parareal algorithm, which showed both theoretical and experimental efficiency in the context of parallel computing. In this paper, we present an original model of asynchronous variant based on the parareal scheme, applied to the European option pricing problem. Some numerical experiments are given to illustrate the convergence performance and computational efficiency of such a method.}},
 	author = {Magoulès, Frédéric and Gbikpi-Benissan, Guillaume and Zou, Qinmeng},
