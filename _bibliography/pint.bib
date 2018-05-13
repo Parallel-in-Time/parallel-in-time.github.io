@@ -3593,6 +3593,19 @@ setups.}},
 	url = {https://doi.org/10.1016/j.jcp.2017.12.029},
 }
 
+@inproceedings{YallaEnquist2018,
+	abstract = {{The parareal algorithm allows for efficient parallel in time computation of dynamical systems. We present a novel coarse scale solver to be used in the parareal framework. The coarse scale solver can be defined through interpolation or as the output of a neural network, and accounts for slow scale motion in the system. Through a parareal scheme, we pair this coarse solver with a fine scale solver that corrects for fast scale motion. By doing so we are able to achieve the accuracy of the fine solver at the efficiency of the coarse solver. Successful tests for smaller but challenging problems are presented, which cover both highly oscillatory solutions and problems with strong forces localized in time. The results suggest significant speed up can be gained for multiscale problems when using a parareal scheme with this new coarse solver as opposed to the traditional parareal setup.}},
+ 	author = {Yalla, Gopal R. and Engquist, Bjorn},
+ 	articleno = {9},
+ 	booktitle = {Proceedings of the High Performance Computing Symposium},
+	pages = {9:1--9:12},
+	publisher = {Society for Computer Simulation International},
+ 	series = {HPC '18},
+ 	url = {http://dl.acm.org/citation.cfm?id=3213069.3213078},
+ 	title = {Parallel in Time Algorithms for Multiscale Dynamical Systems Using Interpolation and Neural Networks},
+ 	year = {2018},
+} 
+
 @article{ZhuWeng2018,
 	abstract = {{This paper investigates a novel parallel technique based on the spectral deferred correction (SDC) method and a compensation step for solving first-order evolution problems, and we call it para-SDC method for convenience. The standard SDC method is used in parallel with a rough initial guess and a Picard integral equation with high precision initial condition is acted as a compensator. The goal of this paper is to show how these processes can be parallelized and how to improve the efficiency. During the SDC step an implicit or semi-implicit method can be used for stiff problems which is always time-consuming, therefore that’s why we do this procedure in parallel. Due to a better initial condition of parallel intervals after the SDC step, the goal of compensation step is to get a better approximation and also avoid of solving an implicit problem again. During the compensation step an explicit Picard scheme is taken based on the numerical integration with polynomial interpolation on Gauss Radau II nodes, which is almost no time consumption, obviously, that’s why we do this procedure in serial. The convergency analysis and the parallel efficiency of our method are also discussed. Several numerical experiments and an application for simulation Allen–Cahn equation are presented to show the accuracy, stability, convergence order and efficiency features of para-SDC method.}},
 	author = {Zhu, Shuai and Weng, Shilie},
