@@ -3455,6 +3455,19 @@ setups.}},
 	year = {2018}
 }
 
+@article{DyjaEtal2018,
+	abstract = {{We present an adaptive methodology for the solution of (linear and) nonlinear time dependent problems that is especially tailored for massively parallel computations. The basic concept is to solve for large blocks of space-time unknowns instead of marching sequentially in time. The methodology is a combination of a computationally efficient implementation of a parallel-in-space-time finite element solver coupled with a posteriori space-time error estimates and a parallel mesh generator. While we focus on spatial adaptivity in this work, the methodology enables simultaneous adaptivity in both space and time domains. We explore this basic concept in the context of a variety of time steppers including $\Theta$-schemes and backward difference formulas. We specifically illustrate this framework with applications involving time dependent linear, quasi-linear, and semilinear diffusion equations. We focus on investigating how the coupled space-time refinement indicators for this class of problems affect spatial adaptivity. Finally, we show good scaling behavior up to 150,000 processors on the NCSA Blue Waters machine. This conceptually simple methodology enables scaling on next generation multicore machines by simultaneously solving for a large number of timesteps, and reducing computational overhead by locally refining spatial blocks that can track localized features. This methodology also opens up the possibility of efficiently incorporating adjoint equations for error estimators and inverse design problems, since blocks of space-time are simultaneously solved and stored in memory.}},
+	author = {Robert Dyja and Baskar Ganapathysubramanian and Kristoffer G. van der Zee},
+	doi = {10.1137/16M108985X},
+	journal = {SIAM Journal on Scientific Computing},
+	number = {3},
+	pages = {C283-C304},
+	title = {Parallel-In-Space-Time, Adaptive Finite Element Framework for Nonlinear Parabolic Equations},
+	url = {https://doi.org/10.1137/16M108985X},
+	volume = {40},
+	year = {2018},
+}
+
 @article{FrancoEtAl2018,
 	abstract = {{In this work, a space-time multigrid method which uses standard coarsening in both temporal and spatial domains and combines the use of different smoothers is proposed for the solution of the heat equation in one and two space dimensions. In particular, an adaptive smoothing strategy, based on the degree of anisotropy of the discrete operator on each grid-level, is the basis of the proposed multigrid algorithm. Local Fourier analysis is used for the selection of the crucial parameter defining such an adaptive smoothing approach. Central differences are used to discretize the spatial derivatives and both implicit Euler and Crank–Nicolson schemes are considered for approximating the time derivative. For the solution of the second-order scheme, we apply a double discretization approach within the space-time multigrid method. The good performance of the method is illustrated through several numerical experiments.}},
 	author = {Sebasti\~{a}o Romero Franco and Francisco Jos\’{e} Gaspar and Marcio Augusto Villela Pinto and Carmen Rodrigo},
