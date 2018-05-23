@@ -3642,8 +3642,41 @@ setups.}},
 	author = {Zhu, Shuai and Weng, Shilie},
 	year = {2018},
 	pages = {1--28},
-	title = {A parallel spectral deferred correction method for first-order evolution problems},
+	title = {Solving time-periodic fractional diffusion equations via diagonalization technique and multigrid},
 	journal = {BIT Numerical Mathematics},
 	doi = {10.1007/s10543-018-0702-4},
 	url = {https://doi.org/10.1007/s10543-018-0702-4}
+}
+
+@article{McDonaldPestanaWathen2018_SiSC,
+	abstract = {{Standard Krylov subspace solvers for self-adjoint problems have rigorous convergence bounds based solely on eigenvalues. However, for non-self-adjoint problems, eigenvalues do not determine behavior even for widely used iterative methods. In this paper, we discuss time-dependent PDE problems, which are always non-self-adjoint. We propose a block circulant preconditioner for the all-at-once evolutionary PDE system which has block Toeplitz structure. Through reordering of variables to obtain a symmetric system, we are able to rigorously establish convergence bounds for MINRES which guarantee a number of iterations independent of the number of time-steps for the all-at-once system. If the spatial differential operators are simultaneously diagonalizable, we are able to quickly apply the preconditioner through use of a sine transform; and for those that are not, we are able to use an algebraic multigrid process to provide a good approximation. Results are presented for solution to both the heat and convection diffusion equations.}},
+	author = {Eleanor McDonald, Jennifer Pestana and Andy Wathen},
+	year = {2018},
+	pages = {A1012-–A1033 },
+	title = {Preconditioning and Iterative Solution of All-at-Once Systems for Evolutionary Partial Differential Equations},
+	journal = {SIAM Journal on Scientific Computing},
+	doi = {10.1137/16M1062016},
+	url = {https://doi.org/10.1137/16M1062016}
+}
+
+@article{WuZhangZhou2018_NLAA,
+	abstract = {{This paper addresses numerical computation of time‐periodic diffusion equations with fractional Laplacian. Time‐periodic differential equations present fundamental challenges for numerical computation because we have to consider all the discrete solutions once in all instead of one by one. An idea based on the diagonalization technique is proposed, which yields a direct parallel‐in‐time computation for all the discrete solutions. The major computation cost is therefore reduced to solve a series of independent linear algebraic systems with complex coefficients, for which we apply a multigrid method using the damped Richardson iteration as the smoother. Such a linear solver possesses mesh‐independent convergence factor, and we make an optimization for the damping parameter to minimize such a constant convergence factor. Numerical results are provided to support our theoretical analysis.}},
+	author = {Shu-Lin Wu, Hui Zhang and Tao Zhou},
+	year = {2018},
+	pages = {1--24},
+	title = {A parallel spectral deferred correction method for first-order evolution problems},
+	journal = {Numer Linear Algebra with Applications},
+	doi = {10.1002/nla.2178},
+	url = {https://doi.org/10.1002/nla.2178}
+}
+
+@article{Wu2018_SiSC,
+	abstract = {{This paper addresses numerical computation of time‐periodic diffusion equations with fractional Laplacian. Time‐periodic differential equations present fundamental challenges for numerical computation because we have to consider all the discrete solutions once in all instead of one by one. An idea based on the diagonalization technique is proposed, which yields a direct parallel‐in‐time computation for all the discrete solutions. The major computation cost is therefore reduced to solve a series of independent linear algebraic systems with complex coefficients, for which we apply a multigrid method using the damped Richardson iteration as the smoother. Such a linear solver possesses mesh‐independent convergence factor, and we make an optimization for the damping parameter to minimize such a constant convergence factor. Numerical results are provided to support our theoretical analysis.}},
+	author = {Shu-Lin Wu},
+	year = {2018},
+	pages = {A1446–A1472},
+	title = {Toward Parallel Coarse Grid Correction for the Parareal Algorithm},
+	journal = {SIAM Journal on Scientific Computing},
+	doi = {10.1137/17M1141102},
+	url = {https://doi.org/10.1137/17M1141102}
 }
