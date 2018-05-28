@@ -13,7 +13,7 @@ developers:
   - name: Pedro Peixoto
   - name: Andreas Schmitt
   - name: Francois Hamon
-
+short_desc: Development written in C++ which allows to study PinT time integration and compare it to other time integration methods using global spectral methods in space.
 
 ---
 
