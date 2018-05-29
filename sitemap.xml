@@ -184,9 +184,6 @@
 <loc>http://parallelintime.org/news/page6/</loc>
 </url>
 <url>
-<loc>http://parallelintime.org/events/7th-pint-workshop/</loc>
-</url>
-<url>
 <loc>http://parallelintime.org/events/8th-pint-workshop/</loc>
 </url>
 <url>
@@ -224,6 +221,9 @@
 </url>
 <url>
 <loc>http://parallelintime.org/events/6th-pint-workshop/</loc>
+</url>
+<url>
+<loc>http://parallelintime.org/events/7th-pint-workshop/</loc>
 </url>
 <url>
 <loc>http://parallelintime.org/groups/lbnl.html</loc>
