@@ -3245,15 +3245,6 @@ quantities of model systems.}},
 	year = {2017}
 }
 
-@unpublished{NielsenEtAl2017,
-	abstract = {{In the strong scaling limit, the performance of conventional spatial domain decomposition techniques for the parallel solution of PDEs saturates. When sub-domains become small, halo-communication and other overheard come to dominate. A potential path beyond this scaling limit is to introduce domain-decomposition in time, with one such popular approach being the Parareal algorithm which has received a lot of attention due to its generality and potential scalability. Low efficiency, particularly on convection dominated problems, has however limited the adoption of the method. In this paper we introduce a new strategy, Communication Aware Adaptive Parareal (CAAP) to overcome some of the challenges. With CAAP, we choose time-subdomains short enough that convergence of the Parareal algorithm is quick, yet long enough that the overheard of communicating time-subdomain interfaces does not induce a new limit to parallel speed-up. Furthermore, we propose an adaptive work scheduling algorithm that overlaps consecutive Parareal cycles and decouples the number of time-subdomains and number of active node-groups in an efficient manner to allow for comparatively high parallel efficiency. We demonstrate the viability of CAAP trough the parallel-in-time integration of a hyperbolic system of PDEs in the form of the two-dimensional nonlinear shallow-water wave equation solved using a 3rd order accurate WENO-RK discretization. For the computational cheap approximate operator needed as a preconditioner in the Parareal corrections we use a lower order Roe type discretization. Time-parallel integration of purely hyperbolic type evolution problems is traditionally considered impractical. Trough large-scale numerical experiments we demonstrate that with CAAP, it is possible not only to obtain timeparallel speedup on this class of evolution problems, but also that we may obtain parallel acceleration beyond what is possible using conventional spacial domain-decomposition techniques alone. The approach is widely applicable for parallel-in-time integration over long time domains, regardless of the class of evolution problem.}},
-	author = {Allan S. Nielsen and Gilles Brunner and Jan S. Hesthaven},
-	title = {Communication-aware adaptive parareal with application to a nonlinear hyperbolic system of partial differential equations},
-	howpublished = {EPFL-ARTICLE-228189},
-	url = {https://infoscience.epfl.ch/record/228189/files/jcp2017.pdf},
-	year = {2017},
-}
-
 @article{Pazner2017700,
 	abstract = {{Abstract In this paper, we develop new techniques for solving the large, coupled linear systems that arise from fully implicit Runge–Kutta methods. This method makes use of the iterative preconditioned \{GMRES\} algorithm for solving the linear systems, which has seen success for fluid flow problems and discontinuous Galerkin discretizations. By transforming the resulting linear system of equations, one can obtain a method which is much less computationally expensive than the untransformed formulation, and which compares competitively with other time-integration schemes, such as diagonally implicit Runge–Kutta (DIRK) methods. We develop and test several ILU-based preconditioners effective for these large systems. We additionally employ a parallel-in-time strategy to compute the Runge–Kutta stages simultaneously. Numerical experiments are performed on the Navier–Stokes equations using Euler vortex and 2D and 3D \{NACA\} airfoil test cases in serial and in parallel settings. The fully implicit Radau \{IIA\} Runge–Kutta methods compare favorably with equal-order \{DIRK\} methods in terms of accuracy, number of \{GMRES\} iterations, number of matrix–vector multiplications, and wall-clock time, for a wide range of time steps.}},
 	author = {Will Pazner and Per-Olof Persson},
@@ -3589,6 +3580,16 @@ setups.}},
 	title = {Time-parallel iterative solvers for parabolic evolution equations},
 	howpublished = {arXiv:1802.08126v1 [math.NA]},
 	url = {https://arxiv.org/pdf/1802.08126.pdf},
+	year = {2018},
+}
+
+@article{NielsenEtAl2018,
+	abstract = {{In the strong scaling limit, the performance of conventional spatial domain decomposition techniques for the parallel solution of PDEs saturates. When sub-domains become small, halo-communication and other overhead come to dominate. A potential path beyond this scaling limit is to introduce domain-decomposition in time, with one such popular approach being the Parareal algorithm which has received a lot of attention due to its generality and potential scalability. Low efficiency, particularly on convection dominated problems, has however limited the adoption of the method. In this paper we demonstrate trough large-scale numerical experiments that it is possible not only to obtain time-parallel speedup on the non-linear shallow water wave equation, but also that we may obtain parallel acceleration beyond what is possible using conventional spatial domain-decomposition techniques alone. Two factors were essential in achieving this. First, for Parareal to converge on the hyperbolic problem we used an approximate Riemann solver as the preconditioner. This preconditioner introduces only dissipative errors with respect to the 3rd order accurate WENO-RK discretization used to solve the PDE system. The preconditoner is comparatively expensive and convergence is slow unless time-subdomains are short. We therefore introduce a new scheduler that we denote Communication Aware Adaptive Parareal (CAAP). CAAP increases obtainable speed-up by minimizing the time-subdomain length without making communication of time-subdomains too costly whilst also adaptively overlapping consecutive cycles of Parareal so to mitigate the impact of a relatively expensive coarse operator.}},
+	author = {Allan S. Nielsen and Gilles Brunner and Jan S. Hesthaven},
+	title = {Communication-aware adaptive parareal with application to a nonlinear hyperbolic system of partial differential equations},
+	journal = {Journal of Computational Physics},
+	doi = {10.1016/j.jcp.2018.04.056},
+	url = {https://doi.org/10.1016/j.jcp.2018.04.056},
 	year = {2018},
 }
 
