@@ -3542,6 +3542,16 @@ setups.}},
 	year = {2018},
 }
 
+@Article{LunetEtAl2018,
+	abstract = {Direct Numerical Simulation of turbulent flows is a computationally demanding problem that requires efficient parallel algorithms. We investigate the applicability of the time-parallel Parareal algorithm to an instructional case study related to the simulation of the decay of homogeneous isotropic turbulence in three dimensions. We combine a Parareal variant based on explicit time integrators and spatial coarsening with the space-parallel Hybrid Navier--Stokes solver. We analyse the performance of this space--time parallel solver with respect to speedup and quality of the solution. The results are compared with reference data obtained with a classical explicit integration, using an error analysis which relies on the energetic content of the solution. We show that a single Parareal iteration is able to reproduce with high fidelity the main statistical quantities characterizing the turbulent flow field.},
+	author = {Lunet, Thibaut and Bodart, Julien and Gratton, Serge and Vasseur, Xavier},
+	title = {Time-parallel simulation of the decay of homogeneous turbulence using Parareal with spatial coarsening},
+	journal = {Computing and Visualization in Science},
+	year = {2018},
+	doi = {10.1007/s00791-018-0295-0},
+	url = {https://doi.org/10.1007/s00791-018-0295-0}
+}
+
 @unpublished{MadayMula2018,
 	abstract = {{In this paper, we consider the problem of accelerating the numerical simulation of time dependent problems by time domain decomposition. The available algorithms enabling such decompositions present severe efficiency limitations and are an obstacle for the solution of large scale and high dimensional problems. Our main contribution is the significant improvement of the parallel efficiency of the parareal in time method, an iterative predictor-corrector algorithm. This is achieved by first reformulating the algorithm in a rigorous infinite dimensional functional space setting. We then formulate implementable versions where time dependent subproblems are solved at increasing accuracy across the parareal iterations (in opposition to the classical version where the subproblems are solved at a fixed high accuracy). Aside from the important improvement in parallel efficiency and as a natural by product, the new approach provides a rigourous online stopping criterion with a posteriori error estimators and the numerical cost to achieve a certain final accuracy is designed to be near-minimal. We illustrate the gain in efficiency of the new approach on simple numerical experiments. In addition to this, we discuss the potential benefits of reusing information from previous parareal iterations to enhance efficiency even more.}},
 	author = {Yvon Maday and Olga Mula},
@@ -3602,6 +3612,17 @@ setups.}},
 	doi = {10.1007/s00791-018-0296-z},
 	year = {2018},
 }
+
+@Article{SchmittEtAl2018,
+	author = {Schmitt, A. and Schreiber, M. and Peixoto, P. and Sch{\"a}fer, M.},
+	title = {A numerical study of a semi-Lagrangian Parareal method applied to the viscous Burgers equation},
+	journal = {Computing and Visualization in Science},
+	year = {2018},
+	abstract = {This work focuses on the Parareal parallel-in-time method and its application to the viscous Burgers equation. A crucial component of Parareal is the coarse time stepping scheme, which strongly impacts the convergence of the parallel-in-time method. Three choices of coarse time stepping schemes are investigated in this work: explicit Runge--Kutta, implicit--explicit Runge--Kutta, and implicit Runge--Kutta with semi-Lagrangian advection. Manufactured solutions are used to conduct studies, which provide insight into the viability of each considered time stepping method for the coarse time step of Parareal. One of our main findings is the advantageous convergence behavior of the semi-Lagrangian scheme for advective flows.},
+	doi = {10.1007/s00791-018-0294-1},
+	url = {https://doi.org/10.1007/s00791-018-0294-1}
+}
+
 
 @article{Subber2018,
 	abstract = {{In this paper, we adapt a parallel time integration scheme to track the trajectories of noisy non-linear dynamical systems. Specifically, we formulate a parallel algorithm to generate the sample path of nonlinear oscillator defined by stochastic differential equations (SDEs) using the so-called parareal method for ordinary differential equations (ODEs). The presence of Wiener process in \{SDEs\} causes difficulties in the direct application of any numerical integration techniques of \{ODEs\} including the parareal algorithm. The parallel implementation of the algorithm involves two \{SDEs\} solvers, namely a fine-level scheme to integrate the system in parallel and a coarse-level scheme to generate and correct the required initial conditions to start the fine-level integrators. For the numerical illustration, a randomly excited Duffing oscillator is investigated in order to study the performance of the stochastic parallel algorithm with respect to a range of system parameters. The distributed implementation of the algorithm exploits Massage Passing Interface (MPI).}},
