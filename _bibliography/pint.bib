@@ -3611,6 +3611,18 @@ setups.}},
 	url = {https://doi.org/10.1016/j.jcp.2018.01.019},
 }
 
+@article{Wu2018,
+	abstract = {{In this paper, we present an idea toward parallel coarse grid correction (CGC) for the parareal algorithm. It is well known that such a CGC procedure is often the bottleneck of speedup of the parareal algorithm. For an ODE system with initial-value condition $u(0)=u_0$ the idea can be explained as follows. First, we apply the $\mathcal{G}$-propagator to the same ODE system but with a special condition $u(0)=\alpha u(T)$, where $\alpha\in\mathbb{R}$ is a crux parameter. Second, in each iteration of the parareal algorithm the CGC procedure will be carried out by the so-called diagonalization technique established recently. The parameter $\alpha$ controls both the roundoff error arising from such a diagonalization technique and the convergence rate of the resulting parareal algorithm. We show that there exists some threshold $\alpha^*$ such that the parareal algorithm with diagonalization-based CGC possesses the same convergence rate as that of the parareal algorithm with classical CGC if $|\alpha|\leq \alpha^*$. With $|\alpha|=\alpha^*$, we show that the condition number associated with the diagonalization technique is a moderate quantity of order $\mathcal{O}(1)$ (and therefore the roundoff error is small) and is independent of the length of the time interval. Numerical results are given to support our findings.}},
+	author = {Wu, S.},
+	title = {Toward Parallel Coarse Grid Correction for the Parareal Algorithm},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {40},
+	number = {3},
+	pages = {A1446-A1472},
+	year = {2018},
+	doi = {10.1137/17M1141102},
+	url = {https://doi.org/10.1137/17M1141102},
+}
 
 @article{WuZhou2018_JCP,
 	abstract = {It is challenge work to design parareal algorithms for time-fractional differential equations due to the historical effect of the fractional operator. A direct extension of the classical parareal methed to such equations will lead to unbalance computational time in each process. In this work, we present an efficient parareal iteration scheme to overcome this issue, by adopting two recently developed local time-integrators for time fractional operators. In both approaches, one introduces auxiliary variables to localized the fractional operator. To this end, we propose a new strategy to perform the coarse grid correction so that the auxiliary variables and the solution variable are corrected separately in a mixed pattern. It is shown that the proposed parareal algorithm admits robust rate of convergence. Numerical examples are presented to support our conclusions.},
