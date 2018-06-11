@@ -3134,28 +3134,6 @@ quantities of model systems.}},
         url = {https://doi.org/10.1137/16M1082330},
 }
 
-
-@unpublished{FischerEtAl2017,
-	abstract = {{Parallel in time methods for solving initial value problems are a means
-to increase the parallelism of numerical simulations. Hybrid parareal
-schemes interleaving the parallel in time iteration with an iterative solution
-of the individual time steps are among the most efficient methods
-for general nonlinear problems. Despite the hiding of communication time
-behind computation, communication has in certain situations a significant
-impact on the total runtime. Here we present strict, yet no sharp, error
-bounds for hybrid parareal methods with inexact communication due to
-lossy data compression, and derive theoretical estimates of the impact
-of compression on parallel efficiency of the algorithms. These and some
-computational experiments suggest that compression is a viable method
-to make hybrid parareal schemes robust with respect to low bandwidth
-setups.}},
-	author = {Fischer, L. and G\"otschel, S. and Weiser, M.},
-	howpublished = {ZIB Report 17-25 (May 2017)},
-	title = {Lossy data compression reduces communication time in hybrid time-parallel integrators},
-	url = {https://opus4.kobv.de/opus4-zib/files/6396/ZR-17-25.pdf},
-	year = {2017}
-}
-
 @unpublished{GanderEtAl2017,
 	author = {Martin J. Gander and Stefan G{\"u}ttel and Madalina Petcu},
 	title = {A nonlinear {ParaExp} algorithm},
@@ -3267,15 +3245,6 @@ setups.}},
 	year = {2017}
 }
 
-@unpublished{NielsenEtAl2017,
-	abstract = {{In the strong scaling limit, the performance of conventional spatial domain decomposition techniques for the parallel solution of PDEs saturates. When sub-domains become small, halo-communication and other overheard come to dominate. A potential path beyond this scaling limit is to introduce domain-decomposition in time, with one such popular approach being the Parareal algorithm which has received a lot of attention due to its generality and potential scalability. Low efficiency, particularly on convection dominated problems, has however limited the adoption of the method. In this paper we introduce a new strategy, Communication Aware Adaptive Parareal (CAAP) to overcome some of the challenges. With CAAP, we choose time-subdomains short enough that convergence of the Parareal algorithm is quick, yet long enough that the overheard of communicating time-subdomain interfaces does not induce a new limit to parallel speed-up. Furthermore, we propose an adaptive work scheduling algorithm that overlaps consecutive Parareal cycles and decouples the number of time-subdomains and number of active node-groups in an efficient manner to allow for comparatively high parallel efficiency. We demonstrate the viability of CAAP trough the parallel-in-time integration of a hyperbolic system of PDEs in the form of the two-dimensional nonlinear shallow-water wave equation solved using a 3rd order accurate WENO-RK discretization. For the computational cheap approximate operator needed as a preconditioner in the Parareal corrections we use a lower order Roe type discretization. Time-parallel integration of purely hyperbolic type evolution problems is traditionally considered impractical. Trough large-scale numerical experiments we demonstrate that with CAAP, it is possible not only to obtain timeparallel speedup on this class of evolution problems, but also that we may obtain parallel acceleration beyond what is possible using conventional spacial domain-decomposition techniques alone. The approach is widely applicable for parallel-in-time integration over long time domains, regardless of the class of evolution problem.}},
-	author = {Allan S. Nielsen and Gilles Brunner and Jan S. Hesthaven},
-	title = {Communication-aware adaptive parareal with application to a nonlinear hyperbolic system of partial differential equations},
-	howpublished = {EPFL-ARTICLE-228189},
-	url = {https://infoscience.epfl.ch/record/228189/files/jcp2017.pdf},
-	year = {2017},
-}
-
 @article{Pazner2017700,
 	abstract = {{Abstract In this paper, we develop new techniques for solving the large, coupled linear systems that arise from fully implicit Runge–Kutta methods. This method makes use of the iterative preconditioned \{GMRES\} algorithm for solving the linear systems, which has seen success for fluid flow problems and discontinuous Galerkin discretizations. By transforming the resulting linear system of equations, one can obtain a method which is much less computationally expensive than the untransformed formulation, and which compares competitively with other time-integration schemes, such as diagonally implicit Runge–Kutta (DIRK) methods. We develop and test several ILU-based preconditioners effective for these large systems. We additionally employ a parallel-in-time strategy to compute the Runge–Kutta stages simultaneously. Numerical experiments are performed on the Navier–Stokes equations using Euler vortex and 2D and 3D \{NACA\} airfoil test cases in serial and in parallel settings. The fully implicit Radau \{IIA\} Runge–Kutta methods compare favorably with equal-order \{DIRK\} methods in terms of accuracy, number of \{GMRES\} iterations, number of matrix–vector multiplications, and wall-clock time, for a wide range of time steps.}},
 	author = {Will Pazner and Per-Olof Persson},
@@ -3308,15 +3277,6 @@ setups.}},
 	pages={1–10}
 }
 
-@article{Ruprecht2017,
-	abstract = {{The paper derives and analyses the (semi-)discrete dispersion relation of the Parareal parallel-in-time integration method. It investigates Parareal's wave propagation characteristics with the aim to better understand what causes the well documented stability problems for hyperbolic equations. The analysis shows that the instability is caused by convergence of the amplification factor to the exact value from above for medium to high wave numbers. Phase errors in the coarse propagator are identified as the culprit, which suggests that specifically tailored coarse level methods could provide a remedy.}},
-	author = {Ruprecht, D.},
-	title = {Wave propagation characteristics of Parareal},
-	journal = {Computing and Visualization in Science},
-	url = {https://arxiv.org/abs/1701.01359},
-	year = {2017},
-	note = {Accepted}
-}
 
 @Inbook{Ruprecht2017_lncs,
 	abstract={{For the parallel-in-time integration method Parareal, pipelining can be used to hide some of the cost of the serial correction step and improve its efficiency. The paper introduces a basic OpenMP implementation of pipelined Parareal and compares it to a standard MPI-based variant. Both versions yield almost identical runtimes, but, depending on the compiler, the OpenMP variant consumes about 7{\%} less energy and has a significantly smaller memory footprint. However, its higher implementation complexity might make it difficult to use in legacy codes and in combination with spatial parallelisation.}},
@@ -3468,6 +3428,28 @@ setups.}},
 	year = {2018},
 }
 
+@article{FischerEtAl2018,
+	abstract = {{Parallel in time methods for solving initial value problems are a means
+to increase the parallelism of numerical simulations. Hybrid parareal
+schemes interleaving the parallel in time iteration with an iterative solution
+of the individual time steps are among the most efficient methods
+for general nonlinear problems. Despite the hiding of communication time
+behind computation, communication has in certain situations a significant
+impact on the total runtime. Here we present strict, yet no sharp, error
+bounds for hybrid parareal methods with inexact communication due to
+lossy data compression, and derive theoretical estimates of the impact
+of compression on parallel efficiency of the algorithms. These and some
+computational experiments suggest that compression is a viable method
+to make hybrid parareal schemes robust with respect to low bandwidth
+setups.}},
+	author = {Fischer, L. and G\"otschel, S. and Weiser, M.},
+	journal = {Computing and Visualization in Science},
+	title = {Lossy data compression reduces communication time in hybrid time-parallel integrators},
+	doi = {10.1007/s00791-018-0293-2},
+	url = {https://doi.org/10.1007/s00791-018-0293-2},
+	year = {2018}
+}
+
 @article{FrancoEtAl2018,
 	abstract = {{In this work, a space-time multigrid method which uses standard coarsening in both temporal and spatial domains and combines the use of different smoothers is proposed for the solution of the heat equation in one and two space dimensions. In particular, an adaptive smoothing strategy, based on the degree of anisotropy of the discrete operator on each grid-level, is the basis of the proposed multigrid algorithm. Local Fourier analysis is used for the selection of the crucial parameter defining such an adaptive smoothing approach. Central differences are used to discretize the spatial derivatives and both implicit Euler and Crank–Nicolson schemes are considered for approximating the time derivative. For the solution of the second-order scheme, we apply a double discretization approach within the space-time multigrid method. The good performance of the method is illustrated through several numerical experiments.}},
 	author = {Sebasti\~{a}o Romero Franco and Francisco Jos\’{e} Gaspar and Marcio Augusto Villela Pinto and Carmen Rodrigo},
@@ -3560,6 +3542,16 @@ setups.}},
 	year = {2018},
 }
 
+@Article{LunetEtAl2018,
+	abstract = {Direct Numerical Simulation of turbulent flows is a computationally demanding problem that requires efficient parallel algorithms. We investigate the applicability of the time-parallel Parareal algorithm to an instructional case study related to the simulation of the decay of homogeneous isotropic turbulence in three dimensions. We combine a Parareal variant based on explicit time integrators and spatial coarsening with the space-parallel Hybrid Navier--Stokes solver. We analyse the performance of this space--time parallel solver with respect to speedup and quality of the solution. The results are compared with reference data obtained with a classical explicit integration, using an error analysis which relies on the energetic content of the solution. We show that a single Parareal iteration is able to reproduce with high fidelity the main statistical quantities characterizing the turbulent flow field.},
+	author = {Lunet, Thibaut and Bodart, Julien and Gratton, Serge and Vasseur, Xavier},
+	title = {Time-parallel simulation of the decay of homogeneous turbulence using Parareal with spatial coarsening},
+	journal = {Computing and Visualization in Science},
+	year = {2018},
+	doi = {10.1007/s00791-018-0295-0},
+	url = {https://doi.org/10.1007/s00791-018-0295-0}
+}
+
 @unpublished{MadayMula2018,
 	abstract = {{In this paper, we consider the problem of accelerating the numerical simulation of time dependent problems by time domain decomposition. The available algorithms enabling such decompositions present severe efficiency limitations and are an obstacle for the solution of large scale and high dimensional problems. Our main contribution is the significant improvement of the parallel efficiency of the parareal in time method, an iterative predictor-corrector algorithm. This is achieved by first reformulating the algorithm in a rigorous infinite dimensional functional space setting. We then formulate implementable versions where time dependent subproblems are solved at increasing accuracy across the parareal iterations (in opposition to the classical version where the subproblems are solved at a fixed high accuracy). Aside from the important improvement in parallel efficiency and as a natural by product, the new approach provides a rigourous online stopping criterion with a posteriori error estimators and the numerical cost to achieve a certain final accuracy is designed to be near-minimal. We illustrate the gain in efficiency of the new approach on simple numerical experiments. In addition to this, we discuss the potential benefits of reusing information from previous parareal iterations to enhance efficiency even more.}},
 	author = {Yvon Maday and Olga Mula},
@@ -3601,6 +3593,37 @@ setups.}},
 	year = {2018},
 }
 
+@article{NielsenEtAl2018,
+	abstract = {{In the strong scaling limit, the performance of conventional spatial domain decomposition techniques for the parallel solution of PDEs saturates. When sub-domains become small, halo-communication and other overhead come to dominate. A potential path beyond this scaling limit is to introduce domain-decomposition in time, with one such popular approach being the Parareal algorithm which has received a lot of attention due to its generality and potential scalability. Low efficiency, particularly on convection dominated problems, has however limited the adoption of the method. In this paper we demonstrate trough large-scale numerical experiments that it is possible not only to obtain time-parallel speedup on the non-linear shallow water wave equation, but also that we may obtain parallel acceleration beyond what is possible using conventional spatial domain-decomposition techniques alone. Two factors were essential in achieving this. First, for Parareal to converge on the hyperbolic problem we used an approximate Riemann solver as the preconditioner. This preconditioner introduces only dissipative errors with respect to the 3rd order accurate WENO-RK discretization used to solve the PDE system. The preconditoner is comparatively expensive and convergence is slow unless time-subdomains are short. We therefore introduce a new scheduler that we denote Communication Aware Adaptive Parareal (CAAP). CAAP increases obtainable speed-up by minimizing the time-subdomain length without making communication of time-subdomains too costly whilst also adaptively overlapping consecutive cycles of Parareal so to mitigate the impact of a relatively expensive coarse operator.}},
+	author = {Allan S. Nielsen and Gilles Brunner and Jan S. Hesthaven},
+	title = {Communication-aware adaptive parareal with application to a nonlinear hyperbolic system of partial differential equations},
+	journal = {Journal of Computational Physics},
+	doi = {10.1016/j.jcp.2018.04.056},
+	url = {https://doi.org/10.1016/j.jcp.2018.04.056},
+	year = {2018},
+}
+
+@article{Ruprecht2018,
+	abstract = {{The paper derives and analyses the (semi-)discrete dispersion relation of the Parareal parallel-in-time integration method. It investigates Parareal's wave propagation characteristics with the aim to better understand what causes the well documented stability problems for hyperbolic equations. The analysis shows that the instability is caused by convergence of the amplification factor to the exact value from above for medium to high wave numbers. Phase errors in the coarse propagator are identified as the culprit, which suggests that specifically tailored coarse level methods could provide a remedy.}},
+	author = {Ruprecht, D.},
+	title = {Wave propagation characteristics of Parareal},
+	journal = {Computing and Visualization in Science},
+	url = {https://doi.org/10.1007/s00791-018-0296-z},
+	doi = {10.1007/s00791-018-0296-z},
+	year = {2018},
+}
+
+@Article{SchmittEtAl2018,
+	author = {Schmitt, A. and Schreiber, M. and Peixoto, P. and Sch{\"a}fer, M.},
+	title = {A numerical study of a semi-Lagrangian Parareal method applied to the viscous Burgers equation},
+	journal = {Computing and Visualization in Science},
+	year = {2018},
+	abstract = {This work focuses on the Parareal parallel-in-time method and its application to the viscous Burgers equation. A crucial component of Parareal is the coarse time stepping scheme, which strongly impacts the convergence of the parallel-in-time method. Three choices of coarse time stepping schemes are investigated in this work: explicit Runge--Kutta, implicit--explicit Runge--Kutta, and implicit Runge--Kutta with semi-Lagrangian advection. Manufactured solutions are used to conduct studies, which provide insight into the viability of each considered time stepping method for the coarse time step of Parareal. One of our main findings is the advantageous convergence behavior of the semi-Lagrangian scheme for advective flows.},
+	doi = {10.1007/s00791-018-0294-1},
+	url = {https://doi.org/10.1007/s00791-018-0294-1}
+}
+
+
 @article{Subber2018,
 	abstract = {{In this paper, we adapt a parallel time integration scheme to track the trajectories of noisy non-linear dynamical systems. Specifically, we formulate a parallel algorithm to generate the sample path of nonlinear oscillator defined by stochastic differential equations (SDEs) using the so-called parareal method for ordinary differential equations (ODEs). The presence of Wiener process in \{SDEs\} causes difficulties in the direct application of any numerical integration techniques of \{ODEs\} including the parareal algorithm. The parallel implementation of the algorithm involves two \{SDEs\} solvers, namely a fine-level scheme to integrate the system in parallel and a coarse-level scheme to generate and correct the required initial conditions to start the fine-level integrators. For the numerical illustration, a randomly excited Duffing oscillator is investigated in order to study the performance of the stochastic parallel algorithm with respect to a range of system parameters. The distributed implementation of the algorithm exploits Massage Passing Interface (MPI).}},
 	author = {Waad Subber and Abhijit Sarkar},
@@ -3611,6 +3634,18 @@ setups.}},
 	url = {https://doi.org/10.1016/j.jcp.2018.01.019},
 }
 
+@article{Wu2018,
+	abstract = {{In this paper, we present an idea toward parallel coarse grid correction (CGC) for the parareal algorithm. It is well known that such a CGC procedure is often the bottleneck of speedup of the parareal algorithm. For an ODE system with initial-value condition $u(0)=u_0$ the idea can be explained as follows. First, we apply the $\mathcal{G}$-propagator to the same ODE system but with a special condition $u(0)=\alpha u(T)$, where $\alpha\in\mathbb{R}$ is a crux parameter. Second, in each iteration of the parareal algorithm the CGC procedure will be carried out by the so-called diagonalization technique established recently. The parameter $\alpha$ controls both the roundoff error arising from such a diagonalization technique and the convergence rate of the resulting parareal algorithm. We show that there exists some threshold $\alpha^*$ such that the parareal algorithm with diagonalization-based CGC possesses the same convergence rate as that of the parareal algorithm with classical CGC if $|\alpha|\leq \alpha^*$. With $|\alpha|=\alpha^*$, we show that the condition number associated with the diagonalization technique is a moderate quantity of order $\mathcal{O}(1)$ (and therefore the roundoff error is small) and is independent of the length of the time interval. Numerical results are given to support our findings.}},
+	author = {Wu, S.},
+	title = {Toward Parallel Coarse Grid Correction for the Parareal Algorithm},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {40},
+	number = {3},
+	pages = {A1446-A1472},
+	year = {2018},
+	doi = {10.1137/17M1141102},
+	url = {https://doi.org/10.1137/17M1141102},
+}
 
 @article{WuZhou2018_JCP,
 	abstract = {It is challenge work to design parareal algorithms for time-fractional differential equations due to the historical effect of the fractional operator. A direct extension of the classical parareal methed to such equations will lead to unbalance computational time in each process. In this work, we present an efficient parareal iteration scheme to overcome this issue, by adopting two recently developed local time-integrators for time fractional operators. In both approaches, one introduces auxiliary variables to localized the fractional operator. To this end, we propose a new strategy to perform the coarse grid correction so that the auxiliary variables and the solution variable are corrected separately in a mixed pattern. It is shown that the proposed parareal algorithm admits robust rate of convergence. Numerical examples are presented to support our conclusions.},
@@ -3636,6 +3671,15 @@ setups.}},
  	title = {Parallel in Time Algorithms for Multiscale Dynamical Systems Using Interpolation and Neural Networks},
  	year = {2018},
 } 
+
+@unpublished{YueEtAl2018,
+	abstract = {{The paper investigates a non-intrusive parallel time integration with multigrid for space-fractional diffusion equations in two spatial dimensions. We firstly obtain a fully discrete scheme via using the linear finite element method to discretize spatial and temporal derivatives to propagate solutions. Next, we present a non-intrusive time-parallelization and its two-level convergence analysis, where we algorithmically and theoretically generalize the MGRIT to time-dependent fine time-grid propagators. Finally, numerical illustrations show that the obtained numerical scheme possesses the saturation error order, theoretical results of the two-level variant deliver good predictions, and significant speedups can be achieved when compared to parareal and the sequential time-stepping approach.}},
+	author = {Yue, X. Q. and Shu, S. and Xu, X. W. and Bu, W. P. and Pan, K. J.},
+	title = {Parallel-in-Time with Fully Finite Element Multigrid for 2-D Space-fractional Diffusion Equations},
+	howpublished = {arXiv:1805.06688 [math.NA]},
+	url = {https://arxiv.org/abs/1805.06688v1},
+	year = {2018},
+}
 
 @article{ZhuWeng2018,
 	abstract = {{This paper investigates a novel parallel technique based on the spectral deferred correction (SDC) method and a compensation step for solving first-order evolution problems, and we call it para-SDC method for convenience. The standard SDC method is used in parallel with a rough initial guess and a Picard integral equation with high precision initial condition is acted as a compensator. The goal of this paper is to show how these processes can be parallelized and how to improve the efficiency. During the SDC step an implicit or semi-implicit method can be used for stiff problems which is always time-consuming, therefore that’s why we do this procedure in parallel. Due to a better initial condition of parallel intervals after the SDC step, the goal of compensation step is to get a better approximation and also avoid of solving an implicit problem again. During the compensation step an explicit Picard scheme is taken based on the numerical integration with polynomial interpolation on Gauss Radau II nodes, which is almost no time consumption, obviously, that’s why we do this procedure in serial. The convergency analysis and the parallel efficiency of our method are also discussed. Several numerical experiments and an application for simulation Allen–Cahn equation are presented to show the accuracy, stability, convergence order and efficiency features of para-SDC method.}},
