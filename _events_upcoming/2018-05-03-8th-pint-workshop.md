@@ -1,6 +1,6 @@
 ---
 layout: page_event
-title: 8th Workshop on Parallel-in-Time Integration
+title: "8th Workshop on Parallel-in-Time Integration"
 date: 2018-03-04 00:00:00 +0000
 event_location: Bielefeld, Germany
 event_start: 2019-5-20 00:00
@@ -16,7 +16,7 @@ organizers:
   - name: Sebastian Schoeps
     homepage: http://www.graduate-school-ce.de/index.php?id=481
 permalink: /events/8th-pint-workshop/
-subtitle: Brief overview
+subtitle: "Brief overview"
 page_type: event_page
 no_lead: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PINT for Exascale computing
+title: "PINT for Exascale computing"
 date: 2015-12-17 09:26:44 +0200
 author: Daniel Ruprecht
 categories:

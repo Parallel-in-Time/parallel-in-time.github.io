@@ -8,7 +8,8 @@ footer: false
 ---
 
 <div class="row">
-{% for method in site.methods | order: 'title' %}
+{% assign sorted_methods = site.methods | sort:'title' %}  
+{% for method in sorted_methods %}
   {% cycle '', '', '', '</div><div class="row">' %}
   {% capture page %}{{ method }}{% endcapture %}
   <div class="col-md-4">

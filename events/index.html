@@ -13,21 +13,23 @@ footer: false
   <div class="col-md-6">
     <h2>Upcoming</h2>
     <ul class="list-group">
-      {% sorted_for event in site.events_upcoming sort_by:event_start %}
+      {% assign sorted_events = site.events_upcoming | sort:'event_start' %}
+      {% for event in sorted_events %}
         {% if event.page_type == 'event_page' %}
           {% include event/overview_item.html %}
         {% endif %}
-      {% endsorted_for %}
+      {% endfor %}
     </ul>
   </div>
   <div class="col-md-6">
     <h2>Past</h2>
     <ul class="list-group">
-      {% sorted_for event in site.events_past reversed sort_by:event_start %}
+      {% assign sorted_events = site.events_past | sort:'event_start' %}
+      {% for event in sorted_events %}
         {% if event.page_type == 'event_page' %}
           {% include event/overview_item.html %}
         {% endif %}
-      {% endsorted_for %}
+      {% endfor %}
     </ul>
   </div>
 </div>

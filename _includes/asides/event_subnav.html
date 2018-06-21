@@ -9,7 +9,8 @@
     <li role="presentation"{% if event_index_url == page.url %} class="active"{% endif %}>
       <a href="{{ event_index_url }}">Event's Main Page</a>
     </li>
-    {% sorted_for subpage in site.events_upcoming sort_by:subtitle %}
+    {% assign sorted_pages = site.events_upcoming | sort:'subtitle' %}
+    {% for subpage in sorted_pages %}
       {% unless subpage.page_type == 'event_page' %}
         {% assign subpage_url_arr = subpage.url | split:'/' %}
         {% if subpage_url_arr contains current_base %}
@@ -18,8 +19,9 @@
           </li>
         {% endif %}
       {% endunless %}
-    {% endsorted_for %}
-    {% sorted_for subpage in site.events_past sort_by:subtitle %}
+    {% endfor %}
+    {% assign sorted_pages = site.events_past | sort:'subtitle' %}
+    {% for subpage in sorted_pages %}
       {% unless subpage.page_type == 'event_page' %}
         {% assign subpage_url_arr = subpage.url | split:'/' %}
         {% if subpage_url_arr contains current_base %}
@@ -28,7 +30,7 @@
           </li>
         {% endif %}
       {% endunless %}
-    {% endsorted_for %}
+    {% endfor %}
     <li id="show-meta-aside-wrapper" role="presentation">
       <a class="invisible" id="show-meta-aside" role="button" title="Show Profile" data-toggle="tooltip">
         <i class="fa fa-fw fa-info"></i>

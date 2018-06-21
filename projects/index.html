@@ -8,7 +8,8 @@ footer: false
 ---
 
 <div class="row">
-{% for project in site.projects | order: 'title' %}
+{% assign sorted_projects = site.projects | sort:'title' %}  
+{% for project in sorted_projects %}
   {% cycle '', '', '', '</div><div class="row">' %}
   {% capture page %}{{ project }}{% endcapture %}
   <div class="col-md-4">

@@ -18,7 +18,7 @@ exclude:
   - CONTRIBUTORS
   - CONTRIBUTING.md
 
-gems:
+plugins:
   - jekyll-assets
   - jekyll-paginate
   - jekyll-feed

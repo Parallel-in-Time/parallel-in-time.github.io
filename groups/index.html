@@ -8,7 +8,8 @@ footer: false
 ---
 
 <div class="row">
-{% for group in site.groups | order: 'title' %}
+{% assign sorted_groups = site.groups | sort:'title' %}  
+{% for group in sorted_groups %}
   {% cycle '', '', '', '</div><div class="row">' %}
   {% capture page %}{{ group }}{% endcapture %}
   <div class="col-md-4">

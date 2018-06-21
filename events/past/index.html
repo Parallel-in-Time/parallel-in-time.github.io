@@ -10,9 +10,10 @@ footer: false
 ---
 
 <ul class="list-group">
-  {% sorted_for event in site.events_past reversed sort_by:event_start %}
+  {% assign sorted_events = site.events_past | sort:'event_start' %}
+  {% for event in sorted_events %}
     {% if event.page_type == 'event_page' %}
       {% include event/overview_item.html %}
     {% endif %}
-  {% endsorted_for %}
+  {% endfor %}
 </ul>
