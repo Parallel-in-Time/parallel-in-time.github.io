@@ -2677,15 +2677,6 @@
 	year = {2016},
 }
 
-@unpublished{BoltenEtAl2016,
-	abstract = {{For the numerical solution of time-dependent partial differential equations, time-parallel methods have recently shown to provide a promising way to extend prevailing strong-scaling limits of numerical codes. One of the most complex methods in this field is the "Parallel Full Approximation Scheme in Space and Time" (PFASST). PFASST already shows promising results for many use cases and many more is work in progress. However, a solid and reliable mathematical foundation is still missing. We show that under certain assumptions the PFASST algorithm can be conveniently and rigorously described as a multigrid-in-time method. Following this equivalence, first steps towards a comprehensive analysis of PFASST using block-wise local Fourier analysis are taken. The theoretical results are applied to examples of diffusive and advective type.}},
-	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
-	howpublished = {arXiv:1603.03586 [math.NA]},
-	title = {A multigrid perspective on the parallel full approximation scheme in space and time},
-	url = {http://arxiv.org/abs/1603.03586},
-	year = {2016},
-}
-
 @unpublished{CarlbergEtAl2016,
 	abstract = {{This work proposes a data-driven method for enabling the efficient, stable time-parallel numerical solution of
 systems of ordinary differential equations (ODEs). The method assumes that low-dimensional bases that accurately capture
@@ -3090,7 +3081,20 @@ quantities of model systems.}},
 	url = {https://doi.org/10.1190/geo2017-0494.1},
 }
 
-@unpublished{BoltenEtAl2017,
+@article{BoltenEtAl2017,
+	abstract = {{For the numerical solution of time-dependent partial differential equations, time-parallel methods have recently been shown to provide a promising way to extend prevailing strong-scaling limits of numerical codes. One of the most complex methods in this field is the “Parallel Full Approximation Scheme in Space and Time” (PFASST). PFASST already shows promising results for many use cases and benchmarks. However, a solid and reliable mathematical foundation is still missing. We show that, under certain assumptions, the PFASST algorithm can be conveniently and rigorously described as a multigrid-in-time method. Following this equivalence, first steps towards a comprehensive analysis of PFASST using blockwise local Fourier analysis are taken. The theoretical results are applied to examples of diffusive and advective type.}},
+	author = {Bolten Matthias and Moser Dieter and Speck Robert},
+	title = {A multigrid perspective on the parallel full approximation scheme in space and time},
+	journal = {Numerical Linear Algebra with Applications},
+	volume = {24},
+	number = {6},
+	pages = {e2110},
+	doi = {10.1002/nla.2110},
+	url = {https://dx.doi.org/10.1002/nla.2110},
+	year = {2017}
+}
+
+@unpublished{BoltenEtAl2017b,
 	abstract = {{For time-dependent partial differential equations, parallel-in-time integration using the "parallel full approximation scheme in space and time" (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time-steps simultaneously using a space-time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as multigrid method and in this paper, we will use this multigrid formulation and in particular PFASST's iteration matrix to show that in the non-stiff as well as in the stiff limit PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time-steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.}},
 	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
 	title = {Asymptotic convergence of the parallel full approximation scheme in space and time for linear problems},
