@@ -4,7 +4,7 @@ sudo: false
 
 # this is taken from .ruby-version from the repo
 # rvm:
-#   - 2.2.1
+#   - 2.4.1
 
 cache:
   - bundler
