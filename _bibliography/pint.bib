@@ -3482,6 +3482,17 @@ setups.}},
 	year = {2018}
 }
 
+@article{GanderEtAl2018_cvs,
+  abstract = {{The parareal algorithm is by construction a two level method, and there are several ways to interpret the parareal algorithm to obtain multilevel versions. We first review the three main interpretations of the parareal algorithm as a two-level method, a direct one, one based on geometric multigrid and one based on algebraic multigrid. The algebraic multigrid interpretation leads to the MGRIT algorithm, when using instead of only an F-smoother, a so called   FCF -smoother. We show that this can be interpreted at the level of the parareal algorithm as generous overlap in time. This allows us to generalize the method to even larger overlap, corresponding in MGRIT to   F(CF)ν -smoothing,   ν >=1 , and we prove two new convergence results for such algorithms in the fully non-linear setting: convergence in a finite number of steps, becoming smaller when   ν  increases, and a general superlinear convergence estimate for this generalized version of MGRIT. We illustrate our results with numerical experiments, both for linear and non-linear systems of ordinary and partial differential equations. Our results show that overlap only sometimes leads to faster algorithms.}},
+  author = {Gander, Martin J. and Kwok, Felix and Zhang, Hui},
+  title = {Multigrid interpretations of the parareal algorithm leading to an overlapping variant and MGRIT},
+  journal = {Computing and Visualization in Science},
+  doi = {10.1007/s00791-018-0297-y},
+  url = {https://doi.org/10.1007/s00791-018-0297-y},
+  year = {2018},
+}
+
+
 @article{HessenthalerEtAl2018,
 	abstract = {This paper presents some recent advances for parallel‐in‐time methods applied to linear elasticity. With recent computer architecture changes leading to stagnant clock speeds, but ever increasing numbers of cores, future speedups will be available through increased concurrency. Thus, sequential algorithms, such as time stepping, will suffer a bottleneck. This paper explores multigrid reduction in time (MGRIT) for an important application area, linear elasticity. Previously, efforts at parallel‐in‐time for elasticity have experienced difficulties, for example, the beating phenomenon. As a result, practical parallel‐in‐time algorithms for this application area currently do not exist. This paper proposes some solutions made possible by MGRIT (e.g., slow temporal coarsening and FCF‐relaxation) and, more importantly, a different formulation of the problem that is more amenable to parallel‐in‐time methods. Using a recently developed convergence theory for MGRIT and Parareal, we show that the changed formulation of the problem avoids the instability issues and allows the reduction of the error using two temporal grids. We then extend our approach to the multilevel case, where we demonstrate how slow temporal coarsening improves convergence. The paper ends with supporting numerical results showing a practical algorithm enjoying speedup benefits over the sequential algorithm.},
 	author = {Hessenthaler A. and Nordsletten D. and Röhrle O. and Schroder J. B. and Falgout R. D.},
