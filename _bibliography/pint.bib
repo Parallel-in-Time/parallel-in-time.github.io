@@ -3324,15 +3324,6 @@ quantities of model systems.}},
 	year = {2017}
 }
 
-@unpublished{Speck2017,
-	abstract = {{In this paper we present two strategies to enable "parallelization across the method" for spectral deferred corrections (SDC). Using standard low-order time-stepping methods in an iterative fashion, SDC can be seen as preconditioned Picard iteration for the collocation problem. Typically, a serial Gauss-Seidel-like preconditioner is used, computing updates for each collocation node one by one. The goal of this paper is to show how this process can be parallelized, so that all collocation nodes are updated simultaneously. The first strategy aims at finding parallel preconditioners for the Picard iteration and we test three choices using four different test problems. For the second strategy we diagonalize the quadrature matrix of the collocation problem directly. In order to integrate non-linear problems we employ simplified and inexact Newton methods. Here, we estimate the speed of convergence depending on the time-step size and verify our results using a non-linear diffusion problem.}},
-	author = {Speck, Robert},
-	title = {Parallelizing spectral deferred corrections across the method},
-	howpublished = {arXiv:1703.08079 [math.NA]},
-	url = {https://arxiv.org/abs/1703.08079},
-	year = {2017}
-}
-
 @article{SpeckRuprecht2017,
         abstract = {{Abstract We introduce and analyze different strategies for the parallel-in-time integration method PFASST to recover from hard faults and subsequent data loss. Since PFASST stores solutions at multiple time steps on different processors, information from adjacent steps can be used to recover after a processor has failed. PFASST’s multi-level hierarchy allows to use the coarse level for correcting the reconstructed solution, which can help to minimize overhead. A theoretical model is devised linking overhead to the number of additional PFASST iterations required for convergence after a fault. The potential efficiency of different strategies is assessed in terms of required additional iterations for examples of diffusive and advective type.}},
        author = {Robert Speck and Daniel Ruprecht},
@@ -3637,6 +3628,16 @@ setups.}},
   number = {1},
   pages = {45 -- 57},
 	year = {2018},
+}
+
+@article{Speck2018,
+	abstract = {{In this paper we present two strategies to enable "parallelization across the method" for spectral deferred corrections (SDC). Using standard low-order time-stepping methods in an iterative fashion, SDC can be seen as preconditioned Picard iteration for the collocation problem. Typically, a serial Gauss-Seidel-like preconditioner is used, computing updates for each collocation node one by one. The goal of this paper is to show how this process can be parallelized, so that all collocation nodes are updated simultaneously. The first strategy aims at finding parallel preconditioners for the Picard iteration and we test three choices using four different test problems. For the second strategy we diagonalize the quadrature matrix of the collocation problem directly. In order to integrate non-linear problems we employ simplified and inexact Newton methods. Here, we estimate the speed of convergence depending on the time-step size and verify our results using a non-linear diffusion problem.}},
+	author = {Speck, Robert},
+	title = {Parallelizing spectral deferred corrections across the method},
+  doi = {10.1007/s00791-018-0298-x}
+	journal = {Computing and Visualization in Science},
+	url = {https://doi.org/10.1007/s00791-018-0298-x},
+	year = {2018}
 }
 
 
