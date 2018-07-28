@@ -3159,15 +3159,6 @@ quantities of model systems.}},
 	URL = {https://doi.org/10.1137/16M1090193},
 }
 
-	
-@unpublished{GuentherEtAl2017,
-	abstract = {{In this paper, an adjoint solver for the multigrid in time software library XBraid is presented. XBraid provides a non-intrusive approach for simulating unsteady dynamics on multiple processors while parallelizing not only in space but also in the time domain. It applies an iterative multigrid reduction in time algorithm to existing spatially parallel classical time propagators and computes the unsteady solution parallel in time. Techniques from Automatic Differentiation are used to develop a consistent discrete adjoint solver which provides sensitivity information of output quantities with respect to design parameter changes. The adjoint code runs backwards through the primal XBraid actions and accumulates gradient information parallel in time. It is highly non-intrusive as existing adjoint time propagators can easily be integrated through the adjoint interface. The adjoint code is validated on advection-dominated flow with periodic upstream boundary condition. It provides similar strong scaling results as the primal XBraid solver and offers great potential for speeding up the overall computational costs for sensitivity analysis using multiple processors}},
-	author = {G\"unther, S. and Gauger, N. R. and Schroder, J. B.},
-	howpublished = {arXiv:1705.00663 [math.OC]},
-	title = {A Non-Intrusive Parallel-in-Time Adjoint Solver with the {XBraid} Library},
-	url = {https://arxiv.org/abs/1705.00663},
-	year = {2017}
-}
 
 @inproceedings{HanEtAl2017,
 	abstract = {{Traditionally, the time integration algorithms for multibody dynamics are in sequential. The predictions of previous time steps are necessary to get the solutions at current time step. This time-marching character impedes the application of parallel processor implementation. In this paper, the idea of computing a number of time steps concurrently is applied to flexible multi-body dynamics, which makes parallel time-integration possible. In the present method, the solution at the current time step is computed before accurate values at previous time step are available. This method is suitable for small-scale parallel analysis of flexible multibody systems.}},
@@ -3324,15 +3315,6 @@ quantities of model systems.}},
 	year = {2017}
 }
 
-@unpublished{Speck2017,
-	abstract = {{In this paper we present two strategies to enable "parallelization across the method" for spectral deferred corrections (SDC). Using standard low-order time-stepping methods in an iterative fashion, SDC can be seen as preconditioned Picard iteration for the collocation problem. Typically, a serial Gauss-Seidel-like preconditioner is used, computing updates for each collocation node one by one. The goal of this paper is to show how this process can be parallelized, so that all collocation nodes are updated simultaneously. The first strategy aims at finding parallel preconditioners for the Picard iteration and we test three choices using four different test problems. For the second strategy we diagonalize the quadrature matrix of the collocation problem directly. In order to integrate non-linear problems we employ simplified and inexact Newton methods. Here, we estimate the speed of convergence depending on the time-step size and verify our results using a non-linear diffusion problem.}},
-	author = {Speck, Robert},
-	title = {Parallelizing spectral deferred corrections across the method},
-	howpublished = {arXiv:1703.08079 [math.NA]},
-	url = {https://arxiv.org/abs/1703.08079},
-	year = {2017}
-}
-
 @article{SpeckRuprecht2017,
         abstract = {{Abstract We introduce and analyze different strategies for the parallel-in-time integration method PFASST to recover from hard faults and subsequent data loss. Since PFASST stores solutions at multiple time steps on different processors, information from adjacent steps can be used to recover after a processor has failed. PFASST’s multi-level hierarchy allows to use the coarse level for correcting the reconstructed solution, which can help to minimize overhead. A theoretical model is devised linking overhead to the number of additional PFASST iterations required for convergence after a fault. The potential efficiency of different strategies is assessed in terms of required additional iterations for examples of diffusive and advective type.}},
        author = {Robert Speck and Daniel Ruprecht},
@@ -3451,6 +3433,9 @@ setups.}},
 	title = {Lossy data compression reduces communication time in hybrid time-parallel integrators},
 	doi = {10.1007/s00791-018-0293-2},
 	url = {https://doi.org/10.1007/s00791-018-0293-2},
+  volume = {19},
+  number = {1},
+  pages = {19--30},
 	year = {2018}
 }
 
@@ -3488,6 +3473,26 @@ setups.}},
 	year = {2018}
 }
 
+@article{GanderEtAl2018_cvs,
+  abstract = {{The parareal algorithm is by construction a two level method, and there are several ways to interpret the parareal algorithm to obtain multilevel versions. We first review the three main interpretations of the parareal algorithm as a two-level method, a direct one, one based on geometric multigrid and one based on algebraic multigrid. The algebraic multigrid interpretation leads to the MGRIT algorithm, when using instead of only an F-smoother, a so called   FCF -smoother. We show that this can be interpreted at the level of the parareal algorithm as generous overlap in time. This allows us to generalize the method to even larger overlap, corresponding in MGRIT to   F(CF)ν -smoothing,   ν >=1 , and we prove two new convergence results for such algorithms in the fully non-linear setting: convergence in a finite number of steps, becoming smaller when   ν  increases, and a general superlinear convergence estimate for this generalized version of MGRIT. We illustrate our results with numerical experiments, both for linear and non-linear systems of ordinary and partial differential equations. Our results show that overlap only sometimes leads to faster algorithms.}},
+  author = {Gander, Martin J. and Kwok, Felix and Zhang, Hui},
+  title = {Multigrid interpretations of the parareal algorithm leading to an overlapping variant and MGRIT},
+  journal = {Computing and Visualization in Science},
+  doi = {10.1007/s00791-018-0297-y},
+  url = {https://doi.org/10.1007/s00791-018-0297-y},
+  year = {2018},
+}
+
+@article{GuentherEtAl2018,
+	abstract = {{In this paper, an adjoint solver for the multigrid in time software library XBraid is presented. XBraid provides a non-intrusive approach for simulating unsteady dynamics on multiple processors while parallelizing not only in space but also in the time domain. It applies an iterative multigrid reduction in time algorithm to existing spatially parallel classical time propagators and computes the unsteady solution parallel in time. Techniques from Automatic Differentiation are used to develop a consistent discrete adjoint solver which provides sensitivity information of output quantities with respect to design parameter changes. The adjoint code runs backwards through the primal XBraid actions and accumulates gradient information parallel in time. It is highly non-intrusive as existing adjoint time propagators can easily be integrated through the adjoint interface. The adjoint code is validated on advection-dominated flow with periodic upstream boundary condition. It provides similar strong scaling results as the primal XBraid solver and offers great potential for speeding up the overall computational costs for sensitivity analysis using multiple processors}},
+	author = {G\"unther, S. and Gauger, N. R. and Schroder, J. B.},
+  doi = {10.1007/s00791-018-0300-7},
+	journal = {Computing and Visualization in Science},
+	title = {A Non-Intrusive Parallel-in-Time Adjoint Solver with the {XBraid} Library},
+	url = {https://doi.org/10.1007/s00791-018-0300-7},
+	year = {2018}
+}
+
 @article{HessenthalerEtAl2018,
 	abstract = {This paper presents some recent advances for parallel‐in‐time methods applied to linear elasticity. With recent computer architecture changes leading to stagnant clock speeds, but ever increasing numbers of cores, future speedups will be available through increased concurrency. Thus, sequential algorithms, such as time stepping, will suffer a bottleneck. This paper explores multigrid reduction in time (MGRIT) for an important application area, linear elasticity. Previously, efforts at parallel‐in‐time for elasticity have experienced difficulties, for example, the beating phenomenon. As a result, practical parallel‐in‐time algorithms for this application area currently do not exist. This paper proposes some solutions made possible by MGRIT (e.g., slow temporal coarsening and FCF‐relaxation) and, more importantly, a different formulation of the problem that is more amenable to parallel‐in‐time methods. Using a recently developed convergence theory for MGRIT and Parareal, we show that the changed formulation of the problem avoids the instability issues and allows the reduction of the error using two temporal grids. We then extend our approach to the multilevel case, where we demonstrate how slow temporal coarsening improves convergence. The paper ends with supporting numerical results showing a practical algorithm enjoying speedup benefits over the sequential algorithm.},
 	author = {Hessenthaler A. and Nordsletten D. and Röhrle O. and Schroder J. B. and Falgout R. D.},
@@ -3521,6 +3526,16 @@ setups.}},
 	Year = {2018},
 }
 
+@Article{IizukaEtAl2018,
+  abstract = {{Gander and Petcu (ESAIM Proc 25:114–129, 2008) reported that, theoretically, the convergence of the parareal method iteration for hyperbolic PDEs is strongly influenced by the phase (frequency) accuracy of the coarse solver calculation. However, no numerical study has clearly shown this. Therefore, through numerical tests, we investigate the influence of the phase accuracy of the coarse solver calculation on the convergence of the parareal method iteration for hyperbolic PDEs. First, we consider a simple harmonic motion and a multi-DOF mass-spring system (MDMSS) as examples of hyperbolic PDEs using the modified Newmark-  β method (Mizuta et al. in J JSCE 268:15–21, 1977), which can provide the exact phase of the time integration of a simple harmonic motion. Based on the results of the numerical tests, we show that the convergence of the parareal method iteration for hyperbolic PDEs is approximately independent of the parameters of parallel-in-time integration (PinT) and instead is dependent primarily on the phase accuracy of the coarse solver calculation. In addition, we show that reducing the number of bases in the reduced basis method (RBM) (Chen et al., in: Rozza (ed) Reduced order methods for modeling and computational reduction, MS and a modeling, simulation and applications, vol 9, Springer, Berlin, pp 187–214, 2014) causes the saturation of a decrease in an error during the parareal iteration for the MDMSS using the mode analysis method. The RBM is expected to make available accurate phase calculation in the coarse solver by maintaining the time step width as same as that of the fine solver. Second, we investigate whether the same saturation appears for the linear advection–diffusion equation when we use the RBM. We use the time evolution basis method in the RBM for the linear advection–diffusion equation. As a result, we show that reducing the number of bases causes the saturation of the decrease in the error in the linear advection–diffusion equation. Based on the results of the present study, an increase in the phase accuracy of the coarse solver calculation is strongly required for better convergence of the parareal method iteration for hyperbolic PDEs. Moreover, the saturation of the decrease in the error during the parareal method iteration should be overcome when using the RBM.}},
+  author = {Iizuka, Mikio and Ono, Kenji},
+  title = {Influence of the phase accuracy of the coarse solver calculation on the convergence of the parareal method iteration for hyperbolic PDEs},
+  journal = {Computing and Visualization in Science},
+  year = {2018},
+  doi = {10.1007/s00791-018-0299-9},
+  url = {https://doi.org/10.1007/s00791-018-0299-9},
+}
+
 @article{KooijEtAl2018,
 	abstract ={{We present an exponential time integration method for the incompressible Navier--Stokes equation. An essential step in our procedure is the treatment of the pressure by applying a divergence-free projection to the momentum equation. The differential-algebraic equation for the discrete velocity and pressure is then reduced to a conventional ordinary differential equation that can be solved with the proposed exponential integrator. A promising feature of exponential time integration is its potential time parallelism within the Paraexp algorithm. We demonstrate that our approach leads to parallel speedup assuming negligible parallel communication.}},
 	author = {Gijs L. Kooij and Mike A. Botchev and Bernard J. Geurts},
@@ -3551,9 +3566,12 @@ setups.}},
 	author = {Lunet, Thibaut and Bodart, Julien and Gratton, Serge and Vasseur, Xavier},
 	title = {Time-parallel simulation of the decay of homogeneous turbulence using Parareal with spatial coarsening},
 	journal = {Computing and Visualization in Science},
-	year = {2018},
 	doi = {10.1007/s00791-018-0295-0},
-	url = {https://doi.org/10.1007/s00791-018-0295-0}
+	url = {https://doi.org/10.1007/s00791-018-0295-0},
+  volume = {19},
+  number = {1},
+  pages = {31--44},
+	year = {2018},
 }
 
 @unpublished{MadayMula2018,
@@ -3614,6 +3632,9 @@ setups.}},
 	journal = {Computing and Visualization in Science},
 	url = {https://doi.org/10.1007/s00791-018-0296-z},
 	doi = {10.1007/s00791-018-0296-z},
+  volume = {19},
+  number = {1},
+  pages = {1--17},
 	year = {2018},
 }
 
@@ -3621,10 +3642,23 @@ setups.}},
 	author = {Schmitt, A. and Schreiber, M. and Peixoto, P. and Sch{\"a}fer, M.},
 	title = {A numerical study of a semi-Lagrangian Parareal method applied to the viscous Burgers equation},
 	journal = {Computing and Visualization in Science},
-	year = {2018},
 	abstract = {This work focuses on the Parareal parallel-in-time method and its application to the viscous Burgers equation. A crucial component of Parareal is the coarse time stepping scheme, which strongly impacts the convergence of the parallel-in-time method. Three choices of coarse time stepping schemes are investigated in this work: explicit Runge--Kutta, implicit--explicit Runge--Kutta, and implicit Runge--Kutta with semi-Lagrangian advection. Manufactured solutions are used to conduct studies, which provide insight into the viability of each considered time stepping method for the coarse time step of Parareal. One of our main findings is the advantageous convergence behavior of the semi-Lagrangian scheme for advective flows.},
 	doi = {10.1007/s00791-018-0294-1},
-	url = {https://doi.org/10.1007/s00791-018-0294-1}
+	url = {https://doi.org/10.1007/s00791-018-0294-1},
+  volume = {19},
+  number = {1},
+  pages = {45 -- 57},
+	year = {2018},
+}
+
+@article{Speck2018,
+	abstract = {{In this paper we present two strategies to enable "parallelization across the method" for spectral deferred corrections (SDC). Using standard low-order time-stepping methods in an iterative fashion, SDC can be seen as preconditioned Picard iteration for the collocation problem. Typically, a serial Gauss-Seidel-like preconditioner is used, computing updates for each collocation node one by one. The goal of this paper is to show how this process can be parallelized, so that all collocation nodes are updated simultaneously. The first strategy aims at finding parallel preconditioners for the Picard iteration and we test three choices using four different test problems. For the second strategy we diagonalize the quadrature matrix of the collocation problem directly. In order to integrate non-linear problems we employ simplified and inexact Newton methods. Here, we estimate the speed of convergence depending on the time-step size and verify our results using a non-linear diffusion problem.}},
+	author = {Speck, Robert},
+	title = {Parallelizing spectral deferred corrections across the method},
+  doi = {10.1007/s00791-018-0298-x},
+	journal = {Computing and Visualization in Science},
+	url = {https://doi.org/10.1007/s00791-018-0298-x},
+	year = {2018}
 }
 
 
