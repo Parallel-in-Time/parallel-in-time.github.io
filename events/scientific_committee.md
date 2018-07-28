@@ -16,7 +16,7 @@ Following the [bylaws](/events/bylaws.html) of the PinT workshop series, seven c
  - Debasmita Samaddar, Culham Centre for Fusion Energy, Culham, UK
  - Rolf Krause, University of Lugano, Switzerland
  - Daniel Ruprecht, University of Leeds, UK
- - Jacob Schroder, Lawrence Livermore National Laboratory, USA
+ - Jacob Schroder, University of New Mexico, USA
  - Robert Speck, Jülich Supercomputing Centre, Germany
 
 Former members:
