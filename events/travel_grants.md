@@ -26,6 +26,7 @@ These should include:
 
 Also, students traveling to one of the meetings via this grant are expected to present their work either
 on a poster or during a talk.
+This grant will be awarded only once per student.
 
 Details on the application procedure will be posted for each workshop separately on the respective local websites.
 
