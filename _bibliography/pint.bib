@@ -3401,6 +3401,15 @@ quantities of model systems.}},
 	year = {2018}
 }
 
+@unpublished{DamoreEtAl2018,
+  abstract = {{We present the mathematical framework of a Domain Decomposition (DD) aproach based on Parallel-in-Time methods (PinT-based approach) for solving the 4D-Var Data Assimilation (DA) model. The main outcome of the proposed DD PinT-based approach is: 1. DA acts as coarse/predictor for the local PDE-based forecasting model, increasing the accuracy of the local solution. 2. The fine and coarse solvers can be used in parallel, increasing the efficiency of the algorithm.3. Data locality is preserved and data movement is reduced, increasing the software scalability. We provide the mathematical framework including convergence analysis and error propagation.}},
+  author = {D'Amore, Luisa and Cacciapuoti, Rosalba},
+  title = {DD-DA PinT-based model: A Domain Decomposition approach in space and time, based on Parareal, for solving the 4D-Var Data Assimilation model},
+  howpublished = {arXiv:1807.07107 [math.NA]},
+  url = {https://arxiv.org/abs/1807.07107},
+  year = {2018},
+}
+
 @article{DyjaEtal2018,
 	abstract = {{We present an adaptive methodology for the solution of (linear and) nonlinear time dependent problems that is especially tailored for massively parallel computations. The basic concept is to solve for large blocks of space-time unknowns instead of marching sequentially in time. The methodology is a combination of a computationally efficient implementation of a parallel-in-space-time finite element solver coupled with a posteriori space-time error estimates and a parallel mesh generator. While we focus on spatial adaptivity in this work, the methodology enables simultaneous adaptivity in both space and time domains. We explore this basic concept in the context of a variety of time steppers including $\Theta$-schemes and backward difference formulas. We specifically illustrate this framework with applications involving time dependent linear, quasi-linear, and semilinear diffusion equations. We focus on investigating how the coupled space-time refinement indicators for this class of problems affect spatial adaptivity. Finally, we show good scaling behavior up to 150,000 processors on the NCSA Blue Waters machine. This conceptually simple methodology enables scaling on next generation multicore machines by simultaneously solving for a large number of timesteps, and reducing computational overhead by locally refining spatial blocks that can track localized features. This methodology also opens up the possibility of efficiently incorporating adjoint equations for error estimators and inverse design problems, since blocks of space-time are simultaneously solved and stored in memory.}},
 	author = {Robert Dyja and Baskar Ganapathysubramanian and Kristoffer G. van der Zee},
