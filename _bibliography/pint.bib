@@ -2923,14 +2923,6 @@ a performance model that, for a multigrid-in-time solver, makes the decision on 
          year = {2016},
 } 
 
-@unpublished{PagesEtAl2016,
-	author = {Pages, Gilles and Pironneau, Olivier and Sall, Guillaume},
-	title = {The Parareal Algorithm for American Options},
-	howpublished = {hal-01320331},
-	url = {http://hal.upmc.fr/hal-01320331},
-	year = {2016}
-}
-	
 @Inproceedings{RuprechtEtAl2016,
 	abstract = {{For the time-parallel Parareal method, there exists both numerical and analytical proof that it converges very well
 for diffusive problems like the heat equation. Many applications, however, do not lead to simple homogeneous
@@ -3634,6 +3626,33 @@ setups.}},
 	year = {2018},
 }
 
+@article{MiaoEtAl2018,
+    abstract = {{This paper presents and analyzes a parareal-in-time scheme for the incompressible non-isothermal Navier–Stokes equations with Boussinesq approximation. Standard finite element method is adopted for the spatial discretization.The proposed algorithm is proved to be unconditional stability. The convergence factor of iteration error for the velocity and temperature is given at time-continuous case. It theoretically demonstrates the superlinearly convergence of the parareal iteration combined with finite element method for incompressible non-isothermal flows. Finally, several numerical experiments that confirm feasibility and applicability of the algorithm perform well as expected.}},
+  author = {Zhen Miao and Yao-Lin Jiang and Yun-Bo Yang},
+  title = {Convergence analysis of a parareal-in-time algorithm for the incompressible non-isothermal flows},
+  journal = {International Journal of Computer Mathematics},
+  volume = {0},
+  number = {0},
+  pages = {1--18},
+  year  = {2018},
+  doi = {10.1080/00207160.2018.1498484},
+  url = {https://doi.org/10.1080/00207160.2018.1498484},
+}
+
+
+@article{PagesEtAl2018,
+  abstract = {{With parallelism in mind we investigate the parareal method for American contracts, both theoretically and numerically. Least-square Monte Carlo (LSMC) and parareal time decomposition with two or more levels are used, leading to an efficient parallel implementation which scales linearly with the number of processors and is appropriate to any multiprocessor-memory architecture in its multilevel version. We prove $L^2$ superlinear convergence for an LSMC backward in time computation of American contracts, when the conditional expectations are known, i.e., before Monte Carlo discretization. The argument provides also a tool to analyze the multilevel parareal algorithm; in all cases the computing time is increased only by a constant factor, compared to the sequential algorithm on the finest grid, and speedup is guaranteed when the number of processors is larger than that constant. A numerical implementation confirms the theoretical error estimates.}},
+  author = {Pagès, G. and Pironneau, O. and Sall, G.},
+  title = {The Parareal Algorithm for American Options},
+  journal = {SIAM Journal on Financial Mathematics},
+  volume = {9},
+  number = {3},
+  pages = {966--993},
+  year = {2018},
+  doi = {10.1137/17M1138832},
+  url = {https://doi.org/10.1137/17M1138832},
+}
+
 @article{Ruprecht2018,
 	abstract = {{The paper derives and analyses the (semi-)discrete dispersion relation of the Parareal parallel-in-time integration method. It investigates Parareal's wave propagation characteristics with the aim to better understand what causes the well documented stability problems for hyperbolic equations. The analysis shows that the instability is caused by convergence of the amplification factor to the exact value from above for medium to high wave numbers. Phase errors in the coarse propagator are identified as the culprit, which suggests that specifically tailored coarse level methods could provide a remedy.}},
 	author = {Ruprecht, D.},
@@ -3658,6 +3677,15 @@ setups.}},
   number = {1},
   pages = {45 -- 57},
 	year = {2018},
+}
+
+@unpublished{SamaeyEtAl2018,
+  abstract = {{We present the application of a micro/macro parareal algorithm for a 1-D energy balance climate model with discontinuous and non-monotone coefficients and forcing terms. The micro/macro parareal method uses a coarse propagator, based on a (macroscopic) 0-D approximation of the underlying (microscopic) 1-D model. We compare the performance of the method using different versions of the macro model, as well as different numerical schemes for the micro propagator, namely an explicit Euler method with constant stepsize and an adaptive library routine. We study convergence of the method and the theoretical gain in computational time in a realization on parallel processors. We show that, in this example and for all settings, the micro/macro parareal method converges in fewer iterations than the number of used parareal subintervals, and that a theoretical gain in performance of up to 10 is possible.}},
+  author = {Giovanni Samaey and Thomas Slawig},
+  title = {A micro/macro parallel-in-time (parareal) algorithm applied to a climate model with discontinuous non-monotone coefficients and oscillatory forcing},
+  howpublished = {arXiv:1806.04442 [math.NA]},
+  url = {https://arxiv.org/abs/1806.04442},
+  year = {2018},
 }
 
 @article{Speck2018,
