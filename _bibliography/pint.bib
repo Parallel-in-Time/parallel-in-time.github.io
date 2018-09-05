@@ -3495,8 +3495,8 @@ setups.}},
 }
 
 @article{HessenthalerEtAl2018,
-	abstract = {This paper presents some recent advances for parallel‐in‐time methods applied to linear elasticity. With recent computer architecture changes leading to stagnant clock speeds, but ever increasing numbers of cores, future speedups will be available through increased concurrency. Thus, sequential algorithms, such as time stepping, will suffer a bottleneck. This paper explores multigrid reduction in time (MGRIT) for an important application area, linear elasticity. Previously, efforts at parallel‐in‐time for elasticity have experienced difficulties, for example, the beating phenomenon. As a result, practical parallel‐in‐time algorithms for this application area currently do not exist. This paper proposes some solutions made possible by MGRIT (e.g., slow temporal coarsening and FCF‐relaxation) and, more importantly, a different formulation of the problem that is more amenable to parallel‐in‐time methods. Using a recently developed convergence theory for MGRIT and Parareal, we show that the changed formulation of the problem avoids the instability issues and allows the reduction of the error using two temporal grids. We then extend our approach to the multilevel case, where we demonstrate how slow temporal coarsening improves convergence. The paper ends with supporting numerical results showing a practical algorithm enjoying speedup benefits over the sequential algorithm.},
-	author = {Hessenthaler A. and Nordsletten D. and Röhrle O. and Schroder J. B. and Falgout R. D.},
+	abstract = {{This paper presents some recent advances for parallel‐in‐time methods applied to linear elasticity. With recent computer architecture changes leading to stagnant clock speeds, but ever increasing numbers of cores, future speedups will be available through increased concurrency. Thus, sequential algorithms, such as time stepping, will suffer a bottleneck. This paper explores multigrid reduction in time (MGRIT) for an important application area, linear elasticity. Previously, efforts at parallel‐in‐time for elasticity have experienced difficulties, for example, the beating phenomenon. As a result, practical parallel‐in‐time algorithms for this application area currently do not exist. This paper proposes some solutions made possible by MGRIT (e.g., slow temporal coarsening and FCF‐relaxation) and, more importantly, a different formulation of the problem that is more amenable to parallel‐in‐time methods. Using a recently developed convergence theory for MGRIT and Parareal, we show that the changed formulation of the problem avoids the instability issues and allows the reduction of the error using two temporal grids. We then extend our approach to the multilevel case, where we demonstrate how slow temporal coarsening improves convergence. The paper ends with supporting numerical results showing a practical algorithm enjoying speedup benefits over the sequential algorithm.}},
+	author = {Hessenthaler, A. and Nordsletten, D. and Röhrle, O. and Schroder, J. B. and Falgout, R. D.},
 	doi = {10.1002/nla.2155},
 	journal = {Numerical Linear Algebra with Applications},
 	number = {3},
@@ -3624,6 +3624,18 @@ setups.}},
 	doi = {10.1016/j.jcp.2018.04.056},
 	url = {https://doi.org/10.1016/j.jcp.2018.04.056},
 	year = {2018},
+}
+
+@article{MeleEtAl2018,
+  abstract = {{We address the development of a modular implementation of the MGRIT (MultiGrid-In-Time) algorithm to solve linear and nonlinear systems that arise from the discretization of evolutionary models with a parallel-in-time approach in the context of the PETSc (the Portable, Extensible Toolkit for Scientific computing) library. Our aim is to give the opportunity of predicting the performance gain achievable when using the MGRIT approach instead of the Time Stepping integrator (TS). To this end, we analyze the performance parameters of the algorithm that provide a-priori the best number of processing elements and grid levels to use to address the scaling of MGRIT, regarded as a parallel iterative algorithm proceeding along the time dimension.}},
+  author = {Mele, Valeria and Constantinescu, Emil M. and Carracciuolo, Luisa and D'Amore, Luisa},
+  title = {{A PETSc parallel-in-time solver based on MGRIT algorithm}},
+  journal = {Concurrency and Computation: Practice and Experience}, 
+  volume = {0},
+  number = {0},
+  pages = {e4928},
+  doi = {10.1002/cpe.4928},
+  url = {https://dx.doi.org/10.1002/cpe.4928},
 }
 
 @article{MiaoEtAl2018,
