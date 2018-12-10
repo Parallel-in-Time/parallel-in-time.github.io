@@ -19,4 +19,4 @@ members_retired:
   - name: Andreas Kreienbuhl
 short_desc:  People at LBNL working on projects related to PFASST
 ---
-This research team is part of the [Center for Computational Sciences and Engineering](https://ccse.lbl.gov/index.html)  at [Lawrence Berkeley National Lab](https://www.lbl.gov). They maintain the _libpfasst_ library of routines for implementing PFASST and SDC methods.
+This research team is centered at the  [Lawrence Berkeley National Lab](https://www.lbl.gov). They maintain the _libpfasst_ library of routines for implementing PFASST and SDC methods.
