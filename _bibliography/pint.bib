@@ -3053,13 +3053,16 @@ quantities of model systems.}},
 }
 
 @article{BadiaEtAl2017,
-	abstract = {{Abstract In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential equations. The approach is based on an efficient multilevel solver of the Schur complement related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method. Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton method over the global nonlinear ODE, using the multilevel Schur complement solver at every nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational resources to solve for more time steps the same problem.}},
+	abstract = {{In this work, we propose two-level space-time domain decomposition preconditioners for parabolic problems discretized using finite elements. They are motivated as an extension to space-time of balancing domain decomposition by constraints preconditioners. The key ingredients to be defined are the subassembled space and operator, the coarse degrees of freedom (DOFs) in which we want to enforce continuity among subdomains at the preconditioner level, and the transfer operator from the subassembled to the original finite element space. With regard to the subassembled operator, a perturbation of the time derivative is needed to end up with a well-posed preconditioner. The set of coarse DOFs includes the time average (at the space-time subdomain) of classical space constraints plus new constraints between consecutive subdomains in time. Numerical experiments show that the proposed schemes are weakly scalable in time, i.e., we can efficiently exploit increasing computational resources to solve more time steps in the same total elapsed time. Further, the scheme is also weakly space-time scalable, since it leads to asymptotically constant iterations when solving larger problems both in space and time. Excellent wall clock time weak scalability is achieved for space-time parallel solvers on some thousands of cores.}},
 	author = {Santiago Badia and Marc Olm},
-	title = {Nonlinear parallel-in-time Schur complement solvers for ordinary differential equations},
-	journal = {Journal of Computational and Applied Mathematics},
+	title = {Space-Time Balancing Domain Decomposition},
+	journal = {SIAM Journal on Scientific Computing},
+        volume = {39},
+        number = {2},
+        pages = {C194-C213},
 	year = {2017},
-	url = {https://doi.org/10.1016/j.cam.2017.09.033},
-	doi = {10.1016/j.cam.2017.09.033},
+	url = {https://doi.org/10.1137/16M1074266},
+	doi = {10.1137/16M1074266}
 }
 
 @article{BelliveauHaber2017,
@@ -3369,6 +3372,18 @@ quantities of model systems.}},
 % 
 % 2018
 % 
+
+@article{BadiaEtAl2018,
+	abstract = {{Abstract In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential equations. The approach is based on an efficient multilevel solver of the Schur complement related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method. Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton method over the global nonlinear ODE, using the multilevel Schur complement solver at every nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational resources to solve for more time steps the same problem.}},
+	author = {Santiago Badia and Marc Olm},
+	title = {Nonlinear parallel-in-time Schur complement solvers for ordinary differential equations},
+	journal = {Journal of Computational and Applied Mathematics},
+        volume = {344},
+        pages = {794-806},
+	year = {2018},
+	url = {https://doi.org/10.1016/j.cam.2017.09.033},
+	doi = {10.1016/j.cam.2017.09.033}
+}
 
 @inproceedings{Benedusi2016,
 	title={{A Parallel Multigrid Solver for Time--periodic Incompressible Navier--Stokes Equations in 3D}},
