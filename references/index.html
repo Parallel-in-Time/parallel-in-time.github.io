@@ -174,9 +174,100 @@
 
 
 
+  <h2 id="year2019" class="year">2019 <span class="count-stat"></span></h2>
+
+  <ol class="bibliography"></ol>
+  <div class="row">
+  <div class="col-md-offset-4 col-md-4 col-sm-offset-2 col-sm-8 col-xs-12">
+    <div class="btn-group btn-group-sm btn-group-justified center-block" role="group" aria-label="...">
+      <a href="#" role="button" class="btn btn-default btn-sm">
+        <i class="fa fa-fw fa-arrow-up"></i>
+        top
+      </a>
+      <div class="btn-group btn-group-sm year-btn-group hidden" role="group">
+        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          Years
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu years" role="menu">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <h2 id="year2018" class="year">2018 <span class="count-stat"></span></h2>
 
   <ol class="bibliography"><li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          BadiaEtAl2018
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseBadiaEtAl2018Bibtex"
+                    aria-expanded="false" aria-controls="collapseBadiaEtAl2018Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalBadiaEtAl2018Abstract"
+                    aria-expanded="false" aria-controls="modalBadiaEtAl2018Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="BadiaEtAl2018">S. Badia and M. Olm, “Nonlinear parallel-in-time Schur complement solvers for ordinary differential equations,” <i>Journal of Computational and Applied Mathematics</i>, vol. 344, pp. 794–806, 2018 [Online]. Available at: <a href="https://doi.org/10.1016/j.cam.2017.09.033" target="_blank">https://doi.org/10.1016/j.cam.2017.09.033</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseBadiaEtAl2018Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{BadiaEtAl2018,
+  author = {Badia, Santiago and Olm, Marc},
+  title = {Nonlinear parallel-in-time Schur complement solvers for ordinary differential equations},
+  journal = {Journal of Computational and Applied Mathematics},
+  volume = {344},
+  pages = {794-806},
+  year = {2018},
+  url = {https://doi.org/10.1016/j.cam.2017.09.033},
+  doi = {10.1016/j.cam.2017.09.033}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalBadiaEtAl2018Abstract" tabindex="-1" role="dialog" aria-labelledby="modalBadiaEtAl2018AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalBadiaEtAl2018AbstractTitle">
+            Abstract for BibTeX entry <code>BadiaEtAl2018</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          Abstract In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential equations. The approach is based on an efficient multilevel solver of the Schur complement related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method. Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton method over the global nonlinear ODE, using the multilevel Schur complement solver at every nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational resources to solve for more time steps the same problem.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
   <div>
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
@@ -2631,7 +2722,7 @@ setups.
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="BadiaEtAl2017">S. Badia and M. Olm, “Nonlinear parallel-in-time Schur complement solvers for ordinary differential equations,” <i>Journal of Computational and Applied Mathematics</i>, 2017 [Online]. Available at: <a href="https://doi.org/10.1016/j.cam.2017.09.033" target="_blank">https://doi.org/10.1016/j.cam.2017.09.033</a></span>
+      <span id="BadiaEtAl2017">S. Badia and M. Olm, “Space-Time Balancing Domain Decomposition,” <i>SIAM Journal on Scientific Computing</i>, vol. 39, no. 2, pp. C194–C213, 2017 [Online]. Available at: <a href="https://doi.org/10.1137/16M1074266" target="_blank">https://doi.org/10.1137/16M1074266</a></span>
     </div>
   </div>
   <div class="collapse" id="collapseBadiaEtAl2017Bibtex">
@@ -2639,11 +2730,14 @@ setups.
       <div class="col-md-12">
         <pre class="abstract">@article{BadiaEtAl2017,
   author = {Badia, Santiago and Olm, Marc},
-  title = {Nonlinear parallel-in-time Schur complement solvers for ordinary differential equations},
-  journal = {Journal of Computational and Applied Mathematics},
+  title = {Space-Time Balancing Domain Decomposition},
+  journal = {SIAM Journal on Scientific Computing},
+  volume = {39},
+  number = {2},
+  pages = {C194-C213},
   year = {2017},
-  url = {https://doi.org/10.1016/j.cam.2017.09.033},
-  doi = {10.1016/j.cam.2017.09.033}
+  url = {https://doi.org/10.1137/16M1074266},
+  doi = {10.1137/16M1074266}
 }
 </pre>
       </div>
@@ -2660,7 +2754,7 @@ setups.
           </h4>
         </div>
         <div class="modal-body">
-          Abstract In this work, we propose a parallel-in-time solver for linear and nonlinear ordinary differential equations. The approach is based on an efficient multilevel solver of the Schur complement related to a multilevel time partition. For linear problems, the scheme leads to a fast direct method. Next, two different strategies for solving nonlinear ODEs are proposed. First, we consider a Newton method over the global nonlinear ODE, using the multilevel Schur complement solver at every nonlinear iteration. Second, we state the global nonlinear problem in terms of the nonlinear Schur complement (at an arbitrary level), and perform nonlinear iterations over it. Numerical experiments show that the proposed schemes are weakly scalable, i.e., we can efficiently exploit increasing computational resources to solve for more time steps the same problem.
+          In this work, we propose two-level space-time domain decomposition preconditioners for parabolic problems discretized using finite elements. They are motivated as an extension to space-time of balancing domain decomposition by constraints preconditioners. The key ingredients to be defined are the subassembled space and operator, the coarse degrees of freedom (DOFs) in which we want to enforce continuity among subdomains at the preconditioner level, and the transfer operator from the subassembled to the original finite element space. With regard to the subassembled operator, a perturbation of the time derivative is needed to end up with a well-posed preconditioner. The set of coarse DOFs includes the time average (at the space-time subdomain) of classical space constraints plus new constraints between consecutive subdomains in time. Numerical experiments show that the proposed schemes are weakly scalable in time, i.e., we can efficiently exploit increasing computational resources to solve more time steps in the same total elapsed time. Further, the scheme is also weakly space-time scalable, since it leads to asymptotically constant iterations when solving larger problems both in space and time. Excellent wall clock time weak scalability is achieved for space-time parallel solvers on some thousands of cores.
         </div>
       </div>
     </div>
