@@ -23,4 +23,12 @@ no_lead: true
 
 The Eighth Parallel-in-time Integration Workshop will be held from 20 to 24 May 2019 at the [Institute for Advanced Studies](http://www.uni-bielefeld.de/(en)/ZiF/Allgemeines/index.html) in [Bielefeld, Germany](https://goo.gl/maps/YiSDjkzd7qq).
 
-More information will follow in due time.
+We gladly confirmed the following invited speakers:
+
+ - Dr Carmen Rodrigo, University of Zaragosa
+ - Prof Eric Aubanel, University of New Brunswick
+ - Dr Marie-Therese Wolfram, University of Warwick
+ - Dr Jemma Shipton, Imperial College London
+ - Dr Oliver Rain, Robert Bosch GmbH
+
+Please contact the organizers if you would like to attend! We will then arrange for a formal invite being sent to you. 
