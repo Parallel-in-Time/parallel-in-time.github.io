@@ -25,7 +25,7 @@ The Eighth Parallel-in-time Integration Workshop will be held from 20 to 24 May 
 
 We gladly confirmed the following invited speakers:
 
- - Dr Carmen Rodrigo, University of Zaragosa
+ - Dr Carmen Rodrigo, University of Zaragoza
  - Prof Eric Aubanel, University of New Brunswick
  - Dr Marie-Therese Wolfram, University of Warwick
  - Dr Jemma Shipton, Imperial College London
