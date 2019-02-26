@@ -3436,6 +3436,17 @@ quantities of model systems.}},
   year = {2018},
 }
 
+@inproceedings{DuanEtAl2018, 
+	abstract={The performance of parareal-in-time algorithms is determined on the number of sequential, coarse step iterations. A common tradeoff in designing an efficient parareal-in-time algorithm is between accuracy of the coarse solver and the number of iterations. Traditional parareal implementation for the power system simulation can also have difficulties handling complex power systems. In this paper, we propose a Krylov subspace enhanced parareal algorithm to reduce the number of coarse iterations. The proposed approach is demonstrated on a single-machine-infinite-bus system and the IEEE 10-machine 39-bus system. Noticeable decrease of number of iterations is observed in both cases.}, 
+	author={N. {Duan} and S. {Simunovic} and A. {Dimitrovski} and K. {Sun}}, 
+	booktitle={2018 IEEE Power Energy Society General Meeting (PESGM)}, 
+	title={Improving the Convergence Rate of Parareal-in-time Power System Simulation using the {K}rylov Subspace}, 
+	year={2018}, 
+	pages={1-5}, 
+	doi={10.1109/PESGM.2018.8586354}, 
+	url = {https://dx.doi.org/10.1109/PESGM.2018.8586354}
+}
+
 @article{DyjaEtal2018,
 	abstract = {{We present an adaptive methodology for the solution of (linear and) nonlinear time dependent problems that is especially tailored for massively parallel computations. The basic concept is to solve for large blocks of space-time unknowns instead of marching sequentially in time. The methodology is a combination of a computationally efficient implementation of a parallel-in-space-time finite element solver coupled with a posteriori space-time error estimates and a parallel mesh generator. While we focus on spatial adaptivity in this work, the methodology enables simultaneous adaptivity in both space and time domains. We explore this basic concept in the context of a variety of time steppers including $\Theta$-schemes and backward difference formulas. We specifically illustrate this framework with applications involving time dependent linear, quasi-linear, and semilinear diffusion equations. We focus on investigating how the coupled space-time refinement indicators for this class of problems affect spatial adaptivity. Finally, we show good scaling behavior up to 150,000 processors on the NCSA Blue Waters machine. This conceptually simple methodology enables scaling on next generation multicore machines by simultaneously solving for a large number of timesteps, and reducing computational overhead by locally refining spatial blocks that can track localized features. This methodology also opens up the possibility of efficiently incorporating adjoint equations for error estimators and inverse design problems, since blocks of space-time are simultaneously solved and stored in memory.}},
 	author = {Robert Dyja and Baskar Ganapathysubramanian and Kristoffer G. van der Zee},
