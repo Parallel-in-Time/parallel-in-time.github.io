@@ -3498,6 +3498,15 @@ setups.}},
 	year = {2018}
 }
 
+@unpublished{GanderEtAl2018b,
+	abstract = {{The Parareal algorithm, which is related to multiple shooting, was introduced for solving evolution problems in a time-parallel manner. The algorithm was then extended to solve time-periodic problems. We are interested here in time-periodic systems which are forced with quickly-switching discontinuous inputs. Such situations occur, e.g., in power engineering when electric devices are excited with a pulse-width-modulated signal. In order to solve those problems numerically we consider a recently introduced modified Parareal method with reduced coarse dynamics. Its main idea is to use a low-frequency smooth input for the coarse problem, which can be obtained, e.g., from Fourier analysis. Based on this approach, we present and analyze a new Parareal algorithm for time-periodic problems with highly-oscillatory discontinuous sources. We illustrate the performance of the method via its application to the simulation of an induction machine.}},
+	author = {Martin J. Gander, Iryna Kulchytska-Ruchka, Sebastian Schöps},
+	title = {A New Parareal Algorithm for Time-Periodic Problems with Discontinuous Inputs},
+	howpublished = {arXiv:1810.12372 [math.NA]},
+	url = {https://arxiv.org/abs/1810.12372},
+	year = {2018},
+}
+
 @article{GanderEtAl2018_cvs,
   abstract = {{The parareal algorithm is by construction a two level method, and there are several ways to interpret the parareal algorithm to obtain multilevel versions. We first review the three main interpretations of the parareal algorithm as a two-level method, a direct one, one based on geometric multigrid and one based on algebraic multigrid. The algebraic multigrid interpretation leads to the MGRIT algorithm, when using instead of only an F-smoother, a so called   FCF -smoother. We show that this can be interpreted at the level of the parareal algorithm as generous overlap in time. This allows us to generalize the method to even larger overlap, corresponding in MGRIT to   F(CF)ν -smoothing,   ν >=1 , and we prove two new convergence results for such algorithms in the fully non-linear setting: convergence in a finite number of steps, becoming smaller when   ν  increases, and a general superlinear convergence estimate for this generalized version of MGRIT. We illustrate our results with numerical experiments, both for linear and non-linear systems of ordinary and partial differential equations. Our results show that overlap only sometimes leads to faster algorithms.}},
   author = {Gander, Martin J. and Kwok, Felix and Zhang, Hui},
