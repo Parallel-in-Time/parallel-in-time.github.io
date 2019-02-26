@@ -3538,6 +3538,16 @@ setups.}},
   year = {2018},
 }
 
+@unpublished{GoddenWathen2018,
+	abstract = {{McDonald, Pestana and Wathen (SIAM J. Sci. Comput. 40(2), pp. A2012-A1033, 2018) present a method for preconditioning of time-dependent PDEs via approximation by a nearby time-periodic problem, that is, they employ circulant-related matrices as preconditioners for the non-symmetric block Toeplitz matrices which arise from an all-at-once formulation. They suggest that such an approach might be efficiently implemented in parallel. 
+In this short article, we present parallel numerical results for their preconditioner which exhibit strong scaling. We also extend their preconditioner via a Neumann series approach, which also allows for efficient parallel execution. Our simple implementation (in C++ and MPI) is available at the Git repository PARALAAOMPI.}},
+	author = {Anthony Goddard and Andrew Wathen},
+	title = {A Note on Parallel Preconditioning for All-At-Once Evolutionary PDEs},
+	howpublished = {arXiv:1810.00615 [math.NA]},
+	url = {https://arxiv.org/abs/1810.00615},
+	year = {2018},
+}
+
 @article{GuentherEtAl2018,
 	abstract = {{In this paper, an adjoint solver for the multigrid in time software library XBraid is presented. XBraid provides a non-intrusive approach for simulating unsteady dynamics on multiple processors while parallelizing not only in space but also in the time domain. It applies an iterative multigrid reduction in time algorithm to existing spatially parallel classical time propagators and computes the unsteady solution parallel in time. Techniques from Automatic Differentiation are used to develop a consistent discrete adjoint solver which provides sensitivity information of output quantities with respect to design parameter changes. The adjoint code runs backwards through the primal XBraid actions and accumulates gradient information parallel in time. It is highly non-intrusive as existing adjoint time propagators can easily be integrated through the adjoint interface. The adjoint code is validated on advection-dominated flow with periodic upstream boundary condition. It provides similar strong scaling results as the primal XBraid solver and offers great potential for speeding up the overall computational costs for sensitivity analysis using multiple processors}},
 	author = {G\"unther, S. and Gauger, N. R. and Schroder, J. B.},
