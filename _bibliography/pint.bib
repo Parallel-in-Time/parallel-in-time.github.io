@@ -3098,15 +3098,6 @@ quantities of model systems.}},
 	year = {2017}
 }
 
-@unpublished{DeSterckEtAl2017,
-	abstract = {{We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.}},
-	author = {De Sterck, Hans and Falgout, Robert D. and Howse, Alexander J. M. and MacLachlan, Scott P. and Schroder, Jacob B.},
-	title = {Parallel-In-Time Multigrid With Adaptive Spatial Coarsening For The Linear Advection And Inviscid Burgers Equations},
-	url = {https://www.math.mun.ca/%7Esmaclachlan/research/MGRIT_hyp.pdf},
-	year = {2017}
-}
-
-
 @article{DobrevEtAl2017,
 	abstract = {{In this paper we develop a two-grid convergence theory for the parallel-in-time scheme known as multigrid reduction in time (MGRIT), as it is implemented in the open-source package [XBraid: Parallel Multigrid in Time, http://llnl.gov/casc/xbraid]. MGRIT is a scalable and multilevel approach to parallel-in-time simulations that nonintrusively uses existing time-stepping schemes, and in a specific two-level setting it is equivalent to the widely known parareal algorithm. The goal of this paper is twofold. First, we present a two-level MGRIT convergence analysis for linear problems where the spatial discretization matrix can be diagonalized, and then apply this analysis to our two basic model problems, the heat equation and the advection equation. One important assumption is that the coarse and fine time-grid propagators can be diagaonalized by the same set of eigenvectors, which is often the case when the same spatial discretization operator is used on the coarse and fine time grids. In many cases, the MGRIT algorithm is guaranteed to converge, and we demonstrate numerically that the theoretically predicted convergence rates are sharp in practice for our model problems. Second, we explore how the convergence of MGRIT compares to the stability of the chosen time-stepping scheme. In particular, we demonstrate that a stable time-stepping scheme does not necessarily imply convergence of MGRIT, although MGRIT with FCF-relaxation always converges for the diffusion dominated problems considered here.}},
 	author = {V. A. Dobrev and Tz. Kolev and N. A. Petersson and J. B. Schroder},
@@ -3394,6 +3385,16 @@ quantities of model systems.}},
 	organization={Springer}
 }
 
+@article{BorregalesEtAl2018,
+	abstract = {{In this work, we study the parallel-in-time iterative solution of coupled flow and geomechanics in porous media, modelled by a two-field formulation of Biot’s equations. In particular, we propose a new version of the fixed-stress splitting method, which has been widely used as solution method of these problems. This new approach forgets about the sequential nature of the temporal variable and considers the time direction as a further direction for parallelization. The method is partially parallel-in-time. We present a rigorous convergence analysis of the method and numerical experiments to demonstrate the robust behaviour of the algorithm.}},
+	author = {{Manuel Borregales and Kundan Kumar and Florin Adrian Radu and Carmen Rodrigo and Francisco José Gaspar}},
+	title = {{A partially parallel-in-time fixed-stress splitting method for Biot’s consolidation model}},
+	journal = {Computers & Mathematics with Applications},
+	year = {2018},
+	doi = {10.1016/j.camwa.2018.09.005},
+	url = {https://doi.org/10.1016/j.camwa.2018.09.005},
+}
+
 @article{Bu2018,
 	abstract = {{In this paper, we introduce a practical strategy to select an adaptive time step size suitable for the parareal algorithm designed to parallelize a numerical scheme for solving stiff initial value problems. For the adaptive time step size, a technique to detect stiffness of a given system is first considered since the step size will be chosen according to the extent of stiffness. Finally, the stiffness detection technique is applied to an initial prediction step of the parareal algorithm, and select an adaptive step size to each time interval according to the stiffness. Several numerical experiments demonstrate the efficiency of the proposed method.}},
 	author = {Sunyoung Bu},
@@ -3426,6 +3427,17 @@ quantities of model systems.}},
   year = {2018},
 }
 
+@inproceedings{DuanEtAl2018, 
+	abstract={The performance of parareal-in-time algorithms is determined on the number of sequential, coarse step iterations. A common tradeoff in designing an efficient parareal-in-time algorithm is between accuracy of the coarse solver and the number of iterations. Traditional parareal implementation for the power system simulation can also have difficulties handling complex power systems. In this paper, we propose a Krylov subspace enhanced parareal algorithm to reduce the number of coarse iterations. The proposed approach is demonstrated on a single-machine-infinite-bus system and the IEEE 10-machine 39-bus system. Noticeable decrease of number of iterations is observed in both cases.}, 
+	author={N. {Duan} and S. {Simunovic} and A. {Dimitrovski} and K. {Sun}}, 
+	booktitle={2018 IEEE Power Energy Society General Meeting (PESGM)}, 
+	title={Improving the Convergence Rate of Parareal-in-time Power System Simulation using the {K}rylov Subspace}, 
+	year={2018}, 
+	pages={1-5}, 
+	doi={10.1109/PESGM.2018.8586354}, 
+	url = {https://dx.doi.org/10.1109/PESGM.2018.8586354}
+}
+
 @article{DyjaEtal2018,
 	abstract = {{We present an adaptive methodology for the solution of (linear and) nonlinear time dependent problems that is especially tailored for massively parallel computations. The basic concept is to solve for large blocks of space-time unknowns instead of marching sequentially in time. The methodology is a combination of a computationally efficient implementation of a parallel-in-space-time finite element solver coupled with a posteriori space-time error estimates and a parallel mesh generator. While we focus on spatial adaptivity in this work, the methodology enables simultaneous adaptivity in both space and time domains. We explore this basic concept in the context of a variety of time steppers including $\Theta$-schemes and backward difference formulas. We specifically illustrate this framework with applications involving time dependent linear, quasi-linear, and semilinear diffusion equations. We focus on investigating how the coupled space-time refinement indicators for this class of problems affect spatial adaptivity. Finally, we show good scaling behavior up to 150,000 processors on the NCSA Blue Waters machine. This conceptually simple methodology enables scaling on next generation multicore machines by simultaneously solving for a large number of timesteps, and reducing computational overhead by locally refining spatial blocks that can track localized features. This methodology also opens up the possibility of efficiently incorporating adjoint equations for error estimators and inverse design problems, since blocks of space-time are simultaneously solved and stored in memory.}},
 	author = {Robert Dyja and Baskar Ganapathysubramanian and Kristoffer G. van der Zee},
@@ -3436,6 +3448,14 @@ quantities of model systems.}},
 	title = {Parallel-In-Space-Time, Adaptive Finite Element Framework for Nonlinear Parabolic Equations},
 	url = {https://doi.org/10.1137/16M108985X},
 	volume = {40},
+	year = {2018},
+}
+
+@unpublished{FalgoutEtAl2018,
+	abstract = {{The advent of exascale computing resources will leave many users with access to more computational resources than they can simultaneously use, i.e., billions of cores. This is especially true for time-dependent simulations that limit parallelism to the spatial domain. Multigrid Reduction in Time (MGRIT), a non-intrusive parallel-in-time solver, adds parallelism across the time steps to existing time dependent codes, allowing users to utilize a larger portion of the available computational resources and achieve a faster time to solution. In this paper, MGRIT is enhanced with Richardson extrapolation in a cost efficient way to produce a non-intrusive parallel-in-time method with improved accuracy. Overall, this leads to a large improvement in the accuracy per computational cost of the MGRIT algorithm.}},
+	author = {R. D. Falgout and T. A. Manteuffel and B. O'Neill and J. B. Schroder},
+	title = {Multigrid Reduction in Time with Richardson Extrapolation},
+	url = {http://www.math.unm.edu/~schroder/docs/FaMaOnSc2018.pdf},
 	year = {2018},
 }
 
@@ -3488,6 +3508,16 @@ setups.}},
 	year = {2018},
 }
 
+@article{FuWang2018,
+	abstract = {We develop a fast parareal finite difference method for space-time fractional partial differential equation. The method properly handles the heavy tail behavior in the numerical discretization, while retaining the numerical advantages of conventional parareal algorithm. At each time step, we explore the structure of the stiffness matrix to develop a matrix-free preconditioned fast Krylov subspace iterative solver for the finite difference method without resorting to any lossy compression. Consequently, the method has significantly reduced computational complexity and memory requirement. Numerical experiments show the strong potential of the method.},
+	author = {Fu, Hongfei and Wang, Hong},
+	title = {A Preconditioned Fast Parareal Finite Difference Method for Space-Time Fractional Partial Differential Equation},
+	journal = {Journal of Scientific Computing},
+	year = {2018},
+	doi = {10.1007/s10915-018-0835-2},
+	url = {https://doi.org/10.1007/s10915-018-0835-2},
+}
+
 @unpublished{GanderEtAl2018,
 	abstract = {{The Parareal algorithm allows to solve evolution problems exploiting parallelization in time. Its convergence and stability have been proved under the assumption of regular (smooth) inputs. We present and analyze here a new Parareal algorithm for ordinary differential equations which involve discontinuous right-hand sides. Such situations occur in various applications, e.g., when an electric device is supplied with a pulse-width-modulated signal. Our new Parareal algorithm uses a smooth input for the coarse problem with reduced dynamics. We derive error estimates that show how the input reduction influences the overall convergence rate of the algorithm. We support our theoretical results by numerical experiments, and also test our new Parareal algorithm in an eddy current simulation of an induction machine.}},
 	author = {{Gander}, M.~J. and {Kulchytska-Ruchka}, I. and {Niyonzima}, I. and 
@@ -3498,6 +3528,15 @@ setups.}},
 	year = {2018}
 }
 
+@unpublished{GanderEtAl2018b,
+	abstract = {{The Parareal algorithm, which is related to multiple shooting, was introduced for solving evolution problems in a time-parallel manner. The algorithm was then extended to solve time-periodic problems. We are interested here in time-periodic systems which are forced with quickly-switching discontinuous inputs. Such situations occur, e.g., in power engineering when electric devices are excited with a pulse-width-modulated signal. In order to solve those problems numerically we consider a recently introduced modified Parareal method with reduced coarse dynamics. Its main idea is to use a low-frequency smooth input for the coarse problem, which can be obtained, e.g., from Fourier analysis. Based on this approach, we present and analyze a new Parareal algorithm for time-periodic problems with highly-oscillatory discontinuous sources. We illustrate the performance of the method via its application to the simulation of an induction machine.}},
+	author = {Martin J. Gander, Iryna Kulchytska-Ruchka, Sebastian Schöps},
+	title = {A New Parareal Algorithm for Time-Periodic Problems with Discontinuous Inputs},
+	howpublished = {arXiv:1810.12372 [math.NA]},
+	url = {https://arxiv.org/abs/1810.12372},
+	year = {2018},
+}
+
 @article{GanderEtAl2018_cvs,
   abstract = {{The parareal algorithm is by construction a two level method, and there are several ways to interpret the parareal algorithm to obtain multilevel versions. We first review the three main interpretations of the parareal algorithm as a two-level method, a direct one, one based on geometric multigrid and one based on algebraic multigrid. The algebraic multigrid interpretation leads to the MGRIT algorithm, when using instead of only an F-smoother, a so called   FCF -smoother. We show that this can be interpreted at the level of the parareal algorithm as generous overlap in time. This allows us to generalize the method to even larger overlap, corresponding in MGRIT to   F(CF)ν -smoothing,   ν >=1 , and we prove two new convergence results for such algorithms in the fully non-linear setting: convergence in a finite number of steps, becoming smaller when   ν  increases, and a general superlinear convergence estimate for this generalized version of MGRIT. We illustrate our results with numerical experiments, both for linear and non-linear systems of ordinary and partial differential equations. Our results show that overlap only sometimes leads to faster algorithms.}},
   author = {Gander, Martin J. and Kwok, Felix and Zhang, Hui},
@@ -3506,6 +3545,16 @@ setups.}},
   doi = {10.1007/s00791-018-0297-y},
   url = {https://doi.org/10.1007/s00791-018-0297-y},
   year = {2018},
+}
+
+@unpublished{GoddenWathen2018,
+	abstract = {{McDonald, Pestana and Wathen (SIAM J. Sci. Comput. 40(2), pp. A2012-A1033, 2018) present a method for preconditioning of time-dependent PDEs via approximation by a nearby time-periodic problem, that is, they employ circulant-related matrices as preconditioners for the non-symmetric block Toeplitz matrices which arise from an all-at-once formulation. They suggest that such an approach might be efficiently implemented in parallel. 
+In this short article, we present parallel numerical results for their preconditioner which exhibit strong scaling. We also extend their preconditioner via a Neumann series approach, which also allows for efficient parallel execution. Our simple implementation (in C++ and MPI) is available at the Git repository PARALAAOMPI.}},
+	author = {Anthony Goddard and Andrew Wathen},
+	title = {A Note on Parallel Preconditioning for All-At-Once Evolutionary PDEs},
+	howpublished = {arXiv:1810.00615 [math.NA]},
+	url = {https://arxiv.org/abs/1810.00615},
+	year = {2018},
 }
 
 @article{GuentherEtAl2018,
@@ -3528,6 +3577,15 @@ setups.}},
 	url = {https://dx.doi.org/10.1002/nla.2155},
 	title = {Convergence of the multigrid reduction in time algorithm for the linear elasticity equations},
 	volume = {25},
+	year = {2018},
+}
+
+@unpublished{HessenthalerEtAl2018b,
+	abstract = {{This paper presents a multilevel convergence framework for multigrid-reduction-in-time (MGRIT) as a generalization of previous two-grid estimates. The framework provides a priori upper bounds on the convergence of MGRIT V- and F-cycles with different relaxation schemes by deriving the respective residual and error propagation operators. The residual and error operators are functions of the time stepping operator, analyzed directly and bounded in norm, both numerically and analytically. We present various upper bounds of different computational cost and varying sharpness. These upper bounds are complemented by proposing analytic formulae for the approximate convergence factor of V-cycle algorithms that take the number of fine grid time points, the temporal coarsening factors, and the eigenvalues of the time stepping operator as parameters.  The paper concludes with supporting numerical investigations of parabolic and hyperbolic model problems. We assess the sharpness of the bounds and the quality of the approximate convergence factors. Observations from these numerical investigations demonstrate the value of the proposed multilevel convergence framework for the design of a convergent MGRIT algorithm. We further highlight that observations in the literature are captured by the theory, including that two-level Parareal and multilevel MGRIT with F-relaxation do not yield scalable algorithms, that iteration counts increase with increasing numbers of levels, and the benefit of a stronger relaxation scheme. The theory also proves in a two-level setting, and confirms for multilevel, that L-stable Runge-Kutta schemes are more amendable to parallel-in-time integration with MGRIT than A-stable Runge-Kutta schemes.}},
+	author = {Andreas Hessenthaler and Ben S. Southworth and David Nordsletten and Oliver Röhrle and Robert D. Falgout and Jacob B. Schroder},
+	title = {Multilevel convergence analysis of multigrid-reduction-in-time},
+	howpublished = {arXiv:1812.11508 [math.NA]},
+	url = {https://arxiv.org/abs/1812.11508},
 	year = {2018},
 }
 
@@ -3584,6 +3642,19 @@ setups.}},
 	url = {https://doi.org/10.4236/jamp.2018.63046},
 	volume = {6},
 	year = {2018},
+}
+
+@article{LiangLin2018,
+	abstract = {{Cloth simulations, widely used in computer animation and apparel design, can be computationally expensive for real-time applications. Some parallelization techniques have been proposed for visual simulation of cloth using CPU or GPU clusters and often rely on parallelization using spatial domain decomposition techniques that have a large communication overhead. In this paper, we propose a novel time-domain parallelization technique that makes use of the two-level mesh representation to resolve the time-dependency issue and develop a practical algorithm to smooth the state transition from the corresponding coarse to fine meshes. A load estimation and a load balancing technique used in online partitioning are also proposed to maximize the performance acceleration. Our method achieves a nearly linear performance scaling on manycore clusters and outperforms spatial-domain parallelization on a diverse set of benchmarks.}},
+	author = {Liang, Junbang and Lin, Ming C.},
+	title = {Time-Domain Parallelization for Accelerating Cloth Simulation},
+	journal = {Computer Graphics Forum},
+	volume = {37},
+	number = {8},
+	pages = {21-34},
+	doi = {10.1111/cgf.13509},
+	url = {https://dx.doi.org/10.1111/cgf.13509},
+	year = {2018}
 }
 
 @Article{LunetEtAl2018,
@@ -3648,6 +3719,19 @@ setups.}},
 	doi = {10.1016/j.jcp.2018.04.056},
 	url = {https://doi.org/10.1016/j.jcp.2018.04.056},
 	year = {2018},
+}
+
+@article{MagoulesEtAl2018,
+	abstract = {{Asynchronous iterations have been investigated more and more for both scaling and fault-resilience purposes on high performance computing platforms. While so far, they have been exclusively applied within space domain decomposition frameworks, this paper advocates a novel application direction targeting time-decomposed time-parallel approaches. Specifically, an asynchronous iterative model is derived from the Parareal scheme, for which convergence and speedup analysis are then conducted. It turned out that Parareal and async-Parareal feature very close convergence conditions, asymptotically equivalent, including the finite-time termination property. Based on a computational cost model aware of unsteady communication delays, our speedup analysis shows the potential performance gain from asynchronous iterations, which is confirmed by some experimental cases of heat evolution on a homogeneous supercomputer. This primary work clearly suggests possible further benefits from asynchronous iterations.}},
+	author = {Magoulès, F. and Gbikpi-Benissan, G.},
+	title = {Asynchronous Parareal Time Discretization For Partial Differential Equations},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {40},
+	number = {6},
+	pages = {C704-C725},
+	year = {2018},
+	doi = {10.1137/17M1149225},
+	url = {https://doi.org/10.1137/17M1149225},
 }
 
 @article{MeleEtAl2018,
@@ -3828,6 +3912,99 @@ setups.}},
   url={https://doi.org/10.1002/nla.2220}
 }
 
+% 
+% 2019
+% 
+
+@unpublished{BrehierWang2019,
+	abstract = {{Parareal algorithms are studied for semilinear parabolic stochastic partial differential equations. These algorithms proceed as two-level integrators, with fine and coarse schemes, and have been designed to achieve a `parallel in real time' implementation. In this work, the fine integrator is given by the exponential Euler scheme. Two choices for the coarse integrator are considered: the linear implicit Euler scheme, and the exponential Euler scheme. 
+The influence on the performance of the parareal algorithm, of the choice of the coarse integrator, of the regularity of the noise, and of the number of parareal iterations, is investigated, with theoretical analysis results and with extensive numerical experiments.}},
+	author = {Charles-Edouard Bréhier and Xu Wang},
+	title = {On parareal algorithms for semilinear parabolic Stochastic PDEs},
+	howpublished = {arXiv:1902.05370 [math.NA]},
+	url = {https://arxiv.org/abs/1902.05370},
+	year = {2019},
+}
+
+@article{DohrEtAl2019,
+	abstract = {In this paper we introduce a new parallel solver for the weakly singular space–time boundary integral equation for the heat equation. The space–time boundary mesh is decomposed into a given number of submeshes. Pairs of the submeshes represent dense blocks in the system matrices, which are distributed among computational nodes by an algorithm based on a cyclic decomposition of complete graphs ensuring load balance. In addition, we employ vectorization and threading in shared memory to ensure intra-node efficiency. We present scalability experiments on different CPU architectures to evaluate the performance of the proposed parallelization techniques. All levels of parallelism allow us to tackle large problems and lead to an almost optimal speedup.},
+	author = {Stefan Dohr and Jan Zapletal and Günther Of and Michal Merta and Michal Kravčenko},
+	title = {A parallel space–time boundary element method for the heat equation},
+	journal = {Computers & Mathematics with Applications},
+	year = {2019},
+	doi = {https://doi.org/10.1016/j.camwa.2018.12.031},
+	url = {http://www.sciencedirect.com/science/article/pii/S0898122118307296},
+}
+
+@article{HowseEtAl2019,
+	abstract = {{We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.}},
+	author = {Howse, A. and Sterck, H. and Falgout, R. and MacLachlan, S. and Schroder, J.},
+	title = {Parallel-In-Time Multigrid with Adaptive Spatial Coarsening for The Linear Advection and Inviscid Burgers Equations},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {41},
+	number = {1},
+	pages = {A538-A565},
+	year = {2019},
+	doi = {10.1137/17M1144982},
+	url = {https://dx.doi.org/10.1137/17M1144982}
+}
+
+@unpublished{KrzysikEtAl2019,
+	abstract = {{We consider the parallel time integration of the linear advection equation with the Parareal and two-level multigrid-reduction-in-time (MGRIT) algorithms. Our aim is to develop a better understanding of the convergence behaviour of these algorithms for this problem, which is known to be poor relative to the diffusion equation, its model parabolic counterpart. Using Fourier analysis, we derive new convergence estimates for these algorithms which, in conjunction with existing convergence theory, provide insight into the origins of this poor performance. We then use this theory to explore improved coarse-grid time-stepping operators. For several high-order discretizations of the advection equation, we demonstrate that there exist non-standard coarse-grid time stepping operators that yield significant improvements over the standard choice of rediscretization.}},
+	author = {Oliver A. Krzysik, Hans De Sterck, Scott P. MacLachlan, Stephanie Friedhoff},
+	title = {On selecting coarse-grid operators for Parareal and MGRIT applied to linear advection},
+	howpublished = {arXiv:1902.07757 [math.NA]},
+	url = {https://arxiv.org/abs/1902.07757},
+	year = {2019},
+}
+
+@article{KwokOng2019,
+	abstract = {{Schwarz waveform relaxation (SWR) methods have been developed to solve a wide range of diffusion-dominated and reaction-dominated equations. The appeal of these methods stems primarily from their ability to use nonconforming space-time discretizations; SWR methods are consequently well-adapted for coupling models with highly varying spatial and time scales. The efficacy of SWR methods is questionable, however, since in each iteration, one propagates an error across the entire time interval. In this manuscript, we introduce an adaptive pipeline approach wherein one subdivides the computational domain into space-time blocks, and adaptively selects the waveform iterates which should be updated given a fixed number of computational workers. Our method is complementary to existing space and time parallel methods, and can be used to obtain additional speedup when the saturation point is reached for other types of parallelism. We analyze these waveform relaxation with adaptive pipelining (WRAP) methods to show convergence and the theoretical speedup that can be expected. Numerical experiments on solutions to the linear heat equation, the advection-diffusion equation, and a reaction-diffusion equation illustrate features and efficacy of WRAP methods for various transmission conditions.}},
+	author = {Kwok, F. and Ong, B.},
+	title = {Schwarz Waveform Relaxation with Adaptive Pipelining},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {41},
+	number = {1},
+	pages = {A339-A364},
+	year = {2019},
+	doi = {10.1137/17M115311X},
+	url = {https://doi.org/10.1137/17M115311X},
+}
+
+@article{LiEtAl2019,
+	abstract = {In this paper, we present a two-level space–time hybrid Schwarz preconditioner for GMRES based on the classical hybrid Schwarz method and the second-order backward differentiation formula. In the proposed method, the parabolic equations are solved in parallel on both of the space and time directions. Under some reasonable assumptions, the optimal convergence theory is developed for the proposed space–time method, i.e., the convergence rate is independent of the mesh parameters, the number of subdomains and the window size. Some numerical results are given to confirm the theory very well in terms of the convergence rate and accuracy. And the strong/weak scalability obtained with 4096 processors is also reported to show the efficiency of the proposed method.},
+	author = {Shishun Li and Rongliang Chen and Xinping Shao},
+	title = {Parallel two-level space–time hybrid Schwarz method for solving linear parabolic equations},
+	journal = {Applied Numerical Mathematics},
+	volume = {139},
+	pages = {120 - 135},
+	year = {2019},
+	doi = {10.1016/j.apnum.2019.01.016},
+	url = {https://doi.org/10.1016/j.apnum.2019.01.016},
+}
+
+@inproceedings{MeleEtAl2019,
+	abstract = {We herein describe the performance evaluation of a modular implementation of the MGRIT (MultiGrid-In-Time) algorithm within the context of the PETSc (the Portable, Extensible Toolkit for Scientific computing) library. Our aim is to give the PETSc users the opportunity of testing the MGRIT parallel-in-time approach as an alternative to the Time Stepping integrator (TS), when solving their problems arising from the discretization of linear evolutionary models. To this end, we analyzed the performance parameters of the algorithm in order to underline the relationship between the configuration factors and problem characteristics, intentionally overlooking any accuracy issue and spacial parallelism.},
+	author = {Mele, Valeria and Romano, Diego and Constantinescu, Emil M. and Carracciuolo, Luisa and D'Amore, Luisa},
+	editor = {Mencagli, Gabriele and B. Heras, Dora and Cardellini, Valeria and Casalicchio, Emiliano and Jeannot, Emmanuel and Wolf, Felix and Salis, Antonio and Schifanella, Claudio and Manumachu, Ravi Reddy and Ricci, Laura and Beccuti, Marco and Antonelli, Laura and Garcia Sanchez, Jos{\'e} Daniel and Scott, Stephen L.},
+	title = {Performance Evaluation for a PETSc Parallel-in-Time Solver Based on the MGRIT Algorithm},
+	booktitle = {Euro-Par 2018: Parallel Processing Workshops},
+	year = {2019},
+	publisher = {Springer International Publishing},
+	pages = {716--728},
+}
+
+@article{SamaddarEtAl2019,
+	abstract = {{This paper explores the application of the parareal algorithm to simulations of ELMs in ITER plasma. The primary focus of this research is identifying the parameters that lead to optimum performance. Since the plasma dynamics vary extremely fast during an ELM cycle, a straightforward application of the algorithm is not possible and a modification to the standard parareal correction is implemented. The size of the time chunks also have an impact on the performance and needs to be optimized. A computational gain of 7.8 is obtained with 48 processors to illustrate that the parareal algorithm can be successfully applied to ELM plasma.}},
+	author = {D. Samaddar and D.P. Coster and X. Bonnin and L.A. Berry and W.R. Elwasif and D.B. Batchelor},	
+	journal = {Computer Physics Communications},
+	title = {Application of the parareal algorithm to simulations of {ELM}s in {ITER} plasma},
+	volume = {235},
+	pages = {246 — 257},
+	year = {2019},
+	doi = {10.1016/j.cpc.2018.08.007},
+	url = {https://doi.org/10.1016/j.cpc.2018.08.007},
+}
 
 @article{SchreiberLoft2019,
   title={Exponential Integrators with Parallel-in-Time Rational Approximations for Shallow-Water Equations on the Rotating Sphere},
@@ -3837,6 +4014,3 @@ setups.}},
   publisher={Elsevier},
   notes={(in press)},
 }
-
-
-
