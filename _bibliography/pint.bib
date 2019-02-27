@@ -2749,14 +2749,6 @@ to the best performance}},
 	year={2016},
 }
 
-@unpublished{FalgoutEtAl2016_sisc,
-	author = {Falgout, R. D. and Manteuffel, T. A. and O'Neill, B. and Schroder, J. B.},
-	title = {MULTIGRID REDUCTION IN TIME FOR NONLINEAR PARABOLIC PROBLEMS},
-	howpublished = {LLNL},
-	url = {http://computation.llnl.gov/projects/parallel-time-integration-multigrid/mgrit_nonlinear_2016.pdf},
-	year = {2016},
-}
-
 @inproceedings{GahvariEtAl2016,
 	abstract = {{The traditional way to numerically solve time-dependent problems is to sequentially march through time, solving for one time step and then the next. The parallelism in this approach is limited to the spatial dimension, which is quickly exhausted, causing the gain from using more processors to solve a problem to diminish. One approach to overcome this barrier is to use methods that are parallel in time. These methods have the potential to achieve dramatically better performance compared to time-stepping approaches, but achieving this performance requires carefully choosing the amount of parallelism devoted to space versus the amount devoted to time. Here, we present
 a performance model that, for a multigrid-in-time solver, makes the decision on when to switch to parallel-in-time and on how much parallelism to devote to space vs. time. In our experiments, the model selects the best parallel configuration in most of our test cases and a configuration close to the best one in all other cases}},
@@ -2765,14 +2757,6 @@ a performance model that, for a multigrid-in-time solver, makes the decision on 
 	booktitle = {7th International Workshop on Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems},
 	doi = {10.1109/PMBS.2016.8},
 	url = {http://dx.doi.org/10.1109/PMBS.2016.8},
-	year = {2016}
-}
-
-@unpublished{GanderHalpern2016,
-	author = {Martin J. Gander and Laurence Halpern},
-	title = {Time Parallelization for Nonlinear Problems Based on Diagonalization},
-	howpublished={Preprint},
-	url = {https://www.unige.ch/~gander/Preprints/Halpern_MS3-1.pdf},
 	year = {2016}
 }
 
@@ -2810,12 +2794,15 @@ a performance model that, for a multigrid-in-time solver, makes the decision on 
           year={2016},
 }
 
-@unpublished{LecouvezEtAl2016,
-	author = {Lecouvez, M. and Falgout, R. and Woodward, C. and Top, P.},
-	title = {A Parallel Multigrid Reduction in Time Method for Power Systems},
-	howpublished = {LLNL-CONF-679148},
-	url = {http://www.osti.gov/scitech/biblio/1281664},
-	year = {2016}
+@inproceedings{Lecouvez2016,
+	abstract = {{This paper presents a fully multilevel approach to parallel in time solution of transient power system simulations. The method employs a multigrid reduction algorithm in time parallelized using the MPI distributed memory programming model. The method is demonstrated on a simple Single Machine Infinite Bus differential-algebraic equation model problem, for which speedup is obtained for as few as 8 processing cores on a problem with 10,000 time steps. Speedup of a factor of 13 is observed for a 100,000 step version of this simple problem. Based on these results, we expect significantly better speedup on larger problems where more work is available to each processor allowing greater amortization of the parallel communication.}}, 
+	author = {M. {Lecouvez} and R. D. {Falgout} and C. S. {Woodward} and P. {Top}}, 
+	booktitle = {2016 IEEE Power and Energy Society General Meeting (PESGM)}, 
+	title = {A parallel multigrid reduction in time method for power systems}, 
+	year = {2016}, 
+	pages = {1-5}, 
+	doi = {10.1109/PESGM.2016.7741520}, 
+	url = {https://dx.doi.org/10.1109/PESGM.2016.7741520}
 }
 
 @article{Lederman2016,
@@ -2939,30 +2926,6 @@ and geometry is explored.}},
         url = {http://dx.doi.org/10.1007/978-3-319-18827-0_37},
         title = {Parareal for Diffusion Problems with Space- and Time-Dependent Coefficients},
         year = {2016},
-}
-
-@unpublished{SchreiberEtAl2016,
-	abstract = {{Abstract
-This paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory PDEs, which
-is a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization in
-this solver allows us to significantly exceed the computing resources used by parallelization-in-space methods and
-results in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascale
-performance for weather prediction is that the strong scaling limit ? the parallel performance for a fixed problem size
-with an increasing number of processors ? saturates. A main avenue to circumvent this problem is to introduce new
-numerical techniques that take advantage of time parallelism. In this paper we use a time-parallel approximation that
-retains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the original
-problem into a large set of independent terms and (b) solving each of these terms independent of each other which
-can now be accomplished on a large number of HPC resources. Our results are conducted on up to 3586 cores for
-problem sizes with a parallelization-in-space scalability limited already on a single node. We gain significant reductions
-in the time-to-solution of 118.3 for spectral methods and 1503.0 for finite-difference methods with the parallelization-in-
-time approach. A developed and validated performance model gives the scalability limitations a-priory for this new
-approach and allows us to extrapolate the performance method towards large-scale system. This work has the potential
-to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied
-areas modelling oscillatory dominated problems.}},
-	author = {Schreiber, Martin and Peixoto, Pedro S. and Haut, Terry and Wingate, Beth},
-	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
-	url = {http://www.ime.usp.br/%7epedrosp/wp/wordpress/wp-content/uploads/2015/05/paper_2016_rexi_hpc.pdf},
-	year = {2016}
 }
 
 @inproceedings{SekineEtAl2016, 
@@ -3089,15 +3052,6 @@ quantities of model systems.}},
 	year = {2017}
 }
 
-@unpublished{BoltenEtAl2017b,
-	abstract = {{For time-dependent partial differential equations, parallel-in-time integration using the "parallel full approximation scheme in space and time" (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time-steps simultaneously using a space-time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as multigrid method and in this paper, we will use this multigrid formulation and in particular PFASST's iteration matrix to show that in the non-stiff as well as in the stiff limit PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time-steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.}},
-	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
-	title = {Asymptotic convergence of the parallel full approximation scheme in space and time for linear problems},
-	howpublished = {arXiv:1703.07120 [math.NA]},
-	url = {https://arxiv.org/abs/1703.07120},
-	year = {2017}
-}
-
 @article{DobrevEtAl2017,
 	abstract = {{In this paper we develop a two-grid convergence theory for the parallel-in-time scheme known as multigrid reduction in time (MGRIT), as it is implemented in the open-source package [XBraid: Parallel Multigrid in Time, http://llnl.gov/casc/xbraid]. MGRIT is a scalable and multilevel approach to parallel-in-time simulations that nonintrusively uses existing time-stepping schemes, and in a specific two-level setting it is equivalent to the widely known parareal algorithm. The goal of this paper is twofold. First, we present a two-level MGRIT convergence analysis for linear problems where the spatial discretization matrix can be diagonalized, and then apply this analysis to our two basic model problems, the heat equation and the advection equation. One important assumption is that the coarse and fine time-grid propagators can be diagaonalized by the same set of eigenvectors, which is often the case when the same spatial discretization operator is used on the coarse and fine time grids. In many cases, the MGRIT algorithm is guaranteed to converge, and we demonstrate numerically that the theoretically predicted convergence rates are sharp in practice for our model problems. Second, we explore how the convergence of MGRIT compares to the stability of the chosen time-stepping scheme. In particular, we demonstrate that a stable time-stepping scheme does not necessarily imply convergence of MGRIT, although MGRIT with FCF-relaxation always converges for the diffusion dominated problems considered here.}},
 	author = {V. A. Dobrev and Tz. Kolev and N. A. Petersson and J. B. Schroder},
@@ -3130,6 +3084,19 @@ quantities of model systems.}},
 	howpublished = {MIMS EPrint: 2017.17},
 	url = {http://eprints.ma.man.ac.uk/2550/01/covered/MIMS_ep2017_17.pdf},
 	year = {2017}
+}
+
+@inproceedings{GanderHalpern2017,
+	abstract = {The direct time parallelization method based on diagonalization is only applicable to linear problems. We propose here a new method based on diagonalization which permits the direct parallelization in time of a Newton iteration that works simultaneously over several time steps. We first explain the method for a scalar model problem, and then give a formulation for a nonlinear partial differential equation based on tensorization. We illustrate the methods with numerical experiments.},
+	author = {Gander, Martin J. and Halpern, Laurence},
+	editor = {Lee, Chang-Ock and Cai, Xiao-Chuan and Keyes, David E. and Kim, Hyea Hyun and Klawonn, Axel and Park, Eun-Jae and Widlund, Olof B.},
+	title = {Time Parallelization for Nonlinear Problems Based on Diagonalization},
+	booktitle = {Domain Decomposition Methods in Science and Engineering {XXIII}},
+	year = {2017},
+	publisher = {Springer International Publishing},
+	pages = {163--170},
+	doi = {10.1007/978-3-319-52389-7_15},
+	url = {https://doi.org/10.1007/978-3-319-52389-7_15}
 }
 
 @article{GasparRodrigo2017,
@@ -3217,12 +3184,16 @@ quantities of model systems.}},
 	year = {2017},
 }
 
-@unpublished{MerkelEtAl2017,
-	abstract = {{Recently, ParaExp was proposed for the time integration of linear hyperbolic problems. It splits the time interval of interest into sub-intervals and computes the solution on each sub-interval in parallel. The overall solution is decomposed into a particular solution defined on each sub-interval with zero initial conditions and a homogeneous solution propagated by the matrix exponential applied to the initial conditions. The efficiency of the method depends on fast approximations of this matrix exponential based on recent results from numerical linear algebra. This paper deals with the application of ParaExp in combination with Leapfrog to electromagnetic wave problems in time-domain. Numerical tests are carried out for a simple toy problem and a realistic spiral inductor model discretized by the Finite Integration Technique.}},
-	author = {M. Merkel and I. Niyonzima and S. Sch{\"o}ps},
-	title = {ParaExp using Leapfrog as Integrator for High-Frequency Electromagnetic Simulations},
-	howpublished = {arXiv:1705.08019v1 [math.NA] },
-	url = {https://arxiv.org/pdf/1705.08019.pdf},
+@article{MerkelEtAl2017,
+	abstract = {Abstract Recently, ParaExp was proposed for the time integration of linear hyperbolic problems. It splits the time interval of interest into subintervals and computes the solution on each subinterval in parallel. The overall solution is decomposed into a particular solution defined on each subinterval with zero initial conditions and a homogeneous solution propagated by the matrix exponential applied to the initial conditions. The efficiency of the method depends on fast approximations of this matrix exponential based on recent results from numerical linear algebra. This paper deals with the application of ParaExp in combination with Leapfrog to electromagnetic wave problems in time domain. Numerical tests are carried out for a simple toy problem and a realistic spiral inductor model discretized by the Finite Integration Technique.},
+	author = {Merkel, M. and Niyonzima, I. and Schöps, S.},
+	title = {ParaExp Using Leapfrog as Integrator for High-Frequency Electromagnetic Simulations},
+	journal = {Radio Science},
+	volume = {52},
+	number = {12},
+	pages = {1558-1569},
+	doi = {10.1002/2017RS006357},
+	url = {https://dx.doi.org/10.1002/2017RS006357},
 	year = {2017}
 }
 
@@ -3280,15 +3251,6 @@ quantities of model systems.}},
 	pages = {1094342016687625},
 	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
 	url = {http://dx.doi.org/10.1177/1094342016687625},
-	year = {2017}
-}
-
-@unpublished{SchoepsEtAl2017,
-	abstract = {In this contribution the usage of the Parareal method is proposed for the time-parallel solution of the eddy current problem. The method is adapted to the particular challenges of the problem that are related to the differential algebraic character due to non-conducting regions. It is shown how the necessary modification can be automatically incorporated by using a suitable time stepping method. The paper closes with a first demonstration of a simulation of a realistic four-pole induction machine model using Parareal.},
-	author = {Sch\"ops, Sebastian and Niyonzima, Innocent and Clemens, Markus},
-	title = {Parallel-In-Time Simulation of Eddy Current Problems Using Parareal},
-	howpublished = {arXiv:1706.05750v1 [cs.CE]},
-	url = {https://arxiv.org/abs/1706.05750},
 	year = {2017}
 }
 
@@ -3383,6 +3345,19 @@ quantities of model systems.}},
 	pages={265--273},
 	year={2016},
 	organization={Springer}
+}
+
+@article{BoltenEtAl2018,
+	abstract = {For time-dependent partial differential equations, parallel-in-time integration using the “parallel full approximation scheme in space and time” (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time steps simultaneously using a space–time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as a multigrid method. In this paper, we will use this multigrid formulation and, in particular, PFASST's iteration matrix to show that, in the nonstiff and stiff limit, PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.},
+	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
+	title = {Asymptotic convergence of the parallel full approximation scheme in space and time for linear problems},
+	journal = {Numerical Linear Algebra with Applications},
+	volume = {25},
+	number = {6},
+	pages = {e2208},
+	doi = {10.1002/nla.2208},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nla.2208},
+	year = {2018}
 }
 
 @article{BorregalesEtAl2018,
@@ -3789,6 +3764,32 @@ In this short article, we present parallel numerical results for their precondit
   year = {2018},
 }
 
+@article{SchoepsEtAl2018, 
+	abstract = {{In this paper, the usage of the Parareal method is proposed for the time-parallel solution of the eddy current problem. The method is adapted to the particular challenges of the problem that are related to the differential algebraic character due to non-conducting regions. It is shown how the necessary modification can be automatically incorporated by using a suitable time-stepping method. This paper closes with the first demonstration of a simulation of a realistic four-pole induction machine model using Parareal.}}, 
+	author = {S. {Schöps} and I. {Niyonzima} and M. {Clemens}}, 
+	journal = {IEEE Transactions on Magnetics}, 
+	title = {Parallel-In-Time Simulation of Eddy Current Problems Using Parareal}, 
+	year = {2018}, 
+	volume = {54}, 
+	number = {3}, 
+	pages = {1-4}, 
+	doi={10.1109/TMAG.2017.2763090}, 
+	url = {https://dx.doi.org/10.1109/TMAG.2017.2763090}
+}
+
+@article{SchreiberEtAl2018,
+    	abstract = {{This paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory partial differential equations, which is a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization in this solver allows us to significantly exceed the computing resources used by parallelization-in-space methods and results in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascale performance for weather prediction is that the strong scaling limit – the parallel performance for a fixed problem size with an increasing number of processors – saturates. A main avenue to circumvent this problem is to introduce new numerical techniques that take advantage of time parallelism. In this paper, we use a time-parallel approximation that retains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the original problem into a large set of independent terms and (b) solving each of these terms independently of each other which can now be accomplished on a large number of high-performance computing resources. Our results are conducted on up to 3586 cores for problem sizes with the parallelization-in-space scalability limited already on a single node. We gain significant reductions in the time-to-solution of 118.3× for spectral methods and 1503.0× for finite-difference methods with the parallelization-in-time approach. A developed and calibrated performance model gives the scalability limitations a priori for this new approach and allows us to extrapolate the performance of the method towards large-scale systems. This work has the potential to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied areas modelling oscillatory dominated problems.}},
+	author = {Martin Schreiber and Pedro S Peixoto and Terry Haut and Beth Wingate},
+	title ={Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
+	journal = {The International Journal of High Performance Computing Applications},
+	volume = {32},
+	number = {6},
+	pages = {913-933},
+	year = {2018},
+	doi = {10.1177/1094342016687625},
+	url = {https://doi.org/10.1177/1094342016687625},
+}
+
 @article{Speck2018,
 	abstract = {{In this paper we present two strategies to enable "parallelization across the method" for spectral deferred corrections (SDC). Using standard low-order time-stepping methods in an iterative fashion, SDC can be seen as preconditioned Picard iteration for the collocation problem. Typically, a serial Gauss-Seidel-like preconditioner is used, computing updates for each collocation node one by one. The goal of this paper is to show how this process can be parallelized, so that all collocation nodes are updated simultaneously. The first strategy aims at finding parallel preconditioners for the Picard iteration and we test three choices using four different test problems. For the second strategy we diagonalize the quadrature matrix of the collocation problem directly. In order to integrate non-linear problems we employ simplified and inexact Newton methods. Here, we estimate the speed of convergence depending on the time-step size and verify our results using a non-linear diffusion problem.}},
 	author = {Speck, Robert},
@@ -3867,21 +3868,6 @@ In this short article, we present parallel numerical results for their precondit
 	doi = {10.1007/s10543-018-0702-4},
 	url = {https://doi.org/10.1007/s10543-018-0702-4}
 }
-
-
-@article{SchmittEtAl2018,
-  title={A numerical study of a semi-Lagrangian Parareal method applied to the viscous Burgers equation},
-  author={Schmitt, A and Schreiber, M and Peixoto, P and Sch{\"a}fer, M},
-  journal={Computing and Visualization in Science},
-  volume={19},
-  number={1-2},
-  pages={45--57},
-  year={2018},
-  publisher={Springer},
-  doi={10.1007/s00791-018-0294-1},
-  url={https://doi.org/10.1007/s00791-018-0294-1}
-}
-
 
 @article{SchreiberEtAl2018,
   title={A parallel time integrator for solving the linearized shallow water equations on the rotating sphere},
