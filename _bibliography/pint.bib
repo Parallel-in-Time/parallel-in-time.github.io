@@ -3089,15 +3089,6 @@ quantities of model systems.}},
 	year = {2017}
 }
 
-@unpublished{BoltenEtAl2017b,
-	abstract = {{For time-dependent partial differential equations, parallel-in-time integration using the "parallel full approximation scheme in space and time" (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time-steps simultaneously using a space-time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as multigrid method and in this paper, we will use this multigrid formulation and in particular PFASST's iteration matrix to show that in the non-stiff as well as in the stiff limit PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time-steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.}},
-	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
-	title = {Asymptotic convergence of the parallel full approximation scheme in space and time for linear problems},
-	howpublished = {arXiv:1703.07120 [math.NA]},
-	url = {https://arxiv.org/abs/1703.07120},
-	year = {2017}
-}
-
 @article{DobrevEtAl2017,
 	abstract = {{In this paper we develop a two-grid convergence theory for the parallel-in-time scheme known as multigrid reduction in time (MGRIT), as it is implemented in the open-source package [XBraid: Parallel Multigrid in Time, http://llnl.gov/casc/xbraid]. MGRIT is a scalable and multilevel approach to parallel-in-time simulations that nonintrusively uses existing time-stepping schemes, and in a specific two-level setting it is equivalent to the widely known parareal algorithm. The goal of this paper is twofold. First, we present a two-level MGRIT convergence analysis for linear problems where the spatial discretization matrix can be diagonalized, and then apply this analysis to our two basic model problems, the heat equation and the advection equation. One important assumption is that the coarse and fine time-grid propagators can be diagaonalized by the same set of eigenvectors, which is often the case when the same spatial discretization operator is used on the coarse and fine time grids. In many cases, the MGRIT algorithm is guaranteed to converge, and we demonstrate numerically that the theoretically predicted convergence rates are sharp in practice for our model problems. Second, we explore how the convergence of MGRIT compares to the stability of the chosen time-stepping scheme. In particular, we demonstrate that a stable time-stepping scheme does not necessarily imply convergence of MGRIT, although MGRIT with FCF-relaxation always converges for the diffusion dominated problems considered here.}},
 	author = {V. A. Dobrev and Tz. Kolev and N. A. Petersson and J. B. Schroder},
@@ -3383,6 +3374,19 @@ quantities of model systems.}},
 	pages={265--273},
 	year={2016},
 	organization={Springer}
+}
+
+@article{BoltenEtAl2018,
+	abstract = {For time-dependent partial differential equations, parallel-in-time integration using the “parallel full approximation scheme in space and time” (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time steps simultaneously using a space–time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as a multigrid method. In this paper, we will use this multigrid formulation and, in particular, PFASST's iteration matrix to show that, in the nonstiff and stiff limit, PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.},
+	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
+	title = {Asymptotic convergence of the parallel full approximation scheme in space and time for linear problems},
+	journal = {Numerical Linear Algebra with Applications},
+	volume = {25},
+	number = {6},
+	pages = {e2208},
+	doi = {10.1002/nla.2208},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nla.2208},
+	year = {2018}
 }
 
 @article{BorregalesEtAl2018,
