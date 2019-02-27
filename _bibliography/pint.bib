@@ -3692,15 +3692,6 @@ In this short article, we present parallel numerical results for their precondit
 	Year = {2018},
 }
 
-@unpublished{NeumuellerSmears2018,
-	abstract = {{We present original time-parallel algorithms for the solution of the implicit Euler discretization of general linear parabolic evolution equations with time-dependent self-adjoint spatial operators. Motivated by the inf-sup theory of parabolic problems, we show that the standard nonsymmetric time-global system can be equivalently reformulated as an original symmetric saddle-point system that remains inf-sup stable with respect to the same natural parabolic norms. We then propose and analyse an efficient and readily implementable parallel-in-time preconditioner to be used with an inexact Uzawa method. The proposed preconditioner is non-intrusive and easy to implement in practice, and also features the key theoretical advantages of robust spectral bounds, leading to convergence rates that are independent of the number of time-steps, final time, or spatial mesh sizes, and also a theoretical parallel complexity that grows only logarithmically with respect to the number of time-steps. Numerical experiments with large-scale parallel computations show the effectiveness of the method, along with its good weak and strong scaling properties.}},
-	author = {Martin Neumueller and Iain Smears},
-	title = {Time-parallel iterative solvers for parabolic evolution equations},
-	howpublished = {arXiv:1802.08126v1 [math.NA]},
-	url = {https://arxiv.org/pdf/1802.08126.pdf},
-	year = {2018},
-}
-
 @article{NielsenEtAl2018,
 	abstract = {{In the strong scaling limit, the performance of conventional spatial domain decomposition techniques for the parallel solution of PDEs saturates. When sub-domains become small, halo-communication and other overhead come to dominate. A potential path beyond this scaling limit is to introduce domain-decomposition in time, with one such popular approach being the Parareal algorithm which has received a lot of attention due to its generality and potential scalability. Low efficiency, particularly on convection dominated problems, has however limited the adoption of the method. In this paper we demonstrate trough large-scale numerical experiments that it is possible not only to obtain time-parallel speedup on the non-linear shallow water wave equation, but also that we may obtain parallel acceleration beyond what is possible using conventional spatial domain-decomposition techniques alone. Two factors were essential in achieving this. First, for Parareal to converge on the hyperbolic problem we used an approximate Riemann solver as the preconditioner. This preconditioner introduces only dissipative errors with respect to the 3rd order accurate WENO-RK discretization used to solve the PDE system. The preconditoner is comparatively expensive and convergence is slow unless time-subdomains are short. We therefore introduce a new scheduler that we denote Communication Aware Adaptive Parareal (CAAP). CAAP increases obtainable speed-up by minimizing the time-subdomain length without making communication of time-subdomains too costly whilst also adaptively overlapping consecutive cycles of Parareal so to mitigate the impact of a relatively expensive coarse operator.}},
 	author = {Allan S. Nielsen and Gilles Brunner and Jan S. Hesthaven},
@@ -3982,6 +3973,19 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 	publisher = {Springer International Publishing},
 	pages = {716--728},
+}
+
+@article{NeumuellerSmears2019,
+	abstract = {{We present original time-parallel algorithms for the solution of the implicit Euler discretization of general linear parabolic evolution equations with time-dependent self-adjoint spatial operators. Motivated by the inf-sup theory of parabolic problems, we show that the standard nonsymmetric time-global system can be equivalently reformulated as an original symmetric saddle-point system that remains inf-sup stable with respect to the same natural parabolic norms. We then propose and analyse an efficient and readily implementable parallel-in-time preconditioner to be used with an inexact Uzawa method. The proposed preconditioner is non-intrusive and easy to implement in practice, and also features the key theoretical advantages of robust spectral bounds, leading to convergence rates that are independent of the number of time-steps, final time, or spatial mesh sizes, and also a theoretical parallel complexity that grows only logarithmically with respect to the number of time-steps. Numerical experiments with large-scale parallel computations show the effectiveness of the method, along with its good weak and strong scaling properties.}},
+	author = {Neumüller, M. and Smears, I.},
+	title = {Time-Parallel Iterative Solvers for Parabolic Evolution Equations},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {41},
+	number = {1},
+	pages = {C28-C51},
+	year = {2019},
+	doi = {10.1137/18M1172466},
+	url = {https://doi.org/10.1137/18M1172466},
 }
 
 @article{SamaddarEtAl2019,
