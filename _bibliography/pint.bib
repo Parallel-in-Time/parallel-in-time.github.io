@@ -3925,6 +3925,16 @@ In this short article, we present parallel numerical results for their precondit
 % 2019
 % 
 
+@unpublished{BrehierWang2019,
+	abstract = {{Parareal algorithms are studied for semilinear parabolic stochastic partial differential equations. These algorithms proceed as two-level integrators, with fine and coarse schemes, and have been designed to achieve a `parallel in real time' implementation. In this work, the fine integrator is given by the exponential Euler scheme. Two choices for the coarse integrator are considered: the linear implicit Euler scheme, and the exponential Euler scheme. 
+The influence on the performance of the parareal algorithm, of the choice of the coarse integrator, of the regularity of the noise, and of the number of parareal iterations, is investigated, with theoretical analysis results and with extensive numerical experiments.}},
+	author = {Charles-Edouard Bréhier and Xu Wang},
+	title = {On parareal algorithms for semilinear parabolic Stochastic PDEs},
+	howpublished = {arXiv:1902.05370 [math.NA]},
+	url = {https://arxiv.org/abs/1902.05370},
+	year = {2019},
+}
+
 @article{SamaddarEtAl2019,
 	abstract = {{This paper explores the application of the parareal algorithm to simulations of ELMs in ITER plasma. The primary focus of this research is identifying the parameters that lead to optimum performance. Since the plasma dynamics vary extremely fast during an ELM cycle, a straightforward application of the algorithm is not possible and a modification to the standard parareal correction is implemented. The size of the time chunks also have an impact on the performance and needs to be optimized. A computational gain of 7.8 is obtained with 48 processors to illustrate that the parareal algorithm can be successfully applied to ELM plasma.}},
 	author = {D. Samaddar and D.P. Coster and X. Bonnin and L.A. Berry and W.R. Elwasif and D.B. Batchelor},	
