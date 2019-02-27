@@ -3948,6 +3948,19 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@article{KwokOng2019,
+	abstract = {{Schwarz waveform relaxation (SWR) methods have been developed to solve a wide range of diffusion-dominated and reaction-dominated equations. The appeal of these methods stems primarily from their ability to use nonconforming space-time discretizations; SWR methods are consequently well-adapted for coupling models with highly varying spatial and time scales. The efficacy of SWR methods is questionable, however, since in each iteration, one propagates an error across the entire time interval. In this manuscript, we introduce an adaptive pipeline approach wherein one subdivides the computational domain into space-time blocks, and adaptively selects the waveform iterates which should be updated given a fixed number of computational workers. Our method is complementary to existing space and time parallel methods, and can be used to obtain additional speedup when the saturation point is reached for other types of parallelism. We analyze these waveform relaxation with adaptive pipelining (WRAP) methods to show convergence and the theoretical speedup that can be expected. Numerical experiments on solutions to the linear heat equation, the advection-diffusion equation, and a reaction-diffusion equation illustrate features and efficacy of WRAP methods for various transmission conditions.}},
+	author = {Kwok, F. and Ong, B.},
+	title = {Schwarz Waveform Relaxation with Adaptive Pipelining},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {41},
+	number = {1},
+	pages = {A339-A364},
+	year = {2019},
+	doi = {10.1137/17M115311X},
+	url = {https://doi.org/10.1137/17M115311X},
+}
+
 @article{LiEtAl2019,
 	abstract = {In this paper, we present a two-level space–time hybrid Schwarz preconditioner for GMRES based on the classical hybrid Schwarz method and the second-order backward differentiation formula. In the proposed method, the parabolic equations are solved in parallel on both of the space and time directions. Under some reasonable assumptions, the optimal convergence theory is developed for the proposed space–time method, i.e., the convergence rate is independent of the mesh parameters, the number of subdomains and the window size. Some numerical results are given to confirm the theory very well in terms of the convergence rate and accuracy. And the strong/weak scalability obtained with 4096 processors is also reported to show the efficiency of the proposed method.},
 	author = {Shishun Li and Rongliang Chen and Xinping Shao},
