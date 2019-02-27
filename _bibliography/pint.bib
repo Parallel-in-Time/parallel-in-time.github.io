@@ -3948,6 +3948,18 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@article{LiEtAl2019,
+	abstract = {In this paper, we present a two-level space–time hybrid Schwarz preconditioner for GMRES based on the classical hybrid Schwarz method and the second-order backward differentiation formula. In the proposed method, the parabolic equations are solved in parallel on both of the space and time directions. Under some reasonable assumptions, the optimal convergence theory is developed for the proposed space–time method, i.e., the convergence rate is independent of the mesh parameters, the number of subdomains and the window size. Some numerical results are given to confirm the theory very well in terms of the convergence rate and accuracy. And the strong/weak scalability obtained with 4096 processors is also reported to show the efficiency of the proposed method.},
+	author = {Shishun Li and Rongliang Chen and Xinping Shao},
+	title = {Parallel two-level space–time hybrid Schwarz method for solving linear parabolic equations},
+	journal = {Applied Numerical Mathematics},
+	volume = {139},
+	pages = {120 - 135},
+	year = {2019},
+	doi = {10.1016/j.apnum.2019.01.016},
+	url = {https://doi.org/10.1016/j.apnum.2019.01.016},
+}
+
 @article{SamaddarEtAl2019,
 	abstract = {{This paper explores the application of the parareal algorithm to simulations of ELMs in ITER plasma. The primary focus of this research is identifying the parameters that lead to optimum performance. Since the plasma dynamics vary extremely fast during an ELM cycle, a straightforward application of the algorithm is not possible and a modification to the standard parareal correction is implemented. The size of the time chunks also have an impact on the performance and needs to be optimized. A computational gain of 7.8 is obtained with 48 processors to illustrate that the parareal algorithm can be successfully applied to ELM plasma.}},
 	author = {D. Samaddar and D.P. Coster and X. Bonnin and L.A. Berry and W.R. Elwasif and D.B. Batchelor},	
