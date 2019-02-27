@@ -3935,6 +3935,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@unpublished{KrzysikEtAl2019,
+	abstract = {{We consider the parallel time integration of the linear advection equation with the Parareal and two-level multigrid-reduction-in-time (MGRIT) algorithms. Our aim is to develop a better understanding of the convergence behaviour of these algorithms for this problem, which is known to be poor relative to the diffusion equation, its model parabolic counterpart. Using Fourier analysis, we derive new convergence estimates for these algorithms which, in conjunction with existing convergence theory, provide insight into the origins of this poor performance. We then use this theory to explore improved coarse-grid time-stepping operators. For several high-order discretizations of the advection equation, we demonstrate that there exist non-standard coarse-grid time stepping operators that yield significant improvements over the standard choice of rediscretization.}},
+	author = {Oliver A. Krzysik, Hans De Sterck, Scott P. MacLachlan, Stephanie Friedhoff},
+	title = {On selecting coarse-grid operators for Parareal and MGRIT applied to linear advection},
+	howpublished = {arXiv:1902.07757 [math.NA]},
+	url = {https://arxiv.org/abs/1902.07757},
+	year = {2019},
+}
+
 @article{SamaddarEtAl2019,
 	abstract = {{This paper explores the application of the parareal algorithm to simulations of ELMs in ITER plasma. The primary focus of this research is identifying the parameters that lead to optimum performance. Since the plasma dynamics vary extremely fast during an ELM cycle, a straightforward application of the algorithm is not possible and a modification to the standard parareal correction is implemented. The size of the time chunks also have an impact on the performance and needs to be optimized. A computational gain of 7.8 is obtained with 48 processors to illustrate that the parareal algorithm can be successfully applied to ELM plasma.}},
 	author = {D. Samaddar and D.P. Coster and X. Bonnin and L.A. Berry and W.R. Elwasif and D.B. Batchelor},	
