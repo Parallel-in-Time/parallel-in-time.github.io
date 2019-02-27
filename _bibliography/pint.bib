@@ -3926,6 +3926,16 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@article{DohrEtAl2019,
+	abstract = {In this paper we introduce a new parallel solver for the weakly singular space–time boundary integral equation for the heat equation. The space–time boundary mesh is decomposed into a given number of submeshes. Pairs of the submeshes represent dense blocks in the system matrices, which are distributed among computational nodes by an algorithm based on a cyclic decomposition of complete graphs ensuring load balance. In addition, we employ vectorization and threading in shared memory to ensure intra-node efficiency. We present scalability experiments on different CPU architectures to evaluate the performance of the proposed parallelization techniques. All levels of parallelism allow us to tackle large problems and lead to an almost optimal speedup.},
+	author = {Stefan Dohr and Jan Zapletal and Günther Of and Michal Merta and Michal Kravčenko},
+	title = {A parallel space–time boundary element method for the heat equation},
+	journal = {Computers & Mathematics with Applications},
+	year = {2019},
+	doi = {https://doi.org/10.1016/j.camwa.2018.12.031},
+	url = {http://www.sciencedirect.com/science/article/pii/S0898122118307296},
+}
+
 @article{HowseEtAl2019,
 	abstract = {{We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.}},
 	author = {Howse, A. and Sterck, H. and Falgout, R. and MacLachlan, S. and Schroder, J.},
