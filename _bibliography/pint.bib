@@ -2760,14 +2760,6 @@ a performance model that, for a multigrid-in-time solver, makes the decision on 
 	year = {2016}
 }
 
-@unpublished{GanderHalpern2016,
-	author = {Martin J. Gander and Laurence Halpern},
-	title = {Time Parallelization for Nonlinear Problems Based on Diagonalization},
-	howpublished={Preprint},
-	url = {https://www.unige.ch/~gander/Preprints/Halpern_MS3-1.pdf},
-	year = {2016}
-}
-
 @unpublished{Guetat2016,
 	abstract = {{In this paper, we present a new parallel algorithm for time dependent problems based on coupling parareal with non-overlapping domain decomposition method in order to increase parallelism in time and in space. For this we focus on the iterative methods of parallization in space to solve the interface problem like Neumann-Neumann method. In the new algorithm, the coarse temporel propagator is defined on the global domain and the Neumann-Neumann method is chosen as a fine propagator with a few iterations. We present the rigorous convergence analysis of the new coupled algorithm on bounded time interval. Numerical experiments illustrate the performance of this new algorithm and confirm our analysis.}},
 	author = {Guetat, Rim},
@@ -3113,6 +3105,19 @@ quantities of model systems.}},
 	howpublished = {MIMS EPrint: 2017.17},
 	url = {http://eprints.ma.man.ac.uk/2550/01/covered/MIMS_ep2017_17.pdf},
 	year = {2017}
+}
+
+@inproceedings{GanderHalpern2017,
+	abstract = {The direct time parallelization method based on diagonalization is only applicable to linear problems. We propose here a new method based on diagonalization which permits the direct parallelization in time of a Newton iteration that works simultaneously over several time steps. We first explain the method for a scalar model problem, and then give a formulation for a nonlinear partial differential equation based on tensorization. We illustrate the methods with numerical experiments.},
+	author = {Gander, Martin J. and Halpern, Laurence},
+	editor = {Lee, Chang-Ock and Cai, Xiao-Chuan and Keyes, David E. and Kim, Hyea Hyun and Klawonn, Axel and Park, Eun-Jae and Widlund, Olof B.},
+	title = {Time Parallelization for Nonlinear Problems Based on Diagonalization},
+	booktitle = {Domain Decomposition Methods in Science and Engineering {XXIII}},
+	year = {2017},
+	publisher = {Springer International Publishing},
+	pages = {163--170},
+	doi = {10.1007/978-3-319-52389-7_15},
+	url = {https://doi.org/10.1007/978-3-319-52389-7_15}
 }
 
 @article{GasparRodrigo2017,
