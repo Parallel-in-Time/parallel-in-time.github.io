@@ -2928,30 +2928,6 @@ and geometry is explored.}},
         year = {2016},
 }
 
-@unpublished{SchreiberEtAl2016,
-	abstract = {{Abstract
-This paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory PDEs, which
-is a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization in
-this solver allows us to significantly exceed the computing resources used by parallelization-in-space methods and
-results in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascale
-performance for weather prediction is that the strong scaling limit ? the parallel performance for a fixed problem size
-with an increasing number of processors ? saturates. A main avenue to circumvent this problem is to introduce new
-numerical techniques that take advantage of time parallelism. In this paper we use a time-parallel approximation that
-retains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the original
-problem into a large set of independent terms and (b) solving each of these terms independent of each other which
-can now be accomplished on a large number of HPC resources. Our results are conducted on up to 3586 cores for
-problem sizes with a parallelization-in-space scalability limited already on a single node. We gain significant reductions
-in the time-to-solution of 118.3 for spectral methods and 1503.0 for finite-difference methods with the parallelization-in-
-time approach. A developed and validated performance model gives the scalability limitations a-priory for this new
-approach and allows us to extrapolate the performance method towards large-scale system. This work has the potential
-to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied
-areas modelling oscillatory dominated problems.}},
-	author = {Schreiber, Martin and Peixoto, Pedro S. and Haut, Terry and Wingate, Beth},
-	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
-	url = {http://www.ime.usp.br/%7epedrosp/wp/wordpress/wp-content/uploads/2015/05/paper_2016_rexi_hpc.pdf},
-	year = {2016}
-}
-
 @inproceedings{SekineEtAl2016, 
         abstract={Long computation time is required for transient stability analysis of power systems because it can be expressed as combination of differential and algebraic equations. In order to finish the calculation within a practical amount of time, it is an effective approach that applying Parareal method as one of parallel computing technique to transient stability analysis. In the Parareal method, the accuracy of the result is gradually updated through iterative procedures in combination with rough estimation of entire waveform and detailed calculation for each decomposed time window. Based on the Parareal method, the authors have developed a new stability assessment method by using chaos theory. If an operating point is in unstable region, the trajectory has the chaotic property, “sensitive dependence on initial conditions”. Therefore, it is possible to assess the stability by detecting the convergence characteristics of the estimated waveform at each iterative procedure by the Parareal method. The effectiveness of the proposed method was tested by using IEEJ WEST10 system model.}, 
         author={T. Sekine and T. Tsuji and T. Oyama and F. Magoulès and K. Uchida}, 
@@ -3799,6 +3775,19 @@ In this short article, we present parallel numerical results for their precondit
 	pages = {1-4}, 
 	doi={10.1109/TMAG.2017.2763090}, 
 	url = {https://dx.doi.org/10.1109/TMAG.2017.2763090}
+}
+
+@article{SchreiberEtAl2018,
+    	abstract = {{This paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory partial differential equations, which is a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization in this solver allows us to significantly exceed the computing resources used by parallelization-in-space methods and results in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascale performance for weather prediction is that the strong scaling limit – the parallel performance for a fixed problem size with an increasing number of processors – saturates. A main avenue to circumvent this problem is to introduce new numerical techniques that take advantage of time parallelism. In this paper, we use a time-parallel approximation that retains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the original problem into a large set of independent terms and (b) solving each of these terms independently of each other which can now be accomplished on a large number of high-performance computing resources. Our results are conducted on up to 3586 cores for problem sizes with the parallelization-in-space scalability limited already on a single node. We gain significant reductions in the time-to-solution of 118.3× for spectral methods and 1503.0× for finite-difference methods with the parallelization-in-time approach. A developed and calibrated performance model gives the scalability limitations a priori for this new approach and allows us to extrapolate the performance of the method towards large-scale systems. This work has the potential to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied areas modelling oscillatory dominated problems.}},
+	author = {Martin Schreiber and Pedro S Peixoto and Terry Haut and Beth Wingate},
+	title ={Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
+	journal = {The International Journal of High Performance Computing Applications},
+	volume = {32},
+	number = {6},
+	pages = {913-933},
+	year = {2018},
+	doi = {10.1177/1094342016687625},
+	url = {https://doi.org/10.1177/1094342016687625},
 }
 
 @article{Speck2018,
