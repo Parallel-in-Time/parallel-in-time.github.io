@@ -3098,15 +3098,6 @@ quantities of model systems.}},
 	year = {2017}
 }
 
-@unpublished{DeSterckEtAl2017,
-	abstract = {{We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.}},
-	author = {De Sterck, Hans and Falgout, Robert D. and Howse, Alexander J. M. and MacLachlan, Scott P. and Schroder, Jacob B.},
-	title = {Parallel-In-Time Multigrid With Adaptive Spatial Coarsening For The Linear Advection And Inviscid Burgers Equations},
-	url = {https://www.math.mun.ca/%7Esmaclachlan/research/MGRIT_hyp.pdf},
-	year = {2017}
-}
-
-
 @article{DobrevEtAl2017,
 	abstract = {{In this paper we develop a two-grid convergence theory for the parallel-in-time scheme known as multigrid reduction in time (MGRIT), as it is implemented in the open-source package [XBraid: Parallel Multigrid in Time, http://llnl.gov/casc/xbraid]. MGRIT is a scalable and multilevel approach to parallel-in-time simulations that nonintrusively uses existing time-stepping schemes, and in a specific two-level setting it is equivalent to the widely known parareal algorithm. The goal of this paper is twofold. First, we present a two-level MGRIT convergence analysis for linear problems where the spatial discretization matrix can be diagonalized, and then apply this analysis to our two basic model problems, the heat equation and the advection equation. One important assumption is that the coarse and fine time-grid propagators can be diagaonalized by the same set of eigenvectors, which is often the case when the same spatial discretization operator is used on the coarse and fine time grids. In many cases, the MGRIT algorithm is guaranteed to converge, and we demonstrate numerically that the theoretically predicted convergence rates are sharp in practice for our model problems. Second, we explore how the convergence of MGRIT compares to the stability of the chosen time-stepping scheme. In particular, we demonstrate that a stable time-stepping scheme does not necessarily imply convergence of MGRIT, although MGRIT with FCF-relaxation always converges for the diffusion dominated problems considered here.}},
 	author = {V. A. Dobrev and Tz. Kolev and N. A. Petersson and J. B. Schroder},
@@ -3933,6 +3924,19 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	howpublished = {arXiv:1902.05370 [math.NA]},
 	url = {https://arxiv.org/abs/1902.05370},
 	year = {2019},
+}
+
+@article{HowseEtAl2019,
+	abstract = {{We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.}},
+	author = {Howse, A. and Sterck, H. and Falgout, R. and MacLachlan, S. and Schroder, J.},
+	title = {Parallel-In-Time Multigrid with Adaptive Spatial Coarsening for The Linear Advection and Inviscid Burgers Equations},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {41},
+	number = {1},
+	pages = {A538-A565},
+	year = {2019},
+	doi = {10.1137/17M1144982},
+	url = {https://dx.doi.org/10.1137/17M1144982}
 }
 
 @unpublished{KrzysikEtAl2019,
