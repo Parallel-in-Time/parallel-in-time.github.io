@@ -2794,12 +2794,15 @@ a performance model that, for a multigrid-in-time solver, makes the decision on 
           year={2016},
 }
 
-@unpublished{LecouvezEtAl2016,
-	author = {Lecouvez, M. and Falgout, R. and Woodward, C. and Top, P.},
-	title = {A Parallel Multigrid Reduction in Time Method for Power Systems},
-	howpublished = {LLNL-CONF-679148},
-	url = {http://www.osti.gov/scitech/biblio/1281664},
-	year = {2016}
+@inproceedings{Lecouvez2016,
+	abstract = {{This paper presents a fully multilevel approach to parallel in time solution of transient power system simulations. The method employs a multigrid reduction algorithm in time parallelized using the MPI distributed memory programming model. The method is demonstrated on a simple Single Machine Infinite Bus differential-algebraic equation model problem, for which speedup is obtained for as few as 8 processing cores on a problem with 10,000 time steps. Speedup of a factor of 13 is observed for a 100,000 step version of this simple problem. Based on these results, we expect significantly better speedup on larger problems where more work is available to each processor allowing greater amortization of the parallel communication.}}, 
+	author = {M. {Lecouvez} and R. D. {Falgout} and C. S. {Woodward} and P. {Top}}, 
+	booktitle = {2016 IEEE Power and Energy Society General Meeting (PESGM)}, 
+	title = {A parallel multigrid reduction in time method for power systems}, 
+	year = {2016}, 
+	pages = {1-5}, 
+	doi = {10.1109/PESGM.2016.7741520}, 
+	url = {https://dx.doi.org/10.1109/PESGM.2016.7741520}
 }
 
 @article{Lederman2016,
