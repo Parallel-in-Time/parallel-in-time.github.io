@@ -3338,7 +3338,8 @@ quantities of model systems.}},
 	doi = {10.1016/j.cam.2017.09.033}
 }
 
-@inproceedings{Benedusi2016,
+@inproceedings{BenedusiEtAl2016,
+	abstract = {{We present a parallel and efficient multilevel solution method for the nonlinear systems arising from the discretization of Navier–Stokes (N-S) equations with finite differences. In particular we study the incompressible, unsteady N-S equations with periodic boundary condition in time. A sequential time integration limits the parallelism of the solver to the spatial variables and can therefore be an obstacle to parallel scalability. Time periodicity allows for a space-time discretization, which adds time as an additional direction for parallelism and thus can improve parallel scalability. To achieve fast convergence, we used a space-time multigrid algorithm with a SCGS smoothing procedure (symmetrical coupled Gauss–Seidel, a.k.a. box smoothing). This technique, proposed by Vanka (J Comput Phys 65:138–156, 1986), for the steady viscous incompressible Navier–Stokes equations is extended to the unsteady case and its properties are studied using local Fourier analysis. We used numerical experiments to analyze the scalability and the convergence of the solver, focusing on the case of a pulsatile flow.}},
 	title={{A Parallel Multigrid Solver for Time--periodic Incompressible Navier--Stokes Equations in 3D}},
 	author={Benedusi, P. and Hupp, D. and Arbenz, P. and Krause, R.},
 	booktitle={Numerical Mathematics and Advanced Applications ENUMATH 2015},
