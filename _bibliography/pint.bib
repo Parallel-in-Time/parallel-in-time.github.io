@@ -3884,6 +3884,15 @@ In this short article, we present parallel numerical results for their precondit
 % 2019
 % 
 
+@unpublished{BastEtAl2019,
+	abstract = {{This paper focuses on efficient steady-state computations of induction machines. In particular, the periodic Parareal algorithm with initial-value coarse problem (PP-IC) is considered for acceleration of classical time-stepping simulations via non-intrusive parallelization in time domain, i.e., existing implementations can be reused. Superiority of this parallel-in-time method is in its direct applicability to time-periodic problems, compared to, e.g, the standard Parareal method, which only solves an initial-value problem, starting from a prescribed initial value. PP-IC is exploited here to obtain the steady state of several operating points of an induction motor, developed by Robert Bosch GmbH. Numerical experiments show that acceleration up to several dozens of times can be obtained, depending on availability of parallel processing units. Comparison of PP-IC with existing time-periodic explicit error correction method highlights better robustness and efficiency of the considered time-parallel approach.}},
+	author = {Denys Bast and Iryna Kulchytska-Ruchka and Sebastian Schöps and Oliver Rain},
+	title = {Accelerated Steady-State Torque Computation for Induction Machines using Parallel-In-Time Algorithms},
+	howpublished = {arXiv:1902.08277 [cs.CE]},
+	url = {https://arxiv.org/abs/1902.08277},
+	year = {2019},
+}
+
 @unpublished{BrehierWang2019,
 	abstract = {{Parareal algorithms are studied for semilinear parabolic stochastic partial differential equations. These algorithms proceed as two-level integrators, with fine and coarse schemes, and have been designed to achieve a `parallel in real time' implementation. In this work, the fine integrator is given by the exponential Euler scheme. Two choices for the coarse integrator are considered: the linear implicit Euler scheme, and the exponential Euler scheme. 
 The influence on the performance of the parareal algorithm, of the choice of the coarse integrator, of the regularity of the noise, and of the number of parareal iterations, is investigated, with theoretical analysis results and with extensive numerical experiments.}},
