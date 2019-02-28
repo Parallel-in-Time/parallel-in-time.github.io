@@ -3241,17 +3241,6 @@ quantities of model systems.}},
 	year={2017},
 }
 
-@article{SchreiberEtAl2017,
-    abstract = {{This paper presents, discusses and analyses a massively parallel-in-time solver for linear oscillatory partial differential equations, which is a key numerical component for evolving weather, ocean, climate and seismic models. The time parallelization in this solver allows us to significantly exceed the computing resources used by parallelization-in-space methods and results in a correspondingly significantly reduced wall-clock time. One of the major difficulties of achieving Exascale performance for weather prediction is that the strong scaling limit – the parallel performance for a fixed problem size with an increasing number of processors – saturates. A main avenue to circumvent this problem is to introduce new numerical techniques that take advantage of time parallelism. In this paper, we use a time-parallel approximation that retains the frequency information of oscillatory problems. This approximation is based on (a) reformulating the original problem into a large set of independent terms and (b) solving each of these terms independently of each other which can now be accomplished on a large number of high-performance computing resources. Our results are conducted on up to 3586 cores for problem sizes with the parallelization-in-space scalability limited already on a single node. We gain significant reductions in the time-to-solution of 118.3× for spectral methods and 1503.0× for finite-difference methods with the parallelization-in-time approach. A developed and calibrated performance model gives the scalability limitations a priori for this new approach and allows us to extrapolate the performance of the method towards large-scale systems. This work has the potential to contribute as a basic building block of parallelization-in-time approaches, with possible major implications in applied areas modelling oscillatory dominated problems.}},
-	author = {Martin Schreiber and Pedro S Peixoto and Terry Haut and Beth Wingate},
-	doi = {10.1177/1094342016687625},
-	journal = {The International Journal of High Performance Computing Applications},
-	pages = {1094342016687625},
-	title = {Beyond spatial scalability limitations with a massively parallel method for linear oscillatory problems},
-	url = {http://dx.doi.org/10.1177/1094342016687625},
-	year = {2017}
-}
-
 @unpublished{SchroderEtAl2017,
 	abstract = {{This work presents a time-parallel approach for solving power grid problems with scheduled events (e.g., a square pulse applied to a bus). The multigrid reduction in time (MGRIT) method, implemented in the XBraid code, is used to nonintrusively add time parallelism to GridDyn, an existing open-source power grid simulation tool. The approach extends standard practices for sequential time stepping and scheduled events to the time-parallel setting and then explores temporal refinement. The paper concludes with parallel experiments validating the approach and showing speedups of around 50x for the WECC 179 bus system. Scalability with respect to scheduled events is examined by applying a one second long square pulse to bus 143 every 2 seconds}},
 	author = {Jacob B. Schroder and Robert D. Falgout and Carol S. Woodward and Philip Top},
