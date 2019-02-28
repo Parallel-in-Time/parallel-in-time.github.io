@@ -673,7 +673,7 @@ The influence on the performance of the parareal algorithm, of the choice of the
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="MeleEtAl2019">V. Mele, D. Romano, E. M. Constantinescu, L. Carracciuolo, and L. D’Amore, “Performance Evaluation for a PETSc Parallel-in-Time Solver Based on the MGRIT Algorithm,” in <i>Euro-Par 2018: Parallel Processing Workshops</i>, 2019, pp. 716–728. </span>
+      <span id="MeleEtAl2019">V. Mele, D. Romano, E. M. Constantinescu, L. Carracciuolo, and L. D’Amore, “Performance Evaluation for a PETSc Parallel-in-Time Solver Based on the MGRIT Algorithm,” in <i>Euro-Par 2018: Parallel Processing Workshops</i>, 2019, pp. 716–728 [Online]. Available at: <a href="https://doi.org/10.1002/cpe.4928" target="_blank">https://doi.org/10.1002/cpe.4928</a></span>
     </div>
   </div>
   <div class="collapse" id="collapseMeleEtAl2019Bibtex">
@@ -686,7 +686,9 @@ The influence on the performance of the parareal algorithm, of the choice of the
   booktitle = {Euro-Par 2018: Parallel Processing Workshops},
   year = {2019},
   publisher = {Springer International Publishing},
-  pages = {716--728}
+  pages = {716--728},
+  doi = {10.1002/cpe.4928},
+  url = {https://doi.org/10.1002/cpe.4928}
 }
 </pre>
       </div>
@@ -2290,21 +2292,21 @@ In this short article, we present parallel numerical results for their precondit
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          HwangMunster2018_AIAA
+          HwangMunster2018
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseHwangMunster2018_AIAABibtex"
-                    aria-expanded="false" aria-controls="collapseHwangMunster2018_AIAABibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseHwangMunster2018Bibtex"
+                    aria-expanded="false" aria-controls="collapseHwangMunster2018Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalHwangMunster2018_AIAAAbstract"
-                    aria-expanded="false" aria-controls="modalHwangMunster2018_AIAAAbstract">
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalHwangMunster2018Abstract"
+                    aria-expanded="false" aria-controls="modalHwangMunster2018Abstract">
               Abstract
             </button>
             
@@ -2314,23 +2316,38 @@ In this short article, we present parallel numerical results for their precondit
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="HwangMunster2018_AIAA">J. T. Hwang and D. Munster, “Solution of ordinary differential equations in gradient-based multidisciplinary design optimization,” in <i>2018 AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference</i>, American Institute of Aeronautics and Astronautics, 2018 [Online]. Available at: <a href="https://doi.org/10.2514/6.2018-1646" target="_blank">https://doi.org/10.2514/6.2018-1646</a></span>
+      <span id="HwangMunster2018">J. T. Hwang and D. Munster, “Solution of ordinary differential equations in gradient-based multidisciplinary design optimization,” in <i>2018 AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference</i>, American Institute of Aeronautics and Astronautics, 2018 [Online]. Available at: <a href="https://doi.org/10.2514/6.2018-1646" target="_blank">https://doi.org/10.2514/6.2018-1646</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseHwangMunster2018_AIAABibtex">
+  <div class="collapse" id="collapseHwangMunster2018Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@inbook{HwangMunster2018_AIAA,
+        <pre class="abstract">@inbook{HwangMunster2018,
   author = {Hwang, John T. and Munster, Drayton},
   booktitle = {2018 AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference},
   doi = {doi:10.2514/6.2018-1646},
-  month = {2018/01/24},
   publisher = {American Institute of Aeronautics and Astronautics},
   title = {Solution of ordinary differential equations in gradient-based multidisciplinary design optimization},
   url = {https://doi.org/10.2514/6.2018-1646},
   year = {2018}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalHwangMunster2018Abstract" tabindex="-1" role="dialog" aria-labelledby="modalHwangMunster2018AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalHwangMunster2018AbstractTitle">
+            Abstract for BibTeX entry <code>HwangMunster2018</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          A gradient-based approach to multidisciplinary design optimization enables efficient scalability to large numbers of design variables. However, the need for derivatives imposes a difficult requirement when integrating ordinary differential equations in models. To simplify this, we propose the use of the general linear methods framework, which unifies all Runge–Kutta and linear multistep methods. This approach enables rapid implementation of integration methods without the need to differentiate each individual method, even in a gradient-based optimization context. We also develop a new parallel time integration algorithm that enables vectorization across time steps. We present a set of benchmarking results using a stiff ODE, a non-stiff nonlinear ODE, and an orbital dynamics ODE, and compare integration methods. In a modular gradient-based multidisciplinary design optimization context, we find that the new parallel time integration algorithm with high-order implicit methods, especially Gauss–Legendre collocation, is the best choice for a broad range of problems.
+        </div>
       </div>
     </div>
   </div>
@@ -2816,21 +2833,21 @@ In this short article, we present parallel numerical results for their precondit
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          Morton2018_AIAA
+          Morton2018
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseMorton2018_AIAABibtex"
-                    aria-expanded="false" aria-controls="collapseMorton2018_AIAABibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseMorton2018Bibtex"
+                    aria-expanded="false" aria-controls="collapseMorton2018Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalMorton2018_AIAAAbstract"
-                    aria-expanded="false" aria-controls="modalMorton2018_AIAAAbstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalMorton2018Abstract"
+                    aria-expanded="false" aria-controls="modalMorton2018Abstract">
               Abstract
             </button>
             
@@ -2840,17 +2857,16 @@ In this short article, we present parallel numerical results for their precondit
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="Morton2018_AIAA">S. A. Morton, “An Implicit BDF2 Time-Parallel Algorithm for Solving Convection Diffusion Equations,” in <i>2018 AIAA Aerospace Sciences Meeting</i>, American Institute of Aeronautics and Astronautics, 2018 [Online]. Available at: <a href="https://doi.org/10.2514/6.2018-1046" target="_blank">https://doi.org/10.2514/6.2018-1046</a></span>
+      <span id="Morton2018">S. A. Morton, “An Implicit BDF2 Time-Parallel Algorithm for Solving Convection Diffusion Equations,” in <i>2018 AIAA Aerospace Sciences Meeting</i>, American Institute of Aeronautics and Astronautics, 2018 [Online]. Available at: <a href="https://doi.org/10.2514/6.2018-1046" target="_blank">https://doi.org/10.2514/6.2018-1046</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseMorton2018_AIAABibtex">
+  <div class="collapse" id="collapseMorton2018Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@inbook{Morton2018_AIAA,
+        <pre class="abstract">@inbook{Morton2018,
   author = {Morton, Scott A.},
   booktitle = {2018 AIAA Aerospace Sciences Meeting},
   doi = {doi:10.2514/6.2018-1046},
-  month = {2018/01/24},
   publisher = {American Institute of Aeronautics and Astronautics},
   title = {An Implicit BDF2 Time-Parallel Algorithm for Solving Convection Diffusion Equations},
   url = {https://doi.org/10.2514/6.2018-1046},
@@ -3482,6 +3498,73 @@ In this short article, we present parallel numerical results for their precondit
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          SchreiberLoft2018
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSchreiberLoft2018Bibtex"
+                    aria-expanded="false" aria-controls="collapseSchreiberLoft2018Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSchreiberLoft2018Abstract"
+                    aria-expanded="false" aria-controls="modalSchreiberLoft2018Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="SchreiberLoft2018">M. Schreiber and R. Loft, “A parallel time integrator for solving the linearized shallow water equations on the rotating sphere,” <i>Numerical Linear Algebra with Applications</i>, 2018 [Online]. Available at: <a href="https://doi.org/10.1002/nla.2220" target="_blank">https://doi.org/10.1002/nla.2220</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseSchreiberLoft2018Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{SchreiberLoft2018,
+  title = {A parallel time integrator for solving the linearized shallow water equations on the rotating sphere},
+  author = {Schreiber, M. and Loft, R.},
+  journal = {Numerical Linear Algebra with Applications},
+  year = {2018},
+  publisher = {Wiley Online Library},
+  doi = {10.1002/nla.2220},
+  url = {https://doi.org/10.1002/nla.2220}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalSchreiberLoft2018Abstract" tabindex="-1" role="dialog" aria-labelledby="modalSchreiberLoft2018AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSchreiberLoft2018AbstractTitle">
+            Abstract for BibTeX entry <code>SchreiberLoft2018</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          With the stagnation of processor core performance, further reductions in the time to solution for geophysical fluid problems are becoming increasingly difficult with standard time integrators. Parallel‐in‐time exposes and exploits additional parallelism in the time dimension, which is inherently sequential in traditional methods. The rational approximation of exponential integrators (REXI) method allows taking arbitrarily long time steps based on a sum over a number of decoupled complex PDEs that can be solved independently massively parallel. Hence, REXI is assumed to be well suited for modern massively parallel super computers, which are currently trending. To date, the study and development of the REXI approach have been limited to linearized problems on the periodic two‐dimensional plane. This work extends the REXI time stepping method to the linear shallow‐water equations on the rotating sphere, thus moving the method one step closer to solving fully nonlinear fluid problems of geophysical interest on the sphere. The rotating sphere poses particular challenges for finding an efficient solver due to the zonal dependence of the Coriolis term. Here, we present an efficient REXI solver based on spherical harmonics, showing the results of a geostrophic balance test, a comparison with alternative time stepping methods, an analysis of dispersion relations indicating superior properties of REXI, and finally, a performance comparison on the Cheyenne supercomputer. Our results indicate that REXI not only can take larger time steps but also can be used to gain higher accuracy and significantly reduced time to solution compared with currently existing time stepping methods.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           Speck2018
         </div>
       </div>
@@ -3941,57 +4024,6 @@ In this short article, we present parallel numerical results for their precondit
         <div class="modal-body">
           This paper investigates a novel parallel technique based on the spectral deferred correction (SDC) method and a compensation step for solving first-order evolution problems, and we call it para-SDC method for convenience. The standard SDC method is used in parallel with a rough initial guess and a Picard integral equation with high precision initial condition is acted as a compensator. The goal of this paper is to show how these processes can be parallelized and how to improve the efficiency. During the SDC step an implicit or semi-implicit method can be used for stiff problems which is always time-consuming, therefore that’s why we do this procedure in parallel. Due to a better initial condition of parallel intervals after the SDC step, the goal of compensation step is to get a better approximation and also avoid of solving an implicit problem again. During the compensation step an explicit Picard scheme is taken based on the numerical integration with polynomial interpolation on Gauss Radau II nodes, which is almost no time consumption, obviously, that’s why we do this procedure in serial. The convergency analysis and the parallel efficiency of our method are also discussed. Several numerical experiments and an application for simulation Allen–Cahn equation are presented to show the accuracy, stability, convergence order and efficiency features of para-SDC method.
         </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          SchreiberEtAl2019
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSchreiberEtAl2019Bibtex"
-                    aria-expanded="false" aria-controls="collapseSchreiberEtAl2019Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSchreiberEtAl2019Abstract"
-                    aria-expanded="false" aria-controls="modalSchreiberEtAl2019Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="SchreiberEtAl2019">M. Schreiber and R. Loft, “A parallel time integrator for solving the linearized shallow water equations on the rotating sphere,” <i>Numerical Linear Algebra with Applications</i>, 2018 [Online]. Available at: <a href="https://doi.org/10.1002/nla.2220" target="_blank">https://doi.org/10.1002/nla.2220</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseSchreiberEtAl2019Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@article{SchreiberEtAl2019,
-  title = {A parallel time integrator for solving the linearized shallow water equations on the rotating sphere},
-  author = {Schreiber, M. and Loft, R.},
-  journal = {Numerical Linear Algebra with Applications},
-  year = {2018},
-  publisher = {Wiley Online Library},
-  doi = {10.1002/nla.2220},
-  url = {https://doi.org/10.1002/nla.2220}
-}
-</pre>
       </div>
     </div>
   </div>
@@ -15513,21 +15545,21 @@ quantities of model systems.
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          FarhatCortial2006
+          FarhatEtAl2006
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseFarhatCortial2006Bibtex"
-                    aria-expanded="false" aria-controls="collapseFarhatCortial2006Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseFarhatEtAl2006Bibtex"
+                    aria-expanded="false" aria-controls="collapseFarhatEtAl2006Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalFarhatCortial2006Abstract"
-                    aria-expanded="false" aria-controls="modalFarhatCortial2006Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalFarhatEtAl2006Abstract"
+                    aria-expanded="false" aria-controls="modalFarhatEtAl2006Abstract">
               Abstract
             </button>
             
@@ -15537,13 +15569,13 @@ quantities of model systems.
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="FarhatCortial2006">C. Farhat, J. Cortial, C. Dastillung, and H. Bavestrello, “Time-parallel implicit integrators for the near-real-time prediction of linear structural dynamic responses,” <i>International Journal for Numerical Methods in Engineering</i>, vol. 67, no. 5, pp. 697–724, 2006 [Online]. Available at: <a href="http://dx.doi.org/10.1002/nme.1653" target="_blank">http://dx.doi.org/10.1002/nme.1653</a></span>
+      <span id="FarhatEtAl2006">C. Farhat, J. Cortial, C. Dastillung, and H. Bavestrello, “Time-parallel implicit integrators for the near-real-time prediction of linear structural dynamic responses,” <i>International Journal for Numerical Methods in Engineering</i>, vol. 67, no. 5, pp. 697–724, 2006 [Online]. Available at: <a href="http://dx.doi.org/10.1002/nme.1653" target="_blank">http://dx.doi.org/10.1002/nme.1653</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseFarhatCortial2006Bibtex">
+  <div class="collapse" id="collapseFarhatEtAl2006Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@article{FarhatCortial2006,
+        <pre class="abstract">@article{FarhatEtAl2006,
   author = {Farhat, Charbel and Cortial, Julien and Dastillung, C. and Bavestrello, H.},
   issue = {5},
   journal = {International Journal for Numerical Methods in Engineering},
@@ -16093,21 +16125,21 @@ quantities of model systems.
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          Srinivasan2005
+          SrinivasanChandra2005
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSrinivasan2005Bibtex"
-                    aria-expanded="false" aria-controls="collapseSrinivasan2005Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSrinivasanChandra2005Bibtex"
+                    aria-expanded="false" aria-controls="collapseSrinivasanChandra2005Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSrinivasan2005Abstract"
-                    aria-expanded="false" aria-controls="modalSrinivasan2005Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSrinivasanChandra2005Abstract"
+                    aria-expanded="false" aria-controls="modalSrinivasanChandra2005Abstract">
               Abstract
             </button>
             
@@ -16117,13 +16149,13 @@ quantities of model systems.
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="Srinivasan2005">A. Srinivasan and N. Chandra, “Latency tolerance through parallelization of time in scientific applications,” <i>Parallel Computing</i>, vol. 31, no. 7, pp. 777–796, 2005 [Online]. Available at: <a href="http://dx.doi.org/10.1016/j.parco.2005.04.008" target="_blank">http://dx.doi.org/10.1016/j.parco.2005.04.008</a></span>
+      <span id="SrinivasanChandra2005">A. Srinivasan and N. Chandra, “Latency tolerance through parallelization of time in scientific applications,” <i>Parallel Computing</i>, vol. 31, no. 7, pp. 777–796, 2005 [Online]. Available at: <a href="http://dx.doi.org/10.1016/j.parco.2005.04.008" target="_blank">http://dx.doi.org/10.1016/j.parco.2005.04.008</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseSrinivasan2005Bibtex">
+  <div class="collapse" id="collapseSrinivasanChandra2005Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@article{Srinivasan2005,
+        <pre class="abstract">@article{SrinivasanChandra2005,
   author = {Srinivasan, Ashok and Chandra, Namas},
   journal = {Parallel Computing},
   number = {7},
@@ -16145,21 +16177,21 @@ quantities of model systems.
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          Srinivasan2005_HIPC
+          SrinivasanEtAl2005
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSrinivasan2005_HIPCBibtex"
-                    aria-expanded="false" aria-controls="collapseSrinivasan2005_HIPCBibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSrinivasanEtAl2005Bibtex"
+                    aria-expanded="false" aria-controls="collapseSrinivasanEtAl2005Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSrinivasan2005_HIPCAbstract"
-                    aria-expanded="false" aria-controls="modalSrinivasan2005_HIPCAbstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSrinivasanEtAl2005Abstract"
+                    aria-expanded="false" aria-controls="modalSrinivasanEtAl2005Abstract">
               Abstract
             </button>
             
@@ -16169,13 +16201,13 @@ quantities of model systems.
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="Srinivasan2005_HIPC">A. Srinivasan, Y. Yu, and N. Chandra, “Application of Reduce Order Modeling to Time Parallelization,” in <i>High Performance Computing – HiPC 2005</i>, vol. 3769, D. A. Bader, M. Parashar, V. Sridhar, and V. K. Prasanna, Eds. Springer Berlin Heidelberg, 2005, pp. 106–117 [Online]. Available at: <a href="http://dx.doi.org/10.1007/11602569_15" target="_blank">http://dx.doi.org/10.1007/11602569_15</a></span>
+      <span id="SrinivasanEtAl2005">A. Srinivasan, Y. Yu, and N. Chandra, “Application of Reduce Order Modeling to Time Parallelization,” in <i>High Performance Computing – HiPC 2005</i>, vol. 3769, D. A. Bader, M. Parashar, V. Sridhar, and V. K. Prasanna, Eds. Springer Berlin Heidelberg, 2005, pp. 106–117 [Online]. Available at: <a href="http://dx.doi.org/10.1007/11602569_15" target="_blank">http://dx.doi.org/10.1007/11602569_15</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseSrinivasan2005_HIPCBibtex">
+  <div class="collapse" id="collapseSrinivasanEtAl2005Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@incollection{Srinivasan2005_HIPC,
+        <pre class="abstract">@incollection{SrinivasanEtAl2005,
   author = {Srinivasan, Ashok and Yu, Yanan and Chandra, Namas},
   booktitle = {{High Performance Computing -- HiPC 2005}},
   editor = {Bader, David A. and Parashar, Manish and Sridhar, Varadarajan and Prasanna, Viktor K.},
