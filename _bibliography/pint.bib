@@ -3870,7 +3870,8 @@ In this short article, we present parallel numerical results for their precondit
 	url = {https://doi.org/10.1007/s10543-018-0702-4}
 }
 
-@article{SchreiberEtAl2018,
+@article{SchreiberLoft2018,
+  abstract = {{With the stagnation of processor core performance, further reductions in the time to solution for geophysical fluid problems are becoming increasingly difficult with standard time integrators. Parallel‐in‐time exposes and exploits additional parallelism in the time dimension, which is inherently sequential in traditional methods. The rational approximation of exponential integrators (REXI) method allows taking arbitrarily long time steps based on a sum over a number of decoupled complex PDEs that can be solved independently massively parallel. Hence, REXI is assumed to be well suited for modern massively parallel super computers, which are currently trending. To date, the study and development of the REXI approach have been limited to linearized problems on the periodic two‐dimensional plane. This work extends the REXI time stepping method to the linear shallow‐water equations on the rotating sphere, thus moving the method one step closer to solving fully nonlinear fluid problems of geophysical interest on the sphere. The rotating sphere poses particular challenges for finding an efficient solver due to the zonal dependence of the Coriolis term. Here, we present an efficient REXI solver based on spherical harmonics, showing the results of a geostrophic balance test, a comparison with alternative time stepping methods, an analysis of dispersion relations indicating superior properties of REXI, and finally, a performance comparison on the Cheyenne supercomputer. Our results indicate that REXI not only can take larger time steps but also can be used to gain higher accuracy and significantly reduced time to solution compared with currently existing time stepping methods.}},
   title={A parallel time integrator for solving the linearized shallow water equations on the rotating sphere},
   author={Schreiber, M. and Loft, R.},
   journal={Numerical Linear Algebra with Applications},
@@ -3999,13 +4000,13 @@ The influence on the performance of the parareal algorithm, of the choice of the
 }
 
 @article{SchreiberLoft2019,
-  abstract = {{High-performance computing trends towards many-core systems are expected to continue over the next decade. As a result, parallel-in-time methods, mathematical formulations which exploit additional degrees of parallelism in the time dimension, have gained increasing interest in recent years. In this work we study a massively parallel rational approximation of exponential integrators (REXI). This method replaces a time integration of stiff linear oscillatory and diffusive systems by the sum of the solutions of many decoupled systems, which can be solved in parallel. Previous numerical studies showed that this reformulation allows taking arbitrarily long time steps for the linear oscillatory parts. The present work studies the non-linear shallow-water equations on the rotating sphere, a simplified system of equations used to study properties of space and time discretization methods in the context of atmospheric simulations. After introducing time integrators, we first compare the time step sizes to the errors in the simulation, discussing pros and cons of different formulations of REXI. Here, REXI already shows superior properties compared to explicit and implicit time stepping methods. Additionally, we present wallclock-time-to-error results revealing the sweet spots of REXI obtaining either an over 6 ×  higher accuracy within the same time frame or an about 3 ×  reduced time-to-solution for a similar error threshold. Our results motivate further explorations of REXI for operational weather/climate systems.}},
-  title={Exponential Integrators with Parallel-in-Time Rational Approximations for Shallow-Water Equations on the Rotating Sphere},
-  author={Schreiber, M. and Schaeffer, N. and Loft, R.},
-  journal={Parallel Computing},
-  year={2019},
-  publisher={Elsevier},
-  notes={(in press)},
-  doi = {10.1016/j.parco.2019.01.005},
-  url = {https://dx.doi.org/10.1016/j.parco.2019.01.005}
+	abstract = {{High-performance computing trends towards many-core systems are expected to continue over the next decade. As a result, parallel-in-time methods, mathematical formulations which exploit additional degrees of parallelism in the time dimension, have gained increasing interest in recent years. In this work we study a massively parallel rational approximation of exponential integrators (REXI). This method replaces a time integration of stiff linear oscillatory and diffusive systems by the sum of the solutions of many decoupled systems, which can be solved in parallel. Previous numerical studies showed that this reformulation allows taking arbitrarily long time steps for the linear oscillatory parts. The present work studies the non-linear shallow-water equations on the rotating sphere, a simplified system of equations used to study properties of space and time discretization methods in the context of atmospheric simulations. After introducing time integrators, we first compare the time step sizes to the errors in the simulation, discussing pros and cons of different formulations of REXI. Here, REXI already shows superior properties compared to explicit and implicit time stepping methods. Additionally, we present wallclock-time-to-error results revealing the sweet spots of REXI obtaining either an over 6 ×  higher accuracy within the same time frame or an about 3 ×  reduced time-to-solution for a similar error threshold. Our results motivate further explorations of REXI for operational weather/climate systems.}},
+	title={Exponential Integrators with Parallel-in-Time Rational Approximations for Shallow-Water Equations on the Rotating Sphere},
+	author={Schreiber, M. and Schaeffer, N. and Loft, R.},
+	journal={Parallel Computing},
+	year={2019},
+	publisher={Elsevier},
+	notes={(in press)},
+	doi = {10.1016/j.parco.2019.01.005},
+	url = {https://dx.doi.org/10.1016/j.parco.2019.01.005}
 }
