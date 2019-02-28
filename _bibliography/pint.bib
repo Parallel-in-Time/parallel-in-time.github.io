@@ -1785,7 +1785,8 @@
 	year = {2013}
 }
 
-@article{wang2013towards,
+@article{WangEtAl2013,
+	abstract = {{We present a reformulation of unsteady turbulent flow simulations. The initial condition is relaxed and information is allowed to propagate both forward and backward in time. Simulations of chaotic dynamical systems with this reformulation can be proven to be well-conditioned time domain boundary value problems. The reformulation can enable scalable parallel-in-time simulation of turbulent flows.}},
 	author = {Wang, Qiqi and Gomez, Steven A and Blonigan, Patrick J and Gregory, Alastair L and Qian, Elizabeth Y},
 	journal = {Physics of Fluids (1994-present)},
 	number = {11},
@@ -1794,6 +1795,8 @@
 	title = {Towards scalable parallel-in-time turbulent flow simulations},
 	volume = {25},
 	year = {2013},
+	url = {https://doi.org/10.1063/1.4819390},
+	doi = {10.1063/1.4819390}
 }
 
 
@@ -2317,24 +2320,6 @@
 	pages = {1--25},
 	year = {2015},
 	url = {http://dx.doi.org/10.2140/camcos.2015.10.1}
-}
-
-@unpublished{FalgoutEtAl2015,
-	abstract = {{We consider the comparison of multigrid methods for parabolic partial differential equations that allow
-		space-time concurrency.
-		With current trends in computer architectures leading towards systems with more, but not faster, processors,
-		space-time concurrency is crucial for speeding up time-integration simulations.
-		In contrast, traditional time-integration techniques impose serious limitations on parallel performance due to
-		the sequential nature of the time-stepping approach, allowing spatial concurrency only.
-		This paper considers the three basic options of multigrid algorithms on space-time grids that allow parallelism
-		in space and time: coarsening in space and time, semicoarsening in the spatial dimensions, and semicoarsening in
-		the temporal dimension.
-		We discuss advantages and disadvantages of the different approaches and their benefit compared to traditional
-		space-parallel algorithms with sequential time stepping on modern architectures.}},
-	author = {Falgout, RD and Friedhoff, Stephanie and Kolev, TZ and MacLachlan, SP and Schroder, J and Vandewalle, Stefan},
-	title = {Multigrid methods with space-time concurrency},
-	url = {http://computation.llnl.gov/project/linear_solvers/pubs/pit-mg-space-time-2015.pdf},
-	year = {2015},
 }
 
 @unpublished{FengEtAl2015,
@@ -3078,6 +3063,19 @@ quantities of model systems.}},
         url = {https://doi.org/10.1137/16M1082330},
 }
 
+@article{FalgoutEtAl2017b,
+	abstract = {We consider the comparison of multigrid methods for parabolic partial differential equations that allow space--time concurrency. With current trends in computer architectures leading towards systems with more, but not faster, processors, space--time concurrency is crucial for speeding up time-integration simulations. In contrast, traditional time-integration techniques impose serious limitations on parallel performance due to the sequential nature of the time-stepping approach, allowing spatial concurrency only. This paper considers the three basic options of multigrid algorithms on space--time grids that allow parallelism in space and time: coarsening in space and time, semicoarsening in the spatial dimensions, and semicoarsening in the temporal dimension. We develop parallel software and performance models to study the three methods at scales of up to 16K cores and introduce an extension of one of them for handling multistep time integration. We then discuss advantages and disadvantages of the different approaches and their benefit compared to traditional space-parallel algorithms with sequential time stepping on modern architectures.},
+	author = {Falgout, R. D. and Friedhoff, S. and Kolev, Tz. V. and MacLachlan, S. P. and Schroder, J. B. and Vandewalle, S.},
+	title = {Multigrid methods with space--time concurrency},
+	journal = {Computing and Visualization in Science},
+	year = {2017},
+	volume = {18},
+	number = {4},
+	pages = {123--143},
+	doi = {10.1007/s00791-017-0283-9},
+	url = {https://doi.org/10.1007/s00791-017-0283-9}
+}
+
 @unpublished{GanderEtAl2017,
 	author = {Martin J. Gander and Stefan G{\"u}ttel and Madalina Petcu},
 	title = {A nonlinear {ParaExp} algorithm},
@@ -3338,13 +3336,16 @@ quantities of model systems.}},
 	doi = {10.1016/j.cam.2017.09.033}
 }
 
-@inproceedings{Benedusi2016,
+@inproceedings{BenedusiEtAl2016,
+	abstract = {{We present a parallel and efficient multilevel solution method for the nonlinear systems arising from the discretization of Navier–Stokes (N-S) equations with finite differences. In particular we study the incompressible, unsteady N-S equations with periodic boundary condition in time. A sequential time integration limits the parallelism of the solver to the spatial variables and can therefore be an obstacle to parallel scalability. Time periodicity allows for a space-time discretization, which adds time as an additional direction for parallelism and thus can improve parallel scalability. To achieve fast convergence, we used a space-time multigrid algorithm with a SCGS smoothing procedure (symmetrical coupled Gauss–Seidel, a.k.a. box smoothing). This technique, proposed by Vanka (J Comput Phys 65:138–156, 1986), for the steady viscous incompressible Navier–Stokes equations is extended to the unsteady case and its properties are studied using local Fourier analysis. We used numerical experiments to analyze the scalability and the convergence of the solver, focusing on the case of a pulsatile flow.}},
 	title={{A Parallel Multigrid Solver for Time--periodic Incompressible Navier--Stokes Equations in 3D}},
 	author={Benedusi, P. and Hupp, D. and Arbenz, P. and Krause, R.},
 	booktitle={Numerical Mathematics and Advanced Applications ENUMATH 2015},
 	pages={265--273},
 	year={2016},
-	organization={Springer}
+	organization={Springer},
+	doi = {10.1007/978-3-319-39929-4_26},
+	url = {https://doi.org/10.1007/978-3-319-39929-4_26}
 }
 
 @article{BoltenEtAl2018,
