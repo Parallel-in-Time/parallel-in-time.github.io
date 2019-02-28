@@ -2319,24 +2319,6 @@
 	url = {http://dx.doi.org/10.2140/camcos.2015.10.1}
 }
 
-@unpublished{FalgoutEtAl2015,
-	abstract = {{We consider the comparison of multigrid methods for parabolic partial differential equations that allow
-		space-time concurrency.
-		With current trends in computer architectures leading towards systems with more, but not faster, processors,
-		space-time concurrency is crucial for speeding up time-integration simulations.
-		In contrast, traditional time-integration techniques impose serious limitations on parallel performance due to
-		the sequential nature of the time-stepping approach, allowing spatial concurrency only.
-		This paper considers the three basic options of multigrid algorithms on space-time grids that allow parallelism
-		in space and time: coarsening in space and time, semicoarsening in the spatial dimensions, and semicoarsening in
-		the temporal dimension.
-		We discuss advantages and disadvantages of the different approaches and their benefit compared to traditional
-		space-parallel algorithms with sequential time stepping on modern architectures.}},
-	author = {Falgout, RD and Friedhoff, Stephanie and Kolev, TZ and MacLachlan, SP and Schroder, J and Vandewalle, Stefan},
-	title = {Multigrid methods with space-time concurrency},
-	url = {http://computation.llnl.gov/project/linear_solvers/pubs/pit-mg-space-time-2015.pdf},
-	year = {2015},
-}
-
 @unpublished{FengEtAl2015,
 	abstract = {{The parareal algorithm seeks to extract parallelism in the time-integration direction of
 		time-dependent differential equations.
@@ -3076,6 +3058,19 @@ quantities of model systems.}},
 	year = {2017},
 	doi = {10.1137/16M1082330},
         url = {https://doi.org/10.1137/16M1082330},
+}
+
+@article{FalgoutEtAl2017b,
+	abstract = {We consider the comparison of multigrid methods for parabolic partial differential equations that allow space--time concurrency. With current trends in computer architectures leading towards systems with more, but not faster, processors, space--time concurrency is crucial for speeding up time-integration simulations. In contrast, traditional time-integration techniques impose serious limitations on parallel performance due to the sequential nature of the time-stepping approach, allowing spatial concurrency only. This paper considers the three basic options of multigrid algorithms on space--time grids that allow parallelism in space and time: coarsening in space and time, semicoarsening in the spatial dimensions, and semicoarsening in the temporal dimension. We develop parallel software and performance models to study the three methods at scales of up to 16K cores and introduce an extension of one of them for handling multistep time integration. We then discuss advantages and disadvantages of the different approaches and their benefit compared to traditional space-parallel algorithms with sequential time stepping on modern architectures.},
+	author = {Falgout, R. D. and Friedhoff, S. and Kolev, Tz. V. and MacLachlan, S. P. and Schroder, J. B. and Vandewalle, S.},
+	title = {Multigrid methods with space--time concurrency},
+	journal = {Computing and Visualization in Science},
+	year = {2017},
+	volume = {18},
+	number = {4},
+	pages = {123--143},
+	doi = {10.1007/s00791-017-0283-9},
+	url = {https://doi.org/10.1007/s00791-017-0283-9}
 }
 
 @unpublished{GanderEtAl2017,
