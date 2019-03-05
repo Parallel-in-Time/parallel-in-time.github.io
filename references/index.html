@@ -378,6 +378,71 @@ The influence on the performance of the parareal algorithm, of the choice of the
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          GoetschelMinion2019
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseGoetschelMinion2019Bibtex"
+                    aria-expanded="false" aria-controls="collapseGoetschelMinion2019Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalGoetschelMinion2019Abstract"
+                    aria-expanded="false" aria-controls="modalGoetschelMinion2019Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="GoetschelMinion2019">S. Götschel and M. L. Minion, “An Efficient Parallel-in-Time Method for Optimization with Parabolic PDEs,” arXiv:1901.06850 [math.OC], 2019 [Online]. Available at: <a href="https://arxiv.org/abs/1901.06850" target="_blank">https://arxiv.org/abs/1901.06850</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseGoetschelMinion2019Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{GoetschelMinion2019,
+  author = {Götschel, Sebastian and Minion, Michael L.},
+  title = {{An Efficient Parallel-in-Time Method for Optimization with Parabolic PDEs}},
+  howpublished = {arXiv:1901.06850 [math.OC]},
+  url = {https://arxiv.org/abs/1901.06850},
+  year = {2019}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalGoetschelMinion2019Abstract" tabindex="-1" role="dialog" aria-labelledby="modalGoetschelMinion2019AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalGoetschelMinion2019AbstractTitle">
+            Abstract for BibTeX entry <code>GoetschelMinion2019</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          To solve optimization problems with parabolic PDE constraints, often methods working on the reduced objective functional are used. They are computationally expensive due to the necessity of solving both the state equation and a backward-in-time adjoint equation to evaluate the reduced gradient in each iteration of the optimization method. In this study, we investigate the use of the parallel-in-time method PFASST in the setting of PDE constrained optimization. In order to develop an efficient fully time-parallel algorithm we discuss different options for applying PFASST to adjoint gradient computation, including the possibility of doing PFASST iterations on both the state and adjoint equations simultaneously. We also explore the additional gains in efficiency from reusing information from previous optimization iterations when solving each equation. Numerical results for both a linear and a non-linear reaction-diffusion optimal control problem demonstrate the parallel speedup and efficiency of different approaches.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           HowseEtAl2019
         </div>
       </div>
@@ -2015,6 +2080,75 @@ setups.
         <div class="modal-body">
           McDonald, Pestana and Wathen (SIAM J. Sci. Comput. 40(2), pp. A2012-A1033, 2018) present a method for preconditioning of time-dependent PDEs via approximation by a nearby time-periodic problem, that is, they employ circulant-related matrices as preconditioners for the non-symmetric block Toeplitz matrices which arise from an all-at-once formulation. They suggest that such an approach might be efficiently implemented in parallel. 
 In this short article, we present parallel numerical results for their preconditioner which exhibit strong scaling. We also extend their preconditioner via a Neumann series approach, which also allows for efficient parallel execution. Our simple implementation (in C++ and MPI) is available at the Git repository PARALAAOMPI.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          GoetschelMinion2018
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseGoetschelMinion2018Bibtex"
+                    aria-expanded="false" aria-controls="collapseGoetschelMinion2018Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalGoetschelMinion2018Abstract"
+                    aria-expanded="false" aria-controls="modalGoetschelMinion2018Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="GoetschelMinion2018">S. Götschel and M. L. Minion, “Parallel-in-Time for Parabolic Optimal Control Problems Using PFASST,” in <i>Domain Decomposition Methods in Science and Engineering XXIV</i>, 2018, pp. 363–371 [Online]. Available at: <a href="https://doi.org/10.1007/978-3-319-93873-8_34" target="_blank">https://doi.org/10.1007/978-3-319-93873-8_34</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseGoetschelMinion2018Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@inproceedings{GoetschelMinion2018,
+  author = {G\"otschel, Sebastian and Minion, Michael L.},
+  editor = {Bj{\o}rstad, Petter E. and Brenner, Susanne C. and Halpern, Lawrence and Kim, Hyea Hyun and Kornhuber, Ralf and Rahman, Talal and Widlund, Olof B.},
+  title = {Parallel-in-Time for Parabolic Optimal Control Problems Using {PFASST}},
+  booktitle = {Domain Decomposition Methods in Science and Engineering {XXIV}},
+  year = {2018},
+  publisher = {Springer International Publishing},
+  pages = {363--371},
+  doi = {10.1007/978-3-319-93873-8_34},
+  url = {https://doi.org/10.1007/978-3-319-93873-8_34}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalGoetschelMinion2018Abstract" tabindex="-1" role="dialog" aria-labelledby="modalGoetschelMinion2018AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalGoetschelMinion2018AbstractTitle">
+            Abstract for BibTeX entry <code>GoetschelMinion2018</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          In gradient-based methods for parabolic optimal control problems, it is necessary to solve both the state equation and a backward-in-time adjoint equation in each iteration of the optimization method. In order to facilitate fully parallel gradient-type and nonlinear conjugate gradient methods for the solution of such optimal control problems, we discuss the application of the parallel-in-time method PFASST to adjoint gradient computation. In addition to enabling time parallelism, PFASST provides high flexibility for handling nonlinear equations, as well as potential extra computational savings from reusing previous solutions in the optimization loop. The approach is demonstrated here for a model reaction-diffusion optimal control problem.
         </div>
       </div>
     </div>
