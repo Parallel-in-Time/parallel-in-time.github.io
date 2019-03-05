@@ -3512,6 +3512,19 @@ In this short article, we present parallel numerical results for their precondit
 	year = {2018},
 }
 
+@inproceedings{GoetschelMinion2018,
+	abstract = {{In gradient-based methods for parabolic optimal control problems, it is necessary to solve both the state equation and a backward-in-time adjoint equation in each iteration of the optimization method. In order to facilitate fully parallel gradient-type and nonlinear conjugate gradient methods for the solution of such optimal control problems, we discuss the application of the parallel-in-time method PFASST to adjoint gradient computation. In addition to enabling time parallelism, PFASST provides high flexibility for handling nonlinear equations, as well as potential extra computational savings from reusing previous solutions in the optimization loop. The approach is demonstrated here for a model reaction-diffusion optimal control problem.}},
+	author = {G\"otschel, Sebastian and Minion, Michael L.},
+	editor = {Petter E. Bj{\o}rstad and Susanne C. Brenner and Lawrence Halpern and Hyea Hyun Kim and Ralf Kornhuber and Talal Rahman and Olof B. Widlund},
+	title = {Parallel-in-Time for Parabolic Optimal Control Problems Using {PFASST}},
+	booktitle = {Domain Decomposition Methods in Science and Engineering {XXIV}},
+	year = {2018},
+	publisher = {Springer International Publishing},
+	pages = {363--371},
+	doi = {10.1007/978-3-319-93873-8_34},
+	url = {https://doi.org/10.1007/978-3-319-93873-8_34}
+}
+
 @article{GuentherEtAl2018,
 	abstract = {{In this paper, an adjoint solver for the multigrid in time software library XBraid is presented. XBraid provides a non-intrusive approach for simulating unsteady dynamics on multiple processors while parallelizing not only in space but also in the time domain. It applies an iterative multigrid reduction in time algorithm to existing spatially parallel classical time propagators and computes the unsteady solution parallel in time. Techniques from Automatic Differentiation are used to develop a consistent discrete adjoint solver which provides sensitivity information of output quantities with respect to design parameter changes. The adjoint code runs backwards through the primal XBraid actions and accumulates gradient information parallel in time. It is highly non-intrusive as existing adjoint time propagators can easily be integrated through the adjoint interface. The adjoint code is validated on advection-dominated flow with periodic upstream boundary condition. It provides similar strong scaling results as the primal XBraid solver and offers great potential for speeding up the overall computational costs for sensitivity analysis using multiple processors}},
 	author = {G\"unther, S. and Gauger, N. R. and Schroder, J. B.},
@@ -3901,6 +3914,16 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	doi = {https://doi.org/10.1016/j.camwa.2018.12.031},
 	url = {http://www.sciencedirect.com/science/article/pii/S0898122118307296},
 }
+
+@unpublished{GoetschelMinion2019,
+	abstract = {{To solve optimization problems with parabolic PDE constraints, often methods working on the reduced objective functional are used. They are computationally expensive due to the necessity of solving both the state equation and a backward-in-time adjoint equation to evaluate the reduced gradient in each iteration of the optimization method. In this study, we investigate the use of the parallel-in-time method PFASST in the setting of PDE constrained optimization. In order to develop an efficient fully time-parallel algorithm we discuss different options for applying PFASST to adjoint gradient computation, including the possibility of doing PFASST iterations on both the state and adjoint equations simultaneously. We also explore the additional gains in efficiency from reusing information from previous optimization iterations when solving each equation. Numerical results for both a linear and a non-linear reaction-diffusion optimal control problem demonstrate the parallel speedup and efficiency of different approaches.}},
+	author = {Sebastian Götschel and Michael L. Minion},
+	title = {{An Efficient Parallel-in-Time Method for Optimization with Parabolic PDEs}},
+	howpublished = {arXiv:1901.06850 [math.OC]},
+	url = {https://arxiv.org/abs/1901.06850},
+	year = {2019},
+}
+
 
 @article{HowseEtAl2019,
 	abstract = {{We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.}},
