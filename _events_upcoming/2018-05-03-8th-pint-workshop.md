@@ -41,7 +41,7 @@ We gladly confirmed the following invited speakers:
  - Dr Jemma Shipton, Imperial College London
  - Dr Oliver Rain, Robert Bosch GmbH
 
-**Please contact the organizers if you would like to attend!** We will then arrange for a formal invite being sent to you. Deadline for registration is 15 March 2019. Thanks to support from the Institute for Advanced Studies, Lawrence Livermore National Laboratory, Juelich Supercomputing Centre and the Graduate School of Excellence Computational Engineering at TU Darmstadt there will not be a registration fee.
+**Please contact the organizers if you would like to attend!** We will then arrange for a formal invite being sent to you. Deadline for registration is 15 March 2019. Thanks to support from the Institute for Advanced Studies, Juelich Supercomputing Centre and the Graduate School of Excellence Computational Engineering at TU Darmstadt there will not be a registration fee.
 
 Note that there is [travel funding for PhD students](http://parallel-in-time.org/events/travel_grants.html) available. Please send your completed application to the Scientific Committee at pint-sc[AT]googlegroups.com for consideration. To receive full consideration, applications have to be received by 1 March 2019.
 
