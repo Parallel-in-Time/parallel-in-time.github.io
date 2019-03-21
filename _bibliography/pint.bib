@@ -3886,6 +3886,15 @@ In this short article, we present parallel numerical results for their precondit
 % 2019
 % 
 
+@unpublished{AgbohEtAl2019,
+	abstract = {{We present a method for fast and accurate physics-based predictions during non-prehensile manipulation planning and control. Given an initial state and a sequence of controls, the problem of predicting the resulting sequence of states is a key component of a variety of model-based planning and control algorithms. We propose combining a coarse (i.e. computationally cheap but not very accurate) predictive physics model, with a fine (i.e. computationally expensive but accurate) predictive physics model, to generate a hybrid model that is at the required speed and accuracy for a given manipulation task. Our approach is based on the Parareal algorithm, a parallel-in-time integration method used for computing numerical solutions for general systems of ordinary differential equations. We use Parareal to combine a coarse pushing model with an off-the-shelf physics engine to deliver physics-based predictions that are as accurate as the physics engine but runs in substantially less wall-clock time, thanks to Parareal being amenable to parallelization. We use these physics-based predictions in a model-predictive-control framework based on trajectory optimization, to plan pushing actions that avoid an obstacle and reach a goal location. We show that by combining the two physics models, we can achieve the same success rates as the planner that uses the off-the-shelf physics engine directly, but significantly faster. We present experiments in simulation and on a real robotic setup.}},
+	authors = {Wisdom C. Agboh and Daniel Ruprecht and Mehmet R. Dogar},
+	title = {Combining Coarse and Fine Physics for Manipulation using Parallel-in-Time Integration},
+	howpublished = {arXiv:1903.08470 [cs.RO]},
+	url = {https://arxiv.org/abs/1903.08470},
+	year = {2019},
+}
+
 @unpublished{BastEtAl2019,
 	abstract = {{This paper focuses on efficient steady-state computations of induction machines. In particular, the periodic Parareal algorithm with initial-value coarse problem (PP-IC) is considered for acceleration of classical time-stepping simulations via non-intrusive parallelization in time domain, i.e., existing implementations can be reused. Superiority of this parallel-in-time method is in its direct applicability to time-periodic problems, compared to, e.g, the standard Parareal method, which only solves an initial-value problem, starting from a prescribed initial value. PP-IC is exploited here to obtain the steady state of several operating points of an induction motor, developed by Robert Bosch GmbH. Numerical experiments show that acceleration up to several dozens of times can be obtained, depending on availability of parallel processing units. Comparison of PP-IC with existing time-periodic explicit error correction method highlights better robustness and efficiency of the considered time-parallel approach.}},
 	author = {Denys Bast and Iryna Kulchytska-Ruchka and Sebastian Schöps and Oliver Rain},
@@ -3902,6 +3911,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	title = {On parareal algorithms for semilinear parabolic Stochastic PDEs},
 	howpublished = {arXiv:1902.05370 [math.NA]},
 	url = {https://arxiv.org/abs/1902.05370},
+	year = {2019},
+}
+
+@unpublished{ClarkeEtAl2019,
+	abstract = {{The precise mechanisms responsible for the natural dynamos in the Earth and Sun are still not fully understood. Numerical simulations of natural dynamos are extremely computationally intensive, and are carried out in parameter regimes many orders of magnitude away from real conditions. Parallelization in space is a common strategy to speed up simulations on high performance computers, but eventually hits a scaling limit. Additional directions of parallelization are desirable to utilise the high number of processor cores now available. Parallel-in-time methods can deliver speed up in addition to that offered by spatial partitioning but have not yet been applied to dynamo simulations. This paper investigates the feasibility of using the parallel-in-time algorithm Parareal to speed up initial value problem simulations of the kinematic dynamo, using the open source Dedalus spectral solver. Both the time independent Roberts and time dependent Galloway-Proctor 2.5D dynamos are investigated over a range of magnetic Reynolds numbers. Speed ups beyond those possible from spatial parallelization are found in both cases. Results for the Galloway-Proctor flow are promising, with Parareal efficiency found to be close to 0.3. Roberts flow results are less efficient, but Parareal still shows some speed up over spatial parallelization alone. Parallel in space and time speed ups of ∼300 were found for 1600 cores for the Galloway-Proctor flow, with total parallel efficiency of ∼0.16.}},
+	author = {Andrew T. Clarke and Christopher J. Davies and Daniel Ruprecht and Steven M. Tobias},
+	title = {Parallel-in-time integration of Kinematic Dynamos},
+	howpublished = {arXiv:1902.00387 [physics.comp-ph]},
+	url = {https://arxiv.org/abs/1902.00387},
 	year = {2019},
 }
 
@@ -3924,6 +3942,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@article{HedinLelievre2019,
+	abstract = {{Metastability is one of the major encountered obstacles when performing long molecular dynamics simulations, and many methods were developed to address this challenge. The “Parallel Replica”(ParRep) dynamics is known for allowing to simulate very long trajectories of metastable Langevin dynamics in the materials science community, but it relies on assumptions that can hardly be transposed to the world of biochemical simulations. The later developed “Generalized ParRep” variant solves those issues, but it was not applied to significant systems of interest so far. In this article, we present the program gen.parRep, the first publicly available implementation of the Generalized Parallel Replica method (BSD 3-Clause license), targeting frequently encountered metastable biochemical systems, such as conformational equilibria or dissociation of protein–ligand complexes. It will be shown that the resulting C++ implementation exhibits a strong linear scalability, providing up to 70\% of the maximum possible speedup on several hundreds of CPUs.}},
+	author = {Florent Hédin and Tony Lelièvre},
+	title = {gen.parRep: A first implementation of the Generalized Parallel Replica dynamics for the long time simulation of metastable biochemical systems},
+	journal = {Computer Physics Communications},
+	year = {2019},
+	url = {https://doi.org/10.1016/j.cpc.2019.01.005},
+	doi = {10.1016/j.cpc.2019.01.005},
+}
 
 @article{HowseEtAl2019,
 	abstract = {{We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.}},
@@ -4020,14 +4047,4 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	notes={(in press)},
 	doi = {10.1016/j.parco.2019.01.005},
 	url = {https://dx.doi.org/10.1016/j.parco.2019.01.005}
-}
-
-@article{HedinLelievre2019,
-	abstract = {{Metastability is one of the major encountered obstacles when performing long molecular dynamics simulations, and many methods were developed to address this challenge. The “Parallel Replica”(ParRep) dynamics is known for allowing to simulate very long trajectories of metastable Langevin dynamics in the materials science community, but it relies on assumptions that can hardly be transposed to the world of biochemical simulations. The later developed “Generalized ParRep” variant solves those issues, but it was not applied to significant systems of interest so far. In this article, we present the program gen.parRep, the first publicly available implementation of the Generalized Parallel Replica method (BSD 3-Clause license), targeting frequently encountered metastable biochemical systems, such as conformational equilibria or dissociation of protein–ligand complexes. It will be shown that the resulting C++ implementation exhibits a strong linear scalability, providing up to 70\% of the maximum possible speedup on several hundreds of CPUs.}},
-	author = {Florent Hédin and Tony Lelièvre},
-	title = {gen.parRep: A first implementation of the Generalized Parallel Replica dynamics for the long time simulation of metastable biochemical systems},
-	journal = {Computer Physics Communications},
-	year = {2019},
-	url = {https://doi.org/10.1016/j.cpc.2019.01.005},
-	doi = {10.1016/j.cpc.2019.01.005},
 }
