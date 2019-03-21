@@ -4031,3 +4031,12 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	url = {https://doi.org/10.1016/j.cpc.2019.01.005},
 	doi = {10.1016/j.cpc.2019.01.005},
 }
+
+@unpublished{AgbohEtAl2019,
+	abstract = {{We present a method for fast and accurate physics-based predictions during non-prehensile manipulation planning and control. Given an initial state and a sequence of controls, the problem of predicting the resulting sequence of states is a key component of a variety of model-based planning and control algorithms. We propose combining a coarse (i.e. computationally cheap but not very accurate) predictive physics model, with a fine (i.e. computationally expensive but accurate) predictive physics model, to generate a hybrid model that is at the required speed and accuracy for a given manipulation task. Our approach is based on the Parareal algorithm, a parallel-in-time integration method used for computing numerical solutions for general systems of ordinary differential equations. We use Parareal to combine a coarse pushing model with an off-the-shelf physics engine to deliver physics-based predictions that are as accurate as the physics engine but runs in substantially less wall-clock time, thanks to Parareal being amenable to parallelization. We use these physics-based predictions in a model-predictive-control framework based on trajectory optimization, to plan pushing actions that avoid an obstacle and reach a goal location. We show that by combining the two physics models, we can achieve the same success rates as the planner that uses the off-the-shelf physics engine directly, but significantly faster. We present experiments in simulation and on a real robotic setup.}},
+	authors = {Wisdom C. Agboh and Daniel Ruprecht and Mehmet R. Dogar},
+	title = {Combining Coarse and Fine Physics for Manipulation using Parallel-in-Time Integration},
+	howpublished = {arXiv:1903.08470 [cs.RO]},
+	url = {https://arxiv.org/abs/1903.08470},
+	year = {2019},
+}
