@@ -3933,6 +3933,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@article{HedinLelievre2019,
+	abstract = {{Metastability is one of the major encountered obstacles when performing long molecular dynamics simulations, and many methods were developed to address this challenge. The “Parallel Replica”(ParRep) dynamics is known for allowing to simulate very long trajectories of metastable Langevin dynamics in the materials science community, but it relies on assumptions that can hardly be transposed to the world of biochemical simulations. The later developed “Generalized ParRep” variant solves those issues, but it was not applied to significant systems of interest so far. In this article, we present the program gen.parRep, the first publicly available implementation of the Generalized Parallel Replica method (BSD 3-Clause license), targeting frequently encountered metastable biochemical systems, such as conformational equilibria or dissociation of protein–ligand complexes. It will be shown that the resulting C++ implementation exhibits a strong linear scalability, providing up to 70\% of the maximum possible speedup on several hundreds of CPUs.}},
+	author = {Florent Hédin and Tony Lelièvre},
+	title = {gen.parRep: A first implementation of the Generalized Parallel Replica dynamics for the long time simulation of metastable biochemical systems},
+	journal = {Computer Physics Communications},
+	year = {2019},
+	url = {https://doi.org/10.1016/j.cpc.2019.01.005},
+	doi = {10.1016/j.cpc.2019.01.005},
+}
 
 @article{HowseEtAl2019,
 	abstract = {{We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.}},
@@ -4029,14 +4038,4 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	notes={(in press)},
 	doi = {10.1016/j.parco.2019.01.005},
 	url = {https://dx.doi.org/10.1016/j.parco.2019.01.005}
-}
-
-@article{HedinLelievre2019,
-	abstract = {{Metastability is one of the major encountered obstacles when performing long molecular dynamics simulations, and many methods were developed to address this challenge. The “Parallel Replica”(ParRep) dynamics is known for allowing to simulate very long trajectories of metastable Langevin dynamics in the materials science community, but it relies on assumptions that can hardly be transposed to the world of biochemical simulations. The later developed “Generalized ParRep” variant solves those issues, but it was not applied to significant systems of interest so far. In this article, we present the program gen.parRep, the first publicly available implementation of the Generalized Parallel Replica method (BSD 3-Clause license), targeting frequently encountered metastable biochemical systems, such as conformational equilibria or dissociation of protein–ligand complexes. It will be shown that the resulting C++ implementation exhibits a strong linear scalability, providing up to 70\% of the maximum possible speedup on several hundreds of CPUs.}},
-	author = {Florent Hédin and Tony Lelièvre},
-	title = {gen.parRep: A first implementation of the Generalized Parallel Replica dynamics for the long time simulation of metastable biochemical systems},
-	journal = {Computer Physics Communications},
-	year = {2019},
-	url = {https://doi.org/10.1016/j.cpc.2019.01.005},
-	doi = {10.1016/j.cpc.2019.01.005},
 }
