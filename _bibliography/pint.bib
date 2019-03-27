@@ -3942,6 +3942,19 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	url = {http://www.sciencedirect.com/science/article/pii/S0898122118307296},
 }
 
+@article{GanderEtAl2019,
+	abstract = {{With the advent of very large scale parallel computers, it has become more and more important to also use the time direction for parallelization when solving evolution problems. While there are many successful algorithms for diffusive problems, only some of them are also effective for hyperbolic problems. We present here a mathematical analysis of a new method based on the diagonalization of the time stepping matrix proposed by Maday and Rønquist in 2007. Like many time-parallelization methods, at first this does not seem to be a very promising approach: the matrix is essentially triangular, or, for equidistant time steps, actually a Jordan block, and thus not diagonalizable. If one chooses however different time steps, diagonalization is possible, and one has to trade off between the accuracy due to necessarily having different time steps, and numerical errors in the diagonalization process of these almost nondiagonalizable matrices. We present for the first time such a diagonalization technique for the Newmark scheme for solving wave equations, and derive a mathematically rigorous optimization strategy for the choice of the parameters in the special case when the Newmark scheme becomes Crank--Nicolson. Our analysis shows that small to medium scale time parallelization is possible with this approach. We illustrate our results with numerical experiments for model wave equations in various dimensions and also an industrial test case for the elasticity equations with variable coefficients.}},
+	author = {Gander, M. and Halpern, L. and Rannou, J. and Ryan, J.},
+	title = {A Direct Time Parallel Solver by Diagonalization for the Wave Equation},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {41},
+	number = {1},
+	pages = {A220-A245},
+	year = {2019},
+	doi = {10.1137/17M1148347},
+	url = {https://doi.org/10.1137/17M1148347},
+}
+
 @unpublished{GoetschelMinion2019,
 	abstract = {{To solve optimization problems with parabolic PDE constraints, often methods working on the reduced objective functional are used. They are computationally expensive due to the necessity of solving both the state equation and a backward-in-time adjoint equation to evaluate the reduced gradient in each iteration of the optimization method. In this study, we investigate the use of the parallel-in-time method PFASST in the setting of PDE constrained optimization. In order to develop an efficient fully time-parallel algorithm we discuss different options for applying PFASST to adjoint gradient computation, including the possibility of doing PFASST iterations on both the state and adjoint equations simultaneously. We also explore the additional gains in efficiency from reusing information from previous optimization iterations when solving each equation. Numerical results for both a linear and a non-linear reaction-diffusion optimal control problem demonstrate the parallel speedup and efficiency of different approaches.}},
 	author = {Sebastian Götschel and Michael L. Minion},
