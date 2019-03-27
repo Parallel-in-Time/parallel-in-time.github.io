@@ -3923,6 +3923,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@unpublished{DeSterckEtAl2019,
+	abstract = {{Parallel-in-time algorithms have been successfully employed for reducing time-to-solution of a variety of partial differential equations, especially for diffusive (parabolic-type) equations. A major failing of parallel-in-time approaches to date, however, is that most methods show instabilities or poor convergence for hyperbolic problems. This paper focuses on the analysis of the convergence behavior of multigrid methods for the parallel-in-time solution of hyperbolic problems. Three analysis tools are considered that differ, in particular, in the treatment of the time dimension: (1) space-time local Fourier analysis, using a Fourier ansatz in space and time, (2) semi-algebraic mode analysis, coupling standard local Fourier analysis approaches in space with algebraic computation in time, and (3) a two-level reduction analysis, considering error propagation only on the coarse time grid. In this paper, we show how insights from reduction analysis can be used to improve feasibility of the semi-algebraic mode analysis, resulting in a tool that offers the best features of both analysis techniques. Following validating numerical results, we investigate what insights the combined analysis framework can offer for two model hyperbolic problems, the linear advection equation in one space dimension and linear elasticity in two space dimensions.}},
+	author = {Hans De Sterck and Stephanie Friedhoff and Alexander J. M. Howse and Scott P. MacLachlan},
+	title = {Convergence analysis for parallel-in-time solution of hyperbolic systems},
+	howpublished = {arXiv:1903.08928 [math.NA]},
+	url = {https://arxiv.org/abs/1903.08928},
+	year = {2019},
+}
+
 @article{DohrEtAl2019,
 	abstract = {In this paper we introduce a new parallel solver for the weakly singular space–time boundary integral equation for the heat equation. The space–time boundary mesh is decomposed into a given number of submeshes. Pairs of the submeshes represent dense blocks in the system matrices, which are distributed among computational nodes by an algorithm based on a cyclic decomposition of complete graphs ensuring load balance. In addition, we employ vectorization and threading in shared memory to ensure intra-node efficiency. We present scalability experiments on different CPU architectures to evaluate the performance of the proposed parallelization techniques. All levels of parallelism allow us to tackle large problems and lead to an almost optimal speedup.},
 	author = {Stefan Dohr and Jan Zapletal and Günther Of and Michal Merta and Michal Kravčenko},
