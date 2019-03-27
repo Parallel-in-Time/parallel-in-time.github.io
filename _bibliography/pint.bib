@@ -3923,6 +3923,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@unpublished{DeSterckEtAl2019,
+	abstract = {{Parallel-in-time algorithms have been successfully employed for reducing time-to-solution of a variety of partial differential equations, especially for diffusive (parabolic-type) equations. A major failing of parallel-in-time approaches to date, however, is that most methods show instabilities or poor convergence for hyperbolic problems. This paper focuses on the analysis of the convergence behavior of multigrid methods for the parallel-in-time solution of hyperbolic problems. Three analysis tools are considered that differ, in particular, in the treatment of the time dimension: (1) space-time local Fourier analysis, using a Fourier ansatz in space and time, (2) semi-algebraic mode analysis, coupling standard local Fourier analysis approaches in space with algebraic computation in time, and (3) a two-level reduction analysis, considering error propagation only on the coarse time grid. In this paper, we show how insights from reduction analysis can be used to improve feasibility of the semi-algebraic mode analysis, resulting in a tool that offers the best features of both analysis techniques. Following validating numerical results, we investigate what insights the combined analysis framework can offer for two model hyperbolic problems, the linear advection equation in one space dimension and linear elasticity in two space dimensions.}},
+	author = {Hans De Sterck and Stephanie Friedhoff and Alexander J. M. Howse and Scott P. MacLachlan},
+	title = {Convergence analysis for parallel-in-time solution of hyperbolic systems},
+	howpublished = {arXiv:1903.08928 [math.NA]},
+	url = {https://arxiv.org/abs/1903.08928},
+	year = {2019},
+}
+
 @article{DohrEtAl2019,
 	abstract = {In this paper we introduce a new parallel solver for the weakly singular space–time boundary integral equation for the heat equation. The space–time boundary mesh is decomposed into a given number of submeshes. Pairs of the submeshes represent dense blocks in the system matrices, which are distributed among computational nodes by an algorithm based on a cyclic decomposition of complete graphs ensuring load balance. In addition, we employ vectorization and threading in shared memory to ensure intra-node efficiency. We present scalability experiments on different CPU architectures to evaluate the performance of the proposed parallelization techniques. All levels of parallelism allow us to tackle large problems and lead to an almost optimal speedup.},
 	author = {Stefan Dohr and Jan Zapletal and Günther Of and Michal Merta and Michal Kravčenko},
@@ -3931,6 +3940,19 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 	doi = {https://doi.org/10.1016/j.camwa.2018.12.031},
 	url = {http://www.sciencedirect.com/science/article/pii/S0898122118307296},
+}
+
+@article{GanderEtAl2019,
+	abstract = {{With the advent of very large scale parallel computers, it has become more and more important to also use the time direction for parallelization when solving evolution problems. While there are many successful algorithms for diffusive problems, only some of them are also effective for hyperbolic problems. We present here a mathematical analysis of a new method based on the diagonalization of the time stepping matrix proposed by Maday and Rønquist in 2007. Like many time-parallelization methods, at first this does not seem to be a very promising approach: the matrix is essentially triangular, or, for equidistant time steps, actually a Jordan block, and thus not diagonalizable. If one chooses however different time steps, diagonalization is possible, and one has to trade off between the accuracy due to necessarily having different time steps, and numerical errors in the diagonalization process of these almost nondiagonalizable matrices. We present for the first time such a diagonalization technique for the Newmark scheme for solving wave equations, and derive a mathematically rigorous optimization strategy for the choice of the parameters in the special case when the Newmark scheme becomes Crank--Nicolson. Our analysis shows that small to medium scale time parallelization is possible with this approach. We illustrate our results with numerical experiments for model wave equations in various dimensions and also an industrial test case for the elasticity equations with variable coefficients.}},
+	author = {Gander, M. and Halpern, L. and Rannou, J. and Ryan, J.},
+	title = {A Direct Time Parallel Solver by Diagonalization for the Wave Equation},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {41},
+	number = {1},
+	pages = {A220-A245},
+	year = {2019},
+	doi = {10.1137/17M1148347},
+	url = {https://doi.org/10.1137/17M1148347},
 }
 
 @unpublished{GoetschelMinion2019,
