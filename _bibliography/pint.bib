@@ -3350,6 +3350,15 @@ quantities of model systems.}},
 	url = {https://doi.org/10.1007/978-3-319-39929-4_26}
 }
 
+@unpublished{BlumersEtAl2019,
+	abstract = {{Lagrangian particle methods based on detailed atomic and molecular models are powerful computational tools for studying the dynamics of microscale and nanoscale systems. However, the maximum time step is limited by the smallest oscillation period of the fastest atomic motion, rendering long-time simulations very expensive. To resolve this bottleneck, we propose a supervised parallel-in-time algorithm for stochastic dynamics (SPASD) to accelerate long-time Lagrangian particle simulations. Our method is inspired by bottom-up coarse-graining projections that yield mean-field hydrodynamic behavior in the continuum limit. Here as an example, we use the dissipative particle dynamics (DPD) as the Lagrangian particle simulator that is supervised by its macroscopic counterpart, i.e., the Navier-Stokes simulator. The low-dimensional macroscopic system (here, the Navier-Stokes solver) serves as a predictor to supervise the high-dimensional Lagrangian simulator, in a predictor-corrector type algorithm. The results of the Lagrangian simulation then correct the mean-field prediction and provide the proper microscopic details (e.g., consistent fluctuations, correlations, etc.). The unique feature that sets SPASD apart from other multiscale methods is the use of a low-fidelity macroscopic model as a predictor. The macro-model can be approximate and even inconsistent with the microscale description, but SPASD anticipates the deviation and corrects it internally to recover the true dynamics.}},
+	author = {Ansel L. Blumers and Zhen Li and George Em Karniadakis},
+	title = {Supervised parallel-in-time algorithm for long-time Lagrangian simulations of stochastic dynamics: Application to hydrodynamics},
+	howpublished = {arXiv:1904.02137 [physics.comp-ph]},
+	url = {https://arxiv.org/abs/1904.02137},
+	year = {2019},
+}
+
 @article{BoltenEtAl2018,
 	abstract = {For time-dependent partial differential equations, parallel-in-time integration using the “parallel full approximation scheme in space and time” (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time steps simultaneously using a space–time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as a multigrid method. In this paper, we will use this multigrid formulation and, in particular, PFASST's iteration matrix to show that, in the nonstiff and stiff limit, PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.},
 	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
