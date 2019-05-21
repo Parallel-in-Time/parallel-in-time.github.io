@@ -1081,7 +1081,8 @@
 	pages = {145-168},
 	doi = {10.1137/1.9780898718935.ch7},
 	url = {https://dx.doi.org/10.1137/1.9780898718935.ch7},
-	year = {2007}
+	year = {2007},
+	publisher = {SIAM}
 }
 
 %
@@ -2077,8 +2078,9 @@
 	year = {2014},
 }
 
-@unpublished{FalgoutEtAl2014,
+@techreport{FalgoutEtAl2014,
 	author = {Falgout, R. D. and Katz, A. and Kolev, T.~V. and Schroder, Jacob B. and Wissink, A.~M. and Yang, U.~M.},
+	institution = {Lawrence Livermore National Laboratory},
 	title = {{Parallel Time Integration with Multigrid Reduction for a Compressible Fluid Dynamics Application}},
 	url = {https://computation.llnl.gov/project/parallel-time-integration/pubs/strand2d-pit.pdf},
 	year = {2014}
@@ -2862,14 +2864,16 @@ to the best performance}},
         year = {2016},
 }
 
-@book{FalgoutEtAl2016, 
+@techreport{FalgoutEtAl2016, 
 	abstract = {{With steadily growing computational resources available, scientists must develop effective ways to utilize the increased resources. High performance, highly parallel software has become a standard. However until recent years parallelism has focused primarily on the spatial domain. When solving a space-time partial differential equation (PDE), this leads to a sequential bottleneck in the temporal dimension, particularly when taking a large number of time steps. The XBraid parallel-in-time library was developed as a practical way to add temporal parallelism to existing sequential codes with only minor modi cations. In this work, a rezoning-type moving mesh is applied to a diffusion problem and formulated in a parallel-in-time framework. Tests and scaling studies are run using XBraid and demonstrate excellent results for the simple model problem considered herein.}}, 		
 	author = {Falgout, R.~D. and Manteuffel, T.~A. and Southworth, B. and Schroder, J. B.}, 
+	institution = {Lawrence Livermore National Laboratory},
 	doi = {10.2172/1239230}, 
 	title = {Parallel-In-Time For Moving Meshes}, 
 	url = {http://www.osti.gov/scitech/servlets/purl/1239230}, 
 	year={2016},
 }
+
 
 @inproceedings{GahvariEtAl2016,
 	abstract = {{The traditional way to numerically solve time-dependent problems is to sequentially march through time, solving for one time step and then the next. The parallelism in this approach is limited to the spatial dimension, which is quickly exhausted, causing the gain from using more processors to solve a problem to diminish. One approach to overcome this barrier is to use methods that are parallel in time. These methods have the potential to achieve dramatically better performance compared to time-stepping approaches, but achieving this performance requires carefully choosing the amount of parallelism devoted to space versus the amount devoted to time. Here, we present
@@ -3119,22 +3123,20 @@ and geometry is explored.}},
         year = {2016},
 }
 
-@unpublished{ZhangEtAl2016,
-	abstract = {{In this papers, we couple the parareal algorithm with projection methods
-of the trajectory on a specific manifold, defined by the preservation of
-some conserved quantities of the differential equations. First, projection
-methods are introduced as the coarse and fine propagators. Second, we
-also apply the projection methods for systems with conserved quantities
-in the correction step of original parareal algorithm. Finally, three numerical
-experiments are performed by different kinds of algorithms to show
-the property of convergence in iteration, and preservation in conserved
-quantities of model systems.}},
-	author = {Zhang, Liying and Zhou, Weien and Hong, Jialin},
+@article {ZhangEtAl2016,
+	author = {Zhang, Liying and Zhou, Weien and Ji, Lihai},
 	title = {Parareal algorithms applied to stochastic differential equations with conserved quantities},
-	howpublished = {arXiv:1609.08299v1 [math.NA] },
-	url = {https://arxiv.org/pdf/1609.08299.pdf},
-	year = {2016}
+	journal = {J. Comput. Math.},
+	fjournal = {Journal of Computational Mathematics},
+	volume = {37},
+	year = {2019},
+	number = {1},
+	pages = {48--60},
+	issn = {0254-9409},
+	doi = {10.4208/jcm.1708-m2017-0089},
+	url = {https://doi.org/10.4208/jcm.1708-m2017-0089},
 }
+
 
 %
 % 2017
@@ -3389,13 +3391,13 @@ quantities of model systems.}},
 	year={2017},
 }
 
-@unpublished{SchroderEtAl2017,
-	abstract = {{This work presents a time-parallel approach for solving power grid problems with scheduled events (e.g., a square pulse applied to a bus). The multigrid reduction in time (MGRIT) method, implemented in the XBraid code, is used to nonintrusively add time parallelism to GridDyn, an existing open-source power grid simulation tool. The approach extends standard practices for sequential time stepping and scheduled events to the time-parallel setting and then explores temporal refinement. The paper concludes with parallel experiments validating the approach and showing speedups of around 50x for the WECC 179 bus system. Scalability with respect to scheduled events is examined by applying a one second long square pulse to bus 143 every 2 seconds}},
-	author = {Jacob B. Schroder and Robert D. Falgout and Carol S. Woodward and Philip Top},
-	title = {Parallel-in-Time Solution of Power Systems with Scheduled Events},
-	howpublished = {LLNL Preprint},
-	url = {https://computation.llnl.gov/projects/parallel-time-integration-multigrid/2017_PES_Paper_v1.pdf},
-	year = {2017}
+@inproceedings{SchroderEtAl2017,
+  title={Parallel-in-Time Solution of Power Systems with Scheduled Events},
+  author={Schroder, Jacob B and Falgout, Robert D and Woodward, Carol S and Top, Philip and Lecouvez, Matthieu},
+  booktitle={2018 IEEE Power \& Energy Society General Meeting (PESGM)},
+  pages={1--5},
+  year={2018},
+  organization={IEEE}
 }
 
 @article{SpeckRuprecht2017,
@@ -4121,9 +4123,10 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	isbn={978-3-319-93873-8}
 }
 
-@unpublished{GoetschelMinion2019,
+@techreport{GoetschelMinion2019,
 	abstract = {{To solve optimization problems with parabolic PDE constraints, often methods working on the reduced objective functional are used. They are computationally expensive due to the necessity of solving both the state equation and a backward-in-time adjoint equation to evaluate the reduced gradient in each iteration of the optimization method. In this study, we investigate the use of the parallel-in-time method PFASST in the setting of PDE constrained optimization. In order to develop an efficient fully time-parallel algorithm we discuss different options for applying PFASST to adjoint gradient computation, including the possibility of doing PFASST iterations on both the state and adjoint equations simultaneously. We also explore the additional gains in efficiency from reusing information from previous optimization iterations when solving each equation. Numerical results for both a linear and a non-linear reaction-diffusion optimal control problem demonstrate the parallel speedup and efficiency of different approaches.}},
 	author = {Sebastian Götschel and Michael L. Minion},
+   institution = {Lawrence Berkeley National Laboratory}, 
 	title = {{An Efficient Parallel-in-Time Method for Optimization with Parabolic PDEs}},
 	howpublished = {arXiv:1901.06850 [math.OC]},
 	url = {https://arxiv.org/abs/1901.06850},
@@ -4237,3 +4240,22 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	doi = {10.1016/j.parco.2019.01.005},
 	url = {https://dx.doi.org/10.1016/j.parco.2019.01.005}
 }
+
+@article{MaRuSo2018,
+   author = {Manteuffel, T. and Ruge, J. and Southworth, B.},
+   title = {Nonsymmetric Algebraic Multigrid Based on Local Approximate Ideal Restriction},
+   journal = {SIAM Journal on Scientific Computing},
+   volume = {40},
+   number = {6},
+   pages = {A4105-A4130},
+   year = {2018},
+}
+
+@article{FrHaKuSc2018,
+  title={Exploring Parallel-in-Time Approaches for Eddy Current Problems},
+  author={Friedhoff, Stephanie and Hahne, Jens and Kulchytska-Ruchka, Iryna and Sch{\"o}ps, Sebastian},
+  journal={arXiv preprint arXiv:1810.13263},
+  year={2018}
+}
+
+
