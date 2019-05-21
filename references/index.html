@@ -1555,7 +1555,6 @@ The influence on the performance of the parareal algorithm, of the choice of the
   journal = {Parallel Computing},
   year = {2019},
   publisher = {Elsevier},
-  notes = {(in press)},
   doi = {10.1016/j.parco.2019.01.005},
   url = {https://dx.doi.org/10.1016/j.parco.2019.01.005}
 }
@@ -1575,6 +1574,73 @@ The influence on the performance of the parareal algorithm, of the choice of the
         </div>
         <div class="modal-body">
           High-performance computing trends towards many-core systems are expected to continue over the next decade. As a result, parallel-in-time methods, mathematical formulations which exploit additional degrees of parallelism in the time dimension, have gained increasing interest in recent years. In this work we study a massively parallel rational approximation of exponential integrators (REXI). This method replaces a time integration of stiff linear oscillatory and diffusive systems by the sum of the solutions of many decoupled systems, which can be solved in parallel. Previous numerical studies showed that this reformulation allows taking arbitrarily long time steps for the linear oscillatory parts. The present work studies the non-linear shallow-water equations on the rotating sphere, a simplified system of equations used to study properties of space and time discretization methods in the context of atmospheric simulations. After introducing time integrators, we first compare the time step sizes to the errors in the simulation, discussing pros and cons of different formulations of REXI. Here, REXI already shows superior properties compared to explicit and implicit time stepping methods. Additionally, we present wallclock-time-to-error results revealing the sweet spots of REXI obtaining either an over 6 ×  higher accuracy within the same time frame or an about 3 ×  reduced time-to-solution for a similar error threshold. Our results motivate further explorations of REXI for operational weather/climate systems.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          HamonEtAl2019
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseHamonEtAl2019Bibtex"
+                    aria-expanded="false" aria-controls="collapseHamonEtAl2019Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalHamonEtAl2019Abstract"
+                    aria-expanded="false" aria-controls="modalHamonEtAl2019Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="HamonEtAl2019">M. Schreiber, N. Schaeffer, and R. Loft, “Parallel-in-Time Multi-Level Integration of the Shallow-Water Equations on the Rotating Sphere,” arXiv:1904.05988 [math.NA], 2019 [Online]. Available at: <a href="https://arxiv.org/abs/1904.05988" target="_blank">https://arxiv.org/abs/1904.05988</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseHamonEtAl2019Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{HamonEtAl2019,
+  title = {Parallel-in-Time Multi-Level Integration of the Shallow-Water Equations on the Rotating Sphere},
+  author = {Schreiber, M. and Schaeffer, N. and Loft, R.},
+  howpublished = {arXiv:1904.05988 [math.NA]},
+  url = {https://arxiv.org/abs/1904.05988},
+  year = {2019}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalHamonEtAl2019Abstract" tabindex="-1" role="dialog" aria-labelledby="modalHamonEtAl2019AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalHamonEtAl2019AbstractTitle">
+            Abstract for BibTeX entry <code>HamonEtAl2019</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          The modeling of atmospheric processes in the context of weather and climate simulations is an important and computationally expensive challenge. The temporal integration of the underlying PDEs requires a very large number of time steps, even when the terms accounting for the propagation of fast atmospheric waves are treated implicitly. Therefore, the use of parallel-in-time integration schemes to reduce the time-to-solution is of increasing interest, particularly in the numerical weather forecasting field.
+We propose a multi-level parallel-in-time integration method combining the Parallel Full Approximation Scheme in Space and Time (PFASST) with a spatial discretization based on Spherical Harmonics (SH). This iterative algorithm computes multiple time steps concurrently by interweaving parallel high-order fine corrections and serial corrections performed on a coarsened problem to propagate the updated initial conditions between time steps. We design a methodology to coarsen and interpolate the problem in space using the spectral basis of the SH that is key for the accuracy and efficiency of the approach.
+The proposed methods are evaluated on the shallow-water equations on the rotating sphere using a set of tests commonly used in the atmospheric flow community and characterized by the fast generation of small-scale features in the solution. We assess the convergence of PFASST-SH upon refinement in time to investigate the impact of the coarsening strategy on the accuracy of the scheme, and specifically on its ability to capture the high-frequency modes accumulating in the solution. We also study the computational cost of PFASST-SH to demonstrate that our scheme can resolve the main features of the solution multiple times faster than the serial schemes and to illustrate the scalability of the approach. 
         </div>
       </div>
     </div>
