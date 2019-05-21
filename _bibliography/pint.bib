@@ -2982,7 +2982,7 @@ a performance model that, for a multigrid-in-time solver, makes the decision on 
 
 @inproceedings{MerkelEtAl2016,
 	abstract = {{Recently, ParaExp was proposed for the time integration of hyperbolic problems. It splits the time interval of interest into sub-intervals and computes the solution on each sub-interval in parallel. The overall solution is decomposed into a particular solution defined on each sub-interval with zero initial conditions and a homogeneous solution propagated by the matrix exponential applied to the initial conditions. The efficiency of the method results from fast approximations of this matrix exponential using tools from linear algebra. This paper deals with the application of ParaExp to electromagnetic wave problems in time-domain. Numerical tests are carried out for an electric circuit and an electromagnetic wave problem discretized by the Finite Integration Technique.}},
-	author = {Merkel, Melina and Niyonzima, Innocent and Sch\"ops, Sebastian},
+	author = {Merkel, Melina and Niyonzima, Innocent and Schöps, Sebastian},
 	booktitle = {Proceedings of 2016 URSI International Symposium on Electromagnetic Theory (EMTS)},
 	editor = {Sihvola, Ari},
 	note = {arXiv:1607.00368 [math.NA]},
@@ -3334,7 +3334,7 @@ and geometry is explored.}},
 
 @article{MerkelEtAl2017,
 	abstract = {Abstract Recently, ParaExp was proposed for the time integration of linear hyperbolic problems. It splits the time interval of interest into subintervals and computes the solution on each subinterval in parallel. The overall solution is decomposed into a particular solution defined on each subinterval with zero initial conditions and a homogeneous solution propagated by the matrix exponential applied to the initial conditions. The efficiency of the method depends on fast approximations of this matrix exponential based on recent results from numerical linear algebra. This paper deals with the application of ParaExp in combination with Leapfrog to electromagnetic wave problems in time domain. Numerical tests are carried out for a simple toy problem and a realistic spiral inductor model discretized by the Finite Integration Technique.},
-	author = {Merkel, M. and Niyonzima, I. and Schöps, S.},
+	author = {Merkel, Melina and Niyonzima, Innocent and Schöps, Sebastian},
 	title = {ParaExp Using Leapfrog as Integrator for High-Frequency Electromagnetic Simulations},
 	journal = {Radio Science},
 	volume = {52},
@@ -3622,6 +3622,15 @@ setups.}},
 	year = {2018},
 }
 
+@unpublished{FriedhoffEtAl2018b,
+	abstract = {{We consider the usage of parallel-in-time algorithms of the Parareal and multigrid-reduction-in-time (MGRIT) methodologies for the parallel-in-time solution of the eddy current problem. Via application of these methods to a two-dimensional model problem for a coaxial cable model, we show that a significant speedup can be achieved in comparison to sequential time stepping.}},
+	author = {Friedhoff, Stephanie and Hahne, Jens and Kulchytska-Ruchka, Iryna and Schöps, Sebastian},
+	title = {Exploring Parallel-in-Time Approaches for Eddy Current Problems},
+	howpublished = {arXiv:1810.13263 [math.NA]},
+	url = {https://arxiv.org/abs/1810.13263},
+	year = {2018},
+}
+
 @article{FuWang2018,
 	abstract = {We develop a fast parareal finite difference method for space-time fractional partial differential equation. The method properly handles the heavy tail behavior in the numerical discretization, while retaining the numerical advantages of conventional parareal algorithm. At each time step, we explore the structure of the stiffness matrix to develop a matrix-free preconditioned fast Krylov subspace iterative solver for the finite difference method without resorting to any lossy compression. Consequently, the method has significantly reduced computational complexity and memory requirement. Numerical experiments show the strong potential of the method.},
 	author = {Fu, Hongfei and Wang, Hong},
@@ -3632,19 +3641,9 @@ setups.}},
 	url = {https://doi.org/10.1007/s10915-018-0835-2},
 }
 
-@unpublished{GanderEtAl2018,
-	abstract = {{The Parareal algorithm allows to solve evolution problems exploiting parallelization in time. Its convergence and stability have been proved under the assumption of regular (smooth) inputs. We present and analyze here a new Parareal algorithm for ordinary differential equations which involve discontinuous right-hand sides. Such situations occur in various applications, e.g., when an electric device is supplied with a pulse-width-modulated signal. Our new Parareal algorithm uses a smooth input for the coarse problem with reduced dynamics. We derive error estimates that show how the input reduction influences the overall convergence rate of the algorithm. We support our theoretical results by numerical experiments, and also test our new Parareal algorithm in an eddy current simulation of an induction machine.}},
-	author = {{Gander}, M.~J. and {Kulchytska-Ruchka}, I. and {Niyonzima}, I. and 
-	{Sch{\"o}ps}, S.},
-	title = {A New Parareal Algorithm for Problems with Discontinuous Sources},
-	howpublished = {arXiv:1803.05503 [math.NA]},
-	url = {https://arxiv.org/abs/1803.05503},
-	year = {2018}
-}
-
 @unpublished{GanderEtAl2018b,
 	abstract = {{The Parareal algorithm, which is related to multiple shooting, was introduced for solving evolution problems in a time-parallel manner. The algorithm was then extended to solve time-periodic problems. We are interested here in time-periodic systems which are forced with quickly-switching discontinuous inputs. Such situations occur, e.g., in power engineering when electric devices are excited with a pulse-width-modulated signal. In order to solve those problems numerically we consider a recently introduced modified Parareal method with reduced coarse dynamics. Its main idea is to use a low-frequency smooth input for the coarse problem, which can be obtained, e.g., from Fourier analysis. Based on this approach, we present and analyze a new Parareal algorithm for time-periodic problems with highly-oscillatory discontinuous sources. We illustrate the performance of the method via its application to the simulation of an induction machine.}},
-	author = {Martin J. Gander, Iryna Kulchytska-Ruchka, Sebastian Schöps},
+	author = {Gander, Martin J. and Kulchytska-Ruchka, Iryna and Schöps, Sebastian},
 	title = {A New Parareal Algorithm for Time-Periodic Problems with Discontinuous Inputs},
 	howpublished = {arXiv:1810.12372 [math.NA]},
 	url = {https://arxiv.org/abs/1810.12372},
@@ -3942,14 +3941,14 @@ In this short article, we present parallel numerical results for their precondit
 
 @article{SchoepsEtAl2018, 
 	abstract = {{In this paper, the usage of the Parareal method is proposed for the time-parallel solution of the eddy current problem. The method is adapted to the particular challenges of the problem that are related to the differential algebraic character due to non-conducting regions. It is shown how the necessary modification can be automatically incorporated by using a suitable time-stepping method. This paper closes with the first demonstration of a simulation of a realistic four-pole induction machine model using Parareal.}}, 
-	author = {S. {Schöps} and I. {Niyonzima} and M. {Clemens}}, 
+	author = {Schöps, Sebastian and Niyonzima, Innocent and Clemens, Markus}, 
 	journal = {IEEE Transactions on Magnetics}, 
 	title = {Parallel-In-Time Simulation of Eddy Current Problems Using Parareal}, 
 	year = {2018}, 
 	volume = {54}, 
 	number = {3}, 
 	pages = {1-4}, 
-	doi={10.1109/TMAG.2017.2763090}, 
+	doi = {10.1109/TMAG.2017.2763090}, 
 	url = {https://dx.doi.org/10.1109/TMAG.2017.2763090}
 }
 
@@ -4071,7 +4070,7 @@ In this short article, we present parallel numerical results for their precondit
 
 @unpublished{BastEtAl2019,
 	abstract = {{This paper focuses on efficient steady-state computations of induction machines. In particular, the periodic Parareal algorithm with initial-value coarse problem (PP-IC) is considered for acceleration of classical time-stepping simulations via non-intrusive parallelization in time domain, i.e., existing implementations can be reused. Superiority of this parallel-in-time method is in its direct applicability to time-periodic problems, compared to, e.g, the standard Parareal method, which only solves an initial-value problem, starting from a prescribed initial value. PP-IC is exploited here to obtain the steady state of several operating points of an induction motor, developed by Robert Bosch GmbH. Numerical experiments show that acceleration up to several dozens of times can be obtained, depending on availability of parallel processing units. Comparison of PP-IC with existing time-periodic explicit error correction method highlights better robustness and efficiency of the considered time-parallel approach.}},
-	author = {Denys Bast and Iryna Kulchytska-Ruchka and Sebastian Schöps and Oliver Rain},
+	author = {Bast, Denys and Kulchytska-Ruchka, Iryna and Schöps, Sebastian and Rain, Oliver},
 	title = {Accelerated Steady-State Torque Computation for Induction Machines using Parallel-In-Time Algorithms},
 	howpublished = {arXiv:1902.08277 [cs.CE]},
 	url = {https://arxiv.org/abs/1902.08277},
@@ -4116,6 +4115,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	url = {http://www.sciencedirect.com/science/article/pii/S0898122118307296},
 }
 
+@unpublished{FriedhoffEtAl2019,
+	abstract = {{Parallel-in-time methods have shown success for reducing the simulation time of many time-dependent problems. Here, we consider applying the multigrid-reduction-in-time (MGRIT) algorithm to a voltage-driven eddy current model problem.}},
+	author = {Friedhoff, Stephanie and Hahne, Jens and Schöps, Sebastian},
+	title = {Multigrid-reduction-in-time for Eddy Current Problems},
+	howpublished = {arXiv:1905.06879 [math.NA]},
+	url = {https://arxiv.org/abs/1905.06879},
+	year = {2019},
+}
+
 @article{GanderEtAl2019,
 	abstract = {{With the advent of very large scale parallel computers, it has become more and more important to also use the time direction for parallelization when solving evolution problems. While there are many successful algorithms for diffusive problems, only some of them are also effective for hyperbolic problems. We present here a mathematical analysis of a new method based on the diagonalization of the time stepping matrix proposed by Maday and Rønquist in 2007. Like many time-parallelization methods, at first this does not seem to be a very promising approach: the matrix is essentially triangular, or, for equidistant time steps, actually a Jordan block, and thus not diagonalizable. If one chooses however different time steps, diagonalization is possible, and one has to trade off between the accuracy due to necessarily having different time steps, and numerical errors in the diagonalization process of these almost nondiagonalizable matrices. We present for the first time such a diagonalization technique for the Newmark scheme for solving wave equations, and derive a mathematically rigorous optimization strategy for the choice of the parameters in the special case when the Newmark scheme becomes Crank--Nicolson. Our analysis shows that small to medium scale time parallelization is possible with this approach. We illustrate our results with numerical experiments for model wave equations in various dimensions and also an industrial test case for the elasticity equations with variable coefficients.}},
 	author = {Gander, M. and Halpern, L. and Rannou, J. and Ryan, J.},
@@ -4140,6 +4148,20 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 	doi = {10.1137/18M1177226},
 	url = {https://doi.org/10.1137/18M1177226},
+}
+
+
+@article{GanderEtAl2019c,
+	abstract = {{The Parareal algorithm allows to solve evolution problems exploiting parallelization in time. Its convergence and stability have been proved under the assumption of regular (smooth) inputs. We present and analyze here a new Parareal algorithm for ordinary differential equations which involve discontinuous right-hand sides. Such situations occur in various applications, e.g., when an electric device is supplied with a pulse-width-modulated signal. Our new Parareal algorithm uses a smooth input for the coarse problem with reduced dynamics. We derive error estimates that show how the input reduction influences the overall convergence rate of the algorithm. We support our theoretical results by numerical experiments, and also test our new Parareal algorithm in an eddy current simulation of an induction machine.}},
+	author = {Gander, Martin J. and Kulchytska-Ruchka, Iryna and Niyonzima, Innocent and Schöps, Sebastian},
+	title = {A New Parareal Algorithm for Problems with Discontinuous Sources},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {41},
+	number = {2},
+	pages = {B375--B395},
+	year = {2019},
+	doi = {10.1137/18M1175653},
+	url = {https://doi.org/10.1137/18M1175653},
 }
 
 @unpublished{GoetschelMinion2019,
