@@ -1097,7 +1097,8 @@
 	title = {{Parallel deferred correction method for {CFD} problems}},
 	url = {http://dx.doi.org/10.1016/B978-044453035-6/50019-5},
 	doi = {10.1016/B978-044453035-6/50019-5},
-	year = {2007}
+	year = {2007},
+	publisher = {Elsevier}
 }
 
 @article{KaberMaday2007,
@@ -2573,7 +2574,7 @@
 	issue = {1},
 	pages = {1--25},
 	year = {2015},
-	url = {http://dx.doi.org/10.2140/camcos.2015.10.1}
+	url = {http://dx.doi.org/10.2140/camcos.2015.10.1},
 	doi = {10.2140/camcos.2015.10.1}
 }
 
@@ -2681,9 +2682,6 @@
 	doi = {10.1007/s00791-015-0246-y},
 	volume = {17},
 	year = {2015},
-	volume = {17},
-	issue = {2},
-	pages = {99--108},
 }
 
 @article{MinionEtAl2015,
@@ -3934,6 +3932,7 @@ In this short article, we present parallel numerical results for their precondit
 	year = {2018},
 }
 
+
 @unpublished{MadayMula2018,
 	abstract = {{In this paper, we consider the problem of accelerating the numerical simulation of time dependent problems by time domain decomposition. The available algorithms enabling such decompositions present severe efficiency limitations and are an obstacle for the solution of large scale and high dimensional problems. Our main contribution is the significant improvement of the parallel efficiency of the parareal in time method, an iterative predictor-corrector algorithm. This is achieved by first reformulating the algorithm in a rigorous infinite dimensional functional space setting. We then formulate implementable versions where time dependent subproblems are solved at increasing accuracy across the parareal iterations (in opposition to the classical version where the subproblems are solved at a fixed high accuracy). Aside from the important improvement in parallel efficiency and as a natural by product, the new approach provides a rigourous online stopping criterion with a posteriori error estimators and the numerical cost to achieve a certain final accuracy is designed to be near-minimal. We illustrate the gain in efficiency of the new approach on simple numerical experiments. In addition to this, we discuss the potential benefits of reusing information from previous parareal iterations to enhance efficiency even more.}},
 	author = {Yvon Maday and Olga Mula},
@@ -3964,29 +3963,6 @@ In this short article, we present parallel numerical results for their precondit
 	year = {2018},
 }
 
-@article{NielsenEtAl2018,
-	abstract = {{In the strong scaling limit, the performance of conventional spatial domain decomposition techniques for the parallel solution of PDEs saturates. When sub-domains become small, halo-communication and other overhead come to dominate. A potential path beyond this scaling limit is to introduce domain-decomposition in time, with one such popular approach being the Parareal algorithm which has received a lot of attention due to its generality and potential scalability. Low efficiency, particularly on convection dominated problems, has however limited the adoption of the method. In this paper we demonstrate trough large-scale numerical experiments that it is possible not only to obtain time-parallel speedup on the non-linear shallow water wave equation, but also that we may obtain parallel acceleration beyond what is possible using conventional spatial domain-decomposition techniques alone. Two factors were essential in achieving this. First, for Parareal to converge on the hyperbolic problem we used an approximate Riemann solver as the preconditioner. This preconditioner introduces only dissipative errors with respect to the 3rd order accurate WENO-RK discretization used to solve the PDE system. The preconditoner is comparatively expensive and convergence is slow unless time-subdomains are short. We therefore introduce a new scheduler that we denote Communication Aware Adaptive Parareal (CAAP). CAAP increases obtainable speed-up by minimizing the time-subdomain length without making communication of time-subdomains too costly whilst also adaptively overlapping consecutive cycles of Parareal so to mitigate the impact of a relatively expensive coarse operator.}},
-	author = {Allan S. Nielsen and Gilles Brunner and Jan S. Hesthaven},
-	title = {Communication-aware adaptive parareal with application to a nonlinear hyperbolic system of partial differential equations},
-	journal = {Journal of Computational Physics},
-	doi = {10.1016/j.jcp.2018.04.056},
-	url = {https://doi.org/10.1016/j.jcp.2018.04.056},
-	year = {2018},
-}
-
-@article{MagoulesEtAl2018,
-	abstract = {{Asynchronous iterations have been investigated more and more for both scaling and fault-resilience purposes on high performance computing platforms. While so far, they have been exclusively applied within space domain decomposition frameworks, this paper advocates a novel application direction targeting time-decomposed time-parallel approaches. Specifically, an asynchronous iterative model is derived from the Parareal scheme, for which convergence and speedup analysis are then conducted. It turned out that Parareal and async-Parareal feature very close convergence conditions, asymptotically equivalent, including the finite-time termination property. Based on a computational cost model aware of unsteady communication delays, our speedup analysis shows the potential performance gain from asynchronous iterations, which is confirmed by some experimental cases of heat evolution on a homogeneous supercomputer. This primary work clearly suggests possible further benefits from asynchronous iterations.}},
-	author = {Magoul{\`e}s, F. and Gbikpi-Benissan, G.},
-	title = {Asynchronous Parareal Time Discretization For Partial Differential Equations},
-	journal = {SIAM Journal on Scientific Computing},
-	volume = {40},
-	number = {6},
-	pages = {C704-C725},
-	year = {2018},
-	doi = {10.1137/17M1149225},
-	url = {https://doi.org/10.1137/17M1149225},
-}
-
 @article{MaRuSo2018,
    author = {Manteuffel, T. and Ruge, J. and Southworth, B.},
    title = {Nonsymmetric Algebraic Multigrid Based on Local Approximate Ideal Restriction},
@@ -3996,7 +3972,6 @@ In this short article, we present parallel numerical results for their precondit
    pages = {A4105-A4130},
    year = {2018},
 }
-
 
 @article{MeleEtAl2018,
   abstract = {{We address the development of a modular implementation of the MGRIT (MultiGrid-In-Time) algorithm to solve linear and nonlinear systems that arise from the discretization of evolutionary models with a parallel-in-time approach in the context of the PETSc (the Portable, Extensible Toolkit for Scientific computing) library. Our aim is to give the opportunity of predicting the performance gain achievable when using the MGRIT approach instead of the Time Stepping integrator (TS). To this end, we analyze the performance parameters of the algorithm that provide a-priori the best number of processing elements and grid levels to use to address the scaling of MGRIT, regarded as a parallel iterative algorithm proceeding along the time dimension.}},
@@ -4021,6 +3996,16 @@ In this short article, we present parallel numerical results for their precondit
   year  = {2018},
   doi = {10.1080/00207160.2018.1498484},
   url = {https://doi.org/10.1080/00207160.2018.1498484},
+}
+
+@article{NielsenEtAl2018,
+	abstract = {{In the strong scaling limit, the performance of conventional spatial domain decomposition techniques for the parallel solution of PDEs saturates. When sub-domains become small, halo-communication and other overhead come to dominate. A potential path beyond this scaling limit is to introduce domain-decomposition in time, with one such popular approach being the Parareal algorithm which has received a lot of attention due to its generality and potential scalability. Low efficiency, particularly on convection dominated problems, has however limited the adoption of the method. In this paper we demonstrate trough large-scale numerical experiments that it is possible not only to obtain time-parallel speedup on the non-linear shallow water wave equation, but also that we may obtain parallel acceleration beyond what is possible using conventional spatial domain-decomposition techniques alone. Two factors were essential in achieving this. First, for Parareal to converge on the hyperbolic problem we used an approximate Riemann solver as the preconditioner. This preconditioner introduces only dissipative errors with respect to the 3rd order accurate WENO-RK discretization used to solve the PDE system. The preconditoner is comparatively expensive and convergence is slow unless time-subdomains are short. We therefore introduce a new scheduler that we denote Communication Aware Adaptive Parareal (CAAP). CAAP increases obtainable speed-up by minimizing the time-subdomain length without making communication of time-subdomains too costly whilst also adaptively overlapping consecutive cycles of Parareal so to mitigate the impact of a relatively expensive coarse operator.}},
+	author = {Allan S. Nielsen and Gilles Brunner and Jan S. Hesthaven},
+	title = {Communication-aware adaptive parareal with application to a nonlinear hyperbolic system of partial differential equations},
+	journal = {Journal of Computational Physics},
+	doi = {10.1016/j.jcp.2018.04.056},
+	url = {https://doi.org/10.1016/j.jcp.2018.04.056},
+	year = {2018},
 }
 
 
@@ -4209,7 +4194,7 @@ In this short article, we present parallel numerical results for their precondit
 
 @unpublished{AgbohEtAl2019,
 	abstract = {{We present a method for fast and accurate physics-based predictions during non-prehensile manipulation planning and control. Given an initial state and a sequence of controls, the problem of predicting the resulting sequence of states is a key component of a variety of model-based planning and control algorithms. We propose combining a coarse (i.e. computationally cheap but not very accurate) predictive physics model, with a fine (i.e. computationally expensive but accurate) predictive physics model, to generate a hybrid model that is at the required speed and accuracy for a given manipulation task. Our approach is based on the Parareal algorithm, a parallel-in-time integration method used for computing numerical solutions for general systems of ordinary differential equations. We use Parareal to combine a coarse pushing model with an off-the-shelf physics engine to deliver physics-based predictions that are as accurate as the physics engine but runs in substantially less wall-clock time, thanks to Parareal being amenable to parallelization. We use these physics-based predictions in a model-predictive-control framework based on trajectory optimization, to plan pushing actions that avoid an obstacle and reach a goal location. We show that by combining the two physics models, we can achieve the same success rates as the planner that uses the off-the-shelf physics engine directly, but significantly faster. We present experiments in simulation and on a real robotic setup.}},
-	authors = {Wisdom C. Agboh and Daniel Ruprecht and Mehmet R. Dogar},
+	author = {Wisdom C. Agboh and Daniel Ruprecht and Mehmet R. Dogar},
 	title = {Combining Coarse and Fine Physics for Manipulation using Parallel-in-Time Integration},
 	howpublished = {arXiv:1903.08470 [cs.RO]},
 	url = {https://arxiv.org/abs/1903.08470},
@@ -4347,7 +4332,7 @@ The influence on the performance of the parareal algorithm, of the choice of the
 
 @unpublished{KrzysikEtAl2019,
 	abstract = {{We consider the parallel time integration of the linear advection equation with the Parareal and two-level multigrid-reduction-in-time (MGRIT) algorithms. Our aim is to develop a better understanding of the convergence behaviour of these algorithms for this problem, which is known to be poor relative to the diffusion equation, its model parabolic counterpart. Using Fourier analysis, we derive new convergence estimates for these algorithms which, in conjunction with existing convergence theory, provide insight into the origins of this poor performance. We then use this theory to explore improved coarse-grid time-stepping operators. For several high-order discretizations of the advection equation, we demonstrate that there exist non-standard coarse-grid time stepping operators that yield significant improvements over the standard choice of rediscretization.}},
-	author = {Oliver A. Krzysik, Hans De Sterck, Scott P. MacLachlan, Stephanie Friedhoff},
+	author = {Oliver A. Krzysik and  Hans De Sterck and Scott P. MacLachlan and Stephanie Friedhoff},
 	title = {On selecting coarse-grid operators for Parareal and MGRIT applied to linear advection},
 	howpublished = {arXiv:1902.07757 [math.NA]},
 	url = {https://arxiv.org/abs/1902.07757},
