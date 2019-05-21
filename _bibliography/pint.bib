@@ -3487,6 +3487,15 @@ and geometry is explored.}},
 	url = {https://doi.org/10.1007/978-3-319-39929-4_26}
 }
 
+@unpublished{BlumersEtAl2019,
+	abstract = {{Lagrangian particle methods based on detailed atomic and molecular models are powerful computational tools for studying the dynamics of microscale and nanoscale systems. However, the maximum time step is limited by the smallest oscillation period of the fastest atomic motion, rendering long-time simulations very expensive. To resolve this bottleneck, we propose a supervised parallel-in-time algorithm for stochastic dynamics (SPASD) to accelerate long-time Lagrangian particle simulations. Our method is inspired by bottom-up coarse-graining projections that yield mean-field hydrodynamic behavior in the continuum limit. Here as an example, we use the dissipative particle dynamics (DPD) as the Lagrangian particle simulator that is supervised by its macroscopic counterpart, i.e., the Navier-Stokes simulator. The low-dimensional macroscopic system (here, the Navier-Stokes solver) serves as a predictor to supervise the high-dimensional Lagrangian simulator, in a predictor-corrector type algorithm. The results of the Lagrangian simulation then correct the mean-field prediction and provide the proper microscopic details (e.g., consistent fluctuations, correlations, etc.). The unique feature that sets SPASD apart from other multiscale methods is the use of a low-fidelity macroscopic model as a predictor. The macro-model can be approximate and even inconsistent with the microscale description, but SPASD anticipates the deviation and corrects it internally to recover the true dynamics.}},
+	author = {Ansel L. Blumers and Zhen Li and George Em Karniadakis},
+	title = {Supervised parallel-in-time algorithm for long-time Lagrangian simulations of stochastic dynamics: Application to hydrodynamics},
+	howpublished = {arXiv:1904.02137 [physics.comp-ph]},
+	url = {https://arxiv.org/abs/1904.02137},
+	year = {2019},
+}
+
 @article{BoltenEtAl2018,
 	abstract = {For time-dependent partial differential equations, parallel-in-time integration using the “parallel full approximation scheme in space and time” (PFASST) is a promising way to accelerate existing space-parallel approaches beyond their scaling limits. Inspired by the classical Parareal method and multigrid ideas, PFASST allows to integrate multiple time steps simultaneously using a space–time hierarchy of spectral deferred correction sweeps. While many use cases and benchmarks exist, a solid and reliable mathematical foundation is still missing. Very recently, however, PFASST for linear problems has been identified as a multigrid method. In this paper, we will use this multigrid formulation and, in particular, PFASST's iteration matrix to show that, in the nonstiff and stiff limit, PFASST indeed is a convergent iterative method. We will provide upper bounds for the spectral radius of the iteration matrix and investigate how PFASST performs for increasing numbers of parallel time steps. Finally, we will demonstrate that the results obtained here indeed relate to actual PFASST runs.},
 	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
@@ -4088,6 +4097,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@unpublished{DeSterckEtAl2019,
+	abstract = {{Parallel-in-time algorithms have been successfully employed for reducing time-to-solution of a variety of partial differential equations, especially for diffusive (parabolic-type) equations. A major failing of parallel-in-time approaches to date, however, is that most methods show instabilities or poor convergence for hyperbolic problems. This paper focuses on the analysis of the convergence behavior of multigrid methods for the parallel-in-time solution of hyperbolic problems. Three analysis tools are considered that differ, in particular, in the treatment of the time dimension: (1) space-time local Fourier analysis, using a Fourier ansatz in space and time, (2) semi-algebraic mode analysis, coupling standard local Fourier analysis approaches in space with algebraic computation in time, and (3) a two-level reduction analysis, considering error propagation only on the coarse time grid. In this paper, we show how insights from reduction analysis can be used to improve feasibility of the semi-algebraic mode analysis, resulting in a tool that offers the best features of both analysis techniques. Following validating numerical results, we investigate what insights the combined analysis framework can offer for two model hyperbolic problems, the linear advection equation in one space dimension and linear elasticity in two space dimensions.}},
+	author = {Hans De Sterck and Stephanie Friedhoff and Alexander J. M. Howse and Scott P. MacLachlan},
+	title = {Convergence analysis for parallel-in-time solution of hyperbolic systems},
+	howpublished = {arXiv:1903.08928 [math.NA]},
+	url = {https://arxiv.org/abs/1903.08928},
+	year = {2019},
+}
+
 @article{DohrEtAl2019,
 	abstract = {In this paper we introduce a new parallel solver for the weakly singular space–time boundary integral equation for the heat equation. The space–time boundary mesh is decomposed into a given number of submeshes. Pairs of the submeshes represent dense blocks in the system matrices, which are distributed among computational nodes by an algorithm based on a cyclic decomposition of complete graphs ensuring load balance. In addition, we employ vectorization and threading in shared memory to ensure intra-node efficiency. We present scalability experiments on different CPU architectures to evaluate the performance of the proposed parallelization techniques. All levels of parallelism allow us to tackle large problems and lead to an almost optimal speedup.},
 	author = {Stefan Dohr and Jan Zapletal and Günther Of and Michal Merta and Michal Kravčenko},
@@ -4099,8 +4117,9 @@ The influence on the performance of the parareal algorithm, of the choice of the
 }
 
 @article{GanderEtAl2019,
+	abstract = {{With the advent of very large scale parallel computers, it has become more and more important to also use the time direction for parallelization when solving evolution problems. While there are many successful algorithms for diffusive problems, only some of them are also effective for hyperbolic problems. We present here a mathematical analysis of a new method based on the diagonalization of the time stepping matrix proposed by Maday and Rønquist in 2007. Like many time-parallelization methods, at first this does not seem to be a very promising approach: the matrix is essentially triangular, or, for equidistant time steps, actually a Jordan block, and thus not diagonalizable. If one chooses however different time steps, diagonalization is possible, and one has to trade off between the accuracy due to necessarily having different time steps, and numerical errors in the diagonalization process of these almost nondiagonalizable matrices. We present for the first time such a diagonalization technique for the Newmark scheme for solving wave equations, and derive a mathematically rigorous optimization strategy for the choice of the parameters in the special case when the Newmark scheme becomes Crank--Nicolson. Our analysis shows that small to medium scale time parallelization is possible with this approach. We illustrate our results with numerical experiments for model wave equations in various dimensions and also an industrial test case for the elasticity equations with variable coefficients.}},
 	author = {Gander, M. and Halpern, L. and Rannou, J. and Ryan, J.},
-	title = {{A Direct Time Parallel Solver by Diagonalization for the Wave Equation}},
+	title = {A Direct Time Parallel Solver by Diagonalization for the Wave Equation},
 	journal = {SIAM Journal on Scientific Computing},
 	volume = {41},
 	number = {1},
@@ -4110,20 +4129,20 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	url = {https://doi.org/10.1137/17M1148347},
 }
 
-@InProceedings{GanderEtAl2019b,
-	author={Gander, Martin J. and G{\"u}ttel, Stefan and Petcu, Madalina},
-	editor={Bj{\o}rstad, Petter E. and Brenner, Susanne C. and Halpern, Lawrence and Kim, Hyea Hyun and Kornhuber, Ralf and Rahman, Talal and Widlund, Olof B.},
-	title={A Nonlinear ParaExp Algorithm},
-	booktitle={Domain Decomposition Methods in Science and Engineering XXIV },
-	year={2018},
-	publisher={Springer International Publishing},
-	address={Cham},
-	pages={261--270},
-	abstract={We derive and analyze a nonlinear variant of the ParaExp algorithm introduced in Gander and G{\"u}ttel (SIAM J Sci Comput 35(2):C123--C142, 2013) for linear evolution problems. We show that the nonlinear ParaExp algorithm converges in a finite number of steps, and that it can be interpreted as a parareal algorithm where the coarse integrator solves the linear part of the evolution problem. We also provide a numerical example illustrating the efficiency of the new algorithm.},
-	isbn={978-3-319-93873-8}
+@article{GanderEtAl2019b,
+	abstract = {{The parareal Schwarz waveform relaxation algorithm is a new space-time parallel algorithm for the solution of evolution partial differential equations. It is based on a decomposition of the entire space-time domain both in space and in time into smaller space-time subdomains, and then computes by an iteration in parallel on all these small space-time subdomains a better and better approximation of the overall solution in space-time. The initial conditions in the space-time subdomains are updated using a parareal mechanism, while the boundary conditions are updated using Schwarz waveform relaxation techniques. A first precursor of this algorithm was presented 15 years ago, and while the method works well in practice, the convergence of the algorithm is not yet understood, and to analyze it is technically difficult. We present in this paper for the first time an accurate superlinear convergence estimate when the algorithm is applied to the heat equation. We illustrate our analysis with numerical experiments including cases not covered by the analysis, which opens up many further research directions.}},
+	author = {Gander, M. and Jiang, Y. and Song, B.},
+	title = {A Superlinear Convergence Estimate for the Parareal Schwarz Waveform Relaxation Algorithm},
+	journal = {SIAM Journal on Scientific Computing},
+	volume = {41},
+	number = {2},
+	pages = {A1148-A1169},
+	year = {2019},
+	doi = {10.1137/18M1177226},
+	url = {https://doi.org/10.1137/18M1177226},
 }
 
-@techreport{GoetschelMinion2019,
+@unpublished{GoetschelMinion2019,
 	abstract = {{To solve optimization problems with parabolic PDE constraints, often methods working on the reduced objective functional are used. They are computationally expensive due to the necessity of solving both the state equation and a backward-in-time adjoint equation to evaluate the reduced gradient in each iteration of the optimization method. In this study, we investigate the use of the parallel-in-time method PFASST in the setting of PDE constrained optimization. In order to develop an efficient fully time-parallel algorithm we discuss different options for applying PFASST to adjoint gradient computation, including the possibility of doing PFASST iterations on both the state and adjoint equations simultaneously. We also explore the additional gains in efficiency from reusing information from previous optimization iterations when solving each equation. Numerical results for both a linear and a non-linear reaction-diffusion optimal control problem demonstrate the parallel speedup and efficiency of different approaches.}},
 	author = {Sebastian Götschel and Michael L. Minion},
    institution = {Lawrence Berkeley National Laboratory}, 
@@ -4188,6 +4207,16 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 	doi = {10.1016/j.apnum.2019.01.016},
 	url = {https://doi.org/10.1016/j.apnum.2019.01.016},
+}
+
+@article{LiEtAl2019b,
+	abstract = {{In the past few years, the number of processor cores of top ranked supercomputers has increased drastically. It is challenging to design efficient parallel algorithms that offer such a high degree of parallelism, especially for certain time-dependent problems because of the sequential nature of ``time''. To increase the degree of parallelization, some parallel-in-time algorithms have been developed. In this paper, we give an overview of some recently introduced parallel-in-time methods, and present in detail the class of space-time Schwarz methods, including the standard and the restricted versions, for solving parabolic partial differential equations. Some numerical experiments carried out on a parallel computer with a large number of processor cores for three-dimensional problems are given to show the parallel scalability of the methods. In the end of the paper, we provide a comparison of the parallel-in-time algorithms with a traditional algorithm that is parallelized only in space.}},
+	author = {Li, Shishun and Shao, Xinping and Cai, Xiao-Chuan},
+	title = {Highly parallel space-time domain decomposition methods for parabolic problems},
+	journal = {CCF Transactions on High Performance Computing},
+	year = {2019},
+	doi = {10.1007/s42514-019-00003-x},
+	url = {https://doi.org/10.1007/s42514-019-00003-x}
 }
 
 @inproceedings{MeleEtAl2019,
