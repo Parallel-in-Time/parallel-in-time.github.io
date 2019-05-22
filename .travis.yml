@@ -14,7 +14,7 @@ branches:
     - master
 
 script:
-  - bundle exec jekyll build --trace
+  - bundle exec jekyll build --trace --verbose
   # preparing the deployment SSH key and running the deployment script
   - if [[ "${TRAVIS_BRANCH}" == "source" && "${TRAVIS_PULL_REQUEST}" == "false" ]]; then
       openssl aes-256-cbc -K $encrypted_e3b7eaa5d6e3_key -iv $encrypted_e3b7eaa5d6e3_iv -in travis_deploy_rsa.enc -out travis_deploy_rsa -d;
