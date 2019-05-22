@@ -3,15 +3,15 @@ layout: page_event
 title: "9th Workshop on Parallel-in-Time Integration"
 date: 2018-05-12 08:00:00 +0000
 event_location: Houghton, Michigan, USA
-event_url: 
 event_start: 2020-6-8 00:00
 event_end: 2020-6-12 00:00
+event_url: 
 navbar: Events
 subnavbar: Upcoming
 organizers:
   - name: Benjamin W. Ong
     homepage: https://www.mathgeek.us
-  - Jacob B. Schroder
+  - name: Jacob B. Schroder
     homepage: https://math.unm.edu/~schroder/
 invited:
   - name: Professor Matthias Bolten
