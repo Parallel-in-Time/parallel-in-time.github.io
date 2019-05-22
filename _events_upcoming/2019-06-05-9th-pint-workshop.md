@@ -11,6 +11,15 @@ subnavbar: Upcoming
 organizers:
   - name: Benjamin W. Ong
     homepage: https://www.mathgeek.us
+  - Jacob B. Schroder
+    homepage: https://math.unm.edu/~schroder/
+invited:
+  - name: Professor Matthias Bolten
+    homepage: https://www.hpc.uni-wuppertal.de/de/hochleistungsrechnen-swt/mitarbeiter/prof-dr-matthias-bolten.html
+  - name: Professor George Karniadakis
+    homepage: https://www.brown.edu/research/projects/crunch/george-karniadakis
+  - name: Professor Ulrich Langer
+    homepage: https://www.numa.uni-linz.ac.at/~ulanger/
 permalink: /events/9th-pint-workshop/
 subtitle: Brief overview
 page_type: event_page
