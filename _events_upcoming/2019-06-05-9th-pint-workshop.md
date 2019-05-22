@@ -1,6 +1,6 @@
 ---
 layout: page_event
-title: 9th Workshop on Parallel-in-Time Integration
+title: "9th Workshop on Parallel-in-Time Integration"
 date: 2018-05-12 08:00:00 +0000
 event_location: Houghton, Michigan, USA
 event_url: 
@@ -21,7 +21,7 @@ invited:
   - name: Professor Ulrich Langer
     homepage: https://www.numa.uni-linz.ac.at/~ulanger/
 permalink: /events/9th-pint-workshop/
-subtitle: Brief overview
+subtitle: "Brief overview"
 page_type: event_page
 no_lead: true
 ---
