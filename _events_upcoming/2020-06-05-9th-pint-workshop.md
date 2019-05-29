@@ -16,6 +16,8 @@ organizers:
 invited:
   - name: Professor Matthias Bolten
     homepage: https://www.hpc.uni-wuppertal.de/de/hochleistungsrechnen-swt/mitarbeiter/prof-dr-matthias-bolten.html
+  - name: Professor Laurnce Halpern
+    homepage: https://www.math.univ-paris13.fr/~halpern/
   - name: Professor George Karniadakis
     homepage: https://www.brown.edu/research/projects/crunch/george-karniadakis
   - name: Professor Ulrich Langer
