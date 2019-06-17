@@ -33,7 +33,7 @@ no_lead: true
 The Ninth Workshop on Parallel-in-time Integration will take place June 8 - 12, 2020 at [Michigan Technological University](https://www.mtu.edu/) in [Houghton, Michigan](https://www.google.com/maps/place/Houghton,+MI+49931/@37.0561046,-101.0129579,4.43z).
 
 We gladly confirm the following invited speakers:
-- Professor Mathhias Bolten, Universit&auml;t Wuppertal  
+- Professor Matthias Bolten, Bergische Universit&auml;t Wuppertal  
 - Professor Laurence Halpern, Universit&eacute; Paris 13
 - Professor George Karniadakis, Brown University
 - Professor Ulrich Langer, Johannes Kepler University Linz
@@ -42,7 +42,7 @@ We gladly confirm the following invited speakers:
 We gratefully acknowledge support from:
 - Michigan Technological University
 - Lawrence Livermore National Laboratory
-- J&uuml;lich Supercomputing Center
+- J&uuml;lich Supercomputing Centre
 
 There will be [travel funding for PhD students](http://parallel-in-time.org/events/travel_grants.html) available. Please send your completed application to the Scientific Committee at pint-sc[AT]googlegroups.com for consideration. To receive full consideration, applications have to be received by 1 March 2020.
 
