@@ -4473,15 +4473,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 
 
 @article{Southworth2019,
-	Author = {Ben S. Southworth},
-	Date-Added = {2019-06-18 08:15:05 -0700},
-	Date-Modified = {2019-06-18 08:20:14 -0700},
-	Doi = {https://doi.org/10.1137/18M1226208},
-	Journal = {SIAM J. Matrix Anal. Appl.},
-	Number = {2},
-	Pages = {564--608},
-	Title = {Necessary {C}onditions and {T}ight {T}wo-level {C}onvergence {B}ounds for {P}arareal and {M}ultigrid {R}eduction in {T}ime},
-	Volume = {40},
-	Year = {2019}}
+	abstract = {{Parareal and multigrid reduction in time (MGRiT) are two of the most popular parallel-in-time methods. The basic idea is to treat time integration in a parallel context by using a multigrid method in time. If $\Phi$ is the (fine-grid) time-stepping scheme of interest, such as any Runge--Kutta scheme, then let $\Psi$ denote a “coarse-grid" time-stepping scheme chosen to approximate $k$ steps of $\Phi$, where $k\geq 1$. In particular, $\Psi$ defines the coarse-grid correction, and evaluating $\Psi$ should be (significantly) cheaper than evaluating $\Phi^k$. Parareal is a two-level method with a fixed relaxation scheme, and MGRiT is a generalization to the multilevel setting, with the additional option of a modified, stronger relaxation scheme. A number of papers have studied the convergence of Parareal and MGRiT. However, general conditions on the convergence of Parareal or MGRiT that answer the following simple questions have yet to be developed: (i) For a given $\Phi$ and $k$, what is the best $\Psi$? (ii) Can Parareal/MGRiT converge for my problem? This work derives necessary and sufficient conditions for the convergence of Parareal and MGRiT applied to linear problems, along with tight two-level convergence bounds, under minimal additional assumptions on $\Phi$ and $\Psi$. Results all rest on the introduction of a temporal approximation property (TAP) that indicates how $\Phi^k$ must approximate the action of $\Psi$ on different vectors. Loosely, for unitarily diagonalizable operators, the TAP indicates that the fine-grid and coarse-grid time integration schemes must integrate geometrically smooth spatial components similarly, and less so for geometrically high frequency. In the (nonunitarily) diagonalizable setting, the conditioning of each eigenvector, ${v}_i$, must also be reflected in how well $\Psi{v}_i \sim\Phi^k{v}_i$. In general, worst-case convergence bounds are exactly given by $\min \varphi < 1$ such that an inequality along the lines of $\|(\Psi-\Phi^k){v}\| \leq\varphi \|(I - \Psi){v}\|$ holds for all ${v}$. Such inequalities are formalized as different realizations of the TAP in section 2 and form the basis for convergence of MGRiT and Parareal applied to linear problems.}},
+	author = {Ben S. Southworth},
+	doi = {https://doi.org/10.1137/18M1226208},
+	journal = {SIAM J. Matrix Anal. Appl.},
+	number = {2},
+	pages = {564--608},
+	title = {Necessary {C}onditions and {T}ight {T}wo-level {C}onvergence {B}ounds for {P}arareal and {M}ultigrid {R}eduction in {T}ime},
+	volume = {40},
+	year = {2019}
+}
 
 
