@@ -32,21 +32,25 @@ Details on the application procedure will be posted for each workshop separately
 
 ## Previous Grantees
 
-### [8th PinT Workshop, Roscoff, France](/events/8th-pint-workshop/)
+### [8th PinT Workshop, Bielefeld, Germany](/events/8th-pint-workshop/)
 
 **Abram Ellison**, University of Colorado at Boulder, USA
 
 Talk: "A parallel-in-time approach for wave-type PDEs"
 
+Numerical solutions to wave-type PDEs utilizing method-of-lines requires the ODE solver's stability domain to include a quite large stretch of the imaginary axis surrounding the origin. We show here that extrapolation based solvers of Gragg-Bulirsch-Stoer (GBS) type can meet this requirement. Extrapolation methods utilize several independent time stepping sequences, making them highly suited for parallel execution. Traditional extrapolation schemes use all time stepping sequences to maximize the method's order of accuracy. The present method instead maintains a desired order of accuracy while employing additional time stepping sequences to shape the resulting stability domain. We present an optimization method to maximize the stability domain's imaginary axis coverage. This yields an explicit scheme with maximal time step size for wave propagation problems. In a parallel implementation we achieve both high order and fast time to solution compared with traditional ODE integrators.
+
 **Wisdom C. Agboh**, University of Leeds, United Kingdom
 
 Talk: "Combining Coarse and Fine Physics for Manipulation using Parallel-in-Time Integration"
+
+We present a method for fast and accurate physics-based predictions during non-prehensile manipulation planning and control. Given an initial state and a sequence of controls, the problem of predicting the resulting sequence of states is a key component of a variety of model-based planning and control algorithms. We propose combining a coarse (i.e. computationally cheap but not very accurate) predictive physics model, with a fine (i.e. computationally expensive but accurate) predictive physics model, to generate a hybrid model that is at the required speed and accuracy for a given manipulation task. Our approach is based on the Parareal algorithm, a parallel-in-time integration method used for computing numerical solutions for general systems of ordinary differential equations. We use Parareal to combine a coarse pushing model with an off-the-shelf physics engine to deliver physics-based predictions that are as accurate as the physics engine but runs in substantially less wall-clock time, thanks to Parareal being amenable to parallelization. We use these physics-based predictions in a model-predictive-control framework based on trajectory optimization, to plan pushing actions that avoid an obstacle and reach a goal location. We show that by combining the two physics models, we can achieve the same success rates as the planner that uses the off-the-shelf physics engine directly, but significantly faster. We present experiments in simulation and on a real robotic setup.
 
 **Hieu Nguyen**, University of Texas at Austin, USA
 
 Talk: "A Stable Parareal by Energy-Preserving Boost for the Second Order Wave Equation"
 
-
+A new parallel-in-time iterative method is proposed for solving the homogeneous second-order wave equation. The new method involves a coarse scale propagator, allowing for larger time steps, and a fine scale propagator which fully resolves the medium using shorter time steps and finer spatial grid, and is run in parallel for shorter time intervals. The two propagators are coupled in a way that resembles the parareal method. The computed data gathered during the iterations are used to stabilize the iterations by bridging the gap in the energy of the solutions computed by the two propagators. Some numerical examples in one and two dimensions are provided to demonstrate the convergence and stability property of the proposed  method.
 
 ### [7th PinT Workshop, Roscoff, France](/events/7th-pint-workshop/)
 
