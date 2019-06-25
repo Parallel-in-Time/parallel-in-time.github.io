@@ -50,7 +50,7 @@ We present a method for fast and accurate physics-based predictions during non-p
 
 Talk: "A Stable Parareal by Energy-Preserving Boost for the Second Order Wave Equation"
 
-A new parallel-in-time iterative method is proposed for solving the homogeneous second-order wave equation. The new method involves a coarse scale propagator, allowing for larger time steps, and a fine scale propagator which fully resolves the medium using shorter time steps and finer spatial grid, and is run in parallel for shorter time intervals. The two propagators are coupled in a way that resembles the parareal method. The computed data gathered during the iterations are used to stabilize the iterations by bridging the gap in the energy of the solutions computed by the two propagators. Some numerical examples in one and two dimensions are provided to demonstrate the convergence and stability property of the proposed  method.
+A new parallel-in-time iterative method is proposed for solving the homogeneous second-order wave equation. The new method involves a coarse scale propagator, allowing for larger time steps, and a fine scale propagator which fully resolves the medium using shorter time steps and finer spatial grid, and is run in parallel for shorter time intervals. The two propagators are coupled in a way that resembles the parareal method. The computed data gathered during the iterations are used to stabilize the iterations by bridging the gap in the energy of the solutions computed by the two propagators. Some numerical examples in one and two dimensions are provided to demonstrate the convergence and stability property of the proposed method.
 
 ### [7th PinT Workshop, Roscoff, France](/events/7th-pint-workshop/)
 
