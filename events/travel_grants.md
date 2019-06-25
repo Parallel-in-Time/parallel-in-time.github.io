@@ -32,6 +32,22 @@ Details on the application procedure will be posted for each workshop separately
 
 ## Previous Grantees
 
+### [8th PinT Workshop, Roscoff, France](/events/8th-pint-workshop/)
+
+**Abram Ellison**, University of Colorado at Boulder, USA
+
+Talk: "A parallel-in-time approach for wave-type PDEs"
+
+**Wisdom C. Agboh**, University of Leeds, United Kingdom
+
+Talk: "Combining Coarse and Fine Physics for Manipulation using Parallel-in-Time Integration"
+
+**Hieu Nguyen**, University of Texas at Austin, USA
+
+Talk: "A Stable Parareal by Energy-Preserving Boost for the Second Order Wave Equation"
+
+
+
 ### [7th PinT Workshop, Roscoff, France](/events/7th-pint-workshop/)
 
 **Andrew Clarke**, University of Leeds, United Kingdom
