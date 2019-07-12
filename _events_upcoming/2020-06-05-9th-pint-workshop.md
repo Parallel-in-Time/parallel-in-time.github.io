@@ -5,7 +5,7 @@ date: 2018-05-12 08:00:00 +0000
 event_location: Houghton, Michigan, USA
 event_start: 2020-6-8 00:00
 event_end: 2020-6-12 00:00
-event_url: 
+event_url: http://conferences.math.mtu.edu
 navbar: Events
 subnavbar: Upcoming
 organizers:
@@ -30,7 +30,7 @@ page_type: event_page
 no_lead: true
 ---
 
-The Ninth Workshop on Parallel-in-time Integration will take place June 8 - 12, 2020 at [Michigan Technological University](https://www.mtu.edu/) in [Houghton, Michigan](https://www.google.com/maps/place/Houghton,+MI+49931/@37.0561046,-101.0129579,4.43z).
+The Ninth Workshop on Parallel-in-time Integration will take place June 8 - 12, 2020 at [Michigan Technological University](https://www.mtu.edu/) in [Houghton, Michigan](https://www.google.com/maps/place/Houghton,+MI+49931/@37.0561046,-101.0129579,4.43z).  More details can be found on the [workshop website](http://conferences.math.mtu.edu).
 
 We gladly confirm the following invited speakers:
 - Professor Matthias Bolten, Bergische Universit&auml;t Wuppertal  
