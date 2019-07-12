@@ -5,7 +5,7 @@ date: 2018-05-12 08:00:00 +0000
 event_location: Houghton, Michigan, USA
 event_start: 2020-6-8 00:00
 event_end: 2020-6-12 00:00
-event_url: 
+event_url: http://conferences.math.mtu.edu
 navbar: Events
 subnavbar: Upcoming
 organizers:
