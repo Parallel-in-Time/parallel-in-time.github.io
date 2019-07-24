@@ -40,9 +40,12 @@ We gladly confirm the following invited speakers:
 - Dr. Carol Woodward, Lawrence Livermore National Laboratory
 
 We gratefully acknowledge support from:
-- Michigan Technological University
+- Michigan Technological University, Department of Mathematical Sciences
+- Michigan Technological University, College of Science and Arts
 - Lawrence Livermore National Laboratory
 - J&uuml;lich Supercomputing Centre
+- FoMICS: The Swiss Graduate School in Computational Science
 
-There will be [travel funding for PhD students](http://parallel-in-time.org/events/travel_grants.html) available. Please send your completed application to the Scientific Committee at pint-sc[AT]googlegroups.com for consideration. To receive full consideration, applications have to be received by 1 March 2020.
+There will be travel funding for early career researchers available. Application details and deadlines will be posted shortly.
+
 
