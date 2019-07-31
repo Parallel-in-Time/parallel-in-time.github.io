@@ -11,16 +11,20 @@ footer: true
 
 Following the [bylaws](/events/bylaws.html) of the PinT workshop series, seven colleagues have been elected as members of the scientific committee:
 
- - Laurence Halpern, Universite Paris 13, France
  - Stephanie Friedhoff, Bergische Universität Wuppertal, Germany
+ - Laurence Halpern, Universite Paris 13, France
+ - Benjamin Ong, Michigan Technological University, USA
+ - Kenji Ono, Kyushu University, Japan
  - Debasmita Samaddar, Culham Centre for Fusion Energy, Culham, UK
- - Rolf Krause, University of Lugano, Switzerland
- - Daniel Ruprecht, University of Leeds, UK
  - Jacob Schroder, University of New Mexico, USA
- - Robert Speck, Jülich Supercomputing Centre, Germany
+ - Jemma Shipton, University of Exeter, UK
 
 Former members:
 
+ - Martin J. Gander, University of Geneva, Switzerland
  - Stefan Güttel, University of Manchester, UK
  - Ron Haynes, Memorial University of Newfoundland, Canada
- - Martin J. Gander, University of Geneva, Switzerland
+ - Rolf Krause, University of Lugano, Switzerland
+ - Daniel Ruprecht, University of Leeds, UK
+ - Robert Speck, Jülich Supercomputing Centre, Germany
+ 
