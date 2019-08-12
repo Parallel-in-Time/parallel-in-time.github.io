@@ -40,6 +40,7 @@ We gladly confirm the following invited speakers:
 - Dr. Carol Woodward, Lawrence Livermore National Laboratory
 
 We gratefully acknowledge support from:
+- National Science Foundation
 - Michigan Technological University, Department of Mathematical Sciences
 - Michigan Technological University, College of Science and Arts
 - Lawrence Livermore National Laboratory
