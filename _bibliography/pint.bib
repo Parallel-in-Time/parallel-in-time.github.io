@@ -4452,6 +4452,14 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	url = {https://doi.org/10.1137/18M1172466},
 }
 
+@unpublished{NguyenTsai2019,
+  title={A stable parareal-like method for the second order wave equation},
+  abstract={{ A new parallel-in-time iterative method is proposed for solving the homogeneous second-order wave equation. The new method involves a coarse scale propagator, allowing for larger time steps, and a fine scale propagator which fully resolves the medium using finer spatial grid and shorter time steps. The fine scale propagator is run in parallel for short time intervals. The two propagators are coupled in an iterative way that resembles the standard parareal method by Lions et. al. We present a data-driven strategy in which the computed data gathered from each iteration are re-used to stabilize the coupling by minimizing the energy residual of the fine and coarse propagated solutions. An example of Marmousi model is provided to demonstrate the performance of the proposed method.}},
+  author={Hieu Nguyen and Richard Tsai},
+  howpublished = {arXiv:1905.00473 [math.NA]},
+  url={https://arxiv.org/abs/1905.00473},
+  year={2019}
+}
 
 @article{SamaddarEtAl2019,
 	abstract = {{This paper explores the application of the parareal algorithm to simulations of ELMs in ITER plasma. The primary focus of this research is identifying the parameters that lead to optimum performance. Since the plasma dynamics vary extremely fast during an ELM cycle, a straightforward application of the algorithm is not possible and a modification to the standard parareal correction is implemented. The size of the time chunks also have an impact on the performance and needs to be optimized. A computational gain of 7.8 is obtained with 48 processors to illustrate that the parareal algorithm can be successfully applied to ELM plasma.}},
@@ -4487,5 +4495,3 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	volume = {40},
 	year = {2019}
 }
-
-
