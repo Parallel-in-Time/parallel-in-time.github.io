@@ -1,7 +1,7 @@
 ---
 layout: page_event
 title: "10th Workshop on Parallel-in-Time Integration"
-date: 2019-09-00
+date: 2019-09-09
 event_location: Leuven, Belgium
 event_start: 2021-9-13
 event_end: 2021-9-17
