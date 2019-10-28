@@ -3345,6 +3345,19 @@ and geometry is explored.}},
 	url = {https://doi.org/10.1190/geo2017-0494.1},
 }
 
+@article{BlayoEtAl2017,
+     author = {Eric Blayo and Antoine Rousseau and Manel Tayachi},
+     title = {Boundary conditions and Schwarz waveform relaxation method for linear viscous Shallow Water equations in hydrodynamics},
+     journal = {The SMAI journal of computational mathematics},
+     publisher = {Soci\'et\'e de Math\'ematiques Appliqu\'ees et Industrielles},
+     volume = {3},
+     year = {2017},
+     pages = {117-137},
+     doi = {10.5802/smai-jcm.22},
+     language = {en},
+     url = {https://smai-jcm.centre-mersenne.org/item/SMAI-JCM_2017__3__117_0}
+}
+
 @article{BoltenEtAl2017,
 	abstract = {{For the numerical solution of time-dependent partial differential equations, time-parallel methods have recently been shown to provide a promising way to extend prevailing strong-scaling limits of numerical codes. One of the most complex methods in this field is the “Parallel Full Approximation Scheme in Space and Time” (PFASST). PFASST already shows promising results for many use cases and benchmarks. However, a solid and reliable mathematical foundation is still missing. We show that, under certain assumptions, the PFASST algorithm can be conveniently and rigorously described as a multigrid-in-time method. Following this equivalence, first steps towards a comprehensive analysis of PFASST using blockwise local Fourier analysis are taken. The theoretical results are applied to examples of diffusive and advective type.}},
 	author = {Bolten, Matthias and Moser, Dieter and Speck, Robert},
@@ -4483,6 +4496,16 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	url = {https://dx.doi.org/10.1016/j.parco.2019.01.005}
 }
 
+@article{SchreiberLoft2019b,
+	author = {Schreiber, Martin and Loft, Richard},
+	title = {A parallel time integrator for solving the linearized shallow water equations on the rotating sphere},
+	journal = {Numerical Linear Algebra with Applications},
+	volume = {26},
+	number = {2},
+	pages = {e2220},
+	doi = {10.1002/nla.2220},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nla.2220},
+}
 
 @article{Southworth2019,
 	abstract = {{Parareal and multigrid reduction in time (MGRiT) are two of the most popular parallel-in-time methods. The basic idea is to treat time integration in a parallel context by using a multigrid method in time. If $\Phi$ is the (fine-grid) time-stepping scheme of interest, such as any Runge--Kutta scheme, then let $\Psi$ denote a “coarse-grid" time-stepping scheme chosen to approximate $k$ steps of $\Phi$, where $k\geq 1$. In particular, $\Psi$ defines the coarse-grid correction, and evaluating $\Psi$ should be (significantly) cheaper than evaluating $\Phi^k$. Parareal is a two-level method with a fixed relaxation scheme, and MGRiT is a generalization to the multilevel setting, with the additional option of a modified, stronger relaxation scheme. A number of papers have studied the convergence of Parareal and MGRiT. However, general conditions on the convergence of Parareal or MGRiT that answer the following simple questions have yet to be developed: (i) For a given $\Phi$ and $k$, what is the best $\Psi$? (ii) Can Parareal/MGRiT converge for my problem? This work derives necessary and sufficient conditions for the convergence of Parareal and MGRiT applied to linear problems, along with tight two-level convergence bounds, under minimal additional assumptions on $\Phi$ and $\Psi$. Results all rest on the introduction of a temporal approximation property (TAP) that indicates how $\Phi^k$ must approximate the action of $\Psi$ on different vectors. Loosely, for unitarily diagonalizable operators, the TAP indicates that the fine-grid and coarse-grid time integration schemes must integrate geometrically smooth spatial components similarly, and less so for geometrically high frequency. In the (nonunitarily) diagonalizable setting, the conditioning of each eigenvector, ${v}_i$, must also be reflected in how well $\Psi{v}_i \sim\Phi^k{v}_i$. In general, worst-case convergence bounds are exactly given by $\min \varphi < 1$ such that an inequality along the lines of $\|(\Psi-\Phi^k){v}\| \leq\varphi \|(I - \Psi){v}\|$ holds for all ${v}$. Such inequalities are formalized as different realizations of the TAP in section 2 and form the basis for convergence of MGRiT and Parareal applied to linear problems.}},
