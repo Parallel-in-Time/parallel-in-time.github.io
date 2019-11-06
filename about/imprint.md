@@ -2,7 +2,7 @@
 layout: page
 title: "Imprint"
 date: 2014-09-04 11:17
-updated: 2019-11-05 11:00:00 +0200
+updated: 2019-11-06 11:00:00 +0200
 comments: false
 sharing: false
 footer: true
