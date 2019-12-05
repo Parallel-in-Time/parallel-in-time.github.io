@@ -14,18 +14,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - uses: actions/checkout@v1
-      - name: Download website
-        run: |
-          wget \
-            --recursive \
-            --level=2 \
-            --wait=1 \
-            --no-clobber \
-            --page-requisites \
-            --html-extension \
-            --convert-links \
-            --domains quotes.toscrape.com \
-            http://quotes.toscrape.com/
+      - name: Create report file
+        run: date +%s > report.txt
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
         with:
