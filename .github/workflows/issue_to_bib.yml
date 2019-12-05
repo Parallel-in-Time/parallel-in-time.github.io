@@ -1,7 +1,7 @@
 name: Testing actions
 on: 
   issues:
-    type: [opened, reopened]
+    types: [opened, reopened]
 jobs:
   format:
     runs-on: ubuntu-latest
@@ -12,17 +12,17 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo ${{ github.event.issue.user.login }}
+          echo ${{ github.event.issue.title }}
           echo ${{ github.event.issue.body }}
-          echo ${{ github.event.comment.body }}
-#       - uses: actions/checkout@v1
-#       - name: Create report file
-#         run: date +%s > report.txt
-#       - name: Create Pull Request
-#         uses: peter-evans/create-pull-request@v1
-#         with:
-#           token: ${{ secrets.GITHUB_TOKEN }}
-#           commit-message: update local website copy
-#           title: Automated Updates to Local Website Copy
-#           body: This is an auto-generated PR with website updates.
-#           branch: website-updates
-#           branch-suffix: none
+      - uses: actions/checkout@v1
+      - name: Create report file
+        run: date +%s > report.txt
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: update local website copy
+          title: Automated Updates to Local Website Copy
+          body: This is an auto-generated PR with website updates. This closes '#'${{ github.event.issue.id }}.
+          branch: website-updates
+          branch-suffix: none
