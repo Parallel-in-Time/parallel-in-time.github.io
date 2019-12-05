@@ -22,8 +22,8 @@ jobs:
         uses: peter-evans/create-pull-request@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: update local website copy
-          title: Automated Updates to Local Website Copy
+          commit-message: testing actions for updating the website based on issues
+          title: Test PR
           body: 'This is an auto-generated PR with website updates. This closes #${{ github.event.issue.number }}.'
           branch: testing
           branch-suffix: short-commit-hash
