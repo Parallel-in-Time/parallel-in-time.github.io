@@ -24,6 +24,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: update local website copy
           title: Automated Updates to Local Website Copy
-          body: This is an auto-generated PR with website updates. This closes #${{ github.event.issue.number }}.
+          body: 'This is an auto-generated PR with website updates. This closes #${{ github.event.issue.number }}.'
           branch: testing
           branch-suffix: short-commit-hash
