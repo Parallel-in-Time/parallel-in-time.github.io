@@ -1,4 +1,4 @@
-name: Download Website
+name: Testing actions
 on: 
   issues:
     type: [opened, reopened]
@@ -11,8 +11,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo ${issue.user.login}
-          echo ${issue.body}
+          echo @${issue.user.login}
+          echo @${issue.body}
       - uses: actions/checkout@v1
       - name: Create report file
         run: date +%s > report.txt
