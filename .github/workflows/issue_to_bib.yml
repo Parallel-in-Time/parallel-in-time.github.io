@@ -13,15 +13,16 @@ jobs:
           echo test, and deploy your project.
           echo ${{ github.event.issue.user.login }}
           echo ${{ github.event.issue.comment.body }}
-      - uses: actions/checkout@v1
-      - name: Create report file
-        run: date +%s > report.txt
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: update local website copy
-          title: Automated Updates to Local Website Copy
-          body: This is an auto-generated PR with website updates.
-          branch: website-updates
-          branch-suffix: none
+          echo ${{ github.event.changes.comment.body }}
+#       - uses: actions/checkout@v1
+#       - name: Create report file
+#         run: date +%s > report.txt
+#       - name: Create Pull Request
+#         uses: peter-evans/create-pull-request@v1
+#         with:
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           commit-message: update local website copy
+#           title: Automated Updates to Local Website Copy
+#           body: This is an auto-generated PR with website updates.
+#           branch: website-updates
+#           branch-suffix: none
