@@ -13,7 +13,7 @@ jobs:
           echo test, and deploy your project.
           echo ${{ github.event.issue.user.login }}
           echo ${{ github.event.issue.body }}
-          echo ${{ github.event.changes.body }}
+          echo ${{ github.event.comment.body }}
 #       - uses: actions/checkout@v1
 #       - name: Create report file
 #         run: date +%s > report.txt
