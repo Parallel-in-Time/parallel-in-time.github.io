@@ -14,7 +14,7 @@ jobs:
           echo ${{ github.event.issue.user.login }}
           echo ${{ github.event.issue.title }}
           echo ${{ github.event.issue.body }}
-          echo '#'${{ github.event.issue.id }}
+          echo '#'${{ github.event.issue.number }}
       - uses: actions/checkout@v1
       - name: Create report file
         run: date +%s > report.txt
@@ -24,6 +24,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: update local website copy
           title: Automated Updates to Local Website Copy
-          body: This is an auto-generated PR with website updates. This closes '#'${{ github.event.issue.id }}.
+          body: This is an auto-generated PR with website updates. This closes #${{ github.event.issue.number }}.
           branch: testing
           branch-suffix: short-commit-hash
