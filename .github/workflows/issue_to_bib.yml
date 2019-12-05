@@ -12,8 +12,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo ${{ github.event.issue.user.login }}
-          echo ${{ github.event.issue.comment.body }}
-          echo ${{ github.event.changes.comment.body }}
+          echo ${{ github.event.issue.body }}
+          echo ${{ github.event.changes.body }}
 #       - uses: actions/checkout@v1
 #       - name: Create report file
 #         run: date +%s > report.txt
