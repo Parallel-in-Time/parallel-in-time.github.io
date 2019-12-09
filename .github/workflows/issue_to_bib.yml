@@ -25,7 +25,7 @@ jobs:
           title: pint.bib updates
           body: 'This is an auto-generated PR with reference updates. This closes #${{ github.event.issue.number }}.'
           branch: bibtex-bibbot
-          branch-suffix: short-commit-hash-${{ github.event.issue.number }}
+          branch-suffix: ${{ github.event.issue.number }}
       - name: Add comment to issue
         uses: actions/github-script@0.3.0
         if: steps.updater.outputs.COMMENT != ''
