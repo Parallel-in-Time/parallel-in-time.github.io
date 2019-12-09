@@ -1,6 +1,7 @@
 import argparse
 import re
 import requests
+import fileinput
 
 from arxivcheck.arxiv import get_arxiv_info
 
@@ -74,7 +75,7 @@ if __name__ == '__main__':
 
             howpublished = "arXiv:" + items[0]["id"].split('/')[-1] + \
                            " [" + items[0]["arxiv_primary_category"]["term"] + "]"
-               
+
             if not duplicate:
                 bib_db = BibDatabase()
                 bib_db.entries = [
@@ -142,3 +143,9 @@ if __name__ == '__main__':
             writer.add_trailing_comma = True
             with open('../_bibliography/pint.bib', 'w') as bibfile:
                 bibfile.write(writer.write(db))
+
+            for line in fileinput.input('../_bibliography/pint.bib', inplace=True):
+                if '@comment{' in line:
+                    line = line.replace('@comment{', '')
+                line = line.rstrip('\r\n')
+                print(line)
