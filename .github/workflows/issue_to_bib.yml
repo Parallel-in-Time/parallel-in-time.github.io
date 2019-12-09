@@ -10,9 +10,11 @@ jobs:
       - name: Parse issue and update bibtex file
         run: |
           cd bin
+          python -m pip install --upgrade pip
+          pip install bibtexparser arxivcheck
           python issue_to_bibtex.py -b "${{ github.event.issue.body }}" > comment.out 2>&1
-#          echo "::set-env name=COMMENT::$(cat comment.out)"
-#          find comment.out -size  0 -print0 |xargs -0 rm --
+          echo "::set-env name=COMMENT::$(cat comment.out)"
+          find comment.out -size  0 -print0 |xargs -0 rm --
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
         with:
