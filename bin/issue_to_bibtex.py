@@ -148,6 +148,6 @@ if __name__ == '__main__':
                 if '@comment{' in line:
                     line = line.replace('@comment{', '')
                 if re.match(r'%}+', line) is not None:
-                    line = line.replace(r'%}+', '%')
+                    line = re.sub(r'%}+', '%', line)
                 line = line.rstrip('\r\n')
                 print(line)
