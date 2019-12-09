@@ -14,7 +14,8 @@ jobs:
           python3 -m pip install --user setuptools
           python3 -m pip install --user bibtexparser arxivcheck
           python3 issue_to_bibtex.py -b "${{ github.event.issue.body }}" > comment.out 2>&1
-          cat comment.out
+          echo "::set-output name=COMMENT::$(cat comment.out)"
+        id: updater
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
         with:
@@ -31,7 +32,7 @@ jobs:
           script: |
             echo "::set-env name=COMMENT::$(cat comment.out)"
             find comment.out -size  0 -print0 |xargs -0 rm --
-            github.issues.createComment({...context.issue, body: $COMMENT})
+            github.issues.createComment({...context.issue, body: ${{ steps.updater.outputs.COMMENT }}})
       # - name: Create commit comment
       #   uses: peter-evans/commit-comment@v1.0.1
       #   with:
