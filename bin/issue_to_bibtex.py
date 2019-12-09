@@ -78,8 +78,8 @@ if __name__ == '__main__':
             howpublished = "arXiv:" + items[0]["id"].split('/')[-1] + \
                            " [" + items[0]["arxiv_primary_category"]["term"] + "]"
 
-            bib = BibDatabase()
-            bib.entries = [
+            bib_db = BibDatabase()
+            bib_db.entries = [
                 {
                     "ENTRYTYPE": "unpublished",
                     "ID": id,
