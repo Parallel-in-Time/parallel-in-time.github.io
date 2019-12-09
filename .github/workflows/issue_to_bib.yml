@@ -10,7 +10,7 @@ jobs:
       - name: Parse issue and update bibtex file
         run: |
           cd bin
-#          python issue_to_bibtex.py -b "${{ github.event.issue.body }}" > comment.out 2>&1
+          python issue_to_bibtex.py -b "${{ github.event.issue.body }}" > comment.out 2>&1
 #          echo "::set-env name=COMMENT::$(cat comment.out)"
 #          find comment.out -size  0 -print0 |xargs -0 rm --
       - name: Create Pull Request
