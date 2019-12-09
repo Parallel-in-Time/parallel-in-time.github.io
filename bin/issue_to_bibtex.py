@@ -12,10 +12,7 @@ from bibtexparser.bwriter import BibTexWriter
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    # parser.add_argument("-b", "--body", help="input issue body here", type=str, default="this is some text: https://doi.org/10.1007/978-3-319-05789-7_61. And more: https://arxiv.org/abs/1808.02731")
     parser.add_argument("-b", "--body", help="input issue body here", type=str, default="")
-    # parser.add_argument("-b", "--body", help="input issue body here", type=str, default="http://dx.doi.org/10.1145/355588.365137, http://dx.doi.org/10.1090/S0025-5718-1967-0223106-8")
-    # parser.add_argument("-b", "--body", help="input issue body here", type=str, default="asdbasdab")
     args = parser.parse_args()
 
     url_list = re.findall(r'(https?://\S+)', args.body)
@@ -77,20 +74,23 @@ if __name__ == '__main__':
 
             howpublished = "arXiv:" + items[0]["id"].split('/')[-1] + \
                            " [" + items[0]["arxiv_primary_category"]["term"] + "]"
-
-            bib_db = BibDatabase()
-            bib_db.entries = [
-                {
-                    "ENTRYTYPE": "unpublished",
-                    "ID": id,
-                    "author": authors,
-                    "title": title,
-                    "howpublished": howpublished,
-                    "url": url,
-                    "year": year,
-                    "abstract": items[0]['summary'].replace('\n', ' ').replace('  ', ' '),
-                }
-            ]
+               
+            if not duplicate:
+                bib_db = BibDatabase()
+                bib_db.entries = [
+                    {
+                        "ENTRYTYPE": "unpublished",
+                        "ID": id,
+                        "author": authors,
+                        "title": title,
+                        "howpublished": howpublished,
+                        "url": url,
+                        "year": year,
+                        "abstract": items[0]['summary'].replace('\n', ' ').replace('  ', ' '),
+                    }
+                ]
+            else:
+                bib_db = None
 
         elif 'doi.org' in url:
 
