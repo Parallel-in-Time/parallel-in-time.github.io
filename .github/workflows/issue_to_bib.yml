@@ -30,8 +30,6 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            echo "::set-env name=COMMENT::$(cat comment.out)"
-            find comment.out -size  0 -print0 |xargs -0 rm --
             github.issues.createComment({...context.issue, body: ${{ steps.updater.outputs.COMMENT }}})
       # - name: Create commit comment
       #   uses: peter-evans/commit-comment@v1.0.1
