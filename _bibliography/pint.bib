@@ -17,7 +17,7 @@
 %
 % Feel free to use this collection wherever you want.
 % We would very much appreciate a link/reference to parallel-in-time.org.
-%
+%}
 
 @article{Nievergelt1964,
 	author = {Nievergelt, J.},
@@ -4332,6 +4332,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@unpublished{SchöbelEtAl2019,
+	abstract = {To extend prevailing scaling limits when solving time-dependent partial differential equations, the parallel full approximation scheme in space and time (PFASST) has been shown to be a promising parallel-in-time integrator. Similar to a space-time multigrid, PFASST is able to compute multiple time-steps simultaneously and is therefore in particular suitable for large-scale applications on high performance computing systems. In this work we couple PFASST with a parallel spectral deferred correction (SDC) method, forming an unprecedented doubly time-parallel integrator. While PFASST provides global, large-scale "parallelization across the step", the inner parallel SDC method allows to integrate each individual time-step "parallel across the method" using a diagonalized local Quasi-Newton solver. This new method, which we call "PFASST with Enhanced concuRrency" (PFASST-ER), therefore exposes even more temporal parallelism. For two challenging nonlinear reaction-diffusion problems, we show that PFASST-ER works more efficiently than the classical variants of PFASST and can be used to run parallel-in-time beyond the number of time-steps.},
+	author = {Ruth Schöbel and Robert Speck},
+	howpublished = {arXiv:1912.00702v1 [cs.MS]},
+	title = {PFASST-ER: Combining the Parallel Full Approximation Scheme in Space and Time with parallelization across the method},
+	url = {http://arxiv.org/abs/1912.00702v1},
+	year = {2019},
+}
+
 @article{Southworth2019,
 	abstract = {{Parareal and multigrid reduction in time (MGRiT) are two of the most popular parallel-in-time methods. The basic idea is to treat time integration in a parallel context by using a multigrid method in time. If $\Phi$ is the (fine-grid) time-stepping scheme of interest, such as any Runge--Kutta scheme, then let $\Psi$ denote a “coarse-grid" time-stepping scheme chosen to approximate $k$ steps of $\Phi$, where $k\geq 1$. In particular, $\Psi$ defines the coarse-grid correction, and evaluating $\Psi$ should be (significantly) cheaper than evaluating $\Phi^k$. Parareal is a two-level method with a fixed relaxation scheme, and MGRiT is a generalization to the multilevel setting, with the additional option of a modified, stronger relaxation scheme. A number of papers have studied the convergence of Parareal and MGRiT. However, general conditions on the convergence of Parareal or MGRiT that answer the following simple questions have yet to be developed: (i) For a given $\Phi$ and $k$, what is the best $\Psi$? (ii) Can Parareal/MGRiT converge for my problem? This work derives necessary and sufficient conditions for the convergence of Parareal and MGRiT applied to linear problems, along with tight two-level convergence bounds, under minimal additional assumptions on $\Phi$ and $\Psi$. Results all rest on the introduction of a temporal approximation property (TAP) that indicates how $\Phi^k$ must approximate the action of $\Psi$ on different vectors. Loosely, for unitarily diagonalizable operators, the TAP indicates that the fine-grid and coarse-grid time integration schemes must integrate geometrically smooth spatial components similarly, and less so for geometrically high frequency. In the (nonunitarily) diagonalizable setting, the conditioning of each eigenvector, ${v}_i$, must also be reflected in how well $\Psi{v}_i \sim\Phi^k{v}_i$. In general, worst-case convergence bounds are exactly given by $\min \varphi < 1$ such that an inequality along the lines of $\|(\Psi-\Phi^k){v}\| \leq\varphi \|(I - \Psi){v}\|$ holds for all ${v}$. Such inequalities are formalized as different realizations of the TAP in section 2 and form the basis for convergence of MGRiT and Parareal applied to linear problems.}},
 	author = {Ben S. Southworth},
@@ -4355,3 +4364,4 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	volume = {37},
 	year = {2019},
 }
+
