@@ -24,11 +24,11 @@ jobs:
           branch-suffix: short-commit-hash
       - name: Add comment to issue
         uses: actions/github-script@0.3.0
-        if: process.env.COMMENT != ''
+        if: $COMMENT != ''
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            github.issues.createComment({...context.issue, body: ${process.env.COMMENT}})
+            github.issues.createComment({...context.issue, body: $COMMENT})
       # - name: Create commit comment
       #   uses: peter-evans/commit-comment@v1.0.1
       #   with:
