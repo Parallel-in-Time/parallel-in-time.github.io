@@ -152,7 +152,7 @@
 In several research papers, it can already be seen that also problems with different internal time scales or including chaotic behavior (e.g. the Lorenz system) can be treated with this method.</p>
 
 <p>However, applying a parallel-in-time method to the PalMod setting still is a challenge, since it has to be implemented using the available Earth System Models. Here, several options are thinkable: Coupling between different spatial resolutions as well as the usage of simpler reduced or intermediate complexity models. In this context, the parareal method is a mathematical key enabler for faster climate simulations and with this perfectly fits to the ambitious goal of the PalMod project. Currently the parareal method is implemented in the simulation environment of PalMod’s Work Package 4.3. 
-In PalMod, we make use of the Micro-Macro Parareal approach, in cooperation with G. Samaey, KU Leuven: In this version of Parareal (missing reference) , the coarse propagator in the Paraeal setting  is a model with a different structure. This can be a simpler model.</p>
+In PalMod, we make use of the Micro-Macro Parareal approach, in cooperation with G. Samaey, KU Leuven: In this version of Parareal <a href="#LegollEtAl2013">[1]</a> , the coarse propagator in the Paraeal setting  is a model with a different structure. This can be a simpler model.</p>
 
 <p>In our first example, the coarse model is a zero-dimensional so-called Energy Balance Model (EBM). This model  is based on the balance of incoming and outgoing for the whole Earth as 0-D point in space. The only state variable is the global mean temperature. The original, fine model in the Micro-Macro setting is based on the same modeling principles, but spatially one-dimensional. Additional lifting and averaging operators have to be constructed for the algorithm:</p>
 
@@ -181,7 +181,57 @@ In PalMod, we make use of the Micro-Macro Parareal approach, in cooperation with
 
 <p><strong>Figure 1</strong> <em>Convergence of micro-macro parareal method for  0-D/1-D nonlinear Energy Balance Model and different numbers N of parareal  subintervals.</em></p>
 
-<ol class="bibliography"></ol>
+<ol class="bibliography"><li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          LegollEtAl2013
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseLegollEtAl2013Bibtex" aria-expanded="false" aria-controls="collapseLegollEtAl2013Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalLegollEtAl2013Abstract" aria-expanded="false" aria-controls="modalLegollEtAl2013Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="LegollEtAl2013">F. Legoll, T. Lelièvre, and G. Samaey, “A Micro-Macro Parareal Algorithm: Application to Singularly Perturbed Ordinary Differential Equations,” <i>SIAM Journal on Scientific Computing</i>, vol. 35, no. 4, pp. A1951–A1986, 2013 [Online]. Available at: <a href="http://dx.doi.org/10.1137/120872681" target="_blank">http://dx.doi.org/10.1137/120872681</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseLegollEtAl2013Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{LegollEtAl2013,
+  author = {Legoll, F. and Lelièvre, T. and Samaey, G.},
+  journal = {SIAM Journal on Scientific Computing},
+  number = {4},
+  pages = {A1951--A1986},
+  title = {{A Micro-Macro Parareal Algorithm: Application to Singularly Perturbed Ordinary Differential Equations}},
+  url = {http://dx.doi.org/10.1137/120872681},
+  doi = {10.1137/120872681},
+  volume = {35},
+  year = {2013}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li></ol>
 
       </div>
       <aside class="col-md-4">
