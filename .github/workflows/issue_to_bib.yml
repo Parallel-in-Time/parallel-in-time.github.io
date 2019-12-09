@@ -25,7 +25,7 @@ jobs:
           title: pint.bib updates
           body: 'This is an auto-generated PR with reference updates. This closes #${{ github.event.issue.number }}.'
           branch: bibtex-bibbot
-          branch-suffix: short-commit-hash
+          branch-suffix: short-commit-hash-${{ github.event.issue.number }}
       - name: Add comment to issue
         uses: actions/github-script@0.3.0
         if: steps.updater.outputs.COMMENT != ''
@@ -33,9 +33,3 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             github.issues.createComment({...context.issue, body: '${{ steps.updater.outputs.COMMENT }}'})
-      # - name: Create commit comment
-      #   uses: peter-evans/commit-comment@v1.0.1
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      #     body: |
-      #       ${process.env.COMMENT}
