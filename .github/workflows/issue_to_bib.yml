@@ -11,6 +11,7 @@ jobs:
         run: |
           cd bin
           python3 -m pip install --user --upgrade pip
+          python3 -m pip install --user setuptools
           python3 -m pip install --user bibtexparser arxivcheck
           python3 issue_to_bibtex.py -b "${{ github.event.issue.body }}" > comment.out 2>&1
           echo "::set-env name=COMMENT::$(cat comment.out)"
