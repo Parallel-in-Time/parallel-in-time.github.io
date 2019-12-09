@@ -147,5 +147,7 @@ if __name__ == '__main__':
             for line in fileinput.input('../_bibliography/pint.bib', inplace=True):
                 if '@comment{' in line:
                     line = line.replace('@comment{', '')
+                if re.match(r'%}+\n', line) is not None:
+                    line = line.replace(r'%}+\n', '%\n')
                 line = line.rstrip('\r\n')
                 print(line)
