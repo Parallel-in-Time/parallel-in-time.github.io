@@ -14,8 +14,7 @@ jobs:
           python3 -m pip install --user setuptools
           python3 -m pip install --user bibtexparser arxivcheck
           python3 issue_to_bibtex.py -b "${{ github.event.issue.body }}" > comment.out 2>&1
-          echo "::set-env name=COMMENT::$(cat comment.out)"
-          find comment.out -size  0 -print0 |xargs -0 rm --
+          cat comment.out
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
         with:
@@ -27,10 +26,11 @@ jobs:
           branch-suffix: short-commit-hash
       - name: Add comment to issue
         uses: actions/github-script@0.3.0
-#         if: $COMMENT != ''
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
+            echo "::set-env name=COMMENT::$(cat comment.out)"
+            find comment.out -size  0 -print0 |xargs -0 rm --
             github.issues.createComment({...context.issue, body: $COMMENT})
       # - name: Create commit comment
       #   uses: peter-evans/commit-comment@v1.0.1
