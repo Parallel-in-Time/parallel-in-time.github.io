@@ -10,7 +10,6 @@ jobs:
       - name: Parse issue and update bibtex file
         run: |
           cd bin
-          echo "${{ github.event.comment.body }}"
           python3 -m pip install --user --upgrade pip
           python3 -m pip install --user setuptools
           python3 -m pip install --user bibtexparser arxivcheck
