@@ -17,7 +17,7 @@
 %
 % Feel free to use this collection wherever you want.
 % We would very much appreciate a link/reference to parallel-in-time.org.
-%}}}
+%
 
 @article{Nievergelt1964,
 	author = {Nievergelt, J.},
@@ -4373,6 +4373,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	pages = {564--608},
 	title = {Necessary {C}onditions and {T}ight {T}wo-level {C}onvergence {B}ounds for {P}arareal and {M}ultigrid {R}eduction in {T}ime},
 	volume = {40},
+	year = {2019},
+}
+
+@unpublished{SpeckEtAl2019,
+	abstract = {While many ideas and proofs of concept for parallel-in-time integration methods exists, the number of large-scale, accessible time-parallel codes is rather small. This is often due to the apparent or subtle complexity of the algorithms and the many pitfalls awaiting developers of parallel numerical software. One example of such a time-parallel code is pySDC, which implements, among others, the parallel full approximation scheme in space and time (PFASST). Inspired by nonlinear multigrid ideas, PFASST allows to integrate multiple time-steps simultaneously using a space-time hierarchy of spectral deferred corrections. In this paper we demonstrate the application of performance analysis tools to the PFASST implementation pySDC. We aim to answer whether the code works as intended and whether the time-parallelization is as efficient as expected. Tracing the path we took for this work, we highlight the obstacles encountered, describe remedies and explain the sometimes surprising findings made possible by the tools. Although focusing only on a single implementation of a particular parallel-in-time integrator, we hope that our results and in particular the way we obtained them are a blueprint for other time-parallel codes.},
+	author = {Robert Speck and Michael Knobloch and Andreas Gocht and Sebastian Lührs},
+	howpublished = {arXiv:1911.13027v1 [cs.PF]},
+	title = {Using performance analysis tools for parallel-in-time integrators -- Does my time-parallel code do what I think it does?},
+	url = {http://arxiv.org/abs/1911.13027v1},
 	year = {2019},
 }
 
