@@ -27,7 +27,7 @@ jobs:
           branch-suffix: short-commit-hash
       - name: Add comment to issue
         uses: actions/github-script@0.3.0
-        if: ${{ steps.updater.outputs.COMMENT }} != ''
+        if: steps.updater.outputs.COMMENT != ''
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
