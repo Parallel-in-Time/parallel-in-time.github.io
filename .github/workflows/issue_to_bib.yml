@@ -30,7 +30,7 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            github.issues.createComment({...context.issue, body: ${{ steps.updater.outputs.COMMENT }}})
+            github.issues.createComment({...context.issue, body: '${{ steps.updater.outputs.COMMENT }}'})
       # - name: Create commit comment
       #   uses: peter-evans/commit-comment@v1.0.1
       #   with:
