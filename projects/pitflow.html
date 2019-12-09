@@ -144,12 +144,12 @@
       <div class="col-md-8">
         <p><em>This work is funded under the embedded CSE programme of the <a href="http://www.archer.ac.uk">ARCHER UK National Supercomputing Service</a>.</em></p>
 
-<p><a href="http://www.2020science.net/software/hemelb.html">HemeLB</a> <a href="#GroenEtAl2013">[1]</a> is code designed to simulate blood flow in arteries using Lattice-Boltzmann methods (LBM). For complex geometries like the <a href="https://en.wikipedia.org/wiki/Circle_of_Willis">Circle of Willis</a>, it scales up to 25k cores on the Cray XC30 supercomputer <a href="http://www.archer.ac.uk/about-archer/hardware/">ARCHER</a> but simulations still take several days to complete. Building on the work by Randles and Kaxiras <a href="#Randles2014">[2]</a>, this project will integrate parallel-in-time integration capacities into HemeLB to extend scaling and reduce wall-clock times.</p>
+<p><a href="http://www.2020science.net/software/hemelb.html">HemeLB</a> <a href="#GroenEtAl2013">[1]</a> is code designed to simulate blood flow in arteries using Lattice-Boltzmann methods (LBM). For complex geometries like the <a href="https://en.wikipedia.org/wiki/Circle_of_Willis">Circle of Willis</a>, it scales up to 25k cores on the Cray XC30 supercomputer <a href="http://www.archer.ac.uk/about-archer/hardware/">ARCHER</a> but simulations still take several days to complete. Building on the work by Randles and Kaxiras (missing reference), this project will integrate parallel-in-time integration capacities into HemeLB to extend scaling and reduce wall-clock times.</p>
 
 <p>The aims of the project are:</p>
 
 <ol>
-  <li>Implement the <a href="https://en.wikipedia.org/wiki/Parareal">Parareal</a> <a href="#LionsEtAl2001">[3]</a> algorithm into HemeLB to provide parallel-in-time integration capacities.</li>
+  <li>Implement the <a href="https://en.wikipedia.org/wiki/Parareal">Parareal</a> (missing reference) algorithm into HemeLB to provide parallel-in-time integration capacities.</li>
   <li>Optimise communication and scheduling in time to minimise overheads and improve efficiency and resource utilisation of Parareal.</li>
   <li>Demonstrate speedup of five or better using the Circle of Willis simulation model, thus bringing simulations times down to a day or less.</li>
   <li>Simplify and automate the Parallel-In-Time implementation, allowing others in the community to perform these runs with a single-line command using FabSim.</li>
@@ -222,138 +222,7 @@
   
 </div>
 </li></ol>
-<ol class="bibliography"><li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          LionsEtAl2001
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseLionsEtAl2001Bibtex" aria-expanded="false" aria-controls="collapseLionsEtAl2001Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalLionsEtAl2001Abstract" aria-expanded="false" aria-controls="modalLionsEtAl2001Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="LionsEtAl2001">J.-L. Lions, Y. Maday, and G. Turinici, “A ‘parareal’ in time discretization of PDE’s,” <i>Comptes Rendus de l’Académie des Sciences - Series I - Mathematics</i>, vol. 332, pp. 661–668, 2001 [Online]. Available at: <a href="http://dx.doi.org/10.1016/S0764-4442(00)01793-6" target="_blank">http://dx.doi.org/10.1016/S0764-4442(00)01793-6</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseLionsEtAl2001Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@article{LionsEtAl2001,
-  author = {Lions, J.-L. and Maday, Yvon and Turinici, Gabriel},
-  journal = {Comptes Rendus de l'Académie des Sciences - Series I - Mathematics},
-  pages = {661--668},
-  title = {{A "parareal" in time discretization of {PDE}'s}},
-  url = {http://dx.doi.org/10.1016/S0764-4442(00)01793-6},
-  doi = {10.1016/S0764-4442(00)01793-6},
-  volume = {332},
-  year = {2001}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalLionsEtAl2001Abstract" tabindex="-1" role="dialog" aria-labelledby="modalLionsEtAl2001AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalLionsEtAl2001AbstractTitle">
-            Abstract for BibTeX entry <code>LionsEtAl2001</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          The purpose of this Note is to propose a time discretization of a partial differential evolution equation that allows for parallel implementations. The method, based on an Euler scheme, combines coarse resolutions and independent fine resolutions in time in the same spirit as standard spacial approximations. The resulting parallel implementation is done in the non standard time direction. Its main goal concerns real time problems, hence the proposed terminology of “parareal” algorithm.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          Randles2014
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseRandles2014Bibtex" aria-expanded="false" aria-controls="collapseRandles2014Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalRandles2014Abstract" aria-expanded="false" aria-controls="modalRandles2014Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="Randles2014">A. Randles and E. Kaxiras, “Parallel in time approximation of the lattice Boltzmann method for laminar flows,” <i>Journal of Computational Physics</i>, vol. 270, pp. 577–586, 2014 [Online]. Available at: <a href="http://dx.doi.org/10.1016/j.jcp.2014.04.006" target="_blank">http://dx.doi.org/10.1016/j.jcp.2014.04.006</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseRandles2014Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@article{Randles2014,
-  author = {Randles, Amanda and Kaxiras, Efthimios},
-  journal = {Journal of Computational Physics},
-  pages = {577--586},
-  title = {{Parallel in time approximation of the lattice {B}oltzmann method for laminar flows}},
-  url = {http://dx.doi.org/10.1016/j.jcp.2014.04.006},
-  doi = {10.1016/j.jcp.2014.04.006},
-  volume = {270},
-  year = {2014}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalRandles2014Abstract" tabindex="-1" role="dialog" aria-labelledby="modalRandles2014AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalRandles2014AbstractTitle">
-            Abstract for BibTeX entry <code>Randles2014</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          Fluid dynamics simulations using grid-based methods, such as the lattice Boltzmann equation, can benefit from parallel-in-space computation. However, for a fixed-size simulation of this type, the efficiency of larger processor counts will saturate when the number of grid points per core becomes too small. To overcome this fundamental strong scaling limit in space-parallel approaches, we present a novel time-parallel version of the lattice Boltzmann method using the parareal algorithm. This method is based on a predictor–corrector scheme combined with mesh refinement to enable the simulation of larger number of time steps. We present results of up to a 32× increase in speed for a model system consisting of a cylinder with conditions for laminar flow. The parallel gain obtainable is predicted with strong accuracy, providing a quantitative understanding of the potential impact of this method.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li></ol>
+<ol class="bibliography"></ol>
 
       </div>
       <aside class="col-md-4">
