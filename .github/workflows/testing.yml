@@ -10,5 +10,5 @@ jobs:
       - name: testing
         run: |
           echo "${{ github.event.issue.body }}"
-          echo "${{ github.event.issue.labels }}"
+          echo "${{ github.event.issue.labels[0] }}"
         id: updater
