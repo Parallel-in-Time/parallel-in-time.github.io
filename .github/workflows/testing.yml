@@ -4,7 +4,7 @@ on:
     types: [labeled]
 jobs:
   test:
-    if: contains( toJson(github), 'food for bibbot' )
+    # if: contains( toJson(github), 'noooo' )
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
