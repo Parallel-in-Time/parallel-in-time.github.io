@@ -8,10 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: testing
-        env:
-          LABELS: ${{ github.event.issue.labels }}
         run: |
-          for i in $LABELS;
+          for i in ${{ github.event.issue.labels }};
             do
               echo $i
             done
