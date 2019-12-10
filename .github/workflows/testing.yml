@@ -9,8 +9,8 @@ jobs:
       - uses: actions/checkout@v1
       - name: testing
         run: |
-          for i in "${{ github.event.issue.labels }}[@]";
+          for i in "${{{ github.event.issue.labels }}[@]}";
             do
-              echo "$i['name']"
+              echo $i['name']
             done
         id: updater
