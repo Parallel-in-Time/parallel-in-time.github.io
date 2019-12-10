@@ -7,8 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - env:
+          LABELS: ${{ github.event.issue.labels }}
       - name: testing
         run: |
-          echo "${{ github.event.issue.body }}"
-          echo "${{ github.event.issue.labels[0]['name'] }}"
+          for i in $LABELS;
+            do
+              echo $i
+            done
         id: updater
