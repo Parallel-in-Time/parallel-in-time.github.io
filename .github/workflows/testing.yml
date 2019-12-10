@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: testing
-        if:  contains( github.event.issue.labels, 'food for bibbot' )
+        if:  contains( toJson(github), 'food for bibbot' )
         run: |
           echo "YES!"
         id: updater
