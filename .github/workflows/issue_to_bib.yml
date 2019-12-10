@@ -1,13 +1,14 @@
 name: Issue to BibTeX
 on:
   issues:
-    types: [opened, reopened]
+    types: [labeled]
 jobs:
-  format:
+  pull_request:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Parse issue and update bibtex file
+        if: contains( toJson(github), 'food for bibbot' )
         run: |
           cd bin
           python3 -m pip install --user --upgrade pip
@@ -18,6 +19,7 @@ jobs:
           rm -rf comment.out
         id: updater
       - name: Create Pull Request
+        if: contains( toJson(github), 'food for bibbot' )
         uses: peter-evans/create-pull-request@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -28,7 +30,7 @@ jobs:
           branch-suffix: short-commit-hash
       - name: Add comment to issue
         uses: actions/github-script@0.3.0
-        if: steps.updater.outputs.COMMENT != ''
+        if: contains( toJson(github), 'food for bibbot' ) && steps.updater.outputs.COMMENT != ''
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
