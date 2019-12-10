@@ -10,7 +10,7 @@ jobs:
       - name: testing
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
-        if: [[ $GITHUB_CONTEXT == *"food for bibbot"* ]]
+        if: toJson(github) == *"food for bibbot"*
         run: |
           echo "YES!"
         id: updater
