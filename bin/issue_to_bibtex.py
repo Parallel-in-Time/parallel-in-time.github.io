@@ -133,7 +133,8 @@ if __name__ == '__main__':
                 bib_db = None
 
         else:
-            raise NotImplementedError()
+            print(f'The URL {url} does not seem to be an arXiv or '
+                  f'a doi.org link. I will ignore it.\n\n')
 
         if bib_db is not None:
             db.entries.extend(bib_db.get_entry_list())
