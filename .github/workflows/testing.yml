@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - env:
-          LABELS: ${{ github.event.issue.labels }}
       - name: testing
+        env:
+          LABELS: ${{ github.event.issue.labels }}
         run: |
           for i in $LABELS;
             do
