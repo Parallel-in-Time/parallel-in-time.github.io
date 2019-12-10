@@ -11,5 +11,8 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
-          echo [[ $GITHUB_CONTEXT == *"food for bibbot"* ]]
+          echo "[[ $GITHUB_CONTEXT == *"food for bibbot"* ]]"
+          if [[ $GITHUB_CONTEXT == *"food for bibbot"* ]]; then
+            echo "YES!"
+          fi
         id: updater
