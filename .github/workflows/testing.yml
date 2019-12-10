@@ -8,9 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: testing
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
-          for i in ${{ github.event.issue.labels }}[@];
-            do
-              echo $i['name']
-            done
+          echo [[ $GITHUB_CONTEXT == *"food for bibbot"* ]]
         id: updater
