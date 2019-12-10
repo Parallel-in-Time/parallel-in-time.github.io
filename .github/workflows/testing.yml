@@ -1,0 +1,14 @@
+name: Testing
+on:
+  issues:
+    types: [labeled]
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: testing
+        run: |
+          echo "${{ github.event.issue.body }}"
+          echo "${{ github.event.issue.labels }}"
+        id: updater
