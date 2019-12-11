@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: testing
+        if: github.event.label.name == 'bibtex'
         run: |
           echo "YES!"
         id: updater
