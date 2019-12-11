@@ -19,8 +19,7 @@ if __name__ == '__main__':
     url_list = re.findall(r'(https?://\S+)', args.body)
 
     if len(url_list) == 0:
-        print(f'I did not find any URLs in the text you provided. '
-              f'What I got is this:\n\n{args.body}\n\nPlease try again!')
+        print(f'I did not find any URLs in the text you provided.')
         exit()
 
     for url in url_list:
