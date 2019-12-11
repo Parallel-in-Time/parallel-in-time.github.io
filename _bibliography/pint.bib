@@ -4329,15 +4329,6 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
-@unpublished{NguyenTsai2019,
-	abstract = {{ A new parallel-in-time iterative method is proposed for solving the homogeneous second-order wave equation. The new method involves a coarse scale propagator, allowing for larger time steps, and a fine scale propagator which fully resolves the medium using finer spatial grid and shorter time steps. The fine scale propagator is run in parallel for short time intervals. The two propagators are coupled in an iterative way that resembles the standard parareal method by Lions et. al. We present a data-driven strategy in which the computed data gathered from each iteration are re-used to stabilize the coupling by minimizing the energy residual of the fine and coarse propagated solutions. An example of Marmousi model is provided to demonstrate the performance of the proposed method.}},
-	author = {Hieu Nguyen and Richard Tsai},
-	howpublished = {arXiv:1905.00473 [math.NA]},
-	title = {A stable parareal-like method for the second order wave equation},
-	url = {https://arxiv.org/abs/1905.00473},
-	year = {2019},
-}
-
 @unpublished{RittichEtAl2019,
 	abstract = {The numerical simulation of the time-dependent Schr\"odinger equation for quantum systems is a very active research topic. Yet, resolving the solution sufficiently in space and time is challenging and mandates the use of modern high-performance computing systems. While classical parallelization techniques in space can reduce the runtime per time-step, novel parallel-in-time integrators expose parallelism in the temporal domain. They work, however, not very well for wave-type problems such as the Schr\"odinger equation. One notable exception is the rational approximation of exponential integrators. In this paper we derive an efficient variant of this approach suitable for the complex-valued Schr\"odinger equation. Using the Faber-Carath\'eodory-Fej\'er approximation, this variant is already a fast serial and in particular an efficient time-parallel integrator. It can be used to augment classical parallelization in space and we show the efficiency and effectiveness of our method along the lines of two challenging, realistic examples.},
 	author = {Hannah Rittich and Robert Speck},
