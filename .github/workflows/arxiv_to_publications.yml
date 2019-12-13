@@ -6,8 +6,8 @@ jobs:
   pull_request:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Look for bibtex entries that now have a DOI
-        uses: actions/checkout@v1
         if: github.event.label.name == 'bibtex'
         run: |
           cd bin
