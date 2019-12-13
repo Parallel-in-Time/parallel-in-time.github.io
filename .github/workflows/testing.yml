@@ -7,9 +7,16 @@ jobs:
     # if: contains( toJson(github), 'noooo' )
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: testing
-        if: github.event.label.name == 'bibtex'
-        run: |
-          echo "YES!"
-        id: updater
+      # - uses: actions/checkout@v1
+      # - name: testing
+      #   # if: github.event.label.name == 'bibtex'
+      #   run: |
+      #     echo "YES!"
+      #   id: updater
+      - name: Add comment to issue
+        uses: actions/github-script@0.3.0
+        # if: github.event.label.name == 'food for bibbot' && steps.updater.outputs.COMMENT != ''
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.issues.createComment({...context.issue, body: '- [ ] test me\n -[ ] test me, too'})
