@@ -12,6 +12,7 @@ jobs:
         run: |
           cd bin
           python3 -m pip install --user --upgrade pip
+          python3 -m pip install --user setuptools
           python3 -m pip install --user python-Levenshtein
           python3 arxiv_to_publications.py > issue.md 2>&1
           echo "::set-output name=ISSUE::$(cat issue.md)"
