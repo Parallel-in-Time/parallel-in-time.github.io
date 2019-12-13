@@ -42,7 +42,7 @@ def crossref_query_title(title):
 
 if __name__ == '__main__':
 
-    with open('pint.bib', 'r') as bibtex_file:
+    with open('../_bibliography/pint.bib', 'r') as bibtex_file:
         db = bibtexparser.load(bibtex_file)
 
     string = ''
@@ -60,8 +60,12 @@ if __name__ == '__main__':
                 string += f"DOI: https://doi.org/{output['result']['doi']}" + '\n\n'
 
     if string != '':
-        string = 'Hi there, I found some papers which are listed as unpublished, but which now have a DOI. ' \
-                 'Please check the list below and mark the ones which are correct. ' \
-                 'Add the label "food for arxivbot" when you are done and I will take care of the rest. ' \
+        string = '---\n' \
+                 'title: DOI found for unpublished results\n' \
+                 'assignees: pancetta\n' \
+                 '---\n' \
+                 'Hi there, I found some papers which are listed as unpublished, but which now have a DOI.\n' \
+                 'Please check the list below and mark the ones which are correct.\n' \
+                 'Add the label "food for arxivbot" when you are done and I will take care of the rest.\n' \
                  'Here we go:\n\n' + string
     print(string)
