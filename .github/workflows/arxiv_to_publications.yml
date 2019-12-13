@@ -6,8 +6,8 @@ jobs:
   pull_request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
       - name: Look for bibtex entries that now have a DOI
+        uses: actions/checkout@v1
         if: github.event.label.name == 'bibtex'
         run: |
           cd bin
@@ -16,8 +16,8 @@ jobs:
           python3 arxiv_to_publications.py > issue.md 2>&1
           echo "::set-output name=ISSUE::$(cat issue.md)"
         id: updater
-      - uses: JasonEtco/create-an-issue@master
       - name: Create issue from output
+        uses: JasonEtco/create-an-issue@master
         if: steps.updater.outputs.ISSUE != ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
