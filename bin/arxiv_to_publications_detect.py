@@ -66,6 +66,6 @@ if __name__ == '__main__':
                  '---\n' \
                  'Hi there, I found some papers which are listed as unpublished, but which now have a DOI. ' \
                  'Please check the list below and mark the ones which are correct. ' \
-                 'Add the label "food for arxivbot" when you are done and I will take care of the rest. ' \
+                 "Add the label 'food for arxivbot' when you are done and I will take care of the rest. " \
                  'Here we go:\n\n' + string
     print(string)

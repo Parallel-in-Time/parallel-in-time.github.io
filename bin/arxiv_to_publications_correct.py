@@ -1,6 +1,7 @@
 import re
 import requests
 import argparse
+import fileinput
 
 import bibtexparser
 from bibtexparser.bwriter import BibTexWriter
@@ -20,7 +21,7 @@ if __name__ == '__main__':
 
     for item in db.get_entry_list():
         if item['ID'] in id_list:
-            # print(f"removing {item['ID']}")
+            print(f"removing {item['ID']}")
             db.entries.remove(item)
 
     for url in doi_list:
@@ -71,3 +72,11 @@ if __name__ == '__main__':
         writer.add_trailing_comma = True
         with open('../_bibliography/pint.bib', 'w') as bibfile:
             bibfile.write(writer.write(db))
+
+        for line in fileinput.input('../_bibliography/pint.bib', inplace=True):
+            if '@comment{' in line:
+                line = line.replace('@comment{', '')
+            if re.match(r'%}+', line) is not None:
+                line = re.sub(r'%}+', '%', line)
+            line = line.rstrip('\r\n')
+            print(line)
