@@ -10,7 +10,7 @@ from bibtexparser.bwriter import BibTexWriter
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-b", "--body", help="input issue body here", type=str, default="")
+    parser.add_argument("-b", "--body", help="input issue body here", type=lambda s: unicode(s, 'utf8'), default="")
     args = parser.parse_args()
 
     with open('../_bibliography/pint.bib', 'r') as bibtex_file:
