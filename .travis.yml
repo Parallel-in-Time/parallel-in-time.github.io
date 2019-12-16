@@ -6,8 +6,8 @@ sudo: false
 # rvm:
 #   - 2.4.1
 
-# cache:
-#   - bundler
+before_install:
+  - gem install -v 1.16.2 bundler --no-rdoc --no-ri
 
 branches:
   except:
