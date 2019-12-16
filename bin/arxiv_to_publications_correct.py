@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
     for item in db.get_entry_list():
         if item['ID'] in id_list:
-            print(f"removing {item['ID']}")
+            # print(f"removing {item['ID']}")
             db.entries.remove(item)
 
     for url in doi_list:
