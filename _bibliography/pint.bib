@@ -4356,12 +4356,17 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
-@unpublished{Rosa-RaícesEtAl2019,
-	abstract = {Massively parallel computer architectures create new opportunities for the performance of long-timescale molecular dynamics (MD) simulations. Here, we introduce the path-accelerated molecular dynamics (PAMD) method that takes advantage of distributed computing to reduce the wall-clock time of MD simulation via parallelization with respect to MD timesteps. The marginal distribution for the time evolution of a system is expressed in terms of a path integral, enabling the use of path sampling techniques to numerically integrate MD trajectories. By parallelizing the evaluation of the path action with respect to time and by initializing the path configurations from a non-equilibrium distribution, the algorithm enables significant speedups in terms of the length of MD trajectories that can be integrated in a given amount of wall-clock time. The method is demonstrated for Brownian dynamics, although it is generalizable to other stochastic equations of motion including open systems. We apply the method to two simple systems, a harmonic oscillator and a Lennard-Jones liquid, and we show that in comparison to the conventional Euler integration scheme for Brownian dynamics, the new method can reduce the wall-clock time for integrating trajectories of a given length by more than three orders of magnitude in the former system and more than two in the latter. This new method for parallelizing MD in the dimension of time can be trivially combined with algorithms for parallelizing the MD force evaluation to achieve further speedup.},
-	author = {Jorge L. Rosa-Raíces and Bin Zhang and Thomas F. Miller III},
-	howpublished = {arXiv:1907.09529v1 [physics.comp-ph]},
-	title = {Path-accelerated molecular dynamics: Parallel-in-time integration using path integrals},
-	url = {http://arxiv.org/abs/1907.09529v1},
+@article{Rosa-RaícesEtAl2019,
+	author = {Jorge L. Rosa-Ra{\'{\i}}ces and Bin Zhang and Thomas F. Miller},
+	doi = {10.1063/1.5125455},
+	journal = {The Journal of Chemical Physics},
+	month = {oct},
+	number = {16},
+	pages = {164120},
+	publisher = {{AIP} Publishing},
+	title = {Path-accelerated stochastic molecular dynamics: Parallel-in-time integration using path integrals},
+	url = {https://doi.org/10.1063%2F1.5125455},
+	volume = {151},
 	year = {2019},
 }
 
