@@ -2,7 +2,6 @@ import re
 import requests
 import argparse
 import fileinput
-import unicode
 
 import bibtexparser
 from bibtexparser.bwriter import BibTexWriter
@@ -11,14 +10,14 @@ from bibtexparser.bwriter import BibTexWriter
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-b", "--body", help="input issue body here", type=lambda s: unicode(s, 'utf8'), default="")
+    parser.add_argument("-b", "--body", help="input issue body here", type=str, default="")
     args = parser.parse_args()
 
     with open('../_bibliography/pint.bib', 'r') as bibtex_file:
         db = bibtexparser.load(bibtex_file)
 
-    id_list = re.findall(r"- \[x\] ID: (.*)\n", args.body)
-    doi_list = re.findall(r"- \[x\] ID: .*\n.*\n.*\nDOI: (.*)\n", args.body)
+    id_list = re.findall(r"- \[x\] ID: (.*)\n", args.body.replace('\r', ''))
+    doi_list = re.findall(r"- \[x\] ID: .*\n.*\n.*\nDOI: (.*)\n", args.body.replace('\r', ''))
 
     print(id_list)
 
