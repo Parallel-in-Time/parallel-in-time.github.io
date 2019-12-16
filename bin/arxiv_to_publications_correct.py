@@ -2,6 +2,7 @@ import re
 import requests
 import argparse
 import fileinput
+import unicode
 
 import bibtexparser
 from bibtexparser.bwriter import BibTexWriter
