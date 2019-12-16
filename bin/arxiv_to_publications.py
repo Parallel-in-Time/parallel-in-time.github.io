@@ -64,8 +64,8 @@ if __name__ == '__main__':
                  'title: DOI found for unpublished results\n' \
                  'assignees: pancetta\n' \
                  '---\n' \
-                 'Hi there, I found some papers which are listed as unpublished, but which now have a DOI.\n' \
-                 'Please check the list below and mark the ones which are correct.\n' \
-                 'Add the label "food for arxivbot" when you are done and I will take care of the rest.\n' \
+                 'Hi there, I found some papers which are listed as unpublished, but which now have a DOI. ' \
+                 'Please check the list below and mark the ones which are correct. ' \
+                 'Add the label "food for arxivbot" when you are done and I will take care of the rest. ' \
                  'Here we go:\n\n' + string
     print(string)

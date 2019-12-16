@@ -1,7 +1,8 @@
 name: arXiv to publications
 on:
-  issues:
-    types: [labeled]
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 0 17 * *'
 jobs:
   pull_request:
     runs-on: ubuntu-latest
