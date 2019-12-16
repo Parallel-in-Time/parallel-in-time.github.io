@@ -1,0 +1,37 @@
+name: arXiv to publications correct
+on:
+  issues:
+    types: [labeled]
+jobs:
+  pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Look for bibtex entries that now have a DOI
+        if: github.event.label.name == 'food for arxivbot'
+        run: |
+          cd bin
+          python3 -m pip install --user --upgrade pip
+          python3 -m pip install --user setuptools
+          python3 -m pip install --user bibtexparser
+          python3 arxiv_to_publications_correct.py -b "${{ github.event.issue.body }}" > comment.out 2>&1
+          echo "::set-output name=COMMENT::$(cat comment.out)"
+          rm -rf comment.out
+        id: updater
+      - name: Create Pull Request
+        if: github.event.label.name == 'food for arxivbot'
+        uses: peter-evans/create-pull-request@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: updated pint.bib using arxivbot
+          title: pint.bib updates
+          body: 'This is an auto-generated PR with reference updates. This closes #${{ github.event.issue.number }}.'
+          branch: bibtex-arxivbot-${{ github.event.issue.number }}
+          branch-suffix: short-commit-hash
+      - name: Add comment to issue
+        uses: actions/github-script@0.3.0
+        if: github.event.label.name == 'food for arxivbot' && steps.updater.outputs.COMMENT != ''
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.issues.createComment({...context.issue, body: '${{ steps.updater.outputs.COMMENT }}'})
