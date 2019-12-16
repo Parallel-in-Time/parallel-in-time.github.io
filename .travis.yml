@@ -6,8 +6,8 @@ sudo: false
 # rvm:
 #   - 2.4.1
 
-cache:
-  - bundler
+# cache:
+#   - bundler
 
 branches:
   except:

@@ -1,10 +1,10 @@
 # Site settings
 title: Parallel-in-Time
-email: d.ruprecht@leeds.ac.uk
+email: ruprecht@tuhh.de
 author: "Parallel-in-Time Enthusiasts"
 description: ""
 baseurl: ""
-url: "http://parallelintime.org"
+url: "http://parallel-in-time.org"
 
 markdown: kramdown
 
