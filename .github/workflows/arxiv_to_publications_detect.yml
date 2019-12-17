@@ -2,14 +2,13 @@ name: arXiv to publications detect
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 0 17 * *'
+    - cron:  '8 10 17 * *'
 jobs:
   pull_request:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Look for bibtex entries that now have a DOI
-        if: github.event.label.name == 'bibtex'
         run: |
           cd bin
           python3 -m pip install --user --upgrade pip
