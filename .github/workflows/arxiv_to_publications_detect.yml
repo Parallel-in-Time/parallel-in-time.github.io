@@ -2,7 +2,7 @@ name: arXiv to publications detect
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '15 9 17 * *'
+    - cron:  '0 0 18 * *'
 jobs:
   pull_request:
     runs-on: ubuntu-latest
