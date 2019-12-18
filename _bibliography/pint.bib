@@ -2842,34 +2842,6 @@ parareal methods.}},
 	year = {2016},
 }
 
-@unpublished{CarlbergEtAl2016,
-	abstract = {{This work proposes a data-driven method for enabling the efficient, stable time-parallel numerical solution of
-systems of ordinary differential equations (ODEs). The method assumes that low-dimensional bases that accurately capture
-the time evolution of the dynamical-system state are available; these bases can be computed from snapshot data by proper
-orthogonal decomposition (POD) in the case of parameterized ODEs, for example. The method adopts the parareal framework
-for time parallelism, which is defined by an initialization method, a coarse propagator that advances solutions on a coarse
-time grid, and a fine propagator that operates on an underlying fine time grid. Rather than employing usual approaches for
-initialization and coarse propagation (e.g., a typical time integrator applied with a large time step), we propose novel datadriven
-techniques that leverage the available time-evolution bases. The coarse propagator is defined by a forecast (proposed in
-Ref. [11]) applied locally within each coarse time interval, which comprises the following steps: (1) apply the fine propagator
-for a small number of time steps, (2) approximate the state over the entire coarse time interval using gappy POD with the local
-time-evolution bases, and (3) select the approximation at the end of the time interval as the propagated state. We also propose
-both local-forecast initialization (i.e., the local-forecast coarse propagator applied sequentially) and global-forecast initialization
-(i.e., the local-forecast coarse propagator applied over the entire time interval with global time-evolution bases). The method
-is particularly well suited for POD-based reduced-order models (ROMs). In this case, spatial parallelism quickly saturates, as
-the ROM dynamical system is low dimensional; thus, time parallelism is needed to enable lower wall times. Further, the timeevolution
-bases can be extracted from readily available data, i.e., the right singular vectors arising during POD computation.
-In addition to performing analyses related to the method’s accuracy, speedup, and stability, we also numerically demonstrate
-the method’s performance. Here, numerical experiments on ROMs for a nonlinear convection–reaction problem demonstrate
-the method’s ability to realize near-ideal speedups; global-forecast initialization with a local-forecast coarse propagator leads
-to the best performance}},
-	author = {Carlberg, Kevin and Brencher, Lukas and Haasdonk, Bernard and Barth, Andreas},
-	howpublished = {arXiv:1610.09049v1 [cs.NA]},
-	title = {Data-driven time parallelism via forecasting},
-	url = {https://arxiv.org/pdf/1610.09049.pdf},
-	year = {2016},
-}
-
 @article{ChaudryEtAl2016,
 	abstract = {{We consider numerical methods for initial value problems that employ a two-stage approach consisting of solution on a relatively coarse discretization followed by solution on a relatively fine discretization. Examples include adaptive error control, parallel-in-time solution schemes, and efficient solution of adjoint problems for computing a posteriori error estimates. We describe a general formulation of two-stage computations and then perform a general a posteriori error analysis based on computable residuals and solution of an adjoint problem. The analysis accommodates various variations in the two-stage computation and in the formulation of the adjoint problems. We apply the analysis to computing “dual-weighted” a posteriori error estimates, developing novel algorithms for efficient solution that take into account cancellation of error, and to the Parareal algorithm. We test the various results using several numerical examples.}},
 	author = {Jehanzeb Hameed Chaudhry and Don Estep and Simon Tavener and Varis Carey and Jeff Sandelin},
@@ -3275,14 +3247,6 @@ and geometry is explored.}},
 	year = {2017},
 }
 
-@unpublished{GanderEtAl2017,
-	author = {Martin J. Gander and Stefan G{\"u}ttel and Madalina Petcu},
-	howpublished = {MIMS EPrint: 2017.17},
-	title = {A nonlinear {ParaExp} algorithm},
-	url = {http://eprints.ma.man.ac.uk/2550/01/covered/MIMS_ep2017_17.pdf},
-	year = {2017},
-}
-
 @inproceedings{GanderHalpern2017,
 	abstract = {The direct time parallelization method based on diagonalization is only applicable to linear problems. We propose here a new method based on diagonalization which permits the direct parallelization in time of a Newton iteration that works simultaneously over several time steps. We first explain the method for a scalar model problem, and then give a formulation for a nonlinear partial differential equation based on tensorization. We illustrate the methods with numerical experiments.},
 	author = {Gander, Martin J. and Halpern, Laurence},
@@ -3403,15 +3367,6 @@ fferential equations in parallel— in the Julia programming language for a full
 	title = {{Stage-parallel fully implicit Runge–Kutta solvers for discontinuous Galerkin fluid simulations}},
 	url = {https://doi.org/10.1016/j.jcp.2017.01.050},
 	volume = {335},
-	year = {2017},
-}
-
-@unpublished{PeddleEtAl2017,
-	abstract = {{A variant of the Parareal method for highly oscillatory systems of PDEs was proposed by [21]. In that work they proved superlinear convergence of the method in the limit of infinite time scale separation. Their coarse solver features a coordinate transformation and a fast-wave averaging method inspired by analysis of multiple scales PDEs and is integrated using an HMM-type method. However, for many physical applications the timescale separation is finite, not infinite. In this paper we prove convergence for finite timescale separaration by extending the error bound on the coarse propagator to this case. We show that convergence requires the solution of an optimization problem that involves the averaging window interval, the time step, and the parameters in the problem. We also propose a method for choosing the averaging window relative to the time step based as a function of the finite frequencies inherent in the problem.}},
-	author = {Adam Peddle and Terry Haut and Beth Wingate},
-	howpublished = {arXiv:1705.09565v1 [math.NA]},
-	title = {Parareal Convergence for Oscillatory {PDE}s with Finite Time-scale Separation},
-	url = {https://arxiv.org/pdf/1705.09565.pdf},
 	year = {2017},
 }
 
@@ -3635,15 +3590,6 @@ setups.}},
 	year = {2018},
 }
 
-@unpublished{FriedhoffEtAl2018b,
-	abstract = {{We consider the usage of parallel-in-time algorithms of the Parareal and multigrid-reduction-in-time (MGRIT) methodologies for the parallel-in-time solution of the eddy current problem. Via application of these methods to a two-dimensional model problem for a coaxial cable model, we show that a significant speedup can be achieved in comparison to sequential time stepping.}},
-	author = {Friedhoff, Stephanie and Hahne, Jens and Kulchytska-Ruchka, Iryna and Schöps, Sebastian},
-	howpublished = {arXiv:1810.13263 [math.NA]},
-	title = {Exploring Parallel-in-Time Approaches for Eddy Current Problems},
-	url = {https://arxiv.org/abs/1810.13263},
-	year = {2018},
-}
-
 @article{FuWang2018,
 	abstract = {We develop a fast parareal finite difference method for space-time fractional partial differential equation. The method properly handles the heavy tail behavior in the numerical discretization, while retaining the numerical advantages of conventional parareal algorithm. At each time step, we explore the structure of the stiffness matrix to develop a matrix-free preconditioned fast Krylov subspace iterative solver for the finite difference method without resorting to any lossy compression. Consequently, the method has significantly reduced computational complexity and memory requirement. Numerical experiments show the strong potential of the method.},
 	author = {Fu, Hongfei and Wang, Hong},
@@ -3651,6 +3597,17 @@ setups.}},
 	journal = {Journal of Scientific Computing},
 	title = {A Preconditioned Fast Parareal Finite Difference Method for Space-Time Fractional Partial Differential Equation},
 	url = {https://doi.org/10.1007/s10915-018-0835-2},
+	year = {2018},
+}
+
+@incollection{GanderEtAl2018,
+	author = {Martin J. Gander and Stefan Güttel and Madalina Petcu},
+	booktitle = {Lecture Notes in Computational Science and Engineering},
+	doi = {10.1007/978-3-319-93873-8_24},
+	pages = {261--270},
+	publisher = {Springer International Publishing},
+	title = {A Nonlinear {ParaExp} Algorithm},
+	url = {https://doi.org/10.1007%2F978-3-319-93873-8_24},
 	year = {2018},
 }
 
@@ -3728,15 +3685,6 @@ setups.}},
 	howpublished = {arXiv:1812.11508 [math.NA]},
 	title = {Multilevel convergence analysis of multigrid-reduction-in-time},
 	url = {https://arxiv.org/abs/1812.11508},
-	year = {2018},
-}
-
-@unpublished{HongEtAl2018,
-	abstract = {{A parareal algorithm based on an exponential θ-scheme is proposed for the stochastic Schr\"odinger equation with weak damping and additive noise. It proceeds as a two-level temporal parallelizable integrator with the exponential θ-scheme as the propagator on the coarse grid. The proposed algorithm in the linear case increases the convergence order from one to k for θ∈[0,1]∖{12}. In particular, the convergence order increases to 2k when θ=12 due to the symmetry of the algorithm. Furthermore, the algorithm is proved to be suitable for longtime simulation based on the analysis of the invariant distributions for the exponential θ-scheme. The convergence condition for longtime simulation is also established for the proposed algorithm in the nonlinear case, which indicates the superiority of implicit schemes. Numerical experiments are dedicated to illustrate the best choice of the iteration number k, as well as the convergence order of the algorithm for different choices of θ.}},
-	author = {Jialin Hong and Xu Wang and Liying Zhang},
-	howpublished = {arXiv:1803.09188 [math.NA]},
-	title = {Parareal exponential $\theta$-scheme for longtime simulation of stochastic Schrödinger equations with weak damping},
-	url = {https://arxiv.org/abs/1803.09188v1},
 	year = {2018},
 }
 
@@ -4114,21 +4062,26 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@article{CarlbergEtAl2019,
+	author = {Kevin Carlberg and Lukas Brencher and Bernard Haasdonk and Andrea Barth},
+	doi = {10.1137/18m1174362},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {jan},
+	number = {3},
+	pages = {B466--B496},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Data-Driven Time Parallelism via Forecasting},
+	url = {https://doi.org/10.1137%2F18m1174362},
+	volume = {41},
+	year = {2019},
+}
+
 @unpublished{ClarkeEtAl2019,
 	abstract = {{The precise mechanisms responsible for the natural dynamos in the Earth and Sun are still not fully understood. Numerical simulations of natural dynamos are extremely computationally intensive, and are carried out in parameter regimes many orders of magnitude away from real conditions. Parallelization in space is a common strategy to speed up simulations on high performance computers, but eventually hits a scaling limit. Additional directions of parallelization are desirable to utilise the high number of processor cores now available. Parallel-in-time methods can deliver speed up in addition to that offered by spatial partitioning but have not yet been applied to dynamo simulations. This paper investigates the feasibility of using the parallel-in-time algorithm Parareal to speed up initial value problem simulations of the kinematic dynamo, using the open source Dedalus spectral solver. Both the time independent Roberts and time dependent Galloway-Proctor 2.5D dynamos are investigated over a range of magnetic Reynolds numbers. Speed ups beyond those possible from spatial parallelization are found in both cases. Results for the Galloway-Proctor flow are promising, with Parareal efficiency found to be close to 0.3. Roberts flow results are less efficient, but Parareal still shows some speed up over spatial parallelization alone. Parallel in space and time speed ups of ∼300 were found for 1600 cores for the Galloway-Proctor flow, with total parallel efficiency of ∼0.16.}},
 	author = {Andrew T. Clarke and Christopher J. Davies and Daniel Ruprecht and Steven M. Tobias},
 	howpublished = {arXiv:1902.00387 [physics.comp-ph]},
 	title = {Parallel-in-time integration of Kinematic Dynamos},
 	url = {https://arxiv.org/abs/1902.00387},
-	year = {2019},
-}
-
-@unpublished{DeSterckEtAl2019,
-	abstract = {{Parallel-in-time algorithms have been successfully employed for reducing time-to-solution of a variety of partial differential equations, especially for diffusive (parabolic-type) equations. A major failing of parallel-in-time approaches to date, however, is that most methods show instabilities or poor convergence for hyperbolic problems. This paper focuses on the analysis of the convergence behavior of multigrid methods for the parallel-in-time solution of hyperbolic problems. Three analysis tools are considered that differ, in particular, in the treatment of the time dimension: (1) space-time local Fourier analysis, using a Fourier ansatz in space and time, (2) semi-algebraic mode analysis, coupling standard local Fourier analysis approaches in space with algebraic computation in time, and (3) a two-level reduction analysis, considering error propagation only on the coarse time grid. In this paper, we show how insights from reduction analysis can be used to improve feasibility of the semi-algebraic mode analysis, resulting in a tool that offers the best features of both analysis techniques. Following validating numerical results, we investigate what insights the combined analysis framework can offer for two model hyperbolic problems, the linear advection equation in one space dimension and linear elasticity in two space dimensions.}},
-	author = {Hans De Sterck and Stephanie Friedhoff and Alexander J. M. Howse and Scott P. MacLachlan},
-	howpublished = {arXiv:1903.08928 [math.NA]},
-	title = {Convergence analysis for parallel-in-time solution of hyperbolic systems},
-	url = {https://arxiv.org/abs/1903.08928},
 	year = {2019},
 }
 
@@ -4142,12 +4095,27 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
-@unpublished{FriedhoffEtAl2019,
-	abstract = {{Parallel-in-time methods have shown success for reducing the simulation time of many time-dependent problems. Here, we consider applying the multigrid-reduction-in-time (MGRIT) algorithm to a voltage-driven eddy current model problem.}},
-	author = {Friedhoff, Stephanie and Hahne, Jens and Schöps, Sebastian},
-	howpublished = {arXiv:1905.06879 [math.NA]},
-	title = {Multigrid-reduction-in-time for Eddy Current Problems},
-	url = {https://arxiv.org/abs/1905.06879},
+@incollection{FriedhoffEtAl2019,
+	author = {Stephanie Friedhoff and Jens Hahne and Iryna Kulchytska-Ruchka and Sebastian Schöps},
+	booktitle = {Progress in Industrial Mathematics at {ECMI} 2018},
+	doi = {10.1007/978-3-030-27550-1_47},
+	pages = {373--379},
+	publisher = {Springer International Publishing},
+	title = {Exploring Parallel-in-Time Approaches for Eddy Current Problems},
+	url = {https://doi.org/10.1007%2F978-3-030-27550-1_47},
+	year = {2019},
+}
+
+@article{FriedhoffEtAl2019,
+	author = {Stephanie Friedhoff and Jens Hahne and Sebastian Schöps},
+	doi = {10.1002/pamm.201900262},
+	journal = {{PAMM}},
+	month = {nov},
+	number = {1},
+	publisher = {Wiley},
+	title = {Multigrid-reduction-in-time for Eddy Current problems},
+	url = {https://doi.org/10.1002%2Fpamm.201900262},
+	volume = {19},
 	year = {2019},
 }
 
@@ -4200,13 +4168,17 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
-@unpublished{GoetschelMinion2019,
-	abstract = {{To solve optimization problems with parabolic PDE constraints, often methods working on the reduced objective functional are used. They are computationally expensive due to the necessity of solving both the state equation and a backward-in-time adjoint equation to evaluate the reduced gradient in each iteration of the optimization method. In this study, we investigate the use of the parallel-in-time method PFASST in the setting of PDE constrained optimization. In order to develop an efficient fully time-parallel algorithm we discuss different options for applying PFASST to adjoint gradient computation, including the possibility of doing PFASST iterations on both the state and adjoint equations simultaneously. We also explore the additional gains in efficiency from reusing information from previous optimization iterations when solving each equation. Numerical results for both a linear and a non-linear reaction-diffusion optimal control problem demonstrate the parallel speedup and efficiency of different approaches.}},
+@article{GötschelEtAl2019,
 	author = {Sebastian Götschel and Michael L. Minion},
-	howpublished = {arXiv:1901.06850 [math.OC]},
-	institution = {Lawrence Berkeley National Laboratory},
-	title = {{An Efficient Parallel-in-Time Method for Optimization with Parabolic PDEs}},
-	url = {https://arxiv.org/abs/1901.06850},
+	doi = {10.1137/19m1239313},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {jan},
+	number = {6},
+	pages = {C603--C626},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {An Efficient Parallel-in-Time Method for Optimization with Parabolic {PDEs}},
+	url = {https://doi.org/10.1137%2F19m1239313},
+	volume = {41},
 	year = {2019},
 }
 
@@ -4221,6 +4193,20 @@ The influence on the performance of the parareal algorithm, of the choice of the
 }
 
 @article{HongEtAl2019,
+	author = {Jialin Hong and Xu Wang and Liying Zhang},
+	doi = {10.1137/18m1176749},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {jan},
+	number = {6},
+	pages = {B1155--B1177},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Parareal Exponential {\textdollar}{\textbackslash}theta{\textdollar}-Scheme for Longtime Simulation of Stochastic Schrödinger Equations with Weak Damping},
+	url = {https://doi.org/10.1137%2F18m1176749},
+	volume = {41},
+	year = {2019},
+}
+
+@article{HongEtAl2019b,
 	author = {Jialin Hong and Xu Wang and Liying Zhang},
 	doi = {10.1137/18m1176749},
 	journal = {{SIAM} Journal on Scientific Computing},
@@ -4344,6 +4330,20 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	publisher = {Elsevier {BV}},
 	title = {A stable parareal-like method for the second order wave equation},
 	url = {https://doi.org/10.1016%2Fj.jcp.2019.109156},
+	year = {2019},
+}
+
+@article{PeddleEtAl2019,
+	author = {Adam G. Peddle and Terry Haut and Beth Wingate},
+	doi = {10.1137/17m1131611},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {jan},
+	number = {6},
+	pages = {A3476--A3497},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Parareal Convergence for Oscillatory {PDE}{\l}owercases with Finite Time-Scale Separation},
+	url = {https://doi.org/10.1137%2F17m1131611},
+	volume = {41},
 	year = {2019},
 }
 
