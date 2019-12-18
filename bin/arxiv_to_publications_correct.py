@@ -19,8 +19,6 @@ if __name__ == '__main__':
     id_list = re.findall(r"- \[x\] ID: (.*)\n", args.body.replace('\r', ''))
     doi_list = re.findall(r"- \[x\] ID: .*\n.*\n.*\nDOI: (.*)\n", args.body.replace('\r', ''))
 
-    print(id_list)
-
     for item in db.get_entry_list():
         if item['ID'] in id_list:
             # print(f"removing {item['ID']}")
