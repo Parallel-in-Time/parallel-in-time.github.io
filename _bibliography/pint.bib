@@ -4259,6 +4259,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@unpublished{LelièvreEtAl2019,
+	abstract = {The parareal algorithm is known to allow for a significant reduction in wall clock time for accurate numerical solutions by parallelising across the time dimension. We present and test a micro-macro version of parareal, in which the fine propagator is based on a (high-dimensional, slow-fast) stochastic microscopic model, and the coarse propagator is based on a low-dimensional approximate effective dynamics at slow time scales. At the microscopic level, we use an ensemble of Monte Carlo particles, whereas the approximate coarse propagator uses the (deterministic) Fokker-Planck equation for the slow degrees of freedom. The required coupling between microscopic and macroscopic representations of the system introduces several design options, specifically on how to generate a microscopic probability distribution consistent with a required macroscopic probability distribution and how to perform the coarse-level updating of the macroscopic probability distribution in a meaningful manner. We numerically study how these design options affect the efficiency of the algorithm in a number of situations. The choice of the coarse-level updating operator strongly impacts the result, with a superior performance if addition and subtraction of the quantile function (inverse cumulative distribution) is used. How microscopic states are generated has a less pronounced impact, provided a suitable prior microscopic state is used.},
+	author = {Tony Lelièvre and Frédéric Legoll and Keith Myerscough and Giovanni Samaey},
+	howpublished = {arXiv:1912.09240v1 [math.NA]},
+	title = {Parareal computation of stochastic differential equations with time-scale separation: a numerical study},
+	url = {http://arxiv.org/abs/1912.09240v1},
+	year = {2019},
+}
+
 @article{LiEtAl2019,
 	abstract = {In this paper, we present a two-level space–time hybrid Schwarz preconditioner for GMRES based on the classical hybrid Schwarz method and the second-order backward differentiation formula. In the proposed method, the parabolic equations are solved in parallel on both of the space and time directions. Under some reasonable assumptions, the optimal convergence theory is developed for the proposed space–time method, i.e., the convergence rate is independent of the mesh parameters, the number of subdomains and the window size. Some numerical results are given to confirm the theory very well in terms of the convergence rate and accuracy. And the strong/weak scalability obtained with 4096 processors is also reported to show the efficiency of the proposed method.},
 	author = {Shishun Li and Rongliang Chen and Xinping Shao},
