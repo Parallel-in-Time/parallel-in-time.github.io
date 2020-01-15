@@ -4040,15 +4040,6 @@ setups.}},
 	year = {2019},
 }
 
-@unpublished{BastEtAl2019,
-	abstract = {{This paper focuses on efficient steady-state computations of induction machines. In particular, the periodic Parareal algorithm with initial-value coarse problem (PP-IC) is considered for acceleration of classical time-stepping simulations via non-intrusive parallelization in time domain, i.e., existing implementations can be reused. Superiority of this parallel-in-time method is in its direct applicability to time-periodic problems, compared to, e.g, the standard Parareal method, which only solves an initial-value problem, starting from a prescribed initial value. PP-IC is exploited here to obtain the steady state of several operating points of an induction motor, developed by Robert Bosch GmbH. Numerical experiments show that acceleration up to several dozens of times can be obtained, depending on availability of parallel processing units. Comparison of PP-IC with existing time-periodic explicit error correction method highlights better robustness and efficiency of the considered time-parallel approach.}},
-	author = {Bast, Denys and Kulchytska-Ruchka, Iryna and Schöps, Sebastian and Rain, Oliver},
-	howpublished = {arXiv:1902.08277 [cs.CE]},
-	title = {Accelerated Steady-State Torque Computation for Induction Machines using Parallel-In-Time Algorithms},
-	url = {https://arxiv.org/abs/1902.08277},
-	year = {2019},
-}
-
 @article{BlumersEtAl2019,
 	abstract = {{Lagrangian particle methods based on detailed atomic and molecular models are powerful computational tools for studying the dynamics of microscale and nanoscale systems. However, the maximum time step is limited by the smallest oscillation period of the fastest atomic motion, rendering long-time simulations very expensive. To resolve this bottleneck, we propose a supervised parallel-in-time algorithm for stochastic dynamics (SPASD) to accelerate long-time Lagrangian particle simulations. Our method is inspired by bottom-up coarse-graining projections that yield mean-field hydrodynamic behavior in the continuum limit. Here as an example, we use the dissipative particle dynamics (DPD) as the Lagrangian particle simulator that is supervised by its macroscopic counterpart, i.e., the Navier-Stokes simulator. The low-dimensional macroscopic system (here, the Navier-Stokes solver) serves as a predictor to supervise the high-dimensional Lagrangian simulator, in a predictor-corrector type algorithm. The results of the Lagrangian simulation then correct the mean-field prediction and provide the proper microscopic details (e.g., consistent fluctuations, correlations, etc.). The unique feature that sets SPASD apart from other multiscale methods is the use of a low-fidelity macroscopic model as a predictor. The macro-model can be approximate and even inconsistent with the microscale description, but SPASD anticipates the deviation and corrects it internally to recover the true dynamics. We first present the algorithm and analyze its theoretical speedup, and subsequently we present the accuracy and convergence of the algorithm for the time-dependent plane Poiseuille flow, demonstrating that SPASD converges exponentially fast over iterations, irrespective of the accuracy of the predictor. Moreover, the fluctuating characteristics of the stochastic dynamics are identical to the unsupervised (serial in time) DPD simulation. We also compare the performance of SPASD to the conventional spatial decomposition method, which is one of the most parallel-efficient methods for particle simulations. We find that the parallel efficiency of SPASD and the conventional spatial decomposition method are similar for a small number of computing cores, but for a large number of cores the performance of SPASD is superior. Furthermore, SPASD can be used in conjunction with spatial decomposition for enhanced performance. Lastly, we simulate a two-dimensional cavity flow that requires more iterations to converge compared to the Poiseuille flow, and we observe that SPASD converges to the correct solution. Although a DPD solver is used to demonstrate the results, SPASD is a general framework and can be readily applied to other Lagrangian approaches including molecular dynamics and Langevin dynamics.}},
 	author = {Ansel L. Blumers and Zhen Li and George Em Karniadakis},
@@ -4058,16 +4049,6 @@ setups.}},
 	title = {Supervised parallel-in-time algorithm for long-time Lagrangian simulations of stochastic dynamics: Application to hydrodynamics},
 	url = {https://doi.org/10.1016/j.jcp.2019.05.016},
 	volume = {393},
-	year = {2019},
-}
-
-@unpublished{BrehierWang2019,
-	abstract = {{Parareal algorithms are studied for semilinear parabolic stochastic partial differential equations. These algorithms proceed as two-level integrators, with fine and coarse schemes, and have been designed to achieve a `parallel in real time' implementation. In this work, the fine integrator is given by the exponential Euler scheme. Two choices for the coarse integrator are considered: the linear implicit Euler scheme, and the exponential Euler scheme.
-The influence on the performance of the parareal algorithm, of the choice of the coarse integrator, of the regularity of the noise, and of the number of parareal iterations, is investigated, with theoretical analysis results and with extensive numerical experiments.}},
-	author = {Charles-Edouard Bréhier and Xu Wang},
-	howpublished = {arXiv:1902.05370 [math.NA]},
-	title = {On parareal algorithms for semilinear parabolic Stochastic PDEs},
-	url = {https://arxiv.org/abs/1902.05370},
 	year = {2019},
 }
 
@@ -4462,6 +4443,31 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	url = {https://doi.org/10.4208/jcm.1708-m2017-0089},
 	volume = {37},
 	year = {2019},
+}
+
+@article{BastEtAl2020,
+	author = {Denys Bast and Iryna Kulchytska-Ruchka and Sebastian Schoeps and Oliver Rain},
+	doi = {10.1109/tmag.2019.2945510},
+	journal = {{IEEE} Transactions on Magnetics},
+	pages = {1--1},
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	title = {Accelerated Steady-State Torque Computation for Induction Machines Using Parallel-In-Time Algorithms},
+	url = {https://doi.org/10.1109%2Ftmag.2019.2945510},
+	year = {2020},
+}
+
+@article{BrehierEtAl2020,
+	author = {Charles-Edouard Brehier and Xu Wang},
+	doi = {10.1137/19m1251011},
+	journal = {{SIAM} Journal on Numerical Analysis},
+	month = {jan},
+	number = {1},
+	pages = {254--278},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {On Parareal Algorithms for Semilinear Parabolic Stochastic {PDEs}},
+	url = {https://doi.org/10.1137%2F19m1251011},
+	volume = {58},
+	year = {2020},
 }
 
 @unpublished{ClarkeEtAl2020,
