@@ -19,36 +19,6 @@
 % We would very much appreciate a link/reference to parallel-in-time.org.
 %
 
-@article{NguyenTsai2020,
-        title = "A stable parareal-like method for the second order wave equation",
-        journal = "Journal of Computational Physics",
-        volume = "405",
-        pages = "109156",
-        year = "2020",
-        issn = "0021-9991",
-        doi = "https://doi.org/10.1016/j.jcp.2019.109156",
-        url = "http://www.sciencedirect.com/science/article/pii/S0021999119308617",
-        author = "Hieu Nguyen and Richard Tsai",
-        keywords = "Parallel-in-time, Wave equation, Procrustes problem",
-        abstract = "A new parallel-in-time iterative method is
-                  proposed for solving the homogeneous second-order
-                  wave equation. The new method involves a coarse
-                  scale propagator, allowing for larger time steps,
-                  and a fine scale propagator which fully resolves the
-                  medium using finer spatial grid and uses shorter
-                  time steps. The fine scale propagator is run in
-                  parallel for short time intervals. The two
-                  propagators are coupled in an iterative way that
-                  resembles the standard parareal method [24]. We
-                  present a data-driven strategy in which the computed
-                  data gathered from each iteration are re-used to
-                  stabilize the coupling by minimizing the wave energy
-                  residual of the fine and coarse propagated
-                  solutions. Several examples, including a wave speed
-                  with discontinuities, are provided to demonstrate
-                  the effectiveness of the proposed method."
-+}}
-
 @article{Nievergelt1964,
 	author = {Nievergelt, J.},
 	doi = {10.1145/355588.365137},
@@ -4508,6 +4478,36 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	title = {Performance of parallel-in-time integration for Rayleigh Bénard Convection},
 	url = {http://arxiv.org/abs/2001.01609v1},
 	year = {2020},
+}
+
+@article{NguyenTsai2020,
+	title = {A stable parareal-like method for the second order wave equation},
+	journal = {Journal of Computational Physics},
+	volume = {405},
+	pages = {109156},
+	year = {2020},
+	issn = {0021-9991},
+	doi = {https://doi.org/10.1016/j.jcp.2019.109156},
+	url = {http://www.sciencedirect.com/science/article/pii/S0021999119308617},
+	author = {Hieu Nguyen and Richard Tsai},
+	keywords = {Parallel-in-time, Wave equation, Procrustes problem},
+	abstract = {A new parallel-in-time iterative method is
+		  proposed for solving the homogeneous second-order
+		  wave equation. The new method involves a coarse
+		  scale propagator, allowing for larger time steps,
+		  and a fine scale propagator which fully resolves the
+		  medium using finer spatial grid and uses shorter
+		  time steps. The fine scale propagator is run in
+		  parallel for short time intervals. The two
+		  propagators are coupled in an iterative way that
+		  resembles the standard parareal method [24]. We
+		  present a data-driven strategy in which the computed
+		  data gathered from each iteration are re-used to
+		  stabilize the coupling by minimizing the wave energy
+		  residual of the fine and coarse propagated
+		  solutions. Several examples, including a wave speed
+		  with discontinuities, are provided to demonstrate
+		  the effectiveness of the proposed method.},
 }
 
 @article{LakshmiranganathaEtAl2020,
