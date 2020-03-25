@@ -4079,15 +4079,6 @@ setups.}},
 	year = {2019},
 }
 
-@unpublished{ClarkeEtAl2019,
-	abstract = {{The precise mechanisms responsible for the natural dynamos in the Earth and Sun are still not fully understood. Numerical simulations of natural dynamos are extremely computationally intensive, and are carried out in parameter regimes many orders of magnitude away from real conditions. Parallelization in space is a common strategy to speed up simulations on high performance computers, but eventually hits a scaling limit. Additional directions of parallelization are desirable to utilise the high number of processor cores now available. Parallel-in-time methods can deliver speed up in addition to that offered by spatial partitioning but have not yet been applied to dynamo simulations. This paper investigates the feasibility of using the parallel-in-time algorithm Parareal to speed up initial value problem simulations of the kinematic dynamo, using the open source Dedalus spectral solver. Both the time independent Roberts and time dependent Galloway-Proctor 2.5D dynamos are investigated over a range of magnetic Reynolds numbers. Speed ups beyond those possible from spatial parallelization are found in both cases. Results for the Galloway-Proctor flow are promising, with Parareal efficiency found to be close to 0.3. Roberts flow results are less efficient, but Parareal still shows some speed up over spatial parallelization alone. Parallel in space and time speed ups of ∼300 were found for 1600 cores for the Galloway-Proctor flow, with total parallel efficiency of ∼0.16.}},
-	author = {Andrew T. Clarke and Christopher J. Davies and Daniel Ruprecht and Steven M. Tobias},
-	howpublished = {arXiv:1902.00387 [physics.comp-ph]},
-	title = {Parallel-in-time integration of Kinematic Dynamos},
-	url = {https://arxiv.org/abs/1902.00387},
-	year = {2019},
-}
-
 @article{DohrEtAl2019,
 	abstract = {In this paper we introduce a new parallel solver for the weakly singular space–time boundary integral equation for the heat equation. The space–time boundary mesh is decomposed into a given number of submeshes. Pairs of the submeshes represent dense blocks in the system matrices, which are distributed among computational nodes by an algorithm based on a cyclic decomposition of complete graphs ensuring load balance. In addition, we employ vectorization and threading in shared memory to ensure intra-node efficiency. We present scalability experiments on different CPU architectures to evaluate the performance of the proposed parallelization techniques. All levels of parallelism allow us to tackle large problems and lead to an almost optimal speedup.},
 	author = {Stefan Dohr and Jan Zapletal and Günther Of and Michal Merta and Michal Kravčenko},
@@ -4483,7 +4474,18 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2020},
 }
 
-@unpublished{ClarkeEtAl2020,
+@paper{ClarkeEtAl2020ba,
+	abstract = {{The precise mechanisms responsible for the natural dynamos in the Earth and Sun are still not fully understood. Numerical simulations of natural dynamos are extremely computationally intensive, and are carried out in parameter regimes many orders of magnitude away from real conditions. Parallelization in space is a common strategy to speed up simulations on high performance computers, but eventually hits a scaling limit. Additional directions of parallelization are desirable to utilise the high number of processor cores now available. Parallel-in-time methods can deliver speed up in addition to that offered by spatial partitioning but have not yet been applied to dynamo simulations. This paper investigates the feasibility of using the parallel-in-time algorithm Parareal to speed up initial value problem simulations of the kinematic dynamo, using the open source Dedalus spectral solver. Both the time independent Roberts and time dependent Galloway-Proctor 2.5D dynamos are investigated over a range of magnetic Reynolds numbers. Speedups beyond those possible from spatial parallelisation are found in both cases. Results for the Galloway-Proctor flow are promising, with Parareal efficiency found to be close to 0.3. Roberts flow results are less efficient, but Parareal still shows some speed up over spatial parallelisation alone. Parallel in space and time speed ups of ∼300 were found for 1600 cores for the Galloway-Proctor flow, with total parallel efficiency of ∼0.16.}},
+	author = {Andrew T. Clarke and Christopher J. Davies and Daniel Ruprecht and Steven M. Tobias},
+	howpublished = {Journal of Computational Physics: X},
+	title = {Parallel-in-time integration of Kinematic Dynamos},
+	doi = {10.1016/j.jcpx.2020.100057},
+	url = {https://doi.org/10.1016/j.jcpx.2020.100057},
+	year = {2020},
+	pages = {100057},
+}
+
+@unpublished{ClarkeEtAl2020b,
 	abstract = {Rayleigh-B\'enard convection (RBC) is a fundamental problem of fluid dynamics, with many applications to geophysical, astrophysical, and industrial flows. Understanding RBC at parameter regimes of interest requires complex physical or numerical experiments. Numerical simulations require large amounts of computational resources; in order to more efficiently use the large numbers of processors now available in large high performance computing clusters, novel parallelisation strategies are required. To this end, we investigate the performance of the parallel-in-time algorithm Parareal when used in numerical simulations of RBC. We present the first parallel-in-time speedups for RBC simulations at finite Prandtl number. We also investigate the problem of convergence of Parareal with respect to to statistical numerical quantities, such as the Nusselt number, and discuss the importance of reliable online stopping criteria in these cases.},
 	author = {Andrew Clarke and Chris Davies and Daniel Ruprecht and Steven Tobias and Jeffrey S. Oishi},
 	howpublished = {arXiv:2001.01609v1 [physics.comp-ph]},
