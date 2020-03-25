@@ -288,21 +288,21 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          ClarkeEtAl2020
+          ClarkeEtAl2020a
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseClarkeEtAl2020Bibtex"
-                    aria-expanded="false" aria-controls="collapseClarkeEtAl2020Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseClarkeEtAl2020aBibtex"
+                    aria-expanded="false" aria-controls="collapseClarkeEtAl2020aBibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalClarkeEtAl2020Abstract"
-                    aria-expanded="false" aria-controls="modalClarkeEtAl2020Abstract">
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalClarkeEtAl2020aAbstract"
+                    aria-expanded="false" aria-controls="modalClarkeEtAl2020aAbstract">
               Abstract
             </button>
             
@@ -312,13 +312,80 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="ClarkeEtAl2020">A. Clarke, C. Davies, D. Ruprecht, S. Tobias, and J. S. Oishi, “Performance of parallel-in-time integration for Rayleigh Bénard Convection,” arXiv:2001.01609v1 [physics.comp-ph], 2020 [Online]. Available at: <a href="http://arxiv.org/abs/2001.01609v1" target="_blank">http://arxiv.org/abs/2001.01609v1</a></span>
+      <span id="ClarkeEtAl2020a">A. T. Clarke, C. J. Davies, D. Ruprecht, and S. M. Tobias, “Parallel-in-time integration of Kinematic Dynamos.” Journal of Computational Physics: X, p. 100057, 2020 [Online]. Available at: <a href="https://doi.org/10.1016/j.jcpx.2020.100057" target="_blank">https://doi.org/10.1016/j.jcpx.2020.100057</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseClarkeEtAl2020Bibtex">
+  <div class="collapse" id="collapseClarkeEtAl2020aBibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@unpublished{ClarkeEtAl2020,
+        <pre class="abstract">@paper{ClarkeEtAl2020a,
+  author = {Clarke, Andrew T. and Davies, Christopher J. and Ruprecht, Daniel and Tobias, Steven M.},
+  howpublished = {Journal of Computational Physics: X},
+  title = {Parallel-in-time integration of Kinematic Dynamos},
+  doi = {10.1016/j.jcpx.2020.100057},
+  url = {https://doi.org/10.1016/j.jcpx.2020.100057},
+  year = {2020},
+  pages = {100057}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalClarkeEtAl2020aAbstract" tabindex="-1" role="dialog" aria-labelledby="modalClarkeEtAl2020aAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalClarkeEtAl2020aAbstractTitle">
+            Abstract for BibTeX entry <code>ClarkeEtAl2020a</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          The precise mechanisms responsible for the natural dynamos in the Earth and Sun are still not fully understood. Numerical simulations of natural dynamos are extremely computationally intensive, and are carried out in parameter regimes many orders of magnitude away from real conditions. Parallelization in space is a common strategy to speed up simulations on high performance computers, but eventually hits a scaling limit. Additional directions of parallelization are desirable to utilise the high number of processor cores now available. Parallel-in-time methods can deliver speed up in addition to that offered by spatial partitioning but have not yet been applied to dynamo simulations. This paper investigates the feasibility of using the parallel-in-time algorithm Parareal to speed up initial value problem simulations of the kinematic dynamo, using the open source Dedalus spectral solver. Both the time independent Roberts and time dependent Galloway-Proctor 2.5D dynamos are investigated over a range of magnetic Reynolds numbers. Speedups beyond those possible from spatial parallelisation are found in both cases. Results for the Galloway-Proctor flow are promising, with Parareal efficiency found to be close to 0.3. Roberts flow results are less efficient, but Parareal still shows some speed up over spatial parallelisation alone. Parallel in space and time speed ups of ∼300 were found for 1600 cores for the Galloway-Proctor flow, with total parallel efficiency of ∼0.16.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          ClarkeEtAl2020b
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseClarkeEtAl2020bBibtex"
+                    aria-expanded="false" aria-controls="collapseClarkeEtAl2020bBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalClarkeEtAl2020bAbstract"
+                    aria-expanded="false" aria-controls="modalClarkeEtAl2020bAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="ClarkeEtAl2020b">A. Clarke, C. Davies, D. Ruprecht, S. Tobias, and J. S. Oishi, “Performance of parallel-in-time integration for Rayleigh Bénard Convection,” arXiv:2001.01609v1 [physics.comp-ph], 2020 [Online]. Available at: <a href="http://arxiv.org/abs/2001.01609v1" target="_blank">http://arxiv.org/abs/2001.01609v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseClarkeEtAl2020bBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{ClarkeEtAl2020b,
   author = {Clarke, Andrew and Davies, Chris and Ruprecht, Daniel and Tobias, Steven and Oishi, Jeffrey S.},
   howpublished = {arXiv:2001.01609v1 [physics.comp-ph]},
   title = {Performance of parallel-in-time integration for Rayleigh Bénard Convection},
@@ -330,13 +397,13 @@
     </div>
   </div>
   
-  <div class="modal fade" id="modalClarkeEtAl2020Abstract" tabindex="-1" role="dialog" aria-labelledby="modalClarkeEtAl2020AbstractTitle" aria-hidden="true">
+  <div class="modal fade" id="modalClarkeEtAl2020bAbstract" tabindex="-1" role="dialog" aria-labelledby="modalClarkeEtAl2020bAbstractTitle" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalClarkeEtAl2020AbstractTitle">
-            Abstract for BibTeX entry <code>ClarkeEtAl2020</code>
+          <h4 class="modal-title" id="modalClarkeEtAl2020bAbstractTitle">
+            Abstract for BibTeX entry <code>ClarkeEtAl2020b</code>
           </h4>
         </div>
         <div class="modal-body">
@@ -757,71 +824,6 @@
   year = {2019}
 }
 </pre>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          ClarkeEtAl2019
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseClarkeEtAl2019Bibtex"
-                    aria-expanded="false" aria-controls="collapseClarkeEtAl2019Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalClarkeEtAl2019Abstract"
-                    aria-expanded="false" aria-controls="modalClarkeEtAl2019Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="ClarkeEtAl2019">A. T. Clarke, C. J. Davies, D. Ruprecht, and S. M. Tobias, “Parallel-in-time integration of Kinematic Dynamos,” arXiv:1902.00387 [physics.comp-ph], 2019 [Online]. Available at: <a href="https://arxiv.org/abs/1902.00387" target="_blank">https://arxiv.org/abs/1902.00387</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseClarkeEtAl2019Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{ClarkeEtAl2019,
-  author = {Clarke, Andrew T. and Davies, Christopher J. and Ruprecht, Daniel and Tobias, Steven M.},
-  howpublished = {arXiv:1902.00387 [physics.comp-ph]},
-  title = {Parallel-in-time integration of Kinematic Dynamos},
-  url = {https://arxiv.org/abs/1902.00387},
-  year = {2019}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalClarkeEtAl2019Abstract" tabindex="-1" role="dialog" aria-labelledby="modalClarkeEtAl2019AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalClarkeEtAl2019AbstractTitle">
-            Abstract for BibTeX entry <code>ClarkeEtAl2019</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          The precise mechanisms responsible for the natural dynamos in the Earth and Sun are still not fully understood. Numerical simulations of natural dynamos are extremely computationally intensive, and are carried out in parameter regimes many orders of magnitude away from real conditions. Parallelization in space is a common strategy to speed up simulations on high performance computers, but eventually hits a scaling limit. Additional directions of parallelization are desirable to utilise the high number of processor cores now available. Parallel-in-time methods can deliver speed up in addition to that offered by spatial partitioning but have not yet been applied to dynamo simulations. This paper investigates the feasibility of using the parallel-in-time algorithm Parareal to speed up initial value problem simulations of the kinematic dynamo, using the open source Dedalus spectral solver. Both the time independent Roberts and time dependent Galloway-Proctor 2.5D dynamos are investigated over a range of magnetic Reynolds numbers. Speed ups beyond those possible from spatial parallelization are found in both cases. Results for the Galloway-Proctor flow are promising, with Parareal efficiency found to be close to 0.3. Roberts flow results are less efficient, but Parareal still shows some speed up over spatial parallelization alone. Parallel in space and time speed ups of ∼300 were found for 1600 cores for the Galloway-Proctor flow, with total parallel efficiency of ∼0.16.
-        </div>
       </div>
     </div>
   </div>
