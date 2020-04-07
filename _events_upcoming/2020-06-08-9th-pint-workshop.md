@@ -32,15 +32,11 @@ Due to COVID19, PinT 2020: the 9th Workshop on Parallel-in-Time
 Integration is going virtual! The workshop will be held at the
 previously scheduled dates, June 8-12, 2020. Each day will feature a
 series of talks scheduled within a 2-hour block. Please visit
-the conference website,
-http://conferences.math.mtu.edu
+the [conference website](http://conferences.math.mtu.edu)
 for information about the conference and updated program information.
 
-To register, please visit
-https://michigantech.zoom.us/meeting/register/upUsd-6hqj4iGNa05WE3Ey2RkX26G6K7-Q
+To register, please visit [https://michigantech.zoom.us/meeting/register/upUsd-6hqj4iGNa05WE3Ey2RkX26G6K7-Q](https://michigantech.zoom.us/meeting/register/upUsd-6hqj4iGNa05WE3Ey2RkX26G6K7-Q).
 
 Speakers are invited to submit abstracts prior to 05/15/2020.
-Abstracts can be submitted at
-http://conferences.math.mtu.edu/pint2020-information/abstract-submission/
-
+Abstracts can be submitted at [http://conferences.math.mtu.edu/pint2020-information/abstract-submission/](http://conferences.math.mtu.edu/pint2020-information/abstract-submission/).
 
