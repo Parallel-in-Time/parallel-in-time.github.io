@@ -24,7 +24,7 @@ invited:
     homepage: https://www.numa.uni-linz.ac.at/~ulanger/
   - name: Dr. Carol Woodward
     homepage: https://people.llnl.gov/woodward6
-permalink: /events/9th-pint-workshop/
+permalink: /events/10th-pint-workshop/
 subtitle: "Brief overview"
 page_type: event_page
 no_lead: true
