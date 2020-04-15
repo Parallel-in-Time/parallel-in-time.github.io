@@ -320,13 +320,13 @@
       <div class="col-md-12">
         <pre class="abstract">@article{ClarkeEtAl2020a,
   author = {Clarke, Andrew T. and Davies, Christopher J. and Ruprecht, Daniel and Tobias, Steven M.},
-  journal = {Journal of Computational Physics: X},
-  title = {Parallel-in-time integration of Kinematic Dynamos},
   doi = {10.1016/j.jcpx.2020.100057},
+  journal = {Journal of Computational Physics: X},
+  pages = {100057},
+  title = {Parallel-in-time integration of Kinematic Dynamos},
   url = {https://doi.org/10.1016/j.jcpx.2020.100057},
-  year = {2020},
   volume = {7},
-  pages = {100057}
+  year = {2020}
 }
 </pre>
       </div>
@@ -421,21 +421,21 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          NguyenTsai2020
+          HessenthalerEtAl2020
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseNguyenTsai2020Bibtex"
-                    aria-expanded="false" aria-controls="collapseNguyenTsai2020Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseHessenthalerEtAl2020Bibtex"
+                    aria-expanded="false" aria-controls="collapseHessenthalerEtAl2020Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalNguyenTsai2020Abstract"
-                    aria-expanded="false" aria-controls="modalNguyenTsai2020Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalHessenthalerEtAl2020Abstract"
+                    aria-expanded="false" aria-controls="modalHessenthalerEtAl2020Abstract">
               Abstract
             </button>
             
@@ -445,57 +445,26 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="NguyenTsai2020">H. Nguyen and R. Tsai, “A stable parareal-like method for the second order wave equation,” <i>Journal of Computational Physics</i>, vol. 405, p. 109156, 2020 [Online]. Available at: <a href="http://www.sciencedirect.com/science/article/pii/S0021999119308617" target="_blank">http://www.sciencedirect.com/science/article/pii/S0021999119308617</a></span>
+      <span id="HessenthalerEtAl2020">A. Hessenthaler, B. S. Southworth, D. Nordsletten, O. Röhrle, R. D. Falgout, and J. B. Schroder, “Multilevel Convergence Analysis of Multigrid-Reduction-in-Time,” <i>SIAM Journal on Scientific Computing</i>, vol. 42, no. 2, pp. A771–A796, Jan. 2020 [Online]. Available at: <a href="https://doi.org/10.1137%2F19m1238812" target="_blank">https://doi.org/10.1137%2F19m1238812</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseNguyenTsai2020Bibtex">
+  <div class="collapse" id="collapseHessenthalerEtAl2020Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@article{NguyenTsai2020,
-  title = {A stable parareal-like method for the second order wave equation},
-  journal = {Journal of Computational Physics},
-  volume = {405},
-  pages = {109156},
-  year = {2020},
-  issn = {0021-9991},
-  doi = {https://doi.org/10.1016/j.jcp.2019.109156},
-  url = {http://www.sciencedirect.com/science/article/pii/S0021999119308617},
-  author = {Nguyen, Hieu and Tsai, Richard},
-  keywords = {Parallel-in-time, Wave equation, Procrustes problem}
+        <pre class="abstract">@article{HessenthalerEtAl2020,
+  author = {Hessenthaler, Andreas and Southworth, Ben S. and Nordsletten, David and Röhrle, Oliver and Falgout, Robert D. and Schroder, Jacob B.},
+  doi = {10.1137/19m1238812},
+  journal = {{SIAM} Journal on Scientific Computing},
+  month = jan,
+  number = {2},
+  pages = {A771--A796},
+  publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+  title = {Multilevel Convergence Analysis of Multigrid-Reduction-in-Time},
+  url = {https://doi.org/10.1137%2F19m1238812},
+  volume = {42},
+  year = {2020}
 }
 </pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalNguyenTsai2020Abstract" tabindex="-1" role="dialog" aria-labelledby="modalNguyenTsai2020AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalNguyenTsai2020AbstractTitle">
-            Abstract for BibTeX entry <code>NguyenTsai2020</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          A new parallel-in-time iterative method is
-		  proposed for solving the homogeneous second-order
-		  wave equation. The new method involves a coarse
-		  scale propagator, allowing for larger time steps,
-		  and a fine scale propagator which fully resolves the
-		  medium using finer spatial grid and uses shorter
-		  time steps. The fine scale propagator is run in
-		  parallel for short time intervals. The two
-		  propagators are coupled in an iterative way that
-		  resembles the standard parareal method [24]. We
-		  present a data-driven strategy in which the computed
-		  data gathered from each iteration are re-used to
-		  stabilize the coupling by minimizing the wave energy
-		  residual of the fine and coarse propagated
-		  solutions. Several examples, including a wave speed
-		  with discontinuities, are provided to demonstrate
-		  the effectiveness of the proposed method.
-        </div>
       </div>
     </div>
   </div>
@@ -550,6 +519,92 @@
   year = {2020}
 }
 </pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          NguyenTsai2020
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseNguyenTsai2020Bibtex"
+                    aria-expanded="false" aria-controls="collapseNguyenTsai2020Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalNguyenTsai2020Abstract"
+                    aria-expanded="false" aria-controls="modalNguyenTsai2020Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="NguyenTsai2020">H. Nguyen and R. Tsai, “A stable parareal-like method for the second order wave equation,” <i>Journal of Computational Physics</i>, vol. 405, p. 109156, 2020 [Online]. Available at: <a href="http://www.sciencedirect.com/science/article/pii/S0021999119308617" target="_blank">http://www.sciencedirect.com/science/article/pii/S0021999119308617</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseNguyenTsai2020Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{NguyenTsai2020,
+  author = {Nguyen, Hieu and Tsai, Richard},
+  doi = {https://doi.org/10.1016/j.jcp.2019.109156},
+  issn = {0021-9991},
+  journal = {Journal of Computational Physics},
+  keywords = {Parallel-in-time, Wave equation, Procrustes problem},
+  pages = {109156},
+  title = {A stable parareal-like method for the second order wave equation},
+  url = {http://www.sciencedirect.com/science/article/pii/S0021999119308617},
+  volume = {405},
+  year = {2020}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalNguyenTsai2020Abstract" tabindex="-1" role="dialog" aria-labelledby="modalNguyenTsai2020AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalNguyenTsai2020AbstractTitle">
+            Abstract for BibTeX entry <code>NguyenTsai2020</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          A new parallel-in-time iterative method is
+proposed for solving the homogeneous second-order
+wave equation. The new method involves a coarse
+scale propagator, allowing for larger time steps,
+and a fine scale propagator which fully resolves the
+medium using finer spatial grid and uses shorter
+time steps. The fine scale propagator is run in
+parallel for short time intervals. The two
+propagators are coupled in an iterative way that
+resembles the standard parareal method [24]. We
+present a data-driven strategy in which the computed
+data gathered from each iteration are re-used to
+stabilize the coupling by minimizing the wave energy
+residual of the fine and coarse propagated
+solutions. Several examples, including a wave speed
+with discontinuities, are provided to demonstrate
+the effectiveness of the proposed method.
+        </div>
       </div>
     </div>
   </div>
@@ -2774,14 +2829,14 @@ The influence on the performance of the parareal algorithm, of the choice of the
       <div class="col-md-12">
         <pre class="abstract">@article{WangEtSl2019,
   author = {Wang, S. and Shao, Y. and Peng, Z.},
+  doi = {10.1109/TAP.2019.2909937},
   journal = {IEEE Transactions on Antennas and Propagation},
-  title = {A Parallel-in-Space-and-Time Method for Transient Electromagnetic Problems},
-  year = {2019},
-  volume = {67},
   number = {6},
   pages = {3961-3973},
-  doi = {10.1109/TAP.2019.2909937},
-  url = {https://doi.org/10.1109/TAP.2019.2909937}
+  title = {A Parallel-in-Space-and-Time Method for Transient Electromagnetic Problems},
+  url = {https://doi.org/10.1109/TAP.2019.2909937},
+  volume = {67},
+  year = {2019}
 }
 </pre>
       </div>
@@ -4134,71 +4189,6 @@ setups.
         </div>
         <div class="modal-body">
           This paper presents some recent advances for parallel‐in‐time methods applied to linear elasticity. With recent computer architecture changes leading to stagnant clock speeds, but ever increasing numbers of cores, future speedups will be available through increased concurrency. Thus, sequential algorithms, such as time stepping, will suffer a bottleneck. This paper explores multigrid reduction in time (MGRIT) for an important application area, linear elasticity. Previously, efforts at parallel‐in‐time for elasticity have experienced difficulties, for example, the beating phenomenon. As a result, practical parallel‐in‐time algorithms for this application area currently do not exist. This paper proposes some solutions made possible by MGRIT (e.g., slow temporal coarsening and FCF‐relaxation) and, more importantly, a different formulation of the problem that is more amenable to parallel‐in‐time methods. Using a recently developed convergence theory for MGRIT and Parareal, we show that the changed formulation of the problem avoids the instability issues and allows the reduction of the error using two temporal grids. We then extend our approach to the multilevel case, where we demonstrate how slow temporal coarsening improves convergence. The paper ends with supporting numerical results showing a practical algorithm enjoying speedup benefits over the sequential algorithm.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          HessenthalerEtAl2018b
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseHessenthalerEtAl2018bBibtex"
-                    aria-expanded="false" aria-controls="collapseHessenthalerEtAl2018bBibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalHessenthalerEtAl2018bAbstract"
-                    aria-expanded="false" aria-controls="modalHessenthalerEtAl2018bAbstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="HessenthalerEtAl2018b">A. Hessenthaler, B. S. Southworth, D. Nordsletten, O. Röhrle, R. D. Falgout, and J. B. Schroder, “Multilevel convergence analysis of multigrid-reduction-in-time,” arXiv:1812.11508 [math.NA], 2018 [Online]. Available at: <a href="https://arxiv.org/abs/1812.11508" target="_blank">https://arxiv.org/abs/1812.11508</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseHessenthalerEtAl2018bBibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{HessenthalerEtAl2018b,
-  author = {Hessenthaler, Andreas and Southworth, Ben S. and Nordsletten, David and Röhrle, Oliver and Falgout, Robert D. and Schroder, Jacob B.},
-  howpublished = {arXiv:1812.11508 [math.NA]},
-  title = {Multilevel convergence analysis of multigrid-reduction-in-time},
-  url = {https://arxiv.org/abs/1812.11508},
-  year = {2018}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalHessenthalerEtAl2018bAbstract" tabindex="-1" role="dialog" aria-labelledby="modalHessenthalerEtAl2018bAbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalHessenthalerEtAl2018bAbstractTitle">
-            Abstract for BibTeX entry <code>HessenthalerEtAl2018b</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          This paper presents a multilevel convergence framework for multigrid-reduction-in-time (MGRIT) as a generalization of previous two-grid estimates. The framework provides a priori upper bounds on the convergence of MGRIT V- and F-cycles with different relaxation schemes by deriving the respective residual and error propagation operators. The residual and error operators are functions of the time stepping operator, analyzed directly and bounded in norm, both numerically and analytically. We present various upper bounds of different computational cost and varying sharpness. These upper bounds are complemented by proposing analytic formulae for the approximate convergence factor of V-cycle algorithms that take the number of fine grid time points, the temporal coarsening factors, and the eigenvalues of the time stepping operator as parameters.  The paper concludes with supporting numerical investigations of parabolic and hyperbolic model problems. We assess the sharpness of the bounds and the quality of the approximate convergence factors. Observations from these numerical investigations demonstrate the value of the proposed multilevel convergence framework for the design of a convergent MGRIT algorithm. We further highlight that observations in the literature are captured by the theory, including that two-level Parareal and multilevel MGRIT with F-relaxation do not yield scalable algorithms, that iteration counts increase with increasing numbers of levels, and the benefit of a stronger relaxation scheme. The theory also proves in a two-level setting, and confirms for multilevel, that L-stable Runge-Kutta schemes are more amendable to parallel-in-time integration with MGRIT than A-stable Runge-Kutta schemes.
         </div>
       </div>
     </div>
