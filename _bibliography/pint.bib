@@ -3692,15 +3692,6 @@ setups.}},
 	year = {2018},
 }
 
-@unpublished{HessenthalerEtAl2018b,
-	abstract = {{This paper presents a multilevel convergence framework for multigrid-reduction-in-time (MGRIT) as a generalization of previous two-grid estimates. The framework provides a priori upper bounds on the convergence of MGRIT V- and F-cycles with different relaxation schemes by deriving the respective residual and error propagation operators. The residual and error operators are functions of the time stepping operator, analyzed directly and bounded in norm, both numerically and analytically. We present various upper bounds of different computational cost and varying sharpness. These upper bounds are complemented by proposing analytic formulae for the approximate convergence factor of V-cycle algorithms that take the number of fine grid time points, the temporal coarsening factors, and the eigenvalues of the time stepping operator as parameters.  The paper concludes with supporting numerical investigations of parabolic and hyperbolic model problems. We assess the sharpness of the bounds and the quality of the approximate convergence factors. Observations from these numerical investigations demonstrate the value of the proposed multilevel convergence framework for the design of a convergent MGRIT algorithm. We further highlight that observations in the literature are captured by the theory, including that two-level Parareal and multilevel MGRIT with F-relaxation do not yield scalable algorithms, that iteration counts increase with increasing numbers of levels, and the benefit of a stronger relaxation scheme. The theory also proves in a two-level setting, and confirms for multilevel, that L-stable Runge-Kutta schemes are more amendable to parallel-in-time integration with MGRIT than A-stable Runge-Kutta schemes.}},
-	author = {Andreas Hessenthaler and Ben S. Southworth and David Nordsletten and Oliver Röhrle and Robert D. Falgout and Jacob B. Schroder},
-	howpublished = {arXiv:1812.11508 [math.NA]},
-	title = {Multilevel convergence analysis of multigrid-reduction-in-time},
-	url = {https://arxiv.org/abs/1812.11508},
-	year = {2018},
-}
-
 @inbook{HwangMunster2018,
 	abstract = {{A gradient-based approach to multidisciplinary design optimization enables efficient scalability to large numbers of design variables. However, the need for derivatives imposes a difficult requirement when integrating ordinary differential equations in models. To simplify this, we propose the use of the general linear methods framework, which unifies all Runge–Kutta and linear multistep methods. This approach enables rapid implementation of integration methods without the need to differentiate each individual method, even in a gradient-based optimization context. We also develop a new parallel time integration algorithm that enables vectorization across time steps. We present a set of benchmarking results using a stiff ODE, a non-stiff nonlinear ODE, and an orbital dynamics ODE, and compare integration methods. In a modular gradient-based multidisciplinary design optimization context, we find that the new parallel time integration algorithm with high-order implicit methods, especially Gauss–Legendre collocation, is the best choice for a broad range of problems.}},
 	author = {Hwang, John T. and Munster, Drayton},
@@ -4426,15 +4417,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 }
 
 @article{WangEtSl2019,
-	author={Wang, S.  and Shao, Y. and Peng, Z.},
-	journal={IEEE Transactions on Antennas and Propagation},
-	title={A Parallel-in-Space-and-Time Method for Transient Electromagnetic Problems},
-	year={2019},
-	volume={67},
-	number={6},
-	pages={3961-3973},
-	doi={10.1109/TAP.2019.2909937},
-	url={https://doi.org/10.1109/TAP.2019.2909937},
+	author = {Wang, S.  and Shao, Y. and Peng, Z.},
+	doi = {10.1109/TAP.2019.2909937},
+	journal = {IEEE Transactions on Antennas and Propagation},
+	number = {6},
+	pages = {3961-3973},
+	title = {A Parallel-in-Space-and-Time Method for Transient Electromagnetic Problems},
+	url = {https://doi.org/10.1109/TAP.2019.2909937},
+	volume = {67},
+	year = {2019},
 }
 
 @article{ZhangEtAl2019,
@@ -4477,13 +4468,13 @@ The influence on the performance of the parareal algorithm, of the choice of the
 @article{ClarkeEtAl2020a,
 	abstract = {{The precise mechanisms responsible for the natural dynamos in the Earth and Sun are still not fully understood. Numerical simulations of natural dynamos are extremely computationally intensive, and are carried out in parameter regimes many orders of magnitude away from real conditions. Parallelization in space is a common strategy to speed up simulations on high performance computers, but eventually hits a scaling limit. Additional directions of parallelization are desirable to utilise the high number of processor cores now available. Parallel-in-time methods can deliver speed up in addition to that offered by spatial partitioning but have not yet been applied to dynamo simulations. This paper investigates the feasibility of using the parallel-in-time algorithm Parareal to speed up initial value problem simulations of the kinematic dynamo, using the open source Dedalus spectral solver. Both the time independent Roberts and time dependent Galloway-Proctor 2.5D dynamos are investigated over a range of magnetic Reynolds numbers. Speedups beyond those possible from spatial parallelisation are found in both cases. Results for the Galloway-Proctor flow are promising, with Parareal efficiency found to be close to 0.3. Roberts flow results are less efficient, but Parareal still shows some speed up over spatial parallelisation alone. Parallel in space and time speed ups of ∼300 were found for 1600 cores for the Galloway-Proctor flow, with total parallel efficiency of ∼0.16.}},
 	author = {Andrew T. Clarke and Christopher J. Davies and Daniel Ruprecht and Steven M. Tobias},
-	journal = {Journal of Computational Physics: X},
-	title = {Parallel-in-time integration of Kinematic Dynamos},
 	doi = {10.1016/j.jcpx.2020.100057},
-	url = {https://doi.org/10.1016/j.jcpx.2020.100057},
-	year = {2020},
-	volume = {7},
+	journal = {Journal of Computational Physics: X},
 	pages = {100057},
+	title = {Parallel-in-time integration of Kinematic Dynamos},
+	url = {https://doi.org/10.1016/j.jcpx.2020.100057},
+	volume = {7},
+	year = {2020},
 }
 
 @unpublished{ClarkeEtAl2020b,
@@ -4495,34 +4486,18 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2020},
 }
 
-@article{NguyenTsai2020,
-	title = {A stable parareal-like method for the second order wave equation},
-	journal = {Journal of Computational Physics},
-	volume = {405},
-	pages = {109156},
+@article{HessenthalerEtAl2020,
+	author = {Andreas Hessenthaler and Ben S. Southworth and David Nordsletten and Oliver Röhrle and Robert D. Falgout and Jacob B. Schroder},
+	doi = {10.1137/19m1238812},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {jan},
+	number = {2},
+	pages = {A771--A796},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Multilevel Convergence Analysis of Multigrid-Reduction-in-Time},
+	url = {https://doi.org/10.1137%2F19m1238812},
+	volume = {42},
 	year = {2020},
-	issn = {0021-9991},
-	doi = {https://doi.org/10.1016/j.jcp.2019.109156},
-	url = {http://www.sciencedirect.com/science/article/pii/S0021999119308617},
-	author = {Hieu Nguyen and Richard Tsai},
-	keywords = {Parallel-in-time, Wave equation, Procrustes problem},
-	abstract = {A new parallel-in-time iterative method is
-		  proposed for solving the homogeneous second-order
-		  wave equation. The new method involves a coarse
-		  scale propagator, allowing for larger time steps,
-		  and a fine scale propagator which fully resolves the
-		  medium using finer spatial grid and uses shorter
-		  time steps. The fine scale propagator is run in
-		  parallel for short time intervals. The two
-		  propagators are coupled in an iterative way that
-		  resembles the standard parareal method [24]. We
-		  present a data-driven strategy in which the computed
-		  data gathered from each iteration are re-used to
-		  stabilize the coupling by minimizing the wave energy
-		  residual of the fine and coarse propagated
-		  solutions. Several examples, including a wave speed
-		  with discontinuities, are provided to demonstrate
-		  the effectiveness of the proposed method.},
 }
 
 @article{LakshmiranganathaEtAl2020,
@@ -4535,6 +4510,36 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	title = {Graphical Processing Unit Based Time-Parallel Numerical Method for Ordinary Differential Equations},
 	url = {https://doi.org/10.4236%2Fjcc.2020.82004},
 	volume = {08},
+	year = {2020},
+}
+
+@article{NguyenTsai2020,
+	abstract = {A new parallel-in-time iterative method is
+proposed for solving the homogeneous second-order
+wave equation. The new method involves a coarse
+scale propagator, allowing for larger time steps,
+and a fine scale propagator which fully resolves the
+medium using finer spatial grid and uses shorter
+time steps. The fine scale propagator is run in
+parallel for short time intervals. The two
+propagators are coupled in an iterative way that
+resembles the standard parareal method [24]. We
+present a data-driven strategy in which the computed
+data gathered from each iteration are re-used to
+stabilize the coupling by minimizing the wave energy
+residual of the fine and coarse propagated
+solutions. Several examples, including a wave speed
+with discontinuities, are provided to demonstrate
+the effectiveness of the proposed method.},
+	author = {Hieu Nguyen and Richard Tsai},
+	doi = {https://doi.org/10.1016/j.jcp.2019.109156},
+	issn = {0021-9991},
+	journal = {Journal of Computational Physics},
+	keywords = {Parallel-in-time, Wave equation, Procrustes problem},
+	pages = {109156},
+	title = {A stable parareal-like method for the second order wave equation},
+	url = {http://www.sciencedirect.com/science/article/pii/S0021999119308617},
+	volume = {405},
 	year = {2020},
 }
 
