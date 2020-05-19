@@ -7,6 +7,20 @@
     <atom:link href="http://parallel-in-time.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PinT 2020 Workshop</title>
+        <description>&lt;p&gt;Registration for virtual PinT 2020 - &lt;a href=&quot;events/9th-pint-workshop/&quot;&gt;9th Workshop on Parallel-in-time integration&lt;/a&gt; is open. 
+There is no cost to attend the workshop. Attendees will need to pre-register at &lt;a href=&quot;https://michigantech.zoom.us/meeting/register/upUsd-6hqj4iGNa05WE3Ey2RkX26G6K7-Q&quot;&gt;https://michigantech.zoom.us/meeting/register/upUsd-6hqj4iGNa05WE3Ey2RkX26G6K7-Q&lt;/a&gt;
+to participate.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+</description>
+        <pubDate>Mon, 18 May 2020 14:07:00 +0000</pubDate>
+        <link>http://parallel-in-time.org/events/2020/05/18/pint2020-registration.html</link>
+        <guid isPermaLink="true">http://parallel-in-time.org/events/2020/05/18/pint2020-registration.html</guid>
+      </item>
+    
+      <item>
         <title>PINT 2019 Workshop</title>
         <description>&lt;p&gt;Registration for the &lt;a href=&quot;/events/8th-pint-workshop/&quot;&gt;8th Workshop on Parallel-in-time integration&lt;/a&gt; is now open. Since this workshop is organised through the Centre for Interdisciplinary Research of Bielefeld University, registration requires a formal invite. Please email one of the organisers to express your interest in attending and they will arrange for an invitation.&lt;/p&gt;
 
@@ -125,26 +139,6 @@ Based on Beth Wingate’s &lt;a href=&quot;/events/2016/07/19/siamcse.html&quot;
         <pubDate>Tue, 17 Jan 2017 10:17:44 +0000</pubDate>
         <link>http://parallel-in-time.org/events/2017/01/17/pint-hashtag.html</link>
         <guid isPermaLink="true">http://parallel-in-time.org/events/2017/01/17/pint-hashtag.html</guid>
-      </item>
-    
-      <item>
-        <title>Mini symposium at SIAM CSE 2017</title>
-        <description>&lt;p&gt;A &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=60892&quot;&gt;mini symposium&lt;/a&gt; about parallel-in-time integration with 8 talks will take place at the &lt;a href=&quot;https://www.siam.org/meetings/cse17/&quot;&gt;SIAM Conference on Computational Science and Engineering&lt;/a&gt; 2017.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;In addition to Beth Wingate’s &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=62108&quot;&gt;plenary talk&lt;/a&gt;, parallel-in-time integration with also be present at next year’s SIAM CSE conference in the form of a mini symposium with 8 presentations illustrating recent advances in the field.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=60892&quot;&gt;Part I&lt;/a&gt; will be on Tuesday, February 28 from 9:10 AM to 10:50 AM in Room 211&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=60893&quot;&gt;Part II&lt;/a&gt; will be on Tuesday, February 28 from 1:30 PM to 3:10 PM in Room 211.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This continues the strong presence of PINT at SIAM conferences, with mini symposia being held at the last &lt;a href=&quot;http://www.parallelintime.org/events/2015/12/17/siampp-ms.html&quot;&gt;SIAM PP 2016&lt;/a&gt;, &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=19996&quot;&gt;SIAM CSE 2015&lt;/a&gt;, &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=17906&quot;&gt;SIAM PP 2014&lt;/a&gt; and &lt;a href=&quot;http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=15471&quot;&gt;SIAM CSE 2013&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 23 Dec 2016 07:50:44 +0000</pubDate>
-        <link>http://parallel-in-time.org/events/2016/12/23/siamcse-ms.html</link>
-        <guid isPermaLink="true">http://parallel-in-time.org/events/2016/12/23/siamcse-ms.html</guid>
       </item>
     
   </channel>
