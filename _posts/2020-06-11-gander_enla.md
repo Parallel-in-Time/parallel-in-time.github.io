@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ENLA Seminar
+title: PinT lecture at ENLA Seminar
 date: 2020-06-11 15:07:00 +0100
 author: Benjamin Ong
 categories:
