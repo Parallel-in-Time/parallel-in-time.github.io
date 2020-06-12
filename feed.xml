@@ -7,6 +7,23 @@
     <atom:link href="http://parallel-in-time.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PinT lecture at ENLA Seminar</title>
+        <description>&lt;p&gt;Martin Gander gave a very nice talk on a linear algebra approach to time parallelisation as part of the
+European Numerical Linear Algebra (ENLA) online seminar. The video for the talk can be 
+found at: &lt;a href=&quot;https://www.youtube.com/watch?v=DfY_w6KnfhU&quot;&gt;https://www.youtube.com/watch?v=DfY_w6KnfhU&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A full list of past ENLA lectures can be found at
+&lt;a href=&quot;https://www.youtube.com/channel/UCl3AmvN5JwD4FUJn2aLKDZQ&quot;&gt;https://www.youtube.com/channel/UCl3AmvN5JwD4FUJn2aLKDZQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+</description>
+        <pubDate>Thu, 11 Jun 2020 14:07:00 +0000</pubDate>
+        <link>http://parallel-in-time.org/events/2020/06/11/gander_enla.html</link>
+        <guid isPermaLink="true">http://parallel-in-time.org/events/2020/06/11/gander_enla.html</guid>
+      </item>
+    
+      <item>
         <title>PinT 2020 Workshop</title>
         <description>&lt;p&gt;Registration for virtual PinT 2020 - &lt;a href=&quot;/events/9th-pint-workshop/&quot;&gt;9th Workshop on Parallel-in-time integration&lt;/a&gt; is open. 
 There is no cost to attend the workshop. Attendees will need to pre-register at &lt;a href=&quot;https://michigantech.zoom.us/meeting/register/upUsd-6hqj4iGNa05WE3Ey2RkX26G6K7-Q&quot;&gt;https://michigantech.zoom.us/meeting/register/upUsd-6hqj4iGNa05WE3Ey2RkX26G6K7-Q&lt;/a&gt;
@@ -126,19 +143,6 @@ Based on Beth Wingate’s &lt;a href=&quot;/events/2016/07/19/siamcse.html&quot;
         <pubDate>Tue, 30 May 2017 10:00:00 +0000</pubDate>
         <link>http://parallel-in-time.org/events/2017/05/30/siam-news.html</link>
         <guid isPermaLink="true">http://parallel-in-time.org/events/2017/05/30/siam-news.html</guid>
-      </item>
-    
-      <item>
-        <title>Parallel-in-time Twitter hashtag</title>
-        <description>&lt;p&gt;Parallel-in-time goes Twitter.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;If you are using Twitter, you can use the hash tag &lt;a href=&quot;https://twitter.com/hashtag/parallelintime?src=hash&quot;&gt;#parallelintime&lt;/a&gt; for everything that relates to PINT integration.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 17 Jan 2017 10:17:44 +0000</pubDate>
-        <link>http://parallel-in-time.org/events/2017/01/17/pint-hashtag.html</link>
-        <guid isPermaLink="true">http://parallel-in-time.org/events/2017/01/17/pint-hashtag.html</guid>
       </item>
     
   </channel>
