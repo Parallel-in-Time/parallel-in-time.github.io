@@ -3,10 +3,10 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>pySDC</title>
+  <title>ParaDIAG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallel-in-time.org/codes/pysdc.html">
+  <link rel="canonical" href="http://parallel-in-time.org/codes/paradiag.html">
 
   <link type="text/css" rel="stylesheet" href="/assets/main-76819aa89d75930ac06ef9967c01d19269aaad5bd78e7a1bee6bb4df855d04cb.css">
   <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-86a3022f12ca44acf0d7da548569f4168279fe7b115508fbe4cf4af00498eb4b.js"></script>
@@ -83,7 +83,7 @@
       <a href="/codes/xbraid.html">XBraid</a>
     </li>
   
-    <li class="active">
+    <li >
       <a href="/codes/pysdc.html">pySDC</a>
     </li>
   
@@ -103,7 +103,7 @@
       <a href="/codes/sweet.html">SWEET</a>
     </li>
   
-    <li >
+    <li class="active">
       <a href="/codes/paradiag.html">ParaDIAG</a>
     </li>
   
@@ -143,15 +143,63 @@
       <div class="container">
         <div class="post post-code">
   <header class="post-header">
-    <h1>pySDC</h1>
+    <h1>ParaDIAG</h1>
     
   </header>
   <article class="post-content">
     <div class="row">
       <div class="col-md-8 content">
-        <p>The pySDC project is a Python implementation of the spectral deferred correction (SDC) approach and its flavors, esp. the multilevel extension MLSDC and PFASST. It is intended for rapid prototyping and educational purposes. New ideas like e.g. sweepers or predictors can be tested and first toy problems can be easily implemented.</p>
+        <p>ParaDIAG is a class of Parallel-in-Time (PinT) algorithms based on the diagonalization technique <a href="#GanderEtAl2020">[1]</a>. 
+ ParaDIAG can handle both the dissipative problems (e.g., the advection-diffusion equations) and 
+ the purely wave equations (e.g., the acoustic equation).</p>
 
-<p>The code is hosted on <a href="https://github.com/Parallel-in-Time/pySDC">GitHub</a> and <a href="https://pypi.python.org/pypi/pySDC">PyPI</a>.</p>
+<ol class="bibliography"><li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          GanderEtAl2020
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseGanderEtAl2020Bibtex" aria-expanded="false" aria-controls="collapseGanderEtAl2020Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalGanderEtAl2020Abstract" aria-expanded="false" aria-controls="modalGanderEtAl2020Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="GanderEtAl2020">M. J. Gander, J. Liu, S.-L. Wu, X. Yue, and T. Zhou, “ParaDIAG: Parallel-in-Time Algorithms Based on the Diagonalization Technique,” arXiv preprint arXiv:2005.09158, 2020 [Online]. Available at: <a href="http://arxiv.org/abs/2005.09158" target="_blank">http://arxiv.org/abs/2005.09158</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseGanderEtAl2020Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{GanderEtAl2020,
+  title = {ParaDIAG: Parallel-in-Time Algorithms Based on the Diagonalization Technique},
+  author = {Gander, Martin J and Liu, Jun and Wu, Shu-Lin and Yue, Xiaoqiang and Zhou, Tao},
+  howpublished = {arXiv preprint arXiv:2005.09158},
+  url = {http://arxiv.org/abs/2005.09158},
+  year = {2020}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li></ol>
 
       </div>
       <aside class="col-md-4">
@@ -168,9 +216,9 @@
           
           
           
-          <a href="http://www.parallelintime.org/pySDC/">
+          <a href="https://github.com/wushulin/ParaDIAG">
             
-              www.parallelintime.org/pySDC/
+              <i class="fa fa-github fa-fw"></i>/wushulin/ParaDIAG
             
           </a>
         </div>
@@ -180,7 +228,7 @@
       <div class="row">
         <label class="col-md-4 control-label">Language</label>
         <div class="col-md-8">
-          Python
+          MATLAB & Fortran
         </div>
       </div>
     
@@ -188,10 +236,32 @@
       <div class="row">
         <label class="col-md-4 control-label">License</label>
         <div class="col-md-8">
-          2-clause BSD
+          MIT
         </div>
       </div>
     
+    
+      <div class="row">
+        <label class="col-md-4 control-label">Releases</label>
+        <div class="col-md-8">
+          
+            <span class="clearfix">
+              1.0
+              
+                <small>&ensp;(<time datetime="2020-06-12">2020-06-12</time>)</small>
+              
+              <span class="pull-right">
+                
+                  <a href="https://github.com/wushulin/ParaDIAG" title="Release Page"><i class="fa fa-link fa-fw"></i></a>
+                
+                
+                  <a href="https://github.com/wushulin/ParaDIAG" title="Download Sources as zip"><i class="fa fa-download fa-fw"></i></a>
+                
+              </span>
+            </span>
+          
+        </div>
+      </div>
     
     
       <div class="row">
@@ -200,31 +270,14 @@
           
             <span class="clearfix">
               
-                Dr. Robert Speck
-              
-              
-                <span class="pull-right">
-                  
-                    <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
-                  
-                  
-                    <a href="mailto:r.speck@fz-juelich.de" title="email: r.speck@fz-juelich.de"><i class="fa fa-envelope-o fa-fw"></i></a>
-                  
-                  
-                </span>
-              
-            </span>
-          
-            <span class="clearfix">
-              
-                Dr. Daniel Ruprecht
+                See ParaDIAG github page
               
               
                 <span class="pull-right">
                   
                   
-                    <a href="mailto:daniel.ruprecht@usi.ch" title="email: daniel.ruprecht@usi.ch"><i class="fa fa-envelope-o fa-fw"></i></a>
                   
+                    <a href="https://github.com/wushulin/ParaDIAG" title="See ParaDIAG github page"><i class="fa fa-link fa-fw"></i></a>
                   
                 </span>
               
@@ -236,8 +289,6 @@
   </div>
 </section>
 
-
-<section class="github-widget" data-repo="Parallel-in-Time/pySDC"></section>
 
 
       </aside>
