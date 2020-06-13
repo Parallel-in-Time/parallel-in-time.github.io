@@ -21,7 +21,7 @@ developers:
       url: https://github.com/wushulin/ParaDIAG
 short_desc:  ParaDIAG includes diagonalization-based Parallel-in-Time (PinT) algorithms.
 ---
- ParaDIAG is a class of Parallel-in-Time (PinT) algorithms based on the diagonalization technique {% cite gander2020paradiag %}. 
+ ParaDIAG is a class of Parallel-in-Time (PinT) algorithms based on the diagonalization technique {% cite GanderEtAl2020 %}. 
  ParaDIAG can handle both the dissipative problems (e.g., the advection-diffusion equations) and 
  the purely wave equations (e.g., the acoustic equation). 
 
