@@ -4306,15 +4306,6 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
-@unpublished{RittichEtAl2019,
-	abstract = {The numerical simulation of the time-dependent Schr\"odinger equation for quantum systems is a very active research topic. Yet, resolving the solution sufficiently in space and time is challenging and mandates the use of modern high-performance computing systems. While classical parallelization techniques in space can reduce the runtime per time-step, novel parallel-in-time integrators expose parallelism in the temporal domain. They work, however, not very well for wave-type problems such as the Schr\"odinger equation. One notable exception is the rational approximation of exponential integrators. In this paper we derive an efficient variant of this approach suitable for the complex-valued Schr\"odinger equation. Using the Faber-Carath\'eodory-Fej\'er approximation, this variant is already a fast serial and in particular an efficient time-parallel integrator. It can be used to augment classical parallelization in space and we show the efficiency and effectiveness of our method along the lines of two challenging, realistic examples.},
-	author = {Hannah Rittich and Robert Speck},
-	howpublished = {arXiv:1912.03312v1 [math.NA]},
-	title = {Time-parallel simulation of the Schrödinger Equation},
-	url = {http://arxiv.org/abs/1912.03312v1},
-	year = {2019},
-}
-
 @article{Rosa-RaícesEtAl2019,
 	author = {Jorge L. Rosa-Ra{\'{\i}}ces and Bin Zhang and Thomas F. Miller},
 	doi = {10.1063/1.5125455},
@@ -4478,11 +4469,11 @@ The influence on the performance of the parareal algorithm, of the choice of the
 }
 
 @unpublished{GanderEtAl2020,
-  title = {ParaDIAG: Parallel-in-Time Algorithms Based on the Diagonalization Technique},
-  author = {Gander, Martin J and Liu, Jun and Wu, Shu-Lin and Yue, Xiaoqiang and Zhou, Tao},
-  howpublished = {arXiv preprint arXiv:2005.09158},
-  url = {http://arxiv.org/abs/2005.09158},
-  year = {2020}
+	author = {Gander, Martin J and Liu, Jun and Wu, Shu-Lin and Yue, Xiaoqiang and Zhou, Tao},
+	howpublished = {arXiv preprint arXiv:2005.09158},
+	title = {ParaDIAG: Parallel-in-Time Algorithms Based on the Diagonalization Technique},
+	url = {http://arxiv.org/abs/2005.09158},
+	year = {2020},
 }
 
 @article{HessenthalerEtAl2020,
@@ -4554,13 +4545,27 @@ the effectiveness of the proposed method.},
 	year = {2020},
 }
 
-@article{WuEtAl2020,
-  title={A parallel-in-time block-circulant preconditioner for optimal control of wave equations},
-  author={Wu, Shu-Lin and Liu, Jun},
-  journal={SIAM Journal on Scientific Computing},
-  volume={42},
-  number={3},
-  pages={A1510--A1540},
-  year={2020},
-  publisher={SIAM}
+@article{RittichEtAl2020,
+	author = {Hannah Rittich and Robert Speck},
+	doi = {10.1016/j.cpc.2020.107363},
+	journal = {Computer Physics Communications},
+	month = {oct},
+	pages = {107363},
+	publisher = {Elsevier {BV}},
+	title = {Time-parallel simulation of the Schrödinger Equation},
+	url = {https://doi.org/10.1016%2Fj.cpc.2020.107363},
+	volume = {255},
+	year = {2020},
 }
+
+@article{WuEtAl2020,
+	author = {Wu, Shu-Lin and Liu, Jun},
+	journal = {SIAM Journal on Scientific Computing},
+	number = {3},
+	pages = {A1510--A1540},
+	publisher = {SIAM},
+	title = {A parallel-in-time block-circulant preconditioner for optimal control of wave equations},
+	volume = {42},
+	year = {2020},
+}
+
