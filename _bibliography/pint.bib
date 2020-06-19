@@ -4028,15 +4028,6 @@ setups.}},
 	publisher = {Springer}
 }
 
-@unpublished{AgbohEtAl2019b,
-	abstract = {A key component of many robotics model-based planning and control algorithms is physics predictions, that is, forecasting a sequence of states given an initial state and a sequence of controls. This process is slow and a major computational bottleneck for robotics planning algorithms. Parallel-in-time integration methods can help to leverage parallel computing to accelerate physics predictions and thus planning. The Parareal algorithm iterates between a coarse serial integrator and a fine parallel integrator. A key challenge is to devise a coarse level model that is computationally cheap but accurate enough for Parareal to converge quickly. Here, we investigate the use of a deep neural network physics model as a coarse model for Parareal in the context of robotic manipulation. In simulated experiments using the physics engine Mujoco as fine propagator we show that the learned coarse model leads to faster Parareal convergence than a coarse physics-based model. We further show that the learned coarse model allows to apply Parareal to scenarios with multiple objects, where the physics-based coarse model is not applicable. Finally, We conduct experiments on a real robot and show that Parareal predictions are close to real-world physics predictions for robotic pushing of multiple objects. Some real robot manipulation plans using Parareal can be found at https://www.youtube.com/watch?v=wCh2o1rf-gA .},
-	author = {Wisdom Agboh and Oliver Grainger and Daniel Ruprecht and Mehmet Dogar},
-	howpublished = {arXiv:1912.05958v1 [cs.RO]},
-	title = {Parareal with a Learned Coarse Model for Robotic Manipulation},
-	url = {http://arxiv.org/abs/1912.05958v1},
-	year = {2019},
-}
-
 @article{BlumersEtAl2019,
 	abstract = {{Lagrangian particle methods based on detailed atomic and molecular models are powerful computational tools for studying the dynamics of microscale and nanoscale systems. However, the maximum time step is limited by the smallest oscillation period of the fastest atomic motion, rendering long-time simulations very expensive. To resolve this bottleneck, we propose a supervised parallel-in-time algorithm for stochastic dynamics (SPASD) to accelerate long-time Lagrangian particle simulations. Our method is inspired by bottom-up coarse-graining projections that yield mean-field hydrodynamic behavior in the continuum limit. Here as an example, we use the dissipative particle dynamics (DPD) as the Lagrangian particle simulator that is supervised by its macroscopic counterpart, i.e., the Navier-Stokes simulator. The low-dimensional macroscopic system (here, the Navier-Stokes solver) serves as a predictor to supervise the high-dimensional Lagrangian simulator, in a predictor-corrector type algorithm. The results of the Lagrangian simulation then correct the mean-field prediction and provide the proper microscopic details (e.g., consistent fluctuations, correlations, etc.). The unique feature that sets SPASD apart from other multiscale methods is the use of a low-fidelity macroscopic model as a predictor. The macro-model can be approximate and even inconsistent with the microscale description, but SPASD anticipates the deviation and corrects it internally to recover the true dynamics. We first present the algorithm and analyze its theoretical speedup, and subsequently we present the accuracy and convergence of the algorithm for the time-dependent plane Poiseuille flow, demonstrating that SPASD converges exponentially fast over iterations, irrespective of the accuracy of the predictor. Moreover, the fluctuating characteristics of the stochastic dynamics are identical to the unsupervised (serial in time) DPD simulation. We also compare the performance of SPASD to the conventional spatial decomposition method, which is one of the most parallel-efficient methods for particle simulations. We find that the parallel efficiency of SPASD and the conventional spatial decomposition method are similar for a small number of computing cores, but for a large number of cores the performance of SPASD is superior. Furthermore, SPASD can be used in conjunction with spatial decomposition for enhanced performance. Lastly, we simulate a two-dimensional cavity flow that requires more iterations to converge compared to the Poiseuille flow, and we observe that SPASD converges to the correct solution. Although a DPD solver is used to demonstrate the results, SPASD is a general framework and can be readily applied to other Lagrangian approaches including molecular dynamics and Langevin dynamics.}},
 	author = {Ansel L. Blumers and Zhen Li and George Em Karniadakis},
@@ -4422,6 +4413,20 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	url = {https://doi.org/10.4208/jcm.1708-m2017-0089},
 	volume = {37},
 	year = {2019},
+}
+
+%
+% 2020
+%
+
+@article{AgbohEtAl2020,
+	abstract = {A key component of many robotics model-based planning and control algorithms is physics predictions, that is, forecasting a sequence of states given an initial state and a sequence of controls. This process is slow and a major computational bottleneck for robotics planning algorithms. Parallel-in-time integration methods can help to leverage parallel computing to accelerate physics predictions and thus planning. The Parareal algorithm iterates between a coarse serial integrator and a fine parallel integrator. A key challenge is to devise a coarse level model that is computationally cheap but accurate enough for Parareal to converge quickly. Here, we investigate the use of a deep neural network physics model as a coarse model for Parareal in the context of robotic manipulation. In simulated experiments using the physics engine Mujoco as fine propagator we show that the learned coarse model leads to faster Parareal convergence than a coarse physics-based model. We further show that the learned coarse model allows to apply Parareal to scenarios with multiple objects, where the physics-based coarse model is not applicable. Finally, We conduct experiments on a real robot and show that Parareal predictions are close to real-world physics predictions for robotic pushing of multiple objects. Some real robot manipulation plans using Parareal can be found at https://www.youtube.com/watch?v=wCh2o1rf-gA .},
+	author = {Wisdom Agboh and Oliver Grainger and Daniel Ruprecht and Mehmet Dogar},
+	journal = {Computing and Visualization in Science},
+	title = {Parareal with a Learned Coarse Model for Robotic Manipulation},
+	url = {http://arxiv.org/abs/1912.05958v1},
+	year = {2020},
+	note = {Accepted}
 }
 
 @article{BastEtAl2020,
