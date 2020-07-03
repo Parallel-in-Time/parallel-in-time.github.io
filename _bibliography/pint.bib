@@ -19,6 +19,10 @@
 % We would very much appreciate a link/reference to parallel-in-time.org.
 %
 
+%
+% 2020
+%
+
 @article{Nievergelt1964,
 	author = {Nievergelt, J.},
 	doi = {10.1145/355588.365137},
@@ -4021,11 +4025,11 @@ setups.}},
 	abstract = {{We present a method for fast and accurate physics-based predictions during non-prehensile manipulation planning and control. Given an initial state and a sequence of controls, the problem of predicting the resulting sequence of states is a key component of a variety of model-based planning and control algorithms. We propose combining a coarse (i.e. computationally cheap but not very accurate) predictive physics model, with a fine (i.e. computationally expensive but accurate) predictive physics model, to generate a hybrid model that is at the required speed and accuracy for a given manipulation task. Our approach is based on the Parareal algorithm, a parallel-in-time integration method used for computing numerical solutions for general systems of ordinary differential equations. We use Parareal to combine a coarse pushing model with an off-the-shelf physics engine to deliver physics-based predictions that are as accurate as the physics engine but runs in substantially less wall-clock time, thanks to Parareal being amenable to parallelization. We use these physics-based predictions in a model-predictive-control framework based on trajectory optimization, to plan pushing actions that avoid an obstacle and reach a goal location. We show that by combining the two physics models, we can achieve the same success rates as the planner that uses the off-the-shelf physics engine directly, but significantly faster. We present experiments in simulation and on a real robotic setup.}},
 	author = {Wisdom C. Agboh and Daniel Ruprecht and Mehmet R. Dogar},
 	booktitle = {The International Symposium on Robotics Research (ISRR)},
+	note = {Accepted},
+	publisher = {Springer},
 	title = {Combining Coarse and Fine Physics for Manipulation using Parallel-in-Time Integration},
 	url = {https://arxiv.org/abs/1903.08470},
 	year = {2019},
-	note = {Accepted},
-	publisher = {Springer}
 }
 
 @article{BlumersEtAl2019,
@@ -4415,18 +4419,14 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
-%
-% 2020
-%
-
 @article{AgbohEtAl2020,
 	abstract = {A key component of many robotics model-based planning and control algorithms is physics predictions, that is, forecasting a sequence of states given an initial state and a sequence of controls. This process is slow and a major computational bottleneck for robotics planning algorithms. Parallel-in-time integration methods can help to leverage parallel computing to accelerate physics predictions and thus planning. The Parareal algorithm iterates between a coarse serial integrator and a fine parallel integrator. A key challenge is to devise a coarse level model that is computationally cheap but accurate enough for Parareal to converge quickly. Here, we investigate the use of a deep neural network physics model as a coarse model for Parareal in the context of robotic manipulation. In simulated experiments using the physics engine Mujoco as fine propagator we show that the learned coarse model leads to faster Parareal convergence than a coarse physics-based model. We further show that the learned coarse model allows to apply Parareal to scenarios with multiple objects, where the physics-based coarse model is not applicable. Finally, We conduct experiments on a real robot and show that Parareal predictions are close to real-world physics predictions for robotic pushing of multiple objects. Some real robot manipulation plans using Parareal can be found at https://www.youtube.com/watch?v=wCh2o1rf-gA .},
 	author = {Wisdom Agboh and Oliver Grainger and Daniel Ruprecht and Mehmet Dogar},
 	journal = {Computing and Visualization in Science},
+	note = {Accepted},
 	title = {Parareal with a Learned Coarse Model for Robotic Manipulation},
 	url = {http://arxiv.org/abs/1912.05958v1},
 	year = {2020},
-	note = {Accepted}
 }
 
 @article{BastEtAl2020,
@@ -4470,10 +4470,19 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	abstract = {{R}ayleigh-{B}\'enard convection ({RBC}) is a fundamental problem of fluid dynamics, with many applications to geophysical, astrophysical, and industrial flows. Understanding RBC at parameter regimes of interest requires complex physical or numerical experiments. Numerical simulations require large amounts of computational resources; in order to more efficiently use the large numbers of processors now available in large high performance computing clusters, novel parallelisation strategies are required. To this end, we investigate the performance of the parallel-in-time algorithm Parareal when used in numerical simulations of RBC. We present the first parallel-in-time speedups for RBC simulations at finite Prandtl number. We also investigate the problem of convergence of Parareal with respect to to statistical numerical quantities, such as the Nusselt number, and discuss the importance of reliable online stopping criteria in these cases.},
 	author = {Andrew Clarke and Chris Davies and Daniel Ruprecht and Steven Tobias and Jeffrey S. Oishi},
 	journal = {Computing and Visualization in Science},
+	note = {Accepted},
 	title = {Performance of parallel-in-time integration for {R}ayleigh {B}énard Convection},
 	url = {http://arxiv.org/abs/2001.01609v1},
 	year = {2020},
-	note = {Accepted}
+}
+
+@unpublished{FlamantEtAl2020,
+	abstract = {The time evolution of dynamical systems is frequently described by ordinary differential equations (ODEs), which must be solved for given initial conditions. Most standard approaches numerically integrate ODEs producing a single solution whose values are computed at discrete times. When many varied solutions with different initial conditions to the ODE are required, the computational cost can become significant. We propose that a neural network be used as a solution bundle, a collection of solutions to an ODE for various initial states and system parameters. The neural network solution bundle is trained with an unsupervised loss that does not require any prior knowledge of the sought solutions, and the resulting object is differentiable in initial conditions and system parameters. The solution bundle exhibits fast, parallelizable evaluation of the system state, facilitating the use of Bayesian inference for parameter estimation in real dynamical systems.},
+	author = {Cedric Flamant and Pavlos Protopapas and David Sondak},
+	howpublished = {arXiv:2006.14372v1 [cs.LG]},
+	title = {Solving Differential Equations Using Neural Network Solution Bundles},
+	url = {http://arxiv.org/abs/2006.14372v1},
+	year = {2020},
 }
 
 @unpublished{GanderEtAl2020,
@@ -4481,6 +4490,20 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	howpublished = {arXiv preprint arXiv:2005.09158},
 	title = {ParaDIAG: Parallel-in-Time Algorithms Based on the Diagonalization Technique},
 	url = {http://arxiv.org/abs/2005.09158},
+	year = {2020},
+}
+
+@article{GanderEtAl2020b,
+	author = {Martin J. Gander and Thibaut Lunet},
+	doi = {10.1002/nla.2314},
+	journal = {Numerical Linear Algebra with Applications},
+	month = {jun},
+	publisher = {Wiley},
+	title = {{ParaStieltjes}
+: Parallel computation of Gauss quadrature rules using a
+Parareal
+-like approach for the Stieltjes procedure},
+	url = {https://doi.org/10.1002%2Fnla.2314},
 	year = {2020},
 }
 
@@ -4583,6 +4606,19 @@ the effectiveness of the proposed method.},
 	publisher = {Springer Science and Business Media {LLC}},
 	title = {Analysis of two new parareal algorithms based on the Dirichlet-Neumann/Neumann-Neumann waveform relaxation method for the heat equation},
 	url = {https://doi.org/10.1007%2Fs11075-020-00949-y},
+	year = {2020},
+}
+
+@article{StumpEtAl2020,
+	author = {B. Stump and A. Plotkowski},
+	doi = {10.1016/j.commatsci.2020.109861},
+	journal = {Computational Materials Science},
+	month = {nov},
+	pages = {109861},
+	publisher = {Elsevier {BV}},
+	title = {Spatiotemporal parallelization of an analytical heat conduction model for additive manufacturing via a hybrid {OpenMP}~$\mathplus$~{MPI} approach},
+	url = {https://doi.org/10.1016%2Fj.commatsci.2020.109861},
+	volume = {184},
 	year = {2020},
 }
 
