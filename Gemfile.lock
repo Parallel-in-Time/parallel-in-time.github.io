@@ -71,7 +71,7 @@ GEM
     jgd (1.7.1)
       jekyll (>= 1.5.1)
       trollop (= 2.1.2)
-    json (2.1.0)
+    json (2.3.1)
     kramdown (1.17.0)
     latex-decode (0.3.1)
     liquid (4.0.3)
