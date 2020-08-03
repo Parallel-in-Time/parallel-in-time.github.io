@@ -4441,6 +4441,17 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2020},
 }
 
+@article{ChengEtAl2020,
+	author = {Tianshi Cheng and Tong Duan and Venkata Dinavahi},
+	doi = {10.1109/oajpe.2020.3012636},
+	journal = {{IEEE} Open Access Journal of Power and Energy},
+	pages = {1--1},
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	title = {Parallel-in-Time Object-Oriented Electromagnetic Transient Simulation of Power Systems},
+	url = {https://doi.org/10.1109%2Foajpe.2020.3012636},
+	year = {2020},
+}
+
 @article{ClarkeEtAl2020a,
 	abstract = {{The precise mechanisms responsible for the natural dynamos in the Earth and Sun are still not fully understood. Numerical simulations of natural dynamos are extremely computationally intensive, and are carried out in parameter regimes many orders of magnitude away from real conditions. Parallelization in space is a common strategy to speed up simulations on high performance computers, but eventually hits a scaling limit. Additional directions of parallelization are desirable to utilise the high number of processor cores now available. Parallel-in-time methods can deliver speed up in addition to that offered by spatial partitioning but have not yet been applied to dynamo simulations. This paper investigates the feasibility of using the parallel-in-time algorithm Parareal to speed up initial value problem simulations of the kinematic dynamo, using the open source Dedalus spectral solver. Both the time independent Roberts and time dependent Galloway-Proctor 2.5D dynamos are investigated over a range of magnetic Reynolds numbers. Speedups beyond those possible from spatial parallelisation are found in both cases. Results for the Galloway-Proctor flow are promising, with Parareal efficiency found to be close to 0.3. Roberts flow results are less efficient, but Parareal still shows some speed up over spatial parallelisation alone. Parallel in space and time speed ups of ∼300 were found for 1600 cores for the Galloway-Proctor flow, with total parallel efficiency of ∼0.16.}},
 	author = {Andrew T. Clarke and Christopher J. Davies and Daniel Ruprecht and Steven M. Tobias},
@@ -4667,6 +4678,26 @@ the effectiveness of the proposed method.},
 	howpublished = {arXiv:2007.13125v1 [math.NA]},
 	title = {Parallel-in-time high-order BDF schemes for diffusion and subdiffusion equations},
 	url = {http://arxiv.org/abs/2007.13125v1},
+	year = {2020},
+}
+
+@article{ZhaoEtAl2020,
+	author = {Yong-Liang Zhao and Xian-Ming Gu and Meng Li and Huan-Yan Jian},
+	doi = {10.1007/s12190-020-01410-y},
+	journal = {Journal of Applied Mathematics and Computing},
+	month = {jul},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {Preconditioners for all-at-once system from the fractional mobile/immobile advection{\textendash}diffusion model},
+	url = {https://doi.org/10.1007%2Fs12190-020-01410-y},
+	year = {2020},
+}
+
+@unpublished{ZhaoEtAl2020b,
+	abstract = {Volterra subdiffusion problems with weakly singular kernel describe the dynamics of subdiffusion processes well.The graded $L1$ scheme is often chosen to discretize such problems since it can handle the singularity of the solution near $t = 0$. In this paper, we propose a modification. We first split the time interval $[0, T]$ into $[0, T_0]$ and $[T_0, T]$, where $T_0$ ($0 < T_0 < T$) is reasonably small. Then, the graded $L1$ scheme is applied in $[0, T_0]$, while the uniform one is used in $[T_0, T]$. Our all-at-once system is derived based on this strategy. In order to solve the arising system efficiently, we split it into two subproblems and design two preconditioners. Some properties of these two preconditioners are also investigated. Moreover, we extend our method to solve semilinear subdiffusion problems. Numerical results are reported to show the efficiency of our method.},
+	author = {Yong-Liang Zhao and Xian-Ming Gu and Alexander Ostermann},
+	howpublished = {arXiv:2007.14636v1 [math.NA]},
+	title = {A parallel preconditioning technique for an all-at-once system from subdiffusion equations with variable time steps},
+	url = {http://arxiv.org/abs/2007.14636v1},
 	year = {2020},
 }
 
