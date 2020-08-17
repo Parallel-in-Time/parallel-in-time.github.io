@@ -866,6 +866,60 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          JałowieckiEtAl2020
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseJałowieckiEtAl2020Bibtex"
+                    aria-expanded="false" aria-controls="collapseJałowieckiEtAl2020Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalJałowieckiEtAl2020Abstract"
+                    aria-expanded="false" aria-controls="modalJałowieckiEtAl2020Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="JałowieckiEtAl2020">K. Jałowiecki, A. Więckowski, P. Gawron, and B. Gardas, “Parallel in time dynamics with quantum annealers,” <i>Scientific Reports</i>, vol. 10, no. 1, Aug. 2020 [Online]. Available at: <a href="https://doi.org/10.1038%2Fs41598-020-70017-x" target="_blank">https://doi.org/10.1038%2Fs41598-020-70017-x</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseJałowieckiEtAl2020Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{JałowieckiEtAl2020,
+  author = {Ja{\l}owiecki, Konrad and Wi{\k{e}}ckowski, Andrzej and Gawron, Piotr and Gardas, Bart{\l}omiej},
+  doi = {10.1038/s41598-020-70017-x},
+  journal = {Scientific Reports},
+  month = aug,
+  number = {1},
+  publisher = {Springer Science and Business Media {LLC}},
+  title = {Parallel in time dynamics with quantum annealers},
+  url = {https://doi.org/10.1038%2Fs41598-020-70017-x},
+  volume = {10},
+  year = {2020}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           KirbyEtAl2020
         </div>
       </div>
@@ -2591,71 +2645,6 @@ The influence on the performance of the parareal algorithm, of the choice of the
         </div>
         <div class="modal-body">
           We apply a multigrid reduction-in-time (MGRIT) algorithm to hyperbolic partial differential equations in one spatial dimension. This study is motivated by the observation that sequential time-stepping is a computational bottleneck when attempting to implement highly concurrent algorithms, thus parallel-in-time methods are desirable. MGRIT adds parallelism by using a hierarchy of successively coarser temporal levels to accelerate the solution on the finest level. In the case of explicit time-stepping, spatial coarsening is a suitable approach to ensure that stability conditions are satisfied on all levels, and it may be useful for implicit time-stepping by producing cheaper multigrid cycles. Unfortunately, uniform spatial coarsening results in extremely slow convergence when the wave speed is near zero, even if only locally. We present an adaptive spatial coarsening strategy that addresses this issue for the variable coefficient linear advection equation and the inviscid Burgers equation using first-order explicit or implicit time-stepping methods. Serial numerical results show this method offers significant improvements over uniform coarsening and is convergent for the inviscid Burgers equation with and without shocks. Parallel scaling tests on up to 128K cores indicate that run-time improvements over serial time-stepping strategies are possible when spatial parallelism alone saturates, and that scalability is robust for oscillatory solutions which change on the scale of the grid spacing.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          JałowieckiEtAl2019
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseJałowieckiEtAl2019Bibtex"
-                    aria-expanded="false" aria-controls="collapseJałowieckiEtAl2019Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalJałowieckiEtAl2019Abstract"
-                    aria-expanded="false" aria-controls="modalJałowieckiEtAl2019Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="JałowieckiEtAl2019">K. Jałowiecki, A. Więckowski, P. Gawron, and B. Gardas, “Parallel in time dynamics with quantum annealers,” arXiv:1909.04929v2 [quant-ph], 2019 [Online]. Available at: <a href="http://arxiv.org/abs/1909.04929v2" target="_blank">http://arxiv.org/abs/1909.04929v2</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseJałowieckiEtAl2019Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{JałowieckiEtAl2019,
-  author = {Jałowiecki, Konrad and Więckowski, Andrzej and Gawron, Piotr and Gardas, Bartłomiej},
-  howpublished = {arXiv:1909.04929v2 [quant-ph]},
-  title = {Parallel in time dynamics with quantum annealers},
-  url = {http://arxiv.org/abs/1909.04929v2},
-  year = {2019}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalJałowieckiEtAl2019Abstract" tabindex="-1" role="dialog" aria-labelledby="modalJałowieckiEtAl2019AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalJałowieckiEtAl2019AbstractTitle">
-            Abstract for BibTeX entry <code>JałowieckiEtAl2019</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          Recent years have witnessed an unprecedented increase in experiments and hybrid simulations involving quantum computers. In particular, quantum annealers. Although quantum supremacy has not been established thus far, there exist a plethora of algorithms promising to outperform classical computers in the near-term future. Here, we propose a parallel in time approach to simulate dynamical systems designed to be executed already on present-day quantum annealers. In essence, purely classical methods for solving dynamics systems are serial. Therefore, their parallelization is substantially limited. In the presented approach, however, the time evolution is rephrased as a ground–state search of a classical Ising model. Such a problem is solved intrinsically in parallel by quantum computers. The main idea is exemplified by simulating the Rabi oscillations generated by a two-level quantum system (i.e. qubit) experimentally.
         </div>
       </div>
     </div>
