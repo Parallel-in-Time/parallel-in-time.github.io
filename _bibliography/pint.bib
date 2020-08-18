@@ -4504,6 +4504,15 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2020},
 }
 
+@unpublished{HahneEtAl2020,
+	abstract = {In this paper, we introduce the Python framework PyMGRIT, which implements the multigrid-reduction-in-time (MGRIT) algorithm for solving the (non-)linear systems arising from the discretization of time-dependent problems. The MGRIT algorithm is a reduction-based iterative method that allows parallel-in-time simulations, i. e., calculating multiple time steps simultaneously in a simulation, by using a time-grid hierarchy. The PyMGRIT framework features many different variants of the MGRIT algorithm, ranging from different multigrid cycle types and relaxation schemes, as well as various coarsening strategies, including time-only and space-time coarsening, to using different time integrators on different levels in the multigrid hierachy. PyMGRIT allows serial runs for prototyping and testing of new approaches, as well as parallel runs using the Message Passing Interface (MPI). Here, we describe the implementation of the MGRIT algorithm in PyMGRIT and present the usage from both user and developer point of views. Three examples illustrate different aspects of the package, including pure time parallelism as well as space-time parallelism by coupling PyMGRIT with PETSc or Firedrake, which enable spatial parallelism through MPI.},
+	author = {Jens Hahne and Stephanie Friedhoff and Matthias Bolten},
+	howpublished = {arXiv:2008.05172v1 [cs.MS]},
+	title = {PyMGRIT: A Python Package for the parallel-in-time method MGRIT},
+	url = {http://arxiv.org/abs/2008.05172v1},
+	year = {2020},
+}
+
 @article{HessenthalerEtAl2020,
 	author = {Andreas Hessenthaler and Ben S. Southworth and David Nordsletten and Oliver Röhrle and Robert D. Falgout and Jacob B. Schroder},
 	doi = {10.1137/19m1238812},
