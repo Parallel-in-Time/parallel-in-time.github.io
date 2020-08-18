@@ -758,6 +758,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          HahneEtAl2020
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseHahneEtAl2020Bibtex"
+                    aria-expanded="false" aria-controls="collapseHahneEtAl2020Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalHahneEtAl2020Abstract"
+                    aria-expanded="false" aria-controls="modalHahneEtAl2020Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="HahneEtAl2020">J. Hahne, S. Friedhoff, and M. Bolten, “PyMGRIT: A Python Package for the parallel-in-time method MGRIT,” arXiv:2008.05172v1 [cs.MS], 2020 [Online]. Available at: <a href="http://arxiv.org/abs/2008.05172v1" target="_blank">http://arxiv.org/abs/2008.05172v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseHahneEtAl2020Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{HahneEtAl2020,
+  author = {Hahne, Jens and Friedhoff, Stephanie and Bolten, Matthias},
+  howpublished = {arXiv:2008.05172v1 [cs.MS]},
+  title = {PyMGRIT: A Python Package for the parallel-in-time method MGRIT},
+  url = {http://arxiv.org/abs/2008.05172v1},
+  year = {2020}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalHahneEtAl2020Abstract" tabindex="-1" role="dialog" aria-labelledby="modalHahneEtAl2020AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalHahneEtAl2020AbstractTitle">
+            Abstract for BibTeX entry <code>HahneEtAl2020</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          In this paper, we introduce the Python framework PyMGRIT, which implements the multigrid-reduction-in-time (MGRIT) algorithm for solving the (non-)linear systems arising from the discretization of time-dependent problems. The MGRIT algorithm is a reduction-based iterative method that allows parallel-in-time simulations, i. e., calculating multiple time steps simultaneously in a simulation, by using a time-grid hierarchy. The PyMGRIT framework features many different variants of the MGRIT algorithm, ranging from different multigrid cycle types and relaxation schemes, as well as various coarsening strategies, including time-only and space-time coarsening, to using different time integrators on different levels in the multigrid hierachy. PyMGRIT allows serial runs for prototyping and testing of new approaches, as well as parallel runs using the Message Passing Interface (MPI). Here, we describe the implementation of the MGRIT algorithm in PyMGRIT and present the usage from both user and developer point of views. Three examples illustrate different aspects of the package, including pure time parallelism as well as space-time parallelism by coupling PyMGRIT with PETSc or Firedrake, which enable spatial parallelism through MPI.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           HessenthalerEtAl2020
         </div>
       </div>
