@@ -27,14 +27,15 @@ def crossref_query_title(title):
         items = data["message"]["items"]
         most_similar = EMPTY_RESULT
         for item in items:
-            title = item["title"][0]
-            result = {
-                "crossref_title": title,
-                "similarity": ratio(title.lower(), params["query.bibliographic"].lower()),
-                "doi": item["DOI"]
-            }
-            if most_similar["similarity"] < result["similarity"]:
-                most_similar = result
+            if 'title' in item:
+                title = item["title"][0]
+                result = {
+                    "crossref_title": title,
+                    "similarity": ratio(title.lower(), params["query.bibliographic"].lower()),
+                    "doi": item["DOI"]
+                }
+                if most_similar["similarity"] < result["similarity"]:
+                    most_similar = result
         return {"success": True, "result": most_similar}
     except HTTPError as httpe:
         return {"success": False, "result": EMPTY_RESULT, "exception": httpe}
