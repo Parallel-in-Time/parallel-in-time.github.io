@@ -14,7 +14,7 @@ jobs:
           python3 -m pip install --user --upgrade pip
           python3 -m pip install --user setuptools
           python3 -m pip install --user python-Levenshtein bibtexparser
-          python3 arxiv_to_publications_detect.py > issue.md 2>&1
+          python3 arxiv_to_publications_detect.py 
           echo "::set-output name=ISSUE::$(cat issue.md)"
         id: updater
       - name: Create issue from output
