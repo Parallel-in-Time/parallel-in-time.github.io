@@ -97,6 +97,11 @@ if __name__ == '__main__':
             req = requests.get(url, headers={'Accept': 'application/x-bibtex'})
             bib = req.content.decode()
             req = requests.get(url, headers={'Accept': 'application/json'})
+
+            if not req.status_code == 200:
+                print(f'Request of {url} could not be processed, got status code {req.status_code}.')
+                break
+
             data = req.json()
 
             if len(data['author']) > 1:
