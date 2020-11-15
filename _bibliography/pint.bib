@@ -3625,15 +3625,6 @@ setups.}},
 	year = {2018},
 }
 
-@unpublished{GanderEtAl2018b,
-	abstract = {{The Parareal algorithm, which is related to multiple shooting, was introduced for solving evolution problems in a time-parallel manner. The algorithm was then extended to solve time-periodic problems. We are interested here in time-periodic systems which are forced with quickly-switching discontinuous inputs. Such situations occur, e.g., in power engineering when electric devices are excited with a pulse-width-modulated signal. In order to solve those problems numerically we consider a recently introduced modified Parareal method with reduced coarse dynamics. Its main idea is to use a low-frequency smooth input for the coarse problem, which can be obtained, e.g., from Fourier analysis. Based on this approach, we present and analyze a new Parareal algorithm for time-periodic problems with highly-oscillatory discontinuous sources. We illustrate the performance of the method via its application to the simulation of an induction machine.}},
-	author = {Gander, Martin J. and Kulchytska-Ruchka, Iryna and Schöps, Sebastian},
-	howpublished = {arXiv:1810.12372 [math.NA]},
-	title = {A New Parareal Algorithm for Time-Periodic Problems with Discontinuous Inputs},
-	url = {https://arxiv.org/abs/1810.12372},
-	year = {2018},
-}
-
 @article{GoddenWathen2018,
 	abstract = {{McDonald, Pestana, and Wathen [SIAM J. Sci. Comput., 40 (2018), pp. A1012–A1033] present a method for preconditioning time-dependent PDEs via an approximation by a nearby time-periodic problem, that is, they employ circulant-related matrices as preconditioners for the non-symmetric block Toeplitz matrices which arise from an all-at-once formulation. They suggest that such an approach might be efficiently implemented in parallel. In this short article, we present parallel numerical results for their preconditioner which exhibit strong scaling. We also extend their preconditioner via a Neumann series approach which also allows for efficient parallel execution. Results are shown for both parabolic and hyperbolic PDEs. Our simple implementation (in C++ and MPI) is available at the Git repository PARALAAOMPI.}},
 	address = {Wien},
@@ -4562,6 +4553,17 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	title = {A Diagonalization-Based Parareal Algorithm for Dissipative and Wave Propagation Problems},
 	url = {https://doi.org/10.1137%2F19m1271683},
 	volume = {58},
+	year = {2020},
+}
+
+@incollection{GanderEtAl2020e,
+	author = {Martin J. Gander and Iryna Kulchytska-Ruchka and Sebastian Schöps},
+	booktitle = {Lecture Notes in Computational Science and Engineering},
+	doi = {10.1007/978-3-030-56750-7_27},
+	pages = {243--250},
+	publisher = {Springer International Publishing},
+	title = {A New Parareal Algorithm for Time-Periodic Problems with Discontinuous Inputs},
+	url = {https://doi.org/10.1007%2F978-3-030-56750-7_27},
 	year = {2020},
 }
 
