@@ -19,7 +19,7 @@ jobs:
           echo "::set-output name=ISSUE::$(cat issue.md)"
         id: updater
       - name: Create issue from output
-        uses: JasonEtco/create-an-issue@main
+        uses: JasonEtco/create-an-issue@v2
         if: steps.updater.outputs.ISSUE != ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
