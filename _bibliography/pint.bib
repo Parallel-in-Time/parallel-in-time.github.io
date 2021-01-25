@@ -4993,6 +4993,15 @@ the effectiveness of the proposed method.},
 	year = {2020},
 }
 
+@unpublished{DanieliEtAl2021,
+	abstract = {Parallel-in-time methods have become increasingly popular in the simulation of time-dependent numerical PDEs, allowing for the efficient use of additional MPI processes when spatial parallelism saturates. Most methods treat the solution and parallelism in space and time separately. In contrast, all-at-once methods solve the full space-time system directly, largely treating time as simply another spatial dimension. All-at-once methods offer a number of benefits over separate treatment of space and time, most notably significantly increased parallelism and faster time-to-solution (when applicable). However, the development of fast, scalable all-at-once methods has largely been limited to time-dependent (advection-)diffusion problems. This paper introduces the concept of space-time block preconditioning for the all-at-once solution of incompressible flow. By extending well-known concepts of spatial block preconditioning to the space-time setting, we develop a block preconditioner whose application requires the solution of a space-time (advection-)diffusion equation in the velocity block, coupled with a pressure Schur complement approximation consisting of independent spatial solves at each time-step, and a space-time matrix-vector multiplication. The new method is tested on four classical models in incompressible flow. Results indicate perfect scalability in refinement of spatial and temporal mesh spacing, perfect scalability in nonlinear Picard iterations count when applied to a nonlinear Navier-Stokes problem, and minimal overhead in terms of number of preconditioner applications compared with sequential time-stepping.},
+	author = {Federico Danieli and Ben S. Southworth and Andrew J. Wathen},
+	howpublished = {arXiv:2101.07003v1 [math.NA]},
+	title = {Space-time block preconditioning for incompressible flow},
+	url = {http://arxiv.org/abs/2101.07003v1},
+	year = {2021},
+}
+
 @inproceedings{PatilEtAl2021,
 	author = {Mrinalgouda Patil and Anubhav Datta},
 	booktitle = {{AIAA} Scitech 2021 Forum},
