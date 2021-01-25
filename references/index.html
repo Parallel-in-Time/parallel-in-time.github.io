@@ -181,6 +181,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          DanieliEtAl2021
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseDanieliEtAl2021Bibtex"
+                    aria-expanded="false" aria-controls="collapseDanieliEtAl2021Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalDanieliEtAl2021Abstract"
+                    aria-expanded="false" aria-controls="modalDanieliEtAl2021Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="DanieliEtAl2021">F. Danieli, B. S. Southworth, and A. J. Wathen, “Space-time block preconditioning for incompressible flow,” arXiv:2101.07003v1 [math.NA], 2021 [Online]. Available at: <a href="http://arxiv.org/abs/2101.07003v1" target="_blank">http://arxiv.org/abs/2101.07003v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseDanieliEtAl2021Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{DanieliEtAl2021,
+  author = {Danieli, Federico and Southworth, Ben S. and Wathen, Andrew J.},
+  howpublished = {arXiv:2101.07003v1 [math.NA]},
+  title = {Space-time block preconditioning for incompressible flow},
+  url = {http://arxiv.org/abs/2101.07003v1},
+  year = {2021}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalDanieliEtAl2021Abstract" tabindex="-1" role="dialog" aria-labelledby="modalDanieliEtAl2021AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalDanieliEtAl2021AbstractTitle">
+            Abstract for BibTeX entry <code>DanieliEtAl2021</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          Parallel-in-time methods have become increasingly popular in the simulation of time-dependent numerical PDEs, allowing for the efficient use of additional MPI processes when spatial parallelism saturates. Most methods treat the solution and parallelism in space and time separately. In contrast, all-at-once methods solve the full space-time system directly, largely treating time as simply another spatial dimension. All-at-once methods offer a number of benefits over separate treatment of space and time, most notably significantly increased parallelism and faster time-to-solution (when applicable). However, the development of fast, scalable all-at-once methods has largely been limited to time-dependent (advection-)diffusion problems. This paper introduces the concept of space-time block preconditioning for the all-at-once solution of incompressible flow. By extending well-known concepts of spatial block preconditioning to the space-time setting, we develop a block preconditioner whose application requires the solution of a space-time (advection-)diffusion equation in the velocity block, coupled with a pressure Schur complement approximation consisting of independent spatial solves at each time-step, and a space-time matrix-vector multiplication. The new method is tested on four classical models in incompressible flow. Results indicate perfect scalability in refinement of spatial and temporal mesh spacing, perfect scalability in nonlinear Picard iterations count when applied to a nonlinear Navier-Stokes problem, and minimal overhead in terms of number of preconditioner applications compared with sequential time-stepping.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           PatilEtAl2021
         </div>
       </div>
