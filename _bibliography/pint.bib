@@ -4402,10 +4402,10 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	abstract = {A key component of many robotics model-based planning and control algorithms is physics predictions, that is, forecasting a sequence of states given an initial state and a sequence of controls. This process is slow and a major computational bottleneck for robotics planning algorithms. Parallel-in-time integration methods can help to leverage parallel computing to accelerate physics predictions and thus planning. The Parareal algorithm iterates between a coarse serial integrator and a fine parallel integrator. A key challenge is to devise a coarse level model that is computationally cheap but accurate enough for Parareal to converge quickly. Here, we investigate the use of a deep neural network physics model as a coarse model for Parareal in the context of robotic manipulation. In simulated experiments using the physics engine Mujoco as fine propagator we show that the learned coarse model leads to faster Parareal convergence than a coarse physics-based model. We further show that the learned coarse model allows to apply Parareal to scenarios with multiple objects, where the physics-based coarse model is not applicable. Finally, We conduct experiments on a real robot and show that Parareal predictions are close to real-world physics predictions for robotic pushing of multiple objects. Some real robot manipulation plans using Parareal can be found at https://www.youtube.com/watch?v=wCh2o1rf-gA .},
 	author = {Wisdom Agboh and Oliver Grainger and Daniel Ruprecht and Mehmet Dogar},
 	journal = {Computing and Visualization in Science},
-	volume = {23},
 	number = {8},
 	title = {Parareal with a Learned Coarse Model for Robotic Manipulation},
 	url = {https://doi.org/10.1007/s00791-020-00327-0},
+	volume = {23},
 	year = {2020},
 }
 
@@ -4512,10 +4512,10 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	abstract = {{R}ayleigh-{B}\'enard convection ({RBC}) is a fundamental problem of fluid dynamics, with many applications to geophysical, astrophysical, and industrial flows. Understanding RBC at parameter regimes of interest requires complex physical or numerical experiments. Numerical simulations require large amounts of computational resources; in order to more efficiently use the large numbers of processors now available in large high performance computing clusters, novel parallelisation strategies are required. To this end, we investigate the performance of the parallel-in-time algorithm Parareal when used in numerical simulations of RBC. We present the first parallel-in-time speedups for RBC simulations at finite Prandtl number. We also investigate the problem of convergence of Parareal with respect to to statistical numerical quantities, such as the Nusselt number, and discuss the importance of reliable online stopping criteria in these cases.},
 	author = {Andrew Clarke and Chris Davies and Daniel Ruprecht and Steven Tobias and Jeffrey S. Oishi},
 	journal = {Computing and Visualization in Science},
-	volume = {23},
 	number = {10},
 	title = {Performance of parallel-in-time integration for {R}ayleigh {B}énard Convection},
 	url = {https://doi.org/10.1007/s00791-020-00332-3},
+	volume = {23},
 	year = {2020},
 }
 
@@ -5010,6 +5010,15 @@ the effectiveness of the proposed method.},
 	howpublished = {arXiv:2101.07003v1 [math.NA]},
 	title = {Space-time block preconditioning for incompressible flow},
 	url = {http://arxiv.org/abs/2101.07003v1},
+	year = {2021},
+}
+
+@unpublished{LinEtAl2021,
+	abstract = {In this paper, we study a parallel-in-time (PinT) algorithm for all-at-once system from a non-local evolutionary equation with weakly singular kernel where the temporal term involves a non-local convolution with a weakly singular kernel and the spatial term is the usual Laplacian operator with variable coefficients. We propose to use a two-sided preconditioning technique for the all-at-once discretization of the equation. Our preconditioner is constructed by replacing the variable diffusion coefficients with a constant coefficient to obtain a constant-coefficient all-at-once matrix. We split a square root of the constant Laplacian operator out of the constant-coefficient all-at-once matrix as a right preconditioner and take the remaining part as a left preconditioner, which constitutes our two-sided preconditioning. Exploiting the diagonalizability of the constant-Laplacian matrix and the triangular Toeplitz structure of the temporal discretization matrix, we obtain efficient representations of inverses of the right and the left preconditioners, because of which the iterative solution can be fast updated in a PinT manner. Theoretically, the condition number of the two-sided preconditioned matrix is proven to be uniformly bounded by a constant independent of the matrix size. To the best of our knowledge, for the non-local evolutionary equation with variable coefficients, this is the first attempt to develop a PinT preconditioning technique that has fast and exact implementation and that the corresponding preconditioned system has a uniformly bounded condition number. Numerical results are reported to confirm the efficiency of the proposed two-sided preconditioning technique.},
+	author = {Xue-lei Lin and Michael K. Ng and Yajing Zhi},
+	howpublished = {arXiv:2102.00363v1 [math.NA]},
+	title = {A parallel-in-time two-sided preconditioning for all-at-once system from a non-local evolutionary equation with weakly singular kernel},
+	url = {http://arxiv.org/abs/2102.00363v1},
 	year = {2021},
 }
 
