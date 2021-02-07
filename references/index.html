@@ -311,6 +311,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          LinEtAl2021
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseLinEtAl2021Bibtex"
+                    aria-expanded="false" aria-controls="collapseLinEtAl2021Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalLinEtAl2021Abstract"
+                    aria-expanded="false" aria-controls="modalLinEtAl2021Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="LinEtAl2021">X.-lei Lin, M. K. Ng, and Y. Zhi, “A parallel-in-time two-sided preconditioning for all-at-once system from a non-local evolutionary equation with weakly singular kernel,” arXiv:2102.00363v1 [math.NA], 2021 [Online]. Available at: <a href="http://arxiv.org/abs/2102.00363v1" target="_blank">http://arxiv.org/abs/2102.00363v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseLinEtAl2021Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{LinEtAl2021,
+  author = {Lin, Xue-lei and Ng, Michael K. and Zhi, Yajing},
+  howpublished = {arXiv:2102.00363v1 [math.NA]},
+  title = {A parallel-in-time two-sided preconditioning for all-at-once system from a non-local evolutionary equation with weakly singular kernel},
+  url = {http://arxiv.org/abs/2102.00363v1},
+  year = {2021}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalLinEtAl2021Abstract" tabindex="-1" role="dialog" aria-labelledby="modalLinEtAl2021AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalLinEtAl2021AbstractTitle">
+            Abstract for BibTeX entry <code>LinEtAl2021</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          In this paper, we study a parallel-in-time (PinT) algorithm for all-at-once system from a non-local evolutionary equation with weakly singular kernel where the temporal term involves a non-local convolution with a weakly singular kernel and the spatial term is the usual Laplacian operator with variable coefficients. We propose to use a two-sided preconditioning technique for the all-at-once discretization of the equation. Our preconditioner is constructed by replacing the variable diffusion coefficients with a constant coefficient to obtain a constant-coefficient all-at-once matrix. We split a square root of the constant Laplacian operator out of the constant-coefficient all-at-once matrix as a right preconditioner and take the remaining part as a left preconditioner, which constitutes our two-sided preconditioning. Exploiting the diagonalizability of the constant-Laplacian matrix and the triangular Toeplitz structure of the temporal discretization matrix, we obtain efficient representations of inverses of the right and the left preconditioners, because of which the iterative solution can be fast updated in a PinT manner. Theoretically, the condition number of the two-sided preconditioned matrix is proven to be uniformly bounded by a constant independent of the matrix size. To the best of our knowledge, for the non-local evolutionary equation with variable coefficients, this is the first attempt to develop a PinT preconditioning technique that has fast and exact implementation and that the corresponding preconditioned system has a uniformly bounded condition number. Numerical results are reported to confirm the efficiency of the proposed two-sided preconditioning technique.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           PatilEtAl2021
         </div>
       </div>
@@ -537,10 +602,10 @@
         <pre class="abstract">@article{AgbohEtAl2020,
   author = {Agboh, Wisdom and Grainger, Oliver and Ruprecht, Daniel and Dogar, Mehmet},
   journal = {Computing and Visualization in Science},
-  volume = {23},
   number = {8},
   title = {Parareal with a Learned Coarse Model for Robotic Manipulation},
   url = {https://doi.org/10.1007/s00791-020-00327-0},
+  volume = {23},
   year = {2020}
 }
 </pre>
@@ -1132,10 +1197,10 @@
         <pre class="abstract">@article{ClarkeEtAl2020b,
   author = {Clarke, Andrew and Davies, Chris and Ruprecht, Daniel and Tobias, Steven and Oishi, Jeffrey S.},
   journal = {Computing and Visualization in Science},
-  volume = {23},
   number = {10},
   title = {Performance of parallel-in-time integration for {R}ayleigh {B}énard Convection},
   url = {https://doi.org/10.1007/s00791-020-00332-3},
+  volume = {23},
   year = {2020}
 }
 </pre>
