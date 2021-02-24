@@ -5016,6 +5016,15 @@ the effectiveness of the proposed method.},
 	year = {2021},
 }
 
+@unpublished{GoetschelEtAl2021,
+	abstract = {Getting good speedup -- let alone high parallel efficiency -- for parallel-in-time (PinT) integration examples can be frustratingly difficult. The high complexity and large number of parameters in PinT methods can easily (and unintentionally) lead to numerical experiments that overestimate the algorithm's performance. In the tradition of Bailey's article "Twelve ways to fool the masses when giving performance results on parallel computers", we discuss and demonstrate pitfalls to avoid when evaluating performance of PinT methods. Despite being written in a light-hearted tone, this paper is intended to raise awareness that there are many ways to unintentionally fool yourself and others and that by avoiding these fallacies more meaningful PinT performance results can be obtained.},
+	author = {Sebastian Goetschel and Michael Minion and Daniel Ruprecht and Robert Speck},
+	howpublished = {arXiv:2102.11670v1 [math.NA]},
+	title = {Twelve Ways To Fool The Masses When Giving Parallel-In-Time Results},
+	url = {http://arxiv.org/abs/2102.11670v1},
+	year = {2021},
+}
+
 @unpublished{LinEtAl2021,
 	abstract = {In this paper, we study a parallel-in-time (PinT) algorithm for all-at-once system from a non-local evolutionary equation with weakly singular kernel where the temporal term involves a non-local convolution with a weakly singular kernel and the spatial term is the usual Laplacian operator with variable coefficients. We propose to use a two-sided preconditioning technique for the all-at-once discretization of the equation. Our preconditioner is constructed by replacing the variable diffusion coefficients with a constant coefficient to obtain a constant-coefficient all-at-once matrix. We split a square root of the constant Laplacian operator out of the constant-coefficient all-at-once matrix as a right preconditioner and take the remaining part as a left preconditioner, which constitutes our two-sided preconditioning. Exploiting the diagonalizability of the constant-Laplacian matrix and the triangular Toeplitz structure of the temporal discretization matrix, we obtain efficient representations of inverses of the right and the left preconditioners, because of which the iterative solution can be fast updated in a PinT manner. Theoretically, the condition number of the two-sided preconditioned matrix is proven to be uniformly bounded by a constant independent of the matrix size. To the best of our knowledge, for the non-local evolutionary equation with variable coefficients, this is the first attempt to develop a PinT preconditioning technique that has fast and exact implementation and that the corresponding preconditioned system has a uniformly bounded condition number. Numerical results are reported to confirm the efficiency of the proposed two-sided preconditioning technique.},
 	author = {Xue-lei Lin and Michael K. Ng and Yajing Zhi},
