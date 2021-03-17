@@ -2,6 +2,7 @@ import argparse
 import re
 import requests
 import fileinput
+import urllib
 
 from arxivcheck.arxiv import get_arxiv_info
 
@@ -132,6 +133,8 @@ if __name__ == '__main__':
 
             if not duplicate:
                 bib = re.sub(r'(@[a-z]*{)(.*),', r'\1' + id + ',', bib)
+                url_bad = re.search(r'url\s*=\s*{(.*)}', bib).groups()[0]
+                bib = re.sub(r'(url\s*=\s*{)(.*)}', r'\1' + urllib.parse.unquote(url_bad) + '}', bib)
                 bib_db = bibtexparser.loads(bib)
             else:
                 bib_db = None
