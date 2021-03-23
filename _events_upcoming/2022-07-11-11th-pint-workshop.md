@@ -3,8 +3,8 @@ layout: page_event
 title: "PinT 2022: 11th Workshop on Parallel-in-Time Integration"
 date: 2021-03-22 08:00:00 +0000
 event_location: Marseille, France
-event_start: 2021-8-2 00:00
-event_end: 2021-8-6 00:00
+event_start: 2022-7-11 00:00
+event_end: 2022-7-16 00:00
 event_url: https://www.chairejeanmorlet.com/2642.html
 navbar: Events
 subnavbar: Upcoming
