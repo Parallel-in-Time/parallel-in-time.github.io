@@ -3,7 +3,7 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ParaDIAG</title>
+  <title>ParaDiag</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <link rel="canonical" href="http://parallel-in-time.org/codes/paradiag.html">
@@ -104,7 +104,7 @@
     </li>
   
     <li class="active">
-      <a href="/codes/paradiag.html">ParaDIAG</a>
+      <a href="/codes/paradiag.html">ParaDiag</a>
     </li>
   
     <li >
@@ -147,17 +147,77 @@
       <div class="container">
         <div class="post post-code">
   <header class="post-header">
-    <h1>ParaDIAG</h1>
+    <h1>ParaDiag</h1>
     
   </header>
   <article class="post-content">
     <div class="row">
       <div class="col-md-8 content">
-        <p>ParaDIAG is a class of Parallel-in-Time (PinT) algorithms based on the diagonalization technique <a href="#GanderEtAl2020">[1]</a>. 
- ParaDIAG can handle both the dissipative problems (e.g., the advection-diffusion equations) and 
- the purely wave equations (e.g., the acoustic equation).</p>
+        <p>ParaDiag is a collection of <em>diagonalization-based</em> parallel-in-time (PinT) algorithms and can be categorized into two classes:</p>
+
+<ul>
+  <li>Direct ParaDiag algorithms</li>
+  <li>Iterative ParaDiag algorithms</li>
+</ul>
+
+<p>The general idea for all the ParaDiag algorithms is to form the difference equations arising from some time discretization (e.g., the backward Euler method or the trapezoidal rule) into an <em>all-at-once</em> system and then solve such a system  directly or iteratively. Maday and Ronquist first introduced this idea in <a href="#MadayRonquist2008">[1]</a>.</p>
+
+<p>For direct ParaDiag algorithms, we diagonalize  the time discretization matrix and decouple the all-at-once system into a series of sub-systems, which can be solved in parallel across all time levels. The research for direct ParaDiag algorithms focuses on making the time discretization matrix be diagonalizable and making  the condition number of the eigenvector matrix as small as possible. For the iterative ParaDiag algorithms, we precondition the all-at-once system by a block $\alpha$-circulant matrix and solve the preconditioning step for each iteration via a  block  Fourier spectral factorization.</p>
+
+<p>ParaDiag algorithms can handle both dissipative and hyperbolic equations (such as acoustic equations  and the Schrödinger equations).  An introductory  document in this field is <a href="#GanderEtAl2020">[2]</a>, where the reader can find   variants,   applications and some representative theoretical results of ParaDiag. This document will be updated regularly when new interesting progress appears.</p>
 
 <ol class="bibliography"><li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          MadayRonquist2008
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseMadayRonquist2008Bibtex" aria-expanded="false" aria-controls="collapseMadayRonquist2008Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalMadayRonquist2008Abstract" aria-expanded="false" aria-controls="modalMadayRonquist2008Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="MadayRonquist2008">Y. Maday and E. M. Rønquist, “Parallelization in time through tensor-product space-time solvers,” <i>Comptes Rendus Mathematique</i>, vol. 346, no. 1–2, pp. 113–118, 2008 [Online]. Available at: <a href="http://dx.doi.org/10.1016/j.crma.2007.09.012" target="_blank">http://dx.doi.org/10.1016/j.crma.2007.09.012</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseMadayRonquist2008Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{MadayRonquist2008,
+  author = {Maday, Yvon and Rønquist, Einar M.},
+  doi = {{10.1016/j.crma.2007.09.012}},
+  journal = {Comptes Rendus Mathematique},
+  number = {1--2},
+  pages = {113--118},
+  title = {{Parallelization in time through tensor-product space-time solvers}},
+  url = {{http://dx.doi.org/10.1016/j.crma.2007.09.012}},
+  volume = {346},
+  year = {2008}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
   <div>
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
@@ -274,14 +334,14 @@
           
             <span class="clearfix">
               
-                See ParaDIAG github page
+                See ParaDiag github page
               
               
                 <span class="pull-right">
                   
                   
                   
-                    <a href="https://github.com/wushulin/ParaDIAG" title="See ParaDIAG github page"><i class="fa fa-link fa-fw"></i></a>
+                    <a href="https://github.com/wushulin/ParaDIAG" title="See ParaDiag github page"><i class="fa fa-link fa-fw"></i></a>
                   
                 </span>
               
