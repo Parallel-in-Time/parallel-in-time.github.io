@@ -26,7 +26,7 @@ ParaDiag is a collection of *diagonalization-based* parallel-in-time (PinT) algo
 * Direct ParaDiag algorithms
 * Iterative ParaDiag algorithms
 
-The general idea for all the ParaDiag algorithms is to form the difference equations arising from some time discretization (e.g., the backward Euler method or the trapezoidal rule) into an *all-at-once* system and then solve such a system  directly or iteratively. Maday and Ronquist first introduced this idea in {% cite MadayRonquist2008 %}.
+The general idea for all the ParaDiag algorithms is to form the difference equations arising from some time discretization (e.g., the backward Euler method or the trapezoidal rule) into an *all-at-once* system and then solve such a system  directly or iteratively. Maday and Rønquist first introduced this idea in {% cite MadayRonquist2008 %}.
 
 For direct ParaDiag algorithms, we diagonalize  the time discretization matrix and decouple the all-at-once system into a series of sub-systems, which can be solved in parallel across all time levels. The research for direct ParaDiag algorithms focuses on making the time discretization matrix be diagonalizable and making  the condition number of the eigenvector matrix as small as possible. For the iterative ParaDiag algorithms, we precondition the all-at-once system by a block α-circulant matrix and solve the preconditioning step for each iteration via a  block  Fourier spectral factorization.    
  
