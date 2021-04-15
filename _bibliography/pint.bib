@@ -4574,12 +4574,37 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2020},
 }
 
-@unpublished{GanderEtAl2020,
+@unpublished{GanderEtAl2021,
+        abstract={In 2008, Maday and R{\o}nquist introduce{d} an interesting new approach for the direct parallel-in-time (PinT) {solution} of
+                  time-dependent PDEs. The idea is to diagonalize the time stepping matrix, keeping the matrices for the space discretization
+                  unchanged, and then to solve all time steps in parallel. Since then, several variants appeared, and we 
+		  call these closely related algorithms {\em ParaDiag} algorithms. ParaDiag algorithms in the literature can 
+		  be classified into two groups:
+                  \begin{itemize}
+                   \item ParaDiag-I: direct standalone solvers,
+                   \item ParaDiag-II:  iterative solvers.
+                  \end{itemize}
+                  We will explain the basic features of each group in this note. To have concrete examples, we will 
+		  introduce ParaDiag-I and ParaDiag-II for the advection-diffusion equation. We will also introduce   
+		  ParaDiag-II  for the wave equation  and an optimal control problem for the wave equation. 
+		  We could have used the advection-diffusion equation as well to illustrate ParaDiag-II,
+                  but wave equations are known to cause problems for certain PinT algorithms and thus constitute an 
+		  especially interesting example for which ParaDiag algorithms were tested. We show the main known
+                  theoretical results in each case, and also provide Matlab codes for testing.  The goal of the Matlab 
+		  codes is to help the interested reader understand the key features of the ParaDiag algorithms, 
+		  without intention to be highly tuned for efficiency and/or low  memory use.
+
+                  We also provide speedup measurements of ParaDiag algorithms for a 2D linear advection-diffusion equation.  
+		  These results are obtained on the Tianhe-1 supercomputer in China and the SIUE Campus Cluster in the US, 
+		  which is a multi-array, configurable and cooperative parallel system, and we compare these results to the 
+		  performance of parareal and MGRiT, two widely used PinT algorithms.  In a forthcoming update of this note, 
+		  we will {provide} more material on ParaDiag algorithms, in particular further  Matlab codes and parallel 
+		  computing results, also for more realistic applications.},
 	author = {Gander, Martin J and Liu, Jun and Wu, Shu-Lin and Yue, Xiaoqiang and Zhou, Tao},
 	howpublished = {arXiv preprint arXiv:2005.09158},
-	title = {ParaDIAG: Parallel-in-Time Algorithms Based on the Diagonalization Technique},
+	title = {ParaDiag: parallel-in-time algorithms based on the diagonalization technique},
 	url = {http://arxiv.org/abs/2005.09158},
-	year = {2020},
+	year = {2021},
 }
 
 @article{GanderEtAl2020b,
@@ -5178,11 +5203,14 @@ the effectiveness of the proposed method.},
 }
 
 @unpublished{WuEtAl2021b,
-	abstract = {Solving wave equations in a time-parallel manner is challenging, and the algorithm based on the block $\alpha$-circulant preconditioning technique has shown its advantage in many existing studies (where $\alpha\in(0, 1)$ is a free parameter). Considerable efforts have been devoted to exploring the spectral radius of the preconditioned matrix and this leads to many case-by-case studies depending on the used time-integrator. In this paper, we propose a unified way to analyze the convergence via directly studying the error of the algorithm and using the stability of the time integrator. Our analysis works for all one-step time-integrators and two exemplary classes of two-step time-integrators: the parameterized Numerov methods and the parameterized two-stage hybrid methods. The main conclusion is that the global error satisfies $\|{\textbf{err}}^{k+1}\|_{{\mathbf W}, 2}\leq \frac{\alpha}{1-\alpha}\|{\mathbf{err}}^{k}\|_{{\mathbf W}, 2}$ provided that the time-integrator is stable, where $k$ is the iteration index and for any vector $v$ the norm $\|v\|_{{\mathbf W}, 2}$ is defined by $\|v\|_{{\mathbf W}, 2}=\|{\mathbf W}v\|_2$ with ${\mathbf W}$ being a matrix depending on the space discretization matrix only. Even though we focus on wave equations in this paper, the proposed argument is directly applicable to other evolution problems.},
+	abstract = 
+	{Solving evolutionary equations in a parallel-in-time manner is an attractive topic and many algorithms are proposed in recent two decades. The algorithm based on the block $\alpha$-circulant preconditioning technique has shown promising  advantages,  especially for wave propagation problems. By fast Fourier transform for factorizing the involved circulant matrices, the preconditioned iteration can be computed efficiently via the so-called diagonalization technique, which yields a direct parallel implementation across all time levels. In recent years, considerable efforts have been devoted to exploring  the convergence of the preconditioned iteration 
+         by studying the spectral radius of the iteration matrix, and this leads to many case-by-case studies depending on the used time-integrator. In this paper,  we propose a unified convergence analysis for the algorithm applied to $u'+Au=f$,  where   $\sigma(A)\subset\mathbb{C}^+$ with $\sigma(A)$ being  the spectrum of $A\in\mathbb{C}^{m\times m}$. For any   one-step method (such as the Runge-Kutta methods) with stability function $\mathcal{R}(z)$,  we prove  that the decay rate of the global error is bounded by $\alpha/(1-\alpha)$, provided the  method is stable, i.e., $\max_{\lambda\in\sigma(A)}|\mathcal{R}(\Delta t\lambda)|\leq1$. For any linear multistep method, such a bound becomes $c\alpha/(1-c\alpha)$, where $c\geq1$ is a constant specified by the multistep method itself. 
+         Our proof only relies on  the stability of the time-integrator and the estimate is independent of the step size $\Delta t$ and  the   spectrum $\sigma(A)$.},
 	author = {Shulin Wu and Tao Zhou and Zhi Zhou},
-	howpublished = {arXiv:2102.04646v1 [math.NA]},
-	title = {Stability implies robust convergence of a class of diagonalization-based iterative algorithms},
-	url = {http://arxiv.org/abs/2102.04646v1},
+	howpublished = {arXiv:2102.04646v2 [math.NA]},
+	title = {Stability implies robust convergence of a class of preconditioned parallel-in-time iterative algorithms},
+	url = {https://arxiv.org/abs/2102.04646v2},
 	year = {2021},
 }
 
