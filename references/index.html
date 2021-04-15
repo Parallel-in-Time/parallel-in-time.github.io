@@ -181,6 +181,95 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          GanderEtAl2021
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseGanderEtAl2021Bibtex"
+                    aria-expanded="false" aria-controls="collapseGanderEtAl2021Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalGanderEtAl2021Abstract"
+                    aria-expanded="false" aria-controls="modalGanderEtAl2021Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="GanderEtAl2021">M. J. Gander, J. Liu, S.-L. Wu, X. Yue, and T. Zhou, “ParaDiag: parallel-in-time algorithms based on the diagonalization technique,” arXiv preprint arXiv:2005.09158, 2021 [Online]. Available at: <a href="http://arxiv.org/abs/2005.09158" target="_blank">http://arxiv.org/abs/2005.09158</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseGanderEtAl2021Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{GanderEtAl2021,
+  author = {Gander, Martin J and Liu, Jun and Wu, Shu-Lin and Yue, Xiaoqiang and Zhou, Tao},
+  howpublished = {arXiv preprint arXiv:2005.09158},
+  title = {ParaDiag: parallel-in-time algorithms based on the diagonalization technique},
+  url = {http://arxiv.org/abs/2005.09158},
+  year = {2021}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalGanderEtAl2021Abstract" tabindex="-1" role="dialog" aria-labelledby="modalGanderEtAl2021AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalGanderEtAl2021AbstractTitle">
+            Abstract for BibTeX entry <code>GanderEtAl2021</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          In 2008, Maday and Rønquist introduced an interesting new approach for the direct parallel-in-time (PinT) solution of
+                  time-dependent PDEs. The idea is to diagonalize the time stepping matrix, keeping the matrices for the space discretization
+                  unchanged, and then to solve all time steps in parallel. Since then, several variants appeared, and we 
+		  call these closely related algorithms \em ParaDiag algorithms. ParaDiag algorithms in the literature can 
+		  be classified into two groups:
+                  \beginitemize
+                   \item ParaDiag-I: direct standalone solvers,
+                   \item ParaDiag-II:  iterative solvers.
+                  \enditemize
+                  We will explain the basic features of each group in this note. To have concrete examples, we will 
+		  introduce ParaDiag-I and ParaDiag-II for the advection-diffusion equation. We will also introduce   
+		  ParaDiag-II  for the wave equation  and an optimal control problem for the wave equation. 
+		  We could have used the advection-diffusion equation as well to illustrate ParaDiag-II,
+                  but wave equations are known to cause problems for certain PinT algorithms and thus constitute an 
+		  especially interesting example for which ParaDiag algorithms were tested. We show the main known
+                  theoretical results in each case, and also provide Matlab codes for testing.  The goal of the Matlab 
+		  codes is to help the interested reader understand the key features of the ParaDiag algorithms, 
+		  without intention to be highly tuned for efficiency and/or low  memory use.
+
+                  We also provide speedup measurements of ParaDiag algorithms for a 2D linear advection-diffusion equation.  
+		  These results are obtained on the Tianhe-1 supercomputer in China and the SIUE Campus Cluster in the US, 
+		  which is a multi-array, configurable and cooperative parallel system, and we compare these results to the 
+		  performance of parareal and MGRiT, two widely used PinT algorithms.  In a forthcoming update of this note, 
+		  we will provide more material on ParaDiag algorithms, in particular further  Matlab codes and parallel 
+		  computing results, also for more realistic applications.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           BlumersEtAl2021
         </div>
       </div>
@@ -890,7 +979,7 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="WuEtAl2021b">S. Wu, T. Zhou, and Z. Zhou, “Stability implies robust convergence of a class of diagonalization-based iterative algorithms,” arXiv:2102.04646v1 [math.NA], 2021 [Online]. Available at: <a href="http://arxiv.org/abs/2102.04646v1" target="_blank">http://arxiv.org/abs/2102.04646v1</a></span>
+      <span id="WuEtAl2021b">S. Wu, T. Zhou, and Z. Zhou, “Stability implies robust convergence of a class of preconditioned parallel-in-time iterative algorithms,” arXiv:2102.04646v2 [math.NA], 2021 [Online]. Available at: <a href="https://arxiv.org/abs/2102.04646v2" target="_blank">https://arxiv.org/abs/2102.04646v2</a></span>
     </div>
   </div>
   <div class="collapse" id="collapseWuEtAl2021bBibtex">
@@ -898,9 +987,9 @@
       <div class="col-md-12">
         <pre class="abstract">@unpublished{WuEtAl2021b,
   author = {Wu, Shulin and Zhou, Tao and Zhou, Zhi},
-  howpublished = {arXiv:2102.04646v1 [math.NA]},
-  title = {Stability implies robust convergence of a class of diagonalization-based iterative algorithms},
-  url = {http://arxiv.org/abs/2102.04646v1},
+  howpublished = {arXiv:2102.04646v2 [math.NA]},
+  title = {Stability implies robust convergence of a class of preconditioned parallel-in-time iterative algorithms},
+  url = {https://arxiv.org/abs/2102.04646v2},
   year = {2021}
 }
 </pre>
@@ -918,7 +1007,9 @@
           </h4>
         </div>
         <div class="modal-body">
-          Solving wave equations in a time-parallel manner is challenging, and the algorithm based on the block α-circulant preconditioning technique has shown its advantage in many existing studies (where α∈(0, 1) is a free parameter). Considerable efforts have been devoted to exploring the spectral radius of the preconditioned matrix and this leads to many case-by-case studies depending on the used time-integrator. In this paper, we propose a unified way to analyze the convergence via directly studying the error of the algorithm and using the stability of the time integrator. Our analysis works for all one-step time-integrators and two exemplary classes of two-step time-integrators: the parameterized Numerov methods and the parameterized two-stage hybrid methods. The main conclusion is that the global error satisfies \|\textbferr^k+1\|_\mathbf W, 2≤\fracα1-α\|\mathbferr^k\|_\mathbf W, 2 provided that the time-integrator is stable, where k is the iteration index and for any vector v the norm \|v\|_\mathbf W, 2 is defined by \|v\|_\mathbf W, 2=\|\mathbf Wv\|_2 with \mathbf W being a matrix depending on the space discretization matrix only. Even though we focus on wave equations in this paper, the proposed argument is directly applicable to other evolution problems.
+          Solving evolutionary equations in a parallel-in-time manner is an attractive topic and many algorithms are proposed in recent two decades. The algorithm based on the block α-circulant preconditioning technique has shown promising  advantages,  especially for wave propagation problems. By fast Fourier transform for factorizing the involved circulant matrices, the preconditioned iteration can be computed efficiently via the so-called diagonalization technique, which yields a direct parallel implementation across all time levels. In recent years, considerable efforts have been devoted to exploring  the convergence of the preconditioned iteration 
+         by studying the spectral radius of the iteration matrix, and this leads to many case-by-case studies depending on the used time-integrator. In this paper,  we propose a unified convergence analysis for the algorithm applied to u’+Au=f,  where   σ(A)⊂\mathbbC^+ with σ(A) being  the spectrum of A∈\mathbbC^m\times m. For any   one-step method (such as the Runge-Kutta methods) with stability function \mathcalR(z),  we prove  that the decay rate of the global error is bounded by α/(1-α), provided the  method is stable, i.e., \max_λ∈σ(A)|\mathcalR(∆tλ)|\leq1. For any linear multistep method, such a bound becomes cα/(1-cα), where c\geq1 is a constant specified by the multistep method itself. 
+         Our proof only relies on  the stability of the time-integrator and the estimate is independent of the step size ∆t and  the   spectrum σ(A).
         </div>
       </div>
     </div>
@@ -1894,55 +1985,6 @@
         <div class="modal-body">
           The time evolution of dynamical systems is frequently described by ordinary differential equations (ODEs), which must be solved for given initial conditions. Most standard approaches numerically integrate ODEs producing a single solution whose values are computed at discrete times. When many varied solutions with different initial conditions to the ODE are required, the computational cost can become significant. We propose that a neural network be used as a solution bundle, a collection of solutions to an ODE for various initial states and system parameters. The neural network solution bundle is trained with an unsupervised loss that does not require any prior knowledge of the sought solutions, and the resulting object is differentiable in initial conditions and system parameters. The solution bundle exhibits fast, parallelizable evaluation of the system state, facilitating the use of Bayesian inference for parameter estimation in real dynamical systems.
         </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          GanderEtAl2020
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseGanderEtAl2020Bibtex"
-                    aria-expanded="false" aria-controls="collapseGanderEtAl2020Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalGanderEtAl2020Abstract"
-                    aria-expanded="false" aria-controls="modalGanderEtAl2020Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="GanderEtAl2020">M. J. Gander, J. Liu, S.-L. Wu, X. Yue, and T. Zhou, “ParaDIAG: Parallel-in-Time Algorithms Based on the Diagonalization Technique,” arXiv preprint arXiv:2005.09158, 2020 [Online]. Available at: <a href="http://arxiv.org/abs/2005.09158" target="_blank">http://arxiv.org/abs/2005.09158</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseGanderEtAl2020Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{GanderEtAl2020,
-  author = {Gander, Martin J and Liu, Jun and Wu, Shu-Lin and Yue, Xiaoqiang and Zhou, Tao},
-  howpublished = {arXiv preprint arXiv:2005.09158},
-  title = {ParaDIAG: Parallel-in-Time Algorithms Based on the Diagonalization Technique},
-  url = {http://arxiv.org/abs/2005.09158},
-  year = {2020}
-}
-</pre>
       </div>
     </div>
   </div>
