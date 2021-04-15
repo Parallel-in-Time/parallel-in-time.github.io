@@ -3580,14 +3580,6 @@ fferential equations in parallel— in the Julia programming language for a full
 	year = {2018},
 }
 
-@unpublished{FalgoutEtAl2018,
-	abstract = {{The advent of exascale computing resources will leave many users with access to more computational resources than they can simultaneously use, i.e., billions of cores. This is especially true for time-dependent simulations that limit parallelism to the spatial domain. Multigrid Reduction in Time (MGRIT), a non-intrusive parallel-in-time solver, adds parallelism across the time steps to existing time dependent codes, allowing users to utilize a larger portion of the available computational resources and achieve a faster time to solution. In this paper, MGRIT is enhanced with Richardson extrapolation in a cost efficient way to produce a non-intrusive parallel-in-time method with improved accuracy. Overall, this leads to a large improvement in the accuracy per computational cost of the MGRIT algorithm.}},
-	author = {R.~D. Falgout and T.~A. Manteuffel and B. O'Neill and J.~B. Schroder},
-	title = {Multigrid Reduction in Time with Richardson Extrapolation},
-	url = {http://www.math.unm.edu/~schroder/docs/FaMaOnSc2018.pdf},
-	year = {2018},
-}
-
 @article{FischerEtAl2018,
 	abstract = {{Parallel in time methods for solving initial value problems are a means
 to increase the parallelism of numerical simulations. Hybrid parareal
@@ -4504,15 +4496,6 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2020},
 }
 
-@unpublished{CaliariEtAl2020,
-	abstract = {Rational exponential integrators (REXI) are a class of numerical methods that are well suited for the time integration of linear partial differential equations with imaginary eigenvalues. Since these methods can be parallelized in time (in addition to the spatial parallelization that is commonly performed) they are well suited to exploit modern high performance computing systems. In this paper, we propose a novel REXI scheme that drastically improves accuracy and efficiency. The chosen approach will also allow us to easily determine how many terms are required in the approximation in order to obtain accurate results. We provide comparative numerical simulations for a shallow water equation that highlight the efficiency of our approach and demonstrate that REXI schemes can be efficiently implemented on graphic processing units.},
-	author = {Marco Caliari and Lukas Einkemmer and Alexander Moriggl and Alexander Ostermann},
-	howpublished = {arXiv:2008.11607v1 [math.NA]},
-	title = {An accurate and time-parallel rational exponential integrator for hyperbolic and oscillatory PDEs},
-	url = {http://arxiv.org/abs/2008.11607v1},
-	year = {2020},
-}
-
 @article{ChengEtAl2020,
 	author = {Tianshi Cheng and Tong Duan and Venkata Dinavahi},
 	doi = {10.1109/oajpe.2020.3012636},
@@ -5070,12 +5053,37 @@ the effectiveness of the proposed method.},
 	year = {2021},
 }
 
+@article{CaliariEtAl2021,
+	author = {Marco Caliari and Lukas Einkemmer and Alexander Moriggl and Alexander Ostermann},
+	doi = {10.1016/j.jcp.2021.110289},
+	journal = {Journal of Computational Physics},
+	month = {jul},
+	pages = {110289},
+	publisher = {Elsevier {BV}},
+	title = {An accurate and time-parallel rational exponential integrator for hyperbolic and oscillatory {PDEs}},
+	url = {https://doi.org/10.1016%2Fj.jcp.2021.110289},
+	volume = {437},
+	year = {2021},
+}
+
 @unpublished{DanieliEtAl2021,
 	abstract = {Parallel-in-time methods have become increasingly popular in the simulation of time-dependent numerical PDEs, allowing for the efficient use of additional MPI processes when spatial parallelism saturates. Most methods treat the solution and parallelism in space and time separately. In contrast, all-at-once methods solve the full space-time system directly, largely treating time as simply another spatial dimension. All-at-once methods offer a number of benefits over separate treatment of space and time, most notably significantly increased parallelism and faster time-to-solution (when applicable). However, the development of fast, scalable all-at-once methods has largely been limited to time-dependent (advection-)diffusion problems. This paper introduces the concept of space-time block preconditioning for the all-at-once solution of incompressible flow. By extending well-known concepts of spatial block preconditioning to the space-time setting, we develop a block preconditioner whose application requires the solution of a space-time (advection-)diffusion equation in the velocity block, coupled with a pressure Schur complement approximation consisting of independent spatial solves at each time-step, and a space-time matrix-vector multiplication. The new method is tested on four classical models in incompressible flow. Results indicate perfect scalability in refinement of spatial and temporal mesh spacing, perfect scalability in nonlinear Picard iterations count when applied to a nonlinear Navier-Stokes problem, and minimal overhead in terms of number of preconditioner applications compared with sequential time-stepping.},
 	author = {Federico Danieli and Ben S. Southworth and Andrew J. Wathen},
 	howpublished = {arXiv:2101.07003v1 [math.NA]},
 	title = {Space-time block preconditioning for incompressible flow},
 	url = {http://arxiv.org/abs/2101.07003v1},
+	year = {2021},
+}
+
+@article{FalgoutEtAl2021,
+	author = {R. D. Falgout and T. A. Manteuffel and B. O{\textquotesingle}Neill and J. B. Schroder},
+	doi = {10.1553/etna_vol54s210},
+	journal = {{ETNA} - Electronic Transactions on Numerical Analysis},
+	pages = {210--233},
+	publisher = {Osterreichische Akademie der Wissenschaften},
+	title = {Multigrid reduction in time with Richardson extrapolation},
+	url = {https://doi.org/10.1553%2Fetna_vol54s210},
+	volume = {54},
 	year = {2021},
 }
 
@@ -5101,12 +5109,16 @@ the effectiveness of the proposed method.},
 	year = {2021},
 }
 
-@unpublished{LinEtAl2021,
-	abstract = {In this paper, we study a parallel-in-time (PinT) algorithm for all-at-once system from a non-local evolutionary equation with weakly singular kernel where the temporal term involves a non-local convolution with a weakly singular kernel and the spatial term is the usual Laplacian operator with variable coefficients. We propose to use a two-sided preconditioning technique for the all-at-once discretization of the equation. Our preconditioner is constructed by replacing the variable diffusion coefficients with a constant coefficient to obtain a constant-coefficient all-at-once matrix. We split a square root of the constant Laplacian operator out of the constant-coefficient all-at-once matrix as a right preconditioner and take the remaining part as a left preconditioner, which constitutes our two-sided preconditioning. Exploiting the diagonalizability of the constant-Laplacian matrix and the triangular Toeplitz structure of the temporal discretization matrix, we obtain efficient representations of inverses of the right and the left preconditioners, because of which the iterative solution can be fast updated in a PinT manner. Theoretically, the condition number of the two-sided preconditioned matrix is proven to be uniformly bounded by a constant independent of the matrix size. To the best of our knowledge, for the non-local evolutionary equation with variable coefficients, this is the first attempt to develop a PinT preconditioning technique that has fast and exact implementation and that the corresponding preconditioned system has a uniformly bounded condition number. Numerical results are reported to confirm the efficiency of the proposed two-sided preconditioning technique.},
+@article{LinEtAl2021,
 	author = {Xue-lei Lin and Michael K. Ng and Yajing Zhi},
-	howpublished = {arXiv:2102.00363v1 [math.NA]},
+	doi = {10.1016/j.jcp.2021.110221},
+	journal = {Journal of Computational Physics},
+	month = {jun},
+	pages = {110221},
+	publisher = {Elsevier {BV}},
 	title = {A parallel-in-time two-sided preconditioning for all-at-once system from a non-local evolutionary equation with weakly singular kernel},
-	url = {http://arxiv.org/abs/2102.00363v1},
+	url = {https://doi.org/10.1016%2Fj.jcp.2021.110221},
+	volume = {434},
 	year = {2021},
 }
 
