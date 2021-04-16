@@ -30,6 +30,6 @@ The general idea for all the ParaDiag algorithms is to form the difference equat
 
 For direct ParaDiag algorithms, we diagonalize  the time discretization matrix and decouple the all-at-once system into a series of sub-systems, which can be solved in parallel across all time levels. The research for direct ParaDiag algorithms focuses on making the time discretization matrix be diagonalizable and making  the condition number of the eigenvector matrix as small as possible. For the iterative ParaDiag algorithms, we precondition the all-at-once system by a block α-circulant matrix and solve the preconditioning step for each iteration via a  block  Fourier spectral factorization.    
  
-ParaDiag algorithms can handle both dissipative and hyperbolic equations (such as acoustic equations  and the Schrödinger equations).  An introductory  document in this field is {% cite GanderEtAl2020 %}, where the reader can find   variants,   applications and some representative theoretical results of ParaDiag. This document will be updated regularly when new interesting progress appears.  
+ParaDiag algorithms can handle both dissipative and hyperbolic equations (such as acoustic equations  and the Schrödinger equations).  An introductory  document in this field is {% cite GanderEtAl2021 %}, where the reader can find   variants,   applications and some representative theoretical results of ParaDiag. This document will be updated regularly when new interesting progress appears.  
 
 {% bibliography --cited %}
