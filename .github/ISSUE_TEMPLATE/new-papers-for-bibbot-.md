@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-Hi! I'm **bibbot** and I can turn arXiv and doi.org URLs into pull requests for the parallel-in-time BibTeX file. To do so, simply list all URLs you consider relevant here, one after another. Don't worry too much about the format, I will try to throw away the rest. But please don't try to trick me..
+Hi! I'm **bibbot** and I can turn arXiv and doi.org URLs into pull requests for the parallel-in-time BibTeX file. To do so, simply remove this text and list all URLs you consider relevant here, one after another. Don't worry too much about the format, I will try to throw away the rest. But please don't try to trick me..
 
 When you are done and you want me to do the rest, please label this issue with 'food for bibbot'. I will then parse the URLs and try to get the bibtex data. This will take a few minutes (depending on how many URLs you provided) and you should see a pull request coming up when I'm done. If something goes wrong, I try to comment on this here (or die quietly).
 
-You can add as many URLs as you want, but I prefer to have only a few, maybe even just one per issue. Note that I don't care for anything except the label and the original content of the issue. You can write as many comments as you want and edit the issue as often as you need. As soon as the label is set, I'll start running!
+You can add as many URLs as you want, but I prefer to have only a few, maybe even just one per issue. Note that I don't care for anything except the label and the original content of the issue. You can write as many comments as you want and edit the issue as often as you need. For my search, however, I will consider only this first text, nothing else. As soon as the label is set, I'll start running!
