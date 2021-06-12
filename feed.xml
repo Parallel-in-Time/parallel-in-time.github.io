@@ -7,6 +7,20 @@
     <atom:link href="http://parallel-in-time.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PinT 2021 Workshop</title>
+        <description>&lt;p&gt;Registration for virtual PinT 2021 - &lt;a href=&quot;/events/10th-pint-workshop/&quot;&gt;10th Workshop on Parallel-in-time integration&lt;/a&gt; is open. 
+There is no cost to attend the workshop. Attendees will need to pre-register to participate. Please visit thhe conference website at  &lt;a href=&quot;https://conferences.math.mtu.edu&quot;&gt;https://conferences.math.mtu.edu&lt;/a&gt;
+for more information.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+</description>
+        <pubDate>Fri, 11 Jun 2021 14:07:00 +0000</pubDate>
+        <link>http://parallel-in-time.org/events/2021/06/11/pint2021-registration.html</link>
+        <guid isPermaLink="true">http://parallel-in-time.org/events/2021/06/11/pint2021-registration.html</guid>
+      </item>
+    
+      <item>
         <title>PinT lecture at ENLA Seminar</title>
         <description>&lt;p&gt;Martin Gander gave a very nice talk on a linear algebra approach to time parallelisation as part of the
 European Numerical Linear Algebra (ENLA) online seminar. The video for the talk can be 
@@ -129,20 +143,6 @@ to participate.&lt;/p&gt;
         <pubDate>Sat, 24 Jun 2017 10:00:00 +0000</pubDate>
         <link>http://parallel-in-time.org/events/2017/06/24/apint-video.html</link>
         <guid isPermaLink="true">http://parallel-in-time.org/events/2017/06/24/apint-video.html</guid>
-      </item>
-    
-      <item>
-        <title>PinT in SIAM News</title>
-        <description>&lt;p&gt;Parallel-in-time integration was mentioned prominently in the recent SIAM News, see &lt;a href=&quot;https://sinews.siam.org/Details-Page/climate-prediction-exascale-computing-and-time-parallelism&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;In the current issue of SIAM News (Volume 50, Number 04, May 2017), parallel-in-time integration was mentioned in the research article “&lt;a href=&quot;https://sinews.siam.org/Details-Page/climate-prediction-exascale-computing-and-time-parallelism&quot;&gt;Climate Predictions, Exascale Computing, and Time Parallelism&lt;/a&gt;”” by Paul Davis.
-Based on Beth Wingate’s &lt;a href=&quot;/events/2016/07/19/siamcse.html&quot;&gt;plenary talk&lt;/a&gt; at SIAM CSE 2017, he discusses opportunities, challenges and first results, in particular with respect to climate simulations.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 30 May 2017 10:00:00 +0000</pubDate>
-        <link>http://parallel-in-time.org/events/2017/05/30/siam-news.html</link>
-        <guid isPermaLink="true">http://parallel-in-time.org/events/2017/05/30/siam-news.html</guid>
       </item>
     
   </channel>
