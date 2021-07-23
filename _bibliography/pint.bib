@@ -5327,6 +5327,15 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
+@unpublished{SugiyamaEtAl2021,
+	abstract = {Based on current trends in computer architectures, faster compute speeds must come from increased parallelism rather than increased clock speeds, which are currently stagnate. This situation has created the well-known bottleneck for sequential time-integration, where each individual time-value (i.e., time-step) is computed sequentially. One approach to alleviate this and achieve parallelism in time is with multigrid. In this work, we consider multigrid-reduction-in-time (MGRIT), a multilevel method applied to the time dimension that computes multiple time-steps in parallel. Like all multigrid methods, MGRIT relies on the complementary relationship between relaxation on a fine-grid and a correction from the coarse grid to solve the problem. All current MGRIT implementations are based on unweighted-Jacobi relaxation; here we introduce the concept of weighted relaxation to MGRIT. We derive new convergence bounds for weighted relaxation, and use this analysis to guide the selection of relaxation weights. Numerical results then demonstrate that non-unitary relaxation weights consistently yield faster convergence rates and lower iteration counts for MGRIT when compared with unweighted relaxation. In most cases, weighted relaxation yields a 10%-20% saving in iterations. For A-stable integration schemes, results also illustrate that under-relaxation can restore convergence in some cases where unweighted relaxation is not convergent.},
+	author = {Masumi Sugiyama and Jacob B. Schroder and Ben S. Southworth and Stephanie Friedhoff},
+	howpublished = {arXiv:2107.02290v1 [math.NA]},
+	title = {Weighted Relaxation for Multigrid Reduction in Time},
+	url = {http://arxiv.org/abs/2107.02290v1},
+	year = {2021},
+}
+
 @article{TakahashiEtAl2021,
 	author = {Yasuhito Takahashi and Koji Fujiwara and Takeshi Iwashita and Hiroshi Nakashima},
 	doi = {10.1109/tmag.2021.3064320},
