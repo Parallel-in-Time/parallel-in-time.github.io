@@ -5241,6 +5241,15 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
+@unpublished{Liu2021,
+	abstract = {In this paper we proposed two new quasi-boundary value methods for regularizing the ill-posed backward heat conduction problems. With a standard finite difference discretization in space and time, the obtained all-at-once nonsymmetric sparse linear systems have the desired block $\omega$-circulant structure, which can be utilized to design an efficient parallel-in-time (PinT) direct solver that built upon an explicit FFT-based diagonalization of the time discretization matrix. Convergence analysis is presented to justify the optimal choice of the regularization parameter. Numerical examples are reported to validate our analysis and illustrate the superior computational efficiency of our proposed PinT methods.},
+	author = {Jun Liu},
+	howpublished = {arXiv:2107.06381v1 [math.NA]},
+	title = {Fast Parallel-in-Time Quasi-Boundary Value Methods for Backward Heat Conduction Problems},
+	url = {http://arxiv.org/abs/2107.06381v1},
+	year = {2021},
+}
+
 @article{LyuEtAl2021,
 	author = {Chengzhang Lyu and Ning Lin and Venkata Dinavahi},
 	doi = {10.1109/tvt.2021.3081534},
@@ -5326,6 +5335,29 @@ computing results, also for more realistic applications.},
 	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 	title = {Comparison of Parallel-in-Space-and-Time Finite-Element Methods for Magnetic Field Analysis of Electric Machines},
 	url = {https://doi.org/10.1109/tmag.2021.3064320},
+	year = {2021},
+}
+
+@unpublished{TielenEtAl2021,
+	abstract = {Isogeometric Analysis (IgA) has become a viable alternative to the Finite Element Method (FEM) and is typically combined with a time integration scheme within the method of lines for time-dependent problems. However, due to a stagnation of processors clock speeds, traditional (i.e. sequential) time integration schemes become more and more the bottleneck within these large-scale computations, which lead to the development of parallel-in-time methods like the Multigrid Reduced in Time (MGRIT) method. Recently, MGRIT has been succesfully applied by the authors in the context of IgA showing convergence independent of the mesh width, approximation order of the B-spline basis functions and time step size for a variety of benchmark problems. However, a strong dependency of the CPU times on the approximation order was visible when a standard Conjugate Gradient method was adopted for the spatial solves within MGRIT. In this paper we combine MGRIT with a state-of the-art solver (i.e. a p-multigrid method), specifically designed for IgA, thereby significantly reducing the overall computational costs of MGRIT. Furthermore, we investigate the performance of MGRIT and its scalability on modern copmuter architectures.},
+	author = {Roel Tielen and Matthias Möller and Cornelis Vuik},
+	howpublished = {arXiv:2107.05337v1 [math.NA]},
+	title = {Combining p-multigrid and multigrid reduced in time methods to obtain a scalable solver for Isogeometric Analysis},
+	url = {http://arxiv.org/abs/2107.05337v1},
+	year = {2021},
+}
+
+@article{WalkerEtAl2021,
+	author = {Anthony S. Walker and Kyle E. Niemeyer},
+	doi = {10.3390/mca26030052},
+	journal = {Mathematical and Computational Applications},
+	month = {jul},
+	number = {3},
+	pages = {52},
+	publisher = {{MDPI} {AG}},
+	title = {Applying the Swept Rule for Solving Two-Dimensional Partial Differential Equations on Heterogeneous Architectures},
+	url = {https://doi.org/10.3390/mca26030052},
+	volume = {26},
 	year = {2021},
 }
 
