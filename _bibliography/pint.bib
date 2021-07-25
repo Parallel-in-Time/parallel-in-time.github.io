@@ -5158,6 +5158,15 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
+@unpublished{GarciaEtAl2021,
+	abstract = {This article proposes modifications of the Parareal algorithm for its application to higher index differential algebraic equations (DAEs). It is based on the idea of applying the algorithm to only the differential components of the equation and the computation of corresponding consistent initial conditions later on. For differential algebraic equations with a special structure as e.g. given in flux-charge modified nodal analysis, it is shown that the usage of the implicit Euler method as a time integrator suffices for the Parareal algorithm to converge. Both versions of the Parareal method are applied to numerical examples of nonlinear index 2 differential algebraic equations.},
+	author = {Idoia Cortes Garcia and Iryna Kulchytska-Ruchka and Sebastian Schöps},
+	howpublished = {arXiv:2107.07755v1 [math.NA]},
+	title = {Parareal for Higher Index Differential Algebraic Equations},
+	url = {http://arxiv.org/abs/2107.07755v1},
+	year = {2021},
+}
+
 @unpublished{GoetschelEtAl2021,
 	abstract = {Getting good speedup -- let alone high parallel efficiency -- for parallel-in-time (PinT) integration examples can be frustratingly difficult. The high complexity and large number of parameters in PinT methods can easily (and unintentionally) lead to numerical experiments that overestimate the algorithm's performance. In the tradition of Bailey's article "Twelve ways to fool the masses when giving performance results on parallel computers", we discuss and demonstrate pitfalls to avoid when evaluating performance of PinT methods. Despite being written in a light-hearted tone, this paper is intended to raise awareness that there are many ways to unintentionally fool yourself and others and that by avoiding these fallacies more meaningful PinT performance results can be obtained.},
 	author = {Sebastian Goetschel and Michael Minion and Daniel Ruprecht and Robert Speck},
@@ -5177,6 +5186,15 @@ computing results, also for more realistic applications.},
 	title = {Reduced model-based parareal simulations of oscillatory singularly perturbed ordinary differential equations},
 	url = {https://doi.org/10.1016/j.jcp.2021.110282},
 	volume = {436},
+	year = {2021},
+}
+
+@unpublished{HahneEtAl2021,
+	abstract = {In this paper, we present the new "asynchronous truncated multigrid-reduction-in-time" (AT-MGRIT) algorithm for introducing time parallelism to the solution of discretized time-dependent problems. The new algorithm is based on the multigrid-reduction-in-time (MGRIT) approach, which, in certain settings, is equivalent to another common multilevel parallel-in-time method, Parareal. In contrast to Parareal and MGRIT that both consider a global temporal grid over the entire time interval on the coarsest level, the AT-MGRIT algorithm uses truncated local time grids on the coarsest level, each grid covering certain temporal subintervals. These local grids can be solved completely independent from each other, which reduces the sequential part of the algorithm and, thus, increases parallelism in the method. Here, we study the effect of using truncated local coarse grids on the convergence of the algorithm, both theoretically and numerically, and show, using challenging nonlinear problems, that the new algorithm consistently outperforms classical Parareal/MGRIT in terms of time to solution.},
+	author = {Jens Hahne and Ben Southworth and Stephanie Friedhoff},
+	howpublished = {arXiv:2107.09596v1 [math.NA]},
+	title = {Asynchronous Truncated Multigrid-reduction-in-time (AT-MGRIT)},
+	url = {http://arxiv.org/abs/2107.09596v1},
 	year = {2021},
 }
 
@@ -5236,6 +5254,18 @@ computing results, also for more realistic applications.},
 	publisher = {Wiley},
 	title = {Analysis of the parareal approach based on discontinuous Galerkin method for time-dependent Stokes equations},
 	url = {https://doi.org/10.1002/num.22782},
+	year = {2021},
+}
+
+@article{LiEtAl2021e,
+	author = {Guanglian Li and Jiuhua Hu},
+	doi = {10.1016/j.jcp.2021.110572},
+	journal = {Journal of Computational Physics},
+	month = {jul},
+	pages = {110572},
+	publisher = {Elsevier {BV}},
+	title = {Wavelet-based Edge Multiscale Parareal Algorithm for Parabolic Equations with Heterogeneous Coefficients and Rough Initial Data},
+	url = {https://doi.org/10.1016/j.jcp.2021.110572},
 	year = {2021},
 }
 
