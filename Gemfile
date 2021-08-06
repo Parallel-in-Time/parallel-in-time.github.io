@@ -20,3 +20,4 @@ gem 'jekyll-scholar'
 # gem 'jekyll-archives'
 
 gem 'jgd'
+gem 'therubyracer'

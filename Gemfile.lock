@@ -74,6 +74,7 @@ GEM
     json (2.3.1)
     kramdown (1.17.0)
     latex-decode (0.3.1)
+    libv8 (3.16.14.19)
     liquid (4.0.3)
     listen (3.2.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -88,6 +89,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    ref (2.0.0)
     rouge (3.12.0)
     safe_yaml (1.0.5)
     sass (3.5.6)
@@ -98,6 +100,9 @@ GEM
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     trollop (2.1.2)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
@@ -119,10 +124,11 @@ DEPENDENCIES
   jgd
   mini_magick
   sass
+  therubyracer
   uglifier
 
 RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.16.2
+   1.16.6
