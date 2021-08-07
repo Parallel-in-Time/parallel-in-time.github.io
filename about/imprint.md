@@ -34,7 +34,7 @@ Am Schwarzenberg-Campus 3, Building E
 
 ##### Disclaimer
 
-Despite careful efforts, we can not guarantee the accuracy, completeness and timeliness of our websites. We assume no liability for the content of external links. The publishers of linked sites are solely responsible for their content. 
+Despite careful efforts, we can not guarantee the accuracy, completeness and timeliness of our websites. We assume no liability for the content of external links. The publishers of linked sites are solely responsible for their content.
 
 ##### Privacy policy
 
