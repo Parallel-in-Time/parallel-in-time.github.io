@@ -10,7 +10,7 @@ subnavbar: Upcoming
 organizers:
   - name: Daniel Ruprecht 
     homepage: https://www.mat.tuhh.de/home/druprecht_en
-  - Philipp Neumann
+  - name: Philipp Neumann
     homepage: https://www.hsu-hh.de/hpc/philipp-neumann/
 permalink: /events/12th-pint-workshop/
 subtitle: "Brief overview"
@@ -18,7 +18,7 @@ page_type: event_page
 no_lead: true
 ---
 
-PinT 2023: the 12th Workshop on Parallel-in-time Integration will be hosted in Hamburg, Germany, by Professor Daniel Ruprecht and Professor PHilipp Neumann.
+PinT 2023: the 12th Workshop on Parallel-in-time Integration will be hosted in Hamburg, Germany, by Professor Daniel Ruprecht and Professor Philipp Neumann.
 
 
 
