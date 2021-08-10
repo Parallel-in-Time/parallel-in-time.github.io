@@ -5303,6 +5303,24 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
+@unpublished{LiuEtAl2021,
+	abstract = {The Sinc-Nystr\"{o}m method in time is a high-order spectral method for solving evolutionary differential equations and it has wide applications in scientific computation. But in this method we have to solve all the time steps implicitly at one-shot, which may results in a large-scale nonsymmetric dense system that is expensive to solve. In this paper, we propose and analyze a parallel-in-time (PinT) preconditioner for solving such Sinc-Nystr\"{o}m systems, where both the parabolic and hyperbolic PDEs are investigated. Attributed to the special Toeplitz-like structure of the Sinc-Nystr\"{o}m systems, the proposed PinT preconditioner is indeed a low-rank perturbation of the system matrix and we show that the spectrum of the preconditioned system is highly clustered around one, especially when the time step size is refined. Such a clustered spectrum distribution matches very well with the numerically observed mesh-independent GMRES convergence rates in various examples. Several linear and nonlinear ODE and PDE examples are presented to illustrate the convergence performance of our proposed PinT preconditioners, where the achieved exponential order of accuracy are especially attractive to those applications in need of high accuracy.},
+	author = {Jun Liu and Shu-Lin Wu},
+	howpublished = {arXiv:2108.01700v1 [math.NA]},
+	title = {Parallel-in-time preconditioners for the Sinc-Nyström method},
+	url = {http://arxiv.org/abs/2108.01700v1},
+	year = {2021},
+}
+
+@unpublished{LiuEtAl2021b,
+	abstract = {In this paper, we propose a direct parallel-in-time (PinT) algorithm for time-dependent problems with first- or second-order derivative. We use a second-order boundary value method as the time integrator that leads to a tridiagonal time discretization matrix. Instead of solving the corresponding all-at-once system iteratively, we diagonalize the time discretization matrix, which yields a direct parallel implementation across all time levels. A crucial issue on this methodology is how the condition number of the eigenvector matrix $V$ grows as $n$ is increased, where $n$ is the number of time levels. A large condition number leads to large roundoff error in the diagonalization procedure, which could seriously pollute the numerical accuracy. Based on a novel connection between the characteristic equation and the Chebyshev polynomials, we present explicit formulas for computing $V$ and $V^{-1}$, by which we prove that $\mathrm{Cond}_2(V)=\mathcal{O}(n^{2})$. This implies that the diagonalization process is well-conditioned and the roundoff error only increases moderately as $n$ grows and thus, compared to other direct PinT algorithms, a much larger $n$ can be used to yield satisfactory parallelism. Numerical results on parallel machine are given to support our findings, where over 60 times speedup is achieved with 256 cores.},
+	author = {Jun Liu and Xiang-Sheng Wang and Shu-Lin Wu and Tao Zhou},
+	howpublished = {arXiv:2108.01716v1 [math.NA]},
+	title = {A well-conditioned direct PinT algorithm for first- and second-order evolutionary equations},
+	url = {http://arxiv.org/abs/2108.01716v1},
+	year = {2021},
+}
+
 @article{LyuEtAl2021,
 	author = {Chengzhang Lyu and Ning Lin and Venkata Dinavahi},
 	doi = {10.1109/tvt.2021.3081534},
