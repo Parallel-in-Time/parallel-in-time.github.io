@@ -20,14 +20,14 @@ jobs:
         id: updater
       - name: Create Pull Request
         if: github.event.label.name == 'food for arxivbot'
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v3.9.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: updated pint.bib using arxivbot
           title: pint.bib updates
           body: 'This is an auto-generated PR with reference updates. This closes #${{ github.event.issue.number }}.'
-#           branch: bibtex-arxivbot-${{ github.event.issue.number }}
-#           branch-suffix: short-commit-hash
+          branch: bibtex-arxivbot-${{ github.event.issue.number }}
+          branch-suffix: short-commit-hash
       - name: Add comment to issue
         if: github.event.label.name == 'food for arxivbot' && steps.updater.outputs.COMMENT != ''
         uses: actions/github-script@0.3.0
