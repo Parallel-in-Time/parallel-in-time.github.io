@@ -17,18 +17,19 @@ if __name__ == '__main__':
         db = bibtexparser.load(bibtex_file)
 
     id_list = re.findall(r"- \[x\] ID: (.*)\n", args.body.replace('\r', ''))
-    doi_list = re.findall(r"- \[x\] ID: .*\n.*\n.*\nDOI: (.*)\n", args.body.replace('\r', ''))
+    doi_list = re.findall(r"- \[x\] ID: .*\n.*\n.*\n.*DOI: (.*)\n", args.body.replace('\r', ''))
 
-    for item in db.get_entry_list():
-        if item['ID'] in id_list:
-            # print(f"removing {item['ID']}")
-            db.entries.remove(item)
-
-    for url in doi_list:
-
+    for url, id_db in zip(doi_list, id_list):
+        # print(f'Working on {id_db} with URL {url}')
         req = requests.get(url, headers={'Accept': 'application/x-bibtex'})
+        if not req.status_code == 200:
+            print(f'Ignoring {url}, got status code {req.status_code}\n\n')
+            continue
         bib = req.content.decode()
         req = requests.get(url, headers={'Accept': 'application/json'})
+        if not req.status_code == 200:
+            print(f'Ignoring {url}, got status code {req.status_code}\n\n')
+            continue
         data = req.json()
 
         if len(data['author']) > 1:
@@ -59,6 +60,12 @@ if __name__ == '__main__':
                 i += 1
 
         if not duplicate:
+
+            for item in db.get_entry_list():
+                if item['ID'] == id_db and item['ENTRYTYPE'] == 'unpublished':
+                    # print(f"removing {item['ID']}")
+                    db.entries.remove(item)
+
             bib = re.sub(r'(@[a-z]*{)(.*),', r'\1' + id + ',', bib)
             bib_db = bibtexparser.loads(bib)
             db.entries.extend(bib_db.get_entry_list())
