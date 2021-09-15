@@ -4469,15 +4469,6 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2020},
 }
 
-@unpublished{BenedusiEtAl2020,
-	abstract = {We consider two parallel-in-time approaches applied to a (reaction) diffusion problem, possibly non-linear. In particular, we consider PFASST (Parallel Full Approximation Scheme in Space and Time) and space-time multilevel strategies. For both approaches, we start from an integral formulation of the continuous time-dependent problem. Then, a collocation form for PFASST and a discontinuous Galerkin discretization in time for the space-time multigrid are employed, resulting in the same discrete solution at the time nodes. Strong and weak scaling of both multilevel strategies is compared for varying order of the temporal discretization. Moreover, we investigate the respective convergence behavior for non-linear problems and highlight quantitative differences.},
-	author = {Pietro Benedusi and Michael Minion and Rolf Krause},
-	howpublished = {arXiv:2006.12883v2 [math.NA]},
-	title = {An experimental comparison of a space-time multigrid method with PFASST for a reaction-diffusion problem},
-	url = {http://arxiv.org/abs/2006.12883v2},
-	year = {2020},
-}
-
 @article{BrehierEtAl2020,
 	author = {Charles-Edouard Brehier and Xu Wang},
 	doi = {10.1137/19m1251011},
@@ -5043,6 +5034,19 @@ the effectiveness of the proposed method.},
 	year = {2020},
 }
 
+@article{BenedusiEtAl2021,
+	author = {Pietro Benedusi and Michael L. Minion and Rolf Krause},
+	doi = {10.1016/j.camwa.2021.07.008},
+	journal = {Computers {\&} Mathematics with Applications},
+	month = {oct},
+	pages = {162--170},
+	publisher = {Elsevier {BV}},
+	title = {An experimental comparison of a space-time multigrid method with {PFASST} for a reaction-diffusion problem},
+	url = {https://doi.org/10.1016%2Fj.camwa.2021.07.008},
+	volume = {99},
+	year = {2021},
+}
+
 @article{Blanes2021,
 	author = {Sergio Blanes},
 	doi = {10.1016/j.aml.2021.107542},
@@ -5055,12 +5059,14 @@ the effectiveness of the proposed method.},
 	year = {2021},
 }
 
-@unpublished{BlumersEtAl2021,
-	abstract = {Various biological processes such as transport of oxygen and nutrients, thrombus formation, vascular angiogenesis and remodeling are related to cellular/subcellular level biological processes, where mesoscopic simulations resolving detailed cell dynamics provide a key to understanding and identifying the cellular basis of disease. To break this bottleneck and achieve a biologically meaningful timescale, we propose a multiscale parareal algorithm in which a continuum-based solver supervises a mesoscopic simulation in the time-domain. Using an iterative prediction-correction strategy, the parallel-in-time mesoscopic simulation supervised by its continuum-based counterpart can converge fast. The effectiveness of the proposed method is first verified in a time-dependent flow with a sinusoidal flowrate through a Y-shaped bifurcation channel. Physical quantities of interest including velocity, wall shear stress and flowrate are computed to compare against those of reference solutions, showing a less than 1% relative error on flowrate in the Newtonian flow and a less than 3\% relative error in the non-Newtonian blood flow. The proposed method is then applied to a large-scale mesoscopic simulation of microvessel blood flow in a zebrafish hindbrain for temporal acceleration. The time-dependent blood flow from heartbeats in this realistic vascular network of zebrafish hindbrain is simulated using dissipative particle dynamics as the mesoscopic model, which is supervised by a one-dimensional blood flow model (continuum-based model) in multiple temporal sub-domains. The computational analysis shows that the resulting microvessel blood flow converges to the reference solution after only two iterations. The proposed method is suitable for long-time mesoscopic simulations with complex fluids and geometries.},
-	author = {Ansel Blumers and Minglang Yin and Hiroyuki Nakajima and Yosuke Hasegawa and Zhen Li and George Em Karniadakis},
-	howpublished = {arXiv:2101.08414v1 [physics.flu-dyn]},
-	title = {Multiscale Parareal Algorithm for Long-Time Mesoscopic Simulations of Microvascular Blood Flow in Zebrafish},
-	url = {http://arxiv.org/abs/2101.08414v1},
+@article{BlumersEtAl2021b,
+	author = {Ansel L. Blumers and Minglang Yin and Hiroyuki Nakajima and Yosuke Hasegawa and Zhen Li and George Em Karniadakis},
+	doi = {10.1007/s00466-021-02062-w},
+	journal = {Computational Mechanics},
+	month = {aug},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {Multiscale parareal algorithm for long-time mesoscopic simulations of microvascular blood flow in zebrafish},
+	url = {https://doi.org/10.1007%2Fs00466-021-02062-w},
 	year = {2021},
 }
 
@@ -5184,6 +5190,17 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
+@incollection{GoetschelEtAl2021,
+	author = {Sebastian Götschel and Michael Minion and Daniel Ruprecht and Robert Speck},
+	booktitle = {Springer Proceedings in Mathematics {\&} Statistics},
+	doi = {10.1007/978-3-030-75933-9_4},
+	pages = {81--94},
+	publisher = {Springer International Publishing},
+	title = {Twelve Ways to Fool the Masses When Giving Parallel-in-Time Results},
+	url = {https://doi.org/10.1007/978-3-030-75933-9_4},
+	year = {2021},
+}
+
 @article{GrigoriEtAl2021,
 	author = {Laura Grigori and Sever A. Hirstoaga and Van-Thanh Nguyen and Julien Salomon},
 	doi = {10.1016/j.jcp.2021.110282},
@@ -5194,17 +5211,6 @@ computing results, also for more realistic applications.},
 	title = {Reduced model-based parareal simulations of oscillatory singularly perturbed ordinary differential equations},
 	url = {https://doi.org/10.1016/j.jcp.2021.110282},
 	volume = {436},
-	year = {2021},
-}
-
-@incollection{GoetschelEtAl2021,
-	author = {Sebastian Götschel and Michael Minion and Daniel Ruprecht and Robert Speck},
-	booktitle = {Springer Proceedings in Mathematics {\&} Statistics},
-	doi = {10.1007/978-3-030-75933-9_4},
-	pages = {81--94},
-	publisher = {Springer International Publishing},
-	title = {Twelve Ways to Fool the Masses When Giving Parallel-in-Time Results},
-	url = {https://doi.org/10.1007/978-3-030-75933-9_4},
 	year = {2021},
 }
 
