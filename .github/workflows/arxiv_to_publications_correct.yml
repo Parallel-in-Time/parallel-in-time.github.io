@@ -26,7 +26,7 @@ jobs:
           commit-message: updated pint.bib using arxivbot
           title: pint.bib updates
           body: 'This is an auto-generated PR with reference updates. This closes #${{ github.event.issue.number }}.'
-          branch: bibtex-arxivbot-${{ github.event.issue.number }}
+#           branch: bibtex-arxivbot-${{ github.event.issue.number }}
           branch-suffix: short-commit-hash
       - name: Add comment to issue
         if: github.event.label.name == 'food for arxivbot' && steps.updater.outputs.COMMENT != ''
