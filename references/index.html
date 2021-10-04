@@ -1538,6 +1538,71 @@ computing results, also for more realistic applications.
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          LinEtAl2021b
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseLinEtAl2021bBibtex"
+                    aria-expanded="false" aria-controls="collapseLinEtAl2021bBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalLinEtAl2021bAbstract"
+                    aria-expanded="false" aria-controls="modalLinEtAl2021bAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="LinEtAl2021b">X.-L. Lin and Z. Zhang, “A Parallel-in-Time Preconditioner for the Schur Complement of Parabolic Optimal Control Problems,” arXiv:2109.12524v2 [math.NA], 2021 [Online]. Available at: <a href="http://arxiv.org/abs/2109.12524v2" target="_blank">http://arxiv.org/abs/2109.12524v2</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseLinEtAl2021bBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{LinEtAl2021b,
+  author = {Lin, Xue-Lei and Zhang, Zhimin},
+  howpublished = {arXiv:2109.12524v2 [math.NA]},
+  title = {A Parallel-in-Time Preconditioner for the Schur Complement of Parabolic Optimal Control Problems},
+  url = {http://arxiv.org/abs/2109.12524v2},
+  year = {2021}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalLinEtAl2021bAbstract" tabindex="-1" role="dialog" aria-labelledby="modalLinEtAl2021bAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalLinEtAl2021bAbstractTitle">
+            Abstract for BibTeX entry <code>LinEtAl2021b</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          For optimal control problems constrained by a initial-valued parabolic PDE, we have to solve a large scale saddle point algebraic system consisting of considering the discrete space and time points all together. A popular strategy to handle such a system is the Krylov subspace method, for which an efficient preconditioner plays a crucial role. The matching-Schur-complement preconditioner has been extensively studied in literature and the implementation of this preconditioner lies in solving the underlying PDEs twice, sequentially in time. In this paper, we propose a new preconditioner for the Schur complement, which can be used parallel-in-time (PinT) via the so called diagonalization technique. We show that the eigenvalues of the preconditioned matrix are low and upper bounded by positive constants independent of matrix size and the regularization parameter. The uniform boundedness of the eigenvalues leads to an optimal linear convergence rate of conjugate gradient solver for the preconditioned Schur complement system. To the best of our knowledge, it is the first time to have an optimal convergence analysis for a PinT preconditioning technique of the optimal control problem. Numerical results are reported to show that the performance of the proposed preconditioner is robust with respect to the discretization step-sizes and the regularization parameter.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           Liu2021
         </div>
       </div>
