@@ -5332,6 +5332,15 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
+@unpublished{LinEtAl2021b,
+	abstract = {For optimal control problems constrained by a initial-valued parabolic PDE, we have to solve a large scale saddle point algebraic system consisting of considering the discrete space and time points all together. A popular strategy to handle such a system is the Krylov subspace method, for which an efficient preconditioner plays a crucial role. The matching-Schur-complement preconditioner has been extensively studied in literature and the implementation of this preconditioner lies in solving the underlying PDEs twice, sequentially in time. In this paper, we propose a new preconditioner for the Schur complement, which can be used parallel-in-time (PinT) via the so called diagonalization technique. We show that the eigenvalues of the preconditioned matrix are low and upper bounded by positive constants independent of matrix size and the regularization parameter. The uniform boundedness of the eigenvalues leads to an optimal linear convergence rate of conjugate gradient solver for the preconditioned Schur complement system. To the best of our knowledge, it is the first time to have an optimal convergence analysis for a PinT preconditioning technique of the optimal control problem. Numerical results are reported to show that the performance of the proposed preconditioner is robust with respect to the discretization step-sizes and the regularization parameter.},
+	author = {Xue-Lei Lin and Zhimin Zhang},
+	howpublished = {arXiv:2109.12524v2 [math.NA]},
+	title = {A Parallel-in-Time Preconditioner for the Schur Complement of Parabolic Optimal Control Problems},
+	url = {http://arxiv.org/abs/2109.12524v2},
+	year = {2021},
+}
+
 @unpublished{Liu2021,
 	abstract = {In this paper we proposed two new quasi-boundary value methods for regularizing the ill-posed backward heat conduction problems. With a standard finite difference discretization in space and time, the obtained all-at-once nonsymmetric sparse linear systems have the desired block $\omega$-circulant structure, which can be utilized to design an efficient parallel-in-time (PinT) direct solver that built upon an explicit FFT-based diagonalization of the time discretization matrix. Convergence analysis is presented to justify the optimal choice of the regularization parameter. Numerical examples are reported to validate our analysis and illustrate the superior computational efficiency of our proposed PinT methods.},
 	author = {Jun Liu},
