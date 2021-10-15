@@ -102,15 +102,17 @@ if __name__ == '__main__':
             if not req.status_code == 200:
                 print(f'Request of {url} could not be processed, got status code {req.status_code}.')
                 break
-
+            
             data = req.json()
 
             if len(data['author']) > 1:
                 id = data['author'][0]['family'] + 'EtAl' + str(data['issued']['date-parts'][0][0])
             else:
                 id = data['author'][0]['family'] + str(data['issued']['date-parts'][0][0])
+            id = id.replace(" ", "_")
 
             d = db.get_entry_dict()
+
             id_orig = id
             letters = 'bcdefghijklmnopqrstuvwxyz'
             i = 0
@@ -136,6 +138,7 @@ if __name__ == '__main__':
                 url_bad = re.search(r'url\s*=\s*{(.*)}', bib).groups()[0]
                 bib = re.sub(r'(url\s*=\s*{)(.*)}', r'\1' + urllib.parse.unquote(url_bad) + '}', bib)
                 bib_db = bibtexparser.loads(bib)
+                print(bib)
             else:
                 bib_db = None
 
