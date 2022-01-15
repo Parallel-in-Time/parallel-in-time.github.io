@@ -2723,21 +2723,21 @@ computing results, also for more realistic applications.
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          SchützEtAl2021
+          SchützEtAl2021b
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSchützEtAl2021Bibtex"
-                    aria-expanded="false" aria-controls="collapseSchützEtAl2021Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSchützEtAl2021bBibtex"
+                    aria-expanded="false" aria-controls="collapseSchützEtAl2021bBibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalSchützEtAl2021Abstract"
-                    aria-expanded="false" aria-controls="modalSchützEtAl2021Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalSchützEtAl2021bAbstract"
+                    aria-expanded="false" aria-controls="modalSchützEtAl2021bAbstract">
               Abstract
             </button>
             
@@ -2747,36 +2747,25 @@ computing results, also for more realistic applications.
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="SchützEtAl2021">J. Schütz, D. C. Seal, and J. Zeifang, “Parallel-in-time high-order multiderivative IMEX solvers,” arXiv:2101.07846v1 [math.NA], 2021 [Online]. Available at: <a href="http://arxiv.org/abs/2101.07846v1" target="_blank">http://arxiv.org/abs/2101.07846v1</a></span>
+      <span id="SchützEtAl2021b">J. Schütz, D. C. Seal, and J. Zeifang, “Parallel-in-Time High-Order Multiderivative IMEX Solvers,” <i>Journal of Scientific Computing</i>, vol. 90, no. 1, Dec. 2021 [Online]. Available at: <a href="https://doi.org/10.1007%2Fs10915-021-01733-3" target="_blank">https://doi.org/10.1007%2Fs10915-021-01733-3</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseSchützEtAl2021Bibtex">
+  <div class="collapse" id="collapseSchützEtAl2021bBibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@unpublished{SchützEtAl2021,
+        <pre class="abstract">@article{SchützEtAl2021b,
   author = {Schütz, Jochen and Seal, David C. and Zeifang, Jonas},
-  howpublished = {arXiv:2101.07846v1 [math.NA]},
-  title = {Parallel-in-time high-order multiderivative IMEX solvers},
-  url = {http://arxiv.org/abs/2101.07846v1},
+  doi = {10.1007/s10915-021-01733-3},
+  journal = {Journal of Scientific Computing},
+  month = dec,
+  number = {1},
+  publisher = {Springer Science and Business Media {LLC}},
+  title = {Parallel-in-Time High-Order Multiderivative {IMEX} Solvers},
+  url = {https://doi.org/10.1007%2Fs10915-021-01733-3},
+  volume = {90},
   year = {2021}
 }
 </pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalSchützEtAl2021Abstract" tabindex="-1" role="dialog" aria-labelledby="modalSchützEtAl2021AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalSchützEtAl2021AbstractTitle">
-            Abstract for BibTeX entry <code>SchützEtAl2021</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          In this work, we present a novel class of parallelizable high-order time integration schemes for the approximate solution of additive ODEs. The methods achieve high order through a combination of a suitable quadrature formula involving multiple derivatives of the ODE’s right-hand side and a predictor-corrector ansatz. The latter approach is designed in such a way that parallelism in time is made possible. We present thorough analysis as well as numerical results that showcase scaling opportunities of methods from this class of solvers.
-        </div>
       </div>
     </div>
   </div>
