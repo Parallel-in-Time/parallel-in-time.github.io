@@ -5716,6 +5716,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2021},
 }
 
+@unpublished{JiangEtAl2022,
+	abstract = {Inverse source problems arise often in real-world applications, such as localizing unknown groundwater contaminant sources. Being different from Tikhonov regularization, the quasi-boundary value method has been proposed and analyzed as an effective way for regularizing such inverse source problems, which was shown to achieve an optimal order convergence rate under suitable assumptions. However, fast direct or iterative solvers for the resulting all-at-once large-scale linear systems have been rarely studied in the literature. In this work, we first proposed and analyzed a modified quasi-boundary value method, and then developed a diagonalization-based parallel-in-time (PinT) direct solver, which can achieve a dramatic speedup in CPU times when compared with MATLAB's sparse direct solver. In particular, the time-discretization matrix $B$ is shown to be diagonalizable, and the condition number of its eigenvector matrix $V$ is proven to exhibit quadratic growth, which guarantees the roundoff errors due to diagonalization is well controlled. Several 1D and 2D examples are presented to demonstrate the very promising computational efficiency of our proposed method, where the CPU times in 2D cases can be speedup by three orders of magnitude.},
+	author = {Yi Jiang and Jun Liu and Xiang-Sheng Wang},
+	howpublished = {arXiv:2201.02687v1 [math.NA]},
+	title = {A Direct Parallel-in-Time Quasi-Boundary Value Method for Inverse Space-Dependent Source Problems},
+	url = {http://arxiv.org/abs/2201.02687v1},
+	year = {2022},
+}
+
 @article{LiuEtAl2022,
 	author = {Jun Liu and Zhu Wang},
 	doi = {10.1016/j.amc.2021.126750},
