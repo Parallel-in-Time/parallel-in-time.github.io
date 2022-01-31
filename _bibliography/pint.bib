@@ -5755,6 +5755,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{VargasEtAl2022,
+	abstract = {As CPU clock speeds have stagnated, and high performance computers continue to have ever higher core counts, increased parallelism is needed to take advantage of these new architectures. Traditional serial time-marching schemes are a significant bottleneck, as many types of simulations require large numbers of time-steps which must be computed sequentially. Parallel in Time schemes, such as the Multigrid Reduction in Time (MGRIT) method, remedy this by parallelizing across time-steps, and have shown promising results for parabolic problems. However, chaotic problems have proved more difficult, since chaotic initial value problems are inherently ill-conditioned. MGRIT relies on a hierarchy of successively coarser time-grids to iteratively correct the solution on the finest time-grid, but due to the nature of chaotic systems, subtle inaccuracies on the coarser levels can lead to poor coarse-grid corrections. Here we propose a modification to nonlinear FAS multigrid, as well as a novel time-coarsening scheme, which together better capture long term behavior on coarse grids and greatly improve convergence of MGRIT for chaotic initial value problems. We provide supporting numerical results for the Lorenz system model problem.},
+	author = {David A. Vargas and Robert D. Falgout and Stefanie Günther and Jacob B. Schroder},
+	howpublished = {arXiv:2201.10441v1 [math.NA]},
+	title = {Toward Parallel in Time for Chaotic Dynamical Systems},
+	url = {http://arxiv.org/abs/2201.10441v1},
+	year = {2022},
+}
+
 @inproceedings{YodaEtAl2022,
 	author = {Ryo Yoda and Matthias Bolten and Kengo Nakajima and Akihiro Fujii},
 	booktitle = {International Conference on High Performance Computing in Asia-Pacific Region},
