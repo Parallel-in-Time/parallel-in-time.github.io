@@ -5755,6 +5755,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{PentlandEtAl2022,
+	abstract = {Sequential numerical methods for integrating initial value problems (IVPs) can be prohibitively expensive when high numerical accuracy is required over the entire interval of integration. One remedy is to integrate in a parallel fashion, "predicting" the solution serially using a cheap (coarse) solver and "correcting" these values using an expensive (fine) solver that runs in parallel on a number of temporal subintervals. In this work, we propose a time-parallel algorithm (GParareal) that solves IVPs by modelling the correction term, i.e. the difference between fine and coarse solutions, using a Gaussian process emulator. This approach compares favourably with the classic parareal algorithm and we demonstrate, on a number of IVPs, that GParareal can converge in fewer iterations than parareal, leading to an increase in parallel speed-up. GParareal also manages to locate solutions to certain IVPs where parareal fails and has the additional advantage of being able to use archives of legacy solutions, e.g. solutions from prior runs of the IVP for different initial conditions, to further accelerate convergence of the method - something that existing time-parallel methods do not do.},
+	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan and James Buchanan and L. C. Appel},
+	howpublished = {arXiv:2201.13418v1 [math.NA]},
+	title = {GParareal: A time-parallel ODE solver using Gaussian process emulation},
+	url = {http://arxiv.org/abs/2201.13418v1},
+	year = {2022},
+}
+
 @unpublished{VargasEtAl2022,
 	abstract = {As CPU clock speeds have stagnated, and high performance computers continue to have ever higher core counts, increased parallelism is needed to take advantage of these new architectures. Traditional serial time-marching schemes are a significant bottleneck, as many types of simulations require large numbers of time-steps which must be computed sequentially. Parallel in Time schemes, such as the Multigrid Reduction in Time (MGRIT) method, remedy this by parallelizing across time-steps, and have shown promising results for parabolic problems. However, chaotic problems have proved more difficult, since chaotic initial value problems are inherently ill-conditioned. MGRIT relies on a hierarchy of successively coarser time-grids to iteratively correct the solution on the finest time-grid, but due to the nature of chaotic systems, subtle inaccuracies on the coarser levels can lead to poor coarse-grid corrections. Here we propose a modification to nonlinear FAS multigrid, as well as a novel time-coarsening scheme, which together better capture long term behavior on coarse grids and greatly improve convergence of MGRIT for chaotic initial value problems. We provide supporting numerical results for the Lorenz system model problem.},
 	author = {David A. Vargas and Robert D. Falgout and Stefanie Günther and Jacob B. Schroder},
