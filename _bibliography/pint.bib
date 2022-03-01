@@ -4057,17 +4057,6 @@ setups.}},
 	year = {2018},
 }
 
-@inproceedings{AgbohEtAl2019,
-	abstract = {{We present a method for fast and accurate physics-based predictions during non-prehensile manipulation planning and control. Given an initial state and a sequence of controls, the problem of predicting the resulting sequence of states is a key component of a variety of model-based planning and control algorithms. We propose combining a coarse (i.e. computationally cheap but not very accurate) predictive physics model, with a fine (i.e. computationally expensive but accurate) predictive physics model, to generate a hybrid model that is at the required speed and accuracy for a given manipulation task. Our approach is based on the Parareal algorithm, a parallel-in-time integration method used for computing numerical solutions for general systems of ordinary differential equations. We use Parareal to combine a coarse pushing model with an off-the-shelf physics engine to deliver physics-based predictions that are as accurate as the physics engine but runs in substantially less wall-clock time, thanks to Parareal being amenable to parallelization. We use these physics-based predictions in a model-predictive-control framework based on trajectory optimization, to plan pushing actions that avoid an obstacle and reach a goal location. We show that by combining the two physics models, we can achieve the same success rates as the planner that uses the off-the-shelf physics engine directly, but significantly faster. We present experiments in simulation and on a real robotic setup.}},
-	author = {Wisdom C. Agboh and Daniel Ruprecht and Mehmet R. Dogar},
-	booktitle = {The International Symposium on Robotics Research (ISRR)},
-	note = {Accepted},
-	publisher = {Springer},
-	title = {Combining Coarse and Fine Physics for Manipulation using Parallel-in-Time Integration},
-	url = {https://arxiv.org/abs/1903.08470},
-	year = {2019},
-}
-
 @article{BlumersEtAl2019,
 	abstract = {{Lagrangian particle methods based on detailed atomic and molecular models are powerful computational tools for studying the dynamics of microscale and nanoscale systems. However, the maximum time step is limited by the smallest oscillation period of the fastest atomic motion, rendering long-time simulations very expensive. To resolve this bottleneck, we propose a supervised parallel-in-time algorithm for stochastic dynamics (SPASD) to accelerate long-time Lagrangian particle simulations. Our method is inspired by bottom-up coarse-graining projections that yield mean-field hydrodynamic behavior in the continuum limit. Here as an example, we use the dissipative particle dynamics (DPD) as the Lagrangian particle simulator that is supervised by its macroscopic counterpart, i.e., the Navier-Stokes simulator. The low-dimensional macroscopic system (here, the Navier-Stokes solver) serves as a predictor to supervise the high-dimensional Lagrangian simulator, in a predictor-corrector type algorithm. The results of the Lagrangian simulation then correct the mean-field prediction and provide the proper microscopic details (e.g., consistent fluctuations, correlations, etc.). The unique feature that sets SPASD apart from other multiscale methods is the use of a low-fidelity macroscopic model as a predictor. The macro-model can be approximate and even inconsistent with the microscale description, but SPASD anticipates the deviation and corrects it internally to recover the true dynamics. We first present the algorithm and analyze its theoretical speedup, and subsequently we present the accuracy and convergence of the algorithm for the time-dependent plane Poiseuille flow, demonstrating that SPASD converges exponentially fast over iterations, irrespective of the accuracy of the predictor. Moreover, the fluctuating characteristics of the stochastic dynamics are identical to the unsupervised (serial in time) DPD simulation. We also compare the performance of SPASD to the conventional spatial decomposition method, which is one of the most parallel-efficient methods for particle simulations. We find that the parallel efficiency of SPASD and the conventional spatial decomposition method are similar for a small number of computing cores, but for a large number of cores the performance of SPASD is superior. Furthermore, SPASD can be used in conjunction with spatial decomposition for enhanced performance. Lastly, we simulate a two-dimensional cavity flow that requires more iterations to converge compared to the Poiseuille flow, and we observe that SPASD converges to the correct solution. Although a DPD solver is used to demonstrate the results, SPASD is a general framework and can be readily applied to other Lagrangian approaches including molecular dynamics and Langevin dynamics.}},
 	author = {Ansel L. Blumers and Zhen Li and George Em Karniadakis},
@@ -5718,6 +5707,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {On the bilateral preconditioning for a L2-type all-at-once system arising from time-space fractional Bloch-Torrey equations},
 	url = {http://arxiv.org/abs/2109.06510v1},
 	year = {2021},
+}
+
+@inproceedings{AgbohEtAl2022,
+	abstract = {{We present a method for fast and accurate physics-based predictions during non-prehensile manipulation planning and control. Given an initial state and a sequence of controls, the problem of predicting the resulting sequence of states is a key component of a variety of model-based planning and control algorithms. We propose combining a coarse (i.e. computationally cheap but not very accurate) predictive physics model, with a fine (i.e. computationally expensive but accurate) predictive physics model, to generate a hybrid model that is at the required speed and accuracy for a given manipulation task. Our approach is based on the Parareal algorithm, a parallel-in-time integration method used for computing numerical solutions for general systems of ordinary differential equations. We use Parareal to combine a coarse pushing model with an off-the-shelf physics engine to deliver physics-based predictions that are as accurate as the physics engine but runs in substantially less wall-clock time, thanks to Parareal being amenable to parallelization. We use these physics-based predictions in a model-predictive-control framework based on trajectory optimization, to plan pushing actions that avoid an obstacle and reach a goal location. We show that by combining the two physics models, we can achieve the same success rates as the planner that uses the off-the-shelf physics engine directly, but significantly faster. We present experiments in simulation and on a real robotic setup.}},
+	author = {Wisdom C. Agboh and Daniel Ruprecht and Mehmet R. Dogar},
+	editor = {Asfour, Tamim and Yoshida, Eiichi and Park, Jaeheung and Christensen, Henrik and Khatib, Oussama},
+	booktitle = {Robotics Research},	
+	publisher = {Springer International Publishing},
+	title = {Combining Coarse and Fine Physics for Manipulation using Parallel-in-Time Integration},
+	url = {https://arxiv.org/abs/1903.08470},
+	year = {2022},
+	pages = {725 -- 740},
+	url = {https://doi.org/10.1007/978-3-030-95459-8_44},
+	doi = {10.1007/978-3-030-95459-8_44}
 }
 
 @article{ChengEtAl2022,
