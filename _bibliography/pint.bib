@@ -4877,15 +4877,6 @@ the effectiveness of the proposed method.},
 	year = {2020},
 }
 
-@unpublished{PelsEtAl2020,
-	abstract = {This paper presents an efficient numerical algorithm for the simulation of pulse-width modulated power converters via parallelization in time domain. The method applies the multirate partial differential equation approach on the coarse grid of the (two-grid) parallel-in-time algorithm Parareal. Performance of the proposed approach is illustrated via its application to a DC-DC converter.},
-	author = {Andreas Pels and Iryna Kulchytska-Ruchka and Sebastian Schöps},
-	howpublished = {arXiv:2006.06544v1 [math.NA]},
-	title = {Parallel-in-Time Simulation of Power Converters Using Multirate PDEs},
-	url = {http://arxiv.org/abs/2006.06544v1},
-	year = {2020},
-}
-
 @article{RittichEtAl2020,
 	author = {Hannah Rittich and Robert Speck},
 	doi = {10.1016/j.cpc.2020.107363},
@@ -5107,15 +5098,6 @@ the effectiveness of the proposed method.},
 	year = {2021},
 }
 
-@unpublished{DanieliEtAl2021,
-	abstract = {Parallel-in-time methods have become increasingly popular in the simulation of time-dependent numerical PDEs, allowing for the efficient use of additional MPI processes when spatial parallelism saturates. Most methods treat the solution and parallelism in space and time separately. In contrast, all-at-once methods solve the full space-time system directly, largely treating time as simply another spatial dimension. All-at-once methods offer a number of benefits over separate treatment of space and time, most notably significantly increased parallelism and faster time-to-solution (when applicable). However, the development of fast, scalable all-at-once methods has largely been limited to time-dependent (advection-)diffusion problems. This paper introduces the concept of space-time block preconditioning for the all-at-once solution of incompressible flow. By extending well-known concepts of spatial block preconditioning to the space-time setting, we develop a block preconditioner whose application requires the solution of a space-time (advection-)diffusion equation in the velocity block, coupled with a pressure Schur complement approximation consisting of independent spatial solves at each time-step, and a space-time matrix-vector multiplication. The new method is tested on four classical models in incompressible flow. Results indicate perfect scalability in refinement of spatial and temporal mesh spacing, perfect scalability in nonlinear Picard iterations count when applied to a nonlinear Navier-Stokes problem, and minimal overhead in terms of number of preconditioner applications compared with sequential time-stepping.},
-	author = {Federico Danieli and Ben S. Southworth and Andrew J. Wathen},
-	howpublished = {arXiv:2101.07003v1 [math.NA]},
-	title = {Space-time block preconditioning for incompressible flow},
-	url = {http://arxiv.org/abs/2101.07003v1},
-	year = {2021},
-}
-
 @unpublished{DanieliEtAl2021b,
 	abstract = {Time-parallel algorithms seek greater concurrency by decomposing the temporal domain of a Partial Differential Equation (PDE), providing possibilities for accelerating the computation of its solution. While parallelisation in time has allowed remarkable speed-ups in applications involving parabolic equations, its effectiveness in the hyperbolic framework remains debatable: growth of instabilities and slow convergence are both strong issues in this case, which often negate most of the advantages from time-parallelisation. Here, we focus on the Multigrid Reduction in Time (MGRIT) algorithm, investigating in detail its performance when applied to non-linear conservation laws with a variety of discretisation schemes. Specific attention is given to high-accuracy Weighted Essentially Non-Oscillatory (WENO) reconstructions, coupled with Strong Stability Preserving (SSP) integrators, which are often the discretisations of choice for such PDEs. A technique to improve the performance of MGRIT when applied to a low-order, more dissipative scheme is also outlined. This study aims at identifying the main causes for degradation in the convergence speed of the algorithm, and finds the Courant-Friedrichs-Lewy (CFL) limit to be the principal determining factor.},
 	author = {Federico Danieli and Scott MacLachlan},
@@ -5225,15 +5207,6 @@ computing results, also for more realistic applications.},
 	howpublished = {arXiv preprint arXiv:2005.09158},
 	title = {ParaDiag: parallel-in-time algorithms based on the diagonalization technique},
 	url = {http://arxiv.org/abs/2005.09158},
-	year = {2021},
-}
-
-@unpublished{GarciaEtAl2021,
-	abstract = {This article proposes modifications of the Parareal algorithm for its application to higher index differential algebraic equations (DAEs). It is based on the idea of applying the algorithm to only the differential components of the equation and the computation of corresponding consistent initial conditions later on. For differential algebraic equations with a special structure as e.g. given in flux-charge modified nodal analysis, it is shown that the usage of the implicit Euler method as a time integrator suffices for the Parareal algorithm to converge. Both versions of the Parareal method are applied to numerical examples of nonlinear index 2 differential algebraic equations.},
-	author = {Idoia Cortes Garcia and Iryna Kulchytska-Ruchka and Sebastian Schöps},
-	howpublished = {arXiv:2107.07755v1 [math.NA]},
-	title = {Parareal for Higher Index Differential Algebraic Equations},
-	url = {http://arxiv.org/abs/2107.07755v1},
 	year = {2021},
 }
 
@@ -5467,6 +5440,17 @@ computing results, also for more realistic applications.},
 	publisher = {American Institute of Aeronautics and Astronautics},
 	title = {Time-Parallel Scalable Solution of Periodic Rotor Dynamics for Large-Scale 3D Structures},
 	url = {https://doi.org/10.2514/6.2021-1079},
+	year = {2021},
+}
+
+@incollection{PelsEtAl2021,
+	author = {Andreas Pels and Iryna Kulchytska-Ruchka and Sebastian Schöps},
+	booktitle = {Scientific Computing in Electrical Engineering},
+	doi = {10.1007/978-3-030-84238-3_4},
+	pages = {33--41},
+	publisher = {Springer International Publishing},
+	title = {Parallel-in-Time Simulation of Power Converters Using Multirate {PDEs}},
+	url = {https://doi.org/10.1007%2F978-3-030-84238-3_4},
 	year = {2021},
 }
 
@@ -5712,15 +5696,14 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 @inproceedings{AgbohEtAl2022,
 	abstract = {{We present a method for fast and accurate physics-based predictions during non-prehensile manipulation planning and control. Given an initial state and a sequence of controls, the problem of predicting the resulting sequence of states is a key component of a variety of model-based planning and control algorithms. We propose combining a coarse (i.e. computationally cheap but not very accurate) predictive physics model, with a fine (i.e. computationally expensive but accurate) predictive physics model, to generate a hybrid model that is at the required speed and accuracy for a given manipulation task. Our approach is based on the Parareal algorithm, a parallel-in-time integration method used for computing numerical solutions for general systems of ordinary differential equations. We use Parareal to combine a coarse pushing model with an off-the-shelf physics engine to deliver physics-based predictions that are as accurate as the physics engine but runs in substantially less wall-clock time, thanks to Parareal being amenable to parallelization. We use these physics-based predictions in a model-predictive-control framework based on trajectory optimization, to plan pushing actions that avoid an obstacle and reach a goal location. We show that by combining the two physics models, we can achieve the same success rates as the planner that uses the off-the-shelf physics engine directly, but significantly faster. We present experiments in simulation and on a real robotic setup.}},
 	author = {Wisdom C. Agboh and Daniel Ruprecht and Mehmet R. Dogar},
+	booktitle = {Robotics Research},
+	doi = {10.1007/978-3-030-95459-8_44},
 	editor = {Asfour, Tamim and Yoshida, Eiichi and Park, Jaeheung and Christensen, Henrik and Khatib, Oussama},
-	booktitle = {Robotics Research},	
+	pages = {725 -- 740},
 	publisher = {Springer International Publishing},
 	title = {Combining Coarse and Fine Physics for Manipulation using Parallel-in-Time Integration},
 	url = {https://arxiv.org/abs/1903.08470},
 	year = {2022},
-	pages = {725 -- 740},
-	url = {https://doi.org/10.1007/978-3-030-95459-8_44},
-	doi = {10.1007/978-3-030-95459-8_44}
 }
 
 @article{ChengEtAl2022,
@@ -5731,6 +5714,31 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 	title = {Hybrid Parallel-in-Time-and-Space Transient Stability Simulation of Large-Scale {AC}/{DC} Grids},
 	url = {https://doi.org/10.1109/tpwrs.2022.3153450},
+	year = {2022},
+}
+
+@article{DanieliEtAl2022,
+	author = {Federico Danieli and Ben S. Southworth and Andrew J. Wathen},
+	doi = {10.1137/21m1390773},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {feb},
+	number = {1},
+	pages = {A337--A363},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Space-Time Block Preconditioning for Incompressible Flow},
+	url = {https://doi.org/10.1137%2F21m1390773},
+	volume = {44},
+	year = {2022},
+}
+
+@article{GarciaEtAl2022,
+	author = {Idoia Cortes Garcia and Iryna Kulchytska-Ruchka and Sebastian Schöps},
+	doi = {10.1007/s11075-022-01267-1},
+	journal = {Numerical Algorithms},
+	month = {mar},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {Parareal for index two differential algebraic equations},
+	url = {https://doi.org/10.1007%2Fs11075-022-01267-1},
 	year = {2022},
 }
 
