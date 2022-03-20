@@ -5731,6 +5731,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{FreiEtAl2022,
+	abstract = {The numerical simulation of atherosclerotic plaque growth is computationally prohibitive, since it involves a complex cardiovascular fluid-structure interaction (FSI) problem with a characteristic time scale of milliseconds to seconds, as well as a plaque growth process governed by reaction-diffusion equations, which takes place over several months. In this work we combine a temporal homogenization approach, which separates the problem in computationally expensive FSI problems on a micro scale and a reaction-diffusion problem on the macro scale, with parallel time-stepping algorithms. It has been found in the literature that parallel time-stepping algorithms do not perform well when applied directly to the FSI problem. To circumvent this problem, a parareal algorithm is applied on the macro-scale reaction-diffusion problem instead of the micro-scale FSI problem. We investigate modifications in the coarse propagator of the parareal algorithm, in order to further reduce the number of costly micro problems to be solved. The approaches are tested in detailed numerical investigations based on serial simulations.},
+	author = {Stefan Frei and Alexander Heinlein},
+	howpublished = {arXiv:2203.06526v1 [math.NA]},
+	title = {Towards parallel time-stepping for the numerical simulation of atherosclerotic plaque growth},
+	url = {http://arxiv.org/abs/2203.06526v1},
+	year = {2022},
+}
+
 @article{GarciaEtAl2022,
 	author = {Idoia Cortes Garcia and Iryna Kulchytska-Ruchka and Sebastian Schöps},
 	doi = {10.1007/s11075-022-01267-1},
@@ -5792,6 +5801,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2201.13418v1 [math.NA]},
 	title = {GParareal: A time-parallel ODE solver using Gaussian process emulation},
 	url = {http://arxiv.org/abs/2201.13418v1},
+	year = {2022},
+}
+
+@unpublished{SchleußEtAl2022,
+	abstract = {We target time-dependent partial differential equations (PDEs) with coefficients that are arbitrarily rough in both space and time. To tackle these problems, we construct reduced basis/ multiscale ansatz functions defined in space that can be combined with time stepping schemes within model order reduction or multiscale methods. To that end, we propose to perform several simulations of the PDE for few time steps in parallel starting at different, randomly drawn start points, prescribing random initial conditions; applying a singular value decomposition to a subset of the so obtained snapshots yields the reduced basis/ multiscale ansatz functions. This facilitates constructing the reduced basis/ multiscale ansatz functions in an embarrassingly parallel manner. In detail, we suggest using a data-dependent probability distribution based on the data functions of the PDE to select the start points. Each local in time simulation of the PDE with random initial conditions approximates a local approximation space in one time point that is optimal in the sense of Kolmogorov. The derivation of these optimal local approximation spaces which are spanned by the left singular vectors of a compact transfer operator that maps arbitrary initial conditions to the solution of the PDE in a later point of time, is one other main contribution of this paper. By solving the PDE locally in time with random initial conditions, we construct local ansatz spaces in time that converge provably at a quasi-optimal rate and allow for local error control. Numerical experiments demonstrate that the proposed method can outperform existing methods like the proper orthogonal decomposition even in a sequential setting.},
+	author = {Julia Schleuß and Kathrin Smetana and Lukas ter Maat},
+	howpublished = {arXiv:2203.06276v1 [math.NA]},
+	title = {Randomized quasi-optimal local approximation spaces in time},
+	url = {http://arxiv.org/abs/2203.06276v1},
 	year = {2022},
 }
 
