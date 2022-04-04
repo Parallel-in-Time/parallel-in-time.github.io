@@ -5840,6 +5840,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{SterckEtAl2022,
+	abstract = {Many iterative parallel-in-time algorithms have been shown to be highly efficient for diffusion-dominated partial differential equations (PDEs), but are inefficient or even divergent when applied to advection-dominated PDEs. We consider the application of the multigrid reduction-in-time (MGRIT) algorithm to linear advection PDEs. The key to efficient time integration with this method is using a coarse-grid operator that provides a sufficiently accurate approximation to the the so-called ideal coarse-grid operator. For certain classes of semi-Lagrangian discretizations, we present a novel semi-Lagrangian-based coarse-grid operator that leads to fast and scalable multilevel time integration of linear advection PDEs. The coarse-grid operator is composed of a semi-Lagrangian discretization followed by a correction term, with the correction designed so that the leading-order truncation error of the composite operator is approximately equal to that of the ideal coarse-grid operator. Parallel results show substantial speed-ups over sequential time integration for variable-wave-speed advection problems in one and two spatial dimensions, and using high-order discretizations up to order five. The proposed approach establishes the first practical method that provides small and scalable MGRIT iteration counts for advection problems.},
+	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik},
+	howpublished = {arXiv:2203.13382v1 [math.NA]},
+	title = {Fast multigrid reduction-in-time for advection via modified semi-Lagrangian coarse-grid operators},
+	url = {http://arxiv.org/abs/2203.13382v1},
+	year = {2022},
+}
+
 @unpublished{VargasEtAl2022,
 	abstract = {As CPU clock speeds have stagnated, and high performance computers continue to have ever higher core counts, increased parallelism is needed to take advantage of these new architectures. Traditional serial time-marching schemes are a significant bottleneck, as many types of simulations require large numbers of time-steps which must be computed sequentially. Parallel in Time schemes, such as the Multigrid Reduction in Time (MGRIT) method, remedy this by parallelizing across time-steps, and have shown promising results for parabolic problems. However, chaotic problems have proved more difficult, since chaotic initial value problems are inherently ill-conditioned. MGRIT relies on a hierarchy of successively coarser time-grids to iteratively correct the solution on the finest time-grid, but due to the nature of chaotic systems, subtle inaccuracies on the coarser levels can lead to poor coarse-grid corrections. Here we propose a modification to nonlinear FAS multigrid, as well as a novel time-coarsening scheme, which together better capture long term behavior on coarse grids and greatly improve convergence of MGRIT for chaotic initial value problems. We provide supporting numerical results for the Lorenz system model problem.},
 	author = {David A. Vargas and Robert D. Falgout and Stefanie Günther and Jacob B. Schroder},
