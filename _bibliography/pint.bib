@@ -5740,6 +5740,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@article{D’AmoreEtAl2022,
+	author = {Luisa D'Amore and Emil Constantinescu and Luisa Carracciuolo},
+	doi = {10.1007/s10915-022-01826-7},
+	journal = {Journal of Scientific Computing},
+	month = {apr},
+	number = {2},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {A Scalable Space-Time Domain Decomposition Approach for Solving Large Scale Nonlinear Regularized Inverse Ill Posed Problems in 4D Variational Data Assimilation},
+	url = {https://doi.org/10.1007/s10915-022-01826-7},
+	volume = {91},
+	year = {2022},
+}
+
 @unpublished{FreiEtAl2022,
 	abstract = {The numerical simulation of atherosclerotic plaque growth is computationally prohibitive, since it involves a complex cardiovascular fluid-structure interaction (FSI) problem with a characteristic time scale of milliseconds to seconds, as well as a plaque growth process governed by reaction-diffusion equations, which takes place over several months. In this work we combine a temporal homogenization approach, which separates the problem in computationally expensive FSI problems on a micro scale and a reaction-diffusion problem on the macro scale, with parallel time-stepping algorithms. It has been found in the literature that parallel time-stepping algorithms do not perform well when applied directly to the FSI problem. To circumvent this problem, a parareal algorithm is applied on the macro-scale reaction-diffusion problem instead of the micro-scale FSI problem. We investigate modifications in the coarse propagator of the parareal algorithm, in order to further reduce the number of costly micro problems to be solved. The approaches are tested in detailed numerical investigations based on serial simulations.},
 	author = {Stefan Frei and Alexander Heinlein},
@@ -5775,6 +5788,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2201.02687v1 [math.NA]},
 	title = {A Direct Parallel-in-Time Quasi-Boundary Value Method for Inverse Space-Dependent Source Problems},
 	url = {http://arxiv.org/abs/2201.02687v1},
+	year = {2022},
+}
+
+@unpublished{KressnerEtAl2022,
+	abstract = {This work is concerned with linear matrix equations that arise from the space-time discretization of time-dependent linear partial differential equations (PDEs). Such matrix equations have been considered, for example, in the context of parallel-in-time integration leading to a class of algorithms called ParaDiag. We develop and analyze two novel approaches for the numerical solution of such equations. Our first approach is based on the observation that the modification of these equations performed by ParaDiag in order to solve them in parallel has low rank. Building upon previous work on low-rank updates of matrix equations, this allows us to make use of tensorized Krylov subspace methods to account for the modification. Our second approach is based on interpolating the solution of the matrix equation from the solutions of several modifications. Both approaches avoid the use of iterative refinement needed by ParaDiag and related space-time approaches in order to attain good accuracy. In turn, our new approaches have the potential to outperform, sometimes significantly, existing approaches. This potential is demonstrated for several different types of PDEs.},
+	author = {Daniel Kressner and Stefano Massei and Junli Zhu},
+	howpublished = {arXiv:2204.03073v1 [math.NA]},
+	title = {Improved parallel-in-time integration via low-rank updates and interpolation},
+	url = {http://arxiv.org/abs/2204.03073v1},
 	year = {2022},
 }
 
