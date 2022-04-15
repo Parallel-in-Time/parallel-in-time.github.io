@@ -5379,15 +5379,6 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
-@unpublished{LiuEtAl2021b,
-	abstract = {In this paper, we propose a direct parallel-in-time (PinT) algorithm for time-dependent problems with first- or second-order derivative. We use a second-order boundary value method as the time integrator that leads to a tridiagonal time discretization matrix. Instead of solving the corresponding all-at-once system iteratively, we diagonalize the time discretization matrix, which yields a direct parallel implementation across all time levels. A crucial issue on this methodology is how the condition number of the eigenvector matrix $V$ grows as $n$ is increased, where $n$ is the number of time levels. A large condition number leads to large roundoff error in the diagonalization procedure, which could seriously pollute the numerical accuracy. Based on a novel connection between the characteristic equation and the Chebyshev polynomials, we present explicit formulas for computing $V$ and $V^{-1}$, by which we prove that $\mathrm{Cond}_2(V)=\mathcal{O}(n^{2})$. This implies that the diagonalization process is well-conditioned and the roundoff error only increases moderately as $n$ grows and thus, compared to other direct PinT algorithms, a much larger $n$ can be used to yield satisfactory parallelism. Numerical results on parallel machine are given to support our findings, where over 60 times speedup is achieved with 256 cores.},
-	author = {Jun Liu and Xiang-Sheng Wang and Shu-Lin Wu and Tao Zhou},
-	howpublished = {arXiv:2108.01716v1 [math.NA]},
-	title = {A well-conditioned direct PinT algorithm for first- and second-order evolutionary equations},
-	url = {http://arxiv.org/abs/2108.01716v1},
-	year = {2021},
-}
-
 @article{LyuEtAl2021,
 	author = {Chengzhang Lyu and Ning Lin and Venkata Dinavahi},
 	doi = {10.1109/tvt.2021.3081534},
@@ -5726,6 +5717,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@article{DAmoreEtAl2022,
+	author = {Luisa D'Amore and Emil Constantinescu and Luisa Carracciuolo},
+	doi = {10.1007/s10915-022-01826-7},
+	journal = {Journal of Scientific Computing},
+	month = {apr},
+	number = {2},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {A Scalable Space-Time Domain Decomposition Approach for Solving Large Scale Nonlinear Regularized Inverse Ill Posed Problems in 4D Variational Data Assimilation},
+	url = {https://doi.org/10.1007/s10915-022-01826-7},
+	volume = {91},
+	year = {2022},
+}
+
 @article{DanieliEtAl2022,
 	author = {Federico Danieli and Ben S. Southworth and Andrew J. Wathen},
 	doi = {10.1137/21m1390773},
@@ -5737,19 +5741,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Space-Time Block Preconditioning for Incompressible Flow},
 	url = {https://doi.org/10.1137%2F21m1390773},
 	volume = {44},
-	year = {2022},
-}
-
-@article{DAmoreEtAl2022,
-	author = {Luisa D'Amore and Emil Constantinescu and Luisa Carracciuolo},
-	doi = {10.1007/s10915-022-01826-7},
-	journal = {Journal of Scientific Computing},
-	month = {apr},
-	number = {2},
-	publisher = {Springer Science and Business Media {LLC}},
-	title = {A Scalable Space-Time Domain Decomposition Approach for Solving Large Scale Nonlinear Regularized Inverse Ill Posed Problems in 4D Variational Data Assimilation},
-	url = {https://doi.org/10.1007/s10915-022-01826-7},
-	volume = {91},
 	year = {2022},
 }
 
@@ -5823,6 +5814,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {A {ROM}-accelerated parallel-in-time preconditioner for solving all-at-once systems in unsteady convection-diffusion {PDEs}},
 	url = {https://doi.org/10.1016/j.amc.2021.126750},
 	volume = {416},
+	year = {2022},
+}
+
+@article{LiuEtAl2022b,
+	author = {Jun Liu and Xiang-Sheng Wang and Shu-Lin Wu and Tao Zhou},
+	doi = {10.1007/s10444-022-09928-4},
+	journal = {Advances in Computational Mathematics},
+	month = {apr},
+	number = {3},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {A well-conditioned direct {PinT} algorithm for first- and second-order evolutionary equations},
+	url = {https://doi.org/10.1007%2Fs10444-022-09928-4},
+	volume = {48},
 	year = {2022},
 }
 
