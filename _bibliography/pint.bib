@@ -5537,15 +5537,6 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
-@unpublished{TielenEtAl2021,
-	abstract = {Isogeometric Analysis (IgA) has become a viable alternative to the Finite Element Method (FEM) and is typically combined with a time integration scheme within the method of lines for time-dependent problems. However, due to a stagnation of processors clock speeds, traditional (i.e. sequential) time integration schemes become more and more the bottleneck within these large-scale computations, which lead to the development of parallel-in-time methods like the Multigrid Reduced in Time (MGRIT) method. Recently, MGRIT has been succesfully applied by the authors in the context of IgA showing convergence independent of the mesh width, approximation order of the B-spline basis functions and time step size for a variety of benchmark problems. However, a strong dependency of the CPU times on the approximation order was visible when a standard Conjugate Gradient method was adopted for the spatial solves within MGRIT. In this paper we combine MGRIT with a state-of the-art solver (i.e. a p-multigrid method), specifically designed for IgA, thereby significantly reducing the overall computational costs of MGRIT. Furthermore, we investigate the performance of MGRIT and its scalability on modern copmuter architectures.},
-	author = {Roel Tielen and Matthias Möller and Cornelis Vuik},
-	howpublished = {arXiv:2107.05337v1 [math.NA]},
-	title = {Combining p-multigrid and multigrid reduced in time methods to obtain a scalable solver for Isogeometric Analysis},
-	url = {http://arxiv.org/abs/2107.05337v1},
-	year = {2021},
-}
-
 @incollection{van_VenetiëEtAl2021,
 	author = {Raymond van Venetië and Jan Westerdiep},
 	doi = {10.1007/978-3-030-75933-9_2},
@@ -5635,15 +5626,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2103.07706v1 [math.NA]},
 	title = {Time parallel integration and phase averaging for the nonlinear shallow water equations on the sphere},
 	url = {http://arxiv.org/abs/2103.07706v1},
-	year = {2021},
-}
-
-@unpublished{YangEtAl2021,
-	abstract = {The aim of this paper is to analyze the robust convergence of a class of parareal algorithms for solving parabolic problems. The coarse propagator is fixed to the backward Euler method and the fine propagator is a high-order single step integrator. Under some conditions on the fine propagator, we show that there exists some critical $J_*$ such that the parareal solver converges linearly with a convergence rate near $0.3$, provided that the ratio between the coarse time step and fine time step named $J$ satisfies $J \ge J_*$. The convergence is robust even if the problem data is nonsmooth and incompatible with boundary conditions. The qualified methods include all absolutely stable single step methods, whose stability function satisfies $|r(-\infty)|<1$, and hence the fine propagator could be arbitrarily high-order. Moreover, we examine some popular high-order single step methods, e.g., two-, three- and four-stage Lobatto IIIC methods, and verify that the corresponding parareal algorithms converge linearly with a factor $0.31$ and the threshold for these cases is $J_* = 2$. Intensive numerical examples are presented to support and complete our theoretical predictions.},
-	author = {Jiang Yang and Zhaoming Yuan and Zhi Zhou},
-	howpublished = {arXiv:2109.05203v1 [math.NA]},
-	title = {Robust Convergence of Parareal Algorithms with Arbitrarily High-order Fine Propagators},
-	url = {http://arxiv.org/abs/2109.05203v1},
 	year = {2021},
 }
 
@@ -5909,6 +5891,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@article{TielenEtAl2022,
+	author = {Roel Tielen and Matthias Möller and Cornelis Vuik},
+	doi = {10.1007/s42452-022-05043-7},
+	journal = {{SN} Applied Sciences},
+	month = {may},
+	number = {6},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {Combining p-multigrid and Multigrid Reduction in Time methods to obtain a scalable solver for Isogeometric Analysis},
+	url = {https://doi.org/10.1007%2Fs42452-022-05043-7},
+	volume = {4},
+	year = {2022},
+}
+
 @unpublished{VargasEtAl2022,
 	abstract = {As CPU clock speeds have stagnated, and high performance computers continue to have ever higher core counts, increased parallelism is needed to take advantage of these new architectures. Traditional serial time-marching schemes are a significant bottleneck, as many types of simulations require large numbers of time-steps which must be computed sequentially. Parallel in Time schemes, such as the Multigrid Reduction in Time (MGRIT) method, remedy this by parallelizing across time-steps, and have shown promising results for parabolic problems. However, chaotic problems have proved more difficult, since chaotic initial value problems are inherently ill-conditioned. MGRIT relies on a hierarchy of successively coarser time-grids to iteratively correct the solution on the finest time-grid, but due to the nature of chaotic systems, subtle inaccuracies on the coarser levels can lead to poor coarse-grid corrections. Here we propose a modification to nonlinear FAS multigrid, as well as a novel time-coarsening scheme, which together better capture long term behavior on coarse grids and greatly improve convergence of MGRIT for chaotic initial value problems. We provide supporting numerical results for the Lorenz system model problem.},
 	author = {David A. Vargas and Robert D. Falgout and Stefanie Günther and Jacob B. Schroder},
@@ -5926,6 +5921,16 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Elsevier {BV}},
 	title = {Time domain decomposition of parabolic control problems based on discontinuous Galerkin semi-discretization},
 	url = {https://doi.org/10.1016/j.apnum.2022.02.016},
+	year = {2022},
+}
+
+@article{YangEtAl2022,
+	author = {Jiang Yang and Zhaoming Yuan and Zhi Zhou},
+	doi = {10.2139/ssrn.4097528},
+	journal = {{SSRN} Electronic Journal},
+	publisher = {Elsevier {BV}},
+	title = {Robust Convergence of Parareal Algorithms with Arbitrarily High-Order Fine Propagators},
+	url = {https://doi.org/10.2139%2Fssrn.4097528},
 	year = {2022},
 }
 
