@@ -5456,15 +5456,6 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
-@unpublished{PentlandEtAl2021,
-	abstract = {Parareal is a well-studied algorithm for numerically integrating systems of time-dependent differential equations by parallelising the temporal domain. Given approximate initial values at each temporal sub-interval, the algorithm locates a solution in a fixed number of iterations using a predictor-corrector, stopping once a tolerance is met. This iterative process combines solutions located by inexpensive (coarse resolution) and expensive (fine resolution) numerical integrators. In this paper, we introduce a stochastic parareal algorithm with the aim of accelerating the convergence of the deterministic parareal algorithm. Instead of providing the predictor-corrector with a deterministically located set of initial values, the stochastic algorithm samples initial values from dynamically varying probability distributions in each temporal sub-interval. All samples are then propagated by the numerical method in parallel. The initial values yielding the most continuous (smoothest) trajectory across consecutive sub-intervals are chosen as the new, more accurate, set of initial values. These values are fed into the predictor-corrector, converging in fewer iterations than the deterministic algorithm with a given probability. The performance of the stochastic algorithm, implemented using various probability distributions, is illustrated on systems of ordinary differential equations. When the number of sampled initial values is large enough, we show that stochastic parareal converges almost certainly in fewer iterations than the deterministic algorithm while maintaining solution accuracy. Additionally, it is shown that the expected value of the convergence rate decreases with increasing numbers of samples.},
-	author = {Kamran Pentland and Massimiliano Tamborrino and D. Samaddar and L. C. Appel},
-	howpublished = {arXiv:2106.10139v2 [math.NA]},
-	title = {Stochastic parareal: an application of probabilistic methods to time-parallelisation},
-	url = {http://arxiv.org/abs/2106.10139v2},
-	year = {2021},
-}
-
 @article{SchützEtAl2021b,
 	author = {Jochen Schütz and David C. Seal and Jonas Zeifang},
 	doi = {10.1007/s10915-021-01733-3},
@@ -5881,12 +5872,28 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{Riahi2022,
-	abstract = {This paper presents a new algorithm for the parallel in time (PiT) numerical simulation of time dependent partial/ordinary differential equations. We propose a reliable alternative to the well know parareal in time algorithm, by formulating the parallel in time problem algebraically and solve it using an adapted Bi-Conjugate gradient stabilized method. The proposed Parallel in time Stable Bi-Conjugate algorithm (PiTSBiCG) has a great potential in stabilizing the parallel resolution for a variety of problems. In this work, we describe the mathematical approach to the new algorithm and provide numerical evidences that show its superiority to the standard parareal method.},
+@article{PentlandEtAl2022b,
+	author = {Kamran Pentland and Massimiliano Tamborrino and Debasmita Samaddar and Lynton C. Appel},
+	doi = {10.1137/21m1414231},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {jul},
+	pages = {S82--S102},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Stochastic Parareal: An Application of Probabilistic Methods to Time-Parallelization},
+	url = {https://doi.org/10.1137%2F21m1414231},
+	year = {2022},
+}
+
+@article{Riahi2022b,
 	author = {Mohamed Kamel Riahi},
-	howpublished = {arXiv:2203.10148v1 [math.NA]},
-	title = {PiTSBiCG: Parallel in Time Stable Bi-Conjugate Gradient Algorithm},
-	url = {http://arxiv.org/abs/2203.10148v1},
+	doi = {10.1016/j.apnum.2022.06.004},
+	journal = {Applied Numerical Mathematics},
+	month = {nov},
+	pages = {225--233},
+	publisher = {Elsevier {BV}},
+	title = {{PiTSBiCG}: Parallel in time Stable Bi-Conjugate gradient algorithm},
+	url = {https://doi.org/10.1016%2Fj.apnum.2022.06.004},
+	volume = {181},
 	year = {2022},
 }
 
@@ -5961,4 +5968,3 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	url = {https://doi.org/10.1145/3492805.3492810},
 	year = {2022},
 }
-
