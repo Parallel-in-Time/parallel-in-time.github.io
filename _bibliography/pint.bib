@@ -5751,6 +5751,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{FreiEtAl2022b,
+	abstract = {In order to make the numerical simulation of atherosclerotic plaque growth feasible, a temporal homogenization approach is employed. The resulting macro-scale problem for the plaque growth can be further accelerated by using parallel time integration schemes, such as the parareal algorithm. However, the parallel scalability is dominated by the computational cost of the coarse propagator. Therefore, in this paper, an interpolation-based coarse propagator, which uses growth values from previously computed micro-scale problems, is introduced. For a simple model problem, it is shown that this approach reduces both the computational work for a single parareal iteration as well as the required number of parareal iterations.},
+	author = {Stefan Frei and Alexander Heinlein},
+	howpublished = {arXiv:2207.02081v1 [math.NA]},
+	title = {Efficient coarse correction for parallel time-stepping in plaque growth simulations},
+	url = {http://arxiv.org/abs/2207.02081v1},
+	year = {2022},
+}
+
 @unpublished{GanderEtAl2022,
 	abstract = {Parallel-in-time integration has been the focus of intensive research efforts over the past two decades due to the advent of massively parallel computer architectures and the scaling limits of purely spatial parallelization. Various iterative parallel-in-time (PinT) algorithms have been proposed, like Parareal, PFASST, MGRIT, and Space-Time Multi-Grid (STMG). These methods have been described using different notations and the convergence estimates that are available for some of them are difficult to compare. We describe Parareal, PFASST, MGRIT and STMG for the Dahlquist model problem using a common notation and give precise convergence estimates using generating functions. This allows us, for the first time, to directly compare their convergence. We prove that all four methods eventually converge super-linearly and compare them directly numerically. Our framework also allows us to find new methods.},
 	author = {M. J. Gander and T. Lunet and D. Ruprecht and R. Speck},
@@ -5966,5 +5975,16 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {{ACM}},
 	title = {Assignment of idle processors to spatial redistributed domains on coarse levels in multigrid reduction in time},
 	url = {https://doi.org/10.1145/3492805.3492810},
+	year = {2022},
+}
+
+@incollection{YodaEtAl2022b,
+	author = {Ryo Yoda and Matthias Bolten and Kengo Nakajima and Akihiro Fujii},
+	booktitle = {Computational Science {\textendash} {ICCS} 2022},
+	doi = {10.1007/978-3-031-08754-7_29},
+	pages = {214--221},
+	publisher = {Springer International Publishing},
+	title = {Acceleration of~Optimized Coarse-Grid Operators by~Spatial Redistribution for~Multigrid Reduction in~Time},
+	url = {https://doi.org/10.1007/978-3-031-08754-7_29},
 	year = {2022},
 }
