@@ -5924,6 +5924,17 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@article{TakahashiEtAl2022,
+	author = {Yasuhito Takahashi and Koji Fujiwara and Takeshi Iwashita},
+	doi = {10.1108/compel-04-2022-0161},
+	journal = {{COMPEL} - The international journal for computation and mathematics in electrical and electronic engineering},
+	month = {jul},
+	publisher = {Emerald},
+	title = {Parallel-in-space-and-time finite-element analysis of electric machines using time step overlapping in a massively parallel computing environment},
+	url = {https://doi.org/10.1108/compel-04-2022-0161},
+	year = {2022},
+}
+
 @article{TielenEtAl2022,
 	author = {Roel Tielen and Matthias Möller and Cornelis Vuik},
 	doi = {10.1007/s42452-022-05043-7},
@@ -5934,6 +5945,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Combining p-multigrid and Multigrid Reduction in Time methods to obtain a scalable solver for Isogeometric Analysis},
 	url = {https://doi.org/10.1007%2Fs42452-022-05043-7},
 	volume = {4},
+	year = {2022},
+}
+
+@unpublished{UtkarshEtAl2022,
+	abstract = {Numerically solving ordinary differential equations (ODEs) is a naturally serial process and as a result the vast majority of ODE solver software are serial. In this manuscript we developed a set of parallelized ODE solvers using extrapolation methods which exploit "parallelism within the method" so that arbitrary user ODEs can be parallelized. We describe the specific choices made in the implementation of the explicit and implicit extrapolation methods which allow for generating low overhead static schedules to then exploit with optimized multi-threaded implementations. We demonstrate that while the multi-threading gives a noticeable acceleration on both explicit and implicit problems, the explicit parallel extrapolation methods gave no significant improvement over state-of-the-art even with a multi-threading advantage against current optimized high order Runge-Kutta tableaus. However, we demonstrate that the implicit parallel extrapolation methods are able to achieve state-of-the-art performance (2x-4x) on standard multicore x86 CPUs for systems of $<200$ stiff ODEs solved at low tolerance, a typical setup for a vast majority of users of high level language equation solver suites. The resulting method is distributed as the first widely available open source software for within-method parallel acceleration targeting typical modest compute architectures.},
+	author = {Utkarsh and Chris Elrod and Yingbo Ma and Christopher Rackauckas},
+	howpublished = {arXiv:2207.08135v1 [math.NA]},
+	title = {Parallelizing Explicit and Implicit Extrapolation Methods for Ordinary Differential Equations},
+	url = {http://arxiv.org/abs/2207.08135v1},
 	year = {2022},
 }
 
