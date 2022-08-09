@@ -5924,6 +5924,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{SterckEtAl2022b,
+	abstract = {A long-standing issue in the parallel-in-time community is the poor convergence of standard iterative parallel-in-time methods for hyperbolic partial differential equations (PDEs), and for advection-dominated PDEs more broadly. Here, a local Fourier analysis (LFA) convergence theory is derived for the two-level variant of the iterative parallel-in-time method of multigrid reduction-in-time (MGRIT). This closed-form theory allows for new insights into the poor convergence of MGRIT for advection-dominated PDEs when using the standard approach of rediscretizing the fine-grid problem on the coarse grid. Specifically, we show that this poor convergence arises, at least in part, from inadequate coarse-grid correction of certain smooth Fourier modes known as characteristic components, which was previously identified as causing poor convergence of classical spatial multigrid on steady-state advection-dominated PDEs. We apply this convergence theory to show that, for certain semi-Lagrangian discretizations of advection problems, MGRIT convergence using rediscretized coarse-grid operators cannot be robust with respect to CFL number or coarsening factor. A consequence of this analysis is that techniques developed for improving convergence in the spatial multigrid context can be re-purposed in the MGRIT context to develop more robust parallel-in-time solvers. This strategy has been used in recent work to great effect; here, we provide further theoretical evidence supporting the effectiveness of this approach.},
+	author = {H. De Sterck and S. Friedhoff and O. A. Krzysik and Scott P. MacLachlan},
+	howpublished = {arXiv:2208.01526v1 [math.NA]},
+	title = {Multigrid reduction-in-time convergence for advection problems: A Fourier analysis perspective},
+	url = {http://arxiv.org/abs/2208.01526v1},
+	year = {2022},
+}
+
 @article{TakahashiEtAl2022,
 	author = {Yasuhito Takahashi and Koji Fujiwara and Takeshi Iwashita},
 	doi = {10.1108/compel-04-2022-0161},
