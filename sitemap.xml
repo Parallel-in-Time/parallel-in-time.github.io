@@ -224,9 +224,6 @@
 <loc>http://parallel-in-time.org/codes/sweet.html</loc>
 </url>
 <url>
-<loc>http://parallel-in-time.org/codes/paradiag.html</loc>
-</url>
-<url>
 <loc>http://parallel-in-time.org/codes/pymgrit.html</loc>
 </url>
 <url>
@@ -327,6 +324,9 @@
 </url>
 <url>
 <loc>http://parallel-in-time.org/methods/pita.html</loc>
+</url>
+<url>
+<loc>http://parallel-in-time.org/methods/paradiag.html</loc>
 </url>
 <url>
 <loc>http://parallel-in-time.org/projects/paraphase.html</loc>

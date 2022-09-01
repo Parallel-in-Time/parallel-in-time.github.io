@@ -3,10 +3,10 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ParaDiag</title>
+  <title>Diagonalization-based Parallel-in-Time Methods</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallel-in-time.org/codes/paradiag.html">
+  <link rel="canonical" href="http://parallel-in-time.org/methods/paradiag.html">
 
   <link type="text/css" rel="stylesheet" href="/assets/main-76819aa89d75930ac06ef9967c01d19269aaad5bd78e7a1bee6bb4df855d04cb.css">
   <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-86a3022f12ca44acf0d7da548569f4168279fe7b115508fbe4cf4af00498eb4b.js"></script>
@@ -63,55 +63,50 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
   <ul class="dropdown-menu">
     
-  <li>
-    <a href="/methods/index.html">Methods</a>
-  </li>
-
-
-    
-  <li role="presentation" class="divider"></li>
-  <li role="presentation" class="dropdown-header">Codes</li>
+  <li role="presentation" class="dropdown-header">Methods</li>
   <li >
-    <a href="/codes/index.html">Overview</a>
+    <a href="/methods/index.html">Overview</a>
   </li>
   
     <li >
-      <a href="/codes/pfasst.html">PFASST++</a>
+      <a href="/methods/pfasst.html">PFASST</a>
     </li>
   
     <li >
-      <a href="/codes/xbraid.html">XBraid</a>
+      <a href="/methods/parareal.html">Parareal</a>
     </li>
   
     <li >
-      <a href="/codes/pysdc.html">pySDC</a>
+      <a href="/methods/mgrit.html">Multigrid Reduction in Time (MGRIT)</a>
     </li>
   
     <li >
-      <a href="/codes/libridc.html">libridc</a>
+      <a href="/methods/ridc.html">Revisionsit Integral Deferred Correction (RIDC)</a>
     </li>
   
     <li >
-      <a href="/codes/pararealf90.html">PararealF90</a>
+      <a href="/methods/stmg.html">Space-time Multigrid (STMG)</a>
     </li>
   
     <li >
-      <a href="/codes/pinttf.html">PinT-TF</a>
+      <a href="/methods/wrmg.html">Space-time concurrent multigrid waveform relaxation (WRMG)</a>
     </li>
   
     <li >
-      <a href="/codes/sweet.html">SWEET</a>
+      <a href="/methods/pita.html">PITA</a>
     </li>
   
     <li class="active">
-      <a href="/codes/paradiag.html">ParaDiag</a>
-    </li>
-  
-    <li >
-      <a href="/codes/pymgrit.html">PyMGRIT</a>
+      <a href="/methods/paradiag.html">Diagonalization-based Parallel-in-Time Methods</a>
     </li>
   
   <li role="presentation" class="divider"></li>
+
+
+    
+  <li>
+    <a href="/codes/index.html">Codes</a>
+  </li>
 
 
     
@@ -147,13 +142,13 @@
       <div class="container">
         <div class="post post-code">
   <header class="post-header">
-    <h1>ParaDiag</h1>
+    <h1>Diagonalization-based Parallel-in-Time Methods</h1>
+    
+    <h2>ParaDiag</h2>
     
   </header>
   <article class="post-content">
-    <div class="row">
-      <div class="col-md-8 content">
-        <p>ParaDiag is a collection of <em>diagonalization-based</em> parallel-in-time (PinT) algorithms and can be categorized into two classes:</p>
+  <p>ParaDiag is a collection of <em>diagonalization-based</em> parallel-in-time (PinT) algorithms and can be categorized into two classes:</p>
 
 <ul>
   <li>Direct ParaDiag algorithms</li>
@@ -162,9 +157,9 @@
 
 <p>The general idea for all the ParaDiag algorithms is to form the difference equations arising from some time discretization (e.g., the backward Euler method or the trapezoidal rule) into an <em>all-at-once</em> system and then solve such a system  directly or iteratively. Maday and Rønquist first introduced this idea in <a href="#MadayRonquist2008">[1]</a>.</p>
 
-<p>For direct ParaDiag algorithms, we diagonalize  the time discretization matrix and decouple the all-at-once system into a series of sub-systems, which can be solved in parallel across all time levels. The research for direct ParaDiag algorithms focuses on making the time discretization matrix be diagonalizable and making  the condition number of the eigenvector matrix as small as possible. For the iterative ParaDiag algorithms, we precondition the all-at-once system by a block α-circulant matrix and solve the preconditioning step for each iteration via a  block  Fourier spectral factorization.</p>
+<p>For direct ParaDiag algorithms, we diagonalize the time discretization matrix and decouple the all-at-once system into a series of sub-systems, which can be solved in parallel across all time levels. The research for direct ParaDiag algorithms focuses on making the time discretization matrix be diagonalizable and making the condition number of the eigenvector matrix as small as possible. For the iterative ParaDiag algorithms, we precondition the all-at-once system by a block α-circulant matrix and solve the preconditioning step for each iteration via a block Fourier spectral factorization.</p>
 
-<p>ParaDiag algorithms can handle both dissipative and hyperbolic equations (such as acoustic equations  and the Schrödinger equations).  An introductory  document in this field is <a href="#GanderEtAl2021">[2]</a>, where the reader can find   variants,   applications and some representative theoretical results of ParaDiag. This document will be updated regularly when new interesting progress appears.</p>
+<p>ParaDiag algorithms can handle both dissipative and hyperbolic equations (such as acoustic equations and the Schrödinger equations). An introductory document in this field is <a href="#GanderEtAl2021">[2]</a>, where the reader can find variants, applications and some representative theoretical results of ParaDiag. This document will be updated regularly when new interesting progress appears.</p>
 
 <ol class="bibliography"><li><div class="bibtex-entry-container">
   <div>
@@ -305,98 +300,6 @@ computing results, also for more realistic applications.
 </div>
 </li></ol>
 
-      </div>
-      <aside class="col-md-4">
-        <section class="group-meta panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Code Profile</h3>
-  </div>
-  <div class="panel-body">
-    
-    
-      <div class="row">
-        <label class="col-md-4 control-label">Homepage</label>
-        <div class="col-md-8">
-          
-          
-          
-          <a href="https://github.com/wushulin/ParaDIAG">
-            
-              <i class="fa fa-github fa-fw"></i>/wushulin/ParaDIAG
-            
-          </a>
-        </div>
-      </div>
-    
-    
-      <div class="row">
-        <label class="col-md-4 control-label">Language</label>
-        <div class="col-md-8">
-          MATLAB & Fortran
-        </div>
-      </div>
-    
-    
-      <div class="row">
-        <label class="col-md-4 control-label">License</label>
-        <div class="col-md-8">
-          MIT
-        </div>
-      </div>
-    
-    
-      <div class="row">
-        <label class="col-md-4 control-label">Releases</label>
-        <div class="col-md-8">
-          
-            <span class="clearfix">
-              1.0
-              
-                <small>&ensp;(<time datetime="2020-06-12">2020-06-12</time>)</small>
-              
-              <span class="pull-right">
-                
-                  <a href="https://github.com/wushulin/ParaDIAG" title="Release Page"><i class="fa fa-link fa-fw"></i></a>
-                
-                
-                  <a href="https://github.com/wushulin/ParaDIAG" title="Download Sources as zip"><i class="fa fa-download fa-fw"></i></a>
-                
-              </span>
-            </span>
-          
-        </div>
-      </div>
-    
-    
-      <div class="row">
-        <label class="col-md-4 control-label">Developers</label>
-        <div class="col-md-8">
-          
-            <span class="clearfix">
-              
-                See ParaDiag github page
-              
-              
-                <span class="pull-right">
-                  
-                  
-                  
-                    <a href="https://github.com/wushulin/ParaDIAG" title="See ParaDiag github page"><i class="fa fa-link fa-fw"></i></a>
-                  
-                </span>
-              
-            </span>
-          
-        </div>
-      </div>
-    
-  </div>
-</section>
-
-
-
-      </aside>
-    </div>
   </article>
   
 </div>
