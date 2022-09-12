@@ -12,6 +12,14 @@ organizers:
     homepage: https://www.mat.tuhh.de/home/druprecht_en
   - name: Philipp Neumann
     homepage: https://www.hsu-hh.de/hpc/philipp-neumann/
+invited:
+  - name: Iryna Kulchytska-Ruchka
+  - name: Colin Cotter
+    homepage: https://www.imperial.ac.uk/people/colin.cotter
+  - name: Frédéric Legoll
+    homepage: http://cermics.enpc.fr/~legoll/
+  - name: Tommaso Buvoli
+    homepage: https://sse.tulane.edu/content/tommaso-buvoli
 permalink: /events/12th-pint-workshop/
 subtitle: "Brief overview"
 page_type: event_page
