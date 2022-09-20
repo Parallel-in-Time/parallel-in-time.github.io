@@ -1350,6 +1350,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          MunchEtAl2022
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseMunchEtAl2022Bibtex"
+                    aria-expanded="false" aria-controls="collapseMunchEtAl2022Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalMunchEtAl2022Abstract"
+                    aria-expanded="false" aria-controls="modalMunchEtAl2022Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="MunchEtAl2022">P. Munch, I. Dravins, M. Kronbichler, and M. Neytcheva, “Stage-parallel fully implicit Runge-Kutta implementations with optimal multilevel preconditioners at the scaling limit,” arXiv:2209.06700v1 [math.NA], 2022 [Online]. Available at: <a href="http://arxiv.org/abs/2209.06700v1" target="_blank">http://arxiv.org/abs/2209.06700v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseMunchEtAl2022Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{MunchEtAl2022,
+  author = {Munch, Peter and Dravins, Ivo and Kronbichler, Martin and Neytcheva, Maya},
+  howpublished = {arXiv:2209.06700v1 [math.NA]},
+  title = {Stage-parallel fully implicit Runge-Kutta implementations with optimal multilevel preconditioners at the scaling limit},
+  url = {http://arxiv.org/abs/2209.06700v1},
+  year = {2022}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalMunchEtAl2022Abstract" tabindex="-1" role="dialog" aria-labelledby="modalMunchEtAl2022AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalMunchEtAl2022AbstractTitle">
+            Abstract for BibTeX entry <code>MunchEtAl2022</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          We present an implementation of a fully stage-parallel preconditioner for Radau IIA type fully implicit Runge–Kutta methods, which approximates the inverse of A_Q from the Butcher tableau by the lower triangular matrix resulting from an LU decomposition and diagonalizes the system with as many blocks as stages. For the transformed system, we employ a block preconditioner where each block is distributed and solved by a subgroup of processes in parallel. For combination of partial results, we either use a communication pattern resembling Cannon’s algorithm or shared memory. A performance model and a large set of performance studies (including strong scaling runs with up to 150k processes on 3k compute nodes) conducted for a time-dependent heat problem, using matrix-free finite element methods, indicate that the stage-parallel implementation can reach higher throughputs when the block solvers operate at lower parallel efficiencies, which occurs near the scaling limit. Achievable speedup increases linearly with number of stages and are bounded by the number of stages. Furthermore, we show that the presented stage-parallel concepts are also applicable to the case that A_Q is directly diagonalized, which requires complex arithmetic or the solution of two-by-two blocks and sequentializes parts of the algorithm. Alternatively to distributing stages and assigning them to distinct processes, we discuss the possibility of batching operations from different stages together.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           PentlandEtAl2022
         </div>
       </div>
@@ -1770,6 +1835,71 @@
         </div>
         <div class="modal-body">
           A long-standing issue in the parallel-in-time community is the poor convergence of standard iterative parallel-in-time methods for hyperbolic partial differential equations (PDEs), and for advection-dominated PDEs more broadly. Here, a local Fourier analysis (LFA) convergence theory is derived for the two-level variant of the iterative parallel-in-time method of multigrid reduction-in-time (MGRIT). This closed-form theory allows for new insights into the poor convergence of MGRIT for advection-dominated PDEs when using the standard approach of rediscretizing the fine-grid problem on the coarse grid. Specifically, we show that this poor convergence arises, at least in part, from inadequate coarse-grid correction of certain smooth Fourier modes known as characteristic components, which was previously identified as causing poor convergence of classical spatial multigrid on steady-state advection-dominated PDEs. We apply this convergence theory to show that, for certain semi-Lagrangian discretizations of advection problems, MGRIT convergence using rediscretized coarse-grid operators cannot be robust with respect to CFL number or coarsening factor. A consequence of this analysis is that techniques developed for improving convergence in the spatial multigrid context can be re-purposed in the MGRIT context to develop more robust parallel-in-time solvers. This strategy has been used in recent work to great effect; here, we provide further theoretical evidence supporting the effectiveness of this approach.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          SterckEtAl2022c
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSterckEtAl2022cBibtex"
+                    aria-expanded="false" aria-controls="collapseSterckEtAl2022cBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSterckEtAl2022cAbstract"
+                    aria-expanded="false" aria-controls="modalSterckEtAl2022cAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="SterckEtAl2022c">H. D. Sterck, R. D. Falgout, O. A. Krzysik, and J. B. Schroder, “Efficient multigrid reduction-in-time for method-of-lines discretizations of linear advection,” arXiv:2209.06916v1 [math.NA], 2022 [Online]. Available at: <a href="http://arxiv.org/abs/2209.06916v1" target="_blank">http://arxiv.org/abs/2209.06916v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseSterckEtAl2022cBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{SterckEtAl2022c,
+  author = {Sterck, H. De and Falgout, R. D. and Krzysik, O. A. and Schroder, J. B.},
+  howpublished = {arXiv:2209.06916v1 [math.NA]},
+  title = {Efficient multigrid reduction-in-time for method-of-lines discretizations of linear advection},
+  url = {http://arxiv.org/abs/2209.06916v1},
+  year = {2022}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalSterckEtAl2022cAbstract" tabindex="-1" role="dialog" aria-labelledby="modalSterckEtAl2022cAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSterckEtAl2022cAbstractTitle">
+            Abstract for BibTeX entry <code>SterckEtAl2022c</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          Parallel-in-time methods for partial differential equations (PDEs) have been the subject of intense development over recent decades, particularly for diffusion-dominated problems. It has been widely reported in the literature, however, that many of these methods perform quite poorly for advection-dominated problems. Here we analyze the particular iterative parallel-in-time algorithm of multigrid reduction-in-time (MGRIT) for discretizations of constant-wave-speed linear advection problems. We focus on common method-of-lines discretizations that employ upwind finite differences in space and Runge-Kutta methods in time. Using a convergence framework we developed in previous work, we prove for a subclass of these discretizations that, if using the standard approach of rediscretizing the fine-grid problem on the coarse grid, robust MGRIT convergence with respect to CFL number and coarsening factor is not possible. This poor convergence and non-robustness is caused, at least in part, by an inadequate coarse-grid correction for smooth Fourier modes known as characteristic components.We propose an alternative coarse-grid that provides a better correction of these modes. This coarse-grid operator is related to previous work and uses a semi-Lagrangian discretization combined with an implicitly treated truncation error correction. Theory and numerical experiments show the coarse-grid operator yields fast MGRIT convergence for many of the method-of-lines discretizations considered, including for both implicit and explicit discretizations of high order.
         </div>
       </div>
     </div>
