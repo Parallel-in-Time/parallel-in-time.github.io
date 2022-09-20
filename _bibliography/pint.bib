@@ -5906,6 +5906,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{MunchEtAl2022,
+	abstract = {We present an implementation of a fully stage-parallel preconditioner for Radau IIA type fully implicit Runge--Kutta methods, which approximates the inverse of $A_Q$ from the Butcher tableau by the lower triangular matrix resulting from an LU decomposition and diagonalizes the system with as many blocks as stages. For the transformed system, we employ a block preconditioner where each block is distributed and solved by a subgroup of processes in parallel. For combination of partial results, we either use a communication pattern resembling Cannon's algorithm or shared memory. A performance model and a large set of performance studies (including strong scaling runs with up to 150k processes on 3k compute nodes) conducted for a time-dependent heat problem, using matrix-free finite element methods, indicate that the stage-parallel implementation can reach higher throughputs when the block solvers operate at lower parallel efficiencies, which occurs near the scaling limit. Achievable speedup increases linearly with number of stages and are bounded by the number of stages. Furthermore, we show that the presented stage-parallel concepts are also applicable to the case that $A_Q$ is directly diagonalized, which requires complex arithmetic or the solution of two-by-two blocks and sequentializes parts of the algorithm. Alternatively to distributing stages and assigning them to distinct processes, we discuss the possibility of batching operations from different stages together.},
+	author = {Peter Munch and Ivo Dravins and Martin Kronbichler and Maya Neytcheva},
+	howpublished = {arXiv:2209.06700v1 [math.NA]},
+	title = {Stage-parallel fully implicit Runge-Kutta implementations with optimal multilevel preconditioners at the scaling limit},
+	url = {http://arxiv.org/abs/2209.06700v1},
+	year = {2022},
+}
+
 @unpublished{PentlandEtAl2022,
 	abstract = {Sequential numerical methods for integrating initial value problems (IVPs) can be prohibitively expensive when high numerical accuracy is required over the entire interval of integration. One remedy is to integrate in a parallel fashion, "predicting" the solution serially using a cheap (coarse) solver and "correcting" these values using an expensive (fine) solver that runs in parallel on a number of temporal subintervals. In this work, we propose a time-parallel algorithm (GParareal) that solves IVPs by modelling the correction term, i.e. the difference between fine and coarse solutions, using a Gaussian process emulator. This approach compares favourably with the classic parareal algorithm and we demonstrate, on a number of IVPs, that GParareal can converge in fewer iterations than parareal, leading to an increase in parallel speed-up. GParareal also manages to locate solutions to certain IVPs where parareal fails and has the additional advantage of being able to use archives of legacy solutions, e.g. solutions from prior runs of the IVP for different initial conditions, to further accelerate convergence of the method - something that existing time-parallel methods do not do.},
 	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan and James Buchanan and L. C. Appel},
@@ -5973,6 +5982,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2208.01526v1 [math.NA]},
 	title = {Multigrid reduction-in-time convergence for advection problems: A Fourier analysis perspective},
 	url = {http://arxiv.org/abs/2208.01526v1},
+	year = {2022},
+}
+
+@unpublished{SterckEtAl2022c,
+	abstract = {Parallel-in-time methods for partial differential equations (PDEs) have been the subject of intense development over recent decades, particularly for diffusion-dominated problems. It has been widely reported in the literature, however, that many of these methods perform quite poorly for advection-dominated problems. Here we analyze the particular iterative parallel-in-time algorithm of multigrid reduction-in-time (MGRIT) for discretizations of constant-wave-speed linear advection problems. We focus on common method-of-lines discretizations that employ upwind finite differences in space and Runge-Kutta methods in time. Using a convergence framework we developed in previous work, we prove for a subclass of these discretizations that, if using the standard approach of rediscretizing the fine-grid problem on the coarse grid, robust MGRIT convergence with respect to CFL number and coarsening factor is not possible. This poor convergence and non-robustness is caused, at least in part, by an inadequate coarse-grid correction for smooth Fourier modes known as characteristic components.We propose an alternative coarse-grid that provides a better correction of these modes. This coarse-grid operator is related to previous work and uses a semi-Lagrangian discretization combined with an implicitly treated truncation error correction. Theory and numerical experiments show the coarse-grid operator yields fast MGRIT convergence for many of the method-of-lines discretizations considered, including for both implicit and explicit discretizations of high order.},
+	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik and J. B. Schroder},
+	howpublished = {arXiv:2209.06916v1 [math.NA]},
+	title = {Efficient multigrid reduction-in-time for method-of-lines discretizations of linear advection},
+	url = {http://arxiv.org/abs/2209.06916v1},
 	year = {2022},
 }
 
