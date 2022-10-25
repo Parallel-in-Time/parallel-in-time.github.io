@@ -5,6 +5,7 @@ date: 2021-08-08 08:00:00 +0000
 event_location: Hamburg, Germany
 event_start: 2023-07-17 00:00
 event_end: 2023-07-21 00:00
+event_url: https://www.mat.tuhh.de/veranstaltungen/pint2023/
 navbar: Events
 subnavbar: Upcoming
 organizers:
