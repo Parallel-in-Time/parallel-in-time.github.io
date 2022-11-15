@@ -5959,6 +5959,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{PentlandEtAl2022c,
+	abstract = {Stochastic parareal (SParareal) is a probabilistic variant of the popular parallel-in-time algorithm known as parareal. Similarly to parareal, it combines fine- and coarse-grained solutions to an ordinary differential equation (ODE) using a predictor-corrector (PC) scheme. The key difference is that carefully chosen random perturbations are added to the PC to try to accelerate the location of a stochastic solution to the ODE. In this paper, we derive superlinear and linear mean-square error bounds for SParareal applied to nonlinear systems of ODEs using different types of perturbations. We illustrate these bounds numerically on a linear system of ODEs and a scalar nonlinear ODE, showing a good match between theory and numerics.},
+	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan},
+	howpublished = {arXiv:2211.05496v1 [math.NA]},
+	title = {Error bound analysis of the stochastic parareal algorithm},
+	url = {http://arxiv.org/abs/2211.05496v1},
+	year = {2022},
+}
+
 @unpublished{PhilippiEtAl2022,
 	abstract = {In this work the parallel-in-time algorithm Parareal was applied to the ocean-circulation and sea-ice model FESOM2 developed by the Alfred-Wegener Institut (AWI). The climate model provides one time integration method and hence, the coarse and fine propagators were defined by time step width. The coarse method was executed at the CFL condition limit, while fine step-sizes where gradually refined. As a first assessment of the performance of Parareal a low-resolution test mesh was used with default settings provided by the AWI. An introduction to FESOM2 and the straightforward implementation of Parareal on the DKRZ cluster is given. The evaluation of numerical results for different simulation intervals and fine propagator configurations shows strong dependence on the simulation time and time step-size of the fine propagator. Increasing the latter leads to stagnation and eventually divergence of the Parareal algorithm.},
 	author = {Benedict Philippi and Thomas Slawig},
