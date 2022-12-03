@@ -6007,6 +6007,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{RosemeierEtAl2022,
+	abstract = {The present study is an extension of the work done in [16] and [10], where a two-level Parareal method with averaging was examined. The method proposed in this paper is a multi-level Parareal method with arbitrarily many levels, which is not restricted to the two-level case. We give an asymptotic error estimate which reduces to the two-level estimate for the case when only two levels are considered. Introducing more than two levels has important consequences for the averaging procedure, as we choose separate averaging windows for each of the different levels, which is an additional new feature of the present study. The different averaging windows make the proposed method especially appropriate for multi-scale problems, because we can introduce a level for each intrinsic scale of the problem and adapt the averaging procedure such that we reproduce the behavior of the model on the particular scale resolved by the level.},
+	author = {Juliane Rosemeier and Terry Haut and Beth Wingate},
+	howpublished = {arXiv:2211.17239v1 [math.NA]},
+	title = {Multi-level Parareal algorithm with Averaging},
+	url = {http://arxiv.org/abs/2211.17239v1},
+	year = {2022},
+}
+
 @unpublished{SchleußEtAl2022,
 	abstract = {We target time-dependent partial differential equations (PDEs) with coefficients that are arbitrarily rough in both space and time. To tackle these problems, we construct reduced basis/ multiscale ansatz functions defined in space that can be combined with time stepping schemes within model order reduction or multiscale methods. To that end, we propose to perform several simulations of the PDE for few time steps in parallel starting at different, randomly drawn start points, prescribing random initial conditions; applying a singular value decomposition to a subset of the so obtained snapshots yields the reduced basis/ multiscale ansatz functions. This facilitates constructing the reduced basis/ multiscale ansatz functions in an embarrassingly parallel manner. In detail, we suggest using a data-dependent probability distribution based on the data functions of the PDE to select the start points. Each local in time simulation of the PDE with random initial conditions approximates a local approximation space in one time point that is optimal in the sense of Kolmogorov. The derivation of these optimal local approximation spaces which are spanned by the left singular vectors of a compact transfer operator that maps arbitrary initial conditions to the solution of the PDE in a later point of time, is one other main contribution of this paper. By solving the PDE locally in time with random initial conditions, we construct local ansatz spaces in time that converge provably at a quasi-optimal rate and allow for local error control. Numerical experiments demonstrate that the proposed method can outperform existing methods like the proper orthogonal decomposition even in a sequential setting.},
 	author = {Julia Schleuß and Kathrin Smetana and Lukas ter Maat},
