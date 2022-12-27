@@ -6106,6 +6106,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{SärkkäEtAl2022,
+	abstract = {This paper presents a mathematical formulation to perform temporal parallelisation of continuous-time optimal control problems, which are solved via the Hamilton--Jacobi--Bellman (HJB) equation. We divide the time interval of the control problem into sub-intervals, and define a control problem in each sub-interval, conditioned on the start and end states, leading to conditional value functions for the sub-intervals. By defining an associative operator as the minimisation of the sum of conditional value functions, we obtain the elements and associative operators for a parallel associative scan operation. This allows for solving the optimal control problem on the whole time interval in parallel in logarithmic time complexity in the number of sub-intervals. We derive the HJB-type of backward and forward equations for the conditional value functions and solve them in closed form for linear quadratic problems. We also discuss other numerical methods for computing the conditional value functions and present closed form solutions for selected special cases. The computational advantages of the proposed parallel methods are demonstrated via simulations run on a multi-core central processing unit and a graphics processing unit.},
+	author = {Simo Särkkä and Ángel F. García-Fernández},
+	howpublished = {arXiv:2212.11744v1 [math.OC]},
+	title = {Temporal Parallelisation of the HJB Equation and Continuous-Time Linear Quadratic Control},
+	url = {http://arxiv.org/abs/2212.11744v1},
+	year = {2022},
+}
+
 @article{TakahashiEtAl2022,
 	author = {Yasuhito Takahashi and Koji Fujiwara and Takeshi Iwashita},
 	doi = {10.1108/compel-04-2022-0161},
