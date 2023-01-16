@@ -6045,6 +6045,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{SaerkkaeEtAl2022,
+	abstract = {This paper presents a mathematical formulation to perform temporal parallelisation of continuous-time optimal control problems, which are solved via the Hamilton--Jacobi--Bellman (HJB) equation. We divide the time interval of the control problem into sub-intervals, and define a control problem in each sub-interval, conditioned on the start and end states, leading to conditional value functions for the sub-intervals. By defining an associative operator as the minimisation of the sum of conditional value functions, we obtain the elements and associative operators for a parallel associative scan operation. This allows for solving the optimal control problem on the whole time interval in parallel in logarithmic time complexity in the number of sub-intervals. We derive the HJB-type of backward and forward equations for the conditional value functions and solve them in closed form for linear quadratic problems. We also discuss other numerical methods for computing the conditional value functions and present closed form solutions for selected special cases. The computational advantages of the proposed parallel methods are demonstrated via simulations run on a multi-core central processing unit and a graphics processing unit.},
+	author = {Simo Särkkä and Ángel F. García-Fernández},
+	howpublished = {arXiv:2212.11744v1 [math.OC]},
+	title = {Temporal Parallelisation of the HJB Equation and Continuous-Time Linear Quadratic Control},
+	url = {http://arxiv.org/abs/2212.11744v1},
+	year = {2022},
+}
+
 @unpublished{SchleußEtAl2022,
 	abstract = {We target time-dependent partial differential equations (PDEs) with coefficients that are arbitrarily rough in both space and time. To tackle these problems, we construct reduced basis/ multiscale ansatz functions defined in space that can be combined with time stepping schemes within model order reduction or multiscale methods. To that end, we propose to perform several simulations of the PDE for few time steps in parallel starting at different, randomly drawn start points, prescribing random initial conditions; applying a singular value decomposition to a subset of the so obtained snapshots yields the reduced basis/ multiscale ansatz functions. This facilitates constructing the reduced basis/ multiscale ansatz functions in an embarrassingly parallel manner. In detail, we suggest using a data-dependent probability distribution based on the data functions of the PDE to select the start points. Each local in time simulation of the PDE with random initial conditions approximates a local approximation space in one time point that is optimal in the sense of Kolmogorov. The derivation of these optimal local approximation spaces which are spanned by the left singular vectors of a compact transfer operator that maps arbitrary initial conditions to the solution of the PDE in a later point of time, is one other main contribution of this paper. By solving the PDE locally in time with random initial conditions, we construct local ansatz spaces in time that converge provably at a quasi-optimal rate and allow for local error control. Numerical experiments demonstrate that the proposed method can outperform existing methods like the proper orthogonal decomposition even in a sequential setting.},
 	author = {Julia Schleuß and Kathrin Smetana and Lukas ter Maat},
@@ -6103,15 +6112,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Wiley},
 	title = {Weighted relaxation for multigrid reduction in time},
 	url = {https://doi.org/10.1002%2Fnla.2465},
-	year = {2022},
-}
-
-@unpublished{SaerkkaeEtAl2022,
-	abstract = {This paper presents a mathematical formulation to perform temporal parallelisation of continuous-time optimal control problems, which are solved via the Hamilton--Jacobi--Bellman (HJB) equation. We divide the time interval of the control problem into sub-intervals, and define a control problem in each sub-interval, conditioned on the start and end states, leading to conditional value functions for the sub-intervals. By defining an associative operator as the minimisation of the sum of conditional value functions, we obtain the elements and associative operators for a parallel associative scan operation. This allows for solving the optimal control problem on the whole time interval in parallel in logarithmic time complexity in the number of sub-intervals. We derive the HJB-type of backward and forward equations for the conditional value functions and solve them in closed form for linear quadratic problems. We also discuss other numerical methods for computing the conditional value functions and present closed form solutions for selected special cases. The computational advantages of the proposed parallel methods are demonstrated via simulations run on a multi-core central processing unit and a graphics processing unit.},
-	author = {Simo Särkkä and Ángel F. García-Fernández},
-	howpublished = {arXiv:2212.11744v1 [math.OC]},
-	title = {Temporal Parallelisation of the HJB Equation and Continuous-Time Linear Quadratic Control},
-	url = {http://arxiv.org/abs/2212.11744v1},
 	year = {2022},
 }
 
@@ -6237,4 +6237,13 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Analysis of the parareal algorithm for linear parametric differential equations},
 	url = {https://doi.org/10.1080/00207160.2022.2153225},
 	year = {2022},
+}
+
+@unpublished{BuvoliEtAl2023,
+	abstract = {Parareal is a well-known parallel-in-time algorithm that combines a coarse and fine propagator within a parallel iteration. It allows for large-scale parallelism that leads to significantly reduced computational time compared to serial time-stepping methods. However, like many parallel-in-time methods it can fail to achieve parallel speedup when applied to non-diffusive equations such as hyperbolic systems or dispersive nonlinear wave equations. This paper explores the use of exponential integrators within the Parareal iteration. Exponential integrators are particularly interesting candidates for Parareal because of their ability to resolve fast-moving waves, even at the large stepsizes used by coarse propagators. This work begins with an introduction to exponential Parareal integrators followed by several motivating numerical experiments involving the nonlinear Schr\"odinger equation. These experiments are then analyzed using linear analysis that approximates the stability and convergence properties of the exponential Parareal iteration on nonlinear problems. The paper concludes with two additional numerical experiments involving the dispersive Kadomtsev-Petviashvili equation and the hyperbolic Vlasov-Poisson equation. These experiments demonstrate that exponential Parareal methods can achieve significant parallel speedup on different types of non-diffusive equations.},
+	author = {Tommaso Buvoli and Michael L. Minion},
+	howpublished = {arXiv:2301.03764v1 [math.NA]},
+	title = {Exponential Runge-Kutta Parareal for Non-Diffusive Equations},
+	url = {http://arxiv.org/abs/2301.03764v1},
+	year = {2023},
 }
