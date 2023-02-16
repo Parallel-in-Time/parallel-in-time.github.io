@@ -6266,6 +6266,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{BouillonEtAl2023,
+	abstract = {The ParaDiag family of algorithms solves differential equations by using preconditioners that can be inverted in parallel through diagonalization. In the context of optimal control of linear parabolic PDEs, the state-of-the-art ParaDiag method is limited to solving self-adjoint problems with a tracking objective. We propose three improvements to the ParaDiag method: the use of alpha-circulant matrices to construct an alternative preconditioner, a generalization of the algorithm for solving non-self-adjoint equations, and the formulation of an algorithm for terminal-cost objectives. We present novel analytic results about the eigenvalues of the preconditioned systems for all discussed ParaDiag algorithms in the case of self-adjoint equations, which proves the favorable properties the alpha-circulant preconditioner. We use these results to perform a theoretical parallel-scaling analysis of ParaDiag for self-adjoint problems. Numerical tests confirm our findings and suggest that the self-adjoint behavior, which is backed by theory, generalizes to the non-self-adjoint case. We provide a sequential, open-source reference solver in Matlab for all discussed algorithms.},
+	author = {Arne Bouillon and Giovanni Samaey and Karl Meerbergen},
+	howpublished = {arXiv:2302.06406v1 [math.NA]},
+	title = {On generalized preconditioners for time-parallel parabolic optimal control},
+	url = {http://arxiv.org/abs/2302.06406v1},
+	year = {2023},
+}
+
 @unpublished{BuvoliEtAl2023,
 	abstract = {Parareal is a well-known parallel-in-time algorithm that combines a coarse and fine propagator within a parallel iteration. It allows for large-scale parallelism that leads to significantly reduced computational time compared to serial time-stepping methods. However, like many parallel-in-time methods it can fail to achieve parallel speedup when applied to non-diffusive equations such as hyperbolic systems or dispersive nonlinear wave equations. This paper explores the use of exponential integrators within the Parareal iteration. Exponential integrators are particularly interesting candidates for Parareal because of their ability to resolve fast-moving waves, even at the large stepsizes used by coarse propagators. This work begins with an introduction to exponential Parareal integrators followed by several motivating numerical experiments involving the nonlinear Schr\"odinger equation. These experiments are then analyzed using linear analysis that approximates the stability and convergence properties of the exponential Parareal iteration on nonlinear problems. The paper concludes with two additional numerical experiments involving the dispersive Kadomtsev-Petviashvili equation and the hyperbolic Vlasov-Poisson equation. These experiments demonstrate that exponential Parareal methods can achieve significant parallel speedup on different types of non-diffusive equations.},
 	author = {Tommaso Buvoli and Michael L. Minion},
@@ -6285,5 +6294,17 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {An {SQP}-based multiple shooting algorithm for large-scale {PDE}-constrained optimal control problems},
 	url = {https://doi.org/10.1016/j.jcp.2023.111927},
 	volume = {477},
+	year = {2023},
+}
+
+@article{HonEtAl2023,
+	author = {Sean Hon and Stefano Serra-Capizzano},
+	doi = {10.1553/etna_vol58s177},
+	journal = {{ETNA} - Electronic Transactions on Numerical Analysis},
+	pages = {177--195},
+	publisher = {Osterreichische Akademie der Wissenschaften, Verlag},
+	title = {A block Toeplitz preconditioner for all-at-once systems from linear wave equations},
+	url = {https://doi.org/10.1553/etna_vol58s177},
+	volume = {58},
 	year = {2023},
 }
