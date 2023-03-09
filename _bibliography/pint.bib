@@ -6334,6 +6334,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{LevequeEtAl2023,
+	abstract = {In this article, we derive fast and robust preconditioned iterative methods for the all-at-once linear systems arising upon discretization of time-dependent PDEs. The discretization we employ is based on a Runge--Kutta method in time, for which the development of robust solvers is an emerging research area in the literature of numerical methods for time-dependent PDEs. By making use of classical theory of block matrices, one is able to derive a preconditioner for the systems considered. An approximate inverse of the preconditioner so derived consists in a fixed number of linear solves for the system of the stages of the method. We thus propose a preconditioner for the latter system based on a singular value decomposition (SVD) of the (real) Runge--Kutta matrix $A_{\mathrm{RK}} = U \Sigma V^\top$. Supposing $A_{\mathrm{RK}}$ is invertible, we prove that the spectrum of the system for the stages preconditioned by our SVD-based preconditioner is contained within the right-half of the unit circle, under suitable assumptions on the matrix $U^\top V$ (which is well defined due to the polar decomposition of $A_{\mathrm{RK}}$). We show the numerical efficiency of our SVD-based preconditioner by solving the system of the stages arising from the discretization of the heat equation and the Stokes equations, with sequential time-stepping. Finally, we provide numerical results of the all-at-once approach for both problems.},
+	author = {Santolo Leveque and Luca Bergamaschi and Ángeles Martínez and John W. Pearson},
+	howpublished = {arXiv:2303.02090v1 [math.NA]},
+	title = {Fast Iterative Solver for the All-at-Once Runge--Kutta Discretization},
+	url = {http://arxiv.org/abs/2303.02090v1},
+	year = {2023},
+}
+
 @article{NguyenEtAl2023,
 	author = {Van-Thanh Nguyen and Laura Grigori},
 	doi = {10.1007/s11075-022-01492-8},
