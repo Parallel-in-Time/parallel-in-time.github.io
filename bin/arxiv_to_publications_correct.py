@@ -20,7 +20,7 @@ if __name__ == '__main__':
     doi_list = re.findall(r"- \[x\] ID: .*\n.*\n.*\n.*DOI: (.*)\n", args.body.replace('\r', ''))
 
     for url, id_db in zip(doi_list, id_list):
-        # print(f'Working on {id_db} with URL {url}')
+        print(f'Working on {id_db} with URL {url}')
         req = requests.get(url, headers={'Accept': 'application/x-bibtex'})
         if not req.status_code == 200:
             print(f'Ignoring {url}, got status code {req.status_code}\n\n')
@@ -43,6 +43,9 @@ if __name__ == '__main__':
         i = 0
         duplicate = False
         while id in d:
+            for author in data["author"]:
+                if 'given' not in author:
+                    author["given"] = ''
             authors = " and ".join([author['given'] + ' ' + author['family'] for author in data["author"]])
             candidate_title = re.sub('[^A-Za-z0-9]+', '', data['title'])
             existing_title = re.sub('[^A-Za-z0-9]+', '', d[id]['title'])
