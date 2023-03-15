@@ -1507,6 +1507,20 @@ Numerical experiments confirm the theoretical results.}},
 	year = {2011},
 }
 
+@article{BaiEtAl2011,
+	author = {Xiaoli Bai and John L. Junkins},
+	doi = {10.1007/bf03321533},
+	journal = {The Journal of the Astronautical Sciences},
+	month = {oct},
+	number = {4},
+	pages = {583--613},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {Modified Chebyshev-Picard Iteration Methods for Orbit Propagation},
+	url = {https://doi.org/10.1007/bf03321533},
+	volume = {58},
+	year = {2011},
+}
+
 @inproceedings{Cadeau2011,
 	author = {Cadeau, T. and Magoules, F.},
 	booktitle = {{Distributed Computing and Applications to Business, Engineering and Science (DCABES), 2011 Tenth International Symposium on}},
@@ -4013,6 +4027,20 @@ setups.}},
 	year = {2018},
 }
 
+@article{WeaverEtAl2018,
+	author = {Anthony T. Weaver and Selime Gürol and Jean Tshimanga and Marcin Chrust and Andrea Piacentini},
+	doi = {10.1002/qj.3302},
+	journal = {Quarterly Journal of the Royal Meteorological Society},
+	month = {oct},
+	number = {716},
+	pages = {2067--2088},
+	publisher = {Wiley},
+	title = {{\textquotedblleft}Time{\textquotedblright}-Parallel diffusion-based correlation operators},
+	url = {https://doi.org/10.1002/qj.3302},
+	volume = {144},
+	year = {2018},
+}
+
 @article{Wu2018,
 	abstract = {{In this paper, we present an idea toward parallel coarse grid correction (CGC) for the parareal algorithm. It is well known that such a CGC procedure is often the bottleneck of speedup of the parareal algorithm. For an ODE system with initial-value condition $u(0)=u_0$ the idea can be explained as follows. First, we apply the $\mathcal{G}$-propagator to the same ODE system but with a special condition $u(0)=\alpha u(T)$, where $\alpha\in\mathbb{R}$ is a crux parameter. Second, in each iteration of the parareal algorithm the CGC procedure will be carried out by the so-called diagonalization technique established recently. The parameter $\alpha$ controls both the roundoff error arising from such a diagonalization technique and the convergence rate of the resulting parareal algorithm. We show that there exists some threshold $\alpha^*$ such that the parareal algorithm with diagonalization-based CGC possesses the same convergence rate as that of the parareal algorithm with classical CGC if $|\alpha|\leq \alpha^*$. With $|\alpha|=\alpha^*$, we show that the condition number associated with the diagonalization technique is a moderate quantity of order $\mathcal{O}(1)$ (and therefore the roundoff error is small) and is independent of the length of the time interval. Numerical results are given to support our findings.}},
 	author = {Wu, S.},
@@ -4667,6 +4695,20 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2020},
 }
 
+@article{GüntherEtAl2020,
+	author = {Stefanie Günther and Lars Ruthotto and Jacob B. Schroder and Eric C. Cyr and Nicolas R. Gauger},
+	doi = {10.1137/19m1247620},
+	journal = {{SIAM} Journal on Mathematics of Data Science},
+	month = {jan},
+	number = {1},
+	pages = {1--23},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Layer-Parallel Training of Deep Residual Neural Networks},
+	url = {https://doi.org/10.1137/19m1247620},
+	volume = {2},
+	year = {2020},
+}
+
 @unpublished{HahneEtAl2020,
 	abstract = {In this paper, we introduce the Python framework PyMGRIT, which implements the multigrid-reduction-in-time (MGRIT) algorithm for solving the (non-)linear systems arising from the discretization of time-dependent problems. The MGRIT algorithm is a reduction-based iterative method that allows parallel-in-time simulations, i. e., calculating multiple time steps simultaneously in a simulation, by using a time-grid hierarchy. The PyMGRIT framework features many different variants of the MGRIT algorithm, ranging from different multigrid cycle types and relaxation schemes, as well as various coarsening strategies, including time-only and space-time coarsening, to using different time integrators on different levels in the multigrid hierachy. PyMGRIT allows serial runs for prototyping and testing of new approaches, as well as parallel runs using the Message Passing Interface (MPI). Here, we describe the implementation of the MGRIT algorithm in PyMGRIT and present the usage from both user and developer point of views. Three examples illustrate different aspects of the package, including pure time parallelism as well as space-time parallelism by coupling PyMGRIT with PETSc or Firedrake, which enable spatial parallelism through MPI.},
 	author = {Jens Hahne and Stephanie Friedhoff and Matthias Bolten},
@@ -4917,7 +4959,7 @@ the effectiveness of the proposed method.},
 	year = {2020},
 }
 
-@article{SchöbelEtAl2020,
+@article{SchoebelEtAl2020,
 	author = {Ruth Schöbel and Robert Speck},
 	doi = {10.1007/s00791-020-00330-5},
 	journal = {Computing and Visualization in Science},
@@ -5258,15 +5300,6 @@ computing results, also for more realistic applications.},
 	title = {Reduced model-based parareal simulations of oscillatory singularly perturbed ordinary differential equations},
 	url = {https://doi.org/10.1016/j.jcp.2021.110282},
 	volume = {436},
-	year = {2021},
-}
-
-@unpublished{HahneEtAl2021,
-	abstract = {In this paper, we present the new "asynchronous truncated multigrid-reduction-in-time" (AT-MGRIT) algorithm for introducing time parallelism to the solution of discretized time-dependent problems. The new algorithm is based on the multigrid-reduction-in-time (MGRIT) approach, which, in certain settings, is equivalent to another common multilevel parallel-in-time method, Parareal. In contrast to Parareal and MGRIT that both consider a global temporal grid over the entire time interval on the coarsest level, the AT-MGRIT algorithm uses truncated local time grids on the coarsest level, each grid covering certain temporal subintervals. These local grids can be solved completely independent from each other, which reduces the sequential part of the algorithm and, thus, increases parallelism in the method. Here, we study the effect of using truncated local coarse grids on the convergence of the algorithm, both theoretically and numerically, and show, using challenging nonlinear problems, that the new algorithm consistently outperforms classical Parareal/MGRIT in terms of time to solution.},
-	author = {Jens Hahne and Ben Southworth and Stephanie Friedhoff},
-	howpublished = {arXiv:2107.09596v1 [math.NA]},
-	title = {Asynchronous Truncated Multigrid-reduction-in-time (AT-MGRIT)},
-	url = {http://arxiv.org/abs/2107.09596v1},
 	year = {2021},
 }
 
@@ -5801,6 +5834,27 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{GoryninaEtAl2022,
+	abstract = {We numerically investigate an adaptive version of the parareal algorithm in the context of molecular dynamics. This adaptive variant has been originally introduced in [F. Legoll, T. Lelievre and U. Sharma, SISC 2022]. We focus here on test cases of physical interest where the dynamics of the system is modelled by the Langevin equation and is simulated using the molecular dynamics software LAMMPS. In this work, the parareal algorithm uses a family of machine-learning spectral neighbor analysis potentials (SNAP) as fine, reference, potentials and embedded-atom method potentials (EAM) as coarse potentials. We consider a self-interstitial atom in a tungsten lattice and compute the average residence time of the system in metastable states. Our numerical results demonstrate significant computational gains using the adaptive parareal algorithm in comparison to a sequential integration of the Langevin dynamics. We also identify a large regime of numerical parameters for which statistical accuracy is reached without being a consequence of trajectorial accuracy.},
+	author = {Olga Gorynina and Frederic Legoll and Tony Lelievre and Danny Perez},
+	howpublished = {arXiv:2212.10508v1 [math.NA]},
+	title = {Combining machine-learned and empirical force fields with the parareal algorithm: application to the diffusion of atomistic defects},
+	url = {http://arxiv.org/abs/2212.10508v1},
+	year = {2022},
+}
+
+@article{HahneEtAl2022,
+	author = {Jens Hahne and Ben S. Southworth and Stephanie Friedhoff},
+	doi = {10.1137/21m1433149},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {nov},
+	pages = {S281--S306},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Asynchronous Truncated Multigrid-Reduction-in-Time},
+	url = {https://doi.org/10.1137/21m1433149},
+	year = {2022},
+}
+
 @article{He2022,
 	author = {Guoliang He},
 	doi = {10.1155/2022/8008912},
@@ -5837,12 +5891,45 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@article{JiangEtAl2022b,
+	author = {Yi Jiang and Jun Liu},
+	doi = {10.1016/j.apnum.2022.10.006},
+	journal = {Applied Numerical Mathematics},
+	month = {oct},
+	publisher = {Elsevier {BV}},
+	title = {Fast Parallel-in-Time Quasi-Boundary Value Methods for Backward Heat Conduction Problems},
+	url = {https://doi.org/10.1016/j.apnum.2022.10.006},
+	year = {2022},
+}
+
+@incollection{KazakovEtAl2022,
+	author = {Evgeniy Kazakov and Dmitry Efremenko and Viacheslav Zemlyakov and Jiexing Gao},
+	booktitle = {Lecture Notes in Computer Science},
+	doi = {10.1007/978-3-031-22941-1_1},
+	pages = {3--17},
+	publisher = {Springer International Publishing},
+	title = {A Time-Parallel Ordinary Differential Equation Solver with an Adaptive Step Size: Performance Assessment},
+	url = {https://doi.org/10.1007/978-3-031-22941-1_1},
+	year = {2022},
+}
+
 @unpublished{KressnerEtAl2022,
 	abstract = {This work is concerned with linear matrix equations that arise from the space-time discretization of time-dependent linear partial differential equations (PDEs). Such matrix equations have been considered, for example, in the context of parallel-in-time integration leading to a class of algorithms called ParaDiag. We develop and analyze two novel approaches for the numerical solution of such equations. Our first approach is based on the observation that the modification of these equations performed by ParaDiag in order to solve them in parallel has low rank. Building upon previous work on low-rank updates of matrix equations, this allows us to make use of tensorized Krylov subspace methods to account for the modification. Our second approach is based on interpolating the solution of the matrix equation from the solutions of several modifications. Both approaches avoid the use of iterative refinement needed by ParaDiag and related space-time approaches in order to attain good accuracy. In turn, our new approaches have the potential to outperform, sometimes significantly, existing approaches. This potential is demonstrated for several different types of PDEs.},
 	author = {Daniel Kressner and Stefano Massei and Junli Zhu},
 	howpublished = {arXiv:2204.03073v1 [math.NA]},
 	title = {Improved parallel-in-time integration via low-rank updates and interpolation},
 	url = {http://arxiv.org/abs/2204.03073v1},
+	year = {2022},
+}
+
+@article{LeeEtAl2022,
+	author = {Youngkyu Lee and Jongho Park and Chang-Ock Lee},
+	doi = {10.1109/tnnls.2022.3206797},
+	journal = {{IEEE} Transactions on Neural Networks and Learning Systems},
+	pages = {1--12},
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	title = {Parareal Neural Networks Emulating a Parallel-in-Time Algorithm},
+	url = {https://doi.org/10.1109/tnnls.2022.3206797},
 	year = {2022},
 }
 
@@ -5948,6 +6035,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{PentlandEtAl2022c,
+	abstract = {Stochastic parareal (SParareal) is a probabilistic variant of the popular parallel-in-time algorithm known as parareal. Similarly to parareal, it combines fine- and coarse-grained solutions to an ordinary differential equation (ODE) using a predictor-corrector (PC) scheme. The key difference is that carefully chosen random perturbations are added to the PC to try to accelerate the location of a stochastic solution to the ODE. In this paper, we derive superlinear and linear mean-square error bounds for SParareal applied to nonlinear systems of ODEs using different types of perturbations. We illustrate these bounds numerically on a linear system of ODEs and a scalar nonlinear ODE, showing a good match between theory and numerics.},
+	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan},
+	howpublished = {arXiv:2211.05496v1 [math.NA]},
+	title = {Error bound analysis of the stochastic parareal algorithm},
+	url = {http://arxiv.org/abs/2211.05496v1},
+	year = {2022},
+}
+
 @unpublished{PhilippiEtAl2022,
 	abstract = {In this work the parallel-in-time algorithm Parareal was applied to the ocean-circulation and sea-ice model FESOM2 developed by the Alfred-Wegener Institut (AWI). The climate model provides one time integration method and hence, the coarse and fine propagators were defined by time step width. The coarse method was executed at the CFL condition limit, while fine step-sizes where gradually refined. As a first assessment of the performance of Parareal a low-resolution test mesh was used with default settings provided by the AWI. An introduction to FESOM2 and the straightforward implementation of Parareal on the DKRZ cluster is given. The evaluation of numerical results for different simulation intervals and fine propagator configurations shows strong dependence on the simulation time and time step-size of the fine propagator. Increasing the latter leads to stagnation and eventually divergence of the Parareal algorithm.},
 	author = {Benedict Philippi and Thomas Slawig},
@@ -5967,6 +6063,33 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {{PiTSBiCG}: Parallel in time Stable Bi-Conjugate gradient algorithm},
 	url = {https://doi.org/10.1016%2Fj.apnum.2022.06.004},
 	volume = {181},
+	year = {2022},
+}
+
+@unpublished{RiffoEtAl2022,
+	abstract = {This paper is devoted to the problem of time parallelization of assimilation methods applying on unbounded time domain. In this way, we present a general procedure to couple the Luenberger observer with time parallelization algorithm. Our approach is based on a posteriori error estimates of the latter and preserves the rate of the non-parallelized observer. We then focus on the case where the Parareal algorithm is used as time parallelization algorithm, and derive a bound of the efficiency of our procedure. A variant devoted to the case a large number of processors is also proposed. We illustrate the performance of our approach with numerical experiments.},
+	author = {Sebastián Riffo and Félix Kwok and Julien Salomon},
+	howpublished = {arXiv:2212.02377v1 [math.OC]},
+	title = {Time-parallelization of sequential data assimilation problems},
+	url = {http://arxiv.org/abs/2212.02377v1},
+	year = {2022},
+}
+
+@unpublished{RosemeierEtAl2022,
+	abstract = {The present study is an extension of the work done in [16] and [10], where a two-level Parareal method with averaging was examined. The method proposed in this paper is a multi-level Parareal method with arbitrarily many levels, which is not restricted to the two-level case. We give an asymptotic error estimate which reduces to the two-level estimate for the case when only two levels are considered. Introducing more than two levels has important consequences for the averaging procedure, as we choose separate averaging windows for each of the different levels, which is an additional new feature of the present study. The different averaging windows make the proposed method especially appropriate for multi-scale problems, because we can introduce a level for each intrinsic scale of the problem and adapt the averaging procedure such that we reproduce the behavior of the model on the particular scale resolved by the level.},
+	author = {Juliane Rosemeier and Terry Haut and Beth Wingate},
+	howpublished = {arXiv:2211.17239v1 [math.NA]},
+	title = {Multi-level Parareal algorithm with Averaging},
+	url = {http://arxiv.org/abs/2211.17239v1},
+	year = {2022},
+}
+
+@unpublished{SaerkkaeEtAl2022,
+	abstract = {This paper presents a mathematical formulation to perform temporal parallelisation of continuous-time optimal control problems, which are solved via the Hamilton--Jacobi--Bellman (HJB) equation. We divide the time interval of the control problem into sub-intervals, and define a control problem in each sub-interval, conditioned on the start and end states, leading to conditional value functions for the sub-intervals. By defining an associative operator as the minimisation of the sum of conditional value functions, we obtain the elements and associative operators for a parallel associative scan operation. This allows for solving the optimal control problem on the whole time interval in parallel in logarithmic time complexity in the number of sub-intervals. We derive the HJB-type of backward and forward equations for the conditional value functions and solve them in closed form for linear quadratic problems. We also discuss other numerical methods for computing the conditional value functions and present closed form solutions for selected special cases. The computational advantages of the proposed parallel methods are demonstrated via simulations run on a multi-core central processing unit and a graphics processing unit.},
+	author = {Simo Särkkä and Ángel F. García-Fernández},
+	howpublished = {arXiv:2212.11744v1 [math.OC]},
+	title = {Temporal Parallelisation of the HJB Equation and Continuous-Time Linear Quadratic Control},
+	url = {http://arxiv.org/abs/2212.11744v1},
 	year = {2022},
 }
 
@@ -6006,6 +6129,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@article{StrakeEtAl2022,
+	author = {Julius Strake and Daniel Döhring and Andrea Benigni},
+	doi = {10.3390/en15217874},
+	journal = {Energies},
+	month = {oct},
+	number = {21},
+	pages = {7874},
+	publisher = {{MDPI} {AG}},
+	title = {{MGRIT}-Based Multi-Level Parallel-in-Time Electromagnetic Transient Simulation},
+	url = {https://doi.org/10.3390/en15217874},
+	volume = {15},
+	year = {2022},
+}
+
 @article{SugiyamaEtAl2022,
 	author = {Masumi Sugiyama and Jacob B. Schroder and Ben S. Southworth and Stephanie Friedhoff},
 	doi = {10.1002/nla.2465},
@@ -6014,6 +6151,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Wiley},
 	title = {Weighted relaxation for multigrid reduction in time},
 	url = {https://doi.org/10.1002%2Fnla.2465},
+	year = {2022},
+}
+
+@article{SultanovEtAl2022,
+	author = {M. A. Sultanov and V. E. Misilov and Y. Nurlanuly},
+	doi = {10.47910/femj202233},
+	journal = {Dal nevostochnyi Matematicheskii Zhurnal},
+	number = {2},
+	pages = {245--251},
+	publisher = {Institute for Applied Mathematics, Far Eastern Branch, Russian Academy of Sciences},
+	title = {Efficient Parareal algorithm for solving time-fractional diffusion equation},
+	url = {https://doi.org/10.47910/femj202233},
+	volume = {22},
 	year = {2022},
 }
 
@@ -6127,4 +6277,119 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Acceleration of~Optimized Coarse-Grid Operators by~Spatial Redistribution for~Multigrid Reduction in~Time},
 	url = {https://doi.org/10.1007/978-3-031-08754-7_29},
 	year = {2022},
+}
+
+@article{ZhangEtAl2022,
+	author = {Ren-Hao Zhang and Yao-Lin Jiang and Jun Li and Bo Song},
+	doi = {10.1080/00207160.2022.2153225},
+	journal = {International Journal of Computer Mathematics},
+	month = {nov},
+	pages = {1--0},
+	publisher = {Informa {UK} Limited},
+	title = {Analysis of the parareal algorithm for linear parametric differential equations},
+	url = {https://doi.org/10.1080/00207160.2022.2153225},
+	year = {2022},
+}
+
+@unpublished{BouillonEtAl2023,
+	abstract = {The ParaDiag family of algorithms solves differential equations by using preconditioners that can be inverted in parallel through diagonalization. In the context of optimal control of linear parabolic PDEs, the state-of-the-art ParaDiag method is limited to solving self-adjoint problems with a tracking objective. We propose three improvements to the ParaDiag method: the use of alpha-circulant matrices to construct an alternative preconditioner, a generalization of the algorithm for solving non-self-adjoint equations, and the formulation of an algorithm for terminal-cost objectives. We present novel analytic results about the eigenvalues of the preconditioned systems for all discussed ParaDiag algorithms in the case of self-adjoint equations, which proves the favorable properties the alpha-circulant preconditioner. We use these results to perform a theoretical parallel-scaling analysis of ParaDiag for self-adjoint problems. Numerical tests confirm our findings and suggest that the self-adjoint behavior, which is backed by theory, generalizes to the non-self-adjoint case. We provide a sequential, open-source reference solver in Matlab for all discussed algorithms.},
+	author = {Arne Bouillon and Giovanni Samaey and Karl Meerbergen},
+	howpublished = {arXiv:2302.06406v1 [math.NA]},
+	title = {On generalized preconditioners for time-parallel parabolic optimal control},
+	url = {http://arxiv.org/abs/2302.06406v1},
+	year = {2023},
+}
+
+@unpublished{BuvoliEtAl2023,
+	abstract = {Parareal is a well-known parallel-in-time algorithm that combines a coarse and fine propagator within a parallel iteration. It allows for large-scale parallelism that leads to significantly reduced computational time compared to serial time-stepping methods. However, like many parallel-in-time methods it can fail to achieve parallel speedup when applied to non-diffusive equations such as hyperbolic systems or dispersive nonlinear wave equations. This paper explores the use of exponential integrators within the Parareal iteration. Exponential integrators are particularly interesting candidates for Parareal because of their ability to resolve fast-moving waves, even at the large stepsizes used by coarse propagators. This work begins with an introduction to exponential Parareal integrators followed by several motivating numerical experiments involving the nonlinear Schr\"odinger equation. These experiments are then analyzed using linear analysis that approximates the stability and convergence properties of the exponential Parareal iteration on nonlinear problems. The paper concludes with two additional numerical experiments involving the dispersive Kadomtsev-Petviashvili equation and the hyperbolic Vlasov-Poisson equation. These experiments demonstrate that exponential Parareal methods can achieve significant parallel speedup on different types of non-diffusive equations.},
+	author = {Tommaso Buvoli and Michael L. Minion},
+	howpublished = {arXiv:2301.03764v1 [math.NA]},
+	title = {Exponential Runge-Kutta Parareal for Non-Diffusive Equations},
+	url = {http://arxiv.org/abs/2301.03764v1},
+	year = {2023},
+}
+
+@unpublished{ChenEtAl2023,
+	abstract = {We propose efficient and parallel algorithms for the implementation of the high-order continuous time Galerkin method for dissipative and wave propagation problems. By using Legendre polynomials as shape functions, we obtain a special structure of the stiffness matrix which allows us to extend the diagonal Pad\'e approximation to solve ordinary differential equations with source terms. The unconditional stability, $hp$ error estimates, and $hp$ superconvergence at the nodes of the continuous time Galerkin method are proved. Numerical examples confirm our theoretical results.},
+	author = {Zhiming Chen and Yong Liu},
+	howpublished = {arXiv:2303.05008v1 [math.NA]},
+	title = {Efficient and Parallel Solution of High-order Continuous Time Galerkin for Dissipative and Wave Propagation Problems},
+	url = {http://arxiv.org/abs/2303.05008v1},
+	year = {2023},
+}
+
+@article{FangEtAl2023,
+	author = {Liang Fang and Stefan Vandewalle and Johan Meyers},
+	doi = {10.1016/j.jcp.2023.111927},
+	journal = {Journal of Computational Physics},
+	month = {mar},
+	pages = {111927},
+	publisher = {Elsevier {BV}},
+	title = {An {SQP}-based multiple shooting algorithm for large-scale {PDE}-constrained optimal control problems},
+	url = {https://doi.org/10.1016/j.jcp.2023.111927},
+	volume = {477},
+	year = {2023},
+}
+
+@article{HonEtAl2023,
+	author = {Sean Hon and Stefano Serra-Capizzano},
+	doi = {10.1553/etna_vol58s177},
+	journal = {{ETNA} - Electronic Transactions on Numerical Analysis},
+	pages = {177--195},
+	publisher = {Osterreichische Akademie der Wissenschaften, Verlag},
+	title = {A block Toeplitz preconditioner for all-at-once systems from linear wave equations},
+	url = {https://doi.org/10.1553/etna_vol58s177},
+	volume = {58},
+	year = {2023},
+}
+
+@unpublished{IbrahimEtAl2023,
+	abstract = {Parallel-in-time algorithms provide an additional layer of concurrency for the numerical integration of models based on time-dependent differential equations. Methods like Parareal, which parallelize across multiple time steps, rely on a computationally cheap and coarse integrator to propagate information forward in time, while a parallelizable expensive fine propagator provides accuracy. Typically, the coarse method is a numerical integrator using lower resolution, reduced order or a simplified model. Our paper proposes to use a physics-informed neural network (PINN) instead. We demonstrate for the Black-Scholes equation, a partial differential equation from computational finance, that Parareal with a PINN coarse propagator provides better speedup than a numerical coarse propagator. Training and evaluating a neural network are both tasks whose computing patterns are well suited for GPUs. By contrast, mesh-based algorithms with their low computational intensity struggle to perform well. We show that moving the coarse propagator PINN to a GPU while running the numerical fine propagator on the CPU further improves Parareal's single-node performance. This suggests that integrating machine learning techniques into parallel-in-time integration methods and exploiting their differences in computing patterns might offer a way to better utilize heterogeneous architectures.},
+	author = {Abdul Qadir Ibrahim and Sebastian Götschel and Daniel Ruprecht},
+	howpublished = {arXiv:2303.03848v1 [math.NA]},
+	title = {Parareal with a physics-informed neural network as coarse propagator},
+	url = {http://arxiv.org/abs/2303.03848v1},
+	year = {2023},
+}
+
+@unpublished{LevequeEtAl2023,
+	abstract = {In this article, we derive fast and robust preconditioned iterative methods for the all-at-once linear systems arising upon discretization of time-dependent PDEs. The discretization we employ is based on a Runge--Kutta method in time, for which the development of robust solvers is an emerging research area in the literature of numerical methods for time-dependent PDEs. By making use of classical theory of block matrices, one is able to derive a preconditioner for the systems considered. An approximate inverse of the preconditioner so derived consists in a fixed number of linear solves for the system of the stages of the method. We thus propose a preconditioner for the latter system based on a singular value decomposition (SVD) of the (real) Runge--Kutta matrix $A_{\mathrm{RK}} = U \Sigma V^\top$. Supposing $A_{\mathrm{RK}}$ is invertible, we prove that the spectrum of the system for the stages preconditioned by our SVD-based preconditioner is contained within the right-half of the unit circle, under suitable assumptions on the matrix $U^\top V$ (which is well defined due to the polar decomposition of $A_{\mathrm{RK}}$). We show the numerical efficiency of our SVD-based preconditioner by solving the system of the stages arising from the discretization of the heat equation and the Stokes equations, with sequential time-stepping. Finally, we provide numerical results of the all-at-once approach for both problems.},
+	author = {Santolo Leveque and Luca Bergamaschi and Ángeles Martínez and John W. Pearson},
+	howpublished = {arXiv:2303.02090v1 [math.NA]},
+	title = {Fast Iterative Solver for the All-at-Once Runge--Kutta Discretization},
+	url = {http://arxiv.org/abs/2303.02090v1},
+	year = {2023},
+}
+
+@article{NguyenEtAl2023,
+	author = {Van-Thanh Nguyen and Laura Grigori},
+	doi = {10.1007/s11075-022-01492-8},
+	journal = {Numerical Algorithms},
+	month = {mar},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {Interpretation of parareal as a two-level additive Schwarz in time preconditioner and its acceleration with {GMRES}},
+	url = {https://doi.org/10.1007/s11075-022-01492-8},
+	year = {2023},
+}
+
+@unpublished{Trotti2023,
+	abstract = {In this work we develop a novel domain splitting strategy for the solution of partial differential equations. Focusing on a uniform discretization of the $d$-dimensional advection-diffusion equation, our proposal is a two-level algorithm that merges the solutions obtained from the discretization of the equation over highly anisotropic submeshes to compute an initial approximation of the fine solution. The algorithm then iteratively refines the initial guess by leveraging the structure of the residual. Performing costly calculations on anisotropic submeshes enable us to reduce the dimensionality of the problem by one, and the merging process, which involves the computation of solutions over disjoint domains, allows for parallel implementation.},
+	author = {Ken Trotti},
+	howpublished = {arXiv:2303.01163v1 [math.NA]},
+	title = {A domain splitting strategy for solving PDEs},
+	url = {http://arxiv.org/abs/2303.01163v1},
+	year = {2023},
+}
+
+@article{Wang2023,
+	author = {Yinkun Wang},
+	doi = {10.1007/s10915-023-02156-y},
+	journal = {Journal of Scientific Computing},
+	month = {mar},
+	number = {1},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {Parallel Numerical Picard Iteration Methods},
+	url = {https://doi.org/10.1007/s10915-023-02156-y},
+	volume = {95},
+	year = {2023},
 }
