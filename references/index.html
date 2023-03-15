@@ -246,21 +246,21 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          BuvoliEtAl2023
+          CarrelEtAl2023
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseBuvoliEtAl2023Bibtex"
-                    aria-expanded="false" aria-controls="collapseBuvoliEtAl2023Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseCarrelEtAl2023Bibtex"
+                    aria-expanded="false" aria-controls="collapseCarrelEtAl2023Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalBuvoliEtAl2023Abstract"
-                    aria-expanded="false" aria-controls="modalBuvoliEtAl2023Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalCarrelEtAl2023Abstract"
+                    aria-expanded="false" aria-controls="modalCarrelEtAl2023Abstract">
               Abstract
             </button>
             
@@ -270,36 +270,25 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="BuvoliEtAl2023">T. Buvoli and M. L. Minion, “Exponential Runge-Kutta Parareal for Non-Diffusive Equations,” arXiv:2301.03764v1 [math.NA], 2023 [Online]. Available at: <a href="http://arxiv.org/abs/2301.03764v1" target="_blank">http://arxiv.org/abs/2301.03764v1</a></span>
+      <span id="CarrelEtAl2023">B. Carrel, M. J. Gander, and B. Vandereycken, “Low-rank Parareal: a low-rank parallel-in-time integrator,” <i>BIT Numerical Mathematics</i>, vol. 63, no. 1, Feb. 2023 [Online]. Available at: <a href="https://doi.org/10.1007%2Fs10543-023-00953-3" target="_blank">https://doi.org/10.1007%2Fs10543-023-00953-3</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseBuvoliEtAl2023Bibtex">
+  <div class="collapse" id="collapseCarrelEtAl2023Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@unpublished{BuvoliEtAl2023,
-  author = {Buvoli, Tommaso and Minion, Michael L.},
-  howpublished = {arXiv:2301.03764v1 [math.NA]},
-  title = {Exponential Runge-Kutta Parareal for Non-Diffusive Equations},
-  url = {http://arxiv.org/abs/2301.03764v1},
+        <pre class="abstract">@article{CarrelEtAl2023,
+  author = {Carrel, Benjamin and Gander, Martin J. and Vandereycken, Bart},
+  doi = {10.1007/s10543-023-00953-3},
+  journal = {{BIT} Numerical Mathematics},
+  month = feb,
+  number = {1},
+  publisher = {Springer Science and Business Media {LLC}},
+  title = {Low-rank Parareal: a low-rank parallel-in-time integrator},
+  url = {https://doi.org/10.1007%2Fs10543-023-00953-3},
+  volume = {63},
   year = {2023}
 }
 </pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalBuvoliEtAl2023Abstract" tabindex="-1" role="dialog" aria-labelledby="modalBuvoliEtAl2023AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalBuvoliEtAl2023AbstractTitle">
-            Abstract for BibTeX entry <code>BuvoliEtAl2023</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          Parareal is a well-known parallel-in-time algorithm that combines a coarse and fine propagator within a parallel iteration. It allows for large-scale parallelism that leads to significantly reduced computational time compared to serial time-stepping methods. However, like many parallel-in-time methods it can fail to achieve parallel speedup when applied to non-diffusive equations such as hyperbolic systems or dispersive nonlinear wave equations. This paper explores the use of exponential integrators within the Parareal iteration. Exponential integrators are particularly interesting candidates for Parareal because of their ability to resolve fast-moving waves, even at the large stepsizes used by coarse propagators. This work begins with an introduction to exponential Parareal integrators followed by several motivating numerical experiments involving the nonlinear Schrödinger equation. These experiments are then analyzed using linear analysis that approximates the stability and convergence properties of the exponential Parareal iteration on nonlinear problems. The paper concludes with two additional numerical experiments involving the dispersive Kadomtsev-Petviashvili equation and the hyperbolic Vlasov-Poisson equation. These experiments demonstrate that exponential Parareal methods can achieve significant parallel speedup on different types of non-diffusive equations.
-        </div>
       </div>
     </div>
   </div>
@@ -548,6 +537,114 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          JiangEtAl2023
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseJiangEtAl2023Bibtex"
+                    aria-expanded="false" aria-controls="collapseJiangEtAl2023Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalJiangEtAl2023Abstract"
+                    aria-expanded="false" aria-controls="modalJiangEtAl2023Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="JiangEtAl2023">Y. Jiang and J. Liu, “Fast parallel-in-time quasi-boundary value methods for backward heat conduction problems,” <i>Applied Numerical Mathematics</i>, vol. 184, pp. 325–339, Feb. 2023 [Online]. Available at: <a href="https://doi.org/10.1016%2Fj.apnum.2022.10.006" target="_blank">https://doi.org/10.1016%2Fj.apnum.2022.10.006</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseJiangEtAl2023Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{JiangEtAl2023,
+  author = {Jiang, Yi and Liu, Jun},
+  doi = {10.1016/j.apnum.2022.10.006},
+  journal = {Applied Numerical Mathematics},
+  month = feb,
+  pages = {325--339},
+  publisher = {Elsevier {BV}},
+  title = {Fast parallel-in-time quasi-boundary value methods for backward heat conduction problems},
+  url = {https://doi.org/10.1016%2Fj.apnum.2022.10.006},
+  volume = {184},
+  year = {2023}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          JiangEtAl2023b
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseJiangEtAl2023bBibtex"
+                    aria-expanded="false" aria-controls="collapseJiangEtAl2023bBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalJiangEtAl2023bAbstract"
+                    aria-expanded="false" aria-controls="modalJiangEtAl2023bAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="JiangEtAl2023b">Y. Jiang, J. Liu, and X.-S. Wang, “A direct parallel-in-time quasi-boundary value method for inverse space-dependent source problems,” <i>Journal of Computational and Applied Mathematics</i>, vol. 423, p. 114958, May 2023 [Online]. Available at: <a href="https://doi.org/10.1016%2Fj.cam.2022.114958" target="_blank">https://doi.org/10.1016%2Fj.cam.2022.114958</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseJiangEtAl2023bBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{JiangEtAl2023b,
+  author = {Jiang, Yi and Liu, Jun and Wang, Xiang-Sheng},
+  doi = {10.1016/j.cam.2022.114958},
+  journal = {Journal of Computational and Applied Mathematics},
+  month = may,
+  pages = {114958},
+  publisher = {Elsevier {BV}},
+  title = {A direct parallel-in-time quasi-boundary value method for inverse space-dependent source problems},
+  url = {https://doi.org/10.1016%2Fj.cam.2022.114958},
+  volume = {423},
+  year = {2023}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           LevequeEtAl2023
         </div>
       </div>
@@ -651,6 +748,60 @@
   publisher = {Springer Science and Business Media {LLC}},
   title = {Interpretation of parareal as a two-level additive Schwarz in time preconditioner and its acceleration with {GMRES}},
   url = {https://doi.org/10.1007/s11075-022-01492-8},
+  year = {2023}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          NguyenEtAl2023b
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseNguyenEtAl2023bBibtex"
+                    aria-expanded="false" aria-controls="collapseNguyenEtAl2023bBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalNguyenEtAl2023bAbstract"
+                    aria-expanded="false" aria-controls="modalNguyenEtAl2023bAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="NguyenEtAl2023b">H. Nguyen and R. Tsai, “Numerical wave propagation aided by deep learning,” <i>Journal of Computational Physics</i>, vol. 475, p. 111828, Feb. 2023 [Online]. Available at: <a href="https://doi.org/10.1016%2Fj.jcp.2022.111828" target="_blank">https://doi.org/10.1016%2Fj.jcp.2022.111828</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseNguyenEtAl2023bBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{NguyenEtAl2023b,
+  author = {Nguyen, Hieu and Tsai, Richard},
+  doi = {10.1016/j.jcp.2022.111828},
+  journal = {Journal of Computational Physics},
+  month = feb,
+  pages = {111828},
+  publisher = {Elsevier {BV}},
+  title = {Numerical wave propagation aided by deep learning},
+  url = {https://doi.org/10.1016%2Fj.jcp.2022.111828},
+  volume = {475},
   year = {2023}
 }
 </pre>
@@ -930,71 +1081,6 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          CarrelEtAl2022
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseCarrelEtAl2022Bibtex"
-                    aria-expanded="false" aria-controls="collapseCarrelEtAl2022Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalCarrelEtAl2022Abstract"
-                    aria-expanded="false" aria-controls="modalCarrelEtAl2022Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="CarrelEtAl2022">B. Carrel, M. J. Gander, and B. Vandereycken, “Low-rank Parareal: a low-rank parallel-in-time integrator,” arXiv:2203.08455v1 [math.NA], 2022 [Online]. Available at: <a href="http://arxiv.org/abs/2203.08455v1" target="_blank">http://arxiv.org/abs/2203.08455v1</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseCarrelEtAl2022Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{CarrelEtAl2022,
-  author = {Carrel, Benjamin and Gander, Martin J. and Vandereycken, Bart},
-  howpublished = {arXiv:2203.08455v1 [math.NA]},
-  title = {Low-rank Parareal: a low-rank parallel-in-time integrator},
-  url = {http://arxiv.org/abs/2203.08455v1},
-  year = {2022}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalCarrelEtAl2022Abstract" tabindex="-1" role="dialog" aria-labelledby="modalCarrelEtAl2022AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalCarrelEtAl2022AbstractTitle">
-            Abstract for BibTeX entry <code>CarrelEtAl2022</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          The Parareal algorithm of Lions, Maday, and Turinici is a well-known time parallel algorithm for evolution problems. It is based on a Newton-like iteration, with cheap coarse corrections performed sequentially, and expensive fine solves performed in parallel. In this work, we apply Parareal to evolution problems that admit good low-rank approximations and for which the dynamical low-rank approximation (DLRA), proposed by Koch and Lubich, can be used as time stepper. Many discrete integrators for DLRA have recently been proposed, based on splitting the projected vector field or by applying projected Runge–Kutta methods. The cost and accuracy of these methods are mostly governed by the rank chosen for the approximation. We want to use these properties in a new method, that we call low-rank Parareal, in order to obtain a time-parallel DLRA solver for evolution problems. We propose an analysis of the algorithm on affine linear problems and illustrate our results numerically.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
           ChengEtAl2022
         </div>
       </div>
@@ -1195,6 +1281,59 @@
   title = {Space-Time Block Preconditioning for Incompressible Flow},
   url = {https://doi.org/10.1137%2F21m1390773},
   volume = {44},
+  year = {2022}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          DanieliEtAl2022b
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseDanieliEtAl2022bBibtex"
+                    aria-expanded="false" aria-controls="collapseDanieliEtAl2022bBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalDanieliEtAl2022bAbstract"
+                    aria-expanded="false" aria-controls="modalDanieliEtAl2022bAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="DanieliEtAl2022b">F. Danieli and S. MacLachlan, “Multigrid reduction in time for non-linear hyperbolic equations,” <i>ETNA - Electronic Transactions on Numerical Analysis</i>, vol. 58, pp. 43–65, 2022 [Online]. Available at: <a href="https://doi.org/10.1553%2Fetna_vol58s43" target="_blank">https://doi.org/10.1553%2Fetna_vol58s43</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseDanieliEtAl2022bBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{DanieliEtAl2022b,
+  author = {Danieli, Federico and MacLachlan, Scott},
+  doi = {10.1553/etna_vol58s43},
+  journal = {{ETNA} - Electronic Transactions on Numerical Analysis},
+  pages = {43--65},
+  publisher = {Osterreichische Akademie der Wissenschaften, Verlag},
+  title = {Multigrid reduction in time for non-linear hyperbolic equations},
+  url = {https://doi.org/10.1553%2Fetna_vol58s43},
+  volume = {58},
   year = {2022}
 }
 </pre>
@@ -1672,71 +1811,6 @@
   year = {2022}
 }
 </pre>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          JiangEtAl2022
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseJiangEtAl2022Bibtex"
-                    aria-expanded="false" aria-controls="collapseJiangEtAl2022Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalJiangEtAl2022Abstract"
-                    aria-expanded="false" aria-controls="modalJiangEtAl2022Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="JiangEtAl2022">Y. Jiang, J. Liu, and X.-S. Wang, “A Direct Parallel-in-Time Quasi-Boundary Value Method for Inverse Space-Dependent Source Problems,” arXiv:2201.02687v1 [math.NA], 2022 [Online]. Available at: <a href="http://arxiv.org/abs/2201.02687v1" target="_blank">http://arxiv.org/abs/2201.02687v1</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseJiangEtAl2022Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{JiangEtAl2022,
-  author = {Jiang, Yi and Liu, Jun and Wang, Xiang-Sheng},
-  howpublished = {arXiv:2201.02687v1 [math.NA]},
-  title = {A Direct Parallel-in-Time Quasi-Boundary Value Method for Inverse Space-Dependent Source Problems},
-  url = {http://arxiv.org/abs/2201.02687v1},
-  year = {2022}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalJiangEtAl2022Abstract" tabindex="-1" role="dialog" aria-labelledby="modalJiangEtAl2022AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalJiangEtAl2022AbstractTitle">
-            Abstract for BibTeX entry <code>JiangEtAl2022</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          Inverse source problems arise often in real-world applications, such as localizing unknown groundwater contaminant sources. Being different from Tikhonov regularization, the quasi-boundary value method has been proposed and analyzed as an effective way for regularizing such inverse source problems, which was shown to achieve an optimal order convergence rate under suitable assumptions. However, fast direct or iterative solvers for the resulting all-at-once large-scale linear systems have been rarely studied in the literature. In this work, we first proposed and analyzed a modified quasi-boundary value method, and then developed a diagonalization-based parallel-in-time (PinT) direct solver, which can achieve a dramatic speedup in CPU times when compared with MATLAB’s sparse direct solver. In particular, the time-discretization matrix B is shown to be diagonalizable, and the condition number of its eigenvector matrix V is proven to exhibit quadratic growth, which guarantees the roundoff errors due to diagonalization is well controlled. Several 1D and 2D examples are presented to demonstrate the very promising computational efficiency of our proposed method, where the CPU times in 2D cases can be speedup by three orders of magnitude.
-        </div>
       </div>
     </div>
   </div>
@@ -2367,71 +2441,6 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          PentlandEtAl2022
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapsePentlandEtAl2022Bibtex"
-                    aria-expanded="false" aria-controls="collapsePentlandEtAl2022Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalPentlandEtAl2022Abstract"
-                    aria-expanded="false" aria-controls="modalPentlandEtAl2022Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="PentlandEtAl2022">K. Pentland, M. Tamborrino, T. J. Sullivan, J. Buchanan, and L. C. Appel, “GParareal: A time-parallel ODE solver using Gaussian process emulation,” arXiv:2201.13418v1 [math.NA], 2022 [Online]. Available at: <a href="http://arxiv.org/abs/2201.13418v1" target="_blank">http://arxiv.org/abs/2201.13418v1</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapsePentlandEtAl2022Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{PentlandEtAl2022,
-  author = {Pentland, Kamran and Tamborrino, Massimiliano and Sullivan, T. J. and Buchanan, James and Appel, L. C.},
-  howpublished = {arXiv:2201.13418v1 [math.NA]},
-  title = {GParareal: A time-parallel ODE solver using Gaussian process emulation},
-  url = {http://arxiv.org/abs/2201.13418v1},
-  year = {2022}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalPentlandEtAl2022Abstract" tabindex="-1" role="dialog" aria-labelledby="modalPentlandEtAl2022AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalPentlandEtAl2022AbstractTitle">
-            Abstract for BibTeX entry <code>PentlandEtAl2022</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          Sequential numerical methods for integrating initial value problems (IVPs) can be prohibitively expensive when high numerical accuracy is required over the entire interval of integration. One remedy is to integrate in a parallel fashion, "predicting" the solution serially using a cheap (coarse) solver and "correcting" these values using an expensive (fine) solver that runs in parallel on a number of temporal subintervals. In this work, we propose a time-parallel algorithm (GParareal) that solves IVPs by modelling the correction term, i.e. the difference between fine and coarse solutions, using a Gaussian process emulator. This approach compares favourably with the classic parareal algorithm and we demonstrate, on a number of IVPs, that GParareal can converge in fewer iterations than parareal, leading to an increase in parallel speed-up. GParareal also manages to locate solutions to certain IVPs where parareal fails and has the additional advantage of being able to use archives of legacy solutions, e.g. solutions from prior runs of the IVP for different initial conditions, to further accelerate convergence of the method - something that existing time-parallel methods do not do.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
           PentlandEtAl2022b
         </div>
       </div>
@@ -2539,6 +2548,60 @@
         <div class="modal-body">
           Stochastic parareal (SParareal) is a probabilistic variant of the popular parallel-in-time algorithm known as parareal. Similarly to parareal, it combines fine- and coarse-grained solutions to an ordinary differential equation (ODE) using a predictor-corrector (PC) scheme. The key difference is that carefully chosen random perturbations are added to the PC to try to accelerate the location of a stochastic solution to the ODE. In this paper, we derive superlinear and linear mean-square error bounds for SParareal applied to nonlinear systems of ODEs using different types of perturbations. We illustrate these bounds numerically on a linear system of ODEs and a scalar nonlinear ODE, showing a good match between theory and numerics.
         </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          PentlandEtAl2022d
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapsePentlandEtAl2022dBibtex"
+                    aria-expanded="false" aria-controls="collapsePentlandEtAl2022dBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalPentlandEtAl2022dAbstract"
+                    aria-expanded="false" aria-controls="modalPentlandEtAl2022dAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="PentlandEtAl2022d">K. Pentland, M. Tamborrino, T. J. Sullivan, J. Buchanan, and L. C. Appel, “GParareal: a time-parallel ODE solver using Gaussian process emulation,” <i>Statistics and Computing</i>, vol. 33, no. 1, Dec. 2022 [Online]. Available at: <a href="https://doi.org/10.1007%2Fs11222-022-10195-y" target="_blank">https://doi.org/10.1007%2Fs11222-022-10195-y</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapsePentlandEtAl2022dBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@article{PentlandEtAl2022d,
+  author = {Pentland, Kamran and Tamborrino, Massimiliano and Sullivan, T. J. and Buchanan, James and Appel, L. C.},
+  doi = {10.1007/s11222-022-10195-y},
+  journal = {Statistics and Computing},
+  month = dec,
+  number = {1},
+  publisher = {Springer Science and Business Media {LLC}},
+  title = {{GParareal}: a time-parallel {ODE} solver using Gaussian process emulation},
+  url = {https://doi.org/10.1007%2Fs11222-022-10195-y},
+  volume = {33},
+  year = {2022}
+}
+</pre>
       </div>
     </div>
   </div>
@@ -3391,21 +3454,21 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          UtkarshEtAl2022
+          UtkarshEtAl2022b
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseUtkarshEtAl2022Bibtex"
-                    aria-expanded="false" aria-controls="collapseUtkarshEtAl2022Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseUtkarshEtAl2022bBibtex"
+                    aria-expanded="false" aria-controls="collapseUtkarshEtAl2022bBibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalUtkarshEtAl2022Abstract"
-                    aria-expanded="false" aria-controls="modalUtkarshEtAl2022Abstract">
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalUtkarshEtAl2022bAbstract"
+                    aria-expanded="false" aria-controls="modalUtkarshEtAl2022bAbstract">
               Abstract
             </button>
             
@@ -3415,36 +3478,23 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="UtkarshEtAl2022">Utkarsh, C. Elrod, Y. Ma, and C. Rackauckas, “Parallelizing Explicit and Implicit Extrapolation Methods for Ordinary Differential Equations,” arXiv:2207.08135v1 [math.NA], 2022 [Online]. Available at: <a href="http://arxiv.org/abs/2207.08135v1" target="_blank">http://arxiv.org/abs/2207.08135v1</a></span>
+      <span id="UtkarshEtAl2022b">Utkarsh, C. Elrod, Y. Ma, K. Althaus, and C. Rackauckas, “Parallelizing Explicit and Implicit Extrapolation Methods for Ordinary Differential Equations,” in <i>2022 IEEE High Performance Extreme Computing Conference (HPEC)</i>, 2022 [Online]. Available at: <a href="https://doi.org/10.1109%2Fhpec55821.2022.9926357" target="_blank">https://doi.org/10.1109%2Fhpec55821.2022.9926357</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseUtkarshEtAl2022Bibtex">
+  <div class="collapse" id="collapseUtkarshEtAl2022bBibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@unpublished{UtkarshEtAl2022,
-  author = {Utkarsh and Elrod, Chris and Ma, Yingbo and Rackauckas, Christopher},
-  howpublished = {arXiv:2207.08135v1 [math.NA]},
+        <pre class="abstract">@inproceedings{UtkarshEtAl2022b,
+  author = {Utkarsh and Elrod, Chris and Ma, Yingbo and Althaus, Konstantin and Rackauckas, Christopher},
+  booktitle = {2022 {IEEE} High Performance Extreme Computing Conference ({HPEC})},
+  doi = {10.1109/hpec55821.2022.9926357},
+  month = sep,
+  publisher = {{IEEE}},
   title = {Parallelizing Explicit and Implicit Extrapolation Methods for Ordinary Differential Equations},
-  url = {http://arxiv.org/abs/2207.08135v1},
+  url = {https://doi.org/10.1109%2Fhpec55821.2022.9926357},
   year = {2022}
 }
 </pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalUtkarshEtAl2022Abstract" tabindex="-1" role="dialog" aria-labelledby="modalUtkarshEtAl2022AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalUtkarshEtAl2022AbstractTitle">
-            Abstract for BibTeX entry <code>UtkarshEtAl2022</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          Numerically solving ordinary differential equations (ODEs) is a naturally serial process and as a result the vast majority of ODE solver software are serial. In this manuscript we developed a set of parallelized ODE solvers using extrapolation methods which exploit "parallelism within the method" so that arbitrary user ODEs can be parallelized. We describe the specific choices made in the implementation of the explicit and implicit extrapolation methods which allow for generating low overhead static schedules to then exploit with optimized multi-threaded implementations. We demonstrate that while the multi-threading gives a noticeable acceleration on both explicit and implicit problems, the explicit parallel extrapolation methods gave no significant improvement over state-of-the-art even with a multi-threading advantage against current optimized high order Runge-Kutta tableaus. However, we demonstrate that the implicit parallel extrapolation methods are able to achieve state-of-the-art performance (2x-4x) on standard multicore x86 CPUs for systems of <200 stiff ODEs solved at low tolerance, a typical setup for a vast majority of users of high level language equation solver suites. The resulting method is distributed as the first widely available open source software for within-method parallel acceleration targeting typical modest compute architectures.
-        </div>
       </div>
     </div>
   </div>
@@ -4136,6 +4186,58 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          BuvoliEtAl2021
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseBuvoliEtAl2021Bibtex"
+                    aria-expanded="false" aria-controls="collapseBuvoliEtAl2021Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modalBuvoliEtAl2021Abstract"
+                    aria-expanded="false" aria-controls="modalBuvoliEtAl2021Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="BuvoliEtAl2021">T. Buvoli and M. Minion, “IMEX Runge-Kutta Parareal for Non-diffusive Equations,” in <i>Springer Proceedings in Mathematics &amp\mathsemicolon Statistics</i>, Springer International Publishing, 2021, pp. 95–127 [Online]. Available at: <a href="https://doi.org/10.1007%2F978-3-030-75933-9_5" target="_blank">https://doi.org/10.1007%2F978-3-030-75933-9_5</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseBuvoliEtAl2021Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@incollection{BuvoliEtAl2021,
+  author = {Buvoli, Tommaso and Minion, Michael},
+  booktitle = {Springer Proceedings in Mathematics {\&}amp$\mathsemicolon$ Statistics},
+  doi = {10.1007/978-3-030-75933-9_5},
+  pages = {95--127},
+  publisher = {Springer International Publishing},
+  title = {{IMEX} Runge-Kutta Parareal for Non-diffusive Equations},
+  url = {https://doi.org/10.1007%2F978-3-030-75933-9_5},
+  year = {2021}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           CaiEtAl2021
         </div>
       </div>
@@ -4402,71 +4504,6 @@
   year = {2021}
 }
 </pre>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          DanieliEtAl2021b
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseDanieliEtAl2021bBibtex"
-                    aria-expanded="false" aria-controls="collapseDanieliEtAl2021bBibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalDanieliEtAl2021bAbstract"
-                    aria-expanded="false" aria-controls="modalDanieliEtAl2021bAbstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="DanieliEtAl2021b">F. Danieli and S. MacLachlan, “Multigrid Reduction in Time for non-linear hyperbolic equations,” arXiv:2104.09404v1 [math.NA], 2021 [Online]. Available at: <a href="http://arxiv.org/abs/2104.09404v1" target="_blank">http://arxiv.org/abs/2104.09404v1</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseDanieliEtAl2021bBibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{DanieliEtAl2021b,
-  author = {Danieli, Federico and MacLachlan, Scott},
-  howpublished = {arXiv:2104.09404v1 [math.NA]},
-  title = {Multigrid Reduction in Time for non-linear hyperbolic equations},
-  url = {http://arxiv.org/abs/2104.09404v1},
-  year = {2021}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalDanieliEtAl2021bAbstract" tabindex="-1" role="dialog" aria-labelledby="modalDanieliEtAl2021bAbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalDanieliEtAl2021bAbstractTitle">
-            Abstract for BibTeX entry <code>DanieliEtAl2021b</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          Time-parallel algorithms seek greater concurrency by decomposing the temporal domain of a Partial Differential Equation (PDE), providing possibilities for accelerating the computation of its solution. While parallelisation in time has allowed remarkable speed-ups in applications involving parabolic equations, its effectiveness in the hyperbolic framework remains debatable: growth of instabilities and slow convergence are both strong issues in this case, which often negate most of the advantages from time-parallelisation. Here, we focus on the Multigrid Reduction in Time (MGRIT) algorithm, investigating in detail its performance when applied to non-linear conservation laws with a variety of discretisation schemes. Specific attention is given to high-accuracy Weighted Essentially Non-Oscillatory (WENO) reconstructions, coupled with Strong Stability Preserving (SSP) integrators, which are often the discretisations of choice for such PDEs. A technique to improve the performance of MGRIT when applied to a low-order, more dissipative scheme is also outlined. This study aims at identifying the main causes for degradation in the convergence speed of the algorithm, and finds the Courant-Friedrichs-Lewy (CFL) limit to be the principal determining factor.
-        </div>
       </div>
     </div>
   </div>
@@ -5584,71 +5621,6 @@ computing results, also for more realistic applications.
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          Liu2021
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseLiu2021Bibtex"
-                    aria-expanded="false" aria-controls="collapseLiu2021Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalLiu2021Abstract"
-                    aria-expanded="false" aria-controls="modalLiu2021Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="Liu2021">J. Liu, “Fast Parallel-in-Time Quasi-Boundary Value Methods for Backward Heat Conduction Problems,” arXiv:2107.06381v1 [math.NA], 2021 [Online]. Available at: <a href="http://arxiv.org/abs/2107.06381v1" target="_blank">http://arxiv.org/abs/2107.06381v1</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseLiu2021Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{Liu2021,
-  author = {Liu, Jun},
-  howpublished = {arXiv:2107.06381v1 [math.NA]},
-  title = {Fast Parallel-in-Time Quasi-Boundary Value Methods for Backward Heat Conduction Problems},
-  url = {http://arxiv.org/abs/2107.06381v1},
-  year = {2021}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalLiu2021Abstract" tabindex="-1" role="dialog" aria-labelledby="modalLiu2021AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalLiu2021AbstractTitle">
-            Abstract for BibTeX entry <code>Liu2021</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          In this paper we proposed two new quasi-boundary value methods for regularizing the ill-posed backward heat conduction problems. With a standard finite difference discretization in space and time, the obtained all-at-once nonsymmetric sparse linear systems have the desired block ω-circulant structure, which can be utilized to design an efficient parallel-in-time (PinT) direct solver that built upon an explicit FFT-based diagonalization of the time discretization matrix. Convergence analysis is presented to justify the optimal choice of the regularization parameter. Numerical examples are reported to validate our analysis and illustrate the superior computational efficiency of our proposed PinT methods.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
           LiuEtAl2021
         </div>
       </div>
@@ -5809,71 +5781,6 @@ computing results, also for more realistic applications.
   year = {2021}
 }
 </pre>
-      </div>
-    </div>
-  </div>
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          NguyenEtAl2021
-        </div>
-      </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseNguyenEtAl2021Bibtex"
-                    aria-expanded="false" aria-controls="collapseNguyenEtAl2021Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalNguyenEtAl2021Abstract"
-                    aria-expanded="false" aria-controls="modalNguyenEtAl2021Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="NguyenEtAl2021">H. Nguyen and R. Tsai, “Numerical wave propagation aided by deep learning,” arXiv:2107.13184v1 [math.NA], 2021 [Online]. Available at: <a href="http://arxiv.org/abs/2107.13184v1" target="_blank">http://arxiv.org/abs/2107.13184v1</a></span>
-    </div>
-  </div>
-  <div class="collapse" id="collapseNguyenEtAl2021Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{NguyenEtAl2021,
-  author = {Nguyen, Hieu and Tsai, Richard},
-  howpublished = {arXiv:2107.13184v1 [math.NA]},
-  title = {Numerical wave propagation aided by deep learning},
-  url = {http://arxiv.org/abs/2107.13184v1},
-  year = {2021}
-}
-</pre>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="modalNguyenEtAl2021Abstract" tabindex="-1" role="dialog" aria-labelledby="modalNguyenEtAl2021AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalNguyenEtAl2021AbstractTitle">
-            Abstract for BibTeX entry <code>NguyenEtAl2021</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          We propose a deep learning approach for wave propagation in media with multiscale wave speed, using a second-order linear wave equation model. We use neural networks to enhance the accuracy of a given inaccurate coarse solver, which under-resolves a class of multiscale wave media and wave fields of interest. Our approach involves generating training data by the given computationally efficient coarse solver and another sufficiently accurate solver, applied to a class of wave media (described by their wave speed profiles) and initial wave fields. We find that the trained neural networks can approximate the nonlinear dependence of the propagation on the wave speed as long as the causality is appropriately sampled in training data. We combine the neural-network-enhanced coarse solver with the parareal algorithm and demonstrate that the coupled approach improves the stability of parareal algorithms for wave propagation and improves the accuracy of the enhanced coarse solvers.
-        </div>
       </div>
     </div>
   </div>
