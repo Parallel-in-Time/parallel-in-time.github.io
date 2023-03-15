@@ -5110,6 +5110,17 @@ the effectiveness of the proposed method.},
 	year = {2021},
 }
 
+@incollection{BuvoliEtAl2021,
+	author = {Tommaso Buvoli and Michael Minion},
+	booktitle = {Springer Proceedings in Mathematics {\&}amp$\mathsemicolon$ Statistics},
+	doi = {10.1007/978-3-030-75933-9_5},
+	pages = {95--127},
+	publisher = {Springer International Publishing},
+	title = {{IMEX} Runge-Kutta Parareal for Non-diffusive Equations},
+	url = {https://doi.org/10.1007%2F978-3-030-75933-9_5},
+	year = {2021},
+}
+
 @article{CaiEtAl2021,
 	author = {Ming Cai and Jean Mahseredjian and Ilhan Kocar and Xiaopeng Fu and Aboutaleb Haddadi},
 	doi = {10.1016/j.epsr.2021.107346},
@@ -5164,15 +5175,6 @@ the effectiveness of the proposed method.},
 	publisher = {Institution of Engineering and Technology ({IET})},
 	title = {Parallel-in-time-and-space electromagnetic transient simulation of multi-terminal {DC} grids with device-level switch modelling},
 	url = {https://doi.org/10.1049/gtd2.12285},
-	year = {2021},
-}
-
-@unpublished{DanieliEtAl2021b,
-	abstract = {Time-parallel algorithms seek greater concurrency by decomposing the temporal domain of a Partial Differential Equation (PDE), providing possibilities for accelerating the computation of its solution. While parallelisation in time has allowed remarkable speed-ups in applications involving parabolic equations, its effectiveness in the hyperbolic framework remains debatable: growth of instabilities and slow convergence are both strong issues in this case, which often negate most of the advantages from time-parallelisation. Here, we focus on the Multigrid Reduction in Time (MGRIT) algorithm, investigating in detail its performance when applied to non-linear conservation laws with a variety of discretisation schemes. Specific attention is given to high-accuracy Weighted Essentially Non-Oscillatory (WENO) reconstructions, coupled with Strong Stability Preserving (SSP) integrators, which are often the discretisations of choice for such PDEs. A technique to improve the performance of MGRIT when applied to a low-order, more dissipative scheme is also outlined. This study aims at identifying the main causes for degradation in the convergence speed of the algorithm, and finds the Courant-Friedrichs-Lewy (CFL) limit to be the principal determining factor.},
-	author = {Federico Danieli and Scott MacLachlan},
-	howpublished = {arXiv:2104.09404v1 [math.NA]},
-	title = {Multigrid Reduction in Time for non-linear hyperbolic equations},
-	url = {http://arxiv.org/abs/2104.09404v1},
 	year = {2021},
 }
 
@@ -5432,15 +5434,6 @@ computing results, also for more realistic applications.},
 	year = {2021},
 }
 
-@unpublished{Liu2021,
-	abstract = {In this paper we proposed two new quasi-boundary value methods for regularizing the ill-posed backward heat conduction problems. With a standard finite difference discretization in space and time, the obtained all-at-once nonsymmetric sparse linear systems have the desired block $\omega$-circulant structure, which can be utilized to design an efficient parallel-in-time (PinT) direct solver that built upon an explicit FFT-based diagonalization of the time discretization matrix. Convergence analysis is presented to justify the optimal choice of the regularization parameter. Numerical examples are reported to validate our analysis and illustrate the superior computational efficiency of our proposed PinT methods.},
-	author = {Jun Liu},
-	howpublished = {arXiv:2107.06381v1 [math.NA]},
-	title = {Fast Parallel-in-Time Quasi-Boundary Value Methods for Backward Heat Conduction Problems},
-	url = {http://arxiv.org/abs/2107.06381v1},
-	year = {2021},
-}
-
 @unpublished{LiuEtAl2021,
 	abstract = {The Sinc-Nystr\"{o}m method in time is a high-order spectral method for solving evolutionary differential equations and it has wide applications in scientific computation. But in this method we have to solve all the time steps implicitly at one-shot, which may results in a large-scale nonsymmetric dense system that is expensive to solve. In this paper, we propose and analyze a parallel-in-time (PinT) preconditioner for solving such Sinc-Nystr\"{o}m systems, where both the parabolic and hyperbolic PDEs are investigated. Attributed to the special Toeplitz-like structure of the Sinc-Nystr\"{o}m systems, the proposed PinT preconditioner is indeed a low-rank perturbation of the system matrix and we show that the spectrum of the preconditioned system is highly clustered around one, especially when the time step size is refined. Such a clustered spectrum distribution matches very well with the numerically observed mesh-independent GMRES convergence rates in various examples. Several linear and nonlinear ODE and PDE examples are presented to illustrate the convergence performance of our proposed PinT preconditioners, where the achieved exponential order of accuracy are especially attractive to those applications in need of high accuracy.},
 	author = {Jun Liu and Shu-Lin Wu},
@@ -5471,15 +5464,6 @@ computing results, also for more realistic applications.},
 	title = {Parallel time-stepping for fluid{\textendash}structure interactions},
 	url = {https://doi.org/10.1051/mmnp/2021005},
 	volume = {16},
-	year = {2021},
-}
-
-@unpublished{NguyenEtAl2021,
-	abstract = {We propose a deep learning approach for wave propagation in media with multiscale wave speed, using a second-order linear wave equation model. We use neural networks to enhance the accuracy of a given inaccurate coarse solver, which under-resolves a class of multiscale wave media and wave fields of interest. Our approach involves generating training data by the given computationally efficient coarse solver and another sufficiently accurate solver, applied to a class of wave media (described by their wave speed profiles) and initial wave fields. We find that the trained neural networks can approximate the nonlinear dependence of the propagation on the wave speed as long as the causality is appropriately sampled in training data. We combine the neural-network-enhanced coarse solver with the parareal algorithm and demonstrate that the coupled approach improves the stability of parareal algorithms for wave propagation and improves the accuracy of the enhanced coarse solvers.},
-	author = {Hieu Nguyen and Richard Tsai},
-	howpublished = {arXiv:2107.13184v1 [math.NA]},
-	title = {Numerical wave propagation aided by deep learning},
-	url = {http://arxiv.org/abs/2107.13184v1},
 	year = {2021},
 }
 
@@ -5737,15 +5721,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{CarrelEtAl2022,
-	abstract = {The Parareal algorithm of Lions, Maday, and Turinici is a well-known time parallel algorithm for evolution problems. It is based on a Newton-like iteration, with cheap coarse corrections performed sequentially, and expensive fine solves performed in parallel. In this work, we apply Parareal to evolution problems that admit good low-rank approximations and for which the dynamical low-rank approximation (DLRA), proposed by Koch and Lubich, can be used as time stepper. Many discrete integrators for DLRA have recently been proposed, based on splitting the projected vector field or by applying projected Runge--Kutta methods. The cost and accuracy of these methods are mostly governed by the rank chosen for the approximation. We want to use these properties in a new method, that we call low-rank Parareal, in order to obtain a time-parallel DLRA solver for evolution problems. We propose an analysis of the algorithm on affine linear problems and illustrate our results numerically.},
-	author = {Benjamin Carrel and Martin J. Gander and Bart Vandereycken},
-	howpublished = {arXiv:2203.08455v1 [math.NA]},
-	title = {Low-rank Parareal: a low-rank parallel-in-time integrator},
-	url = {http://arxiv.org/abs/2203.08455v1},
-	year = {2022},
-}
-
 @article{ChengEtAl2022,
 	author = {Tianshi Cheng and Ning Lin and Venkata Dinavahi},
 	doi = {10.1109/tpwrs.2022.3153450},
@@ -5793,6 +5768,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Space-Time Block Preconditioning for Incompressible Flow},
 	url = {https://doi.org/10.1137%2F21m1390773},
 	volume = {44},
+	year = {2022},
+}
+
+@article{DanieliEtAl2022b,
+	author = {Federico Danieli and Scott MacLachlan},
+	doi = {10.1553/etna_vol58s43},
+	journal = {{ETNA} - Electronic Transactions on Numerical Analysis},
+	pages = {43--65},
+	publisher = {Osterreichische Akademie der Wissenschaften, Verlag},
+	title = {Multigrid reduction in time for non-linear hyperbolic equations},
+	url = {https://doi.org/10.1553%2Fetna_vol58s43},
+	volume = {58},
 	year = {2022},
 }
 
@@ -5879,15 +5866,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {A Vanka-type multigrid solver for complex-shifted Laplacian systems from diagonalization-based parallel-in-time algorithms},
 	url = {https://doi.org/10.1016/j.aml.2022.108125},
 	volume = {132},
-	year = {2022},
-}
-
-@unpublished{JiangEtAl2022,
-	abstract = {Inverse source problems arise often in real-world applications, such as localizing unknown groundwater contaminant sources. Being different from Tikhonov regularization, the quasi-boundary value method has been proposed and analyzed as an effective way for regularizing such inverse source problems, which was shown to achieve an optimal order convergence rate under suitable assumptions. However, fast direct or iterative solvers for the resulting all-at-once large-scale linear systems have been rarely studied in the literature. In this work, we first proposed and analyzed a modified quasi-boundary value method, and then developed a diagonalization-based parallel-in-time (PinT) direct solver, which can achieve a dramatic speedup in CPU times when compared with MATLAB's sparse direct solver. In particular, the time-discretization matrix $B$ is shown to be diagonalizable, and the condition number of its eigenvector matrix $V$ is proven to exhibit quadratic growth, which guarantees the roundoff errors due to diagonalization is well controlled. Several 1D and 2D examples are presented to demonstrate the very promising computational efficiency of our proposed method, where the CPU times in 2D cases can be speedup by three orders of magnitude.},
-	author = {Yi Jiang and Jun Liu and Xiang-Sheng Wang},
-	howpublished = {arXiv:2201.02687v1 [math.NA]},
-	title = {A Direct Parallel-in-Time Quasi-Boundary Value Method for Inverse Space-Dependent Source Problems},
-	url = {http://arxiv.org/abs/2201.02687v1},
 	year = {2022},
 }
 
@@ -6014,15 +5992,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{PentlandEtAl2022,
-	abstract = {Sequential numerical methods for integrating initial value problems (IVPs) can be prohibitively expensive when high numerical accuracy is required over the entire interval of integration. One remedy is to integrate in a parallel fashion, "predicting" the solution serially using a cheap (coarse) solver and "correcting" these values using an expensive (fine) solver that runs in parallel on a number of temporal subintervals. In this work, we propose a time-parallel algorithm (GParareal) that solves IVPs by modelling the correction term, i.e. the difference between fine and coarse solutions, using a Gaussian process emulator. This approach compares favourably with the classic parareal algorithm and we demonstrate, on a number of IVPs, that GParareal can converge in fewer iterations than parareal, leading to an increase in parallel speed-up. GParareal also manages to locate solutions to certain IVPs where parareal fails and has the additional advantage of being able to use archives of legacy solutions, e.g. solutions from prior runs of the IVP for different initial conditions, to further accelerate convergence of the method - something that existing time-parallel methods do not do.},
-	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan and James Buchanan and L. C. Appel},
-	howpublished = {arXiv:2201.13418v1 [math.NA]},
-	title = {GParareal: A time-parallel ODE solver using Gaussian process emulation},
-	url = {http://arxiv.org/abs/2201.13418v1},
-	year = {2022},
-}
-
 @article{PentlandEtAl2022b,
 	author = {Kamran Pentland and Massimiliano Tamborrino and Debasmita Samaddar and Lynton C. Appel},
 	doi = {10.1137/21m1414231},
@@ -6041,6 +6010,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2211.05496v1 [math.NA]},
 	title = {Error bound analysis of the stochastic parareal algorithm},
 	url = {http://arxiv.org/abs/2211.05496v1},
+	year = {2022},
+}
+
+@article{PentlandEtAl2022d,
+	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan and James Buchanan and L. C. Appel},
+	doi = {10.1007/s11222-022-10195-y},
+	journal = {Statistics and Computing},
+	month = {dec},
+	number = {1},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {{GParareal}: a time-parallel {ODE} solver using Gaussian process emulation},
+	url = {https://doi.org/10.1007%2Fs11222-022-10195-y},
+	volume = {33},
 	year = {2022},
 }
 
@@ -6191,12 +6173,14 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{UtkarshEtAl2022,
-	abstract = {Numerically solving ordinary differential equations (ODEs) is a naturally serial process and as a result the vast majority of ODE solver software are serial. In this manuscript we developed a set of parallelized ODE solvers using extrapolation methods which exploit "parallelism within the method" so that arbitrary user ODEs can be parallelized. We describe the specific choices made in the implementation of the explicit and implicit extrapolation methods which allow for generating low overhead static schedules to then exploit with optimized multi-threaded implementations. We demonstrate that while the multi-threading gives a noticeable acceleration on both explicit and implicit problems, the explicit parallel extrapolation methods gave no significant improvement over state-of-the-art even with a multi-threading advantage against current optimized high order Runge-Kutta tableaus. However, we demonstrate that the implicit parallel extrapolation methods are able to achieve state-of-the-art performance (2x-4x) on standard multicore x86 CPUs for systems of $<200$ stiff ODEs solved at low tolerance, a typical setup for a vast majority of users of high level language equation solver suites. The resulting method is distributed as the first widely available open source software for within-method parallel acceleration targeting typical modest compute architectures.},
-	author = {Utkarsh and Chris Elrod and Yingbo Ma and Christopher Rackauckas},
-	howpublished = {arXiv:2207.08135v1 [math.NA]},
+@inproceedings{UtkarshEtAl2022b,
+	author = {Utkarsh and Chris Elrod and Yingbo Ma and Konstantin Althaus and Christopher Rackauckas},
+	booktitle = {2022 {IEEE} High Performance Extreme Computing Conference ({HPEC})},
+	doi = {10.1109/hpec55821.2022.9926357},
+	month = {sep},
+	publisher = {{IEEE}},
 	title = {Parallelizing Explicit and Implicit Extrapolation Methods for Ordinary Differential Equations},
-	url = {http://arxiv.org/abs/2207.08135v1},
+	url = {https://doi.org/10.1109%2Fhpec55821.2022.9926357},
 	year = {2022},
 }
 
@@ -6300,12 +6284,16 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{BuvoliEtAl2023,
-	abstract = {Parareal is a well-known parallel-in-time algorithm that combines a coarse and fine propagator within a parallel iteration. It allows for large-scale parallelism that leads to significantly reduced computational time compared to serial time-stepping methods. However, like many parallel-in-time methods it can fail to achieve parallel speedup when applied to non-diffusive equations such as hyperbolic systems or dispersive nonlinear wave equations. This paper explores the use of exponential integrators within the Parareal iteration. Exponential integrators are particularly interesting candidates for Parareal because of their ability to resolve fast-moving waves, even at the large stepsizes used by coarse propagators. This work begins with an introduction to exponential Parareal integrators followed by several motivating numerical experiments involving the nonlinear Schr\"odinger equation. These experiments are then analyzed using linear analysis that approximates the stability and convergence properties of the exponential Parareal iteration on nonlinear problems. The paper concludes with two additional numerical experiments involving the dispersive Kadomtsev-Petviashvili equation and the hyperbolic Vlasov-Poisson equation. These experiments demonstrate that exponential Parareal methods can achieve significant parallel speedup on different types of non-diffusive equations.},
-	author = {Tommaso Buvoli and Michael L. Minion},
-	howpublished = {arXiv:2301.03764v1 [math.NA]},
-	title = {Exponential Runge-Kutta Parareal for Non-Diffusive Equations},
-	url = {http://arxiv.org/abs/2301.03764v1},
+@article{CarrelEtAl2023,
+	author = {Benjamin Carrel and Martin J. Gander and Bart Vandereycken},
+	doi = {10.1007/s10543-023-00953-3},
+	journal = {{BIT} Numerical Mathematics},
+	month = {feb},
+	number = {1},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {Low-rank Parareal: a low-rank parallel-in-time integrator},
+	url = {https://doi.org/10.1007%2Fs10543-023-00953-3},
+	volume = {63},
 	year = {2023},
 }
 
@@ -6352,6 +6340,32 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@article{JiangEtAl2023,
+	author = {Yi Jiang and Jun Liu},
+	doi = {10.1016/j.apnum.2022.10.006},
+	journal = {Applied Numerical Mathematics},
+	month = {feb},
+	pages = {325--339},
+	publisher = {Elsevier {BV}},
+	title = {Fast parallel-in-time quasi-boundary value methods for backward heat conduction problems},
+	url = {https://doi.org/10.1016%2Fj.apnum.2022.10.006},
+	volume = {184},
+	year = {2023},
+}
+
+@article{JiangEtAl2023,
+	author = {Yi Jiang and Jun Liu and Xiang-Sheng Wang},
+	doi = {10.1016/j.cam.2022.114958},
+	journal = {Journal of Computational and Applied Mathematics},
+	month = {may},
+	pages = {114958},
+	publisher = {Elsevier {BV}},
+	title = {A direct parallel-in-time quasi-boundary value method for inverse space-dependent source problems},
+	url = {https://doi.org/10.1016%2Fj.cam.2022.114958},
+	volume = {423},
+	year = {2023},
+}
+
 @unpublished{LevequeEtAl2023,
 	abstract = {In this article, we derive fast and robust preconditioned iterative methods for the all-at-once linear systems arising upon discretization of time-dependent PDEs. The discretization we employ is based on a Runge--Kutta method in time, for which the development of robust solvers is an emerging research area in the literature of numerical methods for time-dependent PDEs. By making use of classical theory of block matrices, one is able to derive a preconditioner for the systems considered. An approximate inverse of the preconditioner so derived consists in a fixed number of linear solves for the system of the stages of the method. We thus propose a preconditioner for the latter system based on a singular value decomposition (SVD) of the (real) Runge--Kutta matrix $A_{\mathrm{RK}} = U \Sigma V^\top$. Supposing $A_{\mathrm{RK}}$ is invertible, we prove that the spectrum of the system for the stages preconditioned by our SVD-based preconditioner is contained within the right-half of the unit circle, under suitable assumptions on the matrix $U^\top V$ (which is well defined due to the polar decomposition of $A_{\mathrm{RK}}$). We show the numerical efficiency of our SVD-based preconditioner by solving the system of the stages arising from the discretization of the heat equation and the Stokes equations, with sequential time-stepping. Finally, we provide numerical results of the all-at-once approach for both problems.},
 	author = {Santolo Leveque and Luca Bergamaschi and Ángeles Martínez and John W. Pearson},
@@ -6369,6 +6383,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Springer Science and Business Media {LLC}},
 	title = {Interpretation of parareal as a two-level additive Schwarz in time preconditioner and its acceleration with {GMRES}},
 	url = {https://doi.org/10.1007/s11075-022-01492-8},
+	year = {2023},
+}
+
+@article{NguyenEtAl2023b,
+	author = {Hieu Nguyen and Richard Tsai},
+	doi = {10.1016/j.jcp.2022.111828},
+	journal = {Journal of Computational Physics},
+	month = {feb},
+	pages = {111828},
+	publisher = {Elsevier {BV}},
+	title = {Numerical wave propagation aided by deep learning},
+	url = {https://doi.org/10.1016%2Fj.jcp.2022.111828},
+	volume = {475},
 	year = {2023},
 }
 
