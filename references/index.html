@@ -246,6 +246,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          BouillonEtAl2023b
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseBouillonEtAl2023bBibtex"
+                    aria-expanded="false" aria-controls="collapseBouillonEtAl2023bBibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalBouillonEtAl2023bAbstract"
+                    aria-expanded="false" aria-controls="modalBouillonEtAl2023bAbstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="BouillonEtAl2023b">A. Bouillon, G. Samaey, and K. Meerbergen, “Diagonalization-based preconditioners and generalized convergence bounds for ParaOpt,” arXiv:2304.09235v1 [math.NA], 2023 [Online]. Available at: <a href="http://arxiv.org/abs/2304.09235v1" target="_blank">http://arxiv.org/abs/2304.09235v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseBouillonEtAl2023bBibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{BouillonEtAl2023b,
+  author = {Bouillon, Arne and Samaey, Giovanni and Meerbergen, Karl},
+  howpublished = {arXiv:2304.09235v1 [math.NA]},
+  title = {Diagonalization-based preconditioners and generalized convergence bounds for ParaOpt},
+  url = {http://arxiv.org/abs/2304.09235v1},
+  year = {2023}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalBouillonEtAl2023bAbstract" tabindex="-1" role="dialog" aria-labelledby="modalBouillonEtAl2023bAbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalBouillonEtAl2023bAbstractTitle">
+            Abstract for BibTeX entry <code>BouillonEtAl2023b</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          The ParaOpt algorithm was recently introduced as a time-parallel solver for optimal-control problems with a terminal-cost objective, and convergence results have been presented for the linear diffusive case with implicit-Euler time integrators. We reformulate ParaOpt for tracking problems and provide generalized convergence analyses for both objectives. We focus on linear diffusive equations and prove convergence bounds that are generic in the time integrators used. For large problem dimensions, ParaOpt’s performance depends crucially on having a good preconditioner to solve the arising linear systems. For the case where ParaOpt’s cheap, coarse-grained propagator is linear, we introduce diagonalization-based preconditioners, inspired by recent advances in the ParaDiag family of methods. These preconditioners not only lead to a weakly-scalable ParaOpt version, but are themselves invertible in parallel, making maximal use of available concurrency. They have proven convergence properties in the linear diffusive case that are generic in the time discretization used, similarly to our ParaOpt results. Numerical results confirm that the iteration count of the iterative solvers used for ParaOpt’s linear systems becomes constant in the limit of an increasing processor count. The paper is accompanied by a sequential MATLAB implementation.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           CarrelEtAl2023
         </div>
       </div>
