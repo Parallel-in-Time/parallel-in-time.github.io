@@ -6284,6 +6284,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{BouillonEtAl2023b,
+	abstract = {The ParaOpt algorithm was recently introduced as a time-parallel solver for optimal-control problems with a terminal-cost objective, and convergence results have been presented for the linear diffusive case with implicit-Euler time integrators. We reformulate ParaOpt for tracking problems and provide generalized convergence analyses for both objectives. We focus on linear diffusive equations and prove convergence bounds that are generic in the time integrators used. For large problem dimensions, ParaOpt's performance depends crucially on having a good preconditioner to solve the arising linear systems. For the case where ParaOpt's cheap, coarse-grained propagator is linear, we introduce diagonalization-based preconditioners, inspired by recent advances in the ParaDiag family of methods. These preconditioners not only lead to a weakly-scalable ParaOpt version, but are themselves invertible in parallel, making maximal use of available concurrency. They have proven convergence properties in the linear diffusive case that are generic in the time discretization used, similarly to our ParaOpt results. Numerical results confirm that the iteration count of the iterative solvers used for ParaOpt's linear systems becomes constant in the limit of an increasing processor count. The paper is accompanied by a sequential MATLAB implementation.},
+	author = {Arne Bouillon and Giovanni Samaey and Karl Meerbergen},
+	howpublished = {arXiv:2304.09235v1 [math.NA]},
+	title = {Diagonalization-based preconditioners and generalized convergence bounds for ParaOpt},
+	url = {http://arxiv.org/abs/2304.09235v1},
+	year = {2023},
+}
+
 @article{CarrelEtAl2023,
 	author = {Benjamin Carrel and Martin J. Gander and Bart Vandereycken},
 	doi = {10.1007/s10543-023-00953-3},
