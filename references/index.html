@@ -1427,6 +1427,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          SteinstraesserEtAl2023
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSteinstraesserEtAl2023Bibtex"
+                    aria-expanded="false" aria-controls="collapseSteinstraesserEtAl2023Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSteinstraesserEtAl2023Abstract"
+                    aria-expanded="false" aria-controls="modalSteinstraesserEtAl2023Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="SteinstraesserEtAl2023">J. G. C. Steinstraesser, P. da Silva Peixoto, and M. Schreiber, “Parallel-in-time integration of the shallow water equations on the rotating sphere using Parareal and MGRIT,” arXiv:2306.09497v1 [math.NA], 2023 [Online]. Available at: <a href="http://arxiv.org/abs/2306.09497v1" target="_blank">http://arxiv.org/abs/2306.09497v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseSteinstraesserEtAl2023Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{SteinstraesserEtAl2023,
+  author = {Steinstraesser, João Guilherme Caldas and da Silva Peixoto, Pedro and Schreiber, Martin},
+  howpublished = {arXiv:2306.09497v1 [math.NA]},
+  title = {Parallel-in-time integration of the shallow water equations on the rotating sphere using Parareal and MGRIT},
+  url = {http://arxiv.org/abs/2306.09497v1},
+  year = {2023}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalSteinstraesserEtAl2023Abstract" tabindex="-1" role="dialog" aria-labelledby="modalSteinstraesserEtAl2023AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSteinstraesserEtAl2023AbstractTitle">
+            Abstract for BibTeX entry <code>SteinstraesserEtAl2023</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          Despite the growing interest in parallel-in-time methods as an approach to accelerate numerical simulations in atmospheric modelling, improving their stability and convergence remains a substantial challenge for their application to operational models. In this work, we study the temporal parallelization of the shallow water equations on the rotating sphere combined with time-stepping schemes commonly used in atmospheric modelling due to their stability properties, namely an Eulerian implicit-explicit (IMEX) method and a semi-Lagrangian semi-implicit method (SL-SI-SETTLS). The main goal is to investigate the performance of parallel-in-time methods, namely Parareal and Multigrid Reduction in Time (MGRIT), when these well-established schemes are used on the coarse discretization levels and provide insights on how they can be improved for better performance. We begin by performing an analytical stability study of Parareal and MGRIT applied to a linearized ordinary differential equation depending on the choice of coarse scheme. Next, we perform numerical simulations of two standard tests to evaluate the stability, convergence and speedup provided by the parallel-in-time methods compared to a fine reference solution computed serially. We also conduct a detailed investigation on the influence of artificial viscosity and hyperviscosity approaches, applied on the coarse discretization levels, on the performance of the temporal parallelization. Both the analytical stability study and the numerical simulations indicate a poorer stability behaviour when SL-SI-SETTLS is used on the coarse levels, compared to the IMEX scheme. With the IMEX scheme, a better trade-off between convergence, stability and speedup compared to serial simulations can be obtained under proper parameters and artificial viscosity choices, opening the perspective of the potential competitiveness for realistic models.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           Trotti2023
         </div>
       </div>
@@ -5022,21 +5087,21 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          Caldas2021
+          CaldasEtAl2021
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseCaldas2021Bibtex"
-                    aria-expanded="false" aria-controls="collapseCaldas2021Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseCaldasEtAl2021Bibtex"
+                    aria-expanded="false" aria-controls="collapseCaldasEtAl2021Bibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalCaldas2021Abstract"
-                    aria-expanded="false" aria-controls="modalCaldas2021Abstract">
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalCaldasEtAl2021Abstract"
+                    aria-expanded="false" aria-controls="modalCaldasEtAl2021Abstract">
               Abstract
             </button>
             
@@ -5046,13 +5111,13 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="Caldas2021">J. G. Caldas Steinstraesser, “Coupling large and small scale shallow water models with porosity in the presence of anisotropy,” PhD thesis, Université de Montpellier, 2021 [Online]. Available at: <a href="https://www.theses.fr/2021MONTS040" target="_blank">https://www.theses.fr/2021MONTS040</a></span>
+      <span id="CaldasEtAl2021">J. G. Caldas Steinstraesser, “Coupling large and small scale shallow water models with porosity in the presence of anisotropy,” PhD thesis, Université de Montpellier, 2021 [Online]. Available at: <a href="https://www.theses.fr/2021MONTS040" target="_blank">https://www.theses.fr/2021MONTS040</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseCaldas2021Bibtex">
+  <div class="collapse" id="collapseCaldasEtAl2021Bibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@phdthesis{Caldas2021,
+        <pre class="abstract">@phdthesis{CaldasEtAl2021,
   author = {Caldas Steinstraesser, Jo\~{a}o Guilherme},
   school = {Universit\'{e} de Montpellier},
   title = {Coupling large and small scale shallow water models with porosity in the presence of anisotropy},
@@ -5064,13 +5129,13 @@
     </div>
   </div>
   
-  <div class="modal fade" id="modalCaldas2021Abstract" tabindex="-1" role="dialog" aria-labelledby="modalCaldas2021AbstractTitle" aria-hidden="true">
+  <div class="modal fade" id="modalCaldasEtAl2021Abstract" tabindex="-1" role="dialog" aria-labelledby="modalCaldasEtAl2021AbstractTitle" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalCaldas2021AbstractTitle">
-            Abstract for BibTeX entry <code>Caldas2021</code>
+          <h4 class="modal-title" id="modalCaldasEtAl2021AbstractTitle">
+            Abstract for BibTeX entry <code>CaldasEtAl2021</code>
           </h4>
         </div>
         <div class="modal-body">
@@ -5087,21 +5152,21 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
-          CaldasEtAl:2021
+          CaldasEtAl2021b
         </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-xs btn-group-justified" role="group">
           <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseCaldasEtAl:2021Bibtex"
-                    aria-expanded="false" aria-controls="collapseCaldasEtAl:2021Bibtex">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseCaldasEtAl2021bBibtex"
+                    aria-expanded="false" aria-controls="collapseCaldasEtAl2021bBibtex">
               BibTeX
             </button>
           </div>
           <div class="btn-group btn-group-xs" role="group">
             
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalCaldasEtAl:2021Abstract"
-                    aria-expanded="false" aria-controls="modalCaldasEtAl:2021Abstract">
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalCaldasEtAl2021bAbstract"
+                    aria-expanded="false" aria-controls="modalCaldasEtAl2021bAbstract">
               Abstract
             </button>
             
@@ -5111,36 +5176,36 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="CaldasEtAl:2021">J. G. Caldas Steinstraesser, V. Guinot, and A. Rousseau, “Modified parareal method for solving the two-dimensional nonlinear shallow water equations using finite volumes,” <i>The SMAI journal of computational mathematics</i>, vol. 7, pp. 159–184, 2021 [Online]. Available at: <a href="https://smai-jcm.centre-mersenne.org/articles/10.5802/smai-jcm.75/" target="_blank">https://smai-jcm.centre-mersenne.org/articles/10.5802/smai-jcm.75/</a></span>
+      <span id="CaldasEtAl2021b">J. G. Caldas Steinstraesser, V. Guinot, and A. Rousseau, “Modified parareal method for solving the two-dimensional nonlinear shallow water equations using finite volumes,” <i>The SMAI journal of computational mathematics</i>, vol. 7, pp. 159–184, 2021 [Online]. Available at: <a href="https://smai-jcm.centre-mersenne.org/articles/10.5802/smai-jcm.75/" target="_blank">https://smai-jcm.centre-mersenne.org/articles/10.5802/smai-jcm.75/</a></span>
     </div>
   </div>
-  <div class="collapse" id="collapseCaldasEtAl:2021Bibtex">
+  <div class="collapse" id="collapseCaldasEtAl2021bBibtex">
     <div class="row">
       <div class="col-md-12">
-        <pre class="abstract">@article{CaldasEtAl:2021,
+        <pre class="abstract">@article{CaldasEtAl2021b,
   author = {Caldas Steinstraesser, Jo\~{a}o Guilherme and Guinot, Vincent and Rousseau, Antoine},
-  title = {Modified parareal method for solving the two-dimensional nonlinear shallow water equations using finite volumes},
+  doi = {10.5802/smai-jcm.75},
   journal = {The SMAI journal of computational mathematics},
+  language = {en},
   pages = {159--184},
   publisher = {Soci\'et\'e de Math\'ematiques Appliqu\'ees et Industrielles},
+  title = {Modified parareal method for solving the two-dimensional nonlinear shallow water equations using finite volumes},
+  url = {https://smai-jcm.centre-mersenne.org/articles/10.5802/smai-jcm.75/},
   volume = {7},
-  year = {2021},
-  doi = {10.5802/smai-jcm.75},
-  language = {en},
-  url = {https://smai-jcm.centre-mersenne.org/articles/10.5802/smai-jcm.75/}
+  year = {2021}
 }
 </pre>
       </div>
     </div>
   </div>
   
-  <div class="modal fade" id="modalCaldasEtAl:2021Abstract" tabindex="-1" role="dialog" aria-labelledby="modalCaldasEtAl:2021AbstractTitle" aria-hidden="true">
+  <div class="modal fade" id="modalCaldasEtAl2021bAbstract" tabindex="-1" role="dialog" aria-labelledby="modalCaldasEtAl2021bAbstractTitle" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalCaldasEtAl:2021AbstractTitle">
-            Abstract for BibTeX entry <code>CaldasEtAl:2021</code>
+          <h4 class="modal-title" id="modalCaldasEtAl2021bAbstractTitle">
+            Abstract for BibTeX entry <code>CaldasEtAl2021b</code>
           </h4>
         </div>
         <div class="modal-body">
