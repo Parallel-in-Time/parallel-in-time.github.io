@@ -6413,6 +6413,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{GanglEtAl2023,
+	abstract = {In this paper we formulate and analyze a space-time finite element method for the numerical simulation of rotating electric machines where the finite element mesh is fixed in space-time domain. Based on the Babu\v{s}ka--Ne\v{c}as theory we prove unique solvability both for the continuous variational formulation and for a standard Galerkin finite element discretization in the space-time domain. This approach allows for an adaptive resolution of the solution both in space and time, but it requires the solution of the overall system of algebraic equations. While the use of parallel solution algorithms seems to be mandatory, this also allows for a parallelization simultaneously in space and time. This approach is used for the eddy current approximation of the Maxwell equations which results in an elliptic-parabolic interface problem. Numerical results for linear and nonlinear constitutive material relations confirm the applicability, efficiency and accuracy of the proposed approach.},
+	author = {Peter Gangl and Mario Gobrial and Olaf Steinbach},
+	howpublished = {arXiv:2307.00278v1 [math.NA]},
+	title = {A space-time finite element method for the eddy current approximation of rotating electric machines},
+	url = {http://arxiv.org/abs/2307.00278v1},
+	year = {2023},
+}
+
 @unpublished{GaraiEtAl2023,
 	abstract = {In this paper, we design, analyze and implement efficient time parallel method for a class of fourth order time-dependent partial differential equations (PDEs), namely biharmonic heat equation, linearized Cahn-Hilliard (CH) equation and the nonlinear CH equation. We use diagonalization technique on all-at-once system to develop efficient iterative time parallel methods for investigating the solution behaviour of said equations. We present the convergence analysis of Parallel-in-Time (PinT) algorithms. We verify our findings by presenting numerical results.},
 	author = {Gobinda Garai and Bankim C. Mandal},
@@ -6428,6 +6437,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2304.14074v1 [math.NA]},
 	title = {Linear and Nonlinear Parareal Methods for the Cahn-Hilliard Equation},
 	url = {http://arxiv.org/abs/2304.14074v1},
+	year = {2023},
+}
+
+@article{HahneEtAl2023,
+	author = {Jens Hahne and Björn Polenz and Iryna Kulchytska-Ruchka and Stephanie Friedhoff and Stefan Ulbrich and Sebastian Schöps},
+	doi = {10.1186/s13362-023-00134-5},
+	journal = {Journal of Mathematics in Industry},
+	month = {jun},
+	number = {1},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {Parallel-in-time optimization of induction motors},
+	url = {https://doi.org/10.1186/s13362-023-00134-5},
+	volume = {13},
 	year = {2023},
 }
 
@@ -6520,6 +6542,24 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{PhilippiEtAl2023,
+	abstract = {A micro-macro variant of the parallel-in-time algorithm Parareal has been applied to the ocean-circulation and sea-ice model model FESOM2. The state-of-the-art software in climate research has been developed by the Alfred-Wegener-Institut (AWI) in Bremen, Germany. The algorithm requires two meshes of low and high spatial resolution to define the coarse and fine propagator. As a first assessment we refined the PI mesh, increasing its resolution by factor 4. The main objective of this study was to demonstrate that micro-macro Parareal can provide convergence in diagnostic variables in complex climate research problems. After the introduction to FESOM2 we show how to generate the refined mesh and which interpolation methods were chosen. With the convergence results presented we discuss the success of this attempt and which steps have to be taken to extend the approach to current research problems.},
+	author = {B. Philippi and T. Slawig},
+	howpublished = {arXiv:2306.17269v1 [math.NA]},
+	title = {A Micro-Macro Parareal Implementation for the Ocean-Circulation Model FESOM2},
+	url = {http://arxiv.org/abs/2306.17269v1},
+	year = {2023},
+}
+
+@unpublished{SarpeEtAl2023,
+	abstract = {This paper presents a parallel-in-time adjoint sensitivity analysis which combines a transient adjoint sensitivity analysis with the parareal approach in order to significantly speed up the simulation. The adjoint method is the method of choice to calculate the sensitivities in a many-parameter setting. In order to obtain sensitivity information that is time-dependent, multiple adjoint problems must be solved. This slows down the simulation wall-clock time and leaves a large optimization potential for the analysis. The parareal is applied to the adjoint solution, significantly speeding up the adjoint solution for every timestep respectively.},
+	author = {Julian Sarpe and Andreas Klaedtke and Herbert De Gersem},
+	howpublished = {arXiv:2307.00802v1 [math.NA]},
+	title = {A Parallel-In-Time Adjoint Sensitivity Analysis for a B6 Bridge-Motor Supply Circuit},
+	url = {http://arxiv.org/abs/2307.00802v1},
+	year = {2023},
+}
+
 @incollection{ShanEtAl2023,
 	author = {Xiujie Shan and Martin B. van Gijzen},
 	booktitle = {Parallel Processing and Applied Mathematics},
@@ -6559,6 +6599,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Parallel Numerical Picard Iteration Methods},
 	url = {https://doi.org/10.1007/s10915-023-02156-y},
 	volume = {95},
+	year = {2023},
+}
+
+@article{ZeifangEtAl2023,
+	author = {Jonas Zeifang and Arjun Thenery Manikantan and Jochen Schütz},
+	doi = {10.1016/j.amc.2023.128198},
+	journal = {Applied Mathematics and Computation},
+	month = {nov},
+	pages = {128198},
+	publisher = {Elsevier {BV}},
+	title = {Time parallelism and Newton-adaptivity of the two-derivative deferred correction discontinuous Galerkin method},
+	url = {https://doi.org/10.1016/j.amc.2023.128198},
+	volume = {457},
 	year = {2023},
 }
 
