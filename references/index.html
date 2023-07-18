@@ -1323,6 +1323,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          Li2023
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseLi2023Bibtex"
+                    aria-expanded="false" aria-controls="collapseLi2023Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalLi2023Abstract"
+                    aria-expanded="false" aria-controls="modalLi2023Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="Li2023">G. Li, “Wavelet-based Edge Multiscale Parareal Algorithm for subdiffusion equations with heterogeneous coefficients in a large time domain,” arXiv:2307.06529v1 [math.NA], 2023 [Online]. Available at: <a href="http://arxiv.org/abs/2307.06529v1" target="_blank">http://arxiv.org/abs/2307.06529v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseLi2023Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{Li2023,
+  author = {Li, Guanglian},
+  howpublished = {arXiv:2307.06529v1 [math.NA]},
+  title = {Wavelet-based Edge Multiscale Parareal Algorithm for subdiffusion equations with heterogeneous coefficients in a large time domain},
+  url = {http://arxiv.org/abs/2307.06529v1},
+  year = {2023}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalLi2023Abstract" tabindex="-1" role="dialog" aria-labelledby="modalLi2023AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalLi2023AbstractTitle">
+            Abstract for BibTeX entry <code>Li2023</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          We present the Wavelet-based Edge Multiscale Parareal (WEMP) Algorithm, recently proposed in [Li and Hu, \it J. Comput. Phys., 2021], for efficiently solving subdiffusion equations with heterogeneous coefficients in long time. This algorithm combines the benefits of multiscale methods, which can handle heterogeneity in the spatial domain, and the strength of parareal algorithms for speeding up time evolution problems when sufficient processors are available. Our algorithm overcomes the challenge posed by the nonlocality of the fractional derivative in previous parabolic problem work by constructing an auxiliary problem on each coarse temporal subdomain to completely uncouple the temporal variable. We prove the approximation properties of the correction operator and derive a new summation of exponential to generate a single-step time stepping scheme, with the number of terms of \mathcalO(|\log\tau_f|^2) independent of the final time, where \tau_f is the fine-scale time step size. We establish the convergence rate of our algorithm in terms of the mesh size in the spatial domain, the level parameter used in the multiscale method, the coarse-scale time step size, and the fine-scale time step size. Finally, we present several numerical tests that demonstrate the effectiveness of our algorithm and validate our theoretical results.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           LinEtAl2023
         </div>
       </div>
