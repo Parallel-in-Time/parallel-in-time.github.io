@@ -1,5 +1,5 @@
 source 'https://rubygems.org/'
-ruby '2.4.1'
+ruby '3.2.2'
 
 # other dependencies
 gem 'sass'
@@ -20,4 +20,3 @@ gem 'jekyll-scholar'
 # gem 'jekyll-archives'
 
 gem 'jgd'
-gem 'therubyracer'
