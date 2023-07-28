@@ -8,9 +8,10 @@ footer: false
 ---
 
 <div class="row">
-{% assign sorted_groups = site.groups | sort:'title' %}  
-{% for group in sorted_groups %}
-  {% cycle '', '', '', '</div><div class="row">' %}
+  {% assign sorted_groups = site.groups | sort:'title' %}
+  {% for group in sorted_groups %}
+  {% cycle '', '', '', '</div>
+<div class="row">' %}
   {% capture page %}{{ group }}{% endcapture %}
   <div class="col-md-4">
     <div class="panel panel-default">
@@ -23,13 +24,13 @@ footer: false
       </div>
       <div class="panel-body">
         {% if group.logo %}
-          {% img '{{ group.logo }}' class:"groups-logo img-responsive pull-left" alt:"{{ group.title }} Logo" %}
+        {% img '{{ group.logo }}' class:"groups-logo img-responsive pull-left" alt:"{{ group.title }} Logo" %}
         {% endif %}
         {% if group.short_desc %}{{ group.short_desc }}{% endif %}
       </div>
     </div>
   </div>
-{% endfor %}
+  {% endfor %}
 </div>
 
 {% include contribute_footer.html content='group' %}

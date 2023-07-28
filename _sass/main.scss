@@ -1,5 +1,5 @@
----
----
+$fa-font-path: "../fonts/font-awesome";
+
 @import "vendor/font-awesome/font-awesome.scss";
 @import "vendor/octicons/octicons";
 @import "bootstrap_overrides";
@@ -22,7 +22,7 @@ html {
 
       .container {
         @media (min-width: $screen-sm-max) {
-          background-image: url(image_path('logo_pint.png'));
+          background-image: url('/assets/images/logo_pint.png');
           background-position: right center;
           background-repeat: no-repeat;
           background-origin: padding-box;
@@ -92,7 +92,7 @@ html {
     .post {
       article {
         @include clearfix;
-        
+
         p {
           text-align: justify;
         }
@@ -108,7 +108,7 @@ html {
         border-bottom: 1px solid $page-header-border-color;
         margin-top: 1em !important;
         margin-bottom: 1em !important;
-        
+
         header {
           border-bottom: none !important;  // overriding bootstrap
           padding-bottom: 0 !important;  // overriding bootstrap
@@ -148,7 +148,7 @@ html {
         }
       }
     }
-    
+
     footer#site-footer {
       .seperator {
         padding-left: 0.5em;

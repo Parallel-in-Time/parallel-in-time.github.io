@@ -1,6 +1,3 @@
-//= require ./vendor/bootstrap-sprockets
-//= require ./vendor/jquery.githubRepoWidget
-
 var toggle_meta_aside = function(desired_state) {
     var meta_aside = $('#meta-aside');
 

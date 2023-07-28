@@ -19,7 +19,6 @@ exclude:
   - CONTRIBUTING.md
 
 plugins:
-  - jekyll-assets
   - jekyll-paginate
   - jekyll-feed
   - jekyll/scholar
@@ -50,7 +49,7 @@ assets:
     - '*.ttf'
   digest: true
   features:
-    liquid: false
+    liquid: true
     automatic_img_size: false
     automatic_img_alt: false
 
