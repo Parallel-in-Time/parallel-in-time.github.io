@@ -8,5 +8,5 @@ navbar: Projects
 subnavbar:
 logo: logo_timex.jpg
 project_url: https://time-x.eu/
-short_desc: See the TIME-X website: https://time-x.eu/
+short_desc: See the TIME-X website https://time-x.eu/
 ---
