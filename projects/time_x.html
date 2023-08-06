@@ -3,10 +3,10 @@
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ParaPhase</title>
+  <title>TIME-X</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="canonical" href="http://parallel-in-time.org/projects/paraphase.html">
+  <link rel="canonical" href="http://parallel-in-time.org/projects/time_x.html">
 
   <link type="text/css" rel="stylesheet" href="/assets/main-76819aa89d75930ac06ef9967c01d19269aaad5bd78e7a1bee6bb4df855d04cb.css">
   <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-86a3022f12ca44acf0d7da548569f4168279fe7b115508fbe4cf4af00498eb4b.js"></script>
@@ -87,7 +87,7 @@
     <a href="/projects/index.html">Overview</a>
   </li>
   
-    <li class="active">
+    <li >
       <a href="/projects/paraphase.html">ParaPhase</a>
     </li>
   
@@ -111,7 +111,7 @@
       <a href="/projects/pitflow.html">PiT Flow</a>
     </li>
   
-    <li >
+    <li class="active">
       <a href="/projects/time_x.html">TIME-X</a>
     </li>
   
@@ -139,24 +139,16 @@
         <div class="post post-project">
   <header class="post-header">
     <h1>
-      ParaPhase
+      TIME-X
     </h1>
+    
+      <h2>Time parallelization for eXascale computing</h2>
     
   </header>
   <article class="post-content content">
     <div class="row">
       <div class="col-md-8">
-        <p>Phase-field models are an important class of mathematical techniques for the description of a multitude of physical and technical processes. Examples are the modelling of cracks and fracture propagation in solid media like ceramics or dry soil, the representation of liquid phase epitaxy for solar cells, semi-conductors or LEDs as well as melting and solidification processes of alloys. The price for the broad applicability and mathematical elegance of this approach is the significant computing cost required for the simulation of phase-field equations at large scales, demanding the use of modern HPC architectures.</p>
-
-<p>The goal of the project “ParaPhase – space-time parallel adaptive simulation of phase-field models on HPC architectures” funded by the German Federal Ministry of Education and Research (FKZ 01IH15005A, BMBF program “<a href="https://www.bmbf.de/de/ikt-2020-forschung-fuer-innovation-854.html">IKT 2020 -  Forschung für Innovation</a>”) is the development of algorithms and methods that allow for highly efficient space-time parallel and adaptive simulations of phase-field problems. Three key aspects are addressed in the course of the project:</p>
-
-<ol>
-  <li><strong>Heterogeneous parallelization in space</strong>. The adaptive phase-field multigrid algorithm TNNMG will be parallelized using load-balanced decomposition techniques and GPU-based acceleration of the smoother.</li>
-  <li><strong>Innovative parallelization in time</strong>. For optimal parallel performance even on extreme scale platforms, novel approaches like Parareal and the “parallel full approximation scheme in space and time” for the parallelization in the temporal direction will be used, exploiting the hierarchical structures of spatial discretization and solver.</li>
-  <li><strong>High-order methods in space and time</strong>. To increase the arithmetic intensity, i.e., the ratio between computation and memory access, flexible high-order methods in space (using the Discontinuous Galerkin approach) and time (using spectral deferred corrections) will be implemented and combined.</li>
-</ol>
-
-<p>The interdisciplinary consortium consists of two partners with a long-standing experience in the particular field of applications (the groups of <a href="http://www.mps.uni-bayreuth.de/de/team/Emmerich_Heike/">Heike Emmerich</a> at Universität Bayreuth and <a href="http://www.mechbau.uni-stuttgart.de/ls1/members/profs/keip/">Marc-Andre Keip</a> at Universität Stuttgart) as well as four partners with a strong background in methods, algorithms and HPC (the groups of <a href="http://page.mi.fu-berlin.de/graeser/">Carsten Gräser</a> at FU Berlin, <a href="http://www.math.tu-dresden.de/~osander/">Oliver Sander</a> at TU Dresden, <a href="http://www.fz-juelich.de/ias/jsc/speck_r">Robert Speck</a> at JSC and Jiri Kraus from the <a href="http://www.fz-juelich.de/ias/jsc/EN/Research/HPCTechnology/ExaScaleLabs/NVLAB/_node.html">NVIDIA Application Lab</a>). While the algorithms developed in this project will be primarily used for studying fracture propagation and liquid phase epitaxy, these problem classes already represent a wide range of challenges in industrial applications. Based on the open source software <a href="https://dune-project.org/">DUNE</a>, the “Distributed and Unified Numerics Environment”, the resulting algorithms will help to make large-scale HPC simulations accessible for researchers in these fields.</p>
+        
 
       </div>
       <aside class="col-md-4">
@@ -168,7 +160,7 @@
     
       <div class="row">
         <div class="col-md-12 logo">
-          <img src="/assets/paraphase-logo-e89c29a04b7cec658789831d8f39f40b606125698dfc3e7d294a3cccdd55daf8.png" alt="ParaPhase Logo">
+          <img src="/assets/logo_timex-70eab55947c586c702f2a9dff5199bf28b0ad0cd4490eb4fbff25cb7761f4279.jpg" alt="TIME-X Logo">
         </div>
       </div>
       <br>
@@ -178,7 +170,7 @@
         <label class="col-md-4 control-label">Homepage</label>
         <div class="col-md-8">
           
-            <a href="http://www.paraphase.de" target="_blank"
+            <a href="https://time-x.eu/" target="_blank"
                title="Project's homepage"
                data-toggle="tooltip"
                role="button">
@@ -187,48 +179,11 @@
           
             </a>
           
-          <!-- <a href="http://www.paraphase.de">www.paraphase.de</a> -->
+          <!-- <a href="https://time-x.eu/">time-x.eu/</a> -->
         </div>
       </div>
     
     
-    
-      <div class="row">
-        <label class="col-md-4 control-label">Members</label>
-        <div class="col-md-8">
-          
-            <span class="clearfix">
-              Heike Emmerich (Univ. Bayreuth)
-              
-            </span>
-          
-            <span class="clearfix">
-              Carsten Gräser (FU Berlin)
-              
-            </span>
-          
-            <span class="clearfix">
-              Marc-Andre Keip (Univ. Stuttgart)
-              
-            </span>
-          
-            <span class="clearfix">
-              Jiri Kraus (NVIDIA)
-              
-            </span>
-          
-            <span class="clearfix">
-              Oliver Sander (TU Dresden)
-              
-            </span>
-          
-            <span class="clearfix">
-              Robert Speck (Forschungszentrum Jülich)
-              
-            </span>
-          
-        </div>
-      </div>
     
   </div>
 </section>
