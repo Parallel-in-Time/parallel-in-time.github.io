@@ -24,6 +24,8 @@ plugins:
   - jekyll/scholar
   - jekyll-sitemap
 
+theme: bulma-clean-theme
+
 paginate: 5
 paginate_path: "/news/page:num/"
 
