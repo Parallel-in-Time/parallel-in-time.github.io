@@ -6084,12 +6084,30 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
+@unpublished{SterckEtAl2022,
+	abstract = {Many iterative parallel-in-time algorithms have been shown to be highly efficient for diffusion-dominated partial differential equations (PDEs), but are inefficient or even divergent when applied to advection-dominated PDEs. We consider the application of the multigrid reduction-in-time (MGRIT) algorithm to linear advection PDEs. The key to efficient time integration with this method is using a coarse-grid operator that provides a sufficiently accurate approximation to the the so-called ideal coarse-grid operator. For certain classes of semi-Lagrangian discretizations, we present a novel semi-Lagrangian-based coarse-grid operator that leads to fast and scalable multilevel time integration of linear advection PDEs. The coarse-grid operator is composed of a semi-Lagrangian discretization followed by a correction term, with the correction designed so that the leading-order truncation error of the composite operator is approximately equal to that of the ideal coarse-grid operator. Parallel results show substantial speed-ups over sequential time integration for variable-wave-speed advection problems in one and two spatial dimensions, and using high-order discretizations up to order five. The proposed approach establishes the first practical method that provides small and scalable MGRIT iteration counts for advection problems.},
+	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik},
+	howpublished = {arXiv:2203.13382v1 [math.NA]},
+	title = {Fast multigrid reduction-in-time for advection via modified semi-Lagrangian coarse-grid operators},
+	url = {http://arxiv.org/abs/2203.13382v1},
+	year = {2022},
+}
+
 @unpublished{SterckEtAl2022b,
 	abstract = {A long-standing issue in the parallel-in-time community is the poor convergence of standard iterative parallel-in-time methods for hyperbolic partial differential equations (PDEs), and for advection-dominated PDEs more broadly. Here, a local Fourier analysis (LFA) convergence theory is derived for the two-level variant of the iterative parallel-in-time method of multigrid reduction-in-time (MGRIT). This closed-form theory allows for new insights into the poor convergence of MGRIT for advection-dominated PDEs when using the standard approach of rediscretizing the fine-grid problem on the coarse grid. Specifically, we show that this poor convergence arises, at least in part, from inadequate coarse-grid correction of certain smooth Fourier modes known as characteristic components, which was previously identified as causing poor convergence of classical spatial multigrid on steady-state advection-dominated PDEs. We apply this convergence theory to show that, for certain semi-Lagrangian discretizations of advection problems, MGRIT convergence using rediscretized coarse-grid operators cannot be robust with respect to CFL number or coarsening factor. A consequence of this analysis is that techniques developed for improving convergence in the spatial multigrid context can be re-purposed in the MGRIT context to develop more robust parallel-in-time solvers. This strategy has been used in recent work to great effect; here, we provide further theoretical evidence supporting the effectiveness of this approach.},
 	author = {H. De Sterck and S. Friedhoff and O. A. Krzysik and Scott P. MacLachlan},
 	howpublished = {arXiv:2208.01526v1 [math.NA]},
 	title = {Multigrid reduction-in-time convergence for advection problems: A Fourier analysis perspective},
 	url = {http://arxiv.org/abs/2208.01526v1},
+	year = {2022},
+}
+
+@unpublished{SterckEtAl2022c,
+	abstract = {Parallel-in-time methods for partial differential equations (PDEs) have been the subject of intense development over recent decades, particularly for diffusion-dominated problems. It has been widely reported in the literature, however, that many of these methods perform quite poorly for advection-dominated problems. Here we analyze the particular iterative parallel-in-time algorithm of multigrid reduction-in-time (MGRIT) for discretizations of constant-wave-speed linear advection problems. We focus on common method-of-lines discretizations that employ upwind finite differences in space and Runge-Kutta methods in time. Using a convergence framework we developed in previous work, we prove for a subclass of these discretizations that, if using the standard approach of rediscretizing the fine-grid problem on the coarse grid, robust MGRIT convergence with respect to CFL number and coarsening factor is not possible. This poor convergence and non-robustness is caused, at least in part, by an inadequate coarse-grid correction for smooth Fourier modes known as characteristic components.We propose an alternative coarse-grid that provides a better correction of these modes. This coarse-grid operator is related to previous work and uses a semi-Lagrangian discretization combined with an implicitly treated truncation error correction. Theory and numerical experiments show the coarse-grid operator yields fast MGRIT convergence for many of the method-of-lines discretizations considered, including for both implicit and explicit discretizations of high order.},
+	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik and J. B. Schroder},
+	howpublished = {arXiv:2209.06916v1 [math.NA]},
+	title = {Efficient multigrid reduction-in-time for method-of-lines discretizations of linear advection},
+	url = {http://arxiv.org/abs/2209.06916v1},
 	year = {2022},
 }
 
@@ -6274,6 +6292,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2304.09235v1 [math.NA]},
 	title = {Diagonalization-based preconditioners and generalized convergence bounds for ParaOpt},
 	url = {http://arxiv.org/abs/2304.09235v1},
+	year = {2023},
+}
+
+@unpublished{CaldasEtAl2023,
+	abstract = {Despite the growing interest in parallel-in-time methods as an approach to accelerate numerical simulations in atmospheric modelling, improving their stability and convergence remains a substantial challenge for their application to operational models. In this work, we study the temporal parallelization of the shallow water equations on the rotating sphere combined with time-stepping schemes commonly used in atmospheric modelling due to their stability properties, namely an Eulerian implicit-explicit (IMEX) method and a semi-Lagrangian semi-implicit method (SL-SI-SETTLS). The main goal is to investigate the performance of parallel-in-time methods, namely Parareal and Multigrid Reduction in Time (MGRIT), when these well-established schemes are used on the coarse discretization levels and provide insights on how they can be improved for better performance. We begin by performing an analytical stability study of Parareal and MGRIT applied to a linearized ordinary differential equation depending on the choice of coarse scheme. Next, we perform numerical simulations of two standard tests to evaluate the stability, convergence and speedup provided by the parallel-in-time methods compared to a fine reference solution computed serially. We also conduct a detailed investigation on the influence of artificial viscosity and hyperviscosity approaches, applied on the coarse discretization levels, on the performance of the temporal parallelization. Both the analytical stability study and the numerical simulations indicate a poorer stability behaviour when SL-SI-SETTLS is used on the coarse levels, compared to the IMEX scheme. With the IMEX scheme, a better trade-off between convergence, stability and speedup compared to serial simulations can be obtained under proper parameters and artificial viscosity choices, opening the perspective of the potential competitiveness for realistic models.},
+	author = {Caldas Steinstraesser, Jo\~{a}o Guilherme and da Silva Peixoto, Pedro and Schreiber, Martin},
+	howpublished = {arXiv:2306.09497v1 [math.NA]},
+	title = {Parallel-in-time integration of the shallow water equations on the rotating sphere using Parareal and MGRIT},
+	url = {https://arxiv.org/abs/2306.09497v1},
 	year = {2023},
 }
 
@@ -6568,6 +6595,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Springer International Publishing},
 	title = {Parareal Method for~Anisotropic Diffusion Denoising},
 	url = {https://doi.org/10.1007/978-3-031-30445-3_26},
+	year = {2023},
+}
+
+@unpublished{SteinstraesserEtAl2023,
+	abstract = {Despite the growing interest in parallel-in-time methods as an approach to accelerate numerical simulations in atmospheric modelling, improving their stability and convergence remains a substantial challenge for their application to operational models. In this work, we study the temporal parallelization of the shallow water equations on the rotating sphere combined with time-stepping schemes commonly used in atmospheric modelling due to their stability properties, namely an Eulerian implicit-explicit (IMEX) method and a semi-Lagrangian semi-implicit method (SL-SI-SETTLS). The main goal is to investigate the performance of parallel-in-time methods, namely Parareal and Multigrid Reduction in Time (MGRIT), when these well-established schemes are used on the coarse discretization levels and provide insights on how they can be improved for better performance. We begin by performing an analytical stability study of Parareal and MGRIT applied to a linearized ordinary differential equation depending on the choice of coarse scheme. Next, we perform numerical simulations of two standard tests to evaluate the stability, convergence and speedup provided by the parallel-in-time methods compared to a fine reference solution computed serially. We also conduct a detailed investigation on the influence of artificial viscosity and hyperviscosity approaches, applied on the coarse discretization levels, on the performance of the temporal parallelization. Both the analytical stability study and the numerical simulations indicate a poorer stability behaviour when SL-SI-SETTLS is used on the coarse levels, compared to the IMEX scheme. With the IMEX scheme, a better trade-off between convergence, stability and speedup compared to serial simulations can be obtained under proper parameters and artificial viscosity choices, opening the perspective of the potential competitiveness for realistic models.},
+	author = {João Guilherme Caldas Steinstraesser and Pedro da Silva Peixoto and Martin Schreiber},
+	howpublished = {arXiv:2306.09497v1 [math.NA]},
+	title = {Parallel-in-time integration of the shallow water equations on the rotating sphere using Parareal and MGRIT},
+	url = {http://arxiv.org/abs/2306.09497v1},
 	year = {2023},
 }
 
