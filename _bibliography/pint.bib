@@ -5660,15 +5660,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2021},
 }
 
-@unpublished{YamazakiEtAl2021,
-	abstract = {We describe the application of the phase averaging technique to the nonlinear rotating shallow water equations on the sphere, discretised using compatible finite element methods. Phase averaging consists of averaging the nonlinearity over phase shifts in the exponential of the linear wave operator. Phase averaging is a form of heterogeneous multiscale method that aims to capture the slow dynamics in a solutionthat is smoother in time (in transformed variables) so that larger timesteps may be taken. Following Peddle et al (2019), we consider finite width phase averaging windows, since the equations have a finite timescale separation. In a numerical implementation, the averaging integral is replaced by a Riemann sum, where each term can be evaluated in parallel. This creates an opportunity for parallelism in the timestepping method, which we use here to compute our solutions. Here, we focus on the stability and accuracy of thenumerical solution and an evaluation of the parallel aspects will follow in later work.},
-	author = {Hiroe Yamazaki and Colin J Cotter},
-	howpublished = {arXiv:2103.07706v1 [math.NA]},
-	title = {Time parallel integration and phase averaging for the nonlinear shallow water equations on the sphere},
-	url = {http://arxiv.org/abs/2103.07706v1},
-	year = {2021},
-}
-
 @article{YueEtAl2021,
 	author = {Xiaoqiang Yue and Kejia Pan and Jie Zhou and Zhifeng Weng and Shi Shu and Juan Tang},
 	doi = {10.1016/j.camwa.2021.02.020},
@@ -5803,15 +5794,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Multigrid reduction in time for non-linear hyperbolic equations},
 	url = {https://doi.org/10.1553%2Fetna_vol58s43},
 	volume = {58},
-	year = {2022},
-}
-
-@unpublished{FreiEtAl2022,
-	abstract = {The numerical simulation of atherosclerotic plaque growth is computationally prohibitive, since it involves a complex cardiovascular fluid-structure interaction (FSI) problem with a characteristic time scale of milliseconds to seconds, as well as a plaque growth process governed by reaction-diffusion equations, which takes place over several months. In this work we combine a temporal homogenization approach, which separates the problem in computationally expensive FSI problems on a micro scale and a reaction-diffusion problem on the macro scale, with parallel time-stepping algorithms. It has been found in the literature that parallel time-stepping algorithms do not perform well when applied directly to the FSI problem. To circumvent this problem, a parareal algorithm is applied on the macro-scale reaction-diffusion problem instead of the micro-scale FSI problem. We investigate modifications in the coarse propagator of the parareal algorithm, in order to further reduce the number of costly micro problems to be solved. The approaches are tested in detailed numerical investigations based on serial simulations.},
-	author = {Stefan Frei and Alexander Heinlein},
-	howpublished = {arXiv:2203.06526v1 [math.NA]},
-	title = {Towards parallel time-stepping for the numerical simulation of atherosclerotic plaque growth},
-	url = {http://arxiv.org/abs/2203.06526v1},
 	year = {2022},
 }
 
@@ -6019,15 +6001,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{MunchEtAl2022,
-	abstract = {We present an implementation of a fully stage-parallel preconditioner for Radau IIA type fully implicit Runge--Kutta methods, which approximates the inverse of $A_Q$ from the Butcher tableau by the lower triangular matrix resulting from an LU decomposition and diagonalizes the system with as many blocks as stages. For the transformed system, we employ a block preconditioner where each block is distributed and solved by a subgroup of processes in parallel. For combination of partial results, we either use a communication pattern resembling Cannon's algorithm or shared memory. A performance model and a large set of performance studies (including strong scaling runs with up to 150k processes on 3k compute nodes) conducted for a time-dependent heat problem, using matrix-free finite element methods, indicate that the stage-parallel implementation can reach higher throughputs when the block solvers operate at lower parallel efficiencies, which occurs near the scaling limit. Achievable speedup increases linearly with number of stages and are bounded by the number of stages. Furthermore, we show that the presented stage-parallel concepts are also applicable to the case that $A_Q$ is directly diagonalized, which requires complex arithmetic or the solution of two-by-two blocks and sequentializes parts of the algorithm. Alternatively to distributing stages and assigning them to distinct processes, we discuss the possibility of batching operations from different stages together.},
-	author = {Peter Munch and Ivo Dravins and Martin Kronbichler and Maya Neytcheva},
-	howpublished = {arXiv:2209.06700v1 [math.NA]},
-	title = {Stage-parallel fully implicit Runge-Kutta implementations with optimal multilevel preconditioners at the scaling limit},
-	url = {http://arxiv.org/abs/2209.06700v1},
-	year = {2022},
-}
-
 @article{PentlandEtAl2022b,
 	author = {Kamran Pentland and Massimiliano Tamborrino and Debasmita Samaddar and Lynton C. Appel},
 	doi = {10.1137/21m1414231},
@@ -6111,39 +6084,12 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{SchleußEtAl2022,
-	abstract = {We target time-dependent partial differential equations (PDEs) with coefficients that are arbitrarily rough in both space and time. To tackle these problems, we construct reduced basis/ multiscale ansatz functions defined in space that can be combined with time stepping schemes within model order reduction or multiscale methods. To that end, we propose to perform several simulations of the PDE for few time steps in parallel starting at different, randomly drawn start points, prescribing random initial conditions; applying a singular value decomposition to a subset of the so obtained snapshots yields the reduced basis/ multiscale ansatz functions. This facilitates constructing the reduced basis/ multiscale ansatz functions in an embarrassingly parallel manner. In detail, we suggest using a data-dependent probability distribution based on the data functions of the PDE to select the start points. Each local in time simulation of the PDE with random initial conditions approximates a local approximation space in one time point that is optimal in the sense of Kolmogorov. The derivation of these optimal local approximation spaces which are spanned by the left singular vectors of a compact transfer operator that maps arbitrary initial conditions to the solution of the PDE in a later point of time, is one other main contribution of this paper. By solving the PDE locally in time with random initial conditions, we construct local ansatz spaces in time that converge provably at a quasi-optimal rate and allow for local error control. Numerical experiments demonstrate that the proposed method can outperform existing methods like the proper orthogonal decomposition even in a sequential setting.},
-	author = {Julia Schleuß and Kathrin Smetana and Lukas ter Maat},
-	howpublished = {arXiv:2203.06276v1 [math.NA]},
-	title = {Randomized quasi-optimal local approximation spaces in time},
-	url = {http://arxiv.org/abs/2203.06276v1},
-	year = {2022},
-}
-
-@unpublished{SterckEtAl2022,
-	abstract = {Many iterative parallel-in-time algorithms have been shown to be highly efficient for diffusion-dominated partial differential equations (PDEs), but are inefficient or even divergent when applied to advection-dominated PDEs. We consider the application of the multigrid reduction-in-time (MGRIT) algorithm to linear advection PDEs. The key to efficient time integration with this method is using a coarse-grid operator that provides a sufficiently accurate approximation to the the so-called ideal coarse-grid operator. For certain classes of semi-Lagrangian discretizations, we present a novel semi-Lagrangian-based coarse-grid operator that leads to fast and scalable multilevel time integration of linear advection PDEs. The coarse-grid operator is composed of a semi-Lagrangian discretization followed by a correction term, with the correction designed so that the leading-order truncation error of the composite operator is approximately equal to that of the ideal coarse-grid operator. Parallel results show substantial speed-ups over sequential time integration for variable-wave-speed advection problems in one and two spatial dimensions, and using high-order discretizations up to order five. The proposed approach establishes the first practical method that provides small and scalable MGRIT iteration counts for advection problems.},
-	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik},
-	howpublished = {arXiv:2203.13382v1 [math.NA]},
-	title = {Fast multigrid reduction-in-time for advection via modified semi-Lagrangian coarse-grid operators},
-	url = {http://arxiv.org/abs/2203.13382v1},
-	year = {2022},
-}
-
 @unpublished{SterckEtAl2022b,
 	abstract = {A long-standing issue in the parallel-in-time community is the poor convergence of standard iterative parallel-in-time methods for hyperbolic partial differential equations (PDEs), and for advection-dominated PDEs more broadly. Here, a local Fourier analysis (LFA) convergence theory is derived for the two-level variant of the iterative parallel-in-time method of multigrid reduction-in-time (MGRIT). This closed-form theory allows for new insights into the poor convergence of MGRIT for advection-dominated PDEs when using the standard approach of rediscretizing the fine-grid problem on the coarse grid. Specifically, we show that this poor convergence arises, at least in part, from inadequate coarse-grid correction of certain smooth Fourier modes known as characteristic components, which was previously identified as causing poor convergence of classical spatial multigrid on steady-state advection-dominated PDEs. We apply this convergence theory to show that, for certain semi-Lagrangian discretizations of advection problems, MGRIT convergence using rediscretized coarse-grid operators cannot be robust with respect to CFL number or coarsening factor. A consequence of this analysis is that techniques developed for improving convergence in the spatial multigrid context can be re-purposed in the MGRIT context to develop more robust parallel-in-time solvers. This strategy has been used in recent work to great effect; here, we provide further theoretical evidence supporting the effectiveness of this approach.},
 	author = {H. De Sterck and S. Friedhoff and O. A. Krzysik and Scott P. MacLachlan},
 	howpublished = {arXiv:2208.01526v1 [math.NA]},
 	title = {Multigrid reduction-in-time convergence for advection problems: A Fourier analysis perspective},
 	url = {http://arxiv.org/abs/2208.01526v1},
-	year = {2022},
-}
-
-@unpublished{SterckEtAl2022c,
-	abstract = {Parallel-in-time methods for partial differential equations (PDEs) have been the subject of intense development over recent decades, particularly for diffusion-dominated problems. It has been widely reported in the literature, however, that many of these methods perform quite poorly for advection-dominated problems. Here we analyze the particular iterative parallel-in-time algorithm of multigrid reduction-in-time (MGRIT) for discretizations of constant-wave-speed linear advection problems. We focus on common method-of-lines discretizations that employ upwind finite differences in space and Runge-Kutta methods in time. Using a convergence framework we developed in previous work, we prove for a subclass of these discretizations that, if using the standard approach of rediscretizing the fine-grid problem on the coarse grid, robust MGRIT convergence with respect to CFL number and coarsening factor is not possible. This poor convergence and non-robustness is caused, at least in part, by an inadequate coarse-grid correction for smooth Fourier modes known as characteristic components.We propose an alternative coarse-grid that provides a better correction of these modes. This coarse-grid operator is related to previous work and uses a semi-Lagrangian discretization combined with an implicitly treated truncation error correction. Theory and numerical experiments show the coarse-grid operator yields fast MGRIT convergence for many of the method-of-lines discretizations considered, including for both implicit and explicit discretizations of high order.},
-	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik and J. B. Schroder},
-	howpublished = {arXiv:2209.06916v1 [math.NA]},
-	title = {Efficient multigrid reduction-in-time for method-of-lines discretizations of linear advection},
-	url = {http://arxiv.org/abs/2209.06916v1},
 	year = {2022},
 }
 
@@ -6217,15 +6163,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {{IEEE}},
 	title = {Parallelizing Explicit and Implicit Extrapolation Methods for Ordinary Differential Equations},
 	url = {https://doi.org/10.1109%2Fhpec55821.2022.9926357},
-	year = {2022},
-}
-
-@unpublished{VargasEtAl2022,
-	abstract = {As CPU clock speeds have stagnated and high performance computers continue to have ever higher core counts, increased parallelism is needed to take advantage of these new architectures. Traditional serial time-marching schemes can be a significant bottleneck, as many types of simulations require large numbers of time-steps which must be computed sequentially. Parallel in Time schemes, such as the Multigrid Reduction in Time (MGRIT) method, remedy this by parallelizing across time-steps, and have shown promising results for parabolic problems. However, chaotic problems have proved more difficult, since chaotic initial value problems (IVPs) are inherently ill-conditioned. MGRIT relies on a hierarchy of successively coarser time-grids to iteratively correct the solution on the finest time-grid, but due to the nature of chaotic systems, small inaccuracies on the coarser levels can be greatly magnified and lead to poor coarse-grid corrections. Here we introduce a modified MGRIT algorithm based on an existing quadratically converging nonlinear extension to the multigrid Full Approximation Scheme (FAS), as well as a novel time-coarsening scheme. Together, these approaches better capture long-term chaotic behavior on coarse-grids and greatly improve convergence of MGRIT for chaotic IVPs. Further, we introduce a novel low memory variant of the algorithm for solving chaotic PDEs with MGRIT which not only solves the IVP, but also provides estimates for the unstable Lyapunov vectors of the system. We provide supporting numerical results for the Lorenz system and demonstrate parallel speedup for the chaotic Kuramoto- Sivashinsky partial differential equation over a significantly longer time-domain than in previous works.},
-	author = {David A. Vargas and Robert D. Falgout and Stefanie Günther and Jacob B. Schroder},
-	howpublished = {arXiv:2208.12629v1 [math.NA]},
-	title = {Multigrid Reduction in Time for Chaotic Dynamical Systems},
-	url = {http://arxiv.org/abs/2208.12629v1},
 	year = {2022},
 }
 
@@ -6340,15 +6277,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{CaldasEtAl2023,
-	abstract = {Despite the growing interest in parallel-in-time methods as an approach to accelerate numerical simulations in atmospheric modelling, improving their stability and convergence remains a substantial challenge for their application to operational models. In this work, we study the temporal parallelization of the shallow water equations on the rotating sphere combined with time-stepping schemes commonly used in atmospheric modelling due to their stability properties, namely an Eulerian implicit-explicit (IMEX) method and a semi-Lagrangian semi-implicit method (SL-SI-SETTLS). The main goal is to investigate the performance of parallel-in-time methods, namely Parareal and Multigrid Reduction in Time (MGRIT), when these well-established schemes are used on the coarse discretization levels and provide insights on how they can be improved for better performance. We begin by performing an analytical stability study of Parareal and MGRIT applied to a linearized ordinary differential equation depending on the choice of coarse scheme. Next, we perform numerical simulations of two standard tests to evaluate the stability, convergence and speedup provided by the parallel-in-time methods compared to a fine reference solution computed serially. We also conduct a detailed investigation on the influence of artificial viscosity and hyperviscosity approaches, applied on the coarse discretization levels, on the performance of the temporal parallelization. Both the analytical stability study and the numerical simulations indicate a poorer stability behaviour when SL-SI-SETTLS is used on the coarse levels, compared to the IMEX scheme. With the IMEX scheme, a better trade-off between convergence, stability and speedup compared to serial simulations can be obtained under proper parameters and artificial viscosity choices, opening the perspective of the potential competitiveness for realistic models.},
-	author = {Caldas Steinstraesser, Jo\~{a}o Guilherme and da Silva Peixoto, Pedro and Schreiber, Martin},
-	howpublished = {arXiv:2306.09497v1 [math.NA]},
-	title = {Parallel-in-time integration of the shallow water equations on the rotating sphere using Parareal and MGRIT},
-	url = {https://arxiv.org/abs/2306.09497v1},
-	year = {2023},
-}
-
 @article{CarrelEtAl2023,
 	author = {Benjamin Carrel and Martin J. Gander and Bart Vandereycken},
 	doi = {10.1007/s10543-023-00953-3},
@@ -6404,6 +6332,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@article{FreiEtAl2023,
+	author = {Stefan Frei and Alexander Heinlein},
+	doi = {10.1016/j.jcp.2023.112347},
+	journal = {Journal of Computational Physics},
+	month = {oct},
+	pages = {112347},
+	publisher = {Elsevier {BV}},
+	title = {Towards parallel time-stepping for the numerical simulation of atherosclerotic plaque growth},
+	url = {https://doi.org/10.1016%2Fj.jcp.2023.112347},
+	volume = {491},
+	year = {2023},
+}
+
 @unpublished{GanderEtAl2023,
 	abstract = {Time-parallel time integration has received a lot of attention in the high performance computing community over the past two decades. Indeed, it has been shown that parallel-in-time techniques have the potential to remedy one of the main computational drawbacks of parallel-in-space solvers. In particular, it is well-known that for large-scale evolution problems space parallelization saturates long before all processing cores are effectively used on today's large scale parallel computers. Among the many approaches for time-parallel time integration, ParaDiag schemes have proved themselves to be a very effective approach. In this framework, the time stepping matrix or an approximation thereof is diagonalized by Fourier techniques, so that computations taking place at different time steps can be indeed carried out in parallel. We propose here a new ParaDiag algorithm combining the Sherman-Morrison-Woodbury formula and Krylov techniques. A panel of diverse numerical examples illustrates the potential of our new solver. In particular, we show that it performs very well compared to different ParaDiag algorithms recently proposed in the literature.},
 	author = {Martin J. Gander and Davide Palitta},
@@ -6422,21 +6363,23 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{GaraiEtAl2023,
-	abstract = {In this paper, we design, analyze and implement efficient time parallel method for a class of fourth order time-dependent partial differential equations (PDEs), namely biharmonic heat equation, linearized Cahn-Hilliard (CH) equation and the nonlinear CH equation. We use diagonalization technique on all-at-once system to develop efficient iterative time parallel methods for investigating the solution behaviour of said equations. We present the convergence analysis of Parallel-in-Time (PinT) algorithms. We verify our findings by presenting numerical results.},
-	author = {Gobinda Garai and Bankim C. Mandal},
-	howpublished = {arXiv:2304.14021v1 [math.NA]},
-	title = {Diagonalization Based Parallel-in-Time Method for a Class of Fourth Order Time Dependent PDEs},
-	url = {http://arxiv.org/abs/2304.14021v1},
-	year = {2023},
-}
-
 @unpublished{GaraiEtAl2023b,
 	abstract = {In this paper, we propose, analyze and implement efficient time parallel methods for the Cahn-Hilliard (CH) equation. It is of great importance to develop efficient numerical methods for the CH equation, given the range of applicability of the CH equation has. The CH equation generally needs to be simulated for a very long time to get the solution of phase coarsening stage. Therefore it is desirable to accelerate the computation using parallel method in time. We present linear and nonlinear Parareal methods for the CH equation depending on the choice of fine approximation. We illustrate our results by numerical experiments.},
 	author = {Gobinda Garai and Bankim C. Mandal},
 	howpublished = {arXiv:2304.14074v1 [math.NA]},
 	title = {Linear and Nonlinear Parareal Methods for the Cahn-Hilliard Equation},
 	url = {http://arxiv.org/abs/2304.14074v1},
+	year = {2023},
+}
+
+@article{GaraiEtAl2023c,
+	author = {Gobinda Garai and Bankim C. Mandal},
+	doi = {10.1016/j.matcom.2023.07.028},
+	journal = {Mathematics and Computers in Simulation},
+	month = {aug},
+	publisher = {Elsevier {BV}},
+	title = {Diagonalization based Parallel-in-Time method for a class of fourth order time dependent {PDEs}},
+	url = {https://doi.org/10.1016%2Fj.matcom.2023.07.028},
 	year = {2023},
 }
 
@@ -6549,6 +6492,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@article{MunchEtAl2023,
+	author = {Peter Munch and Ivo Dravins and Martin Kronbichler and Maya Neytcheva},
+	doi = {10.1137/22m1503270},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {jul},
+	pages = {S71--S96},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Stage-Parallel Fully Implicit Runge{\textendash}Kutta Implementations with Optimal Multilevel Preconditioners at the Scaling Limit},
+	url = {https://doi.org/10.1137%2F22m1503270},
+	year = {2023},
+}
+
 @article{NguyenEtAl2023,
 	author = {Van-Thanh Nguyen and Laura Grigori},
 	doi = {10.1007/s11075-022-01492-8},
@@ -6591,6 +6546,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@article{SchleußEtAl2023,
+	author = {Julia Schleu{\ss} and Kathrin Smetana and Lukas ter Maat},
+	doi = {10.1137/22m1481002},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {may},
+	number = {3},
+	pages = {A1066--A1096},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Randomized Quasi-Optimal Local Approximation Spaces in Time},
+	url = {https://doi.org/10.1137%2F22m1481002},
+	volume = {45},
+	year = {2023},
+}
+
 @incollection{ShanEtAl2023,
 	author = {Xiujie Shan and Martin B. van Gijzen},
 	booktitle = {Parallel Processing and Applied Mathematics},
@@ -6602,21 +6571,26 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{SteinstraesserEtAl2023,
-	abstract = {Despite the growing interest in parallel-in-time methods as an approach to accelerate numerical simulations in atmospheric modelling, improving their stability and convergence remains a substantial challenge for their application to operational models. In this work, we study the temporal parallelization of the shallow water equations on the rotating sphere combined with time-stepping schemes commonly used in atmospheric modelling due to their stability properties, namely an Eulerian implicit-explicit (IMEX) method and a semi-Lagrangian semi-implicit method (SL-SI-SETTLS). The main goal is to investigate the performance of parallel-in-time methods, namely Parareal and Multigrid Reduction in Time (MGRIT), when these well-established schemes are used on the coarse discretization levels and provide insights on how they can be improved for better performance. We begin by performing an analytical stability study of Parareal and MGRIT applied to a linearized ordinary differential equation depending on the choice of coarse scheme. Next, we perform numerical simulations of two standard tests to evaluate the stability, convergence and speedup provided by the parallel-in-time methods compared to a fine reference solution computed serially. We also conduct a detailed investigation on the influence of artificial viscosity and hyperviscosity approaches, applied on the coarse discretization levels, on the performance of the temporal parallelization. Both the analytical stability study and the numerical simulations indicate a poorer stability behaviour when SL-SI-SETTLS is used on the coarse levels, compared to the IMEX scheme. With the IMEX scheme, a better trade-off between convergence, stability and speedup compared to serial simulations can be obtained under proper parameters and artificial viscosity choices, opening the perspective of the potential competitiveness for realistic models.},
-	author = {João Guilherme Caldas Steinstraesser and Pedro da Silva Peixoto and Martin Schreiber},
-	howpublished = {arXiv:2306.09497v1 [math.NA]},
-	title = {Parallel-in-time integration of the shallow water equations on the rotating sphere using Parareal and MGRIT},
-	url = {http://arxiv.org/abs/2306.09497v1},
-	year = {2023},
-}
-
 @unpublished{Trotti2023,
 	abstract = {In this work we develop a novel domain splitting strategy for the solution of partial differential equations. Focusing on a uniform discretization of the $d$-dimensional advection-diffusion equation, our proposal is a two-level algorithm that merges the solutions obtained from the discretization of the equation over highly anisotropic submeshes to compute an initial approximation of the fine solution. The algorithm then iteratively refines the initial guess by leveraging the structure of the residual. Performing costly calculations on anisotropic submeshes enable us to reduce the dimensionality of the problem by one, and the merging process, which involves the computation of solutions over disjoint domains, allows for parallel implementation.},
 	author = {Ken Trotti},
 	howpublished = {arXiv:2303.01163v1 [math.NA]},
 	title = {A domain splitting strategy for solving PDEs},
 	url = {http://arxiv.org/abs/2303.01163v1},
+	year = {2023},
+}
+
+@article{VargasEtAl2023,
+	author = {D. A. Vargas and R. D. Falgout and S. Günther and J. B. Schroder},
+	doi = {10.1137/22m1518335},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {aug},
+	number = {4},
+	pages = {A2019--A2042},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Multigrid Reduction in Time for Chaotic Dynamical Systems},
+	url = {https://doi.org/10.1137%2F22m1518335},
+	volume = {45},
 	year = {2023},
 }
 
@@ -6630,6 +6604,17 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Parallel Numerical Picard Iteration Methods},
 	url = {https://doi.org/10.1007/s10915-023-02156-y},
 	volume = {95},
+	year = {2023},
+}
+
+@article{YamazakiEtAl2023,
+	author = {Hiroe Yamazaki and Colin J. Cotter and Beth A. Wingate},
+	doi = {10.1002/qj.4517},
+	journal = {Quarterly Journal of the Royal Meteorological Society},
+	month = {jul},
+	publisher = {Wiley},
+	title = {Time-parallel integration and phase averaging for the nonlinear shallow-water equations on the sphere},
+	url = {https://doi.org/10.1002%2Fqj.4517},
 	year = {2023},
 }
 
