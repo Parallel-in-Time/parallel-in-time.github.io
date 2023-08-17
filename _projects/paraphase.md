@@ -1,12 +1,13 @@
 ---
 layout: page_project
+hide_hero: true
 title: "ParaPhase"
 date: 2014-06-15 16:24 +0200
 updated: 2015-06-03 19:30:00 +0200
 navbar: Projects
 subnavbar: ParaPhase
 logo: paraphase-logo.png
-project_url: http://www.paraphase.de 
+project_url: http://www.paraphase.de
 short_desc: space-time parallel adaptive simulation of phase-field models on HPC architectures
 members:
   - name: Heike Emmerich (Univ. Bayreuth)
@@ -17,7 +18,7 @@ members:
   - name: Robert Speck (Forschungszentrum Jülich)
 ---
 
-Phase-field models are an important class of mathematical techniques for the description of a multitude of physical and technical processes. Examples are the modelling of cracks and fracture propagation in solid media like ceramics or dry soil, the representation of liquid phase epitaxy for solar cells, semi-conductors or LEDs as well as melting and solidification processes of alloys. The price for the broad applicability and mathematical elegance of this approach is the significant computing cost required for the simulation of phase-field equations at large scales, demanding the use of modern HPC architectures. 
+Phase-field models are an important class of mathematical techniques for the description of a multitude of physical and technical processes. Examples are the modelling of cracks and fracture propagation in solid media like ceramics or dry soil, the representation of liquid phase epitaxy for solar cells, semi-conductors or LEDs as well as melting and solidification processes of alloys. The price for the broad applicability and mathematical elegance of this approach is the significant computing cost required for the simulation of phase-field equations at large scales, demanding the use of modern HPC architectures.
 
 The goal of the project “ParaPhase -- space-time parallel adaptive simulation of phase-field models on HPC architectures” funded by the German Federal Ministry of Education and Research (FKZ 01IH15005A, BMBF program “[IKT 2020 -  Forschung für Innovation](https://www.bmbf.de/de/ikt-2020-forschung-fuer-innovation-854.html)") is the development of algorithms and methods that allow for highly efficient space-time parallel and adaptive simulations of phase-field problems. Three key aspects are addressed in the course of the project:
 

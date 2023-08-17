@@ -26,6 +26,8 @@ module Jekyll
         # gets the class attribute
         @class = @markup.select {|sub| sub.include? "class:"}[0]
 
+        @id = @markup.select {|sub| sub.include? "id:"}[0]
+
         if @alt != nil
           @alt[":"] = "="
           @alt.gsub("'", '"')
@@ -38,9 +40,16 @@ module Jekyll
           @attributes += "#@class "
         end
 
+        if @id != nil
+          @id[":"] = "="
+          @id.gsub("'", '"')
+          @attributes += "#@id "
+        end
 
       end
       def render(context)
+        @attributes = Liquid::Template.parse(@attributes).render(context)
+
         @img = Liquid::Template.parse(@img).render(context)
         "<img src=\"#@img\" #@attributes >"
       end

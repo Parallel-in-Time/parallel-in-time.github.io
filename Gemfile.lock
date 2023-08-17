@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.4)
+    addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.4.13.0)
       execjs (~> 2)
@@ -39,7 +39,7 @@ GEM
       forwardable-extended (~> 2.5)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    google-protobuf (3.23.4-aarch64-linux)
+    google-protobuf (3.24.0-aarch64-linux)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -104,7 +104,7 @@ GEM
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
-    sass-embedded (1.64.1-aarch64-linux-gnu)
+    sass-embedded (1.64.2-aarch64-linux-gnu)
       google-protobuf (~> 3.23)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)

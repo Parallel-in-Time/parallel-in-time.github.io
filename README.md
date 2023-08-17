@@ -15,7 +15,7 @@ We use **docker** to *prevent version* and *system differences*. So please, espe
 #### Run this in your console to update your dependencies
 
 ```bash
-docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.2.2 bash -c "bundle config set --local path '/usr/src/app/vendor' && bundle install"
+docker-compose -f docker-compose-bundle.yml up
 ```
 
 ### Start the live preview of the page
@@ -25,7 +25,7 @@ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.2.2 bash -c "bundl
 #### Run this in your console to start the local preview
 
 ```bash
-docker run --rm -p 35729:35729 -p 4000:4000 -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.2.2 bash -c "bundle config set --local path '/usr/src/app/vendor' && bundle exec jekyll serve --livereload --host=0.0.0.0"
+docker-compose up
 ```
 
 ## III. Troubleshooting
@@ -49,7 +49,7 @@ If the live preview fails and you don't know the cause, follow these steps:
     - either close the program(s) that need(s) the port(s)
     - or specify another port
 
-    If you want to specify another port, append one of the args to the bash script that the docker container will run:
+    If you want to specify another port go to the docker compose file, append one of the args to the bash script that the docker container will run:
 
     - `--port [YOUR PORT]` (the port where the page is accessible at)
     - `--livereload-port [YOUR PORT]` (the port where the live reload script is accessible at)

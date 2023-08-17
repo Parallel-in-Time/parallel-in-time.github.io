@@ -138,10 +138,10 @@ a.btn {
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  @include button-size($padding-small-vertical, $padding-small-horizontal, $line-height-small, $btn-border-radius-small);
 }
 .btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $line-height-small, $btn-border-radius-small);
 }
 
 

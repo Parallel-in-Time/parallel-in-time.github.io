@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: 7th Workshop on Parallel-in-Time Integration
 date: 2017-10-25 00:00:00 +0000
 updated: 2017-10-25 00:00:00 +0100
