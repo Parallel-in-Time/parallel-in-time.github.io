@@ -72,16 +72,17 @@ $fa-font-path: "../fonts/font-awesome";
 //       }
 //     }
 
-//     @media(min-width: $screen-sm-min) {
-//       #pint-pubs-chart {
-//         width: 100%;
-//       }
-//     }
-//     @media(min-width: $screen-md-min) {
-//       #pint-pubs-chart {
-//         width: 700px;
-//       }
-//     }
+    @media(min-width: 600px) {
+      #pint-pubs-chart {
+        width: 100%;
+      }
+    }
+
+    @media(min-width: 900px) {
+      #pint-pubs-chart {
+        width: 700px;
+      }
+    }
 
 //     .ref-label {
 //       width: 100%;

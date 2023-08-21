@@ -31,7 +31,20 @@ footer: true
       </a>
     </div>
     <p id="image-download-docu" class="hidden-xs text-muted"></p>
-    <div id="chart-raw-data" class="collapse"></div>
+    <div class="modal" id="json-modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <div style="display: flex; justify-content: end; width: 100%;">
+            <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+          </div>
+        </header>
+        <section class="modal-card-body">
+          <div id="chart-raw-data"></div>
+        </section>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
