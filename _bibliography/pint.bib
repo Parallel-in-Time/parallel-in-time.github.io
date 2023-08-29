@@ -6444,15 +6444,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{IbrahimEtAl2023,
-	abstract = {Parallel-in-time algorithms provide an additional layer of concurrency for the numerical integration of models based on time-dependent differential equations. Methods like Parareal, which parallelize across multiple time steps, rely on a computationally cheap and coarse integrator to propagate information forward in time, while a parallelizable expensive fine propagator provides accuracy. Typically, the coarse method is a numerical integrator using lower resolution, reduced order or a simplified model. Our paper proposes to use a physics-informed neural network (PINN) instead. We demonstrate for the Black-Scholes equation, a partial differential equation from computational finance, that Parareal with a PINN coarse propagator provides better speedup than a numerical coarse propagator. Training and evaluating a neural network are both tasks whose computing patterns are well suited for GPUs. By contrast, mesh-based algorithms with their low computational intensity struggle to perform well. We show that moving the coarse propagator PINN to a GPU while running the numerical fine propagator on the CPU further improves Parareal's single-node performance. This suggests that integrating machine learning techniques into parallel-in-time integration methods and exploiting their differences in computing patterns might offer a way to better utilize heterogeneous architectures.},
-	author = {Abdul Qadir Ibrahim and Sebastian Götschel and Daniel Ruprecht},
-	howpublished = {arXiv:2303.03848v1 [math.NA]},
-	title = {Parareal with a physics-informed neural network as coarse propagator},
-	url = {http://arxiv.org/abs/2303.03848v1},
-	year = {2023},
-}
-
 @incollection{IbrahimEtAl2023b,
 	author = {Abdul Qadir Ibrahim and Sebastian Götschel and Daniel Ruprecht},
 	booktitle = {Euro-Par 2023: Parallel Processing},
