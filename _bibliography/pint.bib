@@ -6346,6 +6346,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{DanieliEtAl2023,
+	abstract = {This work develops a novel all-at-once space-time preconditioning approach for resistive magnetohydrodynamics (MHD), with a focus on model problems targeting fusion reactor design. We consider parallel-in-time due to the long time domains required to capture the physics of interest, as well as the complexity of the underlying system and thereby computational cost of long-time integration. To ameliorate this cost by using many processors, we thus develop a novel approach to solving the whole space-time system that is parallelizable in both space and time. We develop a space-time block preconditioning for resistive MHD, following the space-time block preconditioning concept first introduced by Danieli et al. in 2022 for incompressible flow, where an effective preconditioner for classic sequential time-stepping is extended to the space-time setting. The starting point for our derivation is the continuous Schur complement preconditioner by Cyr et al. in 2021, which we proceed to generalise in order to produce, to our knowledge, the first space-time block preconditioning approach for the challenging equations governing incompressible resistive MHD. The numerical results are promising for the model problems of island coalescence and tearing mode, with the overhead computational cost associated with space-time preconditioning versus sequential time-stepping being modest and primarily in the range of 2x-5x, which is low for parallel-in-time schemes in general. Additionally, the scaling results for inner (linear) and outer (nonlinear) iterations are flat in the case of fixed time-step size and only grow very slowly in the case of time-step refinement.},
+	author = {Federico Danieli and Ben S. Southworth and Jacob B. Schroder},
+	howpublished = {arXiv:2309.00768v1 [math.NA]},
+	title = {Space-Time Block Preconditioning for Incompressible Resistive Magnetohydrodynamics},
+	url = {http://arxiv.org/abs/2309.00768v1},
+	year = {2023},
+}
+
 @article{FangEtAl2023,
 	author = {Liang Fang and Stefan Vandewalle and Johan Meyers},
 	doi = {10.1016/j.jcp.2023.111927},
@@ -6356,6 +6365,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {An {SQP}-based multiple shooting algorithm for large-scale {PDE}-constrained optimal control problems},
 	url = {https://doi.org/10.1016/j.jcp.2023.111927},
 	volume = {477},
+	year = {2023},
+}
+
+@unpublished{FangEtAl2023b,
+	abstract = {Applying parallel-in-time algorithms to multiscale Hamiltonian systems to obtain stable long time simulations is very challenging. In this paper, we present novel data-driven methods aimed at improving the standard parareal algorithm developed by Lion, Maday, and Turinici in 2001, for multiscale Hamiltonian systems. The first method involves constructing a correction operator to improve a given inaccurate coarse solver through solving a Procrustes problem using data collected online along parareal trajectories. The second method involves constructing an efficient, high-fidelity solver by a neural network trained with offline generated data. For the second method, we address the issues of effective data generation and proper loss function design based on the Hamiltonian function. We show proof-of-concept by applying the proposed methods to a Fermi-Pasta-Ulum (FPU) problem. The numerical results demonstrate that the Procrustes parareal method is able to produce solutions that are more stable in energy compared to the standard parareal. The neural network solver can achieve comparable or better runtime performance compared to numerical solvers of similar accuracy. When combined with the standard parareal algorithm, the improved neural network solutions are slightly more stable in energy than the improved numerical coarse solutions.},
+	author = {Rui Fang and Richard Tsai},
+	howpublished = {arXiv:2309.01225v1 [math.NA]},
+	title = {Stabilization of parareal algorithms for long time computation of a class of highly oscillatory Hamiltonian flows using data},
+	url = {http://arxiv.org/abs/2309.01225v1},
 	year = {2023},
 }
 
@@ -6563,6 +6581,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2306.17269v1 [math.NA]},
 	title = {A Micro-Macro Parareal Implementation for the Ocean-Circulation Model FESOM2},
 	url = {http://arxiv.org/abs/2306.17269v1},
+	year = {2023},
+}
+
+@unpublished{PhilippiEtAl2023b,
+	abstract = {In this paper the Micro-Macro Parareal algorithm was adapted to PDEs. The parallel-in-time approach requires two meshes of different spatial resolution in order to compute approximations in an iterative way to a predefined reference solution. When fast convergence in few iterations can be accomplished the algorithm is able to generate wall-time reduction in comparison to the serial computation. We chose the laminar flow around a cylinder benchmark on 2-dimensional domain which was simulated with the open-source software OpenFoam. The numerical experiments presented in this work aim to approximate states local in time and space and the diagnostic lift coefficient. The Reynolds number is gradually increased from 100 to 1,000, before the transition to turbulent flows sets in. After the results are presented the convergence behavior is discussed with respect to the Reynolds number and the applied interpolation schemes.},
+	author = {Benedict Philippi and Mahfuz Sarker Miraz and Thomas Slawig},
+	howpublished = {arXiv:2309.03037v1 [math.NA]},
+	title = {A Micor-Macro parallel-in-time Implementation for the 2D Navier-Stokes Equations},
+	url = {http://arxiv.org/abs/2309.03037v1},
 	year = {2023},
 }
 
