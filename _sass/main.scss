@@ -1,5 +1,7 @@
 $fa-font-path: "../fonts/font-awesome";
 
+$primary: #36A9E1;
+
 @import "vendor/font-awesome/font-awesome.scss";
 // @import "vendor/octicons/octicons";
 @import "variables";
@@ -154,6 +156,9 @@ $fa-font-path: "../fonts/font-awesome";
 //     }
 //   }
 // }
+
+
+
 .event-meta-row {
     display: flex;
     justify-content: space-between;
@@ -202,4 +207,9 @@ $fa-font-path: "../fonts/font-awesome";
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.stats-buttons {
+    display: flex;
+    gap: 4px;
 }

@@ -1,6 +1,7 @@
 ---
 layout: landingpage
-hero_image: /assets/images/logo_pint.png
+hero_image: /assets/images/logo_pint.jpg
+title: "Parallel in Time"
 ---
 
 <div class="columns is-multiline">
