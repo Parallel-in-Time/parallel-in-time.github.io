@@ -5817,15 +5817,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{GanderEtAl2022,
-	abstract = {Parallel-in-time integration has been the focus of intensive research efforts over the past two decades due to the advent of massively parallel computer architectures and the scaling limits of purely spatial parallelization. Various iterative parallel-in-time (PinT) algorithms have been proposed, like Parareal, PFASST, MGRIT, and Space-Time Multi-Grid (STMG). These methods have been described using different notations and the convergence estimates that are available for some of them are difficult to compare. We describe Parareal, PFASST, MGRIT and STMG for the Dahlquist model problem using a common notation and give precise convergence estimates using generating functions. This allows us, for the first time, to directly compare their convergence. We prove that all four methods eventually converge super-linearly and compare them directly numerically. Our framework also allows us to find new methods.},
-	author = {M. J. Gander and T. Lunet and D. Ruprecht and R. Speck},
-	howpublished = {arXiv:2203.16069v1 [math.NA]},
-	title = {A unified analysis framework for iterative parallel-in-time algorithms},
-	url = {http://arxiv.org/abs/2203.16069v1},
-	year = {2022},
-}
-
 @article{GarciaEtAl2022,
 	author = {Idoia Cortes Garcia and Iryna Kulchytska-Ruchka and Sebastian Schöps},
 	doi = {10.1007/s11075-022-01267-1},
@@ -6408,6 +6399,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {A new ParaDiag time-parallel time integration method},
 	url = {http://arxiv.org/abs/2304.12597v1},
 	year = {2023},
+}
+
+@article{GanderEtAl2023b,
+        author = {Gander, Martin J. and Lunet, Thibaut and Ruprecht, Daniel and Speck, Robert},
+        title = {A Unified Analysis Framework for Iterative Parallel-in-Time Algorithms},
+        journal = {SIAM Journal on Scientific Computing},
+        volume = {45},
+        number = {5},
+        pages = {A2275-A2303},
+        year = {2023},
+        doi = {10.1137/22M1487163},     
+        url = {https://doi.org/10.1137/22M1487163},
+        abstract = { Abstract. Parallel-in-time integration has been the focus of intensive research efforts over the past two decades due to the advent of massively parallel computer architectures and the scaling limits of purely spatial parallelization. Various iterative parallel-in-time algorithms have been proposed, like Parareal, PFASST, MGRIT, and Space-Time Multi-Grid (STMG). These methods have been described using different notation, and the convergence estimates that are available are difficult to compare. We describe Parareal, PFASST, MGRIT, and STMG for the Dahlquist model problem using a common notation and give precise convergence estimates using generating functions. This allows us, for the first time, to directly compare their convergence. We prove that all four methods eventually converge superlinearly, and we also compare them numerically. The generating function framework provides further opportunities to explore and analyze existing and new methods. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: code and data available”, as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/parallel-in-Time/gfm. }
 }
 
 @unpublished{GanglEtAl2023,
