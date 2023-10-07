@@ -233,6 +233,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          BoschEtAl2023
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseBoschEtAl2023Bibtex"
+                    aria-expanded="false" aria-controls="collapseBoschEtAl2023Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalBoschEtAl2023Abstract"
+                    aria-expanded="false" aria-controls="modalBoschEtAl2023Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="BoschEtAl2023">N. Bosch, A. Corenflos, F. Yaghoobi, F. Tronarp, P. Hennig, and S. Särkkä, “Parallel-in-Time Probabilistic Numerical ODE Solvers,” arXiv:2310.01145v1 [math.NA], 2023 [Online]. Available at: <a href="http://arxiv.org/abs/2310.01145v1" target="_blank">http://arxiv.org/abs/2310.01145v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseBoschEtAl2023Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{BoschEtAl2023,
+  author = {Bosch, Nathanael and Corenflos, Adrien and Yaghoobi, Fatemeh and Tronarp, Filip and Hennig, Philipp and Särkkä, Simo},
+  howpublished = {arXiv:2310.01145v1 [math.NA]},
+  title = {Parallel-in-Time Probabilistic Numerical ODE Solvers},
+  url = {http://arxiv.org/abs/2310.01145v1},
+  year = {2023}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalBoschEtAl2023Abstract" tabindex="-1" role="dialog" aria-labelledby="modalBoschEtAl2023AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalBoschEtAl2023AbstractTitle">
+            Abstract for BibTeX entry <code>BoschEtAl2023</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          Probabilistic numerical solvers for ordinary differential equations (ODEs) treat the numerical simulation of dynamical systems as problems of Bayesian state estimation. Aside from producing posterior distributions over ODE solutions and thereby quantifying the numerical approximation error of the method itself, one less-often noted advantage of this formalism is the algorithmic flexibility gained by formulating numerical simulation in the framework of Bayesian filtering and smoothing. In this paper, we leverage this flexibility and build on the time-parallel formulation of iterated extended Kalman smoothers to formulate a parallel-in-time probabilistic numerical ODE solver. Instead of simulating the dynamical system sequentially in time, as done by current probabilistic solvers, the proposed method processes all time steps in parallel and thereby reduces the span cost from linear to logarithmic in the number of time steps. We demonstrate the effectiveness of our approach on a variety of ODEs and compare it to a range of both classic and probabilistic numerical ODE solvers.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           BouillonEtAl2023
         </div>
       </div>
