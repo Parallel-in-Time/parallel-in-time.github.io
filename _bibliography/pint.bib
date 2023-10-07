@@ -6279,6 +6279,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{BoschEtAl2023,
+	abstract = {Probabilistic numerical solvers for ordinary differential equations (ODEs) treat the numerical simulation of dynamical systems as problems of Bayesian state estimation. Aside from producing posterior distributions over ODE solutions and thereby quantifying the numerical approximation error of the method itself, one less-often noted advantage of this formalism is the algorithmic flexibility gained by formulating numerical simulation in the framework of Bayesian filtering and smoothing. In this paper, we leverage this flexibility and build on the time-parallel formulation of iterated extended Kalman smoothers to formulate a parallel-in-time probabilistic numerical ODE solver. Instead of simulating the dynamical system sequentially in time, as done by current probabilistic solvers, the proposed method processes all time steps in parallel and thereby reduces the span cost from linear to logarithmic in the number of time steps. We demonstrate the effectiveness of our approach on a variety of ODEs and compare it to a range of both classic and probabilistic numerical ODE solvers.},
+	author = {Nathanael Bosch and Adrien Corenflos and Fatemeh Yaghoobi and Filip Tronarp and Philipp Hennig and Simo Särkkä},
+	howpublished = {arXiv:2310.01145v1 [math.NA]},
+	title = {Parallel-in-Time Probabilistic Numerical ODE Solvers},
+	url = {http://arxiv.org/abs/2310.01145v1},
+	year = {2023},
+}
+
 @unpublished{BouillonEtAl2023,
 	abstract = {The ParaDiag family of algorithms solves differential equations by using preconditioners that can be inverted in parallel through diagonalization. In the context of optimal control of linear parabolic PDEs, the state-of-the-art ParaDiag method is limited to solving self-adjoint problems with a tracking objective. We propose three improvements to the ParaDiag method: the use of alpha-circulant matrices to construct an alternative preconditioner, a generalization of the algorithm for solving non-self-adjoint equations, and the formulation of an algorithm for terminal-cost objectives. We present novel analytic results about the eigenvalues of the preconditioned systems for all discussed ParaDiag algorithms in the case of self-adjoint equations, which proves the favorable properties the alpha-circulant preconditioner. We use these results to perform a theoretical parallel-scaling analysis of ParaDiag for self-adjoint problems. Numerical tests confirm our findings and suggest that the self-adjoint behavior, which is backed by theory, generalizes to the non-self-adjoint case. We provide a sequential, open-source reference solver in Matlab for all discussed algorithms.},
 	author = {Arne Bouillon and Giovanni Samaey and Karl Meerbergen},
