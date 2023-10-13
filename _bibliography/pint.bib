@@ -6663,15 +6663,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{SteinstraesserEtAl2023,
-	abstract = {Despite the growing interest in parallel-in-time methods as an approach to accelerate numerical simulations in atmospheric modelling, improving their stability and convergence remains a substantial challenge for their application to operational models. In this work, we study the temporal parallelization of the shallow water equations on the rotating sphere combined with time-stepping schemes commonly used in atmospheric modelling due to their stability properties, namely an Eulerian implicit-explicit (IMEX) method and a semi-Lagrangian semi-implicit method (SL-SI-SETTLS). The main goal is to investigate the performance of parallel-in-time methods, namely Parareal and Multigrid Reduction in Time (MGRIT), when these well-established schemes are used on the coarse discretization levels and provide insights on how they can be improved for better performance. We begin by performing an analytical stability study of Parareal and MGRIT applied to a linearized ordinary differential equation depending on the choice of coarse scheme. Next, we perform numerical simulations of two standard tests to evaluate the stability, convergence and speedup provided by the parallel-in-time methods compared to a fine reference solution computed serially. We also conduct a detailed investigation on the influence of artificial viscosity and hyperviscosity approaches, applied on the coarse discretization levels, on the performance of the temporal parallelization. Both the analytical stability study and the numerical simulations indicate a poorer stability behaviour when SL-SI-SETTLS is used on the coarse levels, compared to the IMEX scheme. With the IMEX scheme, a better trade-off between convergence, stability and speedup compared to serial simulations can be obtained under proper parameters and artificial viscosity choices, opening the perspective of the potential competitiveness for realistic models.},
-	author = {João Guilherme Caldas Steinstraesser and Pedro da Silva Peixoto and Martin Schreiber},
-	howpublished = {arXiv:2306.09497v1 [math.NA]},
-	title = {Parallel-in-time integration of the shallow water equations on the rotating sphere using Parareal and MGRIT},
-	url = {http://arxiv.org/abs/2306.09497v1},
-	year = {2023},
-}
-
 @article{TakahashiEtAl2023,
 	author = {Yasuhito Takahashi and Koji Fujiwara and Takeshi Iwashita},
 	doi = {10.1109/tmag.2023.3307498},
