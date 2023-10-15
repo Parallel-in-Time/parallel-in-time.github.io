@@ -5170,15 +5170,6 @@ the effectiveness of the proposed method.},
 	year = {2021},
 }
 
-@unpublished{ChaudhryEtAl2021,
-	abstract = {We construct a space-time parallel method for solving parabolic partial differential equations by coupling the Parareal algorithm in time with overlapping domain decomposition in space. Reformulating the original Parareal algorithm as a variational method and implementing a finite element discretization in space enables an adjoint-based a posteriori error analysis to be performed. Through an appropriate choice of adjoint problems and residuals the error analysis distinguishes between errors arising due to the temporal and spatial discretizations, as well as between the errors arising due to incomplete Parareal iterations and incomplete iterations of the domain decomposition solver. We first develop an error analysis for the Parareal method applied to parabolic partial differential equations, and then refine this analysis to the case where the associated spatial problems are solved using overlapping domain decomposition. These constitute our Time Parallel Algorithm (TPA) and Space-Time Parallel Algorithm (STPA) respectively. Numerical experiments demonstrate the accuracy of the estimator for both algorithms and the iterations between distinct components of the error.},
-	author = {Jehanzeb Chaudhry and Donald Estep and Simon Tavener},
-	howpublished = {arXiv:2111.00606v1 [math.NA]},
-	title = {A posteriori error analysis for a space-time parallel discretization of parabolic partial differential equations},
-	url = {http://arxiv.org/abs/2111.00606v1},
-	year = {2021},
-}
-
 @inproceedings{ChenEtAl2021,
 	author = {Yen-Chen Chen and Kengo Nakajima},
 	booktitle = {2021 12th Workshop on Latest Advances in Scalable Algorithms for Large-Scale Systems ({ScalA})},
@@ -6015,15 +6006,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{PentlandEtAl2022c,
-	abstract = {Stochastic parareal (SParareal) is a probabilistic variant of the popular parallel-in-time algorithm known as parareal. Similarly to parareal, it combines fine- and coarse-grained solutions to an ordinary differential equation (ODE) using a predictor-corrector (PC) scheme. The key difference is that carefully chosen random perturbations are added to the PC to try to accelerate the location of a stochastic solution to the ODE. In this paper, we derive superlinear and linear mean-square error bounds for SParareal applied to nonlinear systems of ODEs using different types of perturbations. We illustrate these bounds numerically on a linear system of ODEs and a scalar nonlinear ODE, showing a good match between theory and numerics.},
-	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan},
-	howpublished = {arXiv:2211.05496v1 [math.NA]},
-	title = {Error bound analysis of the stochastic parareal algorithm},
-	url = {http://arxiv.org/abs/2211.05496v1},
-	year = {2022},
-}
-
 @article{PentlandEtAl2022d,
 	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan and James Buchanan and L. C. Appel},
 	doi = {10.1007/s11222-022-10195-y},
@@ -6086,30 +6068,12 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{SterckEtAl2022,
-	abstract = {Many iterative parallel-in-time algorithms have been shown to be highly efficient for diffusion-dominated partial differential equations (PDEs), but are inefficient or even divergent when applied to advection-dominated PDEs. We consider the application of the multigrid reduction-in-time (MGRIT) algorithm to linear advection PDEs. The key to efficient time integration with this method is using a coarse-grid operator that provides a sufficiently accurate approximation to the the so-called ideal coarse-grid operator. For certain classes of semi-Lagrangian discretizations, we present a novel semi-Lagrangian-based coarse-grid operator that leads to fast and scalable multilevel time integration of linear advection PDEs. The coarse-grid operator is composed of a semi-Lagrangian discretization followed by a correction term, with the correction designed so that the leading-order truncation error of the composite operator is approximately equal to that of the ideal coarse-grid operator. Parallel results show substantial speed-ups over sequential time integration for variable-wave-speed advection problems in one and two spatial dimensions, and using high-order discretizations up to order five. The proposed approach establishes the first practical method that provides small and scalable MGRIT iteration counts for advection problems.},
-	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik},
-	howpublished = {arXiv:2203.13382v1 [math.NA]},
-	title = {Fast multigrid reduction-in-time for advection via modified semi-Lagrangian coarse-grid operators},
-	url = {http://arxiv.org/abs/2203.13382v1},
-	year = {2022},
-}
-
 @unpublished{SterckEtAl2022b,
 	abstract = {A long-standing issue in the parallel-in-time community is the poor convergence of standard iterative parallel-in-time methods for hyperbolic partial differential equations (PDEs), and for advection-dominated PDEs more broadly. Here, a local Fourier analysis (LFA) convergence theory is derived for the two-level variant of the iterative parallel-in-time method of multigrid reduction-in-time (MGRIT). This closed-form theory allows for new insights into the poor convergence of MGRIT for advection-dominated PDEs when using the standard approach of rediscretizing the fine-grid problem on the coarse grid. Specifically, we show that this poor convergence arises, at least in part, from inadequate coarse-grid correction of certain smooth Fourier modes known as characteristic components, which was previously identified as causing poor convergence of classical spatial multigrid on steady-state advection-dominated PDEs. We apply this convergence theory to show that, for certain semi-Lagrangian discretizations of advection problems, MGRIT convergence using rediscretized coarse-grid operators cannot be robust with respect to CFL number or coarsening factor. A consequence of this analysis is that techniques developed for improving convergence in the spatial multigrid context can be re-purposed in the MGRIT context to develop more robust parallel-in-time solvers. This strategy has been used in recent work to great effect; here, we provide further theoretical evidence supporting the effectiveness of this approach.},
 	author = {H. De Sterck and S. Friedhoff and O. A. Krzysik and Scott P. MacLachlan},
 	howpublished = {arXiv:2208.01526v1 [math.NA]},
 	title = {Multigrid reduction-in-time convergence for advection problems: A Fourier analysis perspective},
 	url = {http://arxiv.org/abs/2208.01526v1},
-	year = {2022},
-}
-
-@unpublished{SterckEtAl2022c,
-	abstract = {Parallel-in-time methods for partial differential equations (PDEs) have been the subject of intense development over recent decades, particularly for diffusion-dominated problems. It has been widely reported in the literature, however, that many of these methods perform quite poorly for advection-dominated problems. Here we analyze the particular iterative parallel-in-time algorithm of multigrid reduction-in-time (MGRIT) for discretizations of constant-wave-speed linear advection problems. We focus on common method-of-lines discretizations that employ upwind finite differences in space and Runge-Kutta methods in time. Using a convergence framework we developed in previous work, we prove for a subclass of these discretizations that, if using the standard approach of rediscretizing the fine-grid problem on the coarse grid, robust MGRIT convergence with respect to CFL number and coarsening factor is not possible. This poor convergence and non-robustness is caused, at least in part, by an inadequate coarse-grid correction for smooth Fourier modes known as characteristic components.We propose an alternative coarse-grid that provides a better correction of these modes. This coarse-grid operator is related to previous work and uses a semi-Lagrangian discretization combined with an implicitly treated truncation error correction. Theory and numerical experiments show the coarse-grid operator yields fast MGRIT convergence for many of the method-of-lines discretizations considered, including for both implicit and explicit discretizations of high order.},
-	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik and J. B. Schroder},
-	howpublished = {arXiv:2209.06916v1 [math.NA]},
-	title = {Efficient multigrid reduction-in-time for method-of-lines discretizations of linear advection},
-	url = {http://arxiv.org/abs/2209.06916v1},
 	year = {2022},
 }
 
@@ -6325,6 +6289,17 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Low-rank Parareal: a low-rank parallel-in-time integrator},
 	url = {https://doi.org/10.1007%2Fs10543-023-00953-3},
 	volume = {63},
+	year = {2023},
+}
+
+@article{ChaudhryEtAl2023,
+	author = {Jehanzeb H. Chaudhry and Donald Estep and Simon J. Tavener},
+	doi = {10.1002/num.23065},
+	journal = {Numerical Methods for Partial Differential Equations},
+	month = {aug},
+	publisher = {Wiley},
+	title = {A posteriori error analysis for a space-time parallel discretization of parabolic partial differential equations},
+	url = {https://doi.org/10.1002%2Fnum.23065},
 	year = {2023},
 }
 
@@ -6608,6 +6583,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Numerical wave propagation aided by deep learning},
 	url = {https://doi.org/10.1016%2Fj.jcp.2022.111828},
 	volume = {475},
+	year = {2023},
+}
+
+@article{PentlandEtAl2023,
+	author = {Kamran Pentland and Massimiliano Tamborrino and Timothy J. Sullivan},
+	doi = {10.1137/22m1533062},
+	journal = {{SIAM} Journal on Scientific Computing},
+	month = {oct},
+	number = {5},
+	pages = {A2657--A2678},
+	publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	title = {Error Bound Analysis of the Stochastic Parareal Algorithm},
+	url = {https://doi.org/10.1137%2F22m1533062},
+	volume = {45},
 	year = {2023},
 }
 
