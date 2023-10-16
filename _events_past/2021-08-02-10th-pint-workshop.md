@@ -7,7 +7,7 @@ event_start: 2021-8-2 00:00
 event_end: 2021-8-6 00:00
 event_url: http://conferences.math.mtu.edu
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Benjamin W. Ong
     homepage: https://www.mathgeek.us
