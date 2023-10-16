@@ -7,7 +7,7 @@ event_start: 2023-06-13 00:00
 event_end: 2023-06-15 00:00
 event_url: https://gciara.wordpress.com/summer-school-on-advanced-parallel-in-time-methods/
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Gabriele Ciaramella
     homepage: https://gciara.wordpress.com/

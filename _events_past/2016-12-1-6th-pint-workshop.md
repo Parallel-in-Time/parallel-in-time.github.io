@@ -8,7 +8,7 @@ event_start: 2017-10-23 00:00
 event_end: 2017-10-27 00:00
 event_url: https://www.ics.usi.ch/index.php/news/248-6th-workshop-on-parallel-in-time-methods-in-monte-verita
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Matthias Bolten
     homepage: https://www.uni-kassel.de/fb10/institute/mathematik/personen/professoren/person/1652-Matthias-Bolten.html
