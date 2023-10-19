@@ -6306,6 +6306,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@article{Cacciapuoti2023,
+	author = {Luisa D{\textquotesingle}Amore and Rosalba Cacciapuoti},
+	doi = {10.4208/nmtma.oa-2022-0203},
+	journal = {Numerical Mathematics: Theory, Methods and Applications},
+	month = {sep},
+	number = {0},
+	pages = {0--0},
+	publisher = {Global Science Press},
+	title = {Space-Time Decomposition of Kalman Filter},
+	url = {https://doi.org/10.4208/nmtma.oa-2022-0203},
+	volume = {0},
+	year = {2023},
+}
+
 @unpublished{CaldasEtAl2023,
 	abstract = {Despite the growing interest in parallel-in-time methods as an approach to accelerate numerical simulations in atmospheric modelling, improving their stability and convergence remains a substantial challenge for their application to operational models. In this work, we study the temporal parallelization of the shallow water equations on the rotating sphere combined with time-stepping schemes commonly used in atmospheric modelling due to their stability properties, namely an Eulerian implicit-explicit (IMEX) method and a semi-Lagrangian semi-implicit method (SL-SI-SETTLS). The main goal is to investigate the performance of parallel-in-time methods, namely Parareal and Multigrid Reduction in Time (MGRIT), when these well-established schemes are used on the coarse discretization levels and provide insights on how they can be improved for better performance. We begin by performing an analytical stability study of Parareal and MGRIT applied to a linearized ordinary differential equation depending on the choice of coarse scheme. Next, we perform numerical simulations of two standard tests to evaluate the stability, convergence and speedup provided by the parallel-in-time methods compared to a fine reference solution computed serially. We also conduct a detailed investigation on the influence of artificial viscosity and hyperviscosity approaches, applied on the coarse discretization levels, on the performance of the temporal parallelization. Both the analytical stability study and the numerical simulations indicate a poorer stability behaviour when SL-SI-SETTLS is used on the coarse levels, compared to the IMEX scheme. With the IMEX scheme, a better trade-off between convergence, stability and speedup compared to serial simulations can be obtained under proper parameters and artificial viscosity choices, opening the perspective of the potential competitiveness for realistic models.},
 	author = {Caldas Steinstraesser, Jo\~{a}o Guilherme and da Silva Peixoto, Pedro and Schreiber, Martin},
@@ -6754,5 +6768,14 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2304.10152v1 [math.NA]},
 	title = {Parareal algorithm via Chebyshev-Gauss spectral collocation method},
 	url = {http://arxiv.org/abs/2304.10152v1},
+	year = {2023},
+}
+
+@unpublished{ZhouEtAl2023b,
+	abstract = {We proposed a parallel-in-time method based on preconditioner for Biot's consolidation model in poroelasticity. In order to achieve a fast and stable convergence for the matrix system of the Biot's model, we design two preconditioners with approximations of the Schur complement. The parallel-in-time method employs an inverted time-stepping scheme that iterates to solve the preconditioned linear system in the outer loop and advances the time step in the inner loop. This allows us to parallelize the iterations with a theoretical parallel efficiency that approaches 1 as the number of time steps and spatial steps grows. We demonstrate the stability, accuracy, and linear speedup of our method on HPC platform through numerical experiments.},
+	author = {Zeyuan Zhou and Huipeng Gu and Guoliang Ju and Wei Xing},
+	howpublished = {arXiv:2310.10430v1 [math.NA]},
+	title = {A Parallel-in-time Method Based on Preconditioner for Biot's Model},
+	url = {http://arxiv.org/abs/2310.10430v1},
 	year = {2023},
 }
