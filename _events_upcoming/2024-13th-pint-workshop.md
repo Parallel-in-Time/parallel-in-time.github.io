@@ -17,6 +17,8 @@ no_lead: true
 ---
 
 PinT 2024: the 13th Workshop on Parallel-in-time Integration will be hosted in Bruges, Belgium by Dr. Giovanni Samaey.
+Conference website:  https://time-x.eu/pint-2024/
+
 
 
 
