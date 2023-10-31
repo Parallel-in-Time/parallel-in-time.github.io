@@ -9,26 +9,31 @@ sharing: false
 footer: false
 ---
 
-<div class="row">
-  <div class="col-md-6">
+<div class="columns is-multiline">
+  <div class="column is-6">
     <h2>Upcoming</h2>
     <ul class="list-group">
       {% assign sorted_events = site.events_upcoming | sort:'event_start' %}
       {% for event in sorted_events %}
-        {% if event.page_type == 'event_page' %}
-          {% include event/overview_item.html %}
-        {% endif %}
+      {% if event.page_type == 'event_page' %}
+      {% include event/overview_item.html %}
+      {% endif %}
+      <br>
+      <br>
       {% endfor %}
     </ul>
+    <br>
   </div>
-  <div class="col-md-6">
+  <div class="column is-6">
     <h2>Past</h2>
     <ul class="list-group">
       {% assign sorted_events = site.events_past | sort:'event_start' %}
       {% for event in sorted_events %}
-        {% if event.page_type == 'event_page' %}
-          {% include event/overview_item.html %}
-        {% endif %}
+      {% if event.page_type == 'event_page' %}
+      {% include event/overview_item.html %}
+      {% endif %}
+      <br>
+      <br>
       {% endfor %}
     </ul>
   </div>

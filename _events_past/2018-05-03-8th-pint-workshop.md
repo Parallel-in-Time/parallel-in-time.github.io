@@ -1,11 +1,12 @@
 ---
 layout: page_event
+hide_hero: true
 title: "8th Workshop on Parallel-in-Time Integration"
 date: 2018-03-04 00:00:00 +0000
 event_location: Bielefeld, Germany
 event_start: 2019-5-20 00:00
 event_end: 2019-5-24 00:00
-event_url: 
+event_url:
 navbar: Events
 subnavbar: Upcoming
 organizers:

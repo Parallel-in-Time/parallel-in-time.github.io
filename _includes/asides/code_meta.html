@@ -4,99 +4,100 @@
   </div>
   <div class="panel-body">
     {% if page.logo %}
-      <div class="row">
-        <div class="col-md-12 logo">
-          {% img '{{ page.logo }}' alt:"{{ page.title }} Logo" %}
-        </div>
+    <div class="event-meta-row">
+      <div class="col-md-12 logo">
+        {% img '{{ page.logo }}' alt:"{{ page.title }} Logo" %}
       </div>
+    </div>
     {% endif %}
     {% if page.code_url %}
-      <div class="row">
-        <label class="col-md-4 control-label">Homepage</label>
-        <div class="col-md-8">
-          {% assign print_url = page.code_url %}
-          {% assign on_github = false %}
-          {% if page.code_url contains 'github' %}
-            {% capture print_url %}{{ page.code_url | remove: 'github.com' }}{% endcapture %}
-            {% assign on_github = true %}
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Homepage</label>
+      <div class="event-meta-piece">
+        {% assign print_url = page.code_url %}
+        {% assign on_github = false %}
+        {% if page.code_url contains 'github' %}
+        {% capture print_url %}{{ page.code_url | remove: 'github.com' }}{% endcapture %}
+        {% assign on_github = true %}
+        {% endif %}
+        <a href="{{ page.code_url }}">
+          {% if on_github %}
+          <i class="fa fa-github fa-fw"></i>{{ print_url | trim_url }}
+          {% else %}
+          {{ print_url | trim_url }}
           {% endif %}
-          <a href="{{ page.code_url }}">
-            {% if on_github %}
-              <i class="fa fa-github fa-fw"></i>{{ print_url | trim_url }}
-            {% else %}
-              {{ print_url | trim_url }}
-            {% endif %}
-          </a>
-        </div>
+        </a>
       </div>
+    </div>
     {% endif %}
     {% if page.language %}
-      <div class="row">
-        <label class="col-md-4 control-label">Language</label>
-        <div class="col-md-8">
-          {{ page.language }}
-        </div>
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Language</label>
+      <div class="event-meta-piece">
+        {{ page.language }}
       </div>
+    </div>
     {% endif %}
     {% if page.license %}
-      <div class="row">
-        <label class="col-md-4 control-label">License</label>
-        <div class="col-md-8">
-          {{ page.license }}
-        </div>
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">License</label>
+      <div class="event-meta-piece">
+        {{ page.license }}
       </div>
+    </div>
     {% endif %}
     {% if page.releases %}
-      <div class="row">
-        <label class="col-md-4 control-label">Releases</label>
-        <div class="col-md-8">
-          {% for release in page.releases %}
-            <span class="clearfix">
-              {{ release.version }}
-              {% if release.date %}
-                <small>&ensp;(<time datetime="{{ release.date }}">{{ release.date }}</time>)</small>
-              {% endif %}
-              <span class="pull-right">
-                {% if release.link %}
-                  <a href="{{ release.link }}" title="Release Page"><i class="fa fa-link fa-fw"></i></a>
-                {% endif %}
-                {% if release.download %}
-                  <a href="{{ release.download }}" title="Download Sources as zip"><i class="fa fa-download fa-fw"></i></a>
-                {% endif %}
-              </span>
-            </span>
-          {% endfor %}
-        </div>
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Releases</label>
+      <div class="event-meta-piece">
+        {% for release in page.releases %}
+        <span class="clearfix">
+          {{ release.version }}
+          {% if release.date %}
+          <small>&ensp;(<time datetime="{{ release.date }}">{{ release.date }}</time>)</small>
+          {% endif %}
+          <span class="pull-right">
+            {% if release.link %}
+            <a href="{{ release.link }}" title="Release Page"><i class="fa fa-link fa-fw"></i></a>
+            {% endif %}
+            {% if release.download %}
+            <a href="{{ release.download }}" title="Download Sources as zip"><i class="fa fa-download fa-fw"></i></a>
+            {% endif %}
+          </span>
+        </span>
+        {% endfor %}
       </div>
+    </div>
     {% endif %}
     {% if page.developers %}
-      <div class="row">
-        <label class="col-md-4 control-label">Developers</label>
-        <div class="col-md-8">
-          {% for developer in page.developers %}
-            <span class="clearfix">
-              {% if developer.link %}
-                {{ developer.link.name }}
-              {% else %}
-                {{ developer.name }}
-              {% endif %}
-              {% if developer.email or developer.lead_developer or developer.link.url %}
-                <span class="pull-right">
-                  {% if developer.lead_developer %}
-                    <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
-                  {% endif %}
-                  {% if developer.email %}
-                    <a href="mailto:{{ developer.email }}" title="email: {{ developer.email }}"><i class="fa fa-envelope-o fa-fw"></i></a>
-                  {% endif %}
-                  {% if developer.link.url %}
-                    <a href="{{ developer.link.url }}" title="{{ developer.link.name }}"><i class="fa fa-link fa-fw"></i></a>
-                  {% endif %}
-                </span>
-              {% endif %}
-            </span>
-          {% endfor %}
-        </div>
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Developers</label>
+      <div class="event-meta-piece">
+        {% for developer in page.developers %}
+        <span class="clearfix">
+          {% if developer.link %}
+          {{ developer.link.name }}
+          {% else %}
+          {{ developer.name }}
+          {% endif %}
+          {% if developer.email or developer.lead_developer or developer.link.url %}
+          <span class="pull-right">
+            {% if developer.lead_developer %}
+            <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
+            {% endif %}
+            {% if developer.email %}
+            <a href="mailto:{{ developer.email }}" title="email: {{ developer.email }}"><i
+                class="fa fa-envelope-o fa-fw"></i></a>
+            {% endif %}
+            {% if developer.link.url %}
+            <a href="{{ developer.link.url }}" title="{{ developer.link.name }}"><i class="fa fa-link fa-fw"></i></a>
+            {% endif %}
+          </span>
+          {% endif %}
+        </span>
+        {% endfor %}
       </div>
+    </div>
     {% endif %}
   </div>
 </section>

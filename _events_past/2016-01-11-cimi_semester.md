@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "Workshop - Parallel in Time Methods"
 date: 2015-03-28 10:00:00 +0000
 event_location: University Paul Sabatier, Toulouse, France
@@ -28,7 +29,7 @@ page_type: event_page
 ---
 
 In this workshop, we want to address the challenge of time-dependent
-problems with time parallel methods. 
+problems with time parallel methods.
 
 With the emergence of architectures with tens of millions of cores before the end of the decade, current
 parallelization strategies usually based on parallelization in space
@@ -36,9 +37,9 @@ inevitably reach their intrinsic limits. The objective of the workshop is
 to gather a limited number of people sharing an interest on the topic of
 time-parallel methods and to foster discussions and collaborations.
 
-Confirmed invited speakers are currently 
+Confirmed invited speakers are currently
 
-- Matthew Emmett (Computer Modelling Group Ltd, Calgary, Canada), 
+- Matthew Emmett (Computer Modelling Group Ltd, Calgary, Canada),
 - Martin Gander (University of Geneva, Switzerland),
 - Robert Speck (Juelich Supercomputing Centre, Germany).
 

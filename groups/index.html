@@ -7,27 +7,24 @@ subnavbar: Overview
 footer: false
 ---
 
-<div class="row">
+<div class="panel-container">
   {% assign sorted_groups = site.groups | sort:'title' %}
   {% for group in sorted_groups %}
-  {% cycle '', '', '', '</div>
-<div class="row">' %}
-  {% capture page %}{{ group }}{% endcapture %}
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">
-          <a href="{{ group.url }}">
-            {{ group.title }}
-          </a>
-        </h2>
-      </div>
-      <div class="panel-body">
-        {% if group.logo %}
-        {% img '{{ group.logo }}' class:"groups-logo img-responsive pull-left" alt:"{{ group.title }} Logo" %}
-        {% endif %}
-        {% if group.short_desc %}{{ group.short_desc }}{% endif %}
-      </div>
+  <div class="card panel-card">
+    <div>
+      <h2 class="panel-title">
+        <a href="{{ group.url }}">
+          {{ group.title }}
+        </a>
+      </h2>
+    </div>
+    <div class="panel-body">
+      {% if group.logo %}
+      <img src='/assets/images/{{ group.logo }}' class="groups-logo img-responsive pull-left"
+        alt="{{ group.title }} Logo" id="{{
+      forloop.index }}"></img>
+      {% endif %}
+      {% if group.short_desc %}{{ group.short_desc }}{% endif %}
     </div>
   </div>
   {% endfor %}

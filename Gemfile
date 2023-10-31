@@ -17,6 +17,7 @@ gem 'jekyll-feed'
 gem 'jekyll-sitemap'
 gem 'jekyll-scholar'
 gem 'liquid-tag-parser'
+gem 'bulma-clean-theme'
 # gem 'jekyll-archives'
 
 gem 'jgd'

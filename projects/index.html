@@ -7,29 +7,26 @@ subnavbar: Overview
 footer: false
 ---
 
-<div class="row">
-{% assign sorted_projects = site.projects | sort:'title' %}  
-{% for project in sorted_projects %}
-  {% cycle '', '', '', '</div><div class="row">' %}
+<div class="panel-container">
+  {% assign sorted_projects = site.projects | sort:'title' %}
+  {% for project in sorted_projects %}
   {% capture page %}{{ project }}{% endcapture %}
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">
-          <a href="{{ project.url }}">
-            {{ project.title }}
-          </a>
-        </h2>
-      </div>
-      <div class="panel-body">
-        {% if project.logo %}
-          {% img '{{ project.logo }}' class:"projects-logo img-responsive pull-left" alt:"{{ project.title }} Logo" %}
-        {% endif %}
-        {% if project.short_desc %}{{ project.short_desc }}{% endif %}
-      </div>
+  <div class="card panel-card">
+    <div>
+      <h2 class="panel-title">
+        <a href="{{ project.url }}">
+          {{ project.title }}
+        </a>
+      </h2>
+    </div>
+    <div class="panel-body">
+      {% if project.logo %}
+      <img src='/assets/images/{{ project.logo }}' class="projects-logo img-responsive pull-left"
+        alt="{{ project.title }} Logo"></img>
+      {% endif %}
+      {% if project.short_desc %}{{ project.short_desc }}{% endif %}
     </div>
   </div>
-{% endfor %}
+  {% endfor %}
+  {% include contribute_footer.html content='project' %}
 </div>
-
-{% include contribute_footer.html content='project' %}

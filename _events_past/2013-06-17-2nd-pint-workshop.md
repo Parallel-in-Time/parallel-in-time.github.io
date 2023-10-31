@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "2nd Workshop on Parallel-in-Time Integration"
 date: 2014-06-16 00:00:00 +0000
 event_location: Manchester, UK

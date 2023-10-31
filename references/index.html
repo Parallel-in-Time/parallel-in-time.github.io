@@ -24,19 +24,31 @@ footer: true
     <div id="total-num-pubs"></div>
   </div>
   <div class="col-md-6 col-sm-12 col-xs-12">
-    <div id="stats-buttons" class="btn-group btn-group-xs btn-group-justified" role="group">
-      <a class="btn btn-xs btn-default" role="button" target="_blank" title="download BibTeX file"
+    <div id="stats-buttons" class="stats-buttons">
+      <a class="button" role="button" target="_blank" title="download BibTeX file"
         href="https://raw.githubusercontent.com/Parallel-in-Time/parallel-in-time.github.io/source/_bibliography/pint.bib">
         <i class="fa fa-fw fa-download"></i> BibTeX
       </a>
     </div>
     <p id="image-download-docu" class="hidden-xs text-muted"></p>
-    <div id="chart-raw-data" class="collapse"></div>
+    <div class="modal" id="json-modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <div style="display: flex; justify-content: end; width: 100%;">
+            <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+          </div>
+        </header>
+        <section class="modal-card-body">
+          <div id="chart-raw-data"></div>
+        </section>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
-    <p class="visible-xs text-warning">Your screen is too small for the diagram to display.</p>
     <canvas id="pint-pubs-chart" class="hidden-xs center-block"></canvas>
   </div>
   <noscript>

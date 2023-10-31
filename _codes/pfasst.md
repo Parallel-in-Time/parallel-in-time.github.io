@@ -1,11 +1,12 @@
 ---
 layout: page_code
+hide_hero: true
 title: "PFASST++"
 date: 2014-06-15 16:45 +0200
 updated: 2015-06-03 10:30:00 +0200
 navbar: Codes
 subnavbar: pfasst
-logo: 
+logo:
 code_url: https://github.com/Parallel-in-Time/PFASST
 language: C++
 github_repo: "Parallel-in-Time/PFASST"
@@ -48,12 +49,12 @@ developers:
 short_desc: A C++ library for SDC, MLSDC and PFASST.
 ---
 
-A modern C++ library for the PFASST algorithm. 
+A modern C++ library for the PFASST algorithm.
 
-The PFASST project is a C++ implementation of the parallel full approximation 
-scheme in space and time (PFASST {% cite EmmettMinion2012 %}) algorithm, which in turn is a time-parallel 
+The PFASST project is a C++ implementation of the parallel full approximation
+scheme in space and time (PFASST {% cite EmmettMinion2012 %}) algorithm, which in turn is a time-parallel
 algorithm for solving ODEs and PDEs.
-It also contains basic implementations of the spectral deferred correction (SDC) 
+It also contains basic implementations of the spectral deferred correction (SDC)
 and multi-level spectral deferred correction (MLSDC) algorithms.
 
 {% bibliography --cited %}

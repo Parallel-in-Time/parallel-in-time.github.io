@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 <div class="post post-project">
   <header class="post-header">
@@ -7,25 +7,25 @@ layout: default
       {{ page.title }}
     </h1>
     {% if page.subtitle %}
-      <h2>{{ page.subtitle }}</h2>
+    <h2>{{ page.subtitle }}</h2>
     {% endif %}
   </header>
   <article class="post-content content">
-    <div class="row">
-      <div class="col-md-8">
+    <div class="columns is-multiline">
+      <div class="column is-7">
         {{ content }}
       </div>
-      <aside class="col-md-4">
+      <aside class="column is-5">
         {% include asides/project_meta.html %}
         {% if page.github_username %}
-          {% include asides/github.html username=page.github_username %}
+        {% include asides/github.html username=page.github_username %}
         {% endif %}
       </aside>
     </div>
   </article>
   {% if page.footer %}
-    <footer>
-      {% include post/date.html %}
-    </footer>
+  <footer>
+    {% include post/date.html %}
+  </footer>
   {% endif %}
 </div>

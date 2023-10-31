@@ -5,11 +5,11 @@ author: "Parallel-in-Time Enthusiasts"
 description: ""
 baseurl: ""
 url: "http://parallel-in-time.org"
+livereload: true
 
 markdown: kramdown
 
 exclude:
-  - vendor/
   - travis_deploy_rsa.enc
   - travis_deploy_rsa.pub
   - .travis.yml
@@ -23,6 +23,10 @@ plugins:
   - jekyll-feed
   - jekyll/scholar
   - jekyll-sitemap
+
+theme: bulma-clean-theme
+footer_menu: footer-entries
+
 
 paginate: 5
 paginate_path: "/news/page:num/"
@@ -52,6 +56,7 @@ assets:
     liquid: true
     automatic_img_size: false
     automatic_img_alt: false
+
 
 collections:
   events_upcoming:

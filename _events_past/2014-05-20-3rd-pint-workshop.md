@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "3rd Workshop on Parallel-in-Time Integration"
 date: 2014-06-16 00:00:00 +0000
 navbar: Events

@@ -1,5 +1,6 @@
 ---
 layout: page_method
+hide_hero: true
 title: Revisionsit Integral Deferred Correction (RIDC)
 subtitle: RIDC
 date: 2015-06-10 17:00:00 +0000
