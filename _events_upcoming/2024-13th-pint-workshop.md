@@ -30,5 +30,5 @@ page_type: event_page
 no_lead: true
 ---
 
-PinT 2024: the 14th Workshop on Parallel-in-time Integration will be hosted in Bruges, Belgium, by professor Giovanni Samaey, professor Stefan Vandewalle and Ward Melis.
+PinT 2024: the 14th Workshop on Parallel-in-time Integration will be hosted in Bruges, Belgium, by Prof. Giovanni Samaey, Prof. Stefan Vandewalle and Dr. Ward Melis.
 Please visit the conference website at  [https://time-x.eu/pint-2024/](https://time-x.eu/pint-2024/) for more information.
