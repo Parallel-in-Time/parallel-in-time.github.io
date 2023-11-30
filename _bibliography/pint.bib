@@ -6582,6 +6582,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{JinEtAl2023,
+	abstract = {The parareal algorithm represents an important class of parallel-in-time algorithms for solving evolution equations and has been widely applied in practice. To achieve effective speedup, the choice of the coarse propagator in the algorithm is vital. In this work, we investigate the use of learned coarse propagators. Building upon the error estimation framework, we present a systematic procedure for constructing coarse propagators that enjoy desirable stability and consistent order. Additionally, we provide preliminary mathematical guarantees for the resulting parareal algorithm. Numerical experiments on a variety of settings, e.g., linear diffusion model, Allen-Cahn model, and viscous Burgers model, show that learning can significantly improve parallel efficiency when compared with the more ad hoc choice of some conventional and widely used coarse propagators.},
+	author = {Bangti Jin and Qingle Lin and Zhi Zhou},
+	howpublished = {arXiv:2311.15320v1 [math.NA]},
+	title = {Learning Coarse Propagators in Parareal Algorithm},
+	url = {http://arxiv.org/abs/2311.15320v1},
+	year = {2023},
+}
+
 @unpublished{KraftEtAl2023,
 	abstract = {Speeding up computationally expensive problems, such as numerical simulations of large micromagnetic systems, requires efficient use of parallel computing infrastructures. While parallelism across space is commonly exploited in micromagnetics, this strategy performs poorly once a minimum number of degrees of freedom per core is reached. We use magnum.pi, a finite-element micromagnetic simulation software, to investigate the Parallel Full Approximation Scheme in Space and Time (PFASST) as a space- and time-parallel solver for the Landau-Lifshitz-Gilbert equation (LLG). Numerical experiments show that PFASST enables efficient parallel-in-time integration of the LLG, significantly improving the speedup gained from using a given number of cores as well as allowing the code to scale beyond spatial limits.},
 	author = {Robert Kraft and Sabri Koraltan and Markus Gattringer and Florian Bruckner and Dieter Suess and Claas Abert},
