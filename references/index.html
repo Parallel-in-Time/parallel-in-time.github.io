@@ -1150,6 +1150,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          Erlangga2023
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseErlangga2023Bibtex"
+                    aria-expanded="false" aria-controls="collapseErlangga2023Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalErlangga2023Abstract"
+                    aria-expanded="false" aria-controls="modalErlangga2023Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="Erlangga2023">Y. A. Erlangga, “Parallel-in-time Multilevel Krylov Methods: A Prototype,” arXiv:2401.00228v1 [math.NA], 2023 [Online]. Available at: <a href="http://arxiv.org/abs/2401.00228v1" target="_blank">http://arxiv.org/abs/2401.00228v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseErlangga2023Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{Erlangga2023,
+  author = {Erlangga, Yogi A.},
+  howpublished = {arXiv:2401.00228v1 [math.NA]},
+  title = {Parallel-in-time Multilevel Krylov Methods: A Prototype},
+  url = {http://arxiv.org/abs/2401.00228v1},
+  year = {2023}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalErlangga2023Abstract" tabindex="-1" role="dialog" aria-labelledby="modalErlangga2023AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalErlangga2023AbstractTitle">
+            Abstract for BibTeX entry <code>Erlangga2023</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          This paper presents a parallel-in-time multilevel iterative method for solving differential algebraic equation, arising from a discretization of linear time-dependent partial differential equation. The core of the method is the multilevel Krylov method, introduced by Erlangga and Nabben \it [SIAM J. Sci. Comput., 30(2008), pp. 1572–1595]. In the method, special time restriction and interpolation operators are proposed to coarsen the time grid and to map functions between fine and coarse time grids. The resulting Galerkin coarse-grid system can be interpreted as time integration of an equivalent differential algebraic equation associated with a larger time step and a modified θ-scheme. A perturbed coarse time-grid matrix is used on the coarsest level to decouple the coarsest-level system, allowing full parallelization of the method. Within this framework, spatial coarsening can be included in a natural way, reducing further the size of the coarsest grid problem to solve. Numerical results are presented for the 1- and 2-dimensional heat equation using \it simulated parallel implementation, suggesting the potential computational speed-up of up to 9 relative to the single-processor implementation and the speed-up of about 3 compared to the sequential θ-scheme.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           FangEtAl2023
         </div>
       </div>
