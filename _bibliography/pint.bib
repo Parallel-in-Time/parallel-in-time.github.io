@@ -6425,6 +6425,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{Erlangga2023,
+	abstract = {This paper presents a parallel-in-time multilevel iterative method for solving differential algebraic equation, arising from a discretization of linear time-dependent partial differential equation. The core of the method is the multilevel Krylov method, introduced by Erlangga and Nabben~{\it [SIAM J. Sci. Comput., 30(2008), pp. 1572--1595]}. In the method, special time restriction and interpolation operators are proposed to coarsen the time grid and to map functions between fine and coarse time grids. The resulting Galerkin coarse-grid system can be interpreted as time integration of an equivalent differential algebraic equation associated with a larger time step and a modified $\theta$-scheme. A perturbed coarse time-grid matrix is used on the coarsest level to decouple the coarsest-level system, allowing full parallelization of the method. Within this framework, spatial coarsening can be included in a natural way, reducing further the size of the coarsest grid problem to solve. Numerical results are presented for the 1- and 2-dimensional heat equation using {\it simulated} parallel implementation, suggesting the potential computational speed-up of up to 9 relative to the single-processor implementation and the speed-up of about 3 compared to the sequential $\theta$-scheme.},
+	author = {Yogi A. Erlangga},
+	howpublished = {arXiv:2401.00228v1 [math.NA]},
+	title = {Parallel-in-time Multilevel Krylov Methods: A Prototype},
+	url = {http://arxiv.org/abs/2401.00228v1},
+	year = {2023},
+}
+
 @article{FangEtAl2023,
 	author = {Liang Fang and Stefan Vandewalle and Johan Meyers},
 	doi = {10.1016/j.jcp.2023.111927},
