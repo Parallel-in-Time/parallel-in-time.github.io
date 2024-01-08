@@ -8,7 +8,7 @@ event_start: 2022-7-11 00:00
 event_end: 2022-7-16 00:00
 event_url: https://www.chairejeanmorlet.com/2642.html
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Martin Gander
     homepage: https://www.unige.ch/~gander/

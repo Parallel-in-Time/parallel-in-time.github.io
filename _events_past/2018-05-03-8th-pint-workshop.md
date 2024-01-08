@@ -8,7 +8,7 @@ event_start: 2019-5-20 00:00
 event_end: 2019-5-24 00:00
 event_url:
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Daniel Ruprecht
     homepage: https://engineering.leeds.ac.uk/staff/741/dr_daniel_ruprecht

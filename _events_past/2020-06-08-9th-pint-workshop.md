@@ -8,7 +8,7 @@ event_start: 2020-6-8 00:00
 event_end: 2020-6-12 00:00
 event_url: http://conferences.math.mtu.edu
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Stephanie Friedhoff
     homepage: https://sites.google.com/site/sfriedhoff13/

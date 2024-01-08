@@ -9,7 +9,7 @@ event_start: 2018-5-2 00:00
 event_end: 2018-5-5 00:00
 event_url: http://www.math.univ-paris13.fr/~japhet/PINT2018
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Yvon Maday
     homepage: https://www.ljll.math.upmc.fr/maday/
