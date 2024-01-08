@@ -3,11 +3,11 @@
 - name: Workshops
   dropdown:
     - name: Overview
-      link: /events/index.html
+      link: /events/
     - name: Upcoming
-      link: /events/upcoming/index.html
+      link: /events/upcoming/
     - name: Past
-      link: /events/past/index.html
+      link: /events/past/
     - name: Bylaws
       link: /events/bylaws.html
     - name: Scientific Committee
@@ -17,13 +17,13 @@
 - name: Research
   dropdown:
     - name: Methods
-      link: /methods/index.html
+      link: /methods/
     - name: Codes
-      link: /codes/index.html
+      link: /codes/
     - name: Groups
-      link: /groups/index.html
+      link: /groups/
     - name: Projects
-      link: /projects/index.html
+      link: /projects/
 - name: References
   link: /references/index.html
 - name: About

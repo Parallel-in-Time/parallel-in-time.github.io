@@ -213,3 +213,15 @@ $primary: #36A9E1;
     display: flex;
     gap: 4px;
 }
+
+.bibtex-entry-container .btn-group-xs {
+    display: inline-block;
+}
+
+.content .bibliography li + li {
+    margin-top: 2rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
