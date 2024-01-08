@@ -51,14 +51,14 @@ $modal-breakpoint: $tablet !default
 
 .modal-content,
 .modal-card
-  margin: 0 $modal-content-margin-mobile
+  margin: 1rem $modal-content-margin-mobile
   max-height: calc(100vh - #{$modal-content-spacing-mobile})
   overflow: auto
   position: relative
   width: 100%
   // Responsiveness
   +from($modal-breakpoint)
-    margin: 0 auto
+    margin: 1rem auto
     max-height: calc(100vh - #{$modal-content-spacing-tablet})
     width: $modal-content-width
 
