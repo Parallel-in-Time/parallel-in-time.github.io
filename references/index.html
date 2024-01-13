@@ -351,6 +351,71 @@
   </div>
   
 </div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          SterckEtAl2024
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseSterckEtAl2024Bibtex"
+                    aria-expanded="false" aria-controls="collapseSterckEtAl2024Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalSterckEtAl2024Abstract"
+                    aria-expanded="false" aria-controls="modalSterckEtAl2024Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="SterckEtAl2024">H. D. Sterck, R. D. Falgout, O. A. Krzysik, and J. B. Schroder, “Parallel-in-time solution of scalar nonlinear conservation laws,” arXiv:2401.04936v1 [math.NA], 2024 [Online]. Available at: <a href="http://arxiv.org/abs/2401.04936v1" target="_blank">http://arxiv.org/abs/2401.04936v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseSterckEtAl2024Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{SterckEtAl2024,
+  author = {Sterck, H. De and Falgout, R. D. and Krzysik, O. A. and Schroder, J. B.},
+  howpublished = {arXiv:2401.04936v1 [math.NA]},
+  title = {Parallel-in-time solution of scalar nonlinear conservation laws},
+  url = {http://arxiv.org/abs/2401.04936v1},
+  year = {2024}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalSterckEtAl2024Abstract" tabindex="-1" role="dialog" aria-labelledby="modalSterckEtAl2024AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSterckEtAl2024AbstractTitle">
+            Abstract for BibTeX entry <code>SterckEtAl2024</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          We consider the parallel-in-time solution of scalar nonlinear conservation laws in one spatial dimension. The equations are discretized in space with a conservative finite-volume method using weighted essentially non-oscillatory (WENO) reconstructions, and in time with high-order explicit Runge-Kutta methods. The solution of the global, discretized space-time problem is sought via a nonlinear iteration that uses a novel linearization strategy in cases of non-differentiable equations. Under certain choices of discretization and algorithmic parameters, the nonlinear iteration coincides with Newton’s method, although, more generally, it is a preconditioned residual correction scheme. At each nonlinear iteration, the linearized problem takes the form of a certain discretization of a linear conservation law over the space-time domain in question. An approximate parallel-in-time solution of the linearized problem is computed with a single multigrid reduction-in-time (MGRIT) iteration. The MGRIT iteration employs a novel coarse-grid operator that is a modified conservative semi-Lagrangian discretization and generalizes those we have developed previously for non-conservative scalar linear hyperbolic problems. Numerical tests are performed for the inviscid Burgers and Buckley–Leverett equations. For many test problems, the solver converges in just a handful of iterations with convergence rate independent of mesh resolution, including problems with (interacting) shocks and rarefactions.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
 </li></ol>
   <div class="row">
   <div class="col-md-offset-4 col-md-4 col-sm-offset-2 col-sm-8 col-xs-12">
