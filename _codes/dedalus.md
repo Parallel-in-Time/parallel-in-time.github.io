@@ -20,7 +20,7 @@ developers:
     email: daniel@leocanet@northwestern.edu
   - name: Ben Brown
     email: bpbrown@colorado.edu
-short_desc: A framework for soöving partial differential equations useing modern spectral methods
+short_desc: A framework for solving partial differential equations useing modern spectral methods
 ---
 
 Dedalus is a flexible framework for solving partial differential equations using modern spectral methods. The code is open-source and developed by a team of researchers studying astrophysical, geophysical, and biological fluid dynamics.
