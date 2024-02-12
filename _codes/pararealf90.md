@@ -1,10 +1,11 @@
 ---
 layout: page_code
+hide_hero: true
 title: "PararealF90"
 date: 2015-09-24 16:45 +0200
 navbar: Codes
 subnavbar: pararealf90
-logo: 
+logo:
 code_url: https://github.com/Parallel-in-Time/PararealF90
 language: F90
 github_repo: "Parallel-in-Time/PararealF90"

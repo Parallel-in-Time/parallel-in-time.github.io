@@ -1,5 +1,6 @@
 ---
 layout: page_method
+hide_hero: true
 title: Parareal
 subtitle: Parareal
 date: 2014-08-12 00:00:00 +0000

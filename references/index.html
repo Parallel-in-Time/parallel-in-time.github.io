@@ -24,19 +24,31 @@ footer: true
     <div id="total-num-pubs"></div>
   </div>
   <div class="col-md-6 col-sm-12 col-xs-12">
-    <div id="stats-buttons" class="btn-group btn-group-xs btn-group-justified" role="group">
-      <a class="btn btn-xs btn-default" role="button" target="_blank" title="download BibTeX file"
-         href="https://raw.githubusercontent.com/Parallel-in-Time/parallel-in-time.github.io/source/_bibliography/pint.bib">
-         <i class="fa fa-fw fa-download"></i> BibTeX
+    <div id="stats-buttons" class="stats-buttons">
+      <a class="button" role="button" target="_blank" title="download BibTeX file"
+        href="https://raw.githubusercontent.com/Parallel-in-Time/parallel-in-time.github.io/source/_bibliography/pint.bib">
+        <i class="fa fa-fw fa-download"></i> BibTeX
       </a>
     </div>
     <p id="image-download-docu" class="hidden-xs text-muted"></p>
-    <div id="chart-raw-data" class="collapse"></div>
+    <div class="modal" id="json-modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <div style="display: flex; justify-content: end; width: 100%;">
+            <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+          </div>
+        </header>
+        <section class="modal-card-body">
+          <div id="chart-raw-data"></div>
+        </section>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
-    <p class="visible-xs text-warning">Your screen is too small for the diagram to display.</p>
     <canvas id="pint-pubs-chart" class="hidden-xs center-block"></canvas>
   </div>
   <noscript>
@@ -52,38 +64,27 @@ footer: true
 {% include references_year_nav.html %}
 
 {% capture todays_year %}
-  {% current_year %}
+{% current_year %}
 {% endcapture %}
 {% for year in (2005..todays_year) reversed %}
-  <h2 id="year{{ year }}" class="year">{{ year }} <span class="count-stat"></span></h2>
+<h2 id="year{{ year }}" class="year">{{ year }} <span class="count-stat"></span></h2>
 
-  {% bibliography --file pint -q @*[year={{ year }}] %}
-  {% include references_year_nav.html %}
+{% bibliography --file pint -q @*[year={{ year }}] %}
+{% include references_year_nav.html %}
 {% endfor %}
 
 
 <h2 id="year0004" class="year">2000 - 2004 <span class="count-stat"></span></h2>
 
-{% bibliography --file pint -q @*[year>=2000 && year<=2004] %}
-{% include references_year_nav.html %}
+{% bibliography --file pint -q @*[year>=2000 && year<=2004] %} {% include references_year_nav.html %} <h2 id="year9599"
+  class="year">1995 - 1999 <span class="count-stat"></span></h2>
 
+  {% bibliography --file pint -q @*[year>=1995 && year<=1999] %} {% include references_year_nav.html %} <h2
+    id="year9094" class="year">1990 - 1994 <span class="count-stat"></span></h2>
 
-<h2 id="year9599" class="year">1995 - 1999 <span class="count-stat"></span></h2>
+    {% bibliography --file pint -q @*[year>=1990 && year<=1994] %} {% include references_year_nav.html %} <h2
+      id="year90" class="year">Pre 1990 <span class="count-stat"></span></h2>
 
-{% bibliography --file pint -q @*[year>=1995 && year<=1999] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year9094" class="year">1990 - 1994 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year>=1990 && year<=1994] %}
-{% include references_year_nav.html %}
-
-
-<h2 id="year90" class="year">Pre 1990 <span class="count-stat"></span></h2>
-
-{% bibliography --file pint -q @*[year<=1989] %}
-{% include references_year_nav.html %}
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js" type="text/javascript"></script>
-{% js bib_stats %}
+      {% bibliography --file pint -q @*[year<=1989] %} {% include references_year_nav.html %} <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js" type="text/javascript">
+        </script>

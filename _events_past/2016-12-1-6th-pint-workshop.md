@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: 6th Conference on Parallel-in-Time Integration
 date: 2016-12-1 00:00:00 +0000
 updated: 2016-12-1 08:32:00 +0100
@@ -30,4 +31,4 @@ page_type: event_page
 no_lead: true
 ---
 
-The Sixth Parallel-in-time Integration Conference will be held at the [Centro Congressi Stefano Franscini](http://www.csf.ethz.ch/) in [Ascona/Locarno](https://goo.gl/maps/zFmKhLY6BW32) in Switzerland. 
+The Sixth Parallel-in-time Integration Conference will be held at the [Centro Congressi Stefano Franscini](http://www.csf.ethz.ch/) in [Ascona/Locarno](https://goo.gl/maps/zFmKhLY6BW32) in Switzerland.

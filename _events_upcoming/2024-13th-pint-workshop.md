@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "PinT 2024: 13th Workshop on Parallel-in-Time Integration"
 date: 2023-11-02 12:00:00 +0000
 event_location: Bruges, Belgium

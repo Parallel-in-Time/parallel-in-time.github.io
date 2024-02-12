@@ -1,5 +1,6 @@
 ---
 layout: page_group
+hide_hero: true
 title: "Institute of Computational Science"
 date: 2014-06-12 16:00:00 +0100
 navbar: Groups
@@ -16,7 +17,7 @@ members_retired:
     email: d.ruprecht@leeds.ac.uk
   - name: Dr. Andreas Kreienbuehl
     email: andreas.kreienbuehl@usi.ch
-short_desc: 
+short_desc:
 ---
 
 Group _High Performance Methods for Numerical Simulation in Science, Medicine and Engineering_.

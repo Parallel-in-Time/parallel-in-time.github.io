@@ -7,29 +7,25 @@ subnavbar: Overview
 footer: false
 ---
 
-<div class="row">
-{% assign sorted_codes = site.codes | sort:'title' %}  
-{% for code in sorted_codes %}
-  {% cycle '', '', '', '</div><div class="row">' %}
+<div class="panel-container">
+  {% assign sorted_codes = site.codes | sort:'title' %}
+  {% for code in sorted_codes %}
   {% capture page %}{{ code }}{% endcapture %}
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">
-          <a href="{{ code.url }}">
-            {{ code.title }}
-          </a>
-        </h2>
-      </div>
-      <div class="panel-body">
-        {% if code.logo %}
-          {% img '{{ code.logo }}' class:"codes-logo img-responsive pull-left" alt:"{{ code.title }} Logo" %}
-        {% endif %}
-        {% if code.short_desc %}{{ code.short_desc }}{% endif %}
-      </div>
+  <div class="card panel-card">
+    <div>
+      <h2 class="panel-title">
+        <a href="{{ code.url }}">
+          {{ code.title }}
+        </a>
+      </h2>
+    </div>
+    <div class="panel-body">
+      {% if code.logo %}
+      {% img '{{ code.logo }}' class:"codes-logo img-responsive pull-left" alt:"{{ code.title }} Logo" %}
+      {% endif %}
+      {% if code.short_desc %}{{ code.short_desc }}{% endif %}
     </div>
   </div>
-{% endfor %}
+  {% endfor %}
+  {% include contribute_footer.html content='code' %}
 </div>
-
-{% include contribute_footer.html content='code' %}

@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "PinT 2020: 9th Workshop on Parallel-in-Time Integration"
 date: 2018-05-12 08:00:00 +0000
 event_location: Houghton, Michigan, USA
@@ -17,7 +18,7 @@ organizers:
     homepage: https://www.mathgeek.us
   - name: Kenji Ono
     homepage: http://mercury.cc.kyushu-u.ac.jp/
-  - name: Debasmita Samaddar   
+  - name: Debasmita Samaddar
   - name: Jacob B. Schroder
     homepage: https://math.unm.edu/~schroder/
   - name: Jemma Shipton

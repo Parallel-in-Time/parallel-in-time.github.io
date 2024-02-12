@@ -1,0 +1,8 @@
+- name: Imprint
+  link: /about/imprint.html
+- name: Privacy Policy
+  link: https://help.github.com/articles/github-privacy-statement/
+- name: Sources
+  link: https://github.com/Parallel-in-Time/parallel-in-time.github.io
+- name: Found a Typo?
+  link: https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues

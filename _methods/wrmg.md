@@ -1,5 +1,6 @@
 ---
 layout: page_method
+hide_hero: true
 title: Space-time concurrent multigrid waveform relaxation (WRMG)
 subtitle: WRMG
 date: 2015-07-01 17:00:00 +0000

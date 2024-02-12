@@ -1,10 +1,11 @@
 ---
 layout: page_code
+hide_hero: true
 title: "pySDC"
 date: 2015-06-03 10:45:00 +0200
 navbar: Codes
 subnavbar: pysdc
-logo: 
+logo:
 code_url: http://www.parallelintime.org/pySDC/
 language: Python
 github_repo: "Parallel-in-Time/pySDC"

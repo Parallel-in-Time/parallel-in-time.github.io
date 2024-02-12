@@ -2,39 +2,35 @@
 {% assign current_base = current_base_arr | first %}
 {% assign current_base_size = current_base | size %}
 
-{% capture event_index_url %}{% if current_base_size == 0 %}{{ page.url | strip }}{% else %}/events/{{ current_base | strip }}{% endif %}/{% endcapture %}
+{% capture event_index_url %}{% if current_base_size == 0 %}{{ page.url | strip }}{% else %}/events/{{ current_base |
+strip }}{% endif %}/{% endcapture %}
 
 <nav id="subnav" class="clearfix" role="navigation">
   <ul class="nav nav-tabs">
-    <li role="presentation"{% if event_index_url == page.url %} class="active"{% endif %}>
+    <li role="presentation" {% if event_index_url==page.url %} class="active" {% endif %}>
       <a href="{{ event_index_url }}">Event's Main Page</a>
     </li>
     {% assign sorted_pages = site.events_upcoming | sort:'subtitle' %}
     {% for subpage in sorted_pages %}
-      {% unless subpage.page_type == 'event_page' %}
-        {% assign subpage_url_arr = subpage.url | split:'/' %}
-        {% if subpage_url_arr contains current_base %}
-          <li role="presentation"{% if subpage.url == page.url %} class="active"{% endif %}>
-            <a href="{{ subpage.url }}">{{ subpage.subtitle }}</a>
-          </li>
-        {% endif %}
-      {% endunless %}
+    {% unless subpage.page_type == 'event_page' %}
+    {% assign subpage_url_arr = subpage.url | split:'/' %}
+    {% if subpage_url_arr contains current_base %}
+    <li role="presentation" {% if subpage.url==page.url %} class="active" {% endif %}>
+      <a href="{{ subpage.url }}">{{ subpage.subtitle }}</a>
+    </li>
+    {% endif %}
+    {% endunless %}
     {% endfor %}
     {% assign sorted_pages = site.events_past | sort:'subtitle' %}
     {% for subpage in sorted_pages %}
-      {% unless subpage.page_type == 'event_page' %}
-        {% assign subpage_url_arr = subpage.url | split:'/' %}
-        {% if subpage_url_arr contains current_base %}
-          <li role="presentation"{% if subpage.url == page.url %} class="active"{% endif %}>
-            <a href="{{ subpage.url }}">{{ subpage.subtitle }}</a>
-          </li>
-        {% endif %}
-      {% endunless %}
-    {% endfor %}
-    <li id="show-meta-aside-wrapper" role="presentation">
-      <a class="invisible" id="show-meta-aside" role="button" title="Show Profile" data-toggle="tooltip">
-        <i class="fa fa-fw fa-info"></i>
-      </a>
+    {% unless subpage.page_type == 'event_page' %}
+    {% assign subpage_url_arr = subpage.url | split:'/' %}
+    {% if subpage_url_arr contains current_base %}
+    <li role="presentation" {% if subpage.url==page.url %} class="active" {% endif %}>
+      <a href="{{ subpage.url }}">{{ subpage.subtitle }}</a>
     </li>
+    {% endif %}
+    {% endunless %}
+    {% endfor %}
   </ul>
 </nav>

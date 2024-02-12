@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "PinT 2021: 10th Workshop on Parallel-in-Time Integration"
 date: 2018-05-12 08:00:00 +0000
 event_location: Virtual

@@ -1,31 +1,28 @@
 ---
-layout: default
+layout: page
+hide_hero: true
 ---
 <div class="post post-event">
-  <div class="row">
-    <header class="col-sm-12 post-header">
-      <h1>{{ page.title }}</h1>
-    </header>
-  </div>
-  <article class="post-content"
-           data-with-lead="{% if page.no_lead %}false{% else %}true{% endif %}"
-           data-page-type="{{ page.page_type }}">
-    <div class="row">
-      <div class="col-lg-7 col-sm-12 content" id="main-content">
+  <article class="post-content" data-with-lead="{% if page.no_lead %}false{% else %}true{% endif %}"
+    data-page-type="{{ page.page_type }}">
+    <div class="columns is-multiline">
+      <div class="column is-7" id="main-content">
+        <h1>{{ page.title }}</h1>
         {% include asides/event_subnav.html %}
         {% if page.subtitle %}
-          <h2>{{ page.subtitle }}</h2>
+        <h2>{{ page.subtitle }}</h2>
         {% endif %}
         {{ content }}
       </div>
-      <aside class="col-lg-5 col-sm-12 collapse in" id="meta-aside">
+      <aside class="column is-5-desktop is-5-tablet" id="meta-aside">
         {% include asides/event_meta.html %}
       </aside>
     </div>
   </article>
+
   {% if page.footer %}
-    <footer>
-      {% include post/date.html %}
-    </footer>
+  <footer>
+    {% include post/date.html %}
+  </footer>
   {% endif %}
 </div>

@@ -4,65 +4,62 @@
   </div>
   <div class="panel-body">
     {% if page.logo %}
-      <div class="row">
-        <div class="col-md-12 logo">
-          {% img '{{ page.logo }}' alt:"{{ page.title }} Logo" %}
-        </div>
+    <div class="event-meta-row">
+      <div class="col-md-12 logo">
+        {% img '{{ page.logo }}' alt:"{{ page.title }} Logo" %}
       </div>
-      <br>
-    {% endif %}    
+    </div>
+    <br>
+    {% endif %}
     {% if page.project_url %}
-      <div class="row">
-        <label class="col-md-4 control-label">Homepage</label>
-        <div class="col-md-8">
-          {% if page.project_url | size > 0 %}
-            <a href="{{ page.project_url }}" target="_blank"
-               title="Project's homepage"
-               data-toggle="tooltip"
-               role="button">
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Homepage</label>
+      <div class="col-md-8">
+        {% if page.project_url | size > 0 %}
+        <a href="{{ page.project_url }}" target="_blank" title="Project's homepage" data-toggle="tooltip" role="button">
           {% else %}
-            <button class="btn btn-sm btn-link" disabled
-                    title="Project's homepage not available" data-toggle="tooltip">
-          {% endif %}
+          <button class="btn btn-sm btn-link" disabled title="Project's homepage not available" data-toggle="tooltip">
+            {% endif %}
             <i class="fa fa-fw fa-globe"></i>
-          {% if page.project_url | size > 0 %}
-            </a>
-          {% else %}
-            </button>
-          {% endif %}
-          <!-- <a href="{{ page.project_url }}">{{ page.project_url | trim_url }}</a> -->
-        </div>
+            {% if page.project_url | size > 0 %}
+        </a>
+        {% else %}
+        </button>
+        {% endif %}
+        <!-- <a href="{{ page.project_url }}">{{ page.project_url | trim_url }}</a> -->
       </div>
+    </div>
     {% endif %}
     {% if page.project_address %}
-      <div class="row">
-        <label class="col-md-4 control-label">Address</label>
-        <div class="col-md-8">
-          <address>{{ page.project_address }}</address>
-        </div>
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Address</label>
+      <div class="col-md-8">
+        <address>{{ page.project_address }}</address>
       </div>
+    </div>
     {% endif %}
     {% if page.members %}
-      <div class="row">
-        <label class="col-md-4 control-label">Members</label>
-        <div class="col-md-8">
-          {% for member in page.members %}
-            <span class="clearfix">
-              {{ member.name }}
-              {% if member.email or member.corresponding %}
-                <span class="pull-right">
-                  {% if member.corresponding %}
-                    <a href="#" title="Group Head"><i class="fa fa-graduation-cap fa-fw"></i></a>
-                  {% endif %}
-                  {% if member.email %}
-                    <a href="mailto:{{ member.email }}" title="email: {{ member.email }}"><i class="fa fa-envelope-o fa-fw"></i></a>
-                  {% endif %}
-                </span>
-              {% endif %}
-            </span>
-          {% endfor %}
-        </div>
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Members</label>
+      <div class="col-md-8">
+        {% for member in page.members %}
+        <span class="clearfix">
+          {{ member.name }}
+          {% if member.email or member.corresponding %}
+          <span class="pull-right">
+            {% if member.corresponding %}
+            <a href="#" title="Group Head"><i class="fa fa-graduation-cap fa-fw"></i></a>
+            {% endif %}
+            {% if member.email %}
+            <a href="mailto:{{ member.email }}" title="email: {{ member.email }}"><i
+                class="fa fa-envelope-o fa-fw"></i></a>
+            {% endif %}
+          </span>
+          {% endif %}
+        </span>
+        {% endfor %}
       </div>
+    </div>
     {% endif %}
   </div>
 </section>

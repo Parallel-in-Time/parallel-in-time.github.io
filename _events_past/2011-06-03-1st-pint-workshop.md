@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "1st Workshop on Parallel-in-Time Integration"
 date: 2014-06-16 00:00:00 +0000
 event_url: https://www.ics.usi.ch/index.php/about/event/details/19-parallel-in-time-integration-schemes

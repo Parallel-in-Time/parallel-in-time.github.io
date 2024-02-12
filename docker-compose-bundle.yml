@@ -1,0 +1,11 @@
+version: '3'
+services:
+  jekyll:
+    image: ruby:3.2.2
+    working_dir: /usr/src/app
+    volumes:
+      - "$PWD:/usr/src/app"
+    command: >
+      bash -c "
+      bundle config set --local path '/usr/src/app/vendor' &&
+      bundle install"

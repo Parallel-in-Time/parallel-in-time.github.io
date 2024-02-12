@@ -1,21 +1,26 @@
+---
+layout: page
+
+hide_hero: true
+---
+
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-    <main>
-      <div class="jumbotron">
-        <div class="container">
-          <h1>Parallel-in-Time</h1>
-          <p>About Parallel-in-Time Methods</p>
-        </div>
-      </div>
+{% include head.html %}
 
+<body>
+  <main>
+    <div class="jumbotron">
       <div class="container">
-        {{ content | expand_urls: root_url }}
+        <h1>Parallel-in-Time</h1>
+        <p>About Parallel-in-Time Methods</p>
       </div>
-    </main>
-    {% include footer.html %}
-    {% include after_footer.html %}
-  </body>
+    </div>
+
+    <div class="container">
+      {{ content | expand_urls: root_url }}
+    </div>
+  </main>
+</body>
+
 </html>

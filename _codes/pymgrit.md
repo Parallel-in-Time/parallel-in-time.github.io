@@ -1,10 +1,11 @@
 ---
 layout: page_code
+hide_hero: true
 title: "PyMGRIT"
 date: 2020-10-26 19:40:00 +0200
 navbar: Codes
 subnavbar: pymgrit
-logo: 
+logo:
 code_url: https://pymgrit.github.io/pymgrit/
 language: Python
 github_repo: "pymgrit/pymgrit"

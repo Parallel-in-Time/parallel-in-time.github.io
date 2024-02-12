@@ -7,26 +7,22 @@ subnavbar: Overview
 footer: false
 ---
 
-<div class="row">
-{% assign sorted_methods = site.methods | sort:'title' %}  
-{% for method in sorted_methods %}
-  {% cycle '', '', '', '</div><div class="row">' %}
+<div class="panel-container">
+  {% assign sorted_methods = site.methods | sort:'title' %}
+  {% for method in sorted_methods %}
   {% capture page %}{{ method }}{% endcapture %}
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">
-          <a href="{{ method.url }}">
-            {{ method.title }}
-          </a>
-        </h2>
-      </div>
-      <div class="panel-body">
-        {% if method.short_desc %}{{ method.short_desc }}{% endif %}
-      </div>
+  <div class="card panel-card">
+    <div>
+      <h2 class="panel-title">
+        <a href="{{ method.url }}">
+          {{ method.title }}
+        </a>
+      </h2>
+    </div>
+    <div class="panel-body">
+      {% if method.short_desc %}{{ method.short_desc }}{% endif %}
     </div>
   </div>
-{% endfor %}
+  {% endfor %}
+  {% include contribute_footer.html content='method' %}
 </div>
-
-{% include contribute_footer.html content='method' %}
