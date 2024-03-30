@@ -7005,3 +7005,12 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	volume = {423},
 	year = {2024},
 }
+
+@unpublished{ČaklovićEtAl2024,
+	abstract = {Parallel-across-the method time integration can provide small scale parallelism when solving initial value problems. Spectral deferred corrections (SDC) with a diagonal sweeper, which is closely related to iterated Runge-Kutta methods proposed by Van der Houwen and Sommeijer, can use a number of threads equal to the number of quadrature nodes in the underlying collocation method. However, convergence speed, efficiency and stability depends critically on the used coefficients. Previous approaches have used numerical optimization to find good parameters. Instead, we propose an ansatz that allows to find optimal parameters analytically. We show that the resulting parallel SDC methods provide stability domains and convergence order very similar to those of well established serial SDC variants. Using a model for computational cost that assumes 80% efficiency of an implementation of parallel SDC we show that our variants are competitive with serial SDC, previously published parallel SDC coefficients as well as Picard iteration, explicit RKM-4 and an implicit fourth-order diagonally implicit Runge-Kutta method.},
+	author = {Gayatri Čaklović and Thibaut Lunet and Sebastian Götschel and Daniel Ruprecht},
+	howpublished = {arXiv:2403.18641v1 [math.NA]},
+	title = {Improving Efficiency of Parallel Across the Method Spectral Deferred Corrections},
+	url = {http://arxiv.org/abs/2403.18641v1},
+	year = {2024},
+}
