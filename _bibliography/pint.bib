@@ -6903,6 +6903,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{FreeseEtAl2024,
+	abstract = {We investigate parallel performance of parallel spectral deferred corrections, a numerical approach that provides small-scale parallelism for the numerical solution of initial value problems. The scheme is applied to the shallow water equation and uses an IMEX splitting that integrates fast modes implicitly and slow modes explicitly in order to be efficient. We describe parallel $\texttt{OpenMP}$-based implementations of parallel SDC in two well established simulation codes: the finite volume based operational ocean model $\texttt{ICON-O}$ and the spherical harmonics based research code $\texttt{SWEET}$. The implementations are benchmarked on a single node of the JUSUF ($\texttt{SWEET}$) and JUWELS ($\texttt{ICON-O}$) system at J\"ulich Supercomputing Centre. We demonstrate a reduction of time-to-solution across a range of accuracies. For $\texttt{ICON-O}$, we show speedup over the currently used Adams--Bashforth-2 integrator with $\texttt{OpenMP}$ loop parallelization. For $\texttt{SWEET}$, we show speedup over serial spectral deferred corrections and a second order implicit-explicit integrator.},
+	author = {Philip Freese and Sebastian Götschel and Thibaut Lunet and Daniel Ruprecht and Martin Schreiber},
+	howpublished = {arXiv:2403.20135v1 [cs.CE]},
+	title = {Parallel performance of shared memory parallel spectral deferred corrections},
+	url = {http://arxiv.org/abs/2403.20135v1},
+	year = {2024},
+}
+
 @article{JanssensEtAl2024,
 	author = {Janssens, N. and Meyers, J.},
 	doi = {10.1016/j.cpc.2023.109019},
