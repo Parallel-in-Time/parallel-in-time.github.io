@@ -246,6 +246,71 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          FreeseEtAl2024
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-group btn-group-xs btn-group-justified" role="group">
+          <div class="btn-group btn-group-xs" role="group">
+            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseFreeseEtAl2024Bibtex"
+                    aria-expanded="false" aria-controls="collapseFreeseEtAl2024Bibtex">
+              BibTeX
+            </button>
+          </div>
+          <div class="btn-group btn-group-xs" role="group">
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalFreeseEtAl2024Abstract"
+                    aria-expanded="false" aria-controls="modalFreeseEtAl2024Abstract">
+              Abstract
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="FreeseEtAl2024">P. Freese, S. Götschel, T. Lunet, D. Ruprecht, and M. Schreiber, “Parallel performance of shared memory parallel spectral deferred corrections,” arXiv:2403.20135v1 [cs.CE], 2024 [Online]. Available at: <a href="http://arxiv.org/abs/2403.20135v1" target="_blank">http://arxiv.org/abs/2403.20135v1</a></span>
+    </div>
+  </div>
+  <div class="collapse" id="collapseFreeseEtAl2024Bibtex">
+    <div class="row">
+      <div class="col-md-12">
+        <pre class="abstract">@unpublished{FreeseEtAl2024,
+  author = {Freese, Philip and Götschel, Sebastian and Lunet, Thibaut and Ruprecht, Daniel and Schreiber, Martin},
+  howpublished = {arXiv:2403.20135v1 [cs.CE]},
+  title = {Parallel performance of shared memory parallel spectral deferred corrections},
+  url = {http://arxiv.org/abs/2403.20135v1},
+  year = {2024}
+}
+</pre>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modalFreeseEtAl2024Abstract" tabindex="-1" role="dialog" aria-labelledby="modalFreeseEtAl2024AbstractTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalFreeseEtAl2024AbstractTitle">
+            Abstract for BibTeX entry <code>FreeseEtAl2024</code>
+          </h4>
+        </div>
+        <div class="modal-body">
+          We investigate parallel performance of parallel spectral deferred corrections, a numerical approach that provides small-scale parallelism for the numerical solution of initial value problems. The scheme is applied to the shallow water equation and uses an IMEX splitting that integrates fast modes implicitly and slow modes explicitly in order to be efficient. We describe parallel \textttOpenMP-based implementations of parallel SDC in two well established simulation codes: the finite volume based operational ocean model \textttICON-O and the spherical harmonics based research code \textttSWEET. The implementations are benchmarked on a single node of the JUSUF (\textttSWEET) and JUWELS (\textttICON-O) system at Jülich Supercomputing Centre. We demonstrate a reduction of time-to-solution across a range of accuracies. For \textttICON-O, we show speedup over the currently used Adams–Bashforth-2 integrator with \textttOpenMP loop parallelization. For \textttSWEET, we show speedup over serial spectral deferred corrections and a second order implicit-explicit integrator.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           JanssensEtAl2024
         </div>
       </div>
