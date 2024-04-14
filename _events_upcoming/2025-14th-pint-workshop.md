@@ -3,8 +3,8 @@ layout: page_event
 title: "PinT 2025: 14th Workshop on Parallel-in-Time Integration"
 date: 2024-04-13 12:00:00 +0000
 event_location: Edinburgh, UK
-event_start: 2025-08-07 00:00
-event_end: 2027-08-11 24:00
+event_start: 2025-07-07 00:00
+event_end: 2025-07-11 24:00
 event_url: 
 navbar: Events
 subnavbar: Upcoming
