@@ -6903,6 +6903,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@article{CaoEtAl2024,
+	author={Cao, Ruixia and Hou, Shangjun and Ma, Lin},
+	journal={IEEE Access}, 
+	title={A Pipeline-Based ODE Solving Framework}, 
+	year={2024},
+	volume={12},
+	number={},
+	pages={37995-38004},
+	doi={10.1109/ACCESS.2024.3375305},
+	abstract={The traditional parallel solving methods of ordinary differential equations (ODE) are mainly classified into task-parallelism, data-parallelism, and instruction-level parallelism. Based on the RIDC (revisionist integral deferred correction) algorithm, a hybrid solver dispatched on both CPU and GPU is proposed, which realizes computing in a pipeline form and a remarkable parallelism is obtained both inside a single equation and among many different equations. The proposed framework can make full use of the multi-core advantage of GPU, which is conducive to load balancing within computing nodes. The efficiency and accuracy of the framework are verified in several experiments.},  
+}
+  
 @unpublished{FreeseEtAl2024,
 	abstract = {We investigate parallel performance of parallel spectral deferred corrections, a numerical approach that provides small-scale parallelism for the numerical solution of initial value problems. The scheme is applied to the shallow water equation and uses an IMEX splitting that integrates fast modes implicitly and slow modes explicitly in order to be efficient. We describe parallel $\texttt{OpenMP}$-based implementations of parallel SDC in two well established simulation codes: the finite volume based operational ocean model $\texttt{ICON-O}$ and the spherical harmonics based research code $\texttt{SWEET}$. The implementations are benchmarked on a single node of the JUSUF ($\texttt{SWEET}$) and JUWELS ($\texttt{ICON-O}$) system at J\"ulich Supercomputing Centre. We demonstrate a reduction of time-to-solution across a range of accuracies. For $\texttt{ICON-O}$, we show speedup over the currently used Adams--Bashforth-2 integrator with $\texttt{OpenMP}$ loop parallelization. For $\texttt{SWEET}$, we show speedup over serial spectral deferred corrections and a second order implicit-explicit integrator.},
 	author = {Philip Freese and Sebastian Götschel and Thibaut Lunet and Daniel Ruprecht and Martin Schreiber},
