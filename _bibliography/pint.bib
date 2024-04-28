@@ -7034,6 +7034,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@article{YodaEtAl2024,
+	author = {Yoda, Ryo and Bolten, Matthias and Nakajima, Kengo and Fujii, Akihiro},
+	doi = {10.1007/s13160-024-00652-8},
+	issn = {1868-937X},
+	journal = {Japan Journal of Industrial and Applied Mathematics},
+	month = {April},
+	publisher = {Springer Science and Business Media LLC},
+	title = {Coarse-grid operator optimization in multigrid reduction in time for time-dependent Stokes and Oseen problems},
+	url = {http://dx.doi.org/10.1007/s13160-024-00652-8},
+	year = {2024},
+}
+
 @unpublished{ZhaoEtAl2024,
 	abstract = {The Crank-Nicolson (CN) method is a well-known time integrator for evolutionary partial differential equations (PDEs) arising in many real-world applications. Since the solution at any time depends on the solution at previous time steps, the CN method will be inherently difficult to parallelize. In this paper, we consider a parallel method for the solution of evolutionary PDEs with the CN scheme. Using an all-at-once approach, we can solve for all time steps simultaneously using a parallelizable over time preconditioner within a standard iterative method. Due to the diagonalization of the proposed preconditioner, we can prove that most eigenvalues of preconditioned matrices are equal to 1 and the others lie in the set: $\left\{z\in\mathbb{C}: 1/(1 + \alpha) < |z| < 1/(1 - \alpha)~{\rm and}~\Re{e}(z) > 0\right\}$, where $0 < \alpha < 1$ is a free parameter. Meanwhile, the efficient implementation of this proposed preconditioner is described and a mesh-independent convergence rate of the preconditioned GMRES method is derived under certain conditions. Finally, we will verify our theoretical findings via numerical experiments on financial option pricing partial differential equations.},
 	author = {Yong-Liang Zhao and Xian-Ming Gu and Cornelis W. Oosterlee},
