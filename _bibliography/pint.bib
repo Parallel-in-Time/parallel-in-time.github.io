@@ -6924,6 +6924,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{GattiglioEtAl2024,
+	abstract = {With the advent of supercomputers, multi-processor environments and parallel-in-time (PinT) algorithms offer ways to solve initial value problems for ordinary and partial differential equations (ODEs and PDEs) over long time intervals, a task often unfeasible with sequential solvers within realistic time frames. A recent approach, GParareal, combines Gaussian Processes with traditional PinT methodology (Parareal) to achieve faster parallel speed-ups. The method is known to outperform Parareal for low-dimensional ODEs and a limited number of computer cores. Here, we present Nearest Neighbors GParareal (nnGParareal), a novel data-enriched PinT integration algorithm. nnGParareal builds upon GParareal by improving its scalability properties for higher-dimensional systems and increased processor count. Through data reduction, the model complexity is reduced from cubic to log-linear in the sample size, yielding a fast and automated procedure to integrate initial value problems over long time intervals. First, we provide both an upper bound for the error and theoretical details on the speed-up benefits. Then, we empirically illustrate the superior performance of nnGParareal, compared to GParareal and Parareal, on nine different systems with unique features (e.g., stiff, chaotic, high-dimensional, or challenging-to-learn systems).},
+	author = {Guglielmo Gattiglio and Lyudmila Grigoryeva and Massimiliano Tamborrino},
+	howpublished = {arXiv:2405.12182v1 [stat.CO]},
+	title = {Nearest Neighbors GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers},
+	url = {http://arxiv.org/abs/2405.12182v1},
+	year = {2024},
+}
+
 @unpublished{GuEtAl2024,
 	abstract = {For pricing American options, %after suitable discretization in space and time, a sequence of discrete linear complementarity problems (LCPs) or equivalently Hamilton-Jacobi-Bellman (HJB) equations need to be solved in a sequential time-stepping manner. In each time step, the policy iteration or its penalty variant is often applied due to their fast convergence rates. In this paper, we aim to solve for all time steps simultaneously, by applying the policy iteration to an ``all-at-once form" of the HJB equations, where two different parallel-in-time preconditioners are proposed to accelerate the solution of the linear systems within the policy iteration. Our proposed methods are generally applicable for such all-at-once forms of the HJB equation, arising from option pricing problems with optimal stopping and nontrivial underlying asset models. Numerical examples are presented to show the feasibility and robust convergence behavior of the proposed methodology.},
 	author = {Xian-Ming Gu and Jun Liu and Cornelis W. Oosterlee},
