@@ -6942,6 +6942,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{HeinzelreiterEtAl2024,
+	abstract = {We derive a new parallel-in-time approach for solving large-scale optimization problems constrained by time-dependent partial differential equations arising from fluid dynamics. The solver involves the use of a block circulant approximation of the original matrices, enabling parallelization-in-time via the use of fast Fourier transforms, and we devise bespoke matrix approximations which may be applied within this framework. These make use of permutations, saddle-point approximations, commutator arguments, as well as inner solvers such as the Uzawa method, Chebyshev semi-iteration, and multigrid. Theoretical results underpin our strategy of applying a block circulant strategy, and numerical experiments demonstrate the effectiveness and robustness of our approach on Stokes and Oseen problems. Noteably, satisfying results for the strong and weak scaling of our methods are provided within a fully parallel architecture.},
+	author = {Bernhard Heinzelreiter and John W. Pearson},
+	howpublished = {arXiv:2405.18964v1 [math.NA]},
+	title = {Diagonalization-Based Parallel-in-Time Preconditioners for Instationary Fluid Flow Control Problems},
+	url = {http://arxiv.org/abs/2405.18964v1},
+	year = {2024},
+}
+
 @unpublished{IbrahimEtAl2024,
 	abstract = {Iterative parallel-in-time algorithms like Parareal can extend scaling beyond the saturation of purely spatial parallelization when solving initial value problems. However, they require the user to build coarse models to handle the inevitably serial transport of information in time.This is a time consuming and difficult process since there is still only limited theoretical insight into what constitutes a good and efficient coarse model. Novel approaches from machine learning to solve differential equations could provide a more generic way to find coarse level models for parallel-in-time algorithms. This paper demonstrates that a physics-informed Fourier Neural Operator (PINO) is an effective coarse model for the parallelization in time of the two-asset Black-Scholes equation using Parareal. We demonstrate that PINO-Parareal converges as fast as a bespoke numerical coarse model and that, in combination with spatial parallelization by domain decomposition, it provides better overall speedup than both purely spatial parallelization and space-time parallelizaton with a numerical coarse propagator.},
 	author = {Abdul Qadir Ibrahim and Sebastian Götschel and Daniel Ruprecht},
@@ -7040,6 +7049,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Stochastic Power System Dynamic Simulation Using Parallel-in-Time Algorithm},
 	url = {http://dx.doi.org/10.1109/ACCESS.2024.3367358},
 	volume = {12},
+	year = {2024},
+}
+
+@unpublished{SarpeEtAl2024,
+	abstract = {This paper proposes the utilization of a periodic Parareal with a periodic coarse problem to efficiently perform adjoint sensitivity analysis for the steady state of time-periodic nonlinear circuits. In order to implement this method, a modified formulation for adjoint sensitivity analysis based on the transient approach is derived.},
+	author = {Julian Sarpe and Andreas Klaedtke and Herbert De Gersem},
+	howpublished = {arXiv:2405.19048v1 [math.NA]},
+	title = {Periodic Adjoint Sensitivity Analysis},
+	url = {http://arxiv.org/abs/2405.19048v1},
 	year = {2024},
 }
 
