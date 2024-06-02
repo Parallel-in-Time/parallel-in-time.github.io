@@ -6951,6 +6951,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@article{HuangEtAl2024,
+	author = {Huang, Jianguo and Ju, Lili and Xu, Yuejin},
+	doi = {10.1002/num.23116},
+	issn = {1098-2426},
+	journal = {Numerical Methods for Partial Differential Equations},
+	month = {May},
+	publisher = {Wiley},
+	title = {A parareal exponential integrator finite element method for semilinear parabolic equations},
+	url = {http://dx.doi.org/10.1002/num.23116},
+	year = {2024},
+}
+
 @unpublished{IbrahimEtAl2024,
 	abstract = {Iterative parallel-in-time algorithms like Parareal can extend scaling beyond the saturation of purely spatial parallelization when solving initial value problems. However, they require the user to build coarse models to handle the inevitably serial transport of information in time.This is a time consuming and difficult process since there is still only limited theoretical insight into what constitutes a good and efficient coarse model. Novel approaches from machine learning to solve differential equations could provide a more generic way to find coarse level models for parallel-in-time algorithms. This paper demonstrates that a physics-informed Fourier Neural Operator (PINO) is an effective coarse model for the parallelization in time of the two-asset Black-Scholes equation using Parareal. We demonstrate that PINO-Parareal converges as fast as a bespoke numerical coarse model and that, in combination with spatial parallelization by domain decomposition, it provides better overall speedup than both purely spatial parallelization and space-time parallelizaton with a numerical coarse propagator.},
 	author = {Abdul Qadir Ibrahim and Sebastian Götschel and Daniel Ruprecht},
@@ -7076,6 +7088,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2404.13333v1 [cs.CE]},
 	title = {Parallel-in-Time Integration of Transient Phenomena in No-Insulation Superconducting Coils Using Parareal},
 	url = {http://arxiv.org/abs/2404.13333v1},
+	year = {2024},
+}
+
+@unpublished{SouzaEtAl2024,
+	abstract = {Simulation of the monodomain equation, crucial for modeling the heart's electrical activity, faces scalability limits when traditional numerical methods only parallelize in space. To optimize the use of large multi-processor computers by distributing the computational load more effectively, time parallelization is essential. We introduce a high-order parallel-in-time method addressing the substantial computational challenges posed by the stiff, multiscale, and nonlinear nature of cardiac dynamics. Our method combines the semi-implicit and exponential spectral deferred correction methods, yielding a hybrid method that is extended to parallel-in-time employing the PFASST framework. We thoroughly evaluate the stability, accuracy, and robustness of the proposed parallel-in-time method through extensive numerical experiments, using practical ionic models such as the ten-Tusscher-Panfilov. The results underscore the method's potential to significantly enhance real-time and high-fidelity simulations in biomedical research and clinical applications.},
+	author = {Giacomo Rosilho de Souza and Simone Pezzuto and Rolf Krause},
+	howpublished = {arXiv:2405.19994v1 [math.NA]},
+	title = {High-order parallel-in-time method for the monodomain equation in cardiac electrophysiology},
+	url = {http://arxiv.org/abs/2405.19994v1},
 	year = {2024},
 }
 
