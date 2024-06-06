@@ -6924,6 +6924,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{FungEtAl2024,
+	abstract = {In this work, we propose a class of novel preconditioned Krylov subspace methods for solving an optimal control problem of parabolic equations. Namely, we develop a family of block $\omega$-circulant based preconditioners for the all-at-once linear system arising from the concerned optimal control problem, where both first order and second order time discretization methods are considered. The proposed preconditioners can be efficiently diagonalized by fast Fourier transforms in a parallel-in-time fashion, and their effectiveness is theoretically shown in the sense that the eigenvalues of the preconditioned matrix are clustered around $\pm 1$, which leads to rapid convergence when the minimal residual method is used. When the generalized minimal residual method is deployed, the efficacy of the proposed preconditioners are justified in the way that the singular values of the preconditioned matrices are proven clustered around unity. Numerical results are provided to demonstrate the effectiveness of our proposed solvers.},
+	author = {Po Yin Fung and Sean Hon},
+	howpublished = {arXiv:2406.00952v1 [math.NA]},
+	title = {Block $ω$-circulant preconditioners for parabolic optimal control problems},
+	url = {http://arxiv.org/abs/2406.00952v1},
+	year = {2024},
+}
+
 @unpublished{GattiglioEtAl2024,
 	abstract = {With the advent of supercomputers, multi-processor environments and parallel-in-time (PinT) algorithms offer ways to solve initial value problems for ordinary and partial differential equations (ODEs and PDEs) over long time intervals, a task often unfeasible with sequential solvers within realistic time frames. A recent approach, GParareal, combines Gaussian Processes with traditional PinT methodology (Parareal) to achieve faster parallel speed-ups. The method is known to outperform Parareal for low-dimensional ODEs and a limited number of computer cores. Here, we present Nearest Neighbors GParareal (nnGParareal), a novel data-enriched PinT integration algorithm. nnGParareal builds upon GParareal by improving its scalability properties for higher-dimensional systems and increased processor count. Through data reduction, the model complexity is reduced from cubic to log-linear in the sample size, yielding a fast and automated procedure to integrate initial value problems over long time intervals. First, we provide both an upper bound for the error and theoretical details on the speed-up benefits. Then, we empirically illustrate the superior performance of nnGParareal, compared to GParareal and Parareal, on nine different systems with unique features (e.g., stiff, chaotic, high-dimensional, or challenging-to-learn systems).},
 	author = {Guglielmo Gattiglio and Lyudmila Grigoryeva and Massimiliano Tamborrino},
@@ -7106,6 +7115,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2401.04936v1 [math.NA]},
 	title = {Parallel-in-time solution of scalar nonlinear conservation laws},
 	url = {http://arxiv.org/abs/2401.04936v1},
+	year = {2024},
+}
+
+@unpublished{YamaleevEtAl2024,
+	abstract = {We present a new approach to parallelization of the first-order backward difference discretization (BDF1) of the time derivative in partial differential equations, such as the nonlinear heat and viscous Burgers equations. The time derivative term is discretized by using the method of lines based on the implicit BDF1 scheme, while the inviscid and viscous terms are approximated by conventional 2nd-order 3-point central discretizations of the 1st- and 2nd-order derivatives in each spatial direction. The global system of nonlinear discrete equations in the space-time domain is solved by the Newton method for all time levels simultaneously. For the BDF1 discretization, this all-at-once system at each Newton iteration is block bidiagonal, which can be inverted directly in a blockwise manner, thus leading to a set of fully decoupled equations associated with each time level. This allows for an efficient parallel-in-time implementation of the implicit BDF1 discretization for nonlinear differential equations. The proposed parallel-in-time method preserves a quadratic rate of convergence of the Newton method of the sequential BDF1 scheme, so that the computational cost of solving each block matrix in parallel is nearly identical to that of the sequential counterpart at each time step. Numerical results show that the new parallel-in-time BDF1 scheme provides the speedup of up to 28 on 32 computing cores for the 2-D nonlinear partial differential equations with both smooth and discontinuous solutions.},
+	author = {Nail K. Yamaleev and Subhash Paudel},
+	howpublished = {arXiv:2406.00878v1 [math.NA]},
+	title = {A New Parallel-in-time Direct Inverse Method for Nonlinear Differential Equations},
+	url = {http://arxiv.org/abs/2406.00878v1},
 	year = {2024},
 }
 
