@@ -6903,6 +6903,84 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@article{CaoEtAl2024,
+	abstract = {The traditional parallel solving methods of ordinary differential equations (ODE) are mainly classified into task-parallelism, data-parallelism, and instruction-level parallelism. Based on the RIDC (revisionist integral deferred correction) algorithm, a hybrid solver dispatched on both CPU and GPU is proposed, which realizes computing in a pipeline form and a remarkable parallelism is obtained both inside a single equation and among many different equations. The proposed framework can make full use of the multi-core advantage of GPU, which is conducive to load balancing within computing nodes. The efficiency and accuracy of the framework are verified in several experiments.},
+	author = {Cao, Ruixia and Hou, Shangjun and Ma, Lin},
+	doi = {10.1109/ACCESS.2024.3375305},
+	journal = {IEEE Access},
+	number = {},
+	pages = {37995-38004},
+	title = {A Pipeline-Based ODE Solving Framework},
+	volume = {12},
+	year = {2024},
+}
+
+@unpublished{FreeseEtAl2024,
+	abstract = {We investigate parallel performance of parallel spectral deferred corrections, a numerical approach that provides small-scale parallelism for the numerical solution of initial value problems. The scheme is applied to the shallow water equation and uses an IMEX splitting that integrates fast modes implicitly and slow modes explicitly in order to be efficient. We describe parallel $\texttt{OpenMP}$-based implementations of parallel SDC in two well established simulation codes: the finite volume based operational ocean model $\texttt{ICON-O}$ and the spherical harmonics based research code $\texttt{SWEET}$. The implementations are benchmarked on a single node of the JUSUF ($\texttt{SWEET}$) and JUWELS ($\texttt{ICON-O}$) system at J\"ulich Supercomputing Centre. We demonstrate a reduction of time-to-solution across a range of accuracies. For $\texttt{ICON-O}$, we show speedup over the currently used Adams--Bashforth-2 integrator with $\texttt{OpenMP}$ loop parallelization. For $\texttt{SWEET}$, we show speedup over serial spectral deferred corrections and a second order implicit-explicit integrator.},
+	author = {Philip Freese and Sebastian Götschel and Thibaut Lunet and Daniel Ruprecht and Martin Schreiber},
+	howpublished = {arXiv:2403.20135v1 [cs.CE]},
+	title = {Parallel performance of shared memory parallel spectral deferred corrections},
+	url = {http://arxiv.org/abs/2403.20135v1},
+	year = {2024},
+}
+
+@unpublished{FungEtAl2024,
+	abstract = {In this work, we propose a class of novel preconditioned Krylov subspace methods for solving an optimal control problem of parabolic equations. Namely, we develop a family of block $\omega$-circulant based preconditioners for the all-at-once linear system arising from the concerned optimal control problem, where both first order and second order time discretization methods are considered. The proposed preconditioners can be efficiently diagonalized by fast Fourier transforms in a parallel-in-time fashion, and their effectiveness is theoretically shown in the sense that the eigenvalues of the preconditioned matrix are clustered around $\pm 1$, which leads to rapid convergence when the minimal residual method is used. When the generalized minimal residual method is deployed, the efficacy of the proposed preconditioners are justified in the way that the singular values of the preconditioned matrices are proven clustered around unity. Numerical results are provided to demonstrate the effectiveness of our proposed solvers.},
+	author = {Po Yin Fung and Sean Hon},
+	howpublished = {arXiv:2406.00952v1 [math.NA]},
+	title = {Block $ω$-circulant preconditioners for parabolic optimal control problems},
+	url = {http://arxiv.org/abs/2406.00952v1},
+	year = {2024},
+}
+
+@unpublished{GattiglioEtAl2024,
+	abstract = {With the advent of supercomputers, multi-processor environments and parallel-in-time (PinT) algorithms offer ways to solve initial value problems for ordinary and partial differential equations (ODEs and PDEs) over long time intervals, a task often unfeasible with sequential solvers within realistic time frames. A recent approach, GParareal, combines Gaussian Processes with traditional PinT methodology (Parareal) to achieve faster parallel speed-ups. The method is known to outperform Parareal for low-dimensional ODEs and a limited number of computer cores. Here, we present Nearest Neighbors GParareal (nnGParareal), a novel data-enriched PinT integration algorithm. nnGParareal builds upon GParareal by improving its scalability properties for higher-dimensional systems and increased processor count. Through data reduction, the model complexity is reduced from cubic to log-linear in the sample size, yielding a fast and automated procedure to integrate initial value problems over long time intervals. First, we provide both an upper bound for the error and theoretical details on the speed-up benefits. Then, we empirically illustrate the superior performance of nnGParareal, compared to GParareal and Parareal, on nine different systems with unique features (e.g., stiff, chaotic, high-dimensional, or challenging-to-learn systems).},
+	author = {Guglielmo Gattiglio and Lyudmila Grigoryeva and Massimiliano Tamborrino},
+	howpublished = {arXiv:2405.12182v1 [stat.CO]},
+	title = {Nearest Neighbors GParareal: Improving Scalability of Gaussian Processes for Parallel-in-Time Solvers},
+	url = {http://arxiv.org/abs/2405.12182v1},
+	year = {2024},
+}
+
+@unpublished{GuEtAl2024,
+	abstract = {For pricing American options, %after suitable discretization in space and time, a sequence of discrete linear complementarity problems (LCPs) or equivalently Hamilton-Jacobi-Bellman (HJB) equations need to be solved in a sequential time-stepping manner. In each time step, the policy iteration or its penalty variant is often applied due to their fast convergence rates. In this paper, we aim to solve for all time steps simultaneously, by applying the policy iteration to an ``all-at-once form" of the HJB equations, where two different parallel-in-time preconditioners are proposed to accelerate the solution of the linear systems within the policy iteration. Our proposed methods are generally applicable for such all-at-once forms of the HJB equation, arising from option pricing problems with optimal stopping and nontrivial underlying asset models. Numerical examples are presented to show the feasibility and robust convergence behavior of the proposed methodology.},
+	author = {Xian-Ming Gu and Jun Liu and Cornelis W. Oosterlee},
+	howpublished = {arXiv:2405.08280v1 [math.NA]},
+	title = {Parallel-in-Time Iterative Methods for Pricing American Options},
+	url = {http://arxiv.org/abs/2405.08280v1},
+	year = {2024},
+}
+
+@unpublished{HeinzelreiterEtAl2024,
+	abstract = {We derive a new parallel-in-time approach for solving large-scale optimization problems constrained by time-dependent partial differential equations arising from fluid dynamics. The solver involves the use of a block circulant approximation of the original matrices, enabling parallelization-in-time via the use of fast Fourier transforms, and we devise bespoke matrix approximations which may be applied within this framework. These make use of permutations, saddle-point approximations, commutator arguments, as well as inner solvers such as the Uzawa method, Chebyshev semi-iteration, and multigrid. Theoretical results underpin our strategy of applying a block circulant strategy, and numerical experiments demonstrate the effectiveness and robustness of our approach on Stokes and Oseen problems. Noteably, satisfying results for the strong and weak scaling of our methods are provided within a fully parallel architecture.},
+	author = {Bernhard Heinzelreiter and John W. Pearson},
+	howpublished = {arXiv:2405.18964v1 [math.NA]},
+	title = {Diagonalization-Based Parallel-in-Time Preconditioners for Instationary Fluid Flow Control Problems},
+	url = {http://arxiv.org/abs/2405.18964v1},
+	year = {2024},
+}
+
+@article{HuangEtAl2024,
+	author = {Huang, Jianguo and Ju, Lili and Xu, Yuejin},
+	doi = {10.1002/num.23116},
+	issn = {1098-2426},
+	journal = {Numerical Methods for Partial Differential Equations},
+	month = {May},
+	publisher = {Wiley},
+	title = {A parareal exponential integrator finite element method for semilinear parabolic equations},
+	url = {http://dx.doi.org/10.1002/num.23116},
+	year = {2024},
+}
+
+@unpublished{IbrahimEtAl2024,
+	abstract = {Iterative parallel-in-time algorithms like Parareal can extend scaling beyond the saturation of purely spatial parallelization when solving initial value problems. However, they require the user to build coarse models to handle the inevitably serial transport of information in time.This is a time consuming and difficult process since there is still only limited theoretical insight into what constitutes a good and efficient coarse model. Novel approaches from machine learning to solve differential equations could provide a more generic way to find coarse level models for parallel-in-time algorithms. This paper demonstrates that a physics-informed Fourier Neural Operator (PINO) is an effective coarse model for the parallelization in time of the two-asset Black-Scholes equation using Parareal. We demonstrate that PINO-Parareal converges as fast as a bespoke numerical coarse model and that, in combination with spatial parallelization by domain decomposition, it provides better overall speedup than both purely spatial parallelization and space-time parallelizaton with a numerical coarse propagator.},
+	author = {Abdul Qadir Ibrahim and Sebastian Götschel and Daniel Ruprecht},
+	howpublished = {arXiv:2404.02521v1 [math.NA]},
+	title = {Space-time parallel scaling of Parareal with a Fourier Neural Operator as coarse propagator},
+	url = {http://arxiv.org/abs/2404.02521v1},
+	year = {2024},
+}
+
 @article{JanssensEtAl2024,
 	author = {Janssens, N. and Meyers, J.},
 	doi = {10.1016/j.cpc.2023.109019},
@@ -6914,6 +6992,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Parallel-in-time multiple shooting for optimal control problems governed by the Navier–Stokes equations},
 	url = {http://dx.doi.org/10.1016/j.cpc.2023.109019},
 	volume = {296},
+	year = {2024},
+}
+
+@article{Kumar2024,
+	author = {Kumar, Ajit},
+	doi = {10.1109/tcsii.2024.3381372},
+	issn = {1558-3791},
+	journal = {IEEE Transactions on Circuits and Systems II: Express Briefs},
+	pages = {1–1},
+	publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+	title = {Investigation of Second Order Taylor Series in the Coarse Operator of Parareal Algorithm for Power System Simulation},
+	url = {http://dx.doi.org/10.1109/TCSII.2024.3381372},
 	year = {2024},
 }
 
@@ -6929,5 +7019,145 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {A Diagonalization-Based Parallel-in-Time Algorithm for Crank-Nicolson’s Discretization of the Viscoelastic Equation},
 	url = {http://dx.doi.org/10.4208/eajam.2022-304.070323},
 	volume = {14},
+	year = {2024},
+}
+
+@article{MiaoEtAl2024,
+	author = {Miao, Zhen and null, Bin Wang and Jiang, Yaolin},
+	doi = {10.4208/nmtma.oa-2023-0081},
+	issn = {2079-7338},
+	journal = {Numerical Mathematics: Theory, Methods and Applications},
+	month = {June},
+	number = {1},
+	pages = {121–144},
+	publisher = {Global Science Press},
+	title = {Energy-Preserving Parareal-RKN Algorithms for Hamiltonian Systems},
+	url = {http://dx.doi.org/10.4208/nmtma.oa-2023-0081},
+	volume = {17},
+	year = {2024},
+}
+
+@article{MiaoEtAl2024b,
+	author = {Miao, Zhen and Zhang, Ren-Hao and Han, Wei-Wei and Jiang, Yao-Lin},
+	doi = {10.1016/j.camwa.2024.02.035},
+	issn = {0898-1221},
+	journal = {Computers &amp; Mathematics with Applications},
+	month = {May},
+	pages = {78–89},
+	publisher = {Elsevier BV},
+	title = {Analysis of a fractional-step parareal algorithm for the incompressible Navier-Stokes equations},
+	url = {http://dx.doi.org/10.1016/j.camwa.2024.02.035},
+	volume = {161},
+	year = {2024},
+}
+
+@unpublished{PamelaEtAl2024,
+	abstract = {The fusion research facility ITER is currently being assembled to demonstrate that fusion can be used for industrial energy production, while several other programmes across the world are also moving forward, such as EU-DEMO, CFETR, SPARC and STEP. The high engineering complexity of a tokamak makes it an extremely challenging device to optimise, and test-based optimisation would be too slow and too costly. Instead, digital design and optimisation must be favored, which requires strongly-coupled suites of High-Performance Computing calculations. In this context, having surrogate models to provide quick estimates with uncertainty quantification is essential to explore and optimise new design options. Furthermore, these surrogates can in turn be used to accelerate simulations in the first place. This is the case of Parareal, a time-parallelisation method that can speed-up large HPC simulations, where the coarse-solver can be replaced by a surrogate. A novel framework, Neural-Parareal, is developed to integrate the training of neural operators dynamically as more data becomes available. For a given input-parameter domain, as more simulations are being run with Parareal, the large amount of data generated by the algorithm is used to train new surrogate models to be used as coarse-solvers for future Parareal simulations, leading to progressively more accurate coarse-solvers, and thus higher speed-up. It is found that such neural network surrogates can be much more effective than traditional coarse-solver in providing a speed-up with Parareal. This study is a demonstration of the convergence of HPC and AI which simply has to become common practice in the world of digital engineering design.},
+	author = {S. J. P. Pamela and N. Carey and J. Brandstetter and R. Akers and L. Zanisi and J. Buchanan and V. Gopakumar and M. Hoelzl and G. Huijsmans and K. Pentland and T. James and G. Antonucci and the JOREK Team},
+	howpublished = {arXiv:2405.01355v1 [physics.plasm-ph]},
+	title = {Neural-Parareal: Dynamically Training Neural Operators as Coarse Solvers for Time-Parallelisation of Fusion MHD Simulations},
+	url = {http://arxiv.org/abs/2405.01355v1},
+	year = {2024},
+}
+
+@article{Park2024,
+	author = {Park, Byungkwon},
+	doi = {10.1109/access.2024.3367358},
+	issn = {2169-3536},
+	journal = {IEEE Access},
+	pages = {28500–28510},
+	publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+	title = {Stochastic Power System Dynamic Simulation Using Parallel-in-Time Algorithm},
+	url = {http://dx.doi.org/10.1109/ACCESS.2024.3367358},
+	volume = {12},
+	year = {2024},
+}
+
+@unpublished{SarpeEtAl2024,
+	abstract = {This paper proposes the utilization of a periodic Parareal with a periodic coarse problem to efficiently perform adjoint sensitivity analysis for the steady state of time-periodic nonlinear circuits. In order to implement this method, a modified formulation for adjoint sensitivity analysis based on the transient approach is derived.},
+	author = {Julian Sarpe and Andreas Klaedtke and Herbert De Gersem},
+	howpublished = {arXiv:2405.19048v1 [math.NA]},
+	title = {Periodic Adjoint Sensitivity Analysis},
+	url = {http://arxiv.org/abs/2405.19048v1},
+	year = {2024},
+}
+
+@unpublished{Scheiber2024,
+	abstract = {The subject of the paper is to verify the convergence conditions for the parareal algorithm using Gander and Hairer's theorem . The analysis is conducted in the case where the coarse integrator is the Euler method and the high-accuracy integrator is an explicit Runge-Kutta type method.},
+	author = {Ernest Scheiber},
+	howpublished = {arXiv:2405.06954v1 [math.NA]},
+	title = {A Convergence Theorem for the Parareal Algorithm Revisited},
+	url = {http://arxiv.org/abs/2405.06954v1},
+	year = {2024},
+}
+
+@unpublished{SchnaubeltEtAl2024,
+	abstract = {High-temperature superconductors (HTS) have the potential to enable magnetic fields beyond the current limits of low-temperature superconductors in applications like accelerator magnets. However, the design of HTS-based magnets requires computationally demanding transient multi-physics simulations with highly non-linear material properties. To reduce the solution time, we propose using Parareal (PR) for parallel-in-time magneto-thermal simulation of magnets based on HTS, particularly, no-insulation coils without turn-to-turn insulation. We propose extending the classical PR method to automatically find a time partitioning using a first coarse adaptive propagator. The proposed PR method is shown to reduce the computing time when fine engineering tolerances are required despite the highly nonlinear character of the problem. The full software stack used is open-source.},
+	author = {Erik Schnaubelt and Mariusz Wozniak and Julien Dular and Idoia Cortes Garcia and Arjan Verweij and Sebastian Schöps},
+	howpublished = {arXiv:2404.13333v1 [cs.CE]},
+	title = {Parallel-in-Time Integration of Transient Phenomena in No-Insulation Superconducting Coils Using Parareal},
+	url = {http://arxiv.org/abs/2404.13333v1},
+	year = {2024},
+}
+
+@unpublished{SouzaEtAl2024,
+	abstract = {Simulation of the monodomain equation, crucial for modeling the heart's electrical activity, faces scalability limits when traditional numerical methods only parallelize in space. To optimize the use of large multi-processor computers by distributing the computational load more effectively, time parallelization is essential. We introduce a high-order parallel-in-time method addressing the substantial computational challenges posed by the stiff, multiscale, and nonlinear nature of cardiac dynamics. Our method combines the semi-implicit and exponential spectral deferred correction methods, yielding a hybrid method that is extended to parallel-in-time employing the PFASST framework. We thoroughly evaluate the stability, accuracy, and robustness of the proposed parallel-in-time method through extensive numerical experiments, using practical ionic models such as the ten-Tusscher-Panfilov. The results underscore the method's potential to significantly enhance real-time and high-fidelity simulations in biomedical research and clinical applications.},
+	author = {Giacomo Rosilho de Souza and Simone Pezzuto and Rolf Krause},
+	howpublished = {arXiv:2405.19994v1 [math.NA]},
+	title = {High-order parallel-in-time method for the monodomain equation in cardiac electrophysiology},
+	url = {http://arxiv.org/abs/2405.19994v1},
+	year = {2024},
+}
+
+@unpublished{SterckEtAl2024,
+	abstract = {We consider the parallel-in-time solution of scalar nonlinear conservation laws in one spatial dimension. The equations are discretized in space with a conservative finite-volume method using weighted essentially non-oscillatory (WENO) reconstructions, and in time with high-order explicit Runge-Kutta methods. The solution of the global, discretized space-time problem is sought via a nonlinear iteration that uses a novel linearization strategy in cases of non-differentiable equations. Under certain choices of discretization and algorithmic parameters, the nonlinear iteration coincides with Newton's method, although, more generally, it is a preconditioned residual correction scheme. At each nonlinear iteration, the linearized problem takes the form of a certain discretization of a linear conservation law over the space-time domain in question. An approximate parallel-in-time solution of the linearized problem is computed with a single multigrid reduction-in-time (MGRIT) iteration. The MGRIT iteration employs a novel coarse-grid operator that is a modified conservative semi-Lagrangian discretization and generalizes those we have developed previously for non-conservative scalar linear hyperbolic problems. Numerical tests are performed for the inviscid Burgers and Buckley--Leverett equations. For many test problems, the solver converges in just a handful of iterations with convergence rate independent of mesh resolution, including problems with (interacting) shocks and rarefactions.},
+	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik and J. B. Schroder},
+	howpublished = {arXiv:2401.04936v1 [math.NA]},
+	title = {Parallel-in-time solution of scalar nonlinear conservation laws},
+	url = {http://arxiv.org/abs/2401.04936v1},
+	year = {2024},
+}
+
+@unpublished{YamaleevEtAl2024,
+	abstract = {We present a new approach to parallelization of the first-order backward difference discretization (BDF1) of the time derivative in partial differential equations, such as the nonlinear heat and viscous Burgers equations. The time derivative term is discretized by using the method of lines based on the implicit BDF1 scheme, while the inviscid and viscous terms are approximated by conventional 2nd-order 3-point central discretizations of the 1st- and 2nd-order derivatives in each spatial direction. The global system of nonlinear discrete equations in the space-time domain is solved by the Newton method for all time levels simultaneously. For the BDF1 discretization, this all-at-once system at each Newton iteration is block bidiagonal, which can be inverted directly in a blockwise manner, thus leading to a set of fully decoupled equations associated with each time level. This allows for an efficient parallel-in-time implementation of the implicit BDF1 discretization for nonlinear differential equations. The proposed parallel-in-time method preserves a quadratic rate of convergence of the Newton method of the sequential BDF1 scheme, so that the computational cost of solving each block matrix in parallel is nearly identical to that of the sequential counterpart at each time step. Numerical results show that the new parallel-in-time BDF1 scheme provides the speedup of up to 28 on 32 computing cores for the 2-D nonlinear partial differential equations with both smooth and discontinuous solutions.},
+	author = {Nail K. Yamaleev and Subhash Paudel},
+	howpublished = {arXiv:2406.00878v1 [math.NA]},
+	title = {A New Parallel-in-time Direct Inverse Method for Nonlinear Differential Equations},
+	url = {http://arxiv.org/abs/2406.00878v1},
+	year = {2024},
+}
+
+@article{YodaEtAl2024,
+	author = {Yoda, Ryo and Bolten, Matthias and Nakajima, Kengo and Fujii, Akihiro},
+	doi = {10.1007/s13160-024-00652-8},
+	issn = {1868-937X},
+	journal = {Japan Journal of Industrial and Applied Mathematics},
+	month = {April},
+	publisher = {Springer Science and Business Media LLC},
+	title = {Coarse-grid operator optimization in multigrid reduction in time for time-dependent Stokes and Oseen problems},
+	url = {http://dx.doi.org/10.1007/s13160-024-00652-8},
+	year = {2024},
+}
+
+@unpublished{ZhaoEtAl2024,
+	abstract = {The Crank-Nicolson (CN) method is a well-known time integrator for evolutionary partial differential equations (PDEs) arising in many real-world applications. Since the solution at any time depends on the solution at previous time steps, the CN method will be inherently difficult to parallelize. In this paper, we consider a parallel method for the solution of evolutionary PDEs with the CN scheme. Using an all-at-once approach, we can solve for all time steps simultaneously using a parallelizable over time preconditioner within a standard iterative method. Due to the diagonalization of the proposed preconditioner, we can prove that most eigenvalues of preconditioned matrices are equal to 1 and the others lie in the set: $\left\{z\in\mathbb{C}: 1/(1 + \alpha) < |z| < 1/(1 - \alpha)~{\rm and}~\Re{e}(z) > 0\right\}$, where $0 < \alpha < 1$ is a free parameter. Meanwhile, the efficient implementation of this proposed preconditioner is described and a mesh-independent convergence rate of the preconditioned GMRES method is derived under certain conditions. Finally, we will verify our theoretical findings via numerical experiments on financial option pricing partial differential equations.},
+	author = {Yong-Liang Zhao and Xian-Ming Gu and Cornelis W. Oosterlee},
+	howpublished = {arXiv:2401.16113v1 [math.NA]},
+	title = {A parallel preconditioner for the all-at-once linear system from evolutionary PDEs with Crank-Nicolson discretization},
+	url = {http://arxiv.org/abs/2401.16113v1},
+	year = {2024},
+}
+
+@article{ZhenEtAl2024,
+	author = {Zhen, Meiyuan and Liu, Xuan and Ding, Xuejun and Cai, Jinsheng},
+	doi = {10.1016/j.cma.2024.116880},
+	issn = {0045-7825},
+	journal = {Computer Methods in Applied Mechanics and Engineering},
+	month = {April},
+	pages = {116880},
+	publisher = {Elsevier BV},
+	title = {High-order space–time parallel computing of the Navier–Stokes equations},
+	url = {http://dx.doi.org/10.1016/j.cma.2024.116880},
+	volume = {423},
 	year = {2024},
 }
