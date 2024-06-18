@@ -18,7 +18,7 @@ jobs:
       - name: 💎 setup ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.4.1 # can change this to 2.7 or whatever version you prefer
+          ruby-version: 3.2.2
           bundler-cache: true
 
       - name: 🔨 install dependencies & build site
