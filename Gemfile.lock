@@ -40,6 +40,7 @@ GEM
     ffi (1.15.5)
     forwardable-extended (2.6.0)
     google-protobuf (3.24.0-aarch64-linux)
+    google-protobuf (3.24.0-x86_64-linux)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -106,6 +107,8 @@ GEM
       sass-listen (~> 4.0.0)
     sass-embedded (1.64.2-aarch64-linux-gnu)
       google-protobuf (~> 3.23)
+    sass-embedded (1.64.2-x86_64-linux-gnu)
+      google-protobuf (~> 3.23)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -119,6 +122,7 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  x86_64-linux
 
 DEPENDENCIES
   autoprefixer-rails
