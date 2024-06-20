@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,149 +14,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <link rel="canonical" href="http://parallel-in-time.org/codes/pymgrit.html">
-
-  <link type="text/css" rel="stylesheet" href="/assets/main-76819aa89d75930ac06ef9967c01d19269aaad5bd78e7a1bee6bb4df855d04cb.css">
-  <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-86a3022f12ca44acf0d7da548569f4168279fe7b115508fbe4cf4af00498eb4b.js"></script>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <script src="/assets/js/vendor/jquery-1.12.0.js"></script>
+  <script src="/assets/js/vendor/bootstrap/affix.js"></script>
+  <script src="/assets/js/vendor/bootstrap/alert.js"></script>
+  <script src="/assets/js/vendor/bootstrap/button.js"></script>
+  <script src="/assets/js/vendor/bootstrap/carousel.js"></script>
+  <script src="/assets/js/vendor/bootstrap/collapse.js"></script>
+  <script src="/assets/js/vendor/bootstrap/dropdown.js"></script>
+  <script src="/assets/js/vendor/bootstrap/modal.js"></script>
+  <script src="/assets/js/vendor/bootstrap/scrollspy.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tab.js"></script>
+  <script src="/assets/js/vendor/bootstrap/transition.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tooltip.js"></script>
+  <script src="/assets/js/vendor/bootstrap/popover.js"></script>
+  <script src="/assets/js/vendor/jquery.githubRepoWidget.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="/assets/js/bib_stats.js"></script>
 </head>
 
   <body>
-    <header>
-  <nav>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Parallel-in-Time</a>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                Parallel-in-Time
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <a href="/news/" class="navbar-item ">News</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Workshops</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/events/" class="navbar-item ">Overview</a>
+                            
+                            <a href="/events/upcoming/" class="navbar-item ">Upcoming</a>
+                            
+                            <a href="/events/past/" class="navbar-item ">Past</a>
+                            
+                            <a href="/events/bylaws.html" class="navbar-item ">Bylaws</a>
+                            
+                            <a href="/events/scientific_committee.html" class="navbar-item ">Scientific Committee</a>
+                            
+                            <a href="/events/travel_grants.html" class="navbar-item ">Travel Grants</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Research</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/methods/" class="navbar-item ">Methods</a>
+                            
+                            <a href="/codes/" class="navbar-item ">Codes</a>
+                            
+                            <a href="/groups/" class="navbar-item ">Groups</a>
+                            
+                            <a href="/projects/" class="navbar-item ">Projects</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/references/index.html" class="navbar-item ">References</a>
+                    
+                
+                    
+                    <a href="/about/index.html" class="navbar-item ">About</a>
+                    
+                
+                
+            </div>
 
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            
-  <li>
-    <a href="/news/index.html">News</a>
-  </li>
+            <div class="navbar-end">
+                
+            </div>
 
-
-            <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    <li >
-      <a href="/events/index.html">Overview</a>
-    </li>
-    <li >
-      <a href="/events/upcoming/index.html">Upcoming</a>
-    </li>
-    <li >
-      <a href="/events/past/index.html">Past</a>
-    </li>
-    <li >
-      <a href="/events/bylaws.html">Bylaws</a>
-    </li>
-    <li >
-      <a href="/events/scientific_committee.html">Scientific committee</a>
-    </li>
-    <li >
-    <a href="/events/travel_grants.html">Travel Grants</a>
-    </li>
-  </ul>
-</li>
-            
-  <li class="dropdown active">
-
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    
-  <li>
-    <a href="/methods/index.html">Methods</a>
-  </li>
-
-
-    
-  <li role="presentation" class="divider"></li>
-  <li role="presentation" class="dropdown-header">Codes</li>
-  <li >
-    <a href="/codes/index.html">Overview</a>
-  </li>
-  
-    <li >
-      <a href="/codes/pfasst.html">PFASST++</a>
-    </li>
-  
-    <li >
-      <a href="/codes/xbraid.html">XBraid</a>
-    </li>
-  
-    <li >
-      <a href="/codes/pysdc.html">pySDC</a>
-    </li>
-  
-    <li >
-      <a href="/codes/libridc.html">libridc</a>
-    </li>
-  
-    <li >
-      <a href="/codes/pararealf90.html">PararealF90</a>
-    </li>
-  
-    <li >
-      <a href="/codes/pinttf.html">PinT-TF</a>
-    </li>
-  
-    <li >
-      <a href="/codes/sweet.html">SWEET</a>
-    </li>
-  
-    <li class="active">
-      <a href="/codes/pymgrit.html">PyMGRIT</a>
-    </li>
-  
-  <li role="presentation" class="divider"></li>
-
-
-    
-  <li>
-    <a href="/groups/index.html">Groups</a>
-  </li>
-
-
-    
-  <li>
-    <a href="/projects/index.html">Projects</a>
-  </li>
-
-
-  </ul>
-</li>
-
-            <li >
-              <a href="/references/index.html">References</a>
-            </li>
-            <li >
-              <a href="/about/index.html">About</a>
-            </li>
-          </ul>
-          
         </div>
-      </div>
     </div>
-  </nav>
-</header>
+</nav>
 
-    <main>
-      <div class="container">
-        <div class="post post-code">
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <div class="post post-code">
   <header class="post-header">
     <h1>PyMGRIT</h1>
     
   </header>
   <article class="post-content">
-    <div class="row">
-      <div class="col-md-8 content">
-        <p>PyMGRIT<a href="#HahneEtAl2020">[1]</a> is a Python implementation of the multigrid-reduction-in-time (MGRIT) algorithm.</p>
+    <div class="columns is-multiline">
+      <div class="column is-7 content">
+        <p>PyMGRIT<a class="citation" href="#HahneEtAl2020">[1]</a> is a Python implementation of the multigrid-reduction-in-time (MGRIT) algorithm.</p>
 
 <p>The code is hosted on <a href="https://github.com/pymgrit/pymgrit">GitHub</a> and <a href="https://pypi.org/project/pymgrit/">PyPI</a>.</p>
 
@@ -161,32 +148,49 @@
           HahneEtAl2020
         </div>
       </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseHahneEtAl2020Bibtex" aria-expanded="false" aria-controls="collapseHahneEtAl2020Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalHahneEtAl2020Abstract" aria-expanded="false" aria-controls="modalHahneEtAl2020Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="bibtex-ref-entry">
       <span id="HahneEtAl2020">J. Hahne, S. Friedhoff, and M. Bolten, “PyMGRIT: A Python Package for the parallel-in-time method MGRIT,” arXiv:2008.05172v1 [cs.MS], 2020 [Online]. Available at: <a href="http://arxiv.org/abs/2008.05172v1" target="_blank">http://arxiv.org/abs/2008.05172v1</a></span>
     </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalHahneEtAl2020Bibtex" aria-expanded="false" aria-controls="modalHahneEtAl2020Bibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalHahneEtAl2020Abstract" aria-expanded="false" aria-controls="modalHahneEtAl2020Abstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="collapse" id="collapseHahneEtAl2020Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@unpublished{HahneEtAl2020,
+  
+  <div class="modal" id="modalHahneEtAl2020Bibtex" tabindex="-1" role="dialog" aria-labelledby="modalHahneEtAl2020BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalHahneEtAl2020BibtexTitle">
+                  BibTeX entry <code>HahneEtAl2020</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@unpublished{HahneEtAl2020,
   author = {Hahne, Jens and Friedhoff, Stephanie and Bolten, Matthias},
   howpublished = {arXiv:2008.05172v1 [cs.MS]},
   title = {PyMGRIT: A Python Package for the parallel-in-time method MGRIT},
@@ -194,21 +198,30 @@
   year = {2020}
 }
 </pre>
+          </section>
+        </div>
       </div>
     </div>
   </div>
   
-  <div class="modal fade" id="modalHahneEtAl2020Abstract" tabindex="-1" role="dialog" aria-labelledby="modalHahneEtAl2020AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalHahneEtAl2020AbstractTitle">
-            Abstract for BibTeX entry <code>HahneEtAl2020</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          In this paper, we introduce the Python framework PyMGRIT, which implements the multigrid-reduction-in-time (MGRIT) algorithm for solving the (non-)linear systems arising from the discretization of time-dependent problems. The MGRIT algorithm is a reduction-based iterative method that allows parallel-in-time simulations, i. e., calculating multiple time steps simultaneously in a simulation, by using a time-grid hierarchy. The PyMGRIT framework features many different variants of the MGRIT algorithm, ranging from different multigrid cycle types and relaxation schemes, as well as various coarsening strategies, including time-only and space-time coarsening, to using different time integrators on different levels in the multigrid hierachy. PyMGRIT allows serial runs for prototyping and testing of new approaches, as well as parallel runs using the Message Passing Interface (MPI). Here, we describe the implementation of the MGRIT algorithm in PyMGRIT and present the usage from both user and developer point of views. Three examples illustrate different aspects of the package, including pure time parallelism as well as space-time parallelism by coupling PyMGRIT with PETSc or Firedrake, which enable spatial parallelism through MPI.
+  
+  <div class="modal" id="modalHahneEtAl2020Abstract" tabindex="-1" role="dialog" aria-labelledby="modalHahneEtAl2020AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalHahneEtAl2020AbstractTitle">
+                  Abstract for BibTeX entry <code>HahneEtAl2020</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            In this paper, we introduce the Python framework PyMGRIT, which implements the multigrid-reduction-in-time (MGRIT) algorithm for solving the (non-)linear systems arising from the discretization of time-dependent problems. The MGRIT algorithm is a reduction-based iterative method that allows parallel-in-time simulations, i. e., calculating multiple time steps simultaneously in a simulation, by using a time-grid hierarchy. The PyMGRIT framework features many different variants of the MGRIT algorithm, ranging from different multigrid cycle types and relaxation schemes, as well as various coarsening strategies, including time-only and space-time coarsening, to using different time integrators on different levels in the multigrid hierachy. PyMGRIT allows serial runs for prototyping and testing of new approaches, as well as parallel runs using the Message Passing Interface (MPI). Here, we describe the implementation of the MGRIT algorithm in PyMGRIT and present the usage from both user and developer point of views. Three examples illustrate different aspects of the package, including pure time parallelism as well as space-time parallelism by coupling PyMGRIT with PETSc or Firedrake, which enable spatial parallelism through MPI.
+          </section>
         </div>
       </div>
     </div>
@@ -218,7 +231,7 @@
 </li></ol>
 
       </div>
-      <aside class="col-md-4">
+      <aside class="column is-5">
         <section class="group-meta panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Code Profile</h3>
@@ -226,78 +239,80 @@
   <div class="panel-body">
     
     
-      <div class="row">
-        <label class="col-md-4 control-label">Homepage</label>
-        <div class="col-md-8">
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Homepage</label>
+      <div class="event-meta-piece">
+        
+        
+        
+        <a href="https://pymgrit.github.io/pymgrit/">
+          
+          <i class="fa fa-github fa-fw"></i>pymgrit.github.io/pymgrit/
+          
+        </a>
+      </div>
+    </div>
+    
+    
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Language</label>
+      <div class="event-meta-piece">
+        Python
+      </div>
+    </div>
+    
+    
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">License</label>
+      <div class="event-meta-piece">
+        MIT License
+      </div>
+    </div>
+    
+    
+    
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Developers</label>
+      <div class="event-meta-piece">
+        
+        <span class="clearfix">
+          
+          Jens Hahne
           
           
-          
-          <a href="https://pymgrit.github.io/pymgrit/">
+          <span class="pull-right">
             
-              <i class="fa fa-github fa-fw"></i>pymgrit.github.io/pymgrit/
+            <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
             
-          </a>
-        </div>
-      </div>
-    
-    
-      <div class="row">
-        <label class="col-md-4 control-label">Language</label>
-        <div class="col-md-8">
-          Python
-        </div>
-      </div>
-    
-    
-      <div class="row">
-        <label class="col-md-4 control-label">License</label>
-        <div class="col-md-8">
-          MIT License
-        </div>
-      </div>
-    
-    
-    
-      <div class="row">
-        <label class="col-md-4 control-label">Developers</label>
-        <div class="col-md-8">
+            
+            <a href="mailto:jens.hahne@math.uni-wuppertal.de" title="email: jens.hahne@math.uni-wuppertal.de"><i
+                class="fa fa-envelope-o fa-fw"></i></a>
+            
+            
+          </span>
           
-            <span class="clearfix">
-              
-                Jens Hahne
-              
-              
-                <span class="pull-right">
-                  
-                    <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
-                  
-                  
-                    <a href="mailto:jens.hahne@math.uni-wuppertal.de" title="email: jens.hahne@math.uni-wuppertal.de"><i class="fa fa-envelope-o fa-fw"></i></a>
-                  
-                  
-                </span>
-              
-            </span>
+        </span>
+        
+        <span class="clearfix">
           
-            <span class="clearfix">
-              
-                Stephanie Friedhoff
-              
-              
-                <span class="pull-right">
-                  
-                    <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
-                  
-                  
-                    <a href="mailto:friedhoff@math.uni-wuppertal.de" title="email: friedhoff@math.uni-wuppertal.de"><i class="fa fa-envelope-o fa-fw"></i></a>
-                  
-                  
-                </span>
-              
-            </span>
+          Stephanie Friedhoff
           
-        </div>
+          
+          <span class="pull-right">
+            
+            <a href="#" title="Lead Developer"><i class="fa fa-graduation-cap fa-fw"></i></a>
+            
+            
+            <a href="mailto:friedhoff@math.uni-wuppertal.de" title="email: friedhoff@math.uni-wuppertal.de"><i
+                class="fa fa-envelope-o fa-fw"></i></a>
+            
+            
+          </span>
+          
+        </span>
+        
       </div>
+    </div>
     
   </div>
 </section>
@@ -311,50 +326,53 @@
   </article>
   
 </div>
-      </div>
-    </main>
-    <footer id="site-footer">
-  <div class="navbar navbar-default navbar-fixed-bottom">
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="nav-item">
-              <a class="nav-link" href="/about/imprint.html">
-                <i class="fa fa-copyright fa-fw"></i><span class="hidden-md-down">Imprint</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://help.github.com/articles/github-privacy-statement/">
-                <i class="fa fa-github fa-fw"></i><span class="hidden-md-down">Privacy</span></a>
-            </li>
-          </ul>
+        
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/about/imprint.html" class="link">Imprint</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://help.github.com/articles/github-privacy-statement/" class="link">Privacy Policy</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io" class="link">Sources</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues" class="link">Found a Typo?</a>
+                </div>
+            </div>
+            
         </div>
-        <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
-          <p class="navbar-text small">
-            <span class="credit">
-              Powered by
-              <a class="nav-link" href="https://jekyllrb.com">Jekyll</a> and
-              <a class="nav-link" href="https://getbootstrap.com">Twitter Bootstrap</a>
-            </span>
-          </p>
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-          <p class="navbar-text pull-right">
-            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">
-              <i class="fa fa-github fa-fw"></i><span class="hidden-xs">Sources</span></a>
-            <span class="seperator"></span>
-            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues">
-              <i class="fa fa-bug fa-fw"></i><span class="hidden-xs">Found a typo?</span></a>
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
 </footer>
 
-    <script type="text/javascript" src="/assets/custom-b979e939c05d4dbb9022b116b773e969fbd7fea4087bece344d1550c6b6941a4.js"></script>
-
-<!--  -->
-
-  </body>
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
 </html>

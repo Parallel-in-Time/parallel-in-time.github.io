@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,136 +14,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <link rel="canonical" href="http://parallel-in-time.org/projects/borissdc.html">
-
-  <link type="text/css" rel="stylesheet" href="/assets/main-76819aa89d75930ac06ef9967c01d19269aaad5bd78e7a1bee6bb4df855d04cb.css">
-  <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-86a3022f12ca44acf0d7da548569f4168279fe7b115508fbe4cf4af00498eb4b.js"></script>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <script src="/assets/js/vendor/jquery-1.12.0.js"></script>
+  <script src="/assets/js/vendor/bootstrap/affix.js"></script>
+  <script src="/assets/js/vendor/bootstrap/alert.js"></script>
+  <script src="/assets/js/vendor/bootstrap/button.js"></script>
+  <script src="/assets/js/vendor/bootstrap/carousel.js"></script>
+  <script src="/assets/js/vendor/bootstrap/collapse.js"></script>
+  <script src="/assets/js/vendor/bootstrap/dropdown.js"></script>
+  <script src="/assets/js/vendor/bootstrap/modal.js"></script>
+  <script src="/assets/js/vendor/bootstrap/scrollspy.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tab.js"></script>
+  <script src="/assets/js/vendor/bootstrap/transition.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tooltip.js"></script>
+  <script src="/assets/js/vendor/bootstrap/popover.js"></script>
+  <script src="/assets/js/vendor/jquery.githubRepoWidget.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="/assets/js/bib_stats.js"></script>
 </head>
 
   <body>
-    <header>
-  <nav>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Parallel-in-Time</a>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                Parallel-in-Time
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <a href="/news/" class="navbar-item ">News</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Workshops</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/events/" class="navbar-item ">Overview</a>
+                            
+                            <a href="/events/upcoming/" class="navbar-item ">Upcoming</a>
+                            
+                            <a href="/events/past/" class="navbar-item ">Past</a>
+                            
+                            <a href="/events/bylaws.html" class="navbar-item ">Bylaws</a>
+                            
+                            <a href="/events/scientific_committee.html" class="navbar-item ">Scientific Committee</a>
+                            
+                            <a href="/events/travel_grants.html" class="navbar-item ">Travel Grants</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Research</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/methods/" class="navbar-item ">Methods</a>
+                            
+                            <a href="/codes/" class="navbar-item ">Codes</a>
+                            
+                            <a href="/groups/" class="navbar-item ">Groups</a>
+                            
+                            <a href="/projects/" class="navbar-item ">Projects</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/references/index.html" class="navbar-item ">References</a>
+                    
+                
+                    
+                    <a href="/about/index.html" class="navbar-item ">About</a>
+                    
+                
+                
+            </div>
 
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            
-  <li>
-    <a href="/news/index.html">News</a>
-  </li>
+            <div class="navbar-end">
+                
+            </div>
 
-
-            <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    <li >
-      <a href="/events/index.html">Overview</a>
-    </li>
-    <li >
-      <a href="/events/upcoming/index.html">Upcoming</a>
-    </li>
-    <li >
-      <a href="/events/past/index.html">Past</a>
-    </li>
-    <li >
-      <a href="/events/bylaws.html">Bylaws</a>
-    </li>
-    <li >
-      <a href="/events/scientific_committee.html">Scientific committee</a>
-    </li>
-    <li >
-    <a href="/events/travel_grants.html">Travel Grants</a>
-    </li>
-  </ul>
-</li>
-            
-  <li class="dropdown active">
-
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    
-  <li>
-    <a href="/methods/index.html">Methods</a>
-  </li>
-
-
-    
-  <li>
-    <a href="/codes/index.html">Codes</a>
-  </li>
-
-
-    
-  <li>
-    <a href="/groups/index.html">Groups</a>
-  </li>
-
-
-    
-  <li role="presentation" class="divider"></li>
-  <li role="presentation" class="dropdown-header">Projects</li>
-  <li >
-    <a href="/projects/index.html">Overview</a>
-  </li>
-  
-    <li >
-      <a href="/projects/paraphase.html">ParaPhase</a>
-    </li>
-  
-    <li >
-      <a href="/projects/sppexa.html">ExaSolvers</a>
-    </li>
-  
-    <li class="active">
-      <a href="/projects/borissdc.html">BorisSDC</a>
-    </li>
-  
-    <li >
-      <a href="/projects/palmod.html">PalMod</a>
-    </li>
-  
-    <li >
-      <a href="/projects/pint_nwp.html">Parallel paradigms for NWP</a>
-    </li>
-  
-    <li >
-      <a href="/projects/pitflow.html">PiT Flow</a>
-    </li>
-  
-    <li >
-      <a href="/projects/time_x.html">TIME-X</a>
-    </li>
-  
-
-
-  </ul>
-</li>
-
-            <li >
-              <a href="/references/index.html">References</a>
-            </li>
-            <li >
-              <a href="/about/index.html">About</a>
-            </li>
-          </ul>
-          
         </div>
-      </div>
     </div>
-  </nav>
-</header>
+</nav>
 
-    <main>
-      <div class="container">
-        <div class="post post-project">
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <div class="post post-project">
   <header class="post-header">
     <h1>
       BorisSDC
@@ -144,13 +136,13 @@
     
   </header>
   <article class="post-content content">
-    <div class="row">
-      <div class="col-md-8">
+    <div class="columns is-multiline">
+      <div class="column is-7">
         <p>Fusion reactors could some day provide a clean and nearly inexhaustible source of energy, but their development has proven to be challenging. Nevertheless, great progress has been made in recent decades and fusion research is now at a critical stage: ITER, the first test reactor anticipated to generate a surplus of energy, is being built and operation is planned to start around 2025. It will serve as a testbed for DEMO, a prototype for a commercially viable fusion power plant to be completed by 2050. The Culham Centre for Fusion Energy (CCFE) is a key contributor to this development: it operates the Joint European Torus (JET) which is currently the world’s largest fusion test reactor. JET is important for experimental results and validation of simulation software, both of which are used to inform the design of the much larger ITER</p>
 
 <p>Computer simulations complementing experiments with test reactors are critical for the design and operation of ITER but also to explore alternative reactor designs. The immense complexity of the physics involved translates into complex mathematical models which take a long time to solve numerically, even on modern computer architectures. As reactors grow in size and complexity, so do the employed models and therefore solution times. LOCUST, for example, is a state-of-the-art particle tracker used operationally at CCFE and optimised heavily to exploit graphical processing unit (GPU) accelerators. However, one simulation of the trajectories of fast ions generated from neutral beam injection in the JET test reactor still takes around 10 hours to complete. Because of the higher energies, a similar simulation for ITER already takes 4 to 7 days. Therefore, at the moment, design choices can be informed only by a small number of simulations with carefully selected parameters. However, systematic exploration of a wide range of design parameters in computer simulations is not yet possible.</p>
 
-<p>The project will develop a new and more efficient algorithm <a href="#WinkelEtAl2015">[1]</a> and deploy it as a particle tracker in CCFE’s operational simulation software. This will help to significantly reduce solution times and contribute toward the order of magnitude reduction of runtimes needed for effective in-silico design of components for ITER. While the new algorithm will be deployed for a specific application, the mathematical ideas developed during the project can help to improve the efficiency of computer simulations in other applications such as manufacturing processes involving plasmas, for example for flat panel displays or solar panels.</p>
+<p>The project will develop a new and more efficient algorithm <a class="citation" href="#WinkelEtAl2015">[1]</a> and deploy it as a particle tracker in CCFE’s operational simulation software. This will help to significantly reduce solution times and contribute toward the order of magnitude reduction of runtimes needed for effective in-silico design of components for ITER. While the new algorithm will be deployed for a specific application, the mathematical ideas developed during the project can help to improve the efficiency of computer simulations in other applications such as manufacturing processes involving plasmas, for example for flat panel displays or solar panels.</p>
 
 <ol class="bibliography"><li><div class="bibtex-entry-container">
   <div>
@@ -160,32 +152,49 @@
           WinkelEtAl2015
         </div>
       </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapseWinkelEtAl2015Bibtex" aria-expanded="false" aria-controls="collapseWinkelEtAl2015Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            
-            <button class="btn btn-default" data-toggle="modal" data-target="#modalWinkelEtAl2015Abstract" aria-expanded="false" aria-controls="modalWinkelEtAl2015Abstract">
-              Abstract
-            </button>
-            
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="bibtex-ref-entry">
       <span id="WinkelEtAl2015">M. Winkel, R. Speck, and D. Ruprecht, “A high-order Boris integrator,” <i>Journal of Computational Physics</i>, vol. 295, pp. 456–474, 2015 [Online]. Available at: <a href="http://dx.doi.org/10.1016/j.jcp.2015.04.022" target="_blank">http://dx.doi.org/10.1016/j.jcp.2015.04.022</a></span>
     </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalWinkelEtAl2015Bibtex" aria-expanded="false" aria-controls="modalWinkelEtAl2015Bibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalWinkelEtAl2015Abstract" aria-expanded="false" aria-controls="modalWinkelEtAl2015Abstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="collapse" id="collapseWinkelEtAl2015Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">@article{WinkelEtAl2015,
+  
+  <div class="modal" id="modalWinkelEtAl2015Bibtex" tabindex="-1" role="dialog" aria-labelledby="modalWinkelEtAl2015BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalWinkelEtAl2015BibtexTitle">
+                  BibTeX entry <code>WinkelEtAl2015</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@article{WinkelEtAl2015,
   title = {A high-order {B}oris integrator},
   author = {Winkel, M. and Speck, R. and Ruprecht, D.},
   journal = {Journal of Computational Physics},
@@ -195,21 +204,30 @@
   pages = {456--474}
 }
 </pre>
+          </section>
+        </div>
       </div>
     </div>
   </div>
   
-  <div class="modal fade" id="modalWinkelEtAl2015Abstract" tabindex="-1" role="dialog" aria-labelledby="modalWinkelEtAl2015AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalWinkelEtAl2015AbstractTitle">
-            Abstract for BibTeX entry <code>WinkelEtAl2015</code>
-          </h4>
-        </div>
-        <div class="modal-body">
-          This work introduces the high-order Boris-SDC method for integrating the equations of motion for electrically charged particles in electric and magnetic fields. Boris-SDC relies on a combination of the Boris-integrator with spectral deferred corrections (SDC). SDC can be considered as preconditioned Picard iteration to compute the stages of a collocation method. In this interpretation, inverting the preconditioner corresponds to a sweep with a low-order method. In Boris-SDC, the Boris method, a second-order Lorentz force integrator based on velocity-Verlet, is used as a sweeper/preconditioner. The presented method provides a generic way to extend the classical Boris integrator, which is widely used in essentially all particle-based plasma physics simulations involving magnetic fields, to a high-order method. Stability, convergence order and conservation properties of the method are demonstrated for different simulation setups. Boris-SDC reproduces the expected high order of convergence for a single particle and for the center-of-mass of a particle cloud in a Penning trap and shows good long-term energy stability.
+  
+  <div class="modal" id="modalWinkelEtAl2015Abstract" tabindex="-1" role="dialog" aria-labelledby="modalWinkelEtAl2015AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalWinkelEtAl2015AbstractTitle">
+                  Abstract for BibTeX entry <code>WinkelEtAl2015</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            This work introduces the high-order Boris-SDC method for integrating the equations of motion for electrically charged particles in electric and magnetic fields. Boris-SDC relies on a combination of the Boris-integrator with spectral deferred corrections (SDC). SDC can be considered as preconditioned Picard iteration to compute the stages of a collocation method. In this interpretation, inverting the preconditioner corresponds to a sweep with a low-order method. In Boris-SDC, the Boris method, a second-order Lorentz force integrator based on velocity-Verlet, is used as a sweeper/preconditioner. The presented method provides a generic way to extend the classical Boris integrator, which is widely used in essentially all particle-based plasma physics simulations involving magnetic fields, to a high-order method. Stability, convergence order and conservation properties of the method are demonstrated for different simulation setups. Boris-SDC reproduces the expected high order of convergence for a single particle and for the center-of-mass of a particle cloud in a Penning trap and shows good long-term energy stability.
+          </section>
         </div>
       </div>
     </div>
@@ -219,71 +237,68 @@
 </li></ol>
 
       </div>
-      <aside class="col-md-4">
+      <aside class="column is-5">
         <section class="group-meta panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Project Profile</h3>
   </div>
   <div class="panel-body">
     
-      <div class="row">
-        <div class="col-md-12 logo">
-          <img src="/assets/epsrc-80f1c68574c606ce57452a9c62b8482345ae95f915f0cc96e965b8bf1f4125b5.png" alt="BorisSDC Logo">
-        </div>
+    <div class="event-meta-row">
+      <div class="col-md-12 logo">
+        <img src="/assets/images/paraphase-logo.png" alt="ParaPhase Logo"  >
       </div>
-      <br>
-        
+    </div>
+    <br>
     
-      <div class="row">
-        <label class="col-md-4 control-label">Homepage</label>
-        <div class="col-md-8">
-          
-            <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/P02372X/1" target="_blank"
-               title="Project's homepage"
-               data-toggle="tooltip"
-               role="button">
+    
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Homepage</label>
+      <div class="col-md-8">
+        
+        <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/P02372X/1" target="_blank" title="Project's homepage" data-toggle="tooltip" role="button">
           
             <i class="fa fa-fw fa-globe"></i>
-          
-            </a>
-          
-          <!-- <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/P02372X/1">gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/P02372X/1</a> -->
-        </div>
+            
+        </a>
+        
+        <!-- <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/P02372X/1">gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/P02372X/1</a> -->
       </div>
+    </div>
     
     
     
-      <div class="row">
-        <label class="col-md-4 control-label">Members</label>
-        <div class="col-md-8">
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Members</label>
+      <div class="col-md-8">
+        
+        <span class="clearfix">
+          Daniel Ruprecht (University of Leeds)
           
-            <span class="clearfix">
-              Daniel Ruprecht (University of Leeds)
-              
-            </span>
+        </span>
+        
+        <span class="clearfix">
+          Krasymyr Tretiak (University of Leeds)
           
-            <span class="clearfix">
-              Krasymyr Tretiak (University of Leeds)
-              
-            </span>
+        </span>
+        
+        <span class="clearfix">
+          Debasmita Samaddar (Culham Centre for Fusion Energy)
           
-            <span class="clearfix">
-              Debasmita Samaddar (Culham Centre for Fusion Energy)
-              
-            </span>
+        </span>
+        
+        <span class="clearfix">
+          Rob Akers (Culham Centre for Fusion Energy)
           
-            <span class="clearfix">
-              Rob Akers (Culham Centre for Fusion Energy)
-              
-            </span>
+        </span>
+        
+        <span class="clearfix">
+          James Buchanan (Culham Centre for Fusion Energy)
           
-            <span class="clearfix">
-              James Buchanan (Culham Centre for Fusion Energy)
-              
-            </span>
-          
-        </div>
+        </span>
+        
       </div>
+    </div>
     
   </div>
 </section>
@@ -294,50 +309,53 @@
   </article>
   
 </div>
-      </div>
-    </main>
-    <footer id="site-footer">
-  <div class="navbar navbar-default navbar-fixed-bottom">
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="nav-item">
-              <a class="nav-link" href="/about/imprint.html">
-                <i class="fa fa-copyright fa-fw"></i><span class="hidden-md-down">Imprint</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://help.github.com/articles/github-privacy-statement/">
-                <i class="fa fa-github fa-fw"></i><span class="hidden-md-down">Privacy</span></a>
-            </li>
-          </ul>
+        
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/about/imprint.html" class="link">Imprint</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://help.github.com/articles/github-privacy-statement/" class="link">Privacy Policy</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io" class="link">Sources</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues" class="link">Found a Typo?</a>
+                </div>
+            </div>
+            
         </div>
-        <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
-          <p class="navbar-text small">
-            <span class="credit">
-              Powered by
-              <a class="nav-link" href="https://jekyllrb.com">Jekyll</a> and
-              <a class="nav-link" href="https://getbootstrap.com">Twitter Bootstrap</a>
-            </span>
-          </p>
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-          <p class="navbar-text pull-right">
-            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">
-              <i class="fa fa-github fa-fw"></i><span class="hidden-xs">Sources</span></a>
-            <span class="seperator"></span>
-            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues">
-              <i class="fa fa-bug fa-fw"></i><span class="hidden-xs">Found a typo?</span></a>
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
 </footer>
 
-    <script type="text/javascript" src="/assets/custom-b979e939c05d4dbb9022b116b773e969fbd7fea4087bece344d1550c6b6941a4.js"></script>
-
-<!--  -->
-
-  </body>
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
 </html>

@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,105 +14,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <link rel="canonical" href="http://parallel-in-time.org/events/2015/06/04/bylaws.html">
-
-  <link type="text/css" rel="stylesheet" href="/assets/main-76819aa89d75930ac06ef9967c01d19269aaad5bd78e7a1bee6bb4df855d04cb.css">
-  <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-86a3022f12ca44acf0d7da548569f4168279fe7b115508fbe4cf4af00498eb4b.js"></script>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <script src="/assets/js/vendor/jquery-1.12.0.js"></script>
+  <script src="/assets/js/vendor/bootstrap/affix.js"></script>
+  <script src="/assets/js/vendor/bootstrap/alert.js"></script>
+  <script src="/assets/js/vendor/bootstrap/button.js"></script>
+  <script src="/assets/js/vendor/bootstrap/carousel.js"></script>
+  <script src="/assets/js/vendor/bootstrap/collapse.js"></script>
+  <script src="/assets/js/vendor/bootstrap/dropdown.js"></script>
+  <script src="/assets/js/vendor/bootstrap/modal.js"></script>
+  <script src="/assets/js/vendor/bootstrap/scrollspy.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tab.js"></script>
+  <script src="/assets/js/vendor/bootstrap/transition.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tooltip.js"></script>
+  <script src="/assets/js/vendor/bootstrap/popover.js"></script>
+  <script src="/assets/js/vendor/jquery.githubRepoWidget.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="/assets/js/bib_stats.js"></script>
 </head>
 
   <body>
-    <header>
-  <nav>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Parallel-in-Time</a>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                Parallel-in-Time
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <a href="/news/" class="navbar-item ">News</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Workshops</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/events/" class="navbar-item ">Overview</a>
+                            
+                            <a href="/events/upcoming/" class="navbar-item ">Upcoming</a>
+                            
+                            <a href="/events/past/" class="navbar-item ">Past</a>
+                            
+                            <a href="/events/bylaws.html" class="navbar-item ">Bylaws</a>
+                            
+                            <a href="/events/scientific_committee.html" class="navbar-item ">Scientific Committee</a>
+                            
+                            <a href="/events/travel_grants.html" class="navbar-item ">Travel Grants</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Research</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/methods/" class="navbar-item ">Methods</a>
+                            
+                            <a href="/codes/" class="navbar-item ">Codes</a>
+                            
+                            <a href="/groups/" class="navbar-item ">Groups</a>
+                            
+                            <a href="/projects/" class="navbar-item ">Projects</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/references/index.html" class="navbar-item ">References</a>
+                    
+                
+                    
+                    <a href="/about/index.html" class="navbar-item ">About</a>
+                    
+                
+                
+            </div>
 
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            
-  <li>
-    <a href="/news/index.html">News</a>
-  </li>
+            <div class="navbar-end">
+                
+            </div>
 
-
-            <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    <li >
-      <a href="/events/index.html">Overview</a>
-    </li>
-    <li >
-      <a href="/events/upcoming/index.html">Upcoming</a>
-    </li>
-    <li >
-      <a href="/events/past/index.html">Past</a>
-    </li>
-    <li >
-      <a href="/events/bylaws.html">Bylaws</a>
-    </li>
-    <li >
-      <a href="/events/scientific_committee.html">Scientific committee</a>
-    </li>
-    <li >
-    <a href="/events/travel_grants.html">Travel Grants</a>
-    </li>
-  </ul>
-</li>
-            
-  <li class="dropdown">
-
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    
-  <li>
-    <a href="/methods/index.html">Methods</a>
-  </li>
-
-
-    
-  <li>
-    <a href="/codes/index.html">Codes</a>
-  </li>
-
-
-    
-  <li>
-    <a href="/groups/index.html">Groups</a>
-  </li>
-
-
-    
-  <li>
-    <a href="/projects/index.html">Projects</a>
-  </li>
-
-
-  </ul>
-</li>
-
-            <li >
-              <a href="/references/index.html">References</a>
-            </li>
-            <li >
-              <a href="/about/index.html">About</a>
-            </li>
-          </ul>
-          
         </div>
-      </div>
     </div>
-  </nav>
-</header>
+</nav>
 
-    <main>
-      <div class="container">
-        <div class="post">
+    
+        <section class="hero  is-medium  is-bold is-primary" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Bylaws for the PinT workshop series</h1>
+            <p class="subtitle is-3"></p>
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <div class="post">
   <header class="post-header">
     <h1>Bylaws for the PinT workshop series</h1>
   </header>
@@ -143,50 +176,53 @@ We are looking forward to many more interesting PinT workshops!</p>
 </footer>
 
 </div>
-      </div>
-    </main>
-    <footer id="site-footer">
-  <div class="navbar navbar-default navbar-fixed-bottom">
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="nav-item">
-              <a class="nav-link" href="/about/imprint.html">
-                <i class="fa fa-copyright fa-fw"></i><span class="hidden-md-down">Imprint</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://help.github.com/articles/github-privacy-statement/">
-                <i class="fa fa-github fa-fw"></i><span class="hidden-md-down">Privacy</span></a>
-            </li>
-          </ul>
+        
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/about/imprint.html" class="link">Imprint</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://help.github.com/articles/github-privacy-statement/" class="link">Privacy Policy</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io" class="link">Sources</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues" class="link">Found a Typo?</a>
+                </div>
+            </div>
+            
         </div>
-        <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
-          <p class="navbar-text small">
-            <span class="credit">
-              Powered by
-              <a class="nav-link" href="https://jekyllrb.com">Jekyll</a> and
-              <a class="nav-link" href="https://getbootstrap.com">Twitter Bootstrap</a>
-            </span>
-          </p>
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-          <p class="navbar-text pull-right">
-            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">
-              <i class="fa fa-github fa-fw"></i><span class="hidden-xs">Sources</span></a>
-            <span class="seperator"></span>
-            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues">
-              <i class="fa fa-bug fa-fw"></i><span class="hidden-xs">Found a typo?</span></a>
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
 </footer>
 
-    <script type="text/javascript" src="/assets/custom-b979e939c05d4dbb9022b116b773e969fbd7fea4087bece344d1550c6b6941a4.js"></script>
-
-<!--  -->
-
-  </body>
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
 </html>

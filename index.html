@@ -1,149 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Parallel-in-Time</title>
+  <title>Parallel in Time</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <link rel="canonical" href="http://parallel-in-time.org/">
-
-  <link type="text/css" rel="stylesheet" href="/assets/main-76819aa89d75930ac06ef9967c01d19269aaad5bd78e7a1bee6bb4df855d04cb.css">
-  <script type="text/javascript" src="/assets/vendor/jquery-1.12.0-86a3022f12ca44acf0d7da548569f4168279fe7b115508fbe4cf4af00498eb4b.js"></script>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <script src="/assets/js/vendor/jquery-1.12.0.js"></script>
+  <script src="/assets/js/vendor/bootstrap/affix.js"></script>
+  <script src="/assets/js/vendor/bootstrap/alert.js"></script>
+  <script src="/assets/js/vendor/bootstrap/button.js"></script>
+  <script src="/assets/js/vendor/bootstrap/carousel.js"></script>
+  <script src="/assets/js/vendor/bootstrap/collapse.js"></script>
+  <script src="/assets/js/vendor/bootstrap/dropdown.js"></script>
+  <script src="/assets/js/vendor/bootstrap/modal.js"></script>
+  <script src="/assets/js/vendor/bootstrap/scrollspy.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tab.js"></script>
+  <script src="/assets/js/vendor/bootstrap/transition.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tooltip.js"></script>
+  <script src="/assets/js/vendor/bootstrap/popover.js"></script>
+  <script src="/assets/js/vendor/jquery.githubRepoWidget.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="/assets/js/bib_stats.js"></script>
 </head>
 
   <body>
-    <header>
-  <nav>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                Parallel-in-Time
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item is-active">Home</a>
+                
+                
+                    
+                    <a href="/news/" class="navbar-item ">News</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Workshops</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/events/" class="navbar-item ">Overview</a>
+                            
+                            <a href="/events/upcoming/" class="navbar-item ">Upcoming</a>
+                            
+                            <a href="/events/past/" class="navbar-item ">Past</a>
+                            
+                            <a href="/events/bylaws.html" class="navbar-item ">Bylaws</a>
+                            
+                            <a href="/events/scientific_committee.html" class="navbar-item ">Scientific Committee</a>
+                            
+                            <a href="/events/travel_grants.html" class="navbar-item ">Travel Grants</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Research</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/methods/" class="navbar-item ">Methods</a>
+                            
+                            <a href="/codes/" class="navbar-item ">Codes</a>
+                            
+                            <a href="/groups/" class="navbar-item ">Groups</a>
+                            
+                            <a href="/projects/" class="navbar-item ">Projects</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/references/index.html" class="navbar-item ">References</a>
+                    
+                
+                    
+                    <a href="/about/index.html" class="navbar-item ">About</a>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary"  style="background: url('/assets/images/logo_pint.jpg') no-repeat center center; background-size: cover;" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Parallel in Time</h1>
+            <p class="subtitle is-3"></p>
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Parallel in Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="canonical" href="http://parallel-in-time.org/">
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <script src="/assets/js/vendor/jquery-1.12.0.js"></script>
+  <script src="/assets/js/vendor/bootstrap/affix.js"></script>
+  <script src="/assets/js/vendor/bootstrap/alert.js"></script>
+  <script src="/assets/js/vendor/bootstrap/button.js"></script>
+  <script src="/assets/js/vendor/bootstrap/carousel.js"></script>
+  <script src="/assets/js/vendor/bootstrap/collapse.js"></script>
+  <script src="/assets/js/vendor/bootstrap/dropdown.js"></script>
+  <script src="/assets/js/vendor/bootstrap/modal.js"></script>
+  <script src="/assets/js/vendor/bootstrap/scrollspy.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tab.js"></script>
+  <script src="/assets/js/vendor/bootstrap/transition.js"></script>
+  <script src="/assets/js/vendor/bootstrap/tooltip.js"></script>
+  <script src="/assets/js/vendor/bootstrap/popover.js"></script>
+  <script src="/assets/js/vendor/jquery.githubRepoWidget.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="/assets/js/bib_stats.js"></script>
+</head>
+
+
+<body>
+  <main>
+    <div class="jumbotron">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Parallel-in-Time</a>
-        </div>
-
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            
-  <li>
-    <a href="/news/index.html">News</a>
-  </li>
-
-
-            <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    <li >
-      <a href="/events/index.html">Overview</a>
-    </li>
-    <li >
-      <a href="/events/upcoming/index.html">Upcoming</a>
-    </li>
-    <li >
-      <a href="/events/past/index.html">Past</a>
-    </li>
-    <li >
-      <a href="/events/bylaws.html">Bylaws</a>
-    </li>
-    <li >
-      <a href="/events/scientific_committee.html">Scientific committee</a>
-    </li>
-    <li >
-    <a href="/events/travel_grants.html">Travel Grants</a>
-    </li>
-  </ul>
-</li>
-            
-  <li class="dropdown">
-
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    
-  <li>
-    <a href="/methods/index.html">Methods</a>
-  </li>
-
-
-    
-  <li>
-    <a href="/codes/index.html">Codes</a>
-  </li>
-
-
-    
-  <li>
-    <a href="/groups/index.html">Groups</a>
-  </li>
-
-
-    
-  <li>
-    <a href="/projects/index.html">Projects</a>
-  </li>
-
-
-  </ul>
-</li>
-
-            <li >
-              <a href="/references/index.html">References</a>
-            </li>
-            <li >
-              <a href="/about/index.html">About</a>
-            </li>
-          </ul>
-          
-        </div>
+        <h1>Parallel-in-Time</h1>
+        <p>About Parallel-in-Time Methods</p>
       </div>
     </div>
-  </nav>
-</header>
 
-    <main>
-      <div class="jumbotron">
-        <div class="container">
-          <h1>Parallel-in-Time</h1>
-          <p>About Parallel-in-Time Methods</p>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-  <div class="col-md-4">
+    <div class="container">
+      <div class="columns is-multiline">
+  <div class="column is-4-desktop is-4-tablet">
     <section>
   <h3>A new community resource</h3>
   <p>This website collects information about people, methods and software in the field of
     parallel-in-time integration methods.</p>
   <p>If you would like for your group, your method, your code or your event to be mentioned here,
     it is (relatively) simple to add content: The website is based on
-    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io"
-       target="_blank">GitHub Pages</a>, making it easy for everyone to contribute: See the
-    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/wiki"
-       target="_blank">Wiki</a> for more detailed information.</p>
+    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io" target="_blank">GitHub Pages</a>, making it easy for everyone to contribute: See the
+    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/wiki" target="_blank">Wiki</a> for more detailed information.</p>
   <h4>Literature list</h4>
   <p>We also maintain an extensive <a href="/references/" target="_blank">literature list</a> in BibTex format. Feel free to use it and to add your own PINT-related publications if they are missing!</p>
 
 </section>
 
   </div>
-  <div class="col-md-4">
+  <div class="column is-4-desktop is-4-tablet">
     <section>
   <h3>Parallel-in-time workshop series</h3>
   <p>This website also provides all the information about the parallel-in-time workshop series.
-    Check out <a href=/events/index.html>workshops</a> for more information.</p>
+    Check out <a href="/events/index.html">workshops</a> for more information.</p>
 </section>
 <section>
   <h3>Email list</h3>
   <p>You can join our email list to send and receive information about events all around
     parallel-in-time integration: Just send an email to
-    <em>parallelintime+subscribe[AT]googlegroups.com</em> and wait for your request to be accepted.</p>
+    <em>parallelintime+subscribe[AT]googlegroups.com</em> and wait for your request to be accepted.
+  </p>
 </section>
+
   </div>
-  <div class="col-md-4">
+  <div class="column is-4-desktop is-4-tablet card p-4">
     <section>
   <a type="button" class="btn btn-default btn-sm pull-right" href="/feed.xml" role="button" title="subscribe via RSS">
     <i class="fa fa-rss"></i>
@@ -186,50 +251,58 @@
   </div>
 </div>
 
-      </div>
-    </main>
-    <footer id="site-footer">
-  <div class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="nav-item">
-              <a class="nav-link" href="/about/imprint.html">
-                <i class="fa fa-copyright fa-fw"></i><span class="hidden-md-down">Imprint</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://help.github.com/articles/github-privacy-statement/">
-                <i class="fa fa-github fa-fw"></i><span class="hidden-md-down">Privacy</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
-          <p class="navbar-text small">
-            <span class="credit">
-              Powered by
-              <a class="nav-link" href="https://jekyllrb.com">Jekyll</a> and
-              <a class="nav-link" href="https://getbootstrap.com">Twitter Bootstrap</a>
-            </span>
-          </p>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-          <p class="navbar-text pull-right">
-            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io">
-              <i class="fa fa-github fa-fw"></i><span class="hidden-xs">Sources</span></a>
-            <span class="seperator"></span>
-            <a class="navbar-link" href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues">
-              <i class="fa fa-bug fa-fw"></i><span class="hidden-xs">Found a typo?</span></a>
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
+  </main>
+</body>
+
+</html>
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/about/imprint.html" class="link">Imprint</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://help.github.com/articles/github-privacy-statement/" class="link">Privacy Policy</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io" class="link">Sources</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="https://github.com/Parallel-in-Time/parallel-in-time.github.io/issues" class="link">Found a Typo?</a>
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div>
+    </div>
 </footer>
 
-    <script type="text/javascript" src="/assets/custom-b979e939c05d4dbb9022b116b773e969fbd7fea4087bece344d1550c6b6941a4.js"></script>
-
-<!--  -->
-
-  </body>
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
 </html>
