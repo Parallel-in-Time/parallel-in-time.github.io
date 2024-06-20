@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "PinT 2022: 11th Workshop on Parallel-in-Time Integration"
 date: 2021-03-22 08:00:00 +0000
 event_location: Marseille, France

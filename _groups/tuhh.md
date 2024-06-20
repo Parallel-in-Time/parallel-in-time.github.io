@@ -1,5 +1,6 @@
 ---
 layout: page_group
+hide_hero: true
 title: "Hamburg University of Technology"
 date: 2015-09-01 16:00:00 +0100
 navbar: Groups

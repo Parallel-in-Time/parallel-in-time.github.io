@@ -1,0 +1,18 @@
+steps:
+  - label: "Build & Push Staging Docker Image"
+    commands:
+      - echo $$REGISTRY_PASSWORD | docker login adabay.azurecr.io --username $$REGISTRY_USERNAME --password-stdin
+      - docker run --rm -v "$$PWD":/usr/src/app -w /usr/src/app ruby:3.2.2 bash -c "bundle config set --local path '/usr/src/app/vendor' && bundle install"
+      - docker run --rm -v "$$PWD":/usr/src/app -w /usr/src/app ruby:3.2.2 bash -c "bundle config set --local path '/usr/src/app/vendor' && bundle exec jekyll build"
+      - docker build --pull --progress plain -f Staging.Dockerfile -t adabay.azurecr.io/fz-juelich/website/parallel-in-time:latest .
+      - docker push adabay.azurecr.io/fz-juelich/website/parallel-in-time:latest
+      - docker logout adabay.azurecr.io
+    plugins:
+      - adabay/vault-key-value#v0.9.5:
+          secrets:
+            - secret_path: "static/ci/username-password-combinations/adabay.azurecr.io"
+              secret_key: "username"
+              exported_env_variable_name: "REGISTRY_USERNAME"
+            - secret_path: "static/ci/username-password-combinations/adabay.azurecr.io"
+              secret_key: "password"
+              exported_env_variable_name: "REGISTRY_PASSWORD"

@@ -8,54 +8,89 @@
           {{ key }}
         </div>
       </div>
-      <div class="row">
-        <div class="btn-group btn-group-xs btn-group-justified" role="group">
-          <div class="btn-group btn-group-xs" role="group">
-            <button class="btn btn-default" data-toggle="collapse" data-target="#collapse{{ key }}Bibtex"
-                    aria-expanded="false" aria-controls="collapse{{ key }}Bibtex">
-              BibTeX
-            </button>
-          </div>
-          <div class="btn-group btn-group-xs" role="group">
-            {% if entry.abstract %}
-            <button class="btn btn-default" data-toggle="modal" data-target="#modal{{ key }}Abstract"
-                    aria-expanded="false" aria-controls="modal{{ key }}Abstract">
-              Abstract
-            </button>
-            {% else %}
-            <button class="btn btn-default" disabled="disabled" data-toggle="modal" data-target="#modal{{ key }}Abstract"
-                    aria-expanded="false" aria-controls="modal{{ key }}Abstract">
-              Abstract
-            </button>
-            {% endif %}
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="bibtex-ref-entry">
       {{ reference | trim_ieee_citation }}
     </div>
-  </div>
-  <div class="collapse" id="collapse{{ key }}Bibtex">
-    <div class="row">
-      <div class="col-md-12">
-        <pre class="abstract">{{ entry.bibtex }}</pre>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          {% if entry.bibtex %}
+          <button class="button" data-toggle="modal" data-target="#modal{{ key }}Bibtex" aria-expanded="false"
+                  aria-controls="modal{{ key }}Bibtex">
+            BibTeX
+          </button>
+          {% else %}
+          <button class="button" disabled="disabled" data-toggle="modal" data-target="#modal{{ key }}Bibtex"
+                  aria-expanded="false" aria-controls="modal{{ key }}Bibtex">
+            BibTeX
+          </button>
+          {% endif %}
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          {% if entry.abstract %}
+          <button class="button" data-toggle="modal" data-target="#modal{{ key }}Abstract" aria-expanded="false"
+                  aria-controls="modal{{ key }}Abstract">
+            Abstract
+          </button>
+          {% else %}
+          <button class="button" disabled="disabled" data-toggle="modal" data-target="#modal{{ key }}Abstract"
+                  aria-expanded="false" aria-controls="modal{{ key }}Abstract">
+            Abstract
+          </button>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
-  {% if entry.abstract %}
-  <div class="modal fade" id="modal{{ key }}Abstract" tabindex="-1" role="dialog" aria-labelledby="modal{{ key }}AbstractTitle" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modal{{ key }}AbstractTitle">
-            Abstract for BibTeX entry <code>{{ key }}</code>
-          </h4>
+  {% if entry.bibtex %}
+  <div class="modal" id="modal{{ key }}Bibtex" tabindex="-1" role="dialog"
+    aria-labelledby="modal{{ key }}BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modal{{ key }}BibtexTitle">
+                  BibTeX entry <code>{{ key }}</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">{{ entry.bibtex }}</pre>
+          </section>
         </div>
-        <div class="modal-body">
-          {{ entry.abstract }}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if entry.abstract %}
+  <div class="modal" id="modal{{ key }}Abstract" tabindex="-1" role="dialog"
+       aria-labelledby="modal{{ key }}AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modal{{ key }}AbstractTitle">
+                  Abstract for BibTeX entry <code>{{ key }}</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            {{ entry.abstract }}
+          </section>
         </div>
       </div>
     </div>

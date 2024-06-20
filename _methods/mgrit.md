@@ -1,5 +1,6 @@
 ---
 layout: page_method
+hide_hero: true
 title: Multigrid Reduction in Time (MGRIT)
 subtitle: MGRIT
 date: 2014-11-05 17:00:00 +0000

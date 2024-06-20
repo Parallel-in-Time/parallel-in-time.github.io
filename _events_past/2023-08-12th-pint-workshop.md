@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "PinT 2023: 12th Workshop on Parallel-in-Time Integration"
 date: 2021-08-08 08:00:00 +0000
 event_location: Hamburg, Germany
@@ -9,7 +10,7 @@ event_url: https://www.mat.tuhh.de/veranstaltungen/pint2023/
 navbar: Events
 subnavbar: Past
 organizers:
-  - name: Daniel Ruprecht 
+  - name: Daniel Ruprecht
     homepage: https://www.mat.tuhh.de/home/druprecht_en
   - name: Philipp Neumann
     homepage: https://www.hsu-hh.de/hpc/philipp-neumann/

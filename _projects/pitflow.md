@@ -1,5 +1,6 @@
 ---
 layout: page_project
+hide_hero: true
 title: "PiT Flow"
 date: 2017-08-10 08:24 +0200
 navbar: Projects

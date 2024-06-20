@@ -1,5 +1,6 @@
 ---
 layout: page_project
+hide_hero: true
 title: "ExaSolvers"
 date: 2014-06-15 16:24 +0200
 updated: 2015-06-03 19:30:00 +0200
@@ -19,7 +20,7 @@ members:
 
 The Priority Programme "Software for Exascale Computing" (SPPEXA) of the Deutsche
 Forschungsgemeinschaft (DFG) addresses fundamental research on the various aspects of HPC software,
-which is particularly urgent against the background that we are currently entering the era of 
+which is particularly urgent against the background that we are currently entering the era of
 ubiquitous massive parallelism.
 
 ["ExaSolvers"](http://www.sppexa.de/general-information/projects.html#EXASOLVERS) is a project

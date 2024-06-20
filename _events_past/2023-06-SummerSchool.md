@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: "Summer School on Advanced Parallel-in-Time Methods"
 date: 2023-03-21 08:00:00 +0000
 event_location: Milan, Italy

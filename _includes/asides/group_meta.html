@@ -4,86 +4,84 @@
   </div>
   <div class="panel-body">
     {% if page.logo %}
-      <div class="row">
-        <div class="col-md-12 logo">
-          {% img '{{ page.logo }}' alt:"{{ page.title }} Logo" %}
-        </div>
+    <div class="row">
+      <div class="col-md-12 logo">
+        <img src='/assets/images/{{ page.logo }}' alt="{{ page.title }} Logo"></img>
       </div>
-      <br>
+    </div>
+    <br>
     {% endif %}
     {% if page.group_url %}
-      <div class="row">
-        <label class="col-md-4 control-label">Homepage</label>
-        <div class="col-md-8">
-            {% if page.group_url | size > 0 %}
-              <a href="{{ page.group_url }}" target="_blank"
-                 title="Group's homepage"
-                 data-toggle="tooltip"
-                 role="button">
-            {% else %}
-              <button class="btn btn-sm btn-link" disabled
-                      title="Group's homepage not available" data-toggle="tooltip">
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Homepage</label>
+      <div class="event-meta-piece">
+        {% if page.group_url | size > 0 %}
+        <a href="{{ page.group_url }}" target="_blank" title="Group's homepage" data-toggle="tooltip" role="button">
+          {% else %}
+          <button class="btn btn-sm btn-link" disabled title="Group's homepage not available" data-toggle="tooltip">
             {% endif %}
-              <i class="fa fa-fw fa-globe"></i>
+            <i class="fa fa-fw fa-globe"></i>
             {% if page.group_url | size > 0 %}
-              </a>
-            {% else %}
-              </button>
-            {% endif %}
-          <!-- <a href="{{ page.group_url }}">{{ page.group_url | trim_url }}</a> -->
-        </div>
+        </a>
+        {% else %}
+        </button>
+        {% endif %}
+        <!-- <a href="{{ page.group_url }}">{{ page.group_url | trim_url }}</a> -->
       </div>
+    </div>
     {% endif %}
     {% if page.group_address %}
-      <div class="row">
-        <label class="col-md-4 control-label">Address</label>
-        <div class="col-md-8">
-          <address>{{ page.group_address }}</address>
-        </div>
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Address</label>
+      <div class="event-meta-piece">
+        <address>{{ page.group_address }}</address>
       </div>
-      <br>
+    </div>
+    <br>
     {% endif %}
     {% if page.members %}
-      <div class="row">
-        <label class="col-md-4 control-label">Current Members</label>
-        <div class="col-md-8">
-          {% for member in page.members %}
-            <span class="clearfix">
-              {{ member.name }}
-              {% if member.email or member.corresponding %}
-                <span class="pull-right">
-                  {% if member.corresponding %}
-                    <a href="#" title="Group Head"><i class="fa fa-graduation-cap fa-fw"></i></a>
-                  {% endif %}
-                  {% if member.email %}
-                    <a href="mailto:{{ member.email }}" title="email: {{ member.email }}"><i class="fa fa-envelope-o fa-fw"></i></a>
-                  {% endif %}
-                </span>
-              {% endif %}
-            </span>
-          {% endfor %}
-        </div>
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Current Members</label>
+      <div class="event-meta-piece">
+        {% for member in page.members %}
+        <span class="clearfix">
+          {{ member.name }}
+          {% if member.email or member.corresponding %}
+          <span class="pull-right">
+            {% if member.corresponding %}
+            <a href="#" title="Group Head"><i class="fa fa-graduation-cap fa-fw"></i></a>
+            {% endif %}
+            {% if member.email %}
+            <a href="mailto:{{ member.email }}" title="email: {{ member.email }}"><i
+                class="fa fa-envelope-o fa-fw"></i></a>
+            {% endif %}
+          </span>
+          {% endif %}
+        </span>
+        {% endfor %}
       </div>
-      <br>
+    </div>
+    <br>
     {% endif %}
     {% if page.members_retired %}
-    <div class="row">
+    <div class="event-meta-piece">
       <label class="col-md-4 control-label">Past Members</label>
-      <div class="col-md-8">
+      <div class="event-meta-row">
         {% for member in page.members_retired %}
-            <span class="clearfix">
-              {{ member.name }}
-              {% if member.email or member.corresponding %}
-                <span class="pull-right">
-                  {% if member.corresponding %}
-                    <a href="#" title="Group Head"><i class="fa fa-graduation-cap fa-fw"></i></a>
-                  {% endif %}
-                  {% if member.email %}
-                    <a href="mailto:{{ member.email }}" title="email: {{ member.email }}"><i class="fa fa-envelope-o fa-fw"></i></a>
-                  {% endif %}
-                </span>
-              {% endif %}
-            </span>
+        <span class="clearfix">
+          {{ member.name }}
+          {% if member.email or member.corresponding %}
+          <span class="pull-right">
+            {% if member.corresponding %}
+            <a href="#" title="Group Head"><i class="fa fa-graduation-cap fa-fw"></i></a>
+            {% endif %}
+            {% if member.email %}
+            <a href="mailto:{{ member.email }}" title="email: {{ member.email }}"><i
+                class="fa fa-envelope-o fa-fw"></i></a>
+            {% endif %}
+          </span>
+          {% endif %}
+        </span>
         {% endfor %}
       </div>
     </div>

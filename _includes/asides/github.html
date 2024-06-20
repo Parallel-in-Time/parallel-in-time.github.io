@@ -6,29 +6,30 @@
     <p class="loading">Status updating...</p>
   </div>
   {% if site.data.github.show_profile_link %}
-    <div class="panel-body gh-profile-link text-muted">
-      <div class="pull-right">
-        <a href="https://github.com/{{include.username}}">@{{include.username}}</a> on <i class="fa fa-github fa-fw"></i>GitHub
-      </div>
+  <div class="panel-body gh-profile-link text-muted">
+    <div class="pull-right">
+      <a href="https://github.com/{{include.username}}">@{{include.username}}</a> on <i
+        class="fa fa-github fa-fw"></i>GitHub
     </div>
+  </div>
   {% endif %}
   <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '{% asset_path vendor/jXHR %}';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
+    $(document).ready(function () {
+      if (!window.jXHR) {
+        var jxhr = document.createElement('script');
+        jxhr.type = 'text/javascript';
+        jxhr.src = '/_assets/js/vendor/jXHR.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(jxhr, s);
+      }
 
-        github.showRepos({
-            user: '{{ include.username }}',
-            count: {{ site.data.github.repo_count }},
-            skip_forks: {{ site.data.github.skip_forks }},
-            target: '#gh_repos'
-        });
+      github.showRepos({
+        user: '{{ include.username }}',
+        count: '{{ site.data.github.repo_count }}',
+        skip_forks: '{{ site.data.github.skip_forks }}',
+        target: '#gh_repos'
+      });
     });
   </script>
-  {% js github %}
+  <script src="/_assets/js/github.js"></script>
 </section>

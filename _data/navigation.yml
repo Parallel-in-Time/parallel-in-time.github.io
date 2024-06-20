@@ -1,0 +1,30 @@
+- name: News
+  link: /news/
+- name: Workshops
+  dropdown:
+    - name: Overview
+      link: /events/
+    - name: Upcoming
+      link: /events/upcoming/
+    - name: Past
+      link: /events/past/
+    - name: Bylaws
+      link: /events/bylaws.html
+    - name: Scientific Committee
+      link: /events/scientific_committee.html
+    - name: Travel Grants
+      link: /events/travel_grants.html
+- name: Research
+  dropdown:
+    - name: Methods
+      link: /methods/
+    - name: Codes
+      link: /codes/
+    - name: Groups
+      link: /groups/
+    - name: Projects
+      link: /projects/
+- name: References
+  link: /references/index.html
+- name: About
+  link: /about/index.html
