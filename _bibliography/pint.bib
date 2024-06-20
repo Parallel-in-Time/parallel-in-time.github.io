@@ -19,6 +19,46 @@
 % We would very much appreciate a link/reference to parallel-in-time.org.
 %
 
+@article{ChaudhryEtAl2023,
+	month = {August},
+}
+
+@inbook{Cyr2024,
+	pages = {463–470},
+}
+
+@article{FangEtAl2024,
+	pages = {1163–1187},
+}
+
+@article{GanderEtAl2024,
+	pages = {A697–A718},
+}
+
+@article{GoryninaEtAl2024,
+	pages = {479–503},
+}
+
+@article{HonEtAl2023c,
+	pages = {1477–1509},
+}
+
+@article{KraftEtAl2024,
+	pages = {171998},
+}
+
+@article{Li2024,
+	pages = {115608},
+}
+
+@article{PentlandEtAl2023,
+	pages = {A2657–A2678},
+}
+
+@article{SarpeEtAl2024b,
+	pages = {1–4},
+}
+
 @article{Nievergelt1964,
 	author = {Nievergelt, J.},
 	doi = {10.1145/355588.365137},
@@ -5170,15 +5210,6 @@ the effectiveness of the proposed method.},
 	year = {2021},
 }
 
-@unpublished{ChaudhryEtAl2021,
-	abstract = {We construct a space-time parallel method for solving parabolic partial differential equations by coupling the Parareal algorithm in time with overlapping domain decomposition in space. Reformulating the original Parareal algorithm as a variational method and implementing a finite element discretization in space enables an adjoint-based a posteriori error analysis to be performed. Through an appropriate choice of adjoint problems and residuals the error analysis distinguishes between errors arising due to the temporal and spatial discretizations, as well as between the errors arising due to incomplete Parareal iterations and incomplete iterations of the domain decomposition solver. We first develop an error analysis for the Parareal method applied to parabolic partial differential equations, and then refine this analysis to the case where the associated spatial problems are solved using overlapping domain decomposition. These constitute our Time Parallel Algorithm (TPA) and Space-Time Parallel Algorithm (STPA) respectively. Numerical experiments demonstrate the accuracy of the estimator for both algorithms and the iterations between distinct components of the error.},
-	author = {Jehanzeb Chaudhry and Donald Estep and Simon Tavener},
-	howpublished = {arXiv:2111.00606v1 [math.NA]},
-	title = {A posteriori error analysis for a space-time parallel discretization of parabolic partial differential equations},
-	url = {http://arxiv.org/abs/2111.00606v1},
-	year = {2021},
-}
-
 @inproceedings{ChenEtAl2021,
 	author = {Yen-Chen Chen and Kengo Nakajima},
 	booktitle = {2021 12th Workshop on Latest Advances in Scalable Algorithms for Large-Scale Systems ({ScalA})},
@@ -5828,15 +5859,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{GoryninaEtAl2022,
-	abstract = {We numerically investigate an adaptive version of the parareal algorithm in the context of molecular dynamics. This adaptive variant has been originally introduced in [F. Legoll, T. Lelievre and U. Sharma, SISC 2022]. We focus here on test cases of physical interest where the dynamics of the system is modelled by the Langevin equation and is simulated using the molecular dynamics software LAMMPS. In this work, the parareal algorithm uses a family of machine-learning spectral neighbor analysis potentials (SNAP) as fine, reference, potentials and embedded-atom method potentials (EAM) as coarse potentials. We consider a self-interstitial atom in a tungsten lattice and compute the average residence time of the system in metastable states. Our numerical results demonstrate significant computational gains using the adaptive parareal algorithm in comparison to a sequential integration of the Langevin dynamics. We also identify a large regime of numerical parameters for which statistical accuracy is reached without being a consequence of trajectorial accuracy.},
-	author = {Olga Gorynina and Frederic Legoll and Tony Lelievre and Danny Perez},
-	howpublished = {arXiv:2212.10508v1 [math.NA]},
-	title = {Combining machine-learned and empirical force fields with the parareal algorithm: application to the diffusion of atomistic defects},
-	url = {http://arxiv.org/abs/2212.10508v1},
-	year = {2022},
-}
-
 @article{HahneEtAl2022,
 	author = {Jens Hahne and Ben S. Southworth and Stephanie Friedhoff},
 	doi = {10.1137/21m1433149},
@@ -6028,15 +6050,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{PentlandEtAl2022c,
-	abstract = {Stochastic parareal (SParareal) is a probabilistic variant of the popular parallel-in-time algorithm known as parareal. Similarly to parareal, it combines fine- and coarse-grained solutions to an ordinary differential equation (ODE) using a predictor-corrector (PC) scheme. The key difference is that carefully chosen random perturbations are added to the PC to try to accelerate the location of a stochastic solution to the ODE. In this paper, we derive superlinear and linear mean-square error bounds for SParareal applied to nonlinear systems of ODEs using different types of perturbations. We illustrate these bounds numerically on a linear system of ODEs and a scalar nonlinear ODE, showing a good match between theory and numerics.},
-	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan},
-	howpublished = {arXiv:2211.05496v1 [math.NA]},
-	title = {Error bound analysis of the stochastic parareal algorithm},
-	url = {http://arxiv.org/abs/2211.05496v1},
-	year = {2022},
-}
-
 @article{PentlandEtAl2022d,
 	author = {Kamran Pentland and Massimiliano Tamborrino and T. J. Sullivan and James Buchanan and L. C. Appel},
 	doi = {10.1007/s11222-022-10195-y},
@@ -6099,30 +6112,12 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2022},
 }
 
-@unpublished{SterckEtAl2022,
-	abstract = {Many iterative parallel-in-time algorithms have been shown to be highly efficient for diffusion-dominated partial differential equations (PDEs), but are inefficient or even divergent when applied to advection-dominated PDEs. We consider the application of the multigrid reduction-in-time (MGRIT) algorithm to linear advection PDEs. The key to efficient time integration with this method is using a coarse-grid operator that provides a sufficiently accurate approximation to the the so-called ideal coarse-grid operator. For certain classes of semi-Lagrangian discretizations, we present a novel semi-Lagrangian-based coarse-grid operator that leads to fast and scalable multilevel time integration of linear advection PDEs. The coarse-grid operator is composed of a semi-Lagrangian discretization followed by a correction term, with the correction designed so that the leading-order truncation error of the composite operator is approximately equal to that of the ideal coarse-grid operator. Parallel results show substantial speed-ups over sequential time integration for variable-wave-speed advection problems in one and two spatial dimensions, and using high-order discretizations up to order five. The proposed approach establishes the first practical method that provides small and scalable MGRIT iteration counts for advection problems.},
-	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik},
-	howpublished = {arXiv:2203.13382v1 [math.NA]},
-	title = {Fast multigrid reduction-in-time for advection via modified semi-Lagrangian coarse-grid operators},
-	url = {http://arxiv.org/abs/2203.13382v1},
-	year = {2022},
-}
-
 @unpublished{SterckEtAl2022b,
 	abstract = {A long-standing issue in the parallel-in-time community is the poor convergence of standard iterative parallel-in-time methods for hyperbolic partial differential equations (PDEs), and for advection-dominated PDEs more broadly. Here, a local Fourier analysis (LFA) convergence theory is derived for the two-level variant of the iterative parallel-in-time method of multigrid reduction-in-time (MGRIT). This closed-form theory allows for new insights into the poor convergence of MGRIT for advection-dominated PDEs when using the standard approach of rediscretizing the fine-grid problem on the coarse grid. Specifically, we show that this poor convergence arises, at least in part, from inadequate coarse-grid correction of certain smooth Fourier modes known as characteristic components, which was previously identified as causing poor convergence of classical spatial multigrid on steady-state advection-dominated PDEs. We apply this convergence theory to show that, for certain semi-Lagrangian discretizations of advection problems, MGRIT convergence using rediscretized coarse-grid operators cannot be robust with respect to CFL number or coarsening factor. A consequence of this analysis is that techniques developed for improving convergence in the spatial multigrid context can be re-purposed in the MGRIT context to develop more robust parallel-in-time solvers. This strategy has been used in recent work to great effect; here, we provide further theoretical evidence supporting the effectiveness of this approach.},
 	author = {H. De Sterck and S. Friedhoff and O. A. Krzysik and Scott P. MacLachlan},
 	howpublished = {arXiv:2208.01526v1 [math.NA]},
 	title = {Multigrid reduction-in-time convergence for advection problems: A Fourier analysis perspective},
 	url = {http://arxiv.org/abs/2208.01526v1},
-	year = {2022},
-}
-
-@unpublished{SterckEtAl2022c,
-	abstract = {Parallel-in-time methods for partial differential equations (PDEs) have been the subject of intense development over recent decades, particularly for diffusion-dominated problems. It has been widely reported in the literature, however, that many of these methods perform quite poorly for advection-dominated problems. Here we analyze the particular iterative parallel-in-time algorithm of multigrid reduction-in-time (MGRIT) for discretizations of constant-wave-speed linear advection problems. We focus on common method-of-lines discretizations that employ upwind finite differences in space and Runge-Kutta methods in time. Using a convergence framework we developed in previous work, we prove for a subclass of these discretizations that, if using the standard approach of rediscretizing the fine-grid problem on the coarse grid, robust MGRIT convergence with respect to CFL number and coarsening factor is not possible. This poor convergence and non-robustness is caused, at least in part, by an inadequate coarse-grid correction for smooth Fourier modes known as characteristic components.We propose an alternative coarse-grid that provides a better correction of these modes. This coarse-grid operator is related to previous work and uses a semi-Lagrangian discretization combined with an implicitly treated truncation error correction. Theory and numerical experiments show the coarse-grid operator yields fast MGRIT convergence for many of the method-of-lines discretizations considered, including for both implicit and explicit discretizations of high order.},
-	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik and J. B. Schroder},
-	howpublished = {arXiv:2209.06916v1 [math.NA]},
-	title = {Efficient multigrid reduction-in-time for method-of-lines discretizations of linear advection},
-	url = {http://arxiv.org/abs/2209.06916v1},
 	year = {2022},
 }
 
@@ -6366,15 +6361,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{CaldasEtAl2023,
-	abstract = {Despite the growing interest in parallel-in-time methods as an approach to accelerate numerical simulations in atmospheric modelling, improving their stability and convergence remains a substantial challenge for their application to operational models. In this work, we study the temporal parallelization of the shallow water equations on the rotating sphere combined with time-stepping schemes commonly used in atmospheric modelling due to their stability properties, namely an Eulerian implicit-explicit (IMEX) method and a semi-Lagrangian semi-implicit method (SL-SI-SETTLS). The main goal is to investigate the performance of parallel-in-time methods, namely Parareal and Multigrid Reduction in Time (MGRIT), when these well-established schemes are used on the coarse discretization levels and provide insights on how they can be improved for better performance. We begin by performing an analytical stability study of Parareal and MGRIT applied to a linearized ordinary differential equation depending on the choice of coarse scheme. Next, we perform numerical simulations of two standard tests to evaluate the stability, convergence and speedup provided by the parallel-in-time methods compared to a fine reference solution computed serially. We also conduct a detailed investigation on the influence of artificial viscosity and hyperviscosity approaches, applied on the coarse discretization levels, on the performance of the temporal parallelization. Both the analytical stability study and the numerical simulations indicate a poorer stability behaviour when SL-SI-SETTLS is used on the coarse levels, compared to the IMEX scheme. With the IMEX scheme, a better trade-off between convergence, stability and speedup compared to serial simulations can be obtained under proper parameters and artificial viscosity choices, opening the perspective of the potential competitiveness for realistic models.},
-	author = {Caldas Steinstraesser, Jo\~{a}o Guilherme and da Silva Peixoto, Pedro and Schreiber, Martin},
-	howpublished = {arXiv:2306.09497v1 [math.NA]},
-	title = {Parallel-in-time integration of the shallow water equations on the rotating sphere using Parareal and MGRIT},
-	url = {https://arxiv.org/abs/2306.09497v1},
-	year = {2023},
-}
-
 @article{CarrelEtAl2023,
 	author = {Benjamin Carrel and Martin J. Gander and Bart Vandereycken},
 	doi = {10.1007/s10543-023-00953-3},
@@ -6406,15 +6392,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Elsevier {BV}},
 	title = {Nonlinear parallel-in-time simulations of multiphase flow in porous media},
 	url = {https://doi.org/10.1016/j.jcp.2023.112515},
-	year = {2023},
-}
-
-@unpublished{Cyr2023,
-	abstract = {Solving optimization problems with transient PDE-constraints is computationally costly due to the number of nonlinear iterations and the cost of solving large-scale KKT matrices. These matrices scale with the size of the spatial discretization times the number of time steps. We propose a new two level domain decomposition preconditioner to solve these linear systems when constrained by the heat equation. Our approach leverages the observation that the Schur-complement is elliptic in time, and thus amenable to classical domain decomposition methods. Further, the application of the preconditioner uses existing time integration routines to facilitate implementation and maximize software reuse. The performance of the preconditioner is examined in an empirical study demonstrating the approach is scalable with respect to the number of time steps and subdomains.},
-	author = {Eric C. Cyr},
-	howpublished = {arXiv:2305.04421v1 [math.NA]},
-	title = {A 2-Level Domain Decomposition Preconditioner for KKT Systems with Heat-Equation Constraints},
-	url = {http://arxiv.org/abs/2305.04421v1},
 	year = {2023},
 }
 
@@ -6460,15 +6437,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{FangEtAl2023b,
-	abstract = {Applying parallel-in-time algorithms to multiscale Hamiltonian systems to obtain stable long time simulations is very challenging. In this paper, we present novel data-driven methods aimed at improving the standard parareal algorithm developed by Lion, Maday, and Turinici in 2001, for multiscale Hamiltonian systems. The first method involves constructing a correction operator to improve a given inaccurate coarse solver through solving a Procrustes problem using data collected online along parareal trajectories. The second method involves constructing an efficient, high-fidelity solver by a neural network trained with offline generated data. For the second method, we address the issues of effective data generation and proper loss function design based on the Hamiltonian function. We show proof-of-concept by applying the proposed methods to a Fermi-Pasta-Ulum (FPU) problem. The numerical results demonstrate that the Procrustes parareal method is able to produce solutions that are more stable in energy compared to the standard parareal. The neural network solver can achieve comparable or better runtime performance compared to numerical solvers of similar accuracy. When combined with the standard parareal algorithm, the improved neural network solutions are slightly more stable in energy than the improved numerical coarse solutions.},
-	author = {Rui Fang and Richard Tsai},
-	howpublished = {arXiv:2309.01225v1 [math.NA]},
-	title = {Stabilization of parareal algorithms for long time computation of a class of highly oscillatory Hamiltonian flows using data},
-	url = {http://arxiv.org/abs/2309.01225v1},
-	year = {2023},
-}
-
 @article{FreiEtAl2023,
 	author = {Stefan Frei and Alexander Heinlein},
 	doi = {10.1016/j.jcp.2023.112347},
@@ -6479,15 +6447,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Towards parallel time-stepping for the numerical simulation of atherosclerotic plaque growth},
 	url = {https://doi.org/10.1016%2Fj.jcp.2023.112347},
 	volume = {491},
-	year = {2023},
-}
-
-@unpublished{GanderEtAl2023,
-	abstract = {Time-parallel time integration has received a lot of attention in the high performance computing community over the past two decades. Indeed, it has been shown that parallel-in-time techniques have the potential to remedy one of the main computational drawbacks of parallel-in-space solvers. In particular, it is well-known that for large-scale evolution problems space parallelization saturates long before all processing cores are effectively used on today's large scale parallel computers. Among the many approaches for time-parallel time integration, ParaDiag schemes have proved themselves to be a very effective approach. In this framework, the time stepping matrix or an approximation thereof is diagonalized by Fourier techniques, so that computations taking place at different time steps can be indeed carried out in parallel. We propose here a new ParaDiag algorithm combining the Sherman-Morrison-Woodbury formula and Krylov techniques. A panel of diverse numerical examples illustrates the potential of our new solver. In particular, we show that it performs very well compared to different ParaDiag algorithms recently proposed in the literature.},
-	author = {Martin J. Gander and Davide Palitta},
-	howpublished = {arXiv:2304.12597v1 [math.NA]},
-	title = {A new ParaDiag time-parallel time integration method},
-	url = {http://arxiv.org/abs/2304.12597v1},
 	year = {2023},
 }
 
@@ -6558,15 +6517,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{HonEtAl2023b,
-	abstract = {In this work, we propose a novel preconditioned Krylov subspace method for solving an optimal control problem of wave equations, after explicitly identifying the asymptotic spectral distribution of the involved sequence of linear coefficient matrices from the optimal control problem. Namely, we first show that the all-at-once system stemming from the wave control problem is associated to a structured coefficient matrix-sequence possessing an eigenvalue distribution. Then, based on such a spectral distribution of which the symbol is explicitly identified, we develop an ideal preconditioner and two parallel-in-time preconditioners for the saddle point system composed of two block Toeplitz matrices. For the ideal preconditioner, we show that the eigenvalues of the preconditioned matrix-sequence all belong to the set $\left(-\frac{3}{2},-\frac{1}{2}\right)\bigcup \left(\frac{1}{2},\frac{3}{2}\right)$ well separated from zero, leading to mesh-independent convergence when the minimal residual method is employed. The proposed {parallel-in-time} preconditioners can be implemented efficiently using fast Fourier transforms or discrete sine transforms, and their effectiveness is theoretically shown in the sense that the eigenvalues of the preconditioned matrix-sequences are clustered around $\pm 1$, which leads to rapid convergence. When these parallel-in-time preconditioners are not fast diagonalizable, we further propose modified versions which can be efficiently inverted. Several numerical examples are reported to verify our derived localization and spectral distribution result and to support the effectiveness of our proposed preconditioners and the related advantages with respect to the relevant literature.},
-	author = {Sean Hon and Jiamei Dong and Stefano Serra-Capizzano},
-	howpublished = {arXiv:2307.12850v1 [math.NA]},
-	title = {A preconditioned MINRES method for optimal control of wave equations and its asymptotic spectral distribution theory},
-	url = {http://arxiv.org/abs/2307.12850v1},
-	year = {2023},
-}
-
 @incollection{IbrahimEtAl2023,
 	author = {Abdul Qadir Ibrahim and Sebastian Götschel and Daniel Ruprecht},
 	booktitle = {Euro-Par 2023: Parallel Processing},
@@ -6613,30 +6563,12 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
-@unpublished{KraftEtAl2023,
-	abstract = {Speeding up computationally expensive problems, such as numerical simulations of large micromagnetic systems, requires efficient use of parallel computing infrastructures. While parallelism across space is commonly exploited in micromagnetics, this strategy performs poorly once a minimum number of degrees of freedom per core is reached. We use magnum.pi, a finite-element micromagnetic simulation software, to investigate the Parallel Full Approximation Scheme in Space and Time (PFASST) as a space- and time-parallel solver for the Landau-Lifshitz-Gilbert equation (LLG). Numerical experiments show that PFASST enables efficient parallel-in-time integration of the LLG, significantly improving the speedup gained from using a given number of cores as well as allowing the code to scale beyond spatial limits.},
-	author = {Robert Kraft and Sabri Koraltan and Markus Gattringer and Florian Bruckner and Dieter Suess and Claas Abert},
-	howpublished = {arXiv:2310.11819v1 [physics.comp-ph]},
-	title = {Parallel-in-Time Integration of the Landau-Lifshitz-Gilbert Equation with the Parallel Full Approximation Scheme in Space and Time},
-	url = {http://arxiv.org/abs/2310.11819v1},
-	year = {2023},
-}
-
 @unpublished{LevequeEtAl2023,
 	abstract = {In this article, we derive fast and robust preconditioned iterative methods for the all-at-once linear systems arising upon discretization of time-dependent PDEs. The discretization we employ is based on a Runge--Kutta method in time, for which the development of robust solvers is an emerging research area in the literature of numerical methods for time-dependent PDEs. By making use of classical theory of block matrices, one is able to derive a preconditioner for the systems considered. An approximate inverse of the preconditioner so derived consists in a fixed number of linear solves for the system of the stages of the method. We thus propose a preconditioner for the latter system based on a singular value decomposition (SVD) of the (real) Runge--Kutta matrix $A_{\mathrm{RK}} = U \Sigma V^\top$. Supposing $A_{\mathrm{RK}}$ is invertible, we prove that the spectrum of the system for the stages preconditioned by our SVD-based preconditioner is contained within the right-half of the unit circle, under suitable assumptions on the matrix $U^\top V$ (which is well defined due to the polar decomposition of $A_{\mathrm{RK}}$). We show the numerical efficiency of our SVD-based preconditioner by solving the system of the stages arising from the discretization of the heat equation and the Stokes equations, with sequential time-stepping. Finally, we provide numerical results of the all-at-once approach for both problems.},
 	author = {Santolo Leveque and Luca Bergamaschi and Ángeles Martínez and John W. Pearson},
 	howpublished = {arXiv:2303.02090v1 [math.NA]},
 	title = {Fast Iterative Solver for the All-at-Once Runge--Kutta Discretization},
 	url = {http://arxiv.org/abs/2303.02090v1},
-	year = {2023},
-}
-
-@unpublished{Li2023,
-	abstract = {We present the Wavelet-based Edge Multiscale Parareal (WEMP) Algorithm, recently proposed in [Li and Hu, {\it J. Comput. Phys.}, 2021], for efficiently solving subdiffusion equations with heterogeneous coefficients in long time. This algorithm combines the benefits of multiscale methods, which can handle heterogeneity in the spatial domain, and the strength of parareal algorithms for speeding up time evolution problems when sufficient processors are available. Our algorithm overcomes the challenge posed by the nonlocality of the fractional derivative in previous parabolic problem work by constructing an auxiliary problem on each coarse temporal subdomain to completely uncouple the temporal variable. We prove the approximation properties of the correction operator and derive a new summation of exponential to generate a single-step time stepping scheme, with the number of terms of $\mathcal{O}(|\log{\tau_f}|^2)$ independent of the final time, where $\tau_f$ is the fine-scale time step size. We establish the convergence rate of our algorithm in terms of the mesh size in the spatial domain, the level parameter used in the multiscale method, the coarse-scale time step size, and the fine-scale time step size. Finally, we present several numerical tests that demonstrate the effectiveness of our algorithm and validate our theoretical results.},
-	author = {Guanglian Li},
-	howpublished = {arXiv:2307.06529v1 [math.NA]},
-	title = {Wavelet-based Edge Multiscale Parareal Algorithm for subdiffusion equations with heterogeneous coefficients in a large time domain},
-	url = {http://arxiv.org/abs/2307.06529v1},
 	year = {2023},
 }
 
@@ -6725,15 +6657,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2309.03037v1 [math.NA]},
 	title = {A Micor-Macro parallel-in-time Implementation for the 2D Navier-Stokes Equations},
 	url = {http://arxiv.org/abs/2309.03037v1},
-	year = {2023},
-}
-
-@unpublished{SarpeEtAl2023,
-	abstract = {This paper presents a parallel-in-time adjoint sensitivity analysis which combines a transient adjoint sensitivity analysis with the parareal approach in order to significantly speed up the simulation. The adjoint method is the method of choice to calculate the sensitivities in a many-parameter setting. In order to obtain sensitivity information that is time-dependent, multiple adjoint problems must be solved. This slows down the simulation wall-clock time and leaves a large optimization potential for the analysis. The parareal is applied to the adjoint solution, significantly speeding up the adjoint solution for every timestep respectively.},
-	author = {Julian Sarpe and Andreas Klaedtke and Herbert De Gersem},
-	howpublished = {arXiv:2307.00802v1 [math.NA]},
-	title = {A Parallel-In-Time Adjoint Sensitivity Analysis for a B6 Bridge-Motor Supply Circuit},
-	url = {http://arxiv.org/abs/2307.00802v1},
 	year = {2023},
 }
 
