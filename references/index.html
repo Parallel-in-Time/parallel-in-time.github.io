@@ -1633,6 +1633,101 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          MuralikrishnanEtAl2024
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="MuralikrishnanEtAl2024">S. Muralikrishnan and R. Speck, “ParaPIF: A Parareal Approach for Parallel-in-Time Integration of Particle-in-Fourier schemes,” arXiv:2407.00485v1 [math.NA], 2024 [Online]. Available at: <a href="http://arxiv.org/abs/2407.00485v1" target="_blank">http://arxiv.org/abs/2407.00485v1</a></span>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalMuralikrishnanEtAl2024Bibtex" aria-expanded="false"
+                  aria-controls="modalMuralikrishnanEtAl2024Bibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalMuralikrishnanEtAl2024Abstract" aria-expanded="false"
+                  aria-controls="modalMuralikrishnanEtAl2024Abstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modalMuralikrishnanEtAl2024Bibtex" tabindex="-1" role="dialog"
+    aria-labelledby="modalMuralikrishnanEtAl2024BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalMuralikrishnanEtAl2024BibtexTitle">
+                  BibTeX entry <code>MuralikrishnanEtAl2024</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@unpublished{MuralikrishnanEtAl2024,
+  author = {Muralikrishnan, Sriramkrishnan and Speck, Robert},
+  howpublished = {arXiv:2407.00485v1 [math.NA]},
+  title = {ParaPIF: A Parareal Approach for Parallel-in-Time Integration of Particle-in-Fourier schemes},
+  url = {http://arxiv.org/abs/2407.00485v1},
+  year = {2024}
+}
+</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="modalMuralikrishnanEtAl2024Abstract" tabindex="-1" role="dialog"
+       aria-labelledby="modalMuralikrishnanEtAl2024AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalMuralikrishnanEtAl2024AbstractTitle">
+                  Abstract for BibTeX entry <code>MuralikrishnanEtAl2024</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            We propose ParaPIF, a parareal based time parallelization scheme for the particle-in-Fourier (PIF) discretization of the Vlasov-Poisson system used in kinetic plasma simulations. Our coarse propagators are based on the coarsening of the numerical discretization scheme combined with, if possible, temporal coarsening rather than coarsening of particles and/or Fourier modes, which are not possible or effective for PIF schemes. Specifically, we use PIF with a coarse tolerance for nonuniform FFTs or even the standard particle-in-cell schemes as coarse propagators for the ParaPIF algorithm. We state and prove the convergence of the algorithm and verify the results numerically with Landau damping, two-stream instability, and Penning trap test cases in 3D-3V. We also implement the space-time parallelization of the PIF schemes in the open-source, performance-portable library IPPL and conduct scaling studies up to 1536 A100 GPUs on the JUWELS booster supercomputer. The space-time parallelization utilizing the ParaPIF algorithm for the time parallelization provides up to 4-6 times speedup compared to spatial parallelization alone and achieves a push rate of around 1 billion particles per second for the benchmark plasma mini-apps considered.
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           PamelaEtAl2024
         </div>
       </div>
