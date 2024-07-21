@@ -3867,6 +3867,20 @@ setups.}},
 	year = {2018},
 }
 
+@inbook{MeleEtAl2018b,
+	author = {Mele, Valeria and Romano, Diego and Constantinescu, Emil M. and Carracciuolo, Luisa and D’Amore, Luisa},
+	booktitle = {Euro-Par 2018: Parallel Processing Workshops},
+	doi = {10.1007/978-3-030-10549-5_56},
+	isbn = {9783030105495},
+	issn = {1611-3349},
+	month = {December},
+	pages = {716–728},
+	publisher = {Springer International Publishing},
+	title = {Performance Evaluation for a PETSc Parallel-in-Time Solver Based on the MGRIT Algorithm},
+	url = {http://dx.doi.org/10.1007/978-3-030-10549-5_56},
+	year = {2018},
+}
+
 @article{MiaoEtAl2018,
 	abstract = {{This paper presents and analyzes a parareal-in-time scheme for the incompressible non-isothermal Navier–Stokes equations with Boussinesq approximation. Standard finite element method is adopted for the spatial discretization.The proposed algorithm is proved to be unconditional stability. The convergence factor of iteration error for the velocity and temperature is given at time-continuous case. It theoretically demonstrates the superlinearly convergence of the parareal iteration combined with finite element method for incompressible non-isothermal flows. Finally, several numerical experiments that confirm feasibility and applicability of the algorithm perform well as expected.}},
 	author = {Zhen Miao and Yao-Lin Jiang and Yun-Bo Yang},
@@ -7008,6 +7022,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@article{JosephEtAl2024,
+	author = {Joseph, Francis C and Gurrala, Gurunath},
+	doi = {10.1109/tpwrs.2024.3424555},
+	issn = {1558-0679},
+	journal = {IEEE Transactions on Power Systems},
+	pages = {1–12},
+	publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+	title = {Adaptive Homotopy Based Coarse Solver for Parareal-in-Time Transient Stability Simulations},
+	url = {http://dx.doi.org/10.1109/TPWRS.2024.3424555},
+	year = {2024},
+}
+
 @unpublished{KaiserEtAl2024,
 	abstract = {Recent advances in wave modeling use sufficiently accurate fine solver outputs to train a neural network that enhances the accuracy of a fast but inaccurate coarse solver. In this paper we build upon the work of Nguyen and Tsai (2023) and present a novel unified system that integrates a numerical solver with a deep learning component into an end-to-end framework. In the proposed setting, we investigate refinements to the network architecture and data generation algorithm. A stable and fast solver further allows the use of Parareal, a parallel-in-time algorithm to correct high-frequency wave components. Our results show that the cohesive structure improves performance without sacrificing speed, and demonstrate the importance of temporal dynamics, as well as Parareal, for accurate wave propagation.},
 	author = {Luis Kaiser and Richard Tsai and Christian Klingenberg},
@@ -7113,6 +7139,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@article{PoirierEtAl2024,
+	author = {Poirier, Yohan and Salomon, Julien and Babarit, Aurélien and Ferrant, Pierre and Ducrozet, Guillaume},
+	doi = {10.1016/j.enganabound.2024.105870},
+	issn = {0955-7997},
+	journal = {Engineering Analysis with Boundary Elements},
+	month = {October},
+	pages = {105870},
+	publisher = {Elsevier BV},
+	title = {Acceleration of a wave-structure interaction solver by the Parareal method},
+	url = {http://dx.doi.org/10.1016/j.enganabound.2024.105870},
+	volume = {167},
+	year = {2024},
+}
+
 @unpublished{SarpeEtAl2024,
 	abstract = {This paper proposes the utilization of a periodic Parareal with a periodic coarse problem to efficiently perform adjoint sensitivity analysis for the steady state of time-periodic nonlinear circuits. In order to implement this method, a modified formulation for adjoint sensitivity analysis based on the transient approach is derived.},
 	author = {Julian Sarpe and Andreas Klaedtke and Herbert De Gersem},
@@ -7158,6 +7198,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{SterckEtAl2024b,
+	abstract = {We consider the parallel-in-time solution of hyperbolic partial differential equation (PDE) systems in one spatial dimension, both linear and nonlinear. In the nonlinear setting, the discretized equations are solved with a preconditioned residual iteration based on a global linearization. The linear(ized) equation systems are approximately solved parallel-in-time using a block preconditioner applied in the characteristic variables of the underlying linear(ized) hyperbolic PDE. This change of variables is motivated by the observation that inter-variable coupling for characteristic variables is weak relative to intra-variable coupling, at least locally where spatio-temporal variations in the eigenvectors of the associated flux Jacobian are sufficiently small. For an $\ell$-dimensional system of PDEs, applying the preconditioner consists of solving a sequence of $\ell$ scalar linear(ized)-advection-like problems, each being associated with a different characteristic wave-speed in the underlying linear(ized) PDE. We approximately solve these linear advection problems using multigrid reduction-in-time (MGRIT); however, any other suitable parallel-in-time method could be used. Numerical examples are shown for the (linear) acoustics equations in heterogeneous media, and for the (nonlinear) shallow water equations and Euler equations of gas dynamics with shocks and rarefactions.},
+	author = {H. De Sterck and R. D. Falgout and O. A. Krzysik and J. B. Schroder},
+	howpublished = {arXiv:2407.03873v1 [math.NA]},
+	title = {Parallel-in-time solution of hyperbolic PDE systems via characteristic-variable block preconditioning},
+	url = {http://arxiv.org/abs/2407.03873v1},
+	year = {2024},
+}
+
 @unpublished{YamaleevEtAl2024,
 	abstract = {We present a new approach to parallelization of the first-order backward difference discretization (BDF1) of the time derivative in partial differential equations, such as the nonlinear heat and viscous Burgers equations. The time derivative term is discretized by using the method of lines based on the implicit BDF1 scheme, while the inviscid and viscous terms are approximated by conventional 2nd-order 3-point central discretizations of the 1st- and 2nd-order derivatives in each spatial direction. The global system of nonlinear discrete equations in the space-time domain is solved by the Newton method for all time levels simultaneously. For the BDF1 discretization, this all-at-once system at each Newton iteration is block bidiagonal, which can be inverted directly in a blockwise manner, thus leading to a set of fully decoupled equations associated with each time level. This allows for an efficient parallel-in-time implementation of the implicit BDF1 discretization for nonlinear differential equations. The proposed parallel-in-time method preserves a quadratic rate of convergence of the Newton method of the sequential BDF1 scheme, so that the computational cost of solving each block matrix in parallel is nearly identical to that of the sequential counterpart at each time step. Numerical results show that the new parallel-in-time BDF1 scheme provides the speedup of up to 28 on 32 computing cores for the 2-D nonlinear partial differential equations with both smooth and discontinuous solutions.},
 	author = {Nail K. Yamaleev and Subhash Paudel},
@@ -7176,6 +7225,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Springer Science and Business Media LLC},
 	title = {Coarse-grid operator optimization in multigrid reduction in time for time-dependent Stokes and Oseen problems},
 	url = {http://dx.doi.org/10.1007/s13160-024-00652-8},
+	year = {2024},
+}
+
+@unpublished{ZhangEtAl2024,
+	abstract = {In this paper, we investigate the strong convergence analysis of parareal algorithms for stochastic Maxwell equations with the damping term driven by additive noise. The proposed parareal algorithms proceed as two-level temporal parallelizable integrators with the stochastic exponential integrator as the coarse propagator and both the exact solution integrator and the stochastic exponential integrator as the fine propagator. It is proved that the convergence order of the proposed algorithms linearly depends on the iteration number. Numerical experiments are performed to illustrate the convergence order of the algorithms for different choices of the iteration number, the damping coefficient and the scale of noise.},
+	author = {Liying Zhang and Qi Zhang},
+	howpublished = {arXiv:2407.10907v1 [math.NA]},
+	title = {Convergence analysis of the parareal algorithms for stochastic Maxwell equations driven by additive noise},
+	url = {http://arxiv.org/abs/2407.10907v1},
 	year = {2024},
 }
 
