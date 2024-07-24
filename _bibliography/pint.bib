@@ -7008,6 +7008,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{JackamanEtAl2024,
+	abstract = {Space-time finite-element discretizations are well-developed in many areas of science and engineering, but much work remains within the development of specialized solvers for the resulting linear and nonlinear systems. In this work, we consider the all-at-once solution of the discretized Navier-Stokes equations over a space-time domain using waveform relaxation multigrid methods. In particular, we show how to extend the efficient spatial multigrid relaxation methods from [37] to a waveform relaxation method, and demonstrate the efficiency of the resulting monolithic Newton-Krylov-multigrid solver. Numerical results demonstrate the scalability of the solver for varying discretization order and physical parameters.},
+	author = {James Jackaman and Scott MacLachlan},
+	howpublished = {arXiv:2407.13997v1 [math.NA]},
+	title = {Space-time waveform relaxation multigrid for Navier-Stokes},
+	url = {http://arxiv.org/abs/2407.13997v1},
+	year = {2024},
+}
+
 @article{JanssensEtAl2024,
 	author = {Janssens, N. and Meyers, J.},
 	doi = {10.1016/j.cpc.2023.109019},
@@ -7136,6 +7145,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Stochastic Power System Dynamic Simulation Using Parallel-in-Time Algorithm},
 	url = {http://dx.doi.org/10.1109/ACCESS.2024.3367358},
 	volume = {12},
+	year = {2024},
+}
+
+@unpublished{PeterssonEtAl2024,
+	abstract = {Quantum optimal control plays a crucial role in quantum computing by employing control pulses to steer quantum systems and realize logical gate transformations, essential for quantum algorithms. However, this optimization task is computationally demanding due to challenges such as the exponential growth in computational complexity with the system's dimensionality and the deterioration of optimization convergence for multi-qubit systems. Various methods have been developed, including gradient-based and gradient-free reduced-space methods and full-space collocation methods. This paper introduces an intermediate approach based on multiple-shooting, aiming to balance solution accuracy and computational efficiency of previous approaches. Unlike conventional reduced-space methods, multiple-shooting divides the time domain into windows and introduces optimization variables for the initial state in each window. This enables parallel computation of state evolution across windows, significantly accelerating objective function and gradient evaluations. The initial state matrix in each window is only guaranteed to be unitary upon convergence of the optimization algorithm. For this reason the conventional gate trace infidelity is replaced by a generalized infidelity that is convex for non-unitary state matrices. Continuity of the state across window boundaries is enforced by equality constraints. A quadratic penalty optimization method is used to solve the constrained optimal control problem, and an efficient adjoint technique is employed to calculate the gradients in each iteration. We demonstrate the effectiveness of the proposed method through numerical experiments on quantum Fourier transform gates in systems with 2, 3, and 4 qubits. Parallel scalability and optimization performance are evaluated, highlighting the method's potential for optimizing control pulses in multi-qubit quantum systems.},
+	author = {N. Anders Petersson and Stefanie Günther and Seung Whan Chung},
+	howpublished = {arXiv:2407.13950v1 [quant-ph]},
+	title = {A time-parallel multiple-shooting method for large-scale quantum optimal control},
+	url = {http://arxiv.org/abs/2407.13950v1},
 	year = {2024},
 }
 
