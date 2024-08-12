@@ -7106,6 +7106,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{MargenbergEtAl2024,
+	abstract = {We present a space-time multigrid method based on tensor-product space-time finite element discretizations. The method is facilitated by the matrix-free capabilities of the {\ttfamily deal.II} library. It addresses both high-order continuous and discontinuous variational time discretizations with spatial finite element discretizations. The effectiveness of multigrid methods in large-scale stationary problems is well established. However, their application in the space-time context poses significant challenges, mainly due to the construction of suitable smoothers. To address these challenges, we develop a space-time cell-wise additive Schwarz smoother and demonstrate its effectiveness on the heat and acoustic wave equations. The matrix-free framework of the {\ttfamily deal.II} library supports various multigrid strategies, including $h$-, $p$-, and $hp$-refinement across spatial and temporal dimensions. Extensive empirical evidence, provided through scaling and convergence tests on high-performance computing platforms, demonstrate high performance on perturbed meshes and problems with heterogeneous and discontinuous coefficients. Throughputs of over a billion degrees of freedom per second are achieved on problems with more than a trillion global degrees of freedom. The results prove that the space-time multigrid method can effectively solve complex problems in high-fidelity simulations and show great potential for use in coupled problems.},
+	author = {Nils Margenberg and Peter Munch},
+	howpublished = {arXiv:2408.04372v1 [math.NA]},
+	title = {A Space-Time Multigrid Method for Space-Time Finite Element Discretizations of Parabolic and Hyperbolic PDEs},
+	url = {http://arxiv.org/abs/2408.04372v1},
+	year = {2024},
+}
+
 @article{MiaoEtAl2024,
 	author = {Miao, Zhen and null, Bin Wang and Jiang, Yaolin},
 	doi = {10.4208/nmtma.oa-2023-0081},
