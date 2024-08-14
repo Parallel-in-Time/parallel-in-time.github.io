@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 📂 setup
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: 💎 setup ruby
         uses: ruby/setup-ruby@v1
@@ -27,7 +27,7 @@ jobs:
           enable_cache: true
 
       - name: 🚀 deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.event_name == 'push' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
