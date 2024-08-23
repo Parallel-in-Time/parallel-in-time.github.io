@@ -6921,6 +6921,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{BetckeEtAl2024,
+	abstract = {This paper considers one of the fundamental parallel-in-time methods for the solution of ordinary differential equations, Parareal, and extends it by adopting a neural network as a coarse propagator. We provide a theoretical analysis of the convergence properties of the proposed algorithm and show its effectiveness for several examples, including Lorenz and Burgers' equations. In our numerical simulations, we further specialize the underpinning neural architecture to Random Projection Neural Networks (RPNNs), a 2-layer neural network where the first layer weights are drawn at random rather than optimized. This restriction substantially increases the efficiency of fitting RPNN's weights in comparison to a standard feedforward network without negatively impacting the accuracy, as demonstrated in the SIR system example.},
+	author = {Marta M. Betcke and Lisa Maria Kreusser and Davide Murari},
+	howpublished = {arXiv:2408.09756v1 [math.NA]},
+	title = {Parallel-in-Time Solutions with Random Projection Neural Networks},
+	url = {http://arxiv.org/abs/2408.09756v1},
+	year = {2024},
+}
+
 @unpublished{BossuytEtAl2024,
 	abstract = {In this paper, we are concerned with the micro-macro Parareal algorithm for the simulation of initial-value problems. In this algorithm, a coarse (fast) solver is applied sequentially over the time domain, and a fine (time-consuming) solver is applied as a corrector in parallel over smaller chunks of the time interval. Moreover, the coarse solver acts on a reduced state variable, which is coupled to the fine state variable through appropriate coupling operators. We first provide a contribution to the convergence analysis of the micro-macro Parareal method for multiscale linear ordinary differential equations (ODEs). Then, we extend a variant of the micro-macro Parareal algorithm for scalar stochastic differential equations (SDEs) to higher-dimensional SDEs.},
 	author = {Ignace Bossuyt and Stefan Vandewalle and Giovanni Samaey},
