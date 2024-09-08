@@ -6969,6 +6969,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{GanderEtAl2024,
+	abstract = {The Parareal algorithm was invented in 2001 in order to parallelize the solution of evolution problems in the time direction. It is based on parallel fine time propagators called F and sequential coarse time propagators called G, which alternatingly solve the evolution problem and iteratively converge to the fine solution. The coarse propagator G is a very important component of Parareal, as one sees in the convergence analyses. We present here for the first time a Parareal algorithm without coarse propagator, and explain why this can work very well for parabolic problems. We give a new convergence proof for coarse propagators approximating in space, in contrast to the more classical coarse propagators which are approximations in time, and our proof also applies in the absence of the coarse propagator. We illustrate our theoretical results with numerical experiments, and also explain why this approach can not work for hyperbolic problems.},
+	author = {Martin J. Gander and Mario Ohlberger and Stephan Rave},
+	howpublished = {arXiv:2409.02673v1 [math.NA]},
+	title = {A Parareal algorithm without Coarse Propagator?},
+	url = {http://arxiv.org/abs/2409.02673v1},
+	year = {2024},
+}
+
 @unpublished{GattiglioEtAl2024,
 	abstract = {With the advent of supercomputers, multi-processor environments and parallel-in-time (PinT) algorithms offer ways to solve initial value problems for ordinary and partial differential equations (ODEs and PDEs) over long time intervals, a task often unfeasible with sequential solvers within realistic time frames. A recent approach, GParareal, combines Gaussian Processes with traditional PinT methodology (Parareal) to achieve faster parallel speed-ups. The method is known to outperform Parareal for low-dimensional ODEs and a limited number of computer cores. Here, we present Nearest Neighbors GParareal (nnGParareal), a novel data-enriched PinT integration algorithm. nnGParareal builds upon GParareal by improving its scalability properties for higher-dimensional systems and increased processor count. Through data reduction, the model complexity is reduced from cubic to log-linear in the sample size, yielding a fast and automated procedure to integrate initial value problems over long time intervals. First, we provide both an upper bound for the error and theoretical details on the speed-up benefits. Then, we empirically illustrate the superior performance of nnGParareal, compared to GParareal and Parareal, on nine different systems with unique features (e.g., stiff, chaotic, high-dimensional, or challenging-to-learn systems).},
 	author = {Guglielmo Gattiglio and Lyudmila Grigoryeva and Massimiliano Tamborrino},
