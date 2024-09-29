@@ -7039,6 +7039,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{HuangEtAl2024c,
+	abstract = {Preconditioning for multilevel Toeplitz systems has long been a focal point of research in numerical linear algebra. In this work, we develop a novel preconditioning method for a class of nonsymmetric multilevel Toeplitz systems, which includes the all-at-once systems that arise from evolutionary partial differential equations. These systems have recently garnered considerable attention in the literature. To further illustrate our proposed preconditioning strategy, we specifically consider the application of solving a wide range of non-local, time-dependent partial differential equations in a parallel-in-time manner. For these equations, we propose a symmetric positive definite multilevel Tau preconditioner that is not only efficient to implement but can also be adapted as an optimal preconditioner. In this context, the proposed preconditioner is optimal in the sense that it enables mesh-independent convergence when using the preconditioned generalized minimal residual method. Numerical examples are provided to critically analyze the results and underscore the effectiveness of our preconditioning strategy.},
+	author = {Yuan-Yuan Huang and Sean Y. Hon and Lot-Kei Chou and Siu-Long Lei},
+	howpublished = {arXiv:2409.15770v1 [math.NA]},
+	title = {Optimal preconditioners for nonsymmetric multilevel Toeplitz systems with application to solving non-local evolutionary partial differential equations},
+	url = {http://arxiv.org/abs/2409.15770v1},
+	year = {2024},
+}
+
 @unpublished{IbrahimEtAl2024,
 	abstract = {Iterative parallel-in-time algorithms like Parareal can extend scaling beyond the saturation of purely spatial parallelization when solving initial value problems. However, they require the user to build coarse models to handle the inevitably serial transport of information in time.This is a time consuming and difficult process since there is still only limited theoretical insight into what constitutes a good and efficient coarse model. Novel approaches from machine learning to solve differential equations could provide a more generic way to find coarse level models for parallel-in-time algorithms. This paper demonstrates that a physics-informed Fourier Neural Operator (PINO) is an effective coarse model for the parallelization in time of the two-asset Black-Scholes equation using Parareal. We demonstrate that PINO-Parareal converges as fast as a bespoke numerical coarse model and that, in combination with spatial parallelization by domain decomposition, it provides better overall speedup than both purely spatial parallelization and space-time parallelizaton with a numerical coarse propagator.},
 	author = {Abdul Qadir Ibrahim and Sebastian Götschel and Daniel Ruprecht},
