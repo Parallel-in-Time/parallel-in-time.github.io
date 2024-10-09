@@ -7048,6 +7048,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{IacobEtAl2024,
+	abstract = {Model predictive control (MPC) is a powerful framework for optimal control of dynamical systems. However, MPC solvers suffer from a high computational burden that restricts their application to systems with low sampling frequency. This issue is further amplified in nonlinear and constrained systems that require nesting MPC solvers within iterative procedures. In this paper, we address these issues by developing parallel-in-time algorithms for constrained nonlinear optimization problems that take advantage of massively parallel hardware to achieve logarithmic computational time scaling over the planning horizon. We develop time-parallel second-order solvers based on interior point methods and the alternating direction method of multipliers, leveraging fast convergence and lower computational cost per iteration. The parallelization is based on a reformulation of the subproblems in terms of associative operations that can be parallelized using the associative scan algorithm. We validate our approach on numerical examples of nonlinear and constrained dynamical systems.},
+	author = {Casian Iacob and Hany Abdulsamad and Simo Särkkä},
+	howpublished = {arXiv:2409.20027v2 [math.OC]},
+	title = {A Parallel-in-Time Newton's Method for Nonlinear Model Predictive Control},
+	url = {http://arxiv.org/abs/2409.20027v2},
+	year = {2024},
+}
+
 @unpublished{IbrahimEtAl2024,
 	abstract = {Iterative parallel-in-time algorithms like Parareal can extend scaling beyond the saturation of purely spatial parallelization when solving initial value problems. However, they require the user to build coarse models to handle the inevitably serial transport of information in time.This is a time consuming and difficult process since there is still only limited theoretical insight into what constitutes a good and efficient coarse model. Novel approaches from machine learning to solve differential equations could provide a more generic way to find coarse level models for parallel-in-time algorithms. This paper demonstrates that a physics-informed Fourier Neural Operator (PINO) is an effective coarse model for the parallelization in time of the two-asset Black-Scholes equation using Parareal. We demonstrate that PINO-Parareal converges as fast as a bespoke numerical coarse model and that, in combination with spatial parallelization by domain decomposition, it provides better overall speedup than both purely spatial parallelization and space-time parallelizaton with a numerical coarse propagator.},
 	author = {Abdul Qadir Ibrahim and Sebastian Götschel and Daniel Ruprecht},
