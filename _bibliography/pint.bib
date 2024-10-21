@@ -7301,6 +7301,21 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@article{WuEtAl2024,
+	author = {Wu, Shu-Lin and Zhou, Tao},
+	doi = {10.1137/23m1592481},
+	issn = {1095-7170},
+	journal = {SIAM Journal on Numerical Analysis},
+	month = {October},
+	number = {5},
+	pages = {2308–2330},
+	publisher = {Society for Industrial & Applied Mathematics (SIAM)},
+	title = {Convergence Analysis of the Parareal Algorithm with Nonuniform Fine Time Grid},
+	url = {http://dx.doi.org/10.1137/23M1592481},
+	volume = {62},
+	year = {2024},
+}
+
 @unpublished{YamaleevEtAl2024,
 	abstract = {We present a new approach to parallelization of the first-order backward difference discretization (BDF1) of the time derivative in partial differential equations, such as the nonlinear heat and viscous Burgers equations. The time derivative term is discretized by using the method of lines based on the implicit BDF1 scheme, while the inviscid and viscous terms are approximated by conventional 2nd-order 3-point central discretizations of the 1st- and 2nd-order derivatives in each spatial direction. The global system of nonlinear discrete equations in the space-time domain is solved by the Newton method for all time levels simultaneously. For the BDF1 discretization, this all-at-once system at each Newton iteration is block bidiagonal, which can be inverted directly in a blockwise manner, thus leading to a set of fully decoupled equations associated with each time level. This allows for an efficient parallel-in-time implementation of the implicit BDF1 discretization for nonlinear differential equations. The proposed parallel-in-time method preserves a quadratic rate of convergence of the Newton method of the sequential BDF1 scheme, so that the computational cost of solving each block matrix in parallel is nearly identical to that of the sequential counterpart at each time step. Numerical results show that the new parallel-in-time BDF1 scheme provides the speedup of up to 28 on 32 computing cores for the 2-D nonlinear partial differential equations with both smooth and discontinuous solutions.},
 	author = {Nail K. Yamaleev and Subhash Paudel},
