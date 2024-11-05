@@ -1251,6 +1251,101 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          HonEtAl2024
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="HonEtAl2024">S. Y. Hon, P. Y. Fung, and X.-lei Lin, “An optimal parallel-in-time preconditioner for parabolic optimal control problems,” arXiv:2410.22686v1 [math.NA], 2024 [Online]. Available at: <a href="http://arxiv.org/abs/2410.22686v1" target="_blank">http://arxiv.org/abs/2410.22686v1</a></span>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalHonEtAl2024Bibtex" aria-expanded="false"
+                  aria-controls="modalHonEtAl2024Bibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalHonEtAl2024Abstract" aria-expanded="false"
+                  aria-controls="modalHonEtAl2024Abstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modalHonEtAl2024Bibtex" tabindex="-1" role="dialog"
+    aria-labelledby="modalHonEtAl2024BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalHonEtAl2024BibtexTitle">
+                  BibTeX entry <code>HonEtAl2024</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@unpublished{HonEtAl2024,
+  author = {Hon, Sean Y. and Fung, Po Yin and Lin, Xue-lei},
+  howpublished = {arXiv:2410.22686v1 [math.NA]},
+  title = {An optimal parallel-in-time preconditioner for parabolic optimal control problems},
+  url = {http://arxiv.org/abs/2410.22686v1},
+  year = {2024}
+}
+</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="modalHonEtAl2024Abstract" tabindex="-1" role="dialog"
+       aria-labelledby="modalHonEtAl2024AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalHonEtAl2024AbstractTitle">
+                  Abstract for BibTeX entry <code>HonEtAl2024</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            In this work, we propose a novel diagonalization-based preconditioner for the all-at-once linear system arising from the optimal control problem of parabolic equations. The proposed preconditioner is constructed based on an ε-circulant modification to the rotated block diagonal (RBD) preconditioning technique, which can be efficiently diagonalized by fast Fourier transforms in a parallel-in-time fashion. To our knowledge, this marks the first application of the ε-circulant modification to RBD preconditioning. Before our work, the studies of PinT preconditioning techniques for the optimal control problem are mainly focused on ε-circulant modification to Schur complement based preconditioners, which involves multiplication of forward and backward evolutionary processes and thus square the condition number. Compared with those Schur complement based preconditioning techniques in the literature, the advantage of the proposed ε-circulant modified RBD preconditioning is that it does not involve the multiplication of forward and backward evolutionary processes. When the generalized minimal residual method is deployed on the preconditioned system, we prove that when choosing ε=\mathcalO(\sqrtτ) with τbeing the temporal step-size , the convergence rate of the preconditioned GMRES solver is independent of the matrix size and the regularization parameter. Such restriction on εis more relax than the assumptions on εfrom other works related to ε-circulant based preconditioning techniques for the optimal control problem. Numerical results are provided to demonstrate the effectiveness of our proposed solvers.
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           Hope-CollinsEtAl2024
         </div>
       </div>
