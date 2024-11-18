@@ -6987,6 +6987,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{GattiglioEtAl2024b,
+	abstract = {Parallel-in-time (PinT) techniques have been proposed to solve systems of time-dependent differential equations by parallelizing the temporal domain. Among them, Parareal computes the solution sequentially using an inaccurate (fast) solver, and then "corrects" it using an accurate (slow) integrator that runs in parallel across temporal subintervals. This work introduces RandNet-Parareal, a novel method to learn the discrepancy between the coarse and fine solutions using random neural networks (RandNets). RandNet-Parareal achieves speed gains up to x125 and x22 compared to the fine solver run serially and Parareal, respectively. Beyond theoretical guarantees of RandNets as universal approximators, these models are quick to train, allowing the PinT solution of partial differential equations on a spatial mesh of up to $10^5$ points with minimal overhead, dramatically increasing the scalability of existing PinT approaches. RandNet-Parareal's numerical performance is illustrated on systems of real-world significance, such as the viscous Burgers' equation, the Diffusion-Reaction equation, the two- and three-dimensional Brusselator, and the shallow water equation.},
+	author = {Guglielmo Gattiglio and Lyudmila Grigoryeva and Massimiliano Tamborrino},
+	howpublished = {arXiv:2411.06225v1 [stat.CO]},
+	title = {RandNet-Parareal: a time-parallel PDE solver using Random Neural Networks},
+	url = {http://arxiv.org/abs/2411.06225v1},
+	year = {2024},
+}
+
 @unpublished{GuEtAl2024,
 	abstract = {For pricing American options, %after suitable discretization in space and time, a sequence of discrete linear complementarity problems (LCPs) or equivalently Hamilton-Jacobi-Bellman (HJB) equations need to be solved in a sequential time-stepping manner. In each time step, the policy iteration or its penalty variant is often applied due to their fast convergence rates. In this paper, we aim to solve for all time steps simultaneously, by applying the policy iteration to an ``all-at-once form" of the HJB equations, where two different parallel-in-time preconditioners are proposed to accelerate the solution of the linear systems within the policy iteration. Our proposed methods are generally applicable for such all-at-once forms of the HJB equation, arising from option pricing problems with optimal stopping and nontrivial underlying asset models. Numerical examples are presented to show the feasibility and robust convergence behavior of the proposed methodology.},
 	author = {Xian-Ming Gu and Jun Liu and Cornelis W. Oosterlee},
