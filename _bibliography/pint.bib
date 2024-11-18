@@ -7364,6 +7364,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{YangEtAl2024,
+	abstract = {Solving multiscale diffusion problems is often computationally expensive due to the spatial and temporal discretization challenges arising from high-contrast coefficients. To address this issue, a partially explicit temporal splitting scheme is proposed. By appropriately constructing multiscale spaces, the spatial multiscale property is effectively managed, and it has been demonstrated that the temporal step size is independent of the contrast. To enhance simulation speed, we propose a parallel algorithm for the multiscale flow problem that leverages the partially explicit temporal splitting scheme. The idea is first to evolve the partially explicit system using a coarse time step size, then correct the solution on each coarse time interval with a fine propagator, for which we consider both the sequential solver and all-at-once solver. This procedure is then performed iteratively till convergence. We analyze the stability and convergence of the proposed algorithm. The numerical experiments demonstrate that the proposed algorithm achieves high numerical accuracy for high-contrast problems and converges in a relatively small number of iterations. The number of iterations stays stable as the number of coarse intervals increases, thus significantly improving computational efficiency through parallel processing.},
+	author = {Zhengya Yang and Yating Wang and Wing Tat Leung},
+	howpublished = {arXiv:2411.09244v1 [math.NA]},
+	title = {Parallel in time partially explicit splitting scheme for high contrast multiscale problems},
+	url = {http://arxiv.org/abs/2411.09244v1},
+	year = {2024},
+}
+
 @article{YodaEtAl2024,
 	author = {Yoda, Ryo and Bolten, Matthias and Nakajima, Kengo and Fujii, Akihiro},
 	doi = {10.1007/s13160-024-00652-8},
