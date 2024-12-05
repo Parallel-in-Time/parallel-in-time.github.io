@@ -6921,6 +6921,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2023},
 }
 
+@unpublished{AppelEtAl2024,
+	abstract = {This paper presents a method of performing topology optimisation of transient heat conduction problems using the parallel-in-time method Parareal. To accommodate the adjoint analysis, the Parareal method was modified to store intermediate time steps. Preliminary tests revealed that Parareal requires many iterations to achieve accurate results and, thus, achieves no appreciable speedup. To mitigate this, a one-shot approach was used, where the time history is iteratively refined over the optimisation process. The method estimates objectives and sensitivities by introducing cumulative objectives and sensitivities and solving for these using a single iteration of Parareal, after which it updates the design using the Method of Moving Asymptotes. The resulting method was applied to a test problem where a power mean of the temperature was minimised. It achieved a peak speedup relative to a sequential reference method of $5\times$ using 16 threads. The resulting designs were similar to the one found by the reference method, both in terms of objective values and qualitative appearance. The one-shot Parareal method was compared to the Parallel Local-in-Time method of topology optimisation. This revealed that the Parallel Local-in-Time method was unstable for the considered test problem, but it achieved a peak speedup of $12\times$ using 32 threads. It was determined that the dominant bottleneck in the one-shot Parareal method was the time spent on computing coarse propagators.},
+	author = {Magnus Appel and Joe Alexandersen},
+	howpublished = {arXiv:2411.19030v1 [cs.CE]},
+	title = {One-shot Parareal Approach for Topology Optimisation of Transient Heat Flow},
+	url = {http://arxiv.org/abs/2411.19030v1},
+	year = {2024},
+}
+
 @unpublished{BetckeEtAl2024,
 	abstract = {This paper considers one of the fundamental parallel-in-time methods for the solution of ordinary differential equations, Parareal, and extends it by adopting a neural network as a coarse propagator. We provide a theoretical analysis of the convergence properties of the proposed algorithm and show its effectiveness for several examples, including Lorenz and Burgers' equations. In our numerical simulations, we further specialize the underpinning neural architecture to Random Projection Neural Networks (RPNNs), a 2-layer neural network where the first layer weights are drawn at random rather than optimized. This restriction substantially increases the efficiency of fitting RPNN's weights in comparison to a standard feedforward network without negatively impacting the accuracy, as demonstrated in the SIR system example.},
 	author = {Marta M. Betcke and Lisa Maria Kreusser and Davide Murari},
@@ -6969,6 +6978,21 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@article{FungEtAl2024b,
+	author = {Fung, Po Yin and Hon, Sean},
+	doi = {10.1137/23m1601432},
+	issn = {1095-7162},
+	journal = {SIAM Journal on Matrix Analysis and Applications},
+	month = {December},
+	number = {4},
+	pages = {2263–2286},
+	publisher = {Society for Industrial & Applied Mathematics (SIAM)},
+	title = {Block \(\boldsymbol{\omega }\)-Circulant Preconditioners for Parabolic Optimal Control Problems},
+	url = {http://dx.doi.org/10.1137/23M1601432},
+	volume = {45},
+	year = {2024},
+}
+
 @unpublished{GanderEtAl2024,
 	abstract = {The Parareal algorithm was invented in 2001 in order to parallelize the solution of evolution problems in the time direction. It is based on parallel fine time propagators called F and sequential coarse time propagators called G, which alternatingly solve the evolution problem and iteratively converge to the fine solution. The coarse propagator G is a very important component of Parareal, as one sees in the convergence analyses. We present here for the first time a Parareal algorithm without coarse propagator, and explain why this can work very well for parabolic problems. We give a new convergence proof for coarse propagators approximating in space, in contrast to the more classical coarse propagators which are approximations in time, and our proof also applies in the absence of the coarse propagator. We illustrate our theoretical results with numerical experiments, and also explain why this approach can not work for hyperbolic problems.},
 	author = {Martin J. Gander and Mario Ohlberger and Stephan Rave},
@@ -7011,6 +7035,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2409.18391v1 [math.NA]},
 	title = {Crank-Nicolson-type iterative decoupled algorithms for Biot's consolidation model using total pressure},
 	url = {http://arxiv.org/abs/2409.18391v1},
+	year = {2024},
+}
+
+@article{HeEtAl2024,
+	author = {He, Tingting and Lu, Jian and Li, Min},
+	doi = {10.3934/cac.2024021},
+	issn = {2837-0562},
+	journal = {Communications on Analysis and Computation},
+	number = {0},
+	pages = {0–0},
+	publisher = {American Institute of Mathematical Sciences (AIMS)},
+	title = {The parareal algorithm for Caputo-Hadamard fractional differential equations},
+	url = {http://dx.doi.org/10.3934/cac.2024021},
+	volume = {0},
 	year = {2024},
 }
 
