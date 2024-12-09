@@ -6930,12 +6930,43 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@article{BaumannEtAl2024,
+	abstract = {Spectral Deferred Correction (SDC) is an iterative method for the numerical solution of ordinary differential equations. It works by refining the numerical solution for an initial value problem by approximately solving differential equations for the error, and can be interpreted as a preconditioned fixed-point iteration for solving the fully implicit collocation problem. We adopt techniques from embedded Runge-Kutta Methods (RKM) to SDC in order to provide a mechanism for adaptive time step size selection and thus increase computational efficiency of SDC. We propose two SDC-specific estimates of the local error that are generic and do not rely on problem specific quantities. We demonstrate a gain in efficiency over standard SDC with fixed step size and compare efficiency favorably against state-of-the-art adaptive RKM.},
+	author = {Baumann, Thomas and G{\"o}tschel, Sebastian and Lunet, Thibaut and Ruprecht, Daniel and Speck, Robert},
+	doi = {10.1007/s11075-024-01964-z},
+	issn = {1572-9265},
+	journal = {Numerical Algorithms},
+	month = {October},
+	title = {Adaptive time step selection for spectral deferred correction},
+	url = {https://doi.org/10.1007/s11075-024-01964-z},
+	year = {2024},
+}
+
+@misc{BaumannEtAl2024b,
+	archiveprefix = {arXiv},
+	author = {Baumann, Thomas and G{\"o}tschel, Sebastian and Lunet, Thibaut and Ruprecht, Daniel and Speck, Robert},
+	eprint = {2412.00529},
+	primaryclass = {cs.DC},
+	title = {Resilience Against Soft Faults through Adaptivity in Spectral Deferred Correction},
+	url = {https://arxiv.org/abs/2412.00529},
+	year = {2024},
+}
+
 @unpublished{BetckeEtAl2024,
 	abstract = {This paper considers one of the fundamental parallel-in-time methods for the solution of ordinary differential equations, Parareal, and extends it by adopting a neural network as a coarse propagator. We provide a theoretical analysis of the convergence properties of the proposed algorithm and show its effectiveness for several examples, including Lorenz and Burgers' equations. In our numerical simulations, we further specialize the underpinning neural architecture to Random Projection Neural Networks (RPNNs), a 2-layer neural network where the first layer weights are drawn at random rather than optimized. This restriction substantially increases the efficiency of fitting RPNN's weights in comparison to a standard feedforward network without negatively impacting the accuracy, as demonstrated in the SIR system example.},
 	author = {Marta M. Betcke and Lisa Maria Kreusser and Davide Murari},
 	howpublished = {arXiv:2408.09756v1 [math.NA]},
 	title = {Parallel-in-Time Solutions with Random Projection Neural Networks},
 	url = {http://arxiv.org/abs/2408.09756v1},
+	year = {2024},
+}
+
+@unpublished{BonteEtAl2024,
+	abstract = {Recently, the ParaOpt algorithm was proposed as an extension of the time-parallel Parareal method to optimal control. ParaOpt uses quasi-Newton steps that each require solving a system of matching conditions iteratively. The state-of-the-art parallel preconditioner for linear problems leads to a set of independent smaller systems that are currently hard to solve. We generalize the preconditioner to the nonlinear case and propose a new, fast inversion method for these smaller systems, avoiding disadvantages of the current options with adjusted boundary conditions in the subproblems.},
+	author = {Corentin Bonte and Arne Bouillon and Giovanni Samaey and Karl Meerbergen},
+	howpublished = {arXiv:2412.02425v1 [math.NA]},
+	title = {Efficient parallel inversion of ParaOpt preconditioners},
+	url = {http://arxiv.org/abs/2412.02425v1},
 	year = {2024},
 }
 
@@ -7476,28 +7507,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	url = {http://dx.doi.org/10.1007/s10915-024-02596-0},
 	volume = {100},
 	year = {2024},
-}
-
-@article{BaumannEtAl2024,
-	title = {Adaptive time step selection for spectral deferred correction},
-	issn = {1572-9265},
-	url = {https://doi.org/10.1007/s11075-024-01964-z},
-	doi = {10.1007/s11075-024-01964-z},
-	abstract = {Spectral Deferred Correction (SDC) is an iterative method for the numerical solution of ordinary differential equations. It works by refining the numerical solution for an initial value problem by approximately solving differential equations for the error, and can be interpreted as a preconditioned fixed-point iteration for solving the fully implicit collocation problem. We adopt techniques from embedded Runge-Kutta Methods (RKM) to SDC in order to provide a mechanism for adaptive time step size selection and thus increase computational efficiency of SDC. We propose two SDC-specific estimates of the local error that are generic and do not rely on problem specific quantities. We demonstrate a gain in efficiency over standard SDC with fixed step size and compare efficiency favorably against state-of-the-art adaptive RKM.},
-	journal = {Numerical Algorithms},
-	author = {Baumann, Thomas and G{\"o}tschel, Sebastian and Lunet, Thibaut and Ruprecht, Daniel and Speck, Robert},
-	month = oct,
-	year = {2024},
-}
-
-@misc{BaumannEtAl2024b,
-      title={Resilience Against Soft Faults through Adaptivity in Spectral Deferred Correction}, 
-	  author = {Baumann, Thomas and G{\"o}tschel, Sebastian and Lunet, Thibaut and Ruprecht, Daniel and Speck, Robert},
-      year={2024},
-      eprint={2412.00529},
-      archivePrefix={arXiv},
-      primaryClass={cs.DC},
-      url={https://arxiv.org/abs/2412.00529}, 
 }
 
 @article{PamelaEtAl2025,
