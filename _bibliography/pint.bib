@@ -7391,6 +7391,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{SelvamEtAl2024,
+	abstract = {In diffusion models, samples are generated through an iterative refinement process, requiring hundreds of sequential model evaluations. Several recent methods have introduced approximations (fewer discretization steps or distillation) to trade off speed at the cost of sample quality. In contrast, we introduce Self-Refining Diffusion Samplers (SRDS) that retain sample quality and can improve latency at the cost of additional parallel compute. We take inspiration from the Parareal algorithm, a popular numerical method for parallel-in-time integration of differential equations. In SRDS, a quick but rough estimate of a sample is first created and then iteratively refined in parallel through Parareal iterations. SRDS is not only guaranteed to accurately solve the ODE and converge to the serial solution but also benefits from parallelization across the diffusion trajectory, enabling batched inference and pipelining. As we demonstrate for pre-trained diffusion models, the early convergence of this refinement procedure drastically reduces the number of steps required to produce a sample, speeding up generation for instance by up to 1.7x on a 25-step StableDiffusion-v2 benchmark and up to 4.3x on longer trajectories.},
+	author = {Nikil Roashan Selvam and Amil Merchant and Stefano Ermon},
+	howpublished = {arXiv:2412.08292v1 [cs.LG]},
+	title = {Self-Refining Diffusion Samplers: Enabling Parallelization via Parareal Iterations},
+	url = {http://arxiv.org/abs/2412.08292v1},
+	year = {2024},
+}
+
 @unpublished{SouzaEtAl2024,
 	abstract = {Simulation of the monodomain equation, crucial for modeling the heart's electrical activity, faces scalability limits when traditional numerical methods only parallelize in space. To optimize the use of large multi-processor computers by distributing the computational load more effectively, time parallelization is essential. We introduce a high-order parallel-in-time method addressing the substantial computational challenges posed by the stiff, multiscale, and nonlinear nature of cardiac dynamics. Our method combines the semi-implicit and exponential spectral deferred correction methods, yielding a hybrid method that is extended to parallel-in-time employing the PFASST framework. We thoroughly evaluate the stability, accuracy, and robustness of the proposed parallel-in-time method through extensive numerical experiments, using practical ionic models such as the ten-Tusscher-Panfilov. The results underscore the method's potential to significantly enhance real-time and high-fidelity simulations in biomedical research and clinical applications.},
 	author = {Giacomo Rosilho de Souza and Simone Pezzuto and Rolf Krause},
