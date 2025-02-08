@@ -7541,6 +7541,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{LaidinEtAl2025,
+	abstract = {We present the design of a multiscale parareal method for kinetic equations in the fluid dynamic regime. The goal is to reduce the cost of a fully kinetic simulation using a parallel in time procedure. Using the multiscale property of kinetic models, the cheap, coarse propagator consists in a fluid solver and the fine (expensive) propagation is achieved through a kinetic solver for a collisional Vlasov equation. To validate our approach, we present simulations in the 1D in space, 3D in velocity settings over a wide range of initial data and kinetic regimes, showcasing the accuracy, efficiency, and the speedup capabilities of our method.},
+	author = {Tino Laidin and Thomas Rey},
+	howpublished = {arXiv:2502.02704v1 [math.NA]},
+	title = {A Parareal in time numerical method for the collisional Vlasov equation in the hyperbolic scaling},
+	url = {http://arxiv.org/abs/2502.02704v1},
+	year = {2025},
+}
+
 @article{PamelaEtAl2025,
 	author = {Pamela, S.J.P. and Carey, N. and Brandstetter, J. and Akers, R. and Zanisi, L. and Buchanan, J. and Gopakumar, V. and Hoelzl, M. and Huijsmans, G. and Pentland, K. and James, T. and Antonucci, G.},
 	doi = {10.1016/j.cpc.2024.109391},
@@ -7566,5 +7575,14 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Predict globally, correct locally: Parallel-in-time optimization of neural networks},
 	url = {http://dx.doi.org/10.1016/j.automatica.2024.111976},
 	volume = {171},
+	year = {2025},
+}
+
+@unpublished{ZhangEtAl2025,
+	abstract = {This paper investigates the parareal algorithms for solving the stochastic Maxwell equations driven by multiplicative noise, focusing on their convergence, computational efficiency and numerical performance. The algorithms use the stochastic exponential integrator as the coarse propagator, while both the exact integrator and the stochastic exponential integrator are used as fine propagators. Theoretical analysis shows that the mean square convergence rates of the two algorithms selected above are proportional to $k/2$, depending on the iteration number of the algorithms. Numerical experiments validate these theoretical findings, demonstrating that larger iteration numbers $k$ improve convergence rates, while larger damping coefficients $\sigma$ accelerate the convergence of the algorithms. Furthermore, the algorithms maintain high accuracy and computational efficiency, highlighting their significant advantages over traditional exponential methods in long-term simulations.},
+	author = {Liying Zhang and Qi Zhang and Lihai Ji},
+	howpublished = {arXiv:2502.02473v1 [math.NA]},
+	title = {Parareal Algorithms for Stochastic Maxwell Equations Driven by Multiplicative Noise},
+	url = {http://arxiv.org/abs/2502.02473v1},
 	year = {2025},
 }
