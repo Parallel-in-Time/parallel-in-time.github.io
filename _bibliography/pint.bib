@@ -7518,6 +7518,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{ArrarasEtAl2025,
+	abstract = {In view of the existing limitations of sequential computing, parallelization has emerged as an alternative in order to improve the speedup of numerical simulations. In the framework of evolutionary problems, space-time parallel methods offer the possibility to optimize parallelization. In the present paper, we propose a new family of these methods, built as a combination of the well-known parareal algorithm and suitable splitting techniques which permit us to parallelize in space. In particular, dimensional and domain decomposition splittings are considered for partitioning the elliptic operator, and first-order splitting time integrators are chosen as the propagators of the parareal algorithm to solve the resulting split problem. The major contribution of these methods is that, not only does the fine propagator perform in parallel, but also the coarse propagator. Unlike the classical version of the parareal algorithm, where all processors remain idle during the coarse propagator computations, the newly proposed schemes utilize the computational cores for both integrators. A convergence analysis of the methods is provided, and several numerical experiments are performed to test the solvers under consideration.},
+	author = {Andrés Arrarás and Francisco J. Gaspar and Iñigo Jimenez-Ciga and Laura Portero},
+	howpublished = {arXiv:2502.08370v1 [math.NA]},
+	title = {Space-time parallel iterative solvers for the integration of parabolic problems},
+	url = {http://arxiv.org/abs/2502.08370v1},
+	year = {2025},
+}
+
 @unpublished{BossuytEtAl2025,
 	abstract = {Time-parallel methods can reduce the wall clock time required for the accurate numerical solution of differential equations by parallelizing across the time-dimension. In this paper, we present and test the convergence behavior of a multiscale, micro-macro version of a Parareal method for stochastic differential equations (SDEs). In our method, the fine propagator of the SDE is based on a high-dimensional slow-fast microscopic model; the coarse propagator is based on a model-reduced version of the latter, that captures the low-dimensional, effective dynamics at the slow time scales. We investigate how the model error of the approximate model influences the convergence of the micro-macro Parareal algorithm and we support our analysis with numerical experiments. This is an extended and corrected version of [Domain Decomposition Methods in Science and Engineering XXVII. DD 2022, vol 149 (2024), pp. 69-76, Bossuyt, I., Vandewalle, S., Samaey, G.].},
 	author = {Ignace Bossuyt and Giovanni Samaey and Stefan Vandewalle},
