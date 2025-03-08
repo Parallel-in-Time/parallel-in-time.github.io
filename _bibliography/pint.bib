@@ -7580,6 +7580,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{Liu2025,
+	abstract = {The high cost of sequential time integration is one major constraint that limits the speedup of a time-parallel algorithm like the Parareal algorithm due to the difficulty of coarsening time steps in a stiff numerical problem. To address this challenge, we develop a parallel-in-time approach based on the Parareal algorithm, in which we construct a novel coarse solver using a data-driven method based on Dynamic Mode Decomposition in place of a classic time marching scheme. The proposed solver computes an approximation of the solution using two numerical schemes of different accuracies in parallel, and apply High-Order Dynamic Mode Decomposition (HODMD) to reduce the cost of sequential computations. Compared to the original Parareal algorithm, the proposed approach allows for the construction of low-cost coarse solvers for many complicated stiff problems. We demonstrate through several numerical examples in fluid dynamics that the proposed method can effectively reduce the serial computation cost and improve the parallel speedup of long-time simulations which are hard to accelerate using the original Parareal algorithm.},
+	author = {Weifan Liu},
+	howpublished = {arXiv:2503.03109v1 [physics.comp-ph]},
+	title = {A parallel-in-time method based on the Parareal algorithm and High-Order Dynamic Mode Decomposition with applications to fluid simulations},
+	url = {http://arxiv.org/abs/2503.03109v1},
+	year = {2025},
+}
+
 @article{PamelaEtAl2025,
 	author = {Pamela, S.J.P. and Carey, N. and Brandstetter, J. and Akers, R. and Zanisi, L. and Buchanan, J. and Gopakumar, V. and Hoelzl, M. and Huijsmans, G. and Pentland, K. and James, T. and Antonucci, G.},
 	doi = {10.1016/j.cpc.2024.109391},
