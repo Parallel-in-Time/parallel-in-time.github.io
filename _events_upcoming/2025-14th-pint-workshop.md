@@ -25,4 +25,4 @@ page_type: event_page
 no_lead: true
 ---
 
-PinT 2025: the 14th Workshop on Parallel-in-time Integration will be hosted at the ICMS in Edinburgh, UK.
+PinT 2025: the 14th Workshop on Parallel-in-time Integration will be hosted at the ICMS in Edinburgh, UK. Please visit the conference website at https://www.icms.org.uk/workshops/2025/parallel-time-algorithms-exascale-applications for more information.
