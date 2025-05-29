@@ -7024,6 +7024,16 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@book{gander2024time,
+	author = {Gander, Martin J and Lunet, Thibaut},
+	doi = {10.1137/1.9781611978025},
+	publisher = {SIAM},
+	series = {SIAM Collection},
+	title = {Time Parallel Time Integration},
+	url = {https://epubs.siam.org/doi/book/10.1137/1.9781611978025},
+	year = {2024},
+}
+
 @unpublished{GanderEtAl2024,
 	abstract = {The Parareal algorithm was invented in 2001 in order to parallelize the solution of evolution problems in the time direction. It is based on parallel fine time propagators called F and sequential coarse time propagators called G, which alternatingly solve the evolution problem and iteratively converge to the fine solution. The coarse propagator G is a very important component of Parareal, as one sees in the convergence analyses. We present here for the first time a Parareal algorithm without coarse propagator, and explain why this can work very well for parabolic problems. We give a new convergence proof for coarse propagators approximating in space, in contrast to the more classical coarse propagators which are approximations in time, and our proof also applies in the absence of the coarse propagator. We illustrate our theoretical results with numerical experiments, and also explain why this approach can not work for hyperbolic problems.},
 	author = {Martin J. Gander and Mario Ohlberger and Stephan Rave},
@@ -7587,6 +7597,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{DurastanteEtAl2025,
+	abstract = {Implicit Runge--Kutta (IRK) methods are highly effective for solving stiff ordinary differential equations (ODEs) but can be computationally expensive for large-scale problems due to the need of solving coupled algebraic equations at each step. This study improves IRK efficiency by leveraging parallelism to decouple stage computations and reduce communication overhead, specifically we stably decouple a perturbed version of the stage system of equations and recover the exact solution by solving a Sylvester matrix equation with an explicitly known low-rank right-hand side. Two IRK families -- symmetric methods and collocation methods -- are analyzed, with extensions to nonlinear problems using a simplified Newton method. Implementation details, shared memory parallel code, and numerical examples, particularly for ODEs from spatially discretized PDEs, demonstrate the efficiency of the proposed IRK technique.},
+	author = {Fabio Durastante and Mariarosa Mazza},
+	howpublished = {arXiv:2505.17719v1 [math.NA]},
+	title = {Stage-Parallel Implicit Runge--Kutta methods via low-rank matrix equation corrections},
+	url = {http://arxiv.org/abs/2505.17719v1},
+	year = {2025},
+}
+
 @unpublished{EggerEtAl2025,
 	abstract = {A class of abstract nonlinear time-periodic evolution problems is considered which arise in electrical engineering and other scientific disciplines. An efficient solver is proposed for the systems arising after discretization in time based on a fixed-point iteration. Every step of this iteration amounts to the solution of a discretized time-periodic and time-invariant problem for which efficient parallel-in-time methods are available. Global convergence with contraction factors independent of the discretization parameters is established. Together with an appropriate initialization step, a highly efficient and reliable solver is obtained. The applicability and performance of the proposed method is illustrated by simulations of a power transformer. Further comparison is made with other solution strategies proposed in the literature.},
 	author = {Herbert Egger and Andreas Schafelner},
@@ -7826,14 +7845,4 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Parareal Algorithms for Stochastic Maxwell Equations Driven by Multiplicative Noise},
 	url = {http://arxiv.org/abs/2502.02473v1},
 	year = {2025},
-}
-
-@book{gander2024time,
-  title = {Time Parallel Time Integration},
-  author = {Gander, Martin J and Lunet, Thibaut},
-  year = {2024},
-  publisher = {SIAM},
-  series = {SIAM Collection},
-  url = {https://epubs.siam.org/doi/book/10.1137/1.9781611978025},
-  doi = {10.1137/1.9781611978025},
 }
