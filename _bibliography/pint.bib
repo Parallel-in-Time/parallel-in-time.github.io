@@ -7190,6 +7190,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
+@unpublished{HuangEtAl2024d,
+	abstract = {In this paper, for solving a class of linear parabolic equations in rectangular domains, we have proposed an efficient Parareal exponential integrator finite element method. The proposed method first uses the finite element approximation with continuous multilinear rectangular basis function for spatial discretization, and then takes the Runge-Kutta approach accompanied with Parareal framework for time integration of the resulting semi-discrete system to produce parallel-in-time numerical solution. Under certain regularity assumptions, fully-discrete error estimates in $L^2$-norm are derived for the proposed schemes with random interpolation nodes. Moreover, a fast solver can be provided based on tensor product spectral decomposition and fast Fourier transform (FFT), since the mass and coefficient matrices of the proposed method can be simultaneously diagonalized with an orthogonal matrix. A series of numerical experiments in various dimensions are also presented to validate the theoretical results and demonstrate the excellent performance of the proposed method.},
+	author = {Jianguo Huang and Yuejin Xu},
+	howpublished = {arXiv:2412.01138v1 [math.NA]},
+	title = {A Parareal exponential integrator finite element method for linear parabolic equations},
+	url = {http://arxiv.org/abs/2412.01138v1},
+	year = {2024},
+}
+
 @unpublished{IacobEtAl2024,
 	abstract = {Model predictive control (MPC) is a powerful framework for optimal control of dynamical systems. However, MPC solvers suffer from a high computational burden that restricts their application to systems with low sampling frequency. This issue is further amplified in nonlinear and constrained systems that require nesting MPC solvers within iterative procedures. In this paper, we address these issues by developing parallel-in-time algorithms for constrained nonlinear optimization problems that take advantage of massively parallel hardware to achieve logarithmic computational time scaling over the planning horizon. We develop time-parallel second-order solvers based on interior point methods and the alternating direction method of multipliers, leveraging fast convergence and lower computational cost per iteration. The parallelization is based on a reformulation of the subproblems in terms of associative operations that can be parallelized using the associative scan algorithm. We validate our approach on numerical examples of nonlinear and constrained dynamical systems.},
 	author = {Casian Iacob and Hany Abdulsamad and Simo Särkkä},
