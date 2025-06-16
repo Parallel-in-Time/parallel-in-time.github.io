@@ -1924,6 +1924,101 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          PaudelEtAl2025
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="PaudelEtAl2025">S. Paudel and N. K. Yamaleev, “A Combined Parallel-in-time Direct Inverse (ParaDIn)-Parareal Method for Nonlinear Differential Equations,” arXiv:2506.10820v1 [math.NA], 2025 [Online]. Available at: <a href="http://arxiv.org/abs/2506.10820v1" target="_blank">http://arxiv.org/abs/2506.10820v1</a></span>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalPaudelEtAl2025Bibtex" aria-expanded="false"
+                  aria-controls="modalPaudelEtAl2025Bibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalPaudelEtAl2025Abstract" aria-expanded="false"
+                  aria-controls="modalPaudelEtAl2025Abstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modalPaudelEtAl2025Bibtex" tabindex="-1" role="dialog"
+    aria-labelledby="modalPaudelEtAl2025BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalPaudelEtAl2025BibtexTitle">
+                  BibTeX entry <code>PaudelEtAl2025</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@unpublished{PaudelEtAl2025,
+  author = {Paudel, Subhash and Yamaleev, Nail K.},
+  howpublished = {arXiv:2506.10820v1 [math.NA]},
+  title = {A Combined Parallel-in-time Direct Inverse (ParaDIn)-Parareal Method for Nonlinear Differential Equations},
+  url = {http://arxiv.org/abs/2506.10820v1},
+  year = {2025}
+}
+</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="modalPaudelEtAl2025Abstract" tabindex="-1" role="dialog"
+       aria-labelledby="modalPaudelEtAl2025AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalPaudelEtAl2025AbstractTitle">
+                  Abstract for BibTeX entry <code>PaudelEtAl2025</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            As has been shown in our previous work, the parallel-in-time direct inverse (ParaDIn) method introduced by Yamaleev and Paudel in (arXiv: 2406.00878v1, 2024) imposes some constraint on the maximum number of time levels, N_t, that can be integrated in parallel. To circumvent this problem and further increase the speedup, we combine the ParaDIn method with the Parareal algorithm to efficiently parallelize the first-order time derivative term in nonlinear partial differential equations discretized by the method of lines. The main idea of the proposed approach is to use a block-Jacobi preconditioner, so that each block is solved by using the ParaDIn method. To accelerate the convergence of Jacobi iterations, we use the Parareal method which can be interpreted as a two-level multigrid method in time. In contrast to the conventional Parareal algorithm whose coarse grid correction step is performed sequentially, both the coarse- and fine-grid propagators in the proposed approach are implemented in parallel by using the ParaDIn method, thus significantly increasing the parallel performance of the combined algorithm. Numerical results show that the new combined ParaDIn-Parareal method provides the speedup of up to 124 on 480 computing cores as compared with the sequential first-order implicit backward difference (BDF1) scheme for the 2-D nonlinear heat and Burgers equations with both smooth and discontinuous solutions.
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           PeterssonEtAl2025
         </div>
       </div>
