@@ -7799,6 +7799,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{PaudelEtAl2025,
+	abstract = {As has been shown in our previous work, the parallel-in-time direct inverse (ParaDIn) method introduced by Yamaleev and Paudel in (arXiv: 2406.00878v1, 2024) imposes some constraint on the maximum number of time levels, $N_t$, that can be integrated in parallel. To circumvent this problem and further increase the speedup, we combine the ParaDIn method with the Parareal algorithm to efficiently parallelize the first-order time derivative term in nonlinear partial differential equations discretized by the method of lines. The main idea of the proposed approach is to use a block-Jacobi preconditioner, so that each block is solved by using the ParaDIn method. To accelerate the convergence of Jacobi iterations, we use the Parareal method which can be interpreted as a two-level multigrid method in time. In contrast to the conventional Parareal algorithm whose coarse grid correction step is performed sequentially, both the coarse- and fine-grid propagators in the proposed approach are implemented in parallel by using the ParaDIn method, thus significantly increasing the parallel performance of the combined algorithm. Numerical results show that the new combined ParaDIn-Parareal method provides the speedup of up to 124 on 480 computing cores as compared with the sequential first-order implicit backward difference (BDF1) scheme for the 2-D nonlinear heat and Burgers equations with both smooth and discontinuous solutions.},
+	author = {Subhash Paudel and Nail K. Yamaleev},
+	howpublished = {arXiv:2506.10820v1 [math.NA]},
+	title = {A Combined Parallel-in-time Direct Inverse (ParaDIn)-Parareal Method for Nonlinear Differential Equations},
+	url = {http://arxiv.org/abs/2506.10820v1},
+	year = {2025},
+}
+
 @article{PeterssonEtAl2025,
 	author = {Petersson, N. Anders and Günther, Stefanie and Chung, Seung Whan},
 	doi = {10.1016/j.jcp.2024.113712},
