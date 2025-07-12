@@ -11,7 +11,7 @@ from bibtexparser.bibdatabase import BibDatabase
 from bibtexparser.bwriter import BibTexWriter
 
 
-if __name__ == '__main__':
+try:
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-b", "--body", help="input issue body here", type=str, default="")
@@ -102,13 +102,24 @@ if __name__ == '__main__':
             if not req.status_code == 200:
                 print(f'Request of {url} could not be processed, got status code {req.status_code}.')
                 break
-            
-            data = req.json()
 
-            if len(data['author']) > 1:
-                id = data['author'][0]['family'] + 'EtAl' + str(data['issued']['date-parts'][0][0])
-            else:
-                id = data['author'][0]['family'] + str(data['issued']['date-parts'][0][0])
+            with open("request.txt", "w") as f:
+                f.write(req.text)
+            try:
+                data = req.json()
+            except:
+                # in case request did not provide the json data, retrieve it from the bib entry
+                data = {
+                    e[0].strip(): e[1][1:].split("}")[0]
+                    for e in [e for e in [l.split(" = ") for l in bib.splitlines()] if len(e) == 2]
+                }
+                data["author"] = [
+                    {"family": a.split(", ")[0], "given": a.split(", ")[1]}
+                    for a in  data["author"].split(" and ")
+                ]
+                data["issued"] = {"date-parts": [[data["year"]]]}
+
+            id = data['author'][0]['family'] + 'EtAl'*(len(data['author']) > 1) + str(data['issued']['date-parts'][0][0])
             id = id.replace(" ", "_")
 
             d = db.get_entry_dict()
@@ -162,3 +173,6 @@ if __name__ == '__main__':
                     line = re.sub(r'%}+', '%', line)
                 line = line.rstrip('\r\n')
                 print(line)
+
+except Exception as e:
+    print(f"ERROR : {e}\n")
