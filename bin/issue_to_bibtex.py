@@ -103,8 +103,6 @@ try:
                 print(f'Request of {url} could not be processed, got status code {req.status_code}.')
                 break
 
-            with open("request.txt", "w") as f:
-                f.write(req.text)
             try:
                 data = req.json()
             except:
