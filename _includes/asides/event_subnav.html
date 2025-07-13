@@ -7,9 +7,6 @@ strip }}{% endif %}/{% endcapture %}
 
 <nav id="subnav" class="clearfix" role="navigation">
   <ul class="nav nav-tabs">
-    <li role="presentation" {% if event_index_url==page.url %} class="active" {% endif %}>
-      <a href="{{ event_index_url }}">Event's Main Page</a>
-    </li>
     {% assign sorted_pages = site.events_upcoming | sort:'subtitle' %}
     {% for subpage in sorted_pages %}
     {% unless subpage.page_type == 'event_page' %}

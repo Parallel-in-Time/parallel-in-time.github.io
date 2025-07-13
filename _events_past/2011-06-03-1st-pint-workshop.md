@@ -20,7 +20,7 @@ invited:
   - name: Julien Cortial
   - name: Michael Minion
   - name: Stefan Güttel
-permalink:
+permalink: events/1st-pint-workshop/
 subtitle: Brief overview
 page_type: event_page
 ---
@@ -32,4 +32,4 @@ Programme:
  - Martin J. Gander, University of Geneva: *Space-time Parallel Methods: From Waveform Relaxation tothe Parareal Algorithm*
  - Julien Cortial, Stanford University: *Time-Parallel Methods for Accelerating the Solution of Structural Dynamics Problems*
  - Michael L. Minion, University of North Carolina: *Efficient Parallel in Time Methods for Partial Differential Equations*
- - Stefan Guettel, University of Geneva: *Time-Parallel Integration of Linear Initial Value Problems*
+ - Stefan Güttel, University of Geneva: *Time-Parallel Integration of Linear Initial Value Problems*
