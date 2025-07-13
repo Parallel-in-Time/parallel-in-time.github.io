@@ -8,7 +8,7 @@ event_start: 2025-07-07 00:00
 event_end: 2025-07-11 24:00
 event_url: https://icms.ac.uk/activities/workshop/parallel-in-time-algorithms-for-exascale-applications
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Jemma Shipton
     homepage: https://mathematics.exeter.ac.uk/people/profile/index.php?web_id=js1075
