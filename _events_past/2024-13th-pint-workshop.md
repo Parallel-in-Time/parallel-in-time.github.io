@@ -8,7 +8,7 @@ event_start: 2024-02-05 00:00
 event_end: 2024-02-09 24:00
 event_url: https://time-x.eu/pint-2024/
 navbar: Events
-subnavbar: Upcoming
+subnavbar: Past
 organizers:
   - name: Giovanni Samaey
     homepage: https://www.kuleuven.be/wieiswie/en/person/00038151

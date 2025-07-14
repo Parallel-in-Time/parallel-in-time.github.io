@@ -1,5 +1,6 @@
 ---
 layout: page_event
+hide_hero: true
 title: 5th Workshop on Parallel-in-Time Integration
 date: 2016-02-23 00:00:00 +0000
 updated: 2016-02-24 08:32:00 +0100

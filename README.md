@@ -18,6 +18,12 @@ We use **docker** to *prevent version* and *system differences*. So please, espe
 docker-compose -f docker-compose-bundle.yml up
 ```
 
+> 📣 For some systems (e.g Ubuntu), docker compose comes already with docker. But you have to use it like this (without the dash):
+
+```bash
+docker compose [...]
+```
+
 ### Start the live preview of the page
 
 **Note:** The **live reload** of jekyll is not perfect. Therefore, **don't expect** it to work as intended. Sometimes, you need to <u>re-run the command</u> in order to see the **newest changes**.
