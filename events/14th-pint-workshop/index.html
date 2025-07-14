@@ -115,16 +115,6 @@
 </nav>
 
     
-        <section class="hero  is-medium  is-bold is-primary" >
-    <div class="hero-body ">
-        <div class="container">
-            <h1 class="title is-2">PinT 2025: 14th Workshop on Parallel-in-Time Integration</h1>
-            <p class="subtitle is-3">Brief overview</p>
-            
-        </div>
-    </div>
-</section>
-    
     
 
 
@@ -154,9 +144,8 @@
 
 <nav id="subnav" class="clearfix" role="navigation">
   <ul class="nav nav-tabs">
-    <li role="presentation"  class="active" >
-      <a href="/events/14th-pint-workshop/">Event's Main Page</a>
-    </li>
+    
+    
     
     
     
@@ -219,9 +208,47 @@
 </nav>
 
         
-        <h2>Brief overview</h2>
-        
-        <p>PinT 2025: the 14th Workshop on Parallel-in-time Integration will be hosted at the ICMS in Edinburgh, UK. Please visit the conference website at https://www.icms.org.uk/workshops/2025/parallel-time-algorithms-exascale-applications for more information.</p>
+        <h3 id="brief-overview">Brief overview</h3>
+
+<p>PinT 2025: the 14th Workshop on Parallel-in-time Integration will be hosted at the ICMS in Edinburgh, UK.
+Please visit the <a href="https://icms.ac.uk/activities/workshop/parallel-in-time-algorithms-for-exascale-applications/">conference website for more information.</a></p>
+
+<h3 id="closing-discussion">Closing Discussion</h3>
+
+<h4 id="main-actions">Main Actions</h4>
+
+<ul>
+  <li>Redundant computation discussion: <a href="https://crd.lbl.gov/divisions/amcr/computational-science-dept/anag/about/staff-and-postdocs/hans-johansen/">Hans</a> agreed to summarize.</li>
+  <li>Collation of introductory material and example code on website (<a href="https://github.com/tlunet">Thibaut</a> and <a href="https://github.com/jshipton">Jemma</a>?)</li>
+  <li><a href="https://github.com/danielru">Daniel</a> to share admin permissions for email list - we need to check that the join-up procedure is working!</li>
+  <li><a href="https://github.com/tlunet">Thibaut</a>, <a href="https://github.com/brownbaerchen">Thomas</a> and <a href="https://www.linkedin.com/in/juliusosatoehigie">Julius</a> to discuss how to implement Julius’s time-parallel RK - start with mpi4py tutorials. Could a short answer to the question “I’d like to code my method in parallel, where should I start?” could go somewhere on the website? Basically just a pointer to mpi4py (and maybe some examples e.g. of the ensemble communicator in <a href="https://www.firedrakeproject.org/">Firedrake</a>).</li>
+</ul>
+
+<h4 id="full-summary">Full Summary</h4>
+
+<ul>
+  <li>Redundant computation (<a href="https://crd.lbl.gov/divisions/amcr/computational-science-dept/anag/about/staff-and-postdocs/hans-johansen/">Hans</a> to summarize).</li>
+  <li><a href="https://www.unige.ch/~gander">Martin</a> cautioned against the use of the word “optimal” without more specific information - this comes from the DD community where it really means “mesh independent scaling”.</li>
+  <li>Does PinT work for hyperbolic problems? See <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E580B25A44766E6729A65D7AF05B1198/S0962492924000072a.pdf/time_parallelization_for_hyperbolic_and_parabolic_problems.pdf">Martin’s Acta Numerica paper</a> - there are many methods that are not multilevel that can work. Multilevel is a challenge.</li>
+  <li><a href="https://github.com/JHopeCollins">Josh</a> pointed out a common subproblem shared by ParaDiag and REXI methods: solution of systems that look like backwards Euler steps with complex timestep (which <a href="https://github.com/colinjcotter">Colin</a> clarified lead to an indefinite-Helmholtz-like problem on elimination to one variable).</li>
+  <li>Test problems: these help us to connect with the applications and each other. e.g. equations with fast singular limits / slow attractors - can we find any new and common test problems?</li>
+  <li>How do we get domain scientists to adopt time-parallel methods? Need to show speed up for problems they care about. Find people who are really experiencing the bottleneck preventing them from doing exciting science. This would help answer the question “What is the PinT killer-app??” … I’m not sure we answered this!!</li>
+  <li>Next meeting:
+    <ul>
+      <li>When and where: Linz w/c 29th June but <a href="https://www.unige.ch/~gander">Martin</a> pointed out that it clashes with SciCADE so it might shift by a week. Not yet announced on the website.</li>
+      <li>“Lightning” talks to introduce people early on in the meeting. Suggestion from <a href="https://github.com/danielru">Daniel</a> to do 30min sessions of 60s talks on the first/second days - just one slide to introduce who you are and what you do.</li>
+      <li>Could we run introductory / tutorial sessions to introduce the different methods? This requires considerable effort and additional funding but is a good idea. Instead we will collate material on the parallel-in-time website (see below).</li>
+      <li>T-Shirts?!</li>
+    </ul>
+  </li>
+  <li>PinT website:
+    <ul>
+      <li><a href="https://github.com/danielru">Daniel</a> encouraged people to keep the references section of the website up to date. I think it would help to have the link at the top of the references page point directly to: https://github.com/Parallel-in-Time/parallel-in-time.github.io/wiki/Adding-Publications#steps-for-adding-a-new-publication ✅</li>
+      <li><a href="https://www.unige.ch/~gander">Martin</a> pointed out that there are a lot of links to click through for the workshops and sometimes it is hard to find the link to the main workshop page. ✅</li>
+      <li><a href="https://github.com/danielru">Daniel</a> pointed out that the “Codes” section of the website is not up to date and this could be a good place to collate the introductory material. <a href="https://github.com/tlunet">Thibaut</a> offered to help with this (<a href="https://github.com/jshipton">Jemma</a> is also happy to help!).</li>
+    </ul>
+  </li>
+</ul>
 
       </div>
       <aside class="column is-5-desktop is-5-tablet" id="meta-aside">
@@ -234,6 +261,22 @@
   </div>
   <div class="panel-body">
     
+    
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Homepage</label>
+      <div class="event-meta-piece">
+        
+        <a href="https://icms.ac.uk/activities/workshop/parallel-in-time-algorithms-for-exascale-applications" title="Event's homepage">
+          
+            original event's website
+            <i class="fa fa-fw fa-globe"></i>
+            
+        </a>
+        
+        <!-- <a href="https://icms.ac.uk/activities/workshop/parallel-in-time-algorithms-for-exascale-applications" target="_blank">icms.ac.uk/activities/workshop/parallel-in-time-algorithms-for-exascale-applications</a> -->
+        
+      </div>
+    </div>
     
     
     <div class="event-meta-row">
@@ -304,6 +347,38 @@
       </div>
     </div>
     
+    
+    <div class="event-meta-row">
+      <label class="col-md-4 control-label">Invited</label>
+      <div class="event-meta-piece">
+        
+        <span class="clearfix">
+          Josh Hope-Collins
+          
+        </span>
+        
+        <span class="clearfix">
+          Juliane Rosemeier
+          
+        </span>
+        
+        <span class="clearfix">
+          Giancarlo Antonucci
+          
+        </span>
+        
+        <span class="clearfix">
+          Rob Falgout
+          
+        </span>
+        
+        <span class="clearfix">
+          Felix Kwok
+          
+        </span>
+        
+      </div>
+    </div>
     
   </div>
 </section>

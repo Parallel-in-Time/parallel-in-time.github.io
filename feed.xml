@@ -7,6 +7,21 @@
     <atom:link href="http://parallel-in-time.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PinT 2025 Workshop - Closing Notes</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;/events/14th-pint-workshop&quot;&gt;14th Workshop on Parallel-in-Time Integration (PinT 2025)&lt;/a&gt; gathered around 40 people from all around the world, and was a great opportunity for sharing and discussing on the new advances on the field.&lt;/p&gt;
+
+&lt;p&gt;The closing notes from the last discussions at the end of the workshop have been summarized on the &lt;a href=&quot;/events/14th-pint-workshop&quot;&gt;event page&lt;/a&gt;, feel free to check it out!&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;&quot;&gt;
+&lt;img src=&quot;/assets/images/pint2025.jpg&quot; alt=&quot;PinT-2025 Group Photo&quot; style=&quot;width: 60%; height: auto;&quot; /&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 11 Jul 2025 12:30:00 +0000</pubDate>
+        <link>http://parallel-in-time.org/events/2025/07/11/pint2025-closing-notes.html</link>
+        <guid isPermaLink="true">http://parallel-in-time.org/events/2025/07/11/pint2025-closing-notes.html</guid>
+      </item>
+    
+      <item>
         <title>PinT 2024 Workshop</title>
         <description>&lt;p&gt;Registration for PinT 2024 - &lt;a href=&quot;https://time-x.eu/pint-2024/&quot;&gt;13th Workshop on Parallel-in-time integration&lt;/a&gt; is open.
 It is free of charge to attend the workshop.
@@ -132,19 +147,6 @@ to participate.&lt;/p&gt;
         <pubDate>Wed, 25 Oct 2017 23:00:00 +0000</pubDate>
         <link>http://parallel-in-time.org/events/2017/10/25/7th-pint-workshop-announced.html</link>
         <guid isPermaLink="true">http://parallel-in-time.org/events/2017/10/25/7th-pint-workshop-announced.html</guid>
-      </item>
-    
-      <item>
-        <title>Submission open for 6th workshop on parallel-in-time integration</title>
-        <description>&lt;p&gt;Abstract submission is now open for the &lt;a href=&quot;/events/6th-pint-workshop/&quot;&gt;6th International Workshop on Parallel-in-time integration&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;You can find information about how to submit an abstract &lt;a href=&quot;https://www.ics.usi.ch/index.php/news/248-6th-workshop-on-parallel-in-time-methods-in-monte-verita&quot;&gt;here&lt;/a&gt;. The workshop will take place from 23 to 27 October 2017 in Ascona, Switzerland. The registration fee is 500 CHF and includes accommodation in the &lt;a href=&quot;http://www.monteverita.org/en/24/conference-centre-monte-verita.aspx&quot;&gt;Monte Verita Conference Centre&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Jul 2017 07:00:00 +0000</pubDate>
-        <link>http://parallel-in-time.org/events/2017/07/04/6th-pint-submission.html</link>
-        <guid isPermaLink="true">http://parallel-in-time.org/events/2017/07/04/6th-pint-submission.html</guid>
       </item>
     
   </channel>
