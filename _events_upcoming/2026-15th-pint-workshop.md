@@ -21,6 +21,6 @@ page_type: event_page
 no_lead: true
 ---
 
-_PinT 2026: the 14th Workshop on Parallel-in-time Integration_ will be hosted at [Johann Radon Institute for Computational and Applied Mathematics (RICAM)](https://www.oeaw.ac.at/ricam/home) around late June - early July (exact date will be set in the next weeks ...).
+_PinT 2026: the 14th Workshop on Parallel-in-time Integration_ will be hosted at [Johann Radon Institute for Computational and Applied Mathematics (RICAM)](https://www.oeaw.ac.at/ricam/home) around late June - early July 2026 (exact date will be set in the next weeks ...).
 
 More details to come ...
