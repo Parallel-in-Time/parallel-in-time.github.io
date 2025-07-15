@@ -48,8 +48,8 @@ if __name__ == '__main__':
                     author["given"] = ''
             authors = " and ".join([author['given'] + ' ' + author['family'] for author in data["author"]])
             candidate_title = re.sub('[^A-Za-z0-9]+', '', data['title'])
-            existing_title = re.sub('[^A-Za-z0-9]+', '', d[id]['title'])
-            if authors == d[id]['author'] and candidate_title == existing_title:
+            existing_title = re.sub('[^A-Za-z0-9]+', '', d[id].get('title', ""))
+            if authors == d[id].get('author', "") and candidate_title == existing_title:
                 print(f'I detected a duplicate based on the key {id}, the list of authors and the title for {url}. '
                       f'I will ignore this entry. If this is wrong, sorry for that..\n\n')
                 duplicate = True
@@ -69,7 +69,9 @@ if __name__ == '__main__':
                     # print(f"removing {item['ID']}")
                     db.entries.remove(item)
 
-            bib = re.sub(r'(@[a-z]*{)(.*),', r'\1' + id + ',', bib)
+            bType, *rest1 = bib.split("{")
+            oldID, *rest2 = rest1[0].split(",")
+            bib = "{".join([bType] + [','.join([id]+rest2)] + rest1[1:])
             bib_db = bibtexparser.loads(bib)
             db.entries.extend(bib_db.get_entry_list())
         else:
