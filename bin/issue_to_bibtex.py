@@ -36,6 +36,9 @@ try:
 
             arxiv_id = url.split('/')[-1]
             found, items = get_arxiv_info(arxiv_id, field='id')
+            if not found:
+                print(f"I could not find arXiv infos for {url}, maybe try without the version suffix 'v[.]'")
+                continue
             if len(items) > 1:
                 print(f'I got more than one item back from arXiv for {url}. See what I got:\n' +
                       '\n'.join([item.title for item in items]) + '\n' +
