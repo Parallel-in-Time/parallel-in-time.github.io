@@ -7673,6 +7673,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@article{ArrarásEtAl2025,
+	author = {Arrarás, Andrés and Gaspar, Francisco J. and Jimenez-Ciga, Iñigo and Portero, Laura},
+	doi = {10.1016/j.apnum.2025.07.012},
+	issn = {0168-9274},
+	journal = {Applied Numerical Mathematics},
+	month = {July},
+	publisher = {Elsevier BV},
+	title = {Space-time parallel solvers for reaction-diffusion problems forming Turing patterns},
+	url = {http://dx.doi.org/10.1016/j.apnum.2025.07.012},
+	year = {2025},
+}
+
 @article{BarmanEtAl2025,
 	author = {Barman, Abhishek and Khara, Biswajit and Ganapathysubramanian, Baskar and Sharma, Anupam},
 	doi = {10.1016/j.jcp.2025.114124},
@@ -7769,10 +7781,10 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 
 @techreport{FalgoutSchroder2025,
 	author = {Falgout, Robert D. and Schroder, Jacob B.},
-	title = {Parallel Time Integration – An Approaching Paradigm Shift for Scientific Computing},
 	institution = {Lawrence Livermore National Laboratory},
-	year = {2025},
+	title = {Parallel Time Integration – An Approaching Paradigm Shift for Scientific Computing},
 	url = {https://github.com/XBraid/xbraid/wiki/papers/pint-proof-2023.pdf},
+	year = {2025},
 }
 
 @article{FungEtAl2025,
@@ -8031,6 +8043,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{RoseEtAl2025,
+	abstract = {In the quest for highest performance in scientific computing, we present a novel framework that relies on high-bandwidth communication between GPUs in a compute cluster. The framework offers linear scaling of performance for explicit algorithms that is only limited by the size of the dataset and the number of GPUs. Slices of the dataset propagate in a ring of processes (GPUs) from one GPU, where they are processed, to the next, which results in a parallel-in-time parallelization. The user of the framework has to write GPU kernels that implement the algorithm and provide slices of the dataset. Knowledge about the underlying parallelization strategy is not required because the communication between processes is carried out by the framework. As a case study, molecular dynamics simulation based on the Lennard-Jones potential is implemented to measure the performance for a homogeneous fluid. Single node performance and strong scaling behavior of this framework is compared to LAMMPS, which is outperformed in the strong scaling case.},
+	author = {Martin Rose and Simon Homes and Lukas Ramsperger and Jose Gracia and Christoph Niethammer and Jadran Vrabec},
+	howpublished = {arXiv:2507.11289v1 [cs.DC]},
+	title = {Cyclic Data Streaming on GPUs for Short Range Stencils Applied to Molecular Dynamics},
+	url = {http://arxiv.org/abs/2507.11289v1},
+	year = {2025},
+}
+
 @article{SperryEtAl2025,
 	author = {Sperry, Mark Z. and Hwang, John T.},
 	doi = {10.1007/s11081-025-09967-y},
@@ -8139,5 +8160,14 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2502.02473v1 [math.NA]},
 	title = {Parareal Algorithms for Stochastic Maxwell Equations Driven by Multiplicative Noise},
 	url = {http://arxiv.org/abs/2502.02473v1},
+	year = {2025},
+}
+
+@unpublished{ZhongEtAl2025,
+	abstract = {This paper mainly studies a direct time-parallel algorithm for solving time-dependent differential equations of order 1 to 3. Different from the traditional time-stepping approach, we directly solve the all-at-once system from higher-order evolution equations by diagonalization the time discretization matrix $B$. Based on the connection between the characteristic equation and Chebyshev polynomials, we give explicit formulas for the eigenvector matrix $V$ of $B$ and its inverse $V^{-1}$ , and prove that $cond_2\left( V \right) =\mathcal{O} \left( n^3 \right)$, where $n$ is the number of time steps. A fast algorithm $B$ designed by exploring the structure of the spectral decomposition of $B$. Numerical experiments were performed to validate the acceleration performance of the fast spectral decomposition algorithm. The results show that the proposed fast algorithm achieves significant computational speedup.},
+	author = {Shun-Zhi Zhong and Yong-Liang Zhao},
+	howpublished = {arXiv:2507.05743v1 [math.NA]},
+	title = {A direct PinT algorithm for higher-order nonlinear equations},
+	url = {http://arxiv.org/abs/2507.05743v1},
 	year = {2025},
 }
