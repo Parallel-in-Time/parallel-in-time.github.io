@@ -7,6 +7,17 @@
     <atom:link href="http://parallel-in-time.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PinT 2026 Workshop - Announcement</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;/events/15th-pint-workshop&quot;&gt;15th Workshop on Parallel-in-Time Integration (PinT 2026)&lt;/a&gt; will be hosted at &lt;a href=&quot;https://www.oeaw.ac.at/ricam/home&quot;&gt;Johann Radon Institute for Computational and Applied Mathematics (RICAM)&lt;/a&gt; from &lt;strong&gt;6. to 10. July 2026&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;More details will be given in due time on the &lt;a href=&quot;/events/15th-pint-workshop&quot;&gt;event page …&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Aug 2025 13:30:00 +0000</pubDate>
+        <link>http://parallel-in-time.org/events/2025/08/04/pint2026-announcement.html</link>
+        <guid isPermaLink="true">http://parallel-in-time.org/events/2025/08/04/pint2026-announcement.html</guid>
+      </item>
+    
+      <item>
         <title>PinT 2025 Workshop - Closing Notes</title>
         <description>&lt;p&gt;The &lt;a href=&quot;/events/14th-pint-workshop&quot;&gt;14th Workshop on Parallel-in-Time Integration (PinT 2025)&lt;/a&gt; gathered around 40 people from all around the world, and was a great opportunity for sharing and discussing on the new advances on the field.&lt;/p&gt;
 
@@ -134,19 +145,6 @@ to participate.&lt;/p&gt;
         <pubDate>Sat, 03 Feb 2018 14:07:00 +0000</pubDate>
         <link>http://parallel-in-time.org/jobs/2018/02/03/pint-siamla.html</link>
         <guid isPermaLink="true">http://parallel-in-time.org/jobs/2018/02/03/pint-siamla.html</guid>
-      </item>
-    
-      <item>
-        <title>2018 PINT workshop in Roscoff, France</title>
-        <description>&lt;p&gt;The 7th workshop on parallel-in-time integration will take place in May 2018 in Roscoff, France.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Please &lt;a href=&quot;/events/7th-pint-workshop/&quot;&gt;see here&lt;/a&gt; for additional information.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 25 Oct 2017 23:00:00 +0000</pubDate>
-        <link>http://parallel-in-time.org/events/2017/10/25/7th-pint-workshop-announced.html</link>
-        <guid isPermaLink="true">http://parallel-in-time.org/events/2017/10/25/7th-pint-workshop-announced.html</guid>
       </item>
     
   </channel>
