@@ -2,7 +2,7 @@
 layout: post
 hide_hero: true
 title: PinT 2026 Workshop - Announcement
-date: 2025-08-05 13:30:00
+date: 2025-08-04 13:30:00
 author: Thibaut
 categories:
   - Events
