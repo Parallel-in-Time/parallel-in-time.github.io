@@ -7860,6 +7860,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{GanderEtAl2025b,
+	abstract = {We consider a new class of Parareal algorithms, which use ideas from localized reduced basis methods to construct the coarse solver from spectral approximations of the transfer operators mapping initial values for a given time interval to the solution at the end of the interval. By leveraging randomized singular value decompositions, these spectral approximations are obtained embarrassingly parallel by computing local fine solutions for random initial values. We show a priori and a posteriori error bounds in terms of the computed singular values of the transfer operators. Our numerical experiments demonstrate that our approach can significantly outperform Parareal with single-step coarse solvers. At the same time, it permits to further increase parallelism in Parareal by trading global iterations for a larger number of independent local solves.},
+	author = {Martin J. Gander and Mario Ohlberger and Stephan Rave},
+	howpublished = {arXiv:2508.08873v1 [math.NA]},
+	title = {A Parareal Algorithm with Spectral Coarse Solver},
+	url = {http://arxiv.org/abs/2508.08873v1},
+	year = {2025},
+}
+
 @unpublished{GuEtAl2025,
 	abstract = {This paper focuses on the efficient numerical algorithms of a three-field Biot's consolidation model. The approach begins with the introduction of innovative monolithic and global-in-time iterative decoupled algorithms, which incorporate the backward differentiation formulas for time discretization. In each iteration, these algorithms involve solving a diffusion subproblem over the entire temporal domain, followed by solving a generalized Stokes subproblem over the same time interval. To accelerate the global-in-time iterative process, we present a reduced order modeling approach based on proper orthogonal decomposition, aimed at reducing the primary computational cost from the generalized Stokes subproblem. The effectiveness of this novel method is validated both theoretically and through numerical experiments.},
 	author = {Huipeng Gu and Francesco Ballarin and Mingchao Cai and Jingzhi Li},
