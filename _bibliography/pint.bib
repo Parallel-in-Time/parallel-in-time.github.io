@@ -7241,15 +7241,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
-@unpublished{Hope-CollinsEtAl2024,
-	abstract = {Modern high performance computers are massively parallel; for many PDE applications spatial parallelism saturates long before the computer's capability is reached. Parallel-in-time methods enable further speedup beyond spatial saturation by solving multiple timesteps simultaneously to expose additional parallelism. ParaDiag is a particular approach to parallel-in-time based on preconditioning the simultaneous timestep system with a perturbation that allows block diagonalisation via a Fourier transform in time. In this article, we introduce asQ, a new library for implementing ParaDiag parallel-in-time methods, with a focus on applications in the geosciences, especially weather and climate. asQ is built on Firedrake, a library for the automated solution of finite element models, and the PETSc library of scalable linear and nonlinear solvers. This enables asQ to build ParaDiag solvers for general finite element models and provide a range of solution strategies, making testing a wide array of problems straightforward. We use a quasi-Newton formulation that encompasses a range of ParaDiag methods, and expose building blocks for constructing more complex methods. The performance and flexibility of asQ is demonstrated on a hierarchy of linear and nonlinear atmospheric flow models. We show that ParaDiag can offer promising speedups and that asQ is a productive testbed for further developing these methods.},
-	author = {Joshua Hope-Collins and Abdalaziz Hamdan and Werner Bauer and Lawrence Mitchell and Colin Cotter},
-	howpublished = {arXiv:2409.18792v1 [math.NA]},
-	title = {asQ: parallel-in-time finite element simulations using ParaDiag for geoscientific models and beyond},
-	url = {http://arxiv.org/abs/2409.18792v1},
-	year = {2024},
-}
-
 @article{HuangEtAl2024,
 	author = {Huang, Jianguo and Ju, Lili and Xu, Yuejin},
 	doi = {10.1002/num.23116},
@@ -7918,6 +7909,21 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	pages = {012036},
 	title = {Leveraging Continuous-Time Echo State Networks to Accelerate Computing Nonlinear Stiff Dynamics through Parareal in Time Simulation},
 	volume = {3027},
+	year = {2025},
+}
+
+@article{Hope-CollinsEtAl2025,
+	author = {Hope-Collins, Joshua and Hamdan, Abdalaziz and Bauer, Werner and Mitchell, Lawrence and Cotter, Colin},
+	doi = {10.5194/gmd-18-4535-2025},
+	issn = {1991-9603},
+	journal = {Geoscientific Model Development},
+	month = {July},
+	number = {14},
+	pages = {4535–4569},
+	publisher = {Copernicus GmbH},
+	title = {asQ: parallel-in-time finite element simulations using ParaDiag for geoscientific models and beyond},
+	url = {http://dx.doi.org/10.5194/gmd-18-4535-2025},
+	volume = {18},
 	year = {2025},
 }
 
