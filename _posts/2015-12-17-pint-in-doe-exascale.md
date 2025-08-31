@@ -13,5 +13,3 @@ parallel-in-time integration as one of six future directions of research in mode
 Even though [the report](http://science.energy.gov/%7E/media/ascr/pdf/research/am/docs/EMWGreport.pdf) already appeared in 2014 and is strictly speaking no longer news, it
 is still exciting to see PINT being mentioned prominently as one of the promising avenues for the path to exascale
 computing.
-
-{% bibliography --cited %}
