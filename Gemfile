@@ -19,6 +19,5 @@ gem 'jekyll-scholar'
 gem 'liquid-tag-parser'
 gem 'bulma-clean-theme'
 # gem 'jekyll-archives'
-gem 'bibtex-ruby' '6.1.0'
-
+gem 'bibtex-ruby', '~> 6.1'
 gem 'jgd'
