@@ -8310,6 +8310,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{ZoltowskiEtAl2025,
+	abstract = {Markov chain Monte Carlo (MCMC) methods are foundational algorithms for Bayesian inference and probabilistic modeling. However, most MCMC algorithms are inherently sequential and their time complexity scales linearly with the sequence length. Previous work on adapting MCMC to modern hardware has therefore focused on running many independent chains in parallel. Here, we take an alternative approach: we propose algorithms to evaluate MCMC samplers in parallel across the chain length. To do this, we build on recent methods for parallel evaluation of nonlinear recursions that formulate the state sequence as a solution to a fixed-point problem and solve for the fixed-point using a parallel form of Newton's method. We show how this approach can be used to parallelize Gibbs, Metropolis-adjusted Langevin, and Hamiltonian Monte Carlo sampling across the sequence length. In several examples, we demonstrate the simulation of up to hundreds of thousands of MCMC samples with only tens of parallel Newton iterations. Additionally, we develop two new parallel quasi-Newton methods to evaluate nonlinear recursions with lower memory costs and reduced runtime. We find that the proposed parallel algorithms accelerate MCMC sampling across multiple examples, in some cases by more than an order of magnitude compared to sequential evaluation.},
+	author = {David M. Zoltowski and Skyler Wu and Xavier Gonzalez and Leo Kozachkov and Scott W. Linderman},
+	howpublished = {arXiv:2508.18413v1 [stat.CO]},
+	title = {Parallelizing MCMC Across the Sequence Length},
+	url = {http://arxiv.org/abs/2508.18413v1},
+	year = {2025},
+}
+
 @phdthesis{{Bronasco2025,
 	author = {{Bronasco, Ausra}},
 	doi = {10.13097/ARCHIVE-OUVERTE/UNIGE:187048},
