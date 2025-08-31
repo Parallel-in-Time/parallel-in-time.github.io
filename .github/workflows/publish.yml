@@ -25,7 +25,6 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
-          custom_opts: '--trace'
           
       - name: Uploading artifacts
         uses: actions/upload-artifact@v4
