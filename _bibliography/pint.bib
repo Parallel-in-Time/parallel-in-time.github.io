@@ -7883,6 +7883,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{GattiglioEtAl2025,
+	abstract = {We introduce Prob-GParareal, a probabilistic extension of the GParareal algorithm designed to provide uncertainty quantification for the Parallel-in-Time (PinT) solution of (ordinary and partial) differential equations (ODEs, PDEs). The method employs Gaussian processes (GPs) to model the Parareal correction function, as GParareal does, further enabling the propagation of numerical uncertainty across time and yielding probabilistic forecasts of system's evolution. Furthermore, Prob-GParareal accommodates probabilistic initial conditions and maintains compatibility with classical numerical solvers, ensuring its straightforward integration into existing Parareal frameworks. Here, we first conduct a theoretical analysis of the computational complexity and derive error bounds of Prob-GParareal. Then, we numerically demonstrate the accuracy and robustness of the proposed algorithm on five benchmark ODE systems, including chaotic, stiff, and bifurcation problems. To showcase the flexibility and potential scalability of the proposed algorithm, we also consider Prob-nnGParareal, a variant obtained by replacing the GPs in Parareal with the nearest-neighbors GPs, illustrating its increased performance on an additional PDE example. This work bridges a critical gap in the development of probabilistic counterparts to established PinT methods.},
+	author = {Guglielmo Gattiglio and Lyudmila Grigoryeva and Massimiliano Tamborrino},
+	howpublished = {arXiv:2509.03945v1 [stat.CO]},
+	title = {Prob-GParareal: A Probabilistic Numerical Parallel-in-Time Solver for Differential Equations},
+	url = {http://arxiv.org/abs/2509.03945v1},
+	year = {2025},
+}
+
 @unpublished{GuEtAl2025,
 	abstract = {This paper focuses on the efficient numerical algorithms of a three-field Biot's consolidation model. The approach begins with the introduction of innovative monolithic and global-in-time iterative decoupled algorithms, which incorporate the backward differentiation formulas for time discretization. In each iteration, these algorithms involve solving a diffusion subproblem over the entire temporal domain, followed by solving a generalized Stokes subproblem over the same time interval. To accelerate the global-in-time iterative process, we present a reduced order modeling approach based on proper orthogonal decomposition, aimed at reducing the primary computational cost from the generalized Stokes subproblem. The effectiveness of this novel method is validated both theoretically and through numerical experiments.},
 	author = {Huipeng Gu and Francesco Ballarin and Mingchao Cai and Jingzhi Li},
