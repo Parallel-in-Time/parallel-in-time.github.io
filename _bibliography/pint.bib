@@ -7892,6 +7892,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{GriebelEtAl2025,
+	abstract = {In this article, we present a parallel discretization and solution method for parabolic problems with a higher number of space dimensions. It consists of a parallel-in-time approach using the multigrid reduction-in-time algorithm MGRIT with its implementation in the library XBraid, the sparse grid combination method for discretizing the resulting elliptic problems in space, and a domain decomposition method for each of the subproblems in the combination method based on the space-filling curve approach. As a result, we obtain an extremely fast and embarrassingly parallel solver with excellent speedup and scale-up qualities, which is perfectly suited for parabolic problems with up to six space dimensions. We describe our new parallel approach and show its superior parallelization properties for the heat equation, the chemical master equation and some exemplary stochastic differential equations.},
+	author = {Michael Griebel and Marc Alexander Schweitzer and Lukas Troska},
+	howpublished = {arXiv:2509.22156v1 [math.NA]},
+	title = {A Parallel-in-Time Combination Method for Parabolic Problems},
+	url = {http://arxiv.org/abs/2509.22156v1},
+	year = {2025},
+}
+
 @unpublished{GuEtAl2025,
 	abstract = {This paper focuses on the efficient numerical algorithms of a three-field Biot's consolidation model. The approach begins with the introduction of innovative monolithic and global-in-time iterative decoupled algorithms, which incorporate the backward differentiation formulas for time discretization. In each iteration, these algorithms involve solving a diffusion subproblem over the entire temporal domain, followed by solving a generalized Stokes subproblem over the same time interval. To accelerate the global-in-time iterative process, we present a reduced order modeling approach based on proper orthogonal decomposition, aimed at reducing the primary computational cost from the generalized Stokes subproblem. The effectiveness of this novel method is validated both theoretically and through numerical experiments.},
 	author = {Huipeng Gu and Francesco Ballarin and Mingchao Cai and Jingzhi Li},
