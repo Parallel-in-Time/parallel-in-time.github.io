@@ -5293,28 +5293,28 @@ the effectiveness of the proposed method.},
 @unpublished{GanderEtAl2021,
 	abstract = {In 2008, Maday and R{\o}nquist introduce{d} an interesting new approach for the direct parallel-in-time (PinT) {solution} of
 time-dependent PDEs. The idea is to diagonalize the time stepping matrix, keeping the matrices for the space discretization
-unchanged, and then to solve all time steps in parallel. Since then, several variants appeared, and we 
-call these closely related algorithms {\em ParaDiag} algorithms. ParaDiag algorithms in the literature can 
+unchanged, and then to solve all time steps in parallel. Since then, several variants appeared, and we
+call these closely related algorithms {\em ParaDiag} algorithms. ParaDiag algorithms in the literature can
 be classified into two groups:
 \begin{itemize}
 \item ParaDiag-I: direct standalone solvers,
 \item ParaDiag-II:  iterative solvers.
 \end{itemize}
-We will explain the basic features of each group in this note. To have concrete examples, we will 
-introduce ParaDiag-I and ParaDiag-II for the advection-diffusion equation. We will also introduce   
-ParaDiag-II  for the wave equation  and an optimal control problem for the wave equation. 
+We will explain the basic features of each group in this note. To have concrete examples, we will
+introduce ParaDiag-I and ParaDiag-II for the advection-diffusion equation. We will also introduce
+ParaDiag-II  for the wave equation  and an optimal control problem for the wave equation.
 We could have used the advection-diffusion equation as well to illustrate ParaDiag-II,
-but wave equations are known to cause problems for certain PinT algorithms and thus constitute an 
+but wave equations are known to cause problems for certain PinT algorithms and thus constitute an
 especially interesting example for which ParaDiag algorithms were tested. We show the main known
-theoretical results in each case, and also provide Matlab codes for testing.  The goal of the Matlab 
-codes is to help the interested reader understand the key features of the ParaDiag algorithms, 
+theoretical results in each case, and also provide Matlab codes for testing.  The goal of the Matlab
+codes is to help the interested reader understand the key features of the ParaDiag algorithms,
 without intention to be highly tuned for efficiency and/or low  memory use.
 
-We also provide speedup measurements of ParaDiag algorithms for a 2D linear advection-diffusion equation.  
-These results are obtained on the Tianhe-1 supercomputer in China and the SIUE Campus Cluster in the US, 
-which is a multi-array, configurable and cooperative parallel system, and we compare these results to the 
-performance of parareal and MGRiT, two widely used PinT algorithms.  In a forthcoming update of this note, 
-we will {provide} more material on ParaDiag algorithms, in particular further  Matlab codes and parallel 
+We also provide speedup measurements of ParaDiag algorithms for a 2D linear advection-diffusion equation.
+These results are obtained on the Tianhe-1 supercomputer in China and the SIUE Campus Cluster in the US,
+which is a multi-array, configurable and cooperative parallel system, and we compare these results to the
+performance of parareal and MGRiT, two widely used PinT algorithms.  In a forthcoming update of this note,
+we will {provide} more material on ParaDiag algorithms, in particular further  Matlab codes and parallel
 computing results, also for more realistic applications.},
 	author = {Gander, Martin J and Liu, Jun and Wu, Shu-Lin and Yue, Xiaoqiang and Zhou, Tao},
 	howpublished = {arXiv preprint arXiv:2005.09158},
@@ -5643,8 +5643,8 @@ computing results, also for more realistic applications.},
 }
 
 @unpublished{WuEtAl2021b,
-	abstract = {Solving evolutionary equations in a parallel-in-time manner is an attractive topic and many algorithms are proposed in recent two decades. The algorithm based on the block $\alpha$-circulant preconditioning technique has shown promising  advantages,  especially for wave propagation problems. By fast Fourier transform for factorizing the involved circulant matrices, the preconditioned iteration can be computed efficiently via the so-called diagonalization technique, which yields a direct parallel implementation across all time levels. In recent years, considerable efforts have been devoted to exploring  the convergence of the preconditioned iteration 
-by studying the spectral radius of the iteration matrix, and this leads to many case-by-case studies depending on the used time-integrator. In this paper,  we propose a unified convergence analysis for the algorithm applied to $u'+Au=f$,  where   $\sigma(A)\subset\mathbb{C}^+$ with $\sigma(A)$ being  the spectrum of $A\in\mathbb{C}^{m\times m}$. For any   one-step method (such as the Runge-Kutta methods) with stability function $\mathcal{R}(z)$,  we prove  that the decay rate of the global error is bounded by $\alpha/(1-\alpha)$, provided the  method is stable, i.e., $\max_{\lambda\in\sigma(A)}|\mathcal{R}(\Delta t\lambda)|\leq1$. For any linear multistep method, such a bound becomes $c\alpha/(1-c\alpha)$, where $c\geq1$ is a constant specified by the multistep method itself. 
+	abstract = {Solving evolutionary equations in a parallel-in-time manner is an attractive topic and many algorithms are proposed in recent two decades. The algorithm based on the block $\alpha$-circulant preconditioning technique has shown promising  advantages,  especially for wave propagation problems. By fast Fourier transform for factorizing the involved circulant matrices, the preconditioned iteration can be computed efficiently via the so-called diagonalization technique, which yields a direct parallel implementation across all time levels. In recent years, considerable efforts have been devoted to exploring  the convergence of the preconditioned iteration
+by studying the spectral radius of the iteration matrix, and this leads to many case-by-case studies depending on the used time-integrator. In this paper,  we propose a unified convergence analysis for the algorithm applied to $u'+Au=f$,  where   $\sigma(A)\subset\mathbb{C}^+$ with $\sigma(A)$ being  the spectrum of $A\in\mathbb{C}^{m\times m}$. For any   one-step method (such as the Runge-Kutta methods) with stability function $\mathcal{R}(z)$,  we prove  that the decay rate of the global error is bounded by $\alpha/(1-\alpha)$, provided the  method is stable, i.e., $\max_{\lambda\in\sigma(A)}|\mathcal{R}(\Delta t\lambda)|\leq1$. For any linear multistep method, such a bound becomes $c\alpha/(1-c\alpha)$, where $c\geq1$ is a constant specified by the multistep method itself.
 Our proof only relies on  the stability of the time-integrator and the estimate is independent of the step size $\Delta t$ and  the   spectrum $\sigma(A)$.},
 	author = {Shulin Wu and Tao Zhou and Zhi Zhou},
 	howpublished = {arXiv:2102.04646v2 [math.NA]},
@@ -6851,15 +6851,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {A Parallel-in-time Method Based on Preconditioner for Biot's Model},
 	url = {http://arxiv.org/abs/2310.10430v1},
 	year = {2023},
-}
-
-@unpublished{AppelEtAl2024,
-	abstract = {This paper presents a method of performing topology optimisation of transient heat conduction problems using the parallel-in-time method Parareal. To accommodate the adjoint analysis, the Parareal method was modified to store intermediate time steps. Preliminary tests revealed that Parareal requires many iterations to achieve accurate results and, thus, achieves no appreciable speedup. To mitigate this, a one-shot approach was used, where the time history is iteratively refined over the optimisation process. The method estimates objectives and sensitivities by introducing cumulative objectives and sensitivities and solving for these using a single iteration of Parareal, after which it updates the design using the Method of Moving Asymptotes. The resulting method was applied to a test problem where a power mean of the temperature was minimised. It achieved a peak speedup relative to a sequential reference method of $5\times$ using 16 threads. The resulting designs were similar to the one found by the reference method, both in terms of objective values and qualitative appearance. The one-shot Parareal method was compared to the Parallel Local-in-Time method of topology optimisation. This revealed that the Parallel Local-in-Time method was unstable for the considered test problem, but it achieved a peak speedup of $12\times$ using 32 threads. It was determined that the dominant bottleneck in the one-shot Parareal method was the time spent on computing coarse propagators.},
-	author = {Magnus Appel and Joe Alexandersen},
-	howpublished = {arXiv:2411.19030v1 [cs.CE]},
-	title = {One-shot Parareal Approach for Topology Optimisation of Transient Heat Flow},
-	url = {http://arxiv.org/abs/2411.19030v1},
-	year = {2024},
 }
 
 @article{BaumannEtAl2024,
