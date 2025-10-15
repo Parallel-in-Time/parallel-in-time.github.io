@@ -8368,3 +8368,12 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	volume = {152},
 	year = {2026},
 }
+
+@unpublished{AppelEtAl2024,
+	abstract = {This paper presents a method of performing topology optimisation of transient heat conduction problems using the parallel-in-time method Parareal. To accommodate the adjoint analysis, the Parareal method was modified to store intermediate time steps. Preliminary tests revealed that Parareal requires many iterations to achieve accurate results and, thus, achieves no appreciable speedup. To mitigate this, a one-shot approach was used, where the time history is iteratively refined over the optimisation process. The method estimates objectives and sensitivities by introducing cumulative objectives and sensitivities and solving for these using a single iteration of Parareal, after which it updates the design using the Method of Moving Asymptotes. The resulting method was applied to a test problem where a power mean of the temperature was minimised. It achieved a peak speedup relative to a sequential reference method of $5\times$ using 16 threads. The resulting designs were similar to the one found by the reference method, both in terms of objective values and qualitative appearance. The one-shot Parareal method was compared to the Parallel Local-in-Time method of topology optimisation. This revealed that the Parallel Local-in-Time method was unstable for the considered test problem, but it achieved a peak speedup of $12\times$ using 32 threads. It was determined that the dominant bottleneck in the one-shot Parareal method was the time spent on computing coarse propagators.},
+	author = {Magnus Appel and Joe Alexandersen},
+	howpublished = {arXiv:2411.19030v1 [cs.CE]},
+	title = {One-shot Parareal Approach for Topology Optimisation of Transient Heat Flow},
+	url = {http://arxiv.org/abs/2411.19030v1},
+	year = {2024},
+}
