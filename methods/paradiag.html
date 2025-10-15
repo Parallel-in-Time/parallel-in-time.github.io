@@ -304,28 +304,28 @@
           <section class="modal-card-body">
             In 2008, Maday and Rønquist introduced an interesting new approach for the direct parallel-in-time (PinT) solution of
 time-dependent PDEs. The idea is to diagonalize the time stepping matrix, keeping the matrices for the space discretization
-unchanged, and then to solve all time steps in parallel. Since then, several variants appeared, and we 
-call these closely related algorithms \em ParaDiag algorithms. ParaDiag algorithms in the literature can 
+unchanged, and then to solve all time steps in parallel. Since then, several variants appeared, and we
+call these closely related algorithms \em ParaDiag algorithms. ParaDiag algorithms in the literature can
 be classified into two groups:
 \beginitemize
 \item ParaDiag-I: direct standalone solvers,
 \item ParaDiag-II:  iterative solvers.
 \enditemize
-We will explain the basic features of each group in this note. To have concrete examples, we will 
-introduce ParaDiag-I and ParaDiag-II for the advection-diffusion equation. We will also introduce   
-ParaDiag-II  for the wave equation  and an optimal control problem for the wave equation. 
+We will explain the basic features of each group in this note. To have concrete examples, we will
+introduce ParaDiag-I and ParaDiag-II for the advection-diffusion equation. We will also introduce
+ParaDiag-II  for the wave equation  and an optimal control problem for the wave equation.
 We could have used the advection-diffusion equation as well to illustrate ParaDiag-II,
-but wave equations are known to cause problems for certain PinT algorithms and thus constitute an 
+but wave equations are known to cause problems for certain PinT algorithms and thus constitute an
 especially interesting example for which ParaDiag algorithms were tested. We show the main known
-theoretical results in each case, and also provide Matlab codes for testing.  The goal of the Matlab 
-codes is to help the interested reader understand the key features of the ParaDiag algorithms, 
+theoretical results in each case, and also provide Matlab codes for testing.  The goal of the Matlab
+codes is to help the interested reader understand the key features of the ParaDiag algorithms,
 without intention to be highly tuned for efficiency and/or low  memory use.
 
-We also provide speedup measurements of ParaDiag algorithms for a 2D linear advection-diffusion equation.  
-These results are obtained on the Tianhe-1 supercomputer in China and the SIUE Campus Cluster in the US, 
-which is a multi-array, configurable and cooperative parallel system, and we compare these results to the 
-performance of parareal and MGRiT, two widely used PinT algorithms.  In a forthcoming update of this note, 
-we will provide more material on ParaDiag algorithms, in particular further  Matlab codes and parallel 
+We also provide speedup measurements of ParaDiag algorithms for a 2D linear advection-diffusion equation.
+These results are obtained on the Tianhe-1 supercomputer in China and the SIUE Campus Cluster in the US,
+which is a multi-array, configurable and cooperative parallel system, and we compare these results to the
+performance of parareal and MGRiT, two widely used PinT algorithms.  In a forthcoming update of this note,
+we will provide more material on ParaDiag algorithms, in particular further  Matlab codes and parallel
 computing results, also for more realistic applications.
           </section>
         </div>
