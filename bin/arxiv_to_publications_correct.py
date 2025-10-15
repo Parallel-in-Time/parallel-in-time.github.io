@@ -36,46 +36,17 @@ if __name__ == '__main__':
             id = data['author'][0]['family'] + 'EtAl' + str(data['issued']['date-parts'][0][0])
         else:
             id = data['author'][0]['family'] + str(data['issued']['date-parts'][0][0])
+        assert id == id_db, f"ID generated with new DOI ({id}) is different than the original in database ({id_db})"
 
-        d = db.get_entry_dict()
-        id_orig = id
-        letters = 'bcdefghijklmnopqrstuvwxyz'
-        i = 0
-        duplicate = False
-        while id in d:
-            for author in data["author"]:
-                if 'given' not in author:
-                    author["given"] = ''
-            authors = " and ".join([author['given'] + ' ' + author['family'] for author in data["author"]])
-            candidate_title = re.sub('[^A-Za-z0-9]+', '', data['title'])
-            existing_title = re.sub('[^A-Za-z0-9]+', '', d[id].get('title', ""))
-            if authors == d[id].get('author', "") and candidate_title == existing_title:
-                print(f'I detected a duplicate based on the key {id}, the list of authors and the title for {url}. '
-                      f'I will ignore this entry. If this is wrong, sorry for that..\n\n')
-                duplicate = True
-                break
-            else:
-                print(f'I detected a duplicate based on the key {id}. '
-                      f'I will augment it with a letter and try again. '
-                      f'Please double-check, if this is correct.. '
-                      f'my duplicate detection algorithm is pretty bad.\n\n')
-                id = id_orig + letters[i]
-                i += 1
+        entries = db.get_entry_dict()
+        assert entries[id]["ENTRYTYPE"] == 'unpublished', "original entry in bib file was NOT unpublished !"
+        db.entries.remove(entries[id])
 
-        if not duplicate:
-
-            for item in db.get_entry_list():
-                if item['ID'] == id_db and item['ENTRYTYPE'] == 'unpublished':
-                    # print(f"removing {item['ID']}")
-                    db.entries.remove(item)
-
-            bType, *rest1 = bib.split("{")
-            oldID, *rest2 = rest1[0].split(",")
-            bib = "{".join([bType] + [','.join([id]+rest2)] + rest1[1:])
-            bib_db = bibtexparser.loads(bib)
-            db.entries.extend(bib_db.get_entry_list())
-        else:
-            bib_db = None
+        bType, *rest1 = bib.split("{")
+        oldID, *rest2 = rest1[0].split(",")
+        bib = "{".join([bType] + [','.join([id]+rest2)] + rest1[1:])
+        bib_db = bibtexparser.loads(bib)
+        db.entries.extend(bib_db.get_entry_list())
 
     if id_list:
         writer = BibTexWriter()
