@@ -406,7 +406,7 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="AppelEtAl2025">M. Appel and J. Alexandersen, “Space-Time Multigrid Methods Suitable for Topology Optimisation of Transient Heat Conduction,” arXiv:2505.10168v1 [cs.CE], 2025 [Online]. Available at: <a href="http://arxiv.org/abs/2505.10168v1" target="_blank">http://arxiv.org/abs/2505.10168v1</a></span>
+      <span id="AppelEtAl2025">M. Appel and J. Alexandersen, “Space-Time Multigrid Methods Suitable for Topology Optimisation of Transient Heat Conduction,” 2025, doi: 10.2139/ssrn.5256438. [Online]. Available at: <a href="http://dx.doi.org/10.2139/ssrn.5256438" target="_blank">http://dx.doi.org/10.2139/ssrn.5256438</a></span>
     </div>
 
 
@@ -422,8 +422,8 @@
         </div>
         <div class="btn-group btn-group-xs" role="group">
           
-          <button class="button" data-toggle="modal" data-target="#modalAppelEtAl2025Abstract" aria-expanded="false"
-                  aria-controls="modalAppelEtAl2025Abstract">
+          <button class="button" disabled="disabled" data-toggle="modal" data-target="#modalAppelEtAl2025Abstract"
+                  aria-expanded="false" aria-controls="modalAppelEtAl2025Abstract">
             Abstract
           </button>
           
@@ -449,11 +449,12 @@
             </div>
           </header>
           <section class="modal-card-body">
-            <pre class="abstract">@unpublished{AppelEtAl2025,
+            <pre class="abstract">@article{AppelEtAl2025,
   author = {Appel, Magnus and Alexandersen, Joe},
-  howpublished = {arXiv:2505.10168v1 [cs.CE]},
+  doi = {10.2139/ssrn.5256438},
+  publisher = {Elsevier BV},
   title = {Space-Time Multigrid Methods Suitable for Topology Optimisation of Transient Heat Conduction},
-  url = {http://arxiv.org/abs/2505.10168v1},
+  url = {http://dx.doi.org/10.2139/ssrn.5256438},
   year = {2025}
 }
 </pre>
@@ -463,30 +464,6 @@
     </div>
   </div>
   
-  
-  <div class="modal" id="modalAppelEtAl2025Abstract" tabindex="-1" role="dialog"
-       aria-labelledby="modalAppelEtAl2025AbstractTitle" aria-hidden="true">
-    <div class="modal-background">
-      <div class="modal-card">
-        <div class="modal-content">
-          <header class="modal-card-head">
-            <div class="modal-card-head-content">
-              <div>
-                <p class="modal-card-title" id="modalAppelEtAl2025AbstractTitle">
-                  Abstract for BibTeX entry <code>AppelEtAl2025</code>
-                </p>
-              </div>
-              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
-                      aria-hidden="true">&times;</span></button>
-            </div>
-          </header>
-          <section class="modal-card-body">
-            This paper presents Space-Time MultiGrid (STMG) methods which are suitable for performing topology optimisation of transient heat conduction problems. The proposed methods use a pointwise smoother and uniform Cartesian space-time meshes. For problems with high contrast in the diffusivity, it was found that it is beneficial to define a coarsening strategy based on the geometric mean of the minimum and maximum diffusivity. However, other coarsening strategies may be better for other smoothers. Several methods of discretising the coarse levels were tested. Of these, it was best to use a method which averages the thermal resistivities on the finer levels. However, this was likely a consequence of the fact that only one spatial dimension was considered for the test problems. A second coarsening strategy was proposed which ensures spatial resolution on the coarse grids. Mixed results were found for this strategy. The proposed STMG methods were used as a solver for a one-dimensional topology optimisation problem. In this context, the adjoint problem was also solved using the STMG methods. The STMG methods were sufficiently robust for this application, since they converged during every optimisation cycle. It was found that the STMG methods also work for the adjoint problem when the prolongation operator only sends information forwards in time, even although the direction of time for the adjoint problem is backwards.
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
   
 </div>
 </li>
@@ -5120,6 +5097,101 @@
 <h2 id="year2024" class="year">2024 <span class="count-stat"></span></h2>
 
 <ol class="bibliography"><li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
+          AppelEtAl2024
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="AppelEtAl2024">M. Appel and J. Alexandersen, “One-shot Parareal Approach for Topology Optimisation of Transient Heat Flow,” arXiv:2411.19030v1 [cs.CE], 2024 [Online]. Available at: <a href="http://arxiv.org/abs/2411.19030v1" target="_blank">http://arxiv.org/abs/2411.19030v1</a></span>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalAppelEtAl2024Bibtex" aria-expanded="false"
+                  aria-controls="modalAppelEtAl2024Bibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalAppelEtAl2024Abstract" aria-expanded="false"
+                  aria-controls="modalAppelEtAl2024Abstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modalAppelEtAl2024Bibtex" tabindex="-1" role="dialog"
+    aria-labelledby="modalAppelEtAl2024BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalAppelEtAl2024BibtexTitle">
+                  BibTeX entry <code>AppelEtAl2024</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@unpublished{AppelEtAl2024,
+  author = {Appel, Magnus and Alexandersen, Joe},
+  howpublished = {arXiv:2411.19030v1 [cs.CE]},
+  title = {One-shot Parareal Approach for Topology Optimisation of Transient Heat Flow},
+  url = {http://arxiv.org/abs/2411.19030v1},
+  year = {2024}
+}
+</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="modalAppelEtAl2024Abstract" tabindex="-1" role="dialog"
+       aria-labelledby="modalAppelEtAl2024AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalAppelEtAl2024AbstractTitle">
+                  Abstract for BibTeX entry <code>AppelEtAl2024</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            This paper presents a method of performing topology optimisation of transient heat conduction problems using the parallel-in-time method Parareal. To accommodate the adjoint analysis, the Parareal method was modified to store intermediate time steps. Preliminary tests revealed that Parareal requires many iterations to achieve accurate results and, thus, achieves no appreciable speedup. To mitigate this, a one-shot approach was used, where the time history is iteratively refined over the optimisation process. The method estimates objectives and sensitivities by introducing cumulative objectives and sensitivities and solving for these using a single iteration of Parareal, after which it updates the design using the Method of Moving Asymptotes. The resulting method was applied to a test problem where a power mean of the temperature was minimised. It achieved a peak speedup relative to a sequential reference method of 5\times using 16 threads. The resulting designs were similar to the one found by the reference method, both in terms of objective values and qualitative appearance. The one-shot Parareal method was compared to the Parallel Local-in-Time method of topology optimisation. This revealed that the Parallel Local-in-Time method was unstable for the considered test problem, but it achieved a peak speedup of 12\times using 32 threads. It was determined that the dominant bottleneck in the one-shot Parareal method was the time spent on computing coarse propagators.
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
   <div>
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
@@ -10980,101 +11052,6 @@
     </div>
   </div>
   
-  
-</div>
-</li>
-<li><div class="bibtex-entry-container">
-  <div>
-    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
-      <div class="row">
-        <div class="col-md-12 ref-label label label-default">
-          AppelEtAl2024
-        </div>
-      </div>
-    </div>
-
-    <div class="bibtex-ref-entry">
-      <span id="AppelEtAl2024">M. Appel and J. Alexandersen, “One-shot Parareal Approach for Topology Optimisation of Transient Heat Flow,” arXiv:2411.19030v1 [cs.CE], 2024 [Online]. Available at: <a href="http://arxiv.org/abs/2411.19030v1" target="_blank">http://arxiv.org/abs/2411.19030v1</a></span>
-    </div>
-
-
-    <div class="row mt-4">
-      <div class="btn-group btn-group-xs btn-group-justified" role="group">
-        <div class="btn-group btn-group-xs" role="group">
-          
-          <button class="button" data-toggle="modal" data-target="#modalAppelEtAl2024Bibtex" aria-expanded="false"
-                  aria-controls="modalAppelEtAl2024Bibtex">
-            BibTeX
-          </button>
-          
-        </div>
-        <div class="btn-group btn-group-xs" role="group">
-          
-          <button class="button" data-toggle="modal" data-target="#modalAppelEtAl2024Abstract" aria-expanded="false"
-                  aria-controls="modalAppelEtAl2024Abstract">
-            Abstract
-          </button>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="modal" id="modalAppelEtAl2024Bibtex" tabindex="-1" role="dialog"
-    aria-labelledby="modalAppelEtAl2024BibtexTitle" aria-hidden="true">
-    <div class="modal-background">
-      <div class="modal-card">
-        <div class="modal-content">
-          <header class="modal-card-head">
-            <div class="modal-card-head-content">
-              <div>
-                <p class="modal-card-title" id="modalAppelEtAl2024BibtexTitle">
-                  BibTeX entry <code>AppelEtAl2024</code>
-                </p>
-              </div>
-              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
-                  aria-hidden="true">&times;</span></button>
-            </div>
-          </header>
-          <section class="modal-card-body">
-            <pre class="abstract">@unpublished{AppelEtAl2024,
-  author = {Appel, Magnus and Alexandersen, Joe},
-  howpublished = {arXiv:2411.19030v1 [cs.CE]},
-  title = {One-shot Parareal Approach for Topology Optimisation of Transient Heat Flow},
-  url = {http://arxiv.org/abs/2411.19030v1},
-  year = {2024}
-}
-</pre>
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="modal" id="modalAppelEtAl2024Abstract" tabindex="-1" role="dialog"
-       aria-labelledby="modalAppelEtAl2024AbstractTitle" aria-hidden="true">
-    <div class="modal-background">
-      <div class="modal-card">
-        <div class="modal-content">
-          <header class="modal-card-head">
-            <div class="modal-card-head-content">
-              <div>
-                <p class="modal-card-title" id="modalAppelEtAl2024AbstractTitle">
-                  Abstract for BibTeX entry <code>AppelEtAl2024</code>
-                </p>
-              </div>
-              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
-                      aria-hidden="true">&times;</span></button>
-            </div>
-          </header>
-          <section class="modal-card-body">
-            This paper presents a method of performing topology optimisation of transient heat conduction problems using the parallel-in-time method Parareal. To accommodate the adjoint analysis, the Parareal method was modified to store intermediate time steps. Preliminary tests revealed that Parareal requires many iterations to achieve accurate results and, thus, achieves no appreciable speedup. To mitigate this, a one-shot approach was used, where the time history is iteratively refined over the optimisation process. The method estimates objectives and sensitivities by introducing cumulative objectives and sensitivities and solving for these using a single iteration of Parareal, after which it updates the design using the Method of Moving Asymptotes. The resulting method was applied to a test problem where a power mean of the temperature was minimised. It achieved a peak speedup relative to a sequential reference method of 5\times using 16 threads. The resulting designs were similar to the one found by the reference method, both in terms of objective values and qualitative appearance. The one-shot Parareal method was compared to the Parallel Local-in-Time method of topology optimisation. This revealed that the Parallel Local-in-Time method was unstable for the considered test problem, but it achieved a peak speedup of 12\times using 32 threads. It was determined that the dominant bottleneck in the one-shot Parareal method was the time spent on computing coarse propagators.
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
   
 </div>
 </li></ol>
