@@ -7749,6 +7749,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{CaballeroEtAl2025,
+	abstract = {We consider the initial-boundary value problem for a quasilinear time-fractional diffusion equation, and develop a fully discrete solver combining the parareal algorithm in time with a L1 finite-difference approximation of the Caputo derivative and a spectral Galerkin discretization in space. Our main contribution is the first rigorous convergence proof for the parareal-L1 scheme in this nonlinear subdiffusive setting. By constructing suitable energy norms and exploiting the orthogonality of the spectral basis, we establish that the parareal iterations converge exactly to the fully serial L1-spectral solution in a finite number of steps, with rates independent of the fractional exponent. The spectral spatial discretization yields exponential accuracy in space, while the parareal structure induces a clock speedup proportional to the number of processors, making the overall method highly efficient. Numerical experiments for both subdiffusive and classical diffusion problems confirm our theoretical estimates and demonstrate up to an order of magnitude reduction in computational time compared to the conventional sequential solver. We observe that the speedup of the parareal method increases linearly with the fine integrator degrees of freedom.},
+	author = {Josefa Caballero and Łukasz Płociniczak and Kishin Sadarangani},
+	howpublished = {arXiv:2510.11023v1 [math.NA]},
+	title = {Parareal in time and spectral in space fast L1 quasilinear subdiffusion solver},
+	url = {http://arxiv.org/abs/2510.11023v1},
+	year = {2025},
+}
+
 @article{CaklovicEtAl2025,
 	author = {Čaklović, Gayatri and Lunet, Thibaut and Götschel, Sebastian and Ruprecht, Daniel},
 	doi = {10.1137/24M1649800},
@@ -7880,6 +7889,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2509.03945v1 [stat.CO]},
 	title = {Prob-GParareal: A Probabilistic Numerical Parallel-in-Time Solver for Differential Equations},
 	url = {http://arxiv.org/abs/2509.03945v1},
+	year = {2025},
+}
+
+@unpublished{GengEtAl2025,
+	abstract = {While recent advances in deep learning have shown promising efficiency gains in solving time-dependent partial differential equations (PDEs), matching the accuracy of conventional numerical solvers still remains a challenge. One strategy to improve the accuracy of deep learning-based solutions for time-dependent PDEs is to use the learned solution as the coarse propagator in the Parareal method and a traditional numerical method as the fine solver. However, successful integration of deep learning into the Parareal method requires consistency between the coarse and fine solvers, particularly for PDEs exhibiting rapid changes such as sharp transitions. To ensure such consistency, we propose to use the convolutional neural networks (CNNs) to learn the fully discrete time-stepping operator defined by the traditional numerical scheme used as the fine solver. We demonstrate the effectiveness of the proposed method in solving the classical and mass-conservative Allen-Cahn (AC) equations. Through iterative updates in the Parareal algorithm, our approach achieves a significant computational speedup compared to traditional fine solvers while converging to high-accuracy solutions. Our results highlight that the proposed Parareal algorithm effectively accelerates simulations, particularly when implemented on multiple GPUs, and converges to the desired accuracy in only a few iterations. Another advantage of our method is that the CNNs model is trained on trajectories-based on random initial conditions, such that the trained model can be used to solve the AC equations with various initial conditions without re-training. This work demonstrates the potential of integrating neural network methods into the parallel-in-time frameworks for efficient and accurate simulations of time-dependent PDEs.},
+	author = {Yuwei Geng and Junqi Yin and Eric C. Cyr and Guannan Zhang and Lili Ju},
+	howpublished = {arXiv:2510.07672v1 [math.NA]},
+	title = {Parallel-in-Time Solution of Allen-Cahn Equations by Integrating Operator Learning into the Parareal Method},
+	url = {http://arxiv.org/abs/2510.07672v1},
 	year = {2025},
 }
 
@@ -8029,6 +8047,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Society for Industrial & Applied Mathematics (SIAM)},
 	title = {Parallel-in-Time Solution of Hyperbolic PDE Systems via Characteristic-Variable Block Preconditioning},
 	url = {http://dx.doi.org/10.1137/24m1673310},
+	year = {2025},
+}
+
+@article{KrzysikEtAl2025b,
+	author = {Krzysik, O. A. and De Sterck, H. and Falgout, R. D. and Schroder, J. B.},
+	doi = {10.1137/24m1673310},
+	issn = {1095-7197},
+	journal = {SIAM Journal on Scientific Computing},
+	month = {October},
+	pages = {S337–S363},
+	publisher = {Society for Industrial & Applied Mathematics (SIAM)},
+	title = {Parallel-in-Time Solution of Hyperbolic PDE Systems via Characteristic-Variable Block Preconditioning},
+	url = {http://dx.doi.org/10.1137/24M1673310},
 	year = {2025},
 }
 
@@ -8362,6 +8393,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Improving the Efficiency and Theoretical Understanding of Time-Parallel Multigrid Methods},
 	url = {https://archive-ouverte.unige.ch/unige:187048},
 	year = {2025},
+}
+
+@article{AluthgeEtAl2026,
+	author = {Aluthge, Devin and Jeffrey, Ian and Filizadeh, Shaahin and Muthumuni, Dharshana},
+	doi = {10.1016/j.epsr.2025.112314},
+	issn = {0378-7796},
+	journal = {Electric Power Systems Research},
+	month = {January},
+	pages = {112314},
+	publisher = {Elsevier BV},
+	title = {Accelerating electromagnetic transient simulations using graphical processing units},
+	url = {http://dx.doi.org/10.1016/j.epsr.2025.112314},
+	volume = {252},
+	year = {2026},
 }
 
 @article{HeEtAl2026,
