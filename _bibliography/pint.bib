@@ -8197,6 +8197,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{RadlerEtAl2025,
+	abstract = {Neural surrogates have shown great potential in simulating dynamical systems, while offering real-time capabilities. We envision Neural Twins as a progression of neural surrogates, aiming to create digital replicas of real systems. A neural twin consumes measurements at test time to update its state, thereby enabling context-specific decision-making. A critical property of neural twins is their ability to remain on-trajectory, i.e., to stay close to the true system state over time. We introduce Parallel-in-time Neural Twins (PAINT), an architecture-agnostic family of methods for modeling dynamical systems from measurements. PAINT trains a generative neural network to model the distribution of states parallel over time. At test time, states are predicted from measurements in a sliding window fashion. Our theoretical analysis shows that PAINT is on-trajectory, whereas autoregressive models generally are not. Empirically, we evaluate our method on a challenging two-dimensional turbulent fluid dynamics problem. The results demonstrate that PAINT stays on-trajectory and predicts system states from sparse measurements with high fidelity. These findings underscore PAINT's potential for developing neural twins that stay on-trajectory, enabling more accurate state estimation and decision-making.},
+	author = {Andreas Radler and Vincent Seyfried and Stefan Pirker and Johannes Brandstetter and Thomas Lichtenegger},
+	howpublished = {arXiv:2510.16004v1 [cs.AI]},
+	title = {PAINT: Parallel-in-time Neural Twins for Dynamical System Reconstruction},
+	url = {http://arxiv.org/abs/2510.16004v1},
+	year = {2025},
+}
+
 @unpublished{RoseEtAl2025,
 	abstract = {In the quest for highest performance in scientific computing, we present a novel framework that relies on high-bandwidth communication between GPUs in a compute cluster. The framework offers linear scaling of performance for explicit algorithms that is only limited by the size of the dataset and the number of GPUs. Slices of the dataset propagate in a ring of processes (GPUs) from one GPU, where they are processed, to the next, which results in a parallel-in-time parallelization. The user of the framework has to write GPU kernels that implement the algorithm and provide slices of the dataset. Knowledge about the underlying parallelization strategy is not required because the communication between processes is carried out by the framework. As a case study, molecular dynamics simulation based on the Lennard-Jones potential is implemented to measure the performance for a homogeneous fluid. Single node performance and strong scaling behavior of this framework is compared to LAMMPS, which is outperformed in the strong scaling case.},
 	author = {Martin Rose and Simon Homes and Lukas Ramsperger and Jose Gracia and Christoph Niethammer and Jadran Vrabec},
