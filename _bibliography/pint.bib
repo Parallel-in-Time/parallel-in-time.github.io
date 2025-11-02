@@ -7770,6 +7770,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{DaiEtAl2025,
+	abstract = {This paper is dedicated to enhancing the computational efficiency of traditional parallel-in-time methods for solving stochastic initial-value problems. The standard parareal algorithm often suffers from slow convergence when applied to problems with stochastic inputs, primarily due to the poor quality of the initial guess. To address this issue, we propose a hybrid parallel algorithm, termed KLE-CGC, which integrates the Karhunen-Lo\`{e}ve (KL) expansion with the coarse grid correction (CGC). The method first employs the KL expansion to achieve a low-dimensional parameterization of high-dimensional stochastic parameter fields. Subsequently, a generalized Polynomial Chaos (gPC) spectral surrogate model is constructed to enable rapid prediction of the solution field. Utilizing this prediction as the initial value significantly improves the initial accuracy for the parareal iterations. A rigorous convergence analysis is provided, establishing that the proposed framework retains the same theoretical convergence rate as the standard parareal algorithm. Numerical experiments demonstrate that KLE-CGC maintains the same convergence order as the original algorithm while substantially reducing the number of iterations and improving parallel scalability.},
+	author = {Dou Dai and Qiuqi Li and Huailing Song},
+	howpublished = {arXiv:2510.26180v1 [math.NA]},
+	title = {A parallel solver for random input problems via Karhunen-Loève expansion and diagonalized coarse grid correction},
+	url = {http://arxiv.org/abs/2510.26180v1},
+	year = {2025},
+}
+
 @inbook{DrewsEtAl2025,
 	author = {Drews, Wiebke and Turek, Stefan and Lohmann, Christoph},
 	booktitle = {Numerical Mathematics and Advanced Applications ENUMATH 2023, Volume 1},
