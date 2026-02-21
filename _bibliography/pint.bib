@@ -8610,6 +8610,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@unpublished{MargenbergEtAl2026,
+	abstract = {We present a monolithic hp space-time multigrid method (hp-STMG) for tensor-product space-time finite element discretizations of the incompressible Navier-Stokes equations. We employ mapped inf-sup stable pairs $\mathbb Q_{r+1}/\mathbb P_{r}^{\mathrm{disc}}$ in space and a slabwise discontinuous Galerkin DG($k$) discretization in time. The resulting fully coupled nonlinear systems are solved by Newton-GMRES preconditioned with hp-STMG, combining geometric coarsening in space with polynomial coarsening in space and time. Our main contribution is an hp-robust and practically efficient extension of space-time multigrid to Navier-Stokes: matrix-free operator evaluation is retained via column-wise, state-dependent spatial kernels; the nonlinear convective term is handled by a reduced, order-preserving time quadrature. Robustness is ensured by an inexact space-time Vanka smoother based on patch models with single time point evaluation. The method is implemented in the matrix-free multigrid framework of deal.II and demonstrates h- and p-robust convergence with robust solver performance across a range of Reynolds numbers, as well as high throughput in large-scale MPI-parallel experiments.},
+	author = {Nils Margenberg and Markus Bause},
+	howpublished = {arXiv:2602.13841v1 [math.NA]},
+	title = {A Monolithic hp Space-Time Multigrid Preconditioned Newton-Krylov Solver for Space-Time FEM applied to the Incompressible Navier-Stokes Equations},
+	url = {https://arxiv.org/abs/2602.13841v1},
+	year = {2026},
+}
+
 @article{WangEtAl2026,
 	author = {Wang, Sihao and Cao, Hui and Ma, Ruolong},
 	doi = {10.3390/app16031161},
