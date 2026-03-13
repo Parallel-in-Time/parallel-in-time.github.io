@@ -40,4 +40,4 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            github.rest.issues.createComment({...context.issue, body: process.env.COMMENT})
+            github.rest.issues.createComment({...context.repo, issue_number: context.issue.number, body: process.env.COMMENT})
