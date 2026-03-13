@@ -6,7 +6,7 @@ jobs:
   pull_request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Look for bibtex entries that now have a DOI
         if: github.event.label.name == 'food for arxivbot'
         run: |
@@ -15,12 +15,16 @@ jobs:
           python3 -m pip install --user setuptools
           python3 -m pip install --user bibtexparser
           python3 arxiv_to_publications_correct.py -b "${{ github.event.issue.body }}" > comment.out 2>&1
-          echo "::set-output name=COMMENT::$(cat comment.out)"
+          {
+            echo 'COMMENT<<GITHUB_OUTPUT_DELIMITER'
+            cat comment.out
+            echo 'GITHUB_OUTPUT_DELIMITER'
+          } >> "$GITHUB_OUTPUT"
           rm -rf comment.out
         id: updater
       - name: Create Pull Request
         if: github.event.label.name == 'food for arxivbot'
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: updated pint.bib using arxivbot
@@ -30,8 +34,10 @@ jobs:
           branch-suffix: short-commit-hash
       - name: Add comment to issue
         if: github.event.label.name == 'food for arxivbot' && steps.updater.outputs.COMMENT != ''
-        uses: actions/github-script@0.3.0
+        uses: actions/github-script@v7
+        env:
+          COMMENT: ${{ steps.updater.outputs.COMMENT }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            github.issues.createComment({...context.issue, body: "${{ steps.updater.outputs.COMMENT }}"})
+            github.rest.issues.createComment({...context.issue, body: process.env.COMMENT})

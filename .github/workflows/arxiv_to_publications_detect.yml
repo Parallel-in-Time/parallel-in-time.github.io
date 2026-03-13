@@ -8,7 +8,7 @@ jobs:
   pull_request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: Look for bibtex entries that now have a DOI
         run: |
           cd bin
@@ -16,7 +16,11 @@ jobs:
           python3 -m pip install --user setuptools
           python3 -m pip install --user python-Levenshtein bibtexparser
           python3 arxiv_to_publications_detect.py > issue.md 2>&1
-          echo "::set-output name=ISSUE::$(cat issue.md)"
+          {
+            echo 'ISSUE<<GITHUB_OUTPUT_DELIMITER'
+            cat issue.md
+            echo 'GITHUB_OUTPUT_DELIMITER'
+          } >> "$GITHUB_OUTPUT"
         id: updater
       - name: Create issue from output
         uses: JasonEtco/create-an-issue@v2
