@@ -8633,6 +8633,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@unpublished{LuEtAl2026,
+	abstract = {Parabolic optimal control problems arise in numerous scientific and engineering applications. They typically lead to large-scale coupled forward-backward systems that cannot be treated with classical time-stepping schemes and are computationally expensive to solve. Therefore, parallel methods are essential to reduce the computational time required. In this work, we investigate a time domain decomposition approach, namely the time parallel Schwarz method, applied to parabolic optimal control problems. We analyze the convergence behavior and focus on the weak scalability property of this method as the number of time intervals increases. To characterize the spectral radius of the iteration matrix, we present two analysis techniques: the construction of a tailored matrix norm and the application of block Toeplitz matrix theory. Our analyses yield both nonasymptotic bounds on the spectral radius and an asymptotic characterization of the eigenvalues as the number of time intervals tends to infinity. Numerical experiments further confirm our theoretical findings and demonstrate the weak scalability of the time parallel Schwarz method. This work introduces the first theoretical tool for analyzing the weak scalability of time domain decomposition methods, and our results shed light on the suitability of our algorithm for large-scale simulations on modern high-performance computing architectures.},
+	author = {Liu-Di Lu and Tommaso Vanzan},
+	howpublished = {arXiv:2603.07768v1 [math.NA]},
+	title = {Weak Scalability of time parallel Schwarz methods for parabolic optimal control problems},
+	url = {https://arxiv.org/abs/2603.07768v1},
+	year = {2026},
+}
+
 @unpublished{MargenbergEtAl2026,
 	abstract = {We present a monolithic hp space-time multigrid method (hp-STMG) for tensor-product space-time finite element discretizations of the incompressible Navier-Stokes equations. We employ mapped inf-sup stable pairs $\mathbb Q_{r+1}/\mathbb P_{r}^{\mathrm{disc}}$ in space and a slabwise discontinuous Galerkin DG($k$) discretization in time. The resulting fully coupled nonlinear systems are solved by Newton-GMRES preconditioned with hp-STMG, combining geometric coarsening in space with polynomial coarsening in space and time. Our main contribution is an hp-robust and practically efficient extension of space-time multigrid to Navier-Stokes: matrix-free operator evaluation is retained via column-wise, state-dependent spatial kernels; the nonlinear convective term is handled by a reduced, order-preserving time quadrature. Robustness is ensured by an inexact space-time Vanka smoother based on patch models with single time point evaluation. The method is implemented in the matrix-free multigrid framework of deal.II and demonstrates h- and p-robust convergence with robust solver performance across a range of Reynolds numbers, as well as high throughput in large-scale MPI-parallel experiments.},
 	author = {Nils Margenberg and Markus Bause},
