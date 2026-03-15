@@ -36,15 +36,16 @@ if __name__ == '__main__':
             id = data['author'][0]['family'] + 'EtAl' + str(data['issued']['date-parts'][0][0])
         else:
             id = data['author'][0]['family'] + str(data['issued']['date-parts'][0][0])
-        assert id == id_db, f"ID generated with new DOI ({id}) is different than the original in database ({id_db})"
+        if id != id_db:
+            print(f'Note: ID generated with new DOI ({id}) differs from the original in database ({id_db}). Keeping original ID.')
 
         entries = db.get_entry_dict()
-        assert entries[id]["ENTRYTYPE"] == 'unpublished', "original entry in bib file was NOT unpublished !"
-        db.entries.remove(entries[id])
+        assert entries[id_db]["ENTRYTYPE"] == 'unpublished', "original entry in bib file was NOT unpublished !"
+        db.entries.remove(entries[id_db])
 
         bType, *rest1 = bib.split("{")
         oldID, *rest2 = rest1[0].split(",")
-        bib = "{".join([bType] + [','.join([id]+rest2)] + rest1[1:])
+        bib = "{".join([bType] + [','.join([id_db]+rest2)] + rest1[1:])
         bib_db = bibtexparser.loads(bib)
         db.entries.extend(bib_db.get_entry_list())
 
