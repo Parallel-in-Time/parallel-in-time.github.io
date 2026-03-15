@@ -8666,6 +8666,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@article{WangEtAl2026b,
+	author = {Wang, Jing-Yi and Song, Bo and Jiang, Yao-Lin},
+	doi = {10.1007/s10915-026-03229-4},
+	issn = {1573-7691},
+	journal = {Journal of Scientific Computing},
+	month = {March},
+	number = {1},
+	publisher = {Springer Science and Business Media LLC},
+	title = {A Convergence Estimate of the Parareal Optimized Schwarz Waveform Relaxation Algorithm},
+	url = {http://dx.doi.org/10.1007/s10915-026-03229-4},
+	volume = {107},
+	year = {2026},
+}
+
 @article{XuEtAl2026,
 	author = {Xu, Yufeng and Zhu, Ying and Kong, Desong and Zheng, Zhoushun},
 	doi = {10.1007/s10444-026-10286-8},
@@ -8703,5 +8717,14 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Springer Science and Business Media LLC},
 	title = {High-concurrency tri-mode memristor-based ordinary differential equation solver},
 	url = {http://dx.doi.org/10.1038/s41467-025-68122-4},
+	year = {2026},
+}
+
+@unpublished{ZouEtAl2026,
+	abstract = {Real-time trajectory optimization for nonlinear constrained autonomous systems is critical and typically performed by CPU-based sequential solvers. Specifically, reliance on global sparse linear algebra or the serial nature of dynamic programming algorithms restricts the utilization of massively parallel computing architectures like GPUs. To bridge this gap, we introduce a fully GPU-native trajectory optimization framework that combines sequential convex programming with a consensus-based alternating direction method of multipliers. By applying a temporal splitting strategy, our algorithm decouples the optimization horizon into independent, per-node subproblems that execute massively in parallel. The entire process runs fully on the GPU, eliminating costly memory transfers and large-scale sparse factorizations. This architecture naturally scales to multi-trajectory optimization. We validate the solver on a quadrotor agile flight task and a Mars powered descent problem using an on-board edge computing platform. Benchmarks reveal a sustained 4x throughput speedup and a 51% reduction in energy consumption over a heavily optimized 12-core CPU baseline. Crucially, the framework saturates the hardware, maintaining over 96% active GPU utilization to achieve planning rates exceeding 100 Hz. Furthermore, we demonstrate the solver's extensibility to robust Model Predictive Control by jointly optimizing dynamically coupled scenarios under stochastic disturbances, enabling scalable and safe autonomy.},
+	author = {Yilin Zou and Zhong Zhang and Maxime Robic and Fanghua Jiang},
+	howpublished = {arXiv:2603.10711v2 [cs.RO]},
+	title = {Parallel-in-Time Nonlinear Optimal Control via GPU-native Sequential Convex Programming},
+	url = {https://arxiv.org/abs/2603.10711v2},
 	year = {2026},
 }
