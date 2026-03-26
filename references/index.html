@@ -381,6 +381,101 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          AraujoEtAl2026
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="AraujoEtAl2026">G. H. M. Araújo, O. A. Krzysik, and H. D. Sterck, “Parallel-in-iteration optimization using multigrid reduction-in-time,” arXiv:2603.20879v1 [math.NA], 2026 [Online]. Available at: <a href="https://arxiv.org/abs/2603.20879v1" target="_blank">https://arxiv.org/abs/2603.20879v1</a></span>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalAraujoEtAl2026Bibtex" aria-expanded="false"
+                  aria-controls="modalAraujoEtAl2026Bibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalAraujoEtAl2026Abstract" aria-expanded="false"
+                  aria-controls="modalAraujoEtAl2026Abstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modalAraujoEtAl2026Bibtex" tabindex="-1" role="dialog"
+    aria-labelledby="modalAraujoEtAl2026BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalAraujoEtAl2026BibtexTitle">
+                  BibTeX entry <code>AraujoEtAl2026</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@unpublished{AraujoEtAl2026,
+  author = {Araújo, G. H. M. and Krzysik, O. A. and Sterck, H. De},
+  howpublished = {arXiv:2603.20879v1 [math.NA]},
+  title = {Parallel-in-iteration optimization using multigrid reduction-in-time},
+  url = {https://arxiv.org/abs/2603.20879v1},
+  year = {2026}
+}
+</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="modalAraujoEtAl2026Abstract" tabindex="-1" role="dialog"
+       aria-labelledby="modalAraujoEtAl2026AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalAraujoEtAl2026AbstractTitle">
+                  Abstract for BibTeX entry <code>AraujoEtAl2026</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            Standard gradient-based iteration algorithms for optimization, such as gradient descent and its various proximal-based extensions to nonsmooth problems, are known to converge slowly for ill-conditioned problems, sometimes requiring many tens of thousands of iterations in practice. Since these iterations are computed sequentially, they may present a computational bottleneck in large-scale parallel simulations. In this work, we present a "parallel-in-iteration" framework that allows one to parallelize across these iterations using multiple processors with the objective of reducing the wall-clock time needed to solve the underlying optimization problem. Our methodology is based on re-purposing parallel time integration algorithms for time-dependent differential equations, motivated by the fact that optimization algorithms often have interpretations as discretizations of time-dependent differential equations (such as gradient flow). Specifically in this work, we use the parallel-in-time method of multigrid reduction-in-time (MGRIT), but note that our approach permits in principle the use of any other parallel-in-time method. We numerically demonstrate the efficacy of our approach on two different model problems, including a standard convex quadratic problem and the nonsmooth elastic obstacle problem in one and two spatial dimensions. For our model problems, we observe fast MGRIT convergence analogous to its prototypical performance on partial differential equations of diffusion type. Some theory is presented to connect the convergence of MGRIT to the convergence of the underlying optimization algorithm. Theoretically predicted parallel speedup results are also provided.
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           BonteEtAl2026
         </div>
       </div>
