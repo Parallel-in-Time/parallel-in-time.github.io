@@ -1298,6 +1298,101 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          HuangEtAl2026
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="HuangEtAl2026">R. Huang and W. Liu, “Accelerating Microswimmer Simulations via a Heterogeneous Pipelined Parallel-in-Time Framework,” arXiv:2604.12083v1 [cs.DC], 2026 [Online]. Available at: <a href="https://arxiv.org/abs/2604.12083v1" target="_blank">https://arxiv.org/abs/2604.12083v1</a></span>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalHuangEtAl2026Bibtex" aria-expanded="false"
+                  aria-controls="modalHuangEtAl2026Bibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalHuangEtAl2026Abstract" aria-expanded="false"
+                  aria-controls="modalHuangEtAl2026Abstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modalHuangEtAl2026Bibtex" tabindex="-1" role="dialog"
+    aria-labelledby="modalHuangEtAl2026BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalHuangEtAl2026BibtexTitle">
+                  BibTeX entry <code>HuangEtAl2026</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@unpublished{HuangEtAl2026,
+  author = {Huang, Ruixiang and Liu, Weifan},
+  howpublished = {arXiv:2604.12083v1 [cs.DC]},
+  title = {Accelerating Microswimmer Simulations via a Heterogeneous Pipelined Parallel-in-Time Framework},
+  url = {https://arxiv.org/abs/2604.12083v1},
+  year = {2026}
+}
+</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="modalHuangEtAl2026Abstract" tabindex="-1" role="dialog"
+       aria-labelledby="modalHuangEtAl2026AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalHuangEtAl2026AbstractTitle">
+                  Abstract for BibTeX entry <code>HuangEtAl2026</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            Simulating large-scale microswimmer dynamics in viscous fluid poses significant challenges due to the coupled high spatial and temporal complexity. Conventional high-performance computing (HPC) methods often address these two dimensions in isolation, leaving a critical gap for synergistic acceleration. This paper introduces a heterogeneous CPU–GPU computing framework specifically optimized for the long-time simulation of filamentous microswimmers in viscous fluid. We propose a two-level parallelization strategy: (1) high-intensity GPU kernels to resolve the quadratic spatial interactions given by the Method of Regularized Stokeslets (MRS), and (2) a distributed MPI-GPU pipelined Parareal architecture to exploit temporal concurrency. By mapping the asynchronous pipeline onto multiple GPU devices, our framework effectively overlaps coarse and fine propagators, overcoming the serial bottlenecks of traditional Parareal method. Furthermore, we employ a GPU-optimized numerical routine for computing the matrix square root arising in the numerical scheme of the filamentous microswimmer simulations. Theoretical analysis of the efficiency improvement of the pipelined Parareal is presented. Numerical experiments demonstrate that the proposed framework achieves order-of-magnitude speedups over CPU-only methods, providing a scalable pathway for simulating complex emergent behaviors in large-scale biology and physics systems.
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           JiangEtAl2026
         </div>
       </div>
