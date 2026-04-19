@@ -8641,6 +8641,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@unpublished{HuangEtAl2026,
+	abstract = {Simulating large-scale microswimmer dynamics in viscous fluid poses significant challenges due to the coupled high spatial and temporal complexity. Conventional high-performance computing (HPC) methods often address these two dimensions in isolation, leaving a critical gap for synergistic acceleration. This paper introduces a heterogeneous CPU--GPU computing framework specifically optimized for the long-time simulation of filamentous microswimmers in viscous fluid. We propose a two-level parallelization strategy: (1) high-intensity GPU kernels to resolve the quadratic spatial interactions given by the Method of Regularized Stokeslets (MRS), and (2) a distributed MPI-GPU pipelined Parareal architecture to exploit temporal concurrency. By mapping the asynchronous pipeline onto multiple GPU devices, our framework effectively overlaps coarse and fine propagators, overcoming the serial bottlenecks of traditional Parareal method. Furthermore, we employ a GPU-optimized numerical routine for computing the matrix square root arising in the numerical scheme of the filamentous microswimmer simulations. Theoretical analysis of the efficiency improvement of the pipelined Parareal is presented. Numerical experiments demonstrate that the proposed framework achieves order-of-magnitude speedups over CPU-only methods, providing a scalable pathway for simulating complex emergent behaviors in large-scale biology and physics systems.},
+	author = {Ruixiang Huang and Weifan Liu},
+	howpublished = {arXiv:2604.12083v1 [cs.DC]},
+	title = {Accelerating Microswimmer Simulations via a Heterogeneous Pipelined Parallel-in-Time Framework},
+	url = {https://arxiv.org/abs/2604.12083v1},
+	year = {2026},
+}
+
 @unpublished{JiangEtAl2026,
 	abstract = {We present a new training methodology for transformers using a multilevel, layer-parallel approach. Through a neural ODE formulation of transformers, our application of a multilevel parallel-in-time algorithm for the forward and backpropagation phases of training achieves parallel acceleration over the layer dimension. This dramatically enhances parallel scalability as the network depth increases, which is particularly useful for increasingly large foundational models. However, achieving this introduces errors that cause systematic bias in the gradients, which in turn reduces convergence when closer to the minima. We develop an algorithm to detect this critical transition and either switch to serial training or systematically increase the accuracy of layer-parallel training. Results, including BERT, GPT2, ViT, and machine translation architectures, demonstrate parallel-acceleration as well as accuracy commensurate with serial pre-training while fine-tuning is unaffected.},
 	author = {Shuai Jiang and Marc Salvado and Eric C. Cyr and Alena Kopaničáková and Rolf Krause and Jacob B. Schroder},
