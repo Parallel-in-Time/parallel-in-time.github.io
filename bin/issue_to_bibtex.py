@@ -1,14 +1,35 @@
 import argparse
-import re
-import requests
 import fileinput
+from html import unescape
+import re
 import urllib
+import requests
 
 from arxivcheck.arxiv import get_arxiv_info
 
 import bibtexparser
 from bibtexparser.bibdatabase import BibDatabase
 from bibtexparser.bwriter import BibTexWriter
+
+
+def normalize_month_fields(bib):
+    def replace_month(match):
+        prefix, value = match.groups()
+        value = unescape(value).strip()
+        if value.startswith("{") and value.endswith("}"):
+            return match.group(0)
+        if value.startswith('"') and value.endswith('"'):
+            value = value[1:-1].strip()
+        value = value.strip("'\"{}")
+        value = re.sub(r"[^A-Za-z]", "", value)
+        return f"{prefix}{{{value}}},"
+
+    return re.sub(
+        r"(^\s*month\s*=\s*)([^,\n]+)\s*,",
+        replace_month,
+        bib,
+        flags=re.MULTILINE | re.IGNORECASE,
+    )
 
 
 try:
@@ -149,12 +170,7 @@ try:
                 bib = re.sub(r'(@[a-z]*{)(.*?),', r'\1' + id + ',', bib)
                 url_bad = re.search(r'url\s*=\s*{(.*)}', bib).groups()[0]
                 bib = re.sub(r'(url\s*=\s*{)(.*)}', r'\1' + urllib.parse.unquote(url_bad) + '}', bib)
-                bib = re.sub(
-                    r'(^\s*month\s*=\s*)(?:[\'"]?)([A-Za-z]+)(?:[\'"]?)\s*,',
-                    r'\1{\2},',
-                    bib,
-                    flags=re.MULTILINE,
-                )
+                bib = normalize_month_fields(bib)
                 bib_db = bibtexparser.loads(bib)
                 print(bib)
             else:
