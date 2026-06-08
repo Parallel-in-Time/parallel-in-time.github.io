@@ -16,7 +16,7 @@ def fixBadBibFormat(bibString):
     bibString = bibString.strip()
     assert bibString.startswith("@") and bibString.endswith("}"), \
         "bib entry should start with '@' and finish with '}', got :\n{bibString}"
-    content = bib[1:-1]
+    content = bibString[1:-1]
     fields = content.split(",")
     for i, field in enumerate(fields[1:]):
         item = field.split("=")
