@@ -22,7 +22,7 @@ def fixBadBibFormat(bibString):
         item = field.split("=")
         if len(item) == 2 and "{" not in item[1]:
             item[1] = "{"+item[1]+"}"
-            fields[i] = "=".join(item)
+            fields[i+1] = "=".join(item)
     return "@"+",".join(fields)+"}"
 
 try:
