@@ -149,6 +149,12 @@ try:
                 bib = re.sub(r'(@[a-z]*{)(.*?),', r'\1' + id + ',', bib)
                 url_bad = re.search(r'url\s*=\s*{(.*)}', bib).groups()[0]
                 bib = re.sub(r'(url\s*=\s*{)(.*)}', r'\1' + urllib.parse.unquote(url_bad) + '}', bib)
+                bib = re.sub(
+                    r'(^\s*month\s*=\s*)(?:[\'"]?)([A-Za-z]+)(?:[\'"]?)\s*,',
+                    r'\1{\2},',
+                    bib,
+                    flags=re.MULTILINE,
+                )
                 bib_db = bibtexparser.loads(bib)
                 print(bib)
             else:
