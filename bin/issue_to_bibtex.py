@@ -1,9 +1,9 @@
 import argparse
 import fileinput
-from html import unescape
 import re
 import urllib
 import requests
+import traceback
 
 from arxivcheck.arxiv import get_arxiv_info
 
@@ -12,28 +12,21 @@ from bibtexparser.bibdatabase import BibDatabase
 from bibtexparser.bwriter import BibTexWriter
 
 
-def normalize_month_fields(bib):
-    def replace_month(match):
-        prefix, value = match.groups()
-        value = unescape(value).strip()
-        if value.startswith("{") and value.endswith("}"):
-            return match.group(0)
-        if value.startswith('"') and value.endswith('"'):
-            value = value[1:-1].strip()
-        value = value.strip("'\"{}")
-        value = re.sub(r"[^A-Za-z]", "", value)
-        return f"{prefix}{{{value}}},"
-
-    return re.sub(
-        r"(^\s*month\s*=\s*)([^,\n]+)\s*,",
-        replace_month,
-        bib,
-        flags=re.MULTILINE | re.IGNORECASE,
-    )
-
+def fixBadBibFormat(bibString):
+    bibString = bibString.strip()
+    assert bibString.startswith("@") and bibString.endswith("}"), \
+        "bib entry should start with '@' and finish with '}', got :\n{bibString}"
+    content = bib[1:-1]
+    fields = content.split(",")
+    for i, field in enumerate(fields[1:]):
+        item = field.split("=")
+        if len(item) == 2 and "{" not in item[1]:
+            item[1] = "{"+item[1]+"}"
+            fields[i] = "=".join(item)
+    return "@"+",".join(fields)+"}"
 
 try:
-
+    
     parser = argparse.ArgumentParser()
     parser.add_argument("-b", "--body", help="input issue body here", type=str, default="")
     args = parser.parse_args()
@@ -170,7 +163,7 @@ try:
                 bib = re.sub(r'(@[a-z]*{)(.*?),', r'\1' + id + ',', bib)
                 url_bad = re.search(r'url\s*=\s*{(.*)}', bib).groups()[0]
                 bib = re.sub(r'(url\s*=\s*{)(.*)}', r'\1' + urllib.parse.unquote(url_bad) + '}', bib)
-                bib = normalize_month_fields(bib)
+                bib = fixBadBibFormat(bib)
                 bib_db = bibtexparser.loads(bib)
                 print(bib)
             else:
@@ -199,3 +192,4 @@ try:
 
 except Exception as e:
     print(f"ERROR : {e}\n")
+    print(traceback.format_exc(limit=1))
