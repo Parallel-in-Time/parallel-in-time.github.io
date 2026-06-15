@@ -32,15 +32,14 @@ if __name__ == '__main__':
 
     for url, id_db in zip(doi_list, id_list):
         print(f'Working on {id_db} with URL {url}')
-        req = fetch_doi_content(url, 'application/x-bibtex', 'BibTeX')
-        if req is None:
+        bibtex_req = fetch_doi_content(url, 'application/x-bibtex', 'BibTeX')
+        if bibtex_req is None:
             continue
-        bib = req.content.decode()
-        req = fetch_doi_content(url, 'application/json', 'metadata')
-        if req is None:
+        meta_req = fetch_doi_content(url, 'application/json', 'metadata')
+        if meta_req is None:
             continue
         try:
-            data = req.json()
+            data = meta_req.json()
         except ValueError as exc:
             print(f'Ignoring {url}, invalid metadata response: {exc}\n\n')
             continue
@@ -62,26 +61,40 @@ if __name__ == '__main__':
         if entries[id_db]["ENTRYTYPE"] != 'unpublished':
             print(f'Ignoring {id_db}, original entry in bib file was not unpublished.\n\n')
             continue
+
+        # Parse the BibTeX and replace the key before modifying the database
+        try:
+            bib = bibtex_req.text
+            bType, *rest1 = bib.split("{")
+            if not rest1:
+                print(f'Ignoring {id_db}, DOI did not return valid BibTeX (no opening brace found).\n\n')
+                continue
+            oldID, *rest2 = rest1[0].split(",")
+            # Check for duplicate keys in the remaining database and add letter suffixes if needed
+            remaining = db.get_entry_dict()
+            del remaining[id_db]  # exclude the entry being replaced from duplicate check
+            id_orig = id
+            letters = 'bcdefghijklmnopqrstuvwxyz'
+            i = 0
+            while id in remaining:
+                print(f'Key {id} already exists, augmenting with letter suffix.')
+                id = id_orig + letters[i]
+                i += 1
+            if id != id_db:
+                print(f'Note: ID updated from {id_db} to {id} to reflect the publication year.')
+            bib = "{".join([bType] + [','.join([id]+rest2)] + rest1[1:])
+            bib_db = bibtexparser.loads(bib)
+            new_entries = bib_db.get_entry_list()
+            if not new_entries:
+                print(f'Ignoring {id_db}, could not parse BibTeX returned by DOI.\n\n')
+                continue
+        except Exception as exc:
+            print(f'Ignoring {id_db}, error processing BibTeX from DOI: {exc}\n\n')
+            continue
+
+        # Only mutate the database once we have a valid replacement entry
         db.entries.remove(entries[id_db])
-
-        # Check for duplicate keys in the remaining database and add letter suffixes if needed
-        remaining = db.get_entry_dict()
-        id_orig = id
-        letters = 'bcdefghijklmnopqrstuvwxyz'
-        i = 0
-        while id in remaining:
-            print(f'Key {id} already exists, augmenting with letter suffix.')
-            id = id_orig + letters[i]
-            i += 1
-
-        if id != id_db:
-            print(f'Note: ID updated from {id_db} to {id} to reflect the publication year.')
-
-        bType, *rest1 = bib.split("{")
-        oldID, *rest2 = rest1[0].split(",")
-        bib = "{".join([bType] + [','.join([id]+rest2)] + rest1[1:])
-        bib_db = bibtexparser.loads(bib)
-        db.entries.extend(bib_db.get_entry_list())
+        db.entries.extend(new_entries)
 
     if id_list:
         writer = BibTexWriter()
