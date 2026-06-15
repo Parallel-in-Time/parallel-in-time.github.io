@@ -45,10 +45,14 @@ if __name__ == '__main__':
             print(f'Ignoring {url}, invalid metadata response: {exc}\n\n')
             continue
 
-        if len(data['author']) > 1:
-            id = data['author'][0]['family'] + 'EtAl' + str(data['issued']['date-parts'][0][0])
-        else:
-            id = data['author'][0]['family'] + str(data['issued']['date-parts'][0][0])
+        try:
+            if len(data['author']) > 1:
+                id = data['author'][0]['family'] + 'EtAl' + str(data['issued']['date-parts'][0][0])
+            else:
+                id = data['author'][0]['family'] + str(data['issued']['date-parts'][0][0])
+        except (KeyError, IndexError, TypeError) as exc:
+            print(f'Ignoring {url}, incomplete metadata response: {exc}\n\n')
+            continue
         id = id.replace(" ", "_")
 
         entries = db.get_entry_dict()
