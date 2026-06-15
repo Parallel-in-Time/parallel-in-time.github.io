@@ -5,6 +5,17 @@ import fileinput
 
 import bibtexparser
 from bibtexparser.bwriter import BibTexWriter
+from requests.exceptions import RequestException
+
+
+def fetch_doi_content(url, accept_header, description):
+    try:
+        response = requests.get(url, headers={'Accept': accept_header}, timeout=30)
+        response.raise_for_status()
+    except RequestException as exc:
+        print(f'Ignoring {url}, failed to fetch {description}: {exc}\n\n')
+        return None
+    return response
 
 
 if __name__ == '__main__':
@@ -21,25 +32,36 @@ if __name__ == '__main__':
 
     for url, id_db in zip(doi_list, id_list):
         print(f'Working on {id_db} with URL {url}')
-        req = requests.get(url, headers={'Accept': 'application/x-bibtex'})
-        if not req.status_code == 200:
-            print(f'Ignoring {url}, got status code {req.status_code}\n\n')
+        req = fetch_doi_content(url, 'application/x-bibtex', 'BibTeX')
+        if req is None:
             continue
         bib = req.content.decode()
-        req = requests.get(url, headers={'Accept': 'application/json'})
-        if not req.status_code == 200:
-            print(f'Ignoring {url}, got status code {req.status_code}\n\n')
+        req = fetch_doi_content(url, 'application/json', 'metadata')
+        if req is None:
             continue
-        data = req.json()
+        try:
+            data = req.json()
+        except ValueError as exc:
+            print(f'Ignoring {url}, invalid metadata response: {exc}\n\n')
+            continue
 
-        if len(data['author']) > 1:
-            id = data['author'][0]['family'] + 'EtAl' + str(data['issued']['date-parts'][0][0])
-        else:
-            id = data['author'][0]['family'] + str(data['issued']['date-parts'][0][0])
+        try:
+            if len(data['author']) > 1:
+                id = data['author'][0]['family'] + 'EtAl' + str(data['issued']['date-parts'][0][0])
+            else:
+                id = data['author'][0]['family'] + str(data['issued']['date-parts'][0][0])
+        except (KeyError, IndexError, TypeError) as exc:
+            print(f'Ignoring {url}, incomplete metadata response: {exc}\n\n')
+            continue
         id = id.replace(" ", "_")
 
         entries = db.get_entry_dict()
-        assert entries[id_db]["ENTRYTYPE"] == 'unpublished', "original entry in bib file was NOT unpublished !"
+        if id_db not in entries:
+            print(f'Ignoring {id_db}, entry not found in bibliography.\n\n')
+            continue
+        if entries[id_db]["ENTRYTYPE"] != 'unpublished':
+            print(f'Ignoring {id_db}, original entry in bib file was not unpublished.\n\n')
+            continue
         db.entries.remove(entries[id_db])
 
         # Check for duplicate keys in the remaining database and add letter suffixes if needed
