@@ -11,19 +11,7 @@ import bibtexparser
 from bibtexparser.bibdatabase import BibDatabase
 from bibtexparser.bwriter import BibTexWriter
 
-
-def fixBadBibFormat(bibString):
-    bibString = bibString.strip()
-    assert bibString.startswith("@") and bibString.endswith("}"), \
-        "bib entry should start with '@' and finish with '}', got :\n{bibString}"
-    content = bibString[1:-1]
-    fields = content.split(",")
-    for i, field in enumerate(fields[1:]):
-        item = field.split("=")
-        if len(item) == 2 and "{" not in item[1]:
-            item[1] = "{"+item[1]+"}"
-            fields[i+1] = "=".join(item)
-    return "@"+",".join(fields)+"}"
+from utils import fixBadBibFormat
 
 try:
     
