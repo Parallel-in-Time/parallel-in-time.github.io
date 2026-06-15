@@ -48,6 +48,10 @@ build/
 ### Linux ###
 *~
 
+### Python ###
+__pycache__/
+*.py[cod]
+
 # KDE directory preferences
 .directory
 
