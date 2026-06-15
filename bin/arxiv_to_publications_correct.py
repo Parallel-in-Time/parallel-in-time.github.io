@@ -2,10 +2,31 @@ import re
 import requests
 import argparse
 import fileinput
+from html import unescape
 
 import bibtexparser
 from bibtexparser.bwriter import BibTexWriter
 from requests.exceptions import RequestException
+
+
+def normalize_month_fields(bib):
+    def replace_month(match):
+        prefix, value = match.groups()
+        value = unescape(value).strip()
+        if value.startswith("{") and value.endswith("}"):
+            return match.group(0)
+        if value.startswith('"') and value.endswith('"'):
+            value = value[1:-1].strip()
+        value = value.strip("'\"{}")
+        value = re.sub(r"[^A-Za-z]", "", value)
+        return f"{prefix}{{{value}}},"
+
+    return re.sub(
+        r"(^\s*month\s*=\s*)([^,\n]+)\s*,",
+        replace_month,
+        bib,
+        flags=re.MULTILINE | re.IGNORECASE,
+    )
 
 
 def fetch_doi_content(url, accept_header, description):
@@ -83,6 +104,7 @@ if __name__ == '__main__':
             if id != id_db:
                 print(f'Note: ID updated from {id_db} to {id} to reflect the publication year.')
             bib = "{".join([bType] + [','.join([id]+rest2)] + rest1[1:])
+            bib = normalize_month_fields(bib)
             bib_db = bibtexparser.loads(bib)
             new_entries = bib_db.get_entry_list()
             if not new_entries:
