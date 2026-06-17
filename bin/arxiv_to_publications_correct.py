@@ -2,7 +2,6 @@ import re
 import requests
 import argparse
 import fileinput
-from html import unescape
 
 import bibtexparser
 from bibtexparser.bwriter import BibTexWriter
