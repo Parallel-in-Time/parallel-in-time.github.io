@@ -7895,6 +7895,24 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
+@unpublished{GonzalezEtAl2025,
+	abstract = {The rise of parallel computing hardware has made it increasingly important to understand which nonlinear state space models can be efficiently parallelized. Recent advances like DEER (arXiv:2309.12252) and DeepPCR (arXiv:2309.16318) recast sequential evaluation as a parallelizable optimization problem, sometimes yielding dramatic speedups. However, the factors governing the difficulty of these optimization problems remained unclear, limiting broader adoption. In this work, we establish a precise relationship between a system's dynamics and the conditioning of its corresponding optimization problem, as measured by its Polyak-Lojasiewicz (PL) constant. We show that the predictability of a system, defined as the degree to which small perturbations in state influence future behavior and quantified by the largest Lyapunov exponent (LLE), impacts the number of optimization steps required for evaluation. For predictable systems, the state trajectory can be computed in at worst $O((\log T)^2)$ time, where $T$ is the sequence length: a major improvement over the conventional sequential approach. In contrast, chaotic or unpredictable systems exhibit poor conditioning, with the consequence that parallel evaluation converges too slowly to be useful. Importantly, our theoretical analysis shows that predictable systems always yield well-conditioned optimization problems, whereas unpredictable systems lead to severe conditioning degradation. We validate our claims through extensive experiments, providing practical guidance on when nonlinear dynamical systems can be efficiently parallelized. We highlight predictability as a key design principle for parallelizable models.},
+	author = {Xavier Gonzalez and Leo Kozachkov and David M. Zoltowski and Kenneth L. Clarkson and Scott W. Linderman},
+	howpublished = {arXiv:2508.16817v4 [math.OC]},
+	title = {Predictability Enables Parallelization of Nonlinear State Space Models},
+	url = {https://arxiv.org/abs/2508.16817v4},
+	year = {2025},
+}
+
+@unpublished{GonzalezEtAl2025b,
+	abstract = {Harnessing parallelism in seemingly sequential models is a central challenge for modern machine learning. Several approaches have been proposed for evaluating sequential processes in parallel using iterative fixed-point methods, like Newton, Picard, and Jacobi iterations. In this work, we show that these methods can be understood within a common framework based on linear dynamical systems (LDSs), where different iteration schemes arise naturally as approximate linearizations of a nonlinear recursion. Moreover, we theoretically analyze the rates of convergence of these methods, and we verify the predictions of this theory with several case studies. This unifying framework highlights shared principles behind these techniques and clarifies when particular fixed-point methods are most likely to be effective. By bridging diverse algorithms through the language of LDSs, the framework provides a clearer theoretical foundation for parallelizing sequential models and points toward new opportunities for efficient and scalable computation.},
+	author = {Xavier Gonzalez and E. Kelly Buchanan and Hyun Dong Lee and Jerry Weihong Liu and Ke Alexander Wang and David M. Zoltowski and Leo Kozachkov and Christopher Ré and Scott W. Linderman},
+	howpublished = {arXiv:2509.21716v2 [cs.LG]},
+	title = {A Unifying Framework for Parallelizing Sequential Models with Linear Dynamical Systems},
+	url = {https://arxiv.org/abs/2509.21716v2},
+	year = {2025},
+}
+
 @unpublished{GriebelEtAl2025,
 	abstract = {In this article, we present a parallel discretization and solution method for parabolic problems with a higher number of space dimensions. It consists of a parallel-in-time approach using the multigrid reduction-in-time algorithm MGRIT with its implementation in the library XBraid, the sparse grid combination method for discretizing the resulting elliptic problems in space, and a domain decomposition method for each of the subproblems in the combination method based on the space-filling curve approach. As a result, we obtain an extremely fast and embarrassingly parallel solver with excellent speedup and scale-up qualities, which is perfectly suited for parabolic problems with up to six space dimensions. We describe our new parallel approach and show its superior parallelization properties for the heat equation, the chemical master equation and some exemplary stochastic differential equations.},
 	author = {Michael Griebel and Marc Alexander Schweitzer and Lukas Troska},
