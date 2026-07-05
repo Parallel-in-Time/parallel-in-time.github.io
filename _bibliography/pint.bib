@@ -8546,6 +8546,20 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@article{BhattEtAl2026,
+	author = {Bhatt, Rishabh and Debreu, Laurent and Vidard, Arthur},
+	doi = {10.1016/j.jcp.2026.115164},
+	issn = {0021-9991},
+	journal = {Journal of Computational Physics},
+	month = {Nov},
+	pages = {115164},
+	publisher = {Elsevier BV},
+	title = {Time-parallel incremental 4D-Var for two-dimensional rotating shallow water system},
+	url = {http://dx.doi.org/10.1016/j.jcp.2026.115164},
+	volume = {564},
+	year = {2026},
+}
+
 @unpublished{BoltenEtAl2026,
 	abstract = {In this work, the performance of different spectral deferred corrections (SDC) methods applied to initial value problems for differential-algebraic equations (DAEs) of index one is analyzed. The SDC method solves a series of correction equations, and after each iteration, the numerical solution is corrected by adding the obtained approximation of the error. The formulation of the SDC method allows for a parallelization across the method to obtain small-scale parallelism, for which a number of processes equal to the number of collocation nodes can be used. Recently, an analytical approach to finding optimal diagonal coefficients for parallel SDC was proposed. So far, no analysis with the new coefficients for parallel SDC applied to DAEs was done. We demonstrate that parallel SDC methods solve DAE problems with high accuracy faster than the associated sequential SDC schemes, obtaining speedup in a small-scale parallel regime.},
 	author = {Matthias Bolten and Lisa Wimmer},
@@ -8818,6 +8832,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Springer Science and Business Media LLC},
 	title = {Efficient solvers for all-at-once systems in multi-term time-fractional diffusion equations},
 	url = {http://dx.doi.org/10.1007/s11075-026-02400-0},
+	year = {2026},
+}
+
+@unpublished{LinEtAl2026b,
+	abstract = {The parareal algorithm is one of the most widely studied parallel-in-time methods for the numerical approximation of time-dependent problems. For non-diffusive equations, however, standard parareal methods may converge slowly or even become unstable due to the absence of damping, while nonlinear interactions can transfer and amplify phase errors across Fourier modes. In this work, we consider the nonlinear Schrödinger equation (NLS) as a representative non-diffusive model and analyze parareal algorithms with an exact fine propagator, with particular emphasis on the design of suitable coarse propagators. We establish a general convergence framework, valid for solutions with limited regularity, under stability and local truncation error assumptions on the coarse propagator. These assumptions are verified for selected exponential low-regularity integrators designed for one-dimensional quadratic and cubic NLS equations, which achieve optimal approximation orders without derivative loss. To the best of our knowledge, this is the first construction of parareal algorithms for NLS equations that are provably linearly convergent, with a contraction factor proportional to the coarse time-step size even for solutions of limited regularity. Numerical experiments on quadratic, cubic, and quintic NLS equations demonstrate rapid convergence and improved performance over parareal variants using classical coarse propagators, including Lie and Strang splitting methods and first- and third-order exponential Runge--Kutta integrators.},
+	author = {Qingle Lin and Zhi Zhou},
+	howpublished = {arXiv:2607.00384v1 [math.NA]},
+	title = {Exponential Low-Regularity Parareal Algorithms for Nonlinear Schrödinger Equations},
+	url = {https://arxiv.org/abs/2607.00384v1},
 	year = {2026},
 }
 
