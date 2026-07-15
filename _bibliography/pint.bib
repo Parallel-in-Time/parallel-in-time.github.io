@@ -68,6 +68,19 @@
 	year = {1978},
 }
 
+@inbook{GearEtAl1982,
+	author = {Gear, C. W. and Gallivan, K. A.},
+	booktitle = {Numerical Analysis},
+	doi = {10.1007/bfb0093152},
+	isbn = {9783540390091},
+	issn = {1617-9692},
+	pages = {115â€“124},
+	publisher = {Springer Berlin Heidelberg},
+	title = {Automatic methods for highly oscillatory ordinary differential equations},
+	url = {http://dx.doi.org/10.1007/bfb0093152},
+	year = {1982},
+}
+
 @article{Hackbusch1984,
 	author = {Hackbusch, W.},
 	journal = {Computing Methods in Applied Sciences and Engineering, VI},
@@ -2434,24 +2447,6 @@ simulations are discussed.}},
 	title = {{A parareal method for time-fractional differential equations}},
 	url = {http://dx.doi.org/10.1016/j.jcp.2014.11.034},
 	year = {2014},
-}
-
-@unpublished{Ariel2015,
-	abstract = {{We introduce a new parallel in time (parareal) algorithm which couples multiscale integrators with
-fully resolved fine scale integration and computes highly oscillatory solutions for a class of ordinary
-differential equations in parallel.
-The algorithm computes a low-cost approximation of all slow variables in the system.
-Then, fast phase-like variables are obtained using the parareal iterative methodology and an alignment algorithm.
-The method may be used either to enhance the accuracy and range of applicability of the multiscale method in
-approximating only the slow variables, or to resolve all the state variables.
-The numerical scheme does not require that the system is split into slow and fast coordinates.
-Moreover, the dynamics may involve hidden slow variables, for example, due to resonances.
-Convergence of the parareal iterations is proved and demonstrated in numerical examples.}},
-	author = {Ariel, G. and Kim, Seong Jun and Tsai, Richard},
-	howpublished = {arXiv:1503.02094 [math.NA]},
-	title = {{Parareal methods for highly oscillatory ordinary differential equations}},
-	url = {http://arxiv.org/abs/1503.02094v1},
-	year = {2015},
 }
 
 @article{ArteagaEtAl2015,
@@ -7493,15 +7488,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
-@unpublished{YamaleevEtAl2024,
-	abstract = {We present a new approach to parallelization of the first-order backward difference discretization (BDF1) of the time derivative in partial differential equations, such as the nonlinear heat and viscous Burgers equations. The time derivative term is discretized by using the method of lines based on the implicit BDF1 scheme, while the inviscid and viscous terms are approximated by conventional 2nd-order 3-point central discretizations of the 1st- and 2nd-order derivatives in each spatial direction. The global system of nonlinear discrete equations in the space-time domain is solved by the Newton method for all time levels simultaneously. For the BDF1 discretization, this all-at-once system at each Newton iteration is block bidiagonal, which can be inverted directly in a blockwise manner, thus leading to a set of fully decoupled equations associated with each time level. This allows for an efficient parallel-in-time implementation of the implicit BDF1 discretization for nonlinear differential equations. The proposed parallel-in-time method preserves a quadratic rate of convergence of the Newton method of the sequential BDF1 scheme, so that the computational cost of solving each block matrix in parallel is nearly identical to that of the sequential counterpart at each time step. Numerical results show that the new parallel-in-time BDF1 scheme provides the speedup of up to 28 on 32 computing cores for the 2-D nonlinear partial differential equations with both smooth and discontinuous solutions.},
-	author = {Nail K. Yamaleev and Subhash Paudel},
-	howpublished = {arXiv:2406.00878v1 [math.NA]},
-	title = {A New Parallel-in-time Direct Inverse Method for Nonlinear Differential Equations},
-	url = {http://arxiv.org/abs/2406.00878v1},
-	year = {2024},
-}
-
 @article{YodaEtAl2024,
 	author = {Yoda, Ryo and Bolten, Matthias and Nakajima, Kengo and Fujii, Akihiro},
 	doi = {10.1007/s13160-024-00652-8},
@@ -7764,15 +7750,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {Springer Nature Switzerland},
 	title = {Improving Convergence of Time-Simultaneous Multigrid Methods for Convection-Dominated Problems Using VMS Stabilization Techniques},
 	url = {http://dx.doi.org/10.1007/978-3-031-86173-4_28},
-	year = {2025},
-}
-
-@unpublished{EggerEtAl2025,
-	abstract = {A class of abstract nonlinear time-periodic evolution problems is considered which arise in electrical engineering and other scientific disciplines. An efficient solver is proposed for the systems arising after discretization in time based on a fixed-point iteration. Every step of this iteration amounts to the solution of a discretized time-periodic and time-invariant problem for which efficient parallel-in-time methods are available. Global convergence with contraction factors independent of the discretization parameters is established. Together with an appropriate initialization step, a highly efficient and reliable solver is obtained. The applicability and performance of the proposed method is illustrated by simulations of a power transformer. Further comparison is made with other solution strategies proposed in the literature.},
-	author = {Herbert Egger and Andreas Schafelner},
-	howpublished = {arXiv:2502.21013v1 [math.NA]},
-	title = {A parallel-in-time solver for nonlinear degenerate time-periodic parabolic problems},
-	url = {http://arxiv.org/abs/2502.21013v1},
 	year = {2025},
 }
 
@@ -8631,6 +8608,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@inbook{EggerEtAl2026,
+	author = {Egger, Herbert and Schafelner, Andreas},
+	booktitle = {Large-Scale Scientific Computations},
+	doi = {10.1007/978-3-032-22221-3_8},
+	isbn = {9783032222213},
+	issn = {1611-3349},
+	pages = {73–81},
+	publisher = {Springer Nature Switzerland},
+	title = {A Parallel-in-Time Solver for Nonlinear Degenerate Time-Periodic Parabolic Problems},
+	url = {http://dx.doi.org/10.1007/978-3-032-22221-3_8},
+	year = {2026},
+}
+
 @article{EngwerEtAl2026,
 	author = {Engwer, Christian and Schell, Alexander and Dreier, Nils-Arne},
 	doi = {10.1007/s13137-025-00283-2},
@@ -9021,6 +9011,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {American Institute of Aeronautics and Astronautics},
 	title = {Preconditioned Parallel-in-Time Direct Inverse Method for Nonlinear Conservation Law Equations},
 	url = {http://dx.doi.org/10.2514/6.2026-4026},
+	year = {2026},
+}
+
+@article{YamaleevEtAl2026b,
+	author = {Yamaleev, Nail K. and Paudel, Subhash},
+	doi = {10.1007/s11075-026-02434-4},
+	issn = {1572-9265},
+	journal = {Numerical Algorithms},
+	month = {June },
+	publisher = {Springer Science and Business Media LLC},
+	title = {A new parallel-in-time direct inverse method for nonlinear differential equations},
+	url = {http://dx.doi.org/10.1007/s11075-026-02434-4},
 	year = {2026},
 }
 
