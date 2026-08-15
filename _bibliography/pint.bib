@@ -6830,16 +6830,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2024},
 }
 
-@unpublished{BaumannEtAl2024b,
-	archiveprefix = {arXiv},
-	author = {Baumann, Thomas and G{\"o}tschel, Sebastian and Lunet, Thibaut and Ruprecht, Daniel and Speck, Robert},
-	eprint = {2412.00529},
-	primaryclass = {cs.DC},
-	title = {Resilience Against Soft Faults through Adaptivity in Spectral Deferred Correction},
-	url = {https://arxiv.org/abs/2412.00529},
-	year = {2024},
-}
-
 @unpublished{BetckeEtAl2024,
 	abstract = {This paper considers one of the fundamental parallel-in-time methods for the solution of ordinary differential equations, Parareal, and extends it by adopting a neural network as a coarse propagator. We provide a theoretical analysis of the convergence properties of the proposed algorithm and show its effectiveness for several examples, including Lorenz and Burgers' equations. In our numerical simulations, we further specialize the underpinning neural architecture to Random Projection Neural Networks (RPNNs), a 2-layer neural network where the first layer weights are drawn at random rather than optimized. This restriction substantially increases the efficiency of fitting RPNN's weights in comparison to a standard feedforward network without negatively impacting the accuracy, as demonstrated in the SIR system example.},
 	author = {Marta M. Betcke and Lisa Maria Kreusser and Davide Murari},
@@ -7872,12 +7862,16 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
-@unpublished{GonzalezEtAl2025,
-	abstract = {The rise of parallel computing hardware has made it increasingly important to understand which nonlinear state space models can be efficiently parallelized. Recent advances like DEER (arXiv:2309.12252) and DeepPCR (arXiv:2309.16318) recast sequential evaluation as a parallelizable optimization problem, sometimes yielding dramatic speedups. However, the factors governing the difficulty of these optimization problems remained unclear, limiting broader adoption. In this work, we establish a precise relationship between a system's dynamics and the conditioning of its corresponding optimization problem, as measured by its Polyak-Lojasiewicz (PL) constant. We show that the predictability of a system, defined as the degree to which small perturbations in state influence future behavior and quantified by the largest Lyapunov exponent (LLE), impacts the number of optimization steps required for evaluation. For predictable systems, the state trajectory can be computed in at worst $O((\log T)^2)$ time, where $T$ is the sequence length: a major improvement over the conventional sequential approach. In contrast, chaotic or unpredictable systems exhibit poor conditioning, with the consequence that parallel evaluation converges too slowly to be useful. Importantly, our theoretical analysis shows that predictable systems always yield well-conditioned optimization problems, whereas unpredictable systems lead to severe conditioning degradation. We validate our claims through extensive experiments, providing practical guidance on when nonlinear dynamical systems can be efficiently parallelized. We highlight predictability as a key design principle for parallelizable models.},
-	author = {Xavier Gonzalez and Leo Kozachkov and David M. Zoltowski and Kenneth L. Clarkson and Scott W. Linderman},
-	howpublished = {arXiv:2508.16817v4 [math.OC]},
+@inproceedings{GonzalezEtAl2025,
+	author = {Gonzalez, Xavier and Kozachkov, Leo and Zoltowski, David and Clarkson, Kenneth and Linderman, Scott},
+	booktitle = {Advances in Neural Information Processing Systems 38},
+	collection = {NeurIPS 2025},
+	doi = {10.52202/085713-0642},
+	pages = {21654â€“21700},
+	publisher = {Neural Information Processing Systems Foundation, Inc. (NeurIPS)},
+	series = {NeurIPS 2025},
 	title = {Predictability Enables Parallelization of Nonlinear State Space Models},
-	url = {https://arxiv.org/abs/2508.16817v4},
+	url = {http://dx.doi.org/10.52202/085713-0642},
 	year = {2025},
 }
 
@@ -7896,15 +7890,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2509.22156v1 [math.NA]},
 	title = {A Parallel-in-Time Combination Method for Parabolic Problems},
 	url = {http://arxiv.org/abs/2509.22156v1},
-	year = {2025},
-}
-
-@unpublished{GuEtAl2025,
-	abstract = {This paper focuses on the efficient numerical algorithms of a three-field Biot's consolidation model. The approach begins with the introduction of innovative monolithic and global-in-time iterative decoupled algorithms, which incorporate the backward differentiation formulas for time discretization. In each iteration, these algorithms involve solving a diffusion subproblem over the entire temporal domain, followed by solving a generalized Stokes subproblem over the same time interval. To accelerate the global-in-time iterative process, we present a reduced order modeling approach based on proper orthogonal decomposition, aimed at reducing the primary computational cost from the generalized Stokes subproblem. The effectiveness of this novel method is validated both theoretically and through numerical experiments.},
-	author = {Huipeng Gu and Francesco Ballarin and Mingchao Cai and Jingzhi Li},
-	howpublished = {arXiv:2508.04082v1 [math.NA]},
-	title = {POD-based reduced order modeling of global-in-time iterative decoupled algorithms for Biot's consolidation model},
-	url = {http://arxiv.org/abs/2508.04082v1},
 	year = {2025},
 }
 
@@ -8455,12 +8440,16 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
-@unpublished{ZoltowskiEtAl2025,
-	abstract = {Markov chain Monte Carlo (MCMC) methods are foundational algorithms for Bayesian inference and probabilistic modeling. However, most MCMC algorithms are inherently sequential and their time complexity scales linearly with the sequence length. Previous work on adapting MCMC to modern hardware has therefore focused on running many independent chains in parallel. Here, we take an alternative approach: we propose algorithms to evaluate MCMC samplers in parallel across the chain length. To do this, we build on recent methods for parallel evaluation of nonlinear recursions that formulate the state sequence as a solution to a fixed-point problem and solve for the fixed-point using a parallel form of Newton's method. We show how this approach can be used to parallelize Gibbs, Metropolis-adjusted Langevin, and Hamiltonian Monte Carlo sampling across the sequence length. In several examples, we demonstrate the simulation of up to hundreds of thousands of MCMC samples with only tens of parallel Newton iterations. Additionally, we develop two new parallel quasi-Newton methods to evaluate nonlinear recursions with lower memory costs and reduced runtime. We find that the proposed parallel algorithms accelerate MCMC sampling across multiple examples, in some cases by more than an order of magnitude compared to sequential evaluation.},
-	author = {David M. Zoltowski and Skyler Wu and Xavier Gonzalez and Leo Kozachkov and Scott W. Linderman},
-	howpublished = {arXiv:2508.18413v1 [stat.CO]},
+@inproceedings{ZoltowskiEtAl2025,
+	author = {Zoltowski, David and Wu, Skyler and Gonzalez, Xavier and Kozachkov, Leo and Linderman, Scott},
+	booktitle = {Advances in Neural Information Processing Systems 38},
+	collection = {NeurIPS 2025},
+	doi = {10.52202/085713-0751},
+	pages = {25284â€“25319},
+	publisher = {Neural Information Processing Systems Foundation, Inc. (NeurIPS)},
+	series = {NeurIPS 2025},
 	title = {Parallelizing MCMC Across the Sequence Length},
-	url = {http://arxiv.org/abs/2508.18413v1},
+	url = {http://dx.doi.org/10.52202/085713-0751},
 	year = {2025},
 }
 
@@ -8648,15 +8637,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
-@unpublished{GaraiEtAl2026b,
-	abstract = {This paper introduces Exp-ParaDiag, a novel time-parallel method that combines the strength of exponential integrators into the ParaDiag framework. We develop and analyze Exp-ParaDiag based on first and second order accurate exponential integrators. We establish the convergence of the proposed methods both as preconditioned fixed-point iterations and as precon- ditioners within the GMRES framework. Furthermore, we extend the Exp-ParaDiag formulation to achieve sixth-order temporal accuracy using exponential integrators. The proposed approach is also generalized to nonlinear problems, for which convergence is rigorously demonstrated. A series of numerical experiments is presented to validate the theoretical results and to illustrate the robustness and efficiency of the developed methods.},
-	author = {Gobinda Garai and Nagaiah Chamakuri},
-	howpublished = {arXiv:2603.04350v1 [math.NA]},
-	title = {Exp-ParaDiag: Time-Parallel Exponential Integrators for Parabolic PDEs},
-	url = {https://arxiv.org/abs/2603.04350v1},
-	year = {2026},
-}
-
 @unpublished{GaraiEtAl2026c,
 	abstract = {This paper presents a development of a nonlinear extension of the Parareal-Incomplete Optimized Schwarz Waveform Relaxation (OSWR) method, aimed at efficiently simulating coupled reaction-diffusion systems, with particular attention to those encountered in cardiac electrophysiology. The strategy leverages the synergy of spatial and temporal decomposition to tackle the computational challenges of large-scale, nonlinear simulations. The proposed approach is accompanied by a comprehensive convergence analysis. Extensive numerical experiments confirm the convergence of the nonlinear Parareal-Incomplete OSWR method. The results showcase its robust convergence behavior across various space-time subdomains, underscoring the method's reliability and effectiveness, especially in complex simulations involving multiple subdomains.},
 	author = {Gobinda Garai and Nagaiah Chamakuri},
@@ -8705,6 +8685,21 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {A Parareal-in-time Algorithm for the Optimal Control of Evolution Equations},
 	url = {http://dx.doi.org/10.1007/s10915-026-03333-5},
 	volume = {108},
+	year = {2026},
+}
+
+@article{GuEtAl2026,
+	author = {Gu, Huipeng and Ballarin, Francesco and Cai, Mingchao and Li, Jingzhi},
+	doi = {10.1137/25m1785538},
+	issn = {1095-7197},
+	journal = {SIAM Journal on Scientific Computing},
+	month = {Aug},
+	number = {4},
+	pages = {A2342–A2364},
+	publisher = {Society for Industrial & Applied Mathematics (SIAM)},
+	title = {POD-Based Reduced Order Modeling of Global-in-Time Iterative Decoupled Algorithms for Biot’s Consolidation Model},
+	url = {http://dx.doi.org/10.1137/25m1785538},
+	volume = {48},
 	year = {2026},
 }
 
@@ -8887,6 +8882,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2602.13841v1 [math.NA]},
 	title = {A Monolithic hp Space-Time Multigrid Preconditioned Newton-Krylov Solver for Space-Time FEM applied to the Incompressible Navier-Stokes Equations},
 	url = {https://arxiv.org/abs/2602.13841v1},
+	year = {2026},
+}
+
+@inbook{SaupeEtAl2026,
+	author = {Saupe, Thomas and Götschel, Sebastian and Lunet, Thibaut and Ruprecht, Daniel and Speck, Robert},
+	booktitle = {Scientific Computing and Software},
+	doi = {10.1007/978-3-032-17810-7_2},
+	isbn = {9783032178107},
+	issn = {2194-1017},
+	pages = {31–51},
+	publisher = {Springer Nature Switzerland},
+	title = {Resilience Against Soft Faults Through Adaptivity in Spectral Deferred Correction},
+	url = {http://dx.doi.org/10.1007/978-3-032-17810-7_2},
 	year = {2026},
 }
 
@@ -9096,4 +9104,18 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {Parallel-in-Time Nonlinear Optimal Control via GPU-native Sequential Convex Programming},
 	url = {https://arxiv.org/abs/2603.10711v2},
 	year = {2026},
+}
+
+@article{GaraiEtAl2027,
+	author = {Garai, Gobinda and Chamakuri, Nagaiah},
+	doi = {10.1016/j.cam.2026.117985},
+	issn = {0377-0427},
+	journal = {Journal of Computational and Applied Mathematics},
+	month = {Jan},
+	pages = {117985},
+	publisher = {Elsevier BV},
+	title = {Exp-ParaDiag: Time-parallel exponential integrators for parabolic PDEs},
+	url = {http://dx.doi.org/10.1016/j.cam.2026.117985},
+	volume = {490},
+	year = {2027},
 }
