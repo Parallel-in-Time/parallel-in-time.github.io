@@ -13,7 +13,7 @@ jobs:
           cd bin
           python3 -m pip install --user --upgrade pip
           python3 -m pip install --user setuptools
-          python3 -m pip install --user bibtexparser arxivcheck
+          python3 -m pip install --user "bibtexparser<2" arxivcheck
           python3 issue_to_bibtex.py -b "${{ github.event.issue.body }}" > comment.out 2>&1
           {
             echo 'COMMENT<<GITHUB_OUTPUT_DELIMITER'
