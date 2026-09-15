@@ -15,7 +15,7 @@ jobs:
           cd bin
           python3 -m pip install --user --upgrade pip
           python3 -m pip install --user setuptools
-          python3 -m pip install --user requests bibtexparser
+          python3 -m pip install --user requests "bibtexparser<2"
           python3 arxiv_to_publications_correct.py -b "$ISSUE_BODY" > comment.out 2>&1
           {
             echo 'COMMENT<<GITHUB_OUTPUT_DELIMITER'
