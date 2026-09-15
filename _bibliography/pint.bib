@@ -8065,15 +8065,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2025},
 }
 
-@unpublished{LaidinEtAl2025,
-	abstract = {We present the design of a multiscale parareal method for kinetic equations in the fluid dynamic regime. The goal is to reduce the cost of a fully kinetic simulation using a parallel in time procedure. Using the multiscale property of kinetic models, the cheap, coarse propagator consists in a fluid solver and the fine (expensive) propagation is achieved through a kinetic solver for a collisional Vlasov equation. To validate our approach, we present simulations in the 1D in space, 3D in velocity settings over a wide range of initial data and kinetic regimes, showcasing the accuracy, efficiency, and the speedup capabilities of our method.},
-	author = {Tino Laidin and Thomas Rey},
-	howpublished = {arXiv:2502.02704v1 [math.NA]},
-	title = {A Parareal in time numerical method for the collisional Vlasov equation in the hyperbolic scaling},
-	url = {http://arxiv.org/abs/2502.02704v1},
-	year = {2025},
-}
-
 @article{LefebvreEtAl2025,
 	author = {Lefebvre, Tom and Vantilborgh, Victor},
 	doi = {10.1002/oca.70069},
@@ -8120,15 +8111,6 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	title = {A block α-circulant based preconditioned MINRES method for wave equations},
 	url = {http://dx.doi.org/10.1016/j.apnum.2024.10.020},
 	volume = {209},
-	year = {2025},
-}
-
-@unpublished{Liu2025,
-	abstract = {The high cost of sequential time integration is one major constraint that limits the speedup of a time-parallel algorithm like the Parareal algorithm due to the difficulty of coarsening time steps in a stiff numerical problem. To address this challenge, we develop a parallel-in-time approach based on the Parareal algorithm, in which we construct a novel coarse solver using a data-driven method based on Dynamic Mode Decomposition in place of a classic time marching scheme. The proposed solver computes an approximation of the solution using two numerical schemes of different accuracies in parallel, and apply High-Order Dynamic Mode Decomposition (HODMD) to reduce the cost of sequential computations. Compared to the original Parareal algorithm, the proposed approach allows for the construction of low-cost coarse solvers for many complicated stiff problems. We demonstrate through several numerical examples in fluid dynamics that the proposed method can effectively reduce the serial computation cost and improve the parallel speedup of long-time simulations which are hard to accelerate using the original Parareal algorithm.},
-	author = {Weifan Liu},
-	howpublished = {arXiv:2503.03109v1 [physics.comp-ph]},
-	title = {A parallel-in-time method based on the Parareal algorithm and High-Order Dynamic Mode Decomposition with applications to fluid simulations},
-	url = {http://arxiv.org/abs/2503.03109v1},
 	year = {2025},
 }
 
@@ -8844,6 +8826,21 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@article{LaidinEtAl2026,
+	author = {Laidin, Tino and Rey, Thomas},
+	doi = {10.1137/25m1731800},
+	issn = {1540-3467},
+	journal = {Multiscale Modeling &amp; Simulation},
+	month = {Sept},
+	number = {3},
+	pages = {1248â€“1268},
+	publisher = {Society for Industrial & Applied Mathematics (SIAM)},
+	title = {A Parallel in Time Numerical Method for the Collisional Vlasov Equation in the Hyperbolic Scaling},
+	url = {http://dx.doi.org/10.1137/25m1731800},
+	volume = {24},
+	year = {2026},
+}
+
 @article{LiangEtAl2026,
 	author = {Liang, Chang-Wen and Hwang, Feng-Nan},
 	doi = {10.1553/etna_vol66s83},
@@ -8886,6 +8883,19 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2607.00384v1 [math.NA]},
 	title = {Exponential Low-Regularity Parareal Algorithms for Nonlinear Schrödinger Equations},
 	url = {https://arxiv.org/abs/2607.00384v1},
+	year = {2026},
+}
+
+@article{Liu2026,
+	author = {Liu, Weifan},
+	doi = {10.1016/j.cpc.2026.110416},
+	issn = {0010-4655},
+	journal = {Computer Physics Communications},
+	month = {Sept},
+	pages = {110416},
+	publisher = {Elsevier BV},
+	title = {A parallel-in-time method based on the Parareal algorithm and High-Order Dynamic Mode Decomposition with applications to fluid simulations},
+	url = {http://dx.doi.org/10.1016/j.cpc.2026.110416},
 	year = {2026},
 }
 
