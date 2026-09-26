@@ -11,7 +11,7 @@ import bibtexparser
 from bibtexparser.bibdatabase import BibDatabase
 from bibtexparser.bwriter import BibTexWriter
 
-from utils import fixBadBibFormat
+from utils import fixBadBibFormat, getArxivInfoFromPage
 
 try:
     
@@ -38,17 +38,28 @@ try:
 
             arxiv_id = url.split('/')[-1]
             found, items = get_arxiv_info(arxiv_id, field='id')
+            if not found and re.search(r'v\d+$', arxiv_id) is not None:
+                found, items = get_arxiv_info(re.sub(r'v\d+$', '', arxiv_id), field='id')
+            if not found:
+                try:
+                    item = getArxivInfoFromPage(url, arxiv_id)
+                except requests.RequestException:
+                    item = None
+                if item is not None:
+                    found = True
+                    items = [item]
             if not found:
                 print(f"I could not find arXiv infos for {url}, maybe try without the version suffix 'v[.]'")
                 continue
             if len(items) > 1:
                 print(f'I got more than one item back from arXiv for {url}. See what I got:\n' +
-                      '\n'.join([item.title for item in items]) + '\n' +
+                      '\n'.join([item['title'] for item in items]) + '\n' +
                       f'I am taking the first one only, just FYI. I hope this is the correct one..\n\n')
-            url = items[0].link
-            title = items[0].title.replace('\n', '').replace('  ', ' ')
-            year = items[0]['published'].split('-')[0]
-            authors = items[0].authors
+            item = items[0]
+            url = item['link']
+            title = item['title'].replace('\n', '').replace('  ', ' ')
+            year = item['published'].split('-')[0]
+            authors = item['authors']
             if len(authors) > 1:
                 first_author = authors[0]["name"].split(" ")
                 authors = " and ".join([author["name"] for author in authors])
@@ -78,8 +89,9 @@ try:
                     id = id_orig + letters[i]
                     i += 1
 
-            howpublished = "arXiv:" + items[0]["id"].split('/')[-1] + \
-                           " [" + items[0]["arxiv_primary_category"]["term"] + "]"
+            howpublished = "arXiv:" + item["id"].split('/')[-1]
+            if item.get("arxiv_primary_category", {}).get("term"):
+                howpublished += " [" + item["arxiv_primary_category"]["term"] + "]"
 
             if not duplicate:
                 bib_db = BibDatabase()
@@ -92,7 +104,7 @@ try:
                         "howpublished": howpublished,
                         "url": url,
                         "year": year,
-                        "abstract": items[0]['summary'].replace('\n', ' ').replace('  ', ' '),
+                        "abstract": item['summary'].replace('\n', ' ').replace('  ', ' '),
                     }
                 ]
             else:
