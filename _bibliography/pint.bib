@@ -8803,6 +8803,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@unpublished{KeerthiEtAl2026,
+	abstract = {As computational resources continue to grow, the strong-scaling limitations of spatial parallelism motivate the pursuit of additional concurrency in the temporal dimension, particularly for applications with hard time constraints, such as weather and climate simulations. The Parallel Full Approximation Scheme in Space and Time (PFASST) is a parallel-in-time method based on Spectral Deferred Corrections (SDC). It computes multiple timesteps concurrently by coupling fine- and coarse-grid SDC sweeps using multigrid Full Approximation Scheme (FAS) corrections. However, PFASST's convergence is often problem-dependent, demanding a variable number of parallel timesteps and, hence, computing resources at different times throughout the simulation. Dynamic Resource Management (DRM) provides a remedy for this challenge by enabling the adaptive adjustment of computational resources and algorithmic parameters at runtime. In this work, we present our novel approach to extending PFASST with DRM, which enables (a) dynamic adaptation of computing resources, (b) adaptive selection of the number of PFASST iterations based on local convergence behavior, and (c) coupling of these two adaptations into a single resizing strategy. With this approach, we demonstrate for the first time that optimal configurations can be identified in real time for each application, rather than relying on static allocation. Furthermore, we show that convergence-informed tuning of PFASST improves resource utilization and convergence efficiency.},
+	author = {Gaddameedi, Keerthi and Huber, Dominik and Schreiber, Martin and Bungartz, Hans-Joachim and Schüller, Valentina and Neckel, Tobias and Schulz, Martin},
+	howpublished = {arXiv:2609.24434},
+	title = {Adaptive Parallel-in-Time Integration with Dynamic Resource Management},
+	url = {https://arxiv.org/abs/2609.24434},
+	year = {2026},
+}
+
 @article{KongEtAl2026,
 	author = {Kong, Desong and Yuan, Huifang},
 	doi = {10.1007/s10915-026-03387-5},
