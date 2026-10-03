@@ -5093,6 +5093,101 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          YuEtAl2026b
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="YuEtAl2026b">C.-E. Yu, X.-X. Tan, Y.-C. Lin, Y.-S. Tsai, C.-A. Yu, and H.-yi Lee, “ParaAnya: Accelerating Parallel Diffusion Sampling with Plug-and-Play Output Caching,” arXiv:2609.36522v1 [cs.DC], 2026 [Online]. Available at: <a href="https://arxiv.org/abs/2609.36522v1" target="_blank">https://arxiv.org/abs/2609.36522v1</a></span>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalYuEtAl2026bBibtex" aria-expanded="false"
+                  aria-controls="modalYuEtAl2026bBibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalYuEtAl2026bAbstract" aria-expanded="false"
+                  aria-controls="modalYuEtAl2026bAbstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modalYuEtAl2026bBibtex" tabindex="-1" role="dialog"
+    aria-labelledby="modalYuEtAl2026bBibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalYuEtAl2026bBibtexTitle">
+                  BibTeX entry <code>YuEtAl2026b</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@unpublished{YuEtAl2026b,
+  author = {Yu, Chee-En and Tan, Xiao-Xi and Lin, Yi-Cheng and Tsai, Yun-Shao and Yu, Chee-An and Lee, Hung-yi},
+  howpublished = {arXiv:2609.36522v1 [cs.DC]},
+  title = {ParaAnya: Accelerating Parallel Diffusion Sampling with Plug-and-Play Output Caching},
+  url = {https://arxiv.org/abs/2609.36522v1},
+  year = {2026}
+}
+</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="modalYuEtAl2026bAbstract" tabindex="-1" role="dialog"
+       aria-labelledby="modalYuEtAl2026bAbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalYuEtAl2026bAbstractTitle">
+                  Abstract for BibTeX entry <code>YuEtAl2026b</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            Diffusion models have achieved remarkable success in generative tasks, but their inherently sequential sampling process introduces a severe computational bottleneck. Recent Parallel-in-Time (PinT) solvers attempt to mitigate this by parallelizing generation across a sliding window of timesteps, advancing the window only when step-wise changes stabilize. However, this overlapping window mechanism forces the network to repeatedly evaluate the same timesteps. When the input variations between iterations are minimal, these redundant evaluations lead to significant computational waste. To address this inefficiency, we propose ParaAnya, an output cache mechanism agnostic to the parallel sampling algorithm that can reduce the number of function evaluations (NFE). ParaAnya caches input-output pairs of diffusion models and reuses the cached output at overlapping timesteps. By dispatching only cache-miss timesteps to GPU workers, our approach eliminates redundant computation while preserving the structure of the underlying algorithms’ update rules. We integrate ParaAnya into four representative parallel sampling algorithms and evaluate its performance on Stable Diffusion v1.5. Across four parallel samplers evaluated with DDIM on eight GPUs, ParaAnya provides 1.30–2.43\times speedups over their uncached counterparts and reduces NFE by up to 70.1%, reaching up to a 5.62\times speedup over single-GPU serial sampling while maintaining comparable CLIP scores.
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           ZhongEtAl2026
         </div>
       </div>
