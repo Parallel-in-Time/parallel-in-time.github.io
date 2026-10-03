@@ -9176,6 +9176,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@unpublished{YuEtAl2026b,
+	abstract = {Diffusion models have achieved remarkable success in generative tasks, but their inherently sequential sampling process introduces a severe computational bottleneck. Recent Parallel-in-Time (PinT) solvers attempt to mitigate this by parallelizing generation across a sliding window of timesteps, advancing the window only when step-wise changes stabilize. However, this overlapping window mechanism forces the network to repeatedly evaluate the same timesteps. When the input variations between iterations are minimal, these redundant evaluations lead to significant computational waste. To address this inefficiency, we propose ParaAnya, an output cache mechanism agnostic to the parallel sampling algorithm that can reduce the number of function evaluations (NFE). ParaAnya caches input-output pairs of diffusion models and reuses the cached output at overlapping timesteps. By dispatching only cache-miss timesteps to GPU workers, our approach eliminates redundant computation while preserving the structure of the underlying algorithms' update rules. We integrate ParaAnya into four representative parallel sampling algorithms and evaluate its performance on Stable Diffusion v1.5. Across four parallel samplers evaluated with DDIM on eight GPUs, ParaAnya provides $1.30$--$2.43\times$ speedups over their uncached counterparts and reduces NFE by up to 70.1\%, reaching up to a $5.62\times$ speedup over single-GPU serial sampling while maintaining comparable CLIP scores.},
+	author = {Chee-En Yu and Xiao-Xi Tan and Yi-Cheng Lin and Yun-Shao Tsai and Chee-An Yu and Hung-yi Lee},
+	howpublished = {arXiv:2609.36522v1 [cs.DC]},
+	title = {ParaAnya: Accelerating Parallel Diffusion Sampling with Plug-and-Play Output Caching},
+	url = {https://arxiv.org/abs/2609.36522v1},
+	year = {2026},
+}
+
 @article{ZhongEtAl2026,
 	author = {Zhong, Shun-Zhi and Zhao, Yong-Liang and Shu, Qian-Yu},
 	doi = {10.1016/j.apnum.2026.04.006},
