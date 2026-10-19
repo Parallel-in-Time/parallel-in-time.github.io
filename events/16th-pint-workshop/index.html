@@ -33,6 +33,19 @@
   <script src="/assets/js/custom.js"></script>
   <script src="/assets/js/bib_stats.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
   <body>
@@ -210,7 +223,7 @@
 </nav>
 
         
-        <p><em>PinT 2027: the 16th Workshop on Parallel-in-Time Integration</em> will take place at <a href="https://en.jlu.edu.cn/">Jilin University</a>, Changchun, China, from <strong>19. to 23. July 2027</strong>.
+        <p><em>PinT 2027: the</em> $2^{2^2}$<em>th Workshop on Parallel-in-Time Integration</em> will take place at <a href="https://en.jlu.edu.cn/">Jilin University</a>, Changchun, China, from <strong>19. to 23. July 2027</strong>.
 It is organized by the <a href="https://tianyuanmc.jlu.edu.cn/">Tianyuan Mathematical Center in Northeast China</a> and hosted at the Jilin National Application Mathematics Center.
 The local organizing committee consists of Ran Zhang, Chunpeng Wang and Jingrong Yang (Jilin University), Shulin Wu and Yingxiang Xu (Northeast Normal University), and Hui Zhang (Xi’an Jiaotong-Liverpool University).</p>
 
