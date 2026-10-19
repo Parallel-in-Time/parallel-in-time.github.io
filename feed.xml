@@ -7,6 +7,21 @@
     <atom:link href="http://parallel-in-time.org/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>PinT 2027 Workshop - Announcement</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;/events/16th-pint-workshop&quot;&gt;$2^{2^2}$th Workshop on Parallel-in-Time Integration (PinT 2027)&lt;/a&gt; will be hosted at &lt;a href=&quot;https://en.jlu.edu.cn/&quot;&gt;Jilin University&lt;/a&gt;, Changchun, China, from &lt;strong&gt;19. to 23. July 2027&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is organized by the &lt;a href=&quot;https://tianyuanmc.jlu.edu.cn/&quot;&gt;Tianyuan Mathematical Center in Northeast China&lt;/a&gt; and hosted at the Jilin National Application Mathematics Center.&lt;/p&gt;
+
+&lt;p&gt;Abstract submission and registration deadline is &lt;strong&gt;Monday, April 19, 2027&lt;/strong&gt;; notification of acceptance follows on May 19, 2027.&lt;/p&gt;
+
+&lt;p&gt;More details are given on the &lt;a href=&quot;/events/16th-pint-workshop&quot;&gt;event page …&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Oct 2026 13:30:00 +0000</pubDate>
+        <link>http://parallel-in-time.org/events/2026/10/19/pint2027-announcement.html</link>
+        <guid isPermaLink="true">http://parallel-in-time.org/events/2026/10/19/pint2027-announcement.html</guid>
+      </item>
+    
+      <item>
         <title>PinT 2026 Workshop - Registration Open</title>
         <description>&lt;p&gt;Registration for the &lt;a href=&quot;/events/15th-pint-workshop&quot;&gt;15th Workshop on Parallel-in-Time Integration (PinT 2026)&lt;/a&gt;,
 hosted at &lt;a href=&quot;https://www.oeaw.ac.at/ricam/home&quot;&gt;Johann Radon Institute for Computational and Applied Mathematics (RICAM)&lt;/a&gt; in Linz, Austria, is now open.&lt;/p&gt;
@@ -138,18 +153,6 @@ to participate.&lt;/p&gt;
         <pubDate>Sat, 03 Feb 2018 14:07:00 +0000</pubDate>
         <link>http://parallel-in-time.org/jobs/2018/02/03/pint-at-siam-an.html</link>
         <guid isPermaLink="true">http://parallel-in-time.org/jobs/2018/02/03/pint-at-siam-an.html</guid>
-      </item>
-    
-      <item>
-        <title>Abstract submission for 7th PINT Workshop now open</title>
-        <description>&lt;p&gt;Abstract submission is now open for the &lt;a href=&quot;http://www.math.univ-paris13.fr/~japhet/PINT/PINT2018_scientific_program.htm&quot;&gt;7th Workshop on Parallel-in-time Integration&lt;/a&gt;, taking place from 2nd to 5th May 2018 in Roscoff, France.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-</description>
-        <pubDate>Sat, 03 Feb 2018 14:07:00 +0000</pubDate>
-        <link>http://parallel-in-time.org/jobs/2018/02/03/pint-ws-submission.html</link>
-        <guid isPermaLink="true">http://parallel-in-time.org/jobs/2018/02/03/pint-ws-submission.html</guid>
       </item>
     
   </channel>
