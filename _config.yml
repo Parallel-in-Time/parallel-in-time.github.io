@@ -34,6 +34,11 @@ paginate_path: "/news/page:num/"
 timezone: UTC
 encoding: utf-8
 
+# Publish all posts immediately, even if their date is in the future
+# (e.g. posts dated "today" in the author's timezone but still in the
+# future in UTC at build time).
+future: true
+
 excerpt_separator: '<!--more-->'
 
 assets:
