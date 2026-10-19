@@ -22,7 +22,7 @@ page_type: event_page
 no_lead: true
 ---
 
-_PinT 2027: the 16th Workshop on Parallel-in-Time Integration_ will take place at [Jilin University](https://en.jlu.edu.cn/), Changchun, China, from **19. to 23. July 2027**.
+_PinT 2027: the_ $2^{2^2}$_th Workshop on Parallel-in-Time Integration_ will take place at [Jilin University](https://en.jlu.edu.cn/), Changchun, China, from **19. to 23. July 2027**.
 It is organized by the [Tianyuan Mathematical Center in Northeast China](https://tianyuanmc.jlu.edu.cn/) and hosted at the Jilin National Application Mathematics Center.
 The local organizing committee consists of Ran Zhang, Chunpeng Wang and Jingrong Yang (Jilin University), Shulin Wu and Yingxiang Xu (Northeast Normal University), and Hui Zhang (Xi'an Jiaotong-Liverpool University).
 
