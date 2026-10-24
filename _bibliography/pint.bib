@@ -8637,6 +8637,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@unpublished{BizziEtAl2026,
+	abstract = {Neuro-spectral architectures (NeuSA) are a class of physics-informed neural networks (PINNs) that have proven effective for solving time-dependent PDEs in the frequency domain. However, training and inference often rely on costly numerical integration of the learned vector field, typically using sequential Runge-Kutta time stepping, which limits temporal parallelism. We introduce PaPi, an integration scheme inspired by weakly nonlinear flows that enables time-Parallel inference through exponential integration and a Duhamel-Picard scheme. We show that the Duhamel-Picard iteration converges exponentially for all flows, and provide explicit error bounds that depend on how close the flow is to linear. Experiments show that PaPi accelerates training and inference by up to two orders of magnitude, achieving training times of under one second for low-dimensional PDE learning problems, while maintaining competitive predictive accuracy.},
+	author = {Arthur Bizzi and Márcio Marques and Kleyton Da Costa and Vitor Balestro and Tiago Novello and João M. Pereira and Daniel Yukimura},
+	howpublished = {arXiv:2610.28591v1 [cs.LG]},
+	title = {PaPi: Parallel Picard-Duhamel Integration for Fast Neuro-Spectral Architectures},
+	url = {https://arxiv.org/abs/2610.28591v1},
+	year = {2026},
+}
+
 @unpublished{BoltenEtAl2026,
 	abstract = {In this work, the performance of different spectral deferred corrections (SDC) methods applied to initial value problems for differential-algebraic equations (DAEs) of index one is analyzed. The SDC method solves a series of correction equations, and after each iteration, the numerical solution is corrected by adding the obtained approximation of the error. The formulation of the SDC method allows for a parallelization across the method to obtain small-scale parallelism, for which a number of processes equal to the number of collocation nodes can be used. Recently, an analytical approach to finding optimal diagonal coefficients for parallel SDC was proposed. So far, no analysis with the new coefficients for parallel SDC applied to DAEs was done. We demonstrate that parallel SDC methods solve DAE problems with high accuracy faster than the associated sequential SDC schemes, obtaining speedup in a small-scale parallel regime.},
 	author = {Matthias Bolten and Lisa Wimmer},
@@ -9212,6 +9221,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	howpublished = {arXiv:2607.12402v1 [math.NA]},
 	title = {A Fourier-Aware Projection-Based Periodic Parareal Method for Time-Periodic Problems},
 	url = {https://arxiv.org/abs/2607.12402v1},
+	year = {2026},
+}
+
+@unpublished{TanEtAl2026b,
+	abstract = {Parareal is a parallel-in-time method for initial-value problems that has found extensive applications and given rise to many variants. Krylov-enhanced parareal is a variant of parareal that uses projection techniques to accelerate convergence substantially for linear problems. In this paper, we study a projection-based parareal algorithm for nonlinear initial-value problems with a modified iteration scheme and an arbitrary orthogonal projection. For a general nonlinear problem, we prove a convergence estimate for each iteration step on a fixed time grid. We analyze the errors of the modified scheme and the scheme of Krylov-enhanced parareal relative to the old error as the coarse grid is refined. For a coarse solver of order $p$ and step size $h$, we prove error bounds of $O(h^{p+1})$ for the modified scheme and $O(h)$ for that of Krylov-enhanced parareal at the first potentially inexact time point under mild assumptions. Numerical experiments on two nonlinear problems are consistent with the theoretical analysis.},
+	author = {Chenyi Tan and Yuncheng Xu and Yehao Zhang and Yangfeng Su},
+	howpublished = {arXiv:2610.21680v1 [math.NA]},
+	title = {Projection-Based Parareal for Nonlinear Initial-Value Problems},
+	url = {https://arxiv.org/abs/2610.21680v1},
 	year = {2026},
 }
 
