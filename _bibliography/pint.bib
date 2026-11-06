@@ -8623,6 +8623,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@unpublished{AraujoEtAl2026b,
+	abstract = {Previously, we developed a ``parallel-in-iteration'' optimization framework that uses multigrid reduction-in-time (MGRIT) to parallelize slowly converging optimization methods, such as gradient descent. Unlike time-dependent evolution problems, optimization requires only a final point with a sufficiently small gradient, rather than an accurate approximation of the entire trajectory of iterates. This motivates a different use of MGRIT: instead of repeatedly improving the approximation of a single long trajectory, we introduce restarted MGRIT (R-MGRIT), which performs one MGRIT iteration on a trajectory, takes the approximate final point as a new initial guess, and repeats the process on a new trajectory. Each restart thus defines a new all-at-once system, allowing progress toward the solution without accurately approximating the preceding trajectory. Moreover, we find that these trajectories can be shortened without increasing the number of restarts needed for convergence. We provide theoretical results comparing MGRIT and R-MGRIT for linear problems and demonstrate the convergence behavior of the shortened trajectories numerically for both linear and nonlinear problems. Shortening the trajectories increases the estimated parallel speedup while reducing the number of processors required.},
+	author = {Guilherme H. M. Araujo and Oliver A. Krzysik and Hans De Sterck},
+	howpublished = {arXiv:2611.03621v1 [math.NA]},
+	title = {Multi-Trajectory Parallel-in-Iteration Optimization},
+	url = {https://arxiv.org/abs/2611.03621v1},
+	year = {2026},
+}
+
 @article{BhattEtAl2026,
 	author = {Bhatt, Rishabh and Debreu, Laurent and Vidard, Arthur},
 	doi = {10.1016/j.jcp.2026.115164},
@@ -8885,6 +8894,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	publisher = {arXiv},
 	title = {Parallel-in-Time Training of Recurrent Neural Networks for Dynamical Systems Reconstruction},
 	url = {https://arxiv.org/abs/2605.12683},
+	year = {2026},
+}
+
+@unpublished{Hippke2026,
+	abstract = {Long-term integrations of planetary systems have long been considered inherently sequential: each time step must start from the exact state at the end of the previous one, because any error in that state, however small, is amplified by orbital shear and chaos and alters the trajectory. Because a single step of a modern Wisdom--Holman integrator takes only ~100 ns - too short to split across cores - additional cores have previously only been used to run multiple simulations in parallel. We introduce mean-element parareal (MEP), a parallel-in-time scheme that accelerates a single Solar System integration (eight planets, general relativity) at the same accuracy as the serial integrator. Combined with a latency-optimized C kernel that integrates 5 Gyr on one core in 5.8 h, MEP completes a 5 Gyr integration in 52 min on 64 cores (a parallel speed-up of 6.7x, and 10.4x faster than the previous 9.0 h single-core record) or in 1.8 h on 16 cores (3.3x parallel speed-up, 5.0x faster than the previous record). MEP succeeds because its coarse propagator uses a numerical first-order mean-element theory to remove the short-period oscillations from the semi-major axes, preventing Keplerian shear from amplifying them into growing phase errors. Standard parareal with a coarse Wisdom-Holman integrator fails for planetary orbits because no inexpensive coarse integrator can resolve these oscillations. To our knowledge, this is the first measured multicore speed-up of a single long-term planetary integration and opens a pathway towards larger-scale parallelization.},
+	author = {Michael Hippke},
+	howpublished = {arXiv:2611.01237v1 [astro-ph.EP]},
+	title = {Mean-element Parareal: Parallel-in-Time Integration of the Solar System},
+	url = {https://arxiv.org/abs/2611.01237v1},
 	year = {2026},
 }
 
