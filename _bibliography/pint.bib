@@ -9151,6 +9151,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@unpublished{RodriguezEtAl2026,
+	abstract = {Schwarz waveform relaxation (SWR) is a parallel-in-time iterative method for the solution of evolution problems and belongs to the class of Parallel-in-Time algorithms that have received increasing attention over the past three decades. For parabolic problems, SWR converges linearly over long time intervals and exhibits superlinear convergence on short time intervals. Since the introduction of optimized variants (OSWR) nearly three decades ago, determining the optimized Robin parameter when OSWR is applied on bounded time windows has remained an open problem.  We introduce here a new analytical approach that, for the first time, yields a closed-form expression for the optimal Robin parameter in the transmission conditions for the one-dimensional heat equation with two overlapping subdomains. The resulting formula explicitly characterizes the dependence of the optimal parameter on the iteration number, the overlap size, and the length of the time window. Beyond resolving this long-standing optimization problem, our analysis provides a framework that can be extended to more general settings, including higher-dimensional problems, multiple subdomains, and higher-order transmission conditions.},
+	author = {Alejandro Alfonso Rodriguez and Martin J. Gander and Felix Kwok},
+	howpublished = {arXiv:2611.05576v1 [math.NA]},
+	title = {A First Closed-Form Robin Parameter for Optimized Schwarz Waveform Relaxation as a Function of Iteration Count, Overlap, and Time Window Length},
+	url = {https://arxiv.org/abs/2611.05576v1},
+	year = {2026},
+}
+
 @unpublished{SantoloEtAl2026,
 	abstract = {We study the effect of mixed precision on the numerical integration of the heat equation discretized with a Runge--Kutta method in time. A full space-time discretization is applied, which results in a very large and sparse linear system to be solved for the numerical approximations and the Runge--Kutta stages of all time steps. The linear system is solved by applying a suitable preconditioned iterative method that can be run in parallel. In order to speed up the solution process, the preconditioner is applied using a mixed precision framework. Sequential results show the robustness of the preconditioner, even when applied in mixed precision. Finally, we present numerical evidence of the improved performance of the mixed precision strategy when applied in a parallel environment, achieving up to a 50% reduction in CPU time.},
 	author = {Leveque, Santolo and Bergamaschi, Luca and Martínez, Ángeles and Carson, Erin},
