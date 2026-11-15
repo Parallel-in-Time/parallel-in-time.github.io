@@ -3673,6 +3673,101 @@
     <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
       <div class="row">
         <div class="col-md-12 ref-label label label-default">
+          Lefebvre2026
+        </div>
+      </div>
+    </div>
+
+    <div class="bibtex-ref-entry">
+      <span id="Lefebvre2026">T. Lefebvre, “Costate-Conditioned Dynamic Programming for Parallel-in-Time Solution of Equality-Constrained Optimal Control Problems,” arXiv:2611.10286v1 [math.OC], 2026 [Online]. Available at: <a href="https://arxiv.org/abs/2611.10286v1" target="_blank">https://arxiv.org/abs/2611.10286v1</a></span>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="btn-group btn-group-xs btn-group-justified" role="group">
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalLefebvre2026Bibtex" aria-expanded="false"
+                  aria-controls="modalLefebvre2026Bibtex">
+            BibTeX
+          </button>
+          
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+          
+          <button class="button" data-toggle="modal" data-target="#modalLefebvre2026Abstract" aria-expanded="false"
+                  aria-controls="modalLefebvre2026Abstract">
+            Abstract
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modalLefebvre2026Bibtex" tabindex="-1" role="dialog"
+    aria-labelledby="modalLefebvre2026BibtexTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalLefebvre2026BibtexTitle">
+                  BibTeX entry <code>Lefebvre2026</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            <pre class="abstract">@unpublished{Lefebvre2026,
+  author = {Lefebvre, Tom},
+  howpublished = {arXiv:2611.10286v1 [math.OC]},
+  title = {Costate-Conditioned Dynamic Programming for Parallel-in-Time Solution of Equality-Constrained Optimal Control Problems},
+  url = {https://arxiv.org/abs/2611.10286v1},
+  year = {2026}
+}
+</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="modalLefebvre2026Abstract" tabindex="-1" role="dialog"
+       aria-labelledby="modalLefebvre2026AbstractTitle" aria-hidden="true">
+    <div class="modal-background">
+      <div class="modal-card">
+        <div class="modal-content">
+          <header class="modal-card-head">
+            <div class="modal-card-head-content">
+              <div>
+                <p class="modal-card-title" id="modalLefebvre2026AbstractTitle">
+                  Abstract for BibTeX entry <code>Lefebvre2026</code>
+                </p>
+              </div>
+              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            </div>
+          </header>
+          <section class="modal-card-body">
+            When interior-point methods are applied to solve numerical trajectory optimisation problems, they spend most of their per-iteration time on a structured Newton–KKT system, associated to an equality-constrained linear-quadratic optimal control problem. Riccati-type algorithms exhibit linear complexity in the trajectory horizon. Parallel-in-time algorithms are able to reduce this to logaritmic complexity by distributing several subtrajectories over multiple cores and then stitch together the results by means of an associative scan. Existing exact formulations condition each subtrajectory on its terminal state. Each subproblem then carries the reachability to that terminal state explicitly as constraint rows. The associated reachability decision however is ill-conditioned for weakly actuated systems. In this work we condition each subtrajectory on the terminal costate instead. The resulting subproblems can now be computed by a free-end Riccati recursion without reachability carrying rows. This approach effectively compensates for the ill-conditioning of weakly actuated systems but requires additional bookkeeping with Lagrangian multipliers when stitching together the various subproblems. Numerically the method reproduces a direct solution of the primal-dual Newton-KKT system to 10^-12 in relative terms, on a weakly controllable chain of masses, the accurracy rivals that of a sequential recursion, whereas terminal-state conditioning loses up to six digits or fails. Operation counts on a problem with 64 subtrajectories and a horizon of 4096 stages gives a speed-up of 26 compared with a sequential solve.
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</li>
+<li><div class="bibtex-entry-container">
+  <div>
+    <div class="col-md-3 col-sm-12 bibtex-ref-meta hidden">
+      <div class="row">
+        <div class="col-md-12 ref-label label label-default">
           LiangEtAl2026
         </div>
       </div>
