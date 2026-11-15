@@ -9038,6 +9038,15 @@ Our proof only relies on  the stability of the time-integrator and the estimate 
 	year = {2026},
 }
 
+@unpublished{Lefebvre2026,
+	abstract = {When interior-point methods are applied to solve numerical trajectory optimisation problems, they spend most of their per-iteration time on a structured Newton--KKT system, associated to an equality-constrained linear-quadratic optimal control problem. Riccati-type algorithms exhibit linear complexity in the trajectory horizon. Parallel-in-time algorithms are able to reduce this to logaritmic complexity by distributing several subtrajectories over multiple cores and then stitch together the results by means of an associative scan. Existing exact formulations condition each subtrajectory on its terminal state. Each subproblem then carries the reachability to that terminal state explicitly as constraint rows. The associated reachability decision however is ill-conditioned for weakly actuated systems. In this work we condition each subtrajectory on the terminal costate instead. The resulting subproblems can now be computed by a free-end Riccati recursion without reachability carrying rows. This approach effectively compensates for the ill-conditioning of weakly actuated systems but requires additional bookkeeping with Lagrangian multipliers when stitching together the various subproblems. Numerically the method reproduces a direct solution of the primal-dual Newton-KKT system to $10^{-12}$ in relative terms, on a weakly controllable chain of masses, the accurracy rivals that of a sequential recursion, whereas terminal-state conditioning loses up to six digits or fails. Operation counts on a problem with 64 subtrajectories and a horizon of 4096 stages gives a speed-up of 26 compared with a sequential solve.},
+	author = {Tom Lefebvre},
+	howpublished = {arXiv:2611.10286v1 [math.OC]},
+	title = {Costate-Conditioned Dynamic Programming for Parallel-in-Time Solution of Equality-Constrained Optimal Control Problems},
+	url = {https://arxiv.org/abs/2611.10286v1},
+	year = {2026},
+}
+
 @article{LiangEtAl2026,
 	author = {Liang, Chang-Wen and Hwang, Feng-Nan},
 	doi = {10.1553/etna_vol66s83},
