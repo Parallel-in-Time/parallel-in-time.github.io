@@ -2667,7 +2667,7 @@
     </div>
 
     <div class="bibtex-ref-entry">
-      <span id="Hippke2026">M. Hippke, “Mean-element Parareal: Parallel-in-Time Integration of the Solar System,” arXiv:2611.01237v1 [astro-ph.EP], 2026 [Online]. Available at: <a href="https://arxiv.org/abs/2611.01237v1" target="_blank">https://arxiv.org/abs/2611.01237v1</a></span>
+      <span id="Hippke2026">M. Hippke, “Mean-element Parareal: Parallel-in-Time Integration of the Solar System,” Nov. 2026, doi: 10.21203/rs.3.rs-11578737/v1. [Online]. Available at: <a href="http://dx.doi.org/10.21203/rs.3.rs-11578737/v1" target="_blank">http://dx.doi.org/10.21203/rs.3.rs-11578737/v1</a></span>
     </div>
 
 
@@ -2683,8 +2683,8 @@
         </div>
         <div class="btn-group btn-group-xs" role="group">
           
-          <button class="button" data-toggle="modal" data-target="#modalHippke2026Abstract" aria-expanded="false"
-                  aria-controls="modalHippke2026Abstract">
+          <button class="button" disabled="disabled" data-toggle="modal" data-target="#modalHippke2026Abstract"
+                  aria-expanded="false" aria-controls="modalHippke2026Abstract">
             Abstract
           </button>
           
@@ -2710,11 +2710,13 @@
             </div>
           </header>
           <section class="modal-card-body">
-            <pre class="abstract">@unpublished{Hippke2026,
+            <pre class="abstract">@article{Hippke2026,
   author = {Hippke, Michael},
-  howpublished = {arXiv:2611.01237v1 [astro-ph.EP]},
+  doi = {10.21203/rs.3.rs-11578737/v1},
+  month = nov,
+  publisher = {Springer Science and Business Media LLC},
   title = {Mean-element Parareal: Parallel-in-Time Integration of the Solar System},
-  url = {https://arxiv.org/abs/2611.01237v1},
+  url = {http://dx.doi.org/10.21203/rs.3.rs-11578737/v1},
   year = {2026}
 }
 </pre>
@@ -2724,30 +2726,6 @@
     </div>
   </div>
   
-  
-  <div class="modal" id="modalHippke2026Abstract" tabindex="-1" role="dialog"
-       aria-labelledby="modalHippke2026AbstractTitle" aria-hidden="true">
-    <div class="modal-background">
-      <div class="modal-card">
-        <div class="modal-content">
-          <header class="modal-card-head">
-            <div class="modal-card-head-content">
-              <div>
-                <p class="modal-card-title" id="modalHippke2026AbstractTitle">
-                  Abstract for BibTeX entry <code>Hippke2026</code>
-                </p>
-              </div>
-              <button type="button" class="delete" data-dismiss="modal" aria-label="Close"><span
-                      aria-hidden="true">&times;</span></button>
-            </div>
-          </header>
-          <section class="modal-card-body">
-            Long-term integrations of planetary systems have long been considered inherently sequential: each time step must start from the exact state at the end of the previous one, because any error in that state, however small, is amplified by orbital shear and chaos and alters the trajectory. Because a single step of a modern Wisdom–Holman integrator takes only  100 ns - too short to split across cores - additional cores have previously only been used to run multiple simulations in parallel. We introduce mean-element parareal (MEP), a parallel-in-time scheme that accelerates a single Solar System integration (eight planets, general relativity) at the same accuracy as the serial integrator. Combined with a latency-optimized C kernel that integrates 5 Gyr on one core in 5.8 h, MEP completes a 5 Gyr integration in 52 min on 64 cores (a parallel speed-up of 6.7x, and 10.4x faster than the previous 9.0 h single-core record) or in 1.8 h on 16 cores (3.3x parallel speed-up, 5.0x faster than the previous record). MEP succeeds because its coarse propagator uses a numerical first-order mean-element theory to remove the short-period oscillations from the semi-major axes, preventing Keplerian shear from amplifying them into growing phase errors. Standard parareal with a coarse Wisdom-Holman integrator fails for planetary orbits because no inexpensive coarse integrator can resolve these oscillations. To our knowledge, this is the first measured multicore speed-up of a single long-term planetary integration and opens a pathway towards larger-scale parallelization.
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
   
 </div>
 </li>
